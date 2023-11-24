@@ -1,0 +1,18 @@
+---
+title: "IRTlib Editor: Study Configurations"
+format:
+  html:
+    embed-resources: true
+    minimal: true 
+    toc: false
+---
+
+## Study Configurations
+
+* **Name**: What should the *study* be called? Make sure that only letters (upper and lower case), numbers and a `_` are allowed for the name.
+
+* **Description**: This optional field is provided so that you can enter a detailed description of the *study*. Special characters and umlauts etc. can also be entered here. 
+
+* **Activate routing for survey parts**:  *Studies* consist of one or more *survey-parts*.The *survey-parts* are administered as a linear sequence by default.If the option *Enable routing for survey-parts* is selected, the order of the *survey-parts* can be defined with *Blockly*-based routing. This enables dynamic sequences of *survey-parts*, whereby *Call Parameters* of the study can also be used, for example, to assign different sequences.
+
+* **Check screen size**: (description follows)

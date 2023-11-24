@@ -1,0 +1,10 @@
+---
+title: "IRTlib Editor: Definition des Codebooks"
+format:
+  html:
+    embed-resources: true
+    minimal: true 
+    toc: false
+---
+
+## Definition des Codebooks

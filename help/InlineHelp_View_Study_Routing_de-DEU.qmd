@@ -1,0 +1,1155 @@
+---
+title: "IRTlib Editor: Routing innerhalb von Erhebungsteilen"
+format:
+  html:
+    embed-resources: true
+    minimal: true 
+    toc: false
+---
+
+## Kurzusammennfassung
+
+Die Reihenfolge von CBA ItemBuilder-Tasks kann hier mit Hilfe von *Blockly* (also einer Form des visuellen Programmierens) definiert werden. *Blockly*-basierte Ablaufsteuerung ist verfügbar, wenn bei einem Erhebungsteil die Option *Routing aktivieren* ausgewählt ist. Die Option ist im Abschnit *Info* eines Erhebungsteils zu finden. Ist sie aktiviert, enthält der Erhebungsteil den Eintrag *Routing*.
+
+Gliederung:
+
+-   Beipsiele: <a href="#anchor-example-blockly-linear-sequence-01">lineare Ablauf</a>, <a href="#anchor-example-blockly-simple-sequence-01">einfache Testhefte</a>, <a href="#anchor-example-blockly-time-restricted-01">Ablauf mit Zeitbegrenzung</a> und <a href="#anchor-example-blockly-booklet-design-01">Booklet-Designs</a>
+-   Kurzanleitung: <a href="#anchor-general-notes">Allgemeine Hinweis zum *Blockly*-Editor</a>
+-   Grundlagen: <a href="#anchor-blockly-basics">Nutzung des *Blockly*-Editor</a>
+    -   Anzeigen von <a href="#anchor-show-item">Items</a> oder <a href="#anchor-show-items">Itemlisten</a>
+    -   Definition von <a href="#anchor-timers">Zeitbegrenzungen</a>
+    -   Änderungen am <a href="#anchor-test-administrator-menu">Testleitermenü</a>
+-   Vertiefung: <a href="#anchor-advanced-use">Fortgeschrittene *Blockly*-Verwendung</a>
+    -   Ablaufsteuerung mit <a href="#anchor-conditions">Bedingungen</a>
+    -   Ablaufsteuerung mit <a href="#anchor-loops">Schleifen</a>
+    -   Operatoren für <a href="#anchor-math">Zahlen</a>, <a href="#anchor-text">Text</a>, <a href="#anchor-time">Zeiten</a> und <a href="#anchor-lists">Listen</a>.
+    -   Vertiefung zu *Blockly*-<a href="#anchor-variables">Variablen</a> und *Blockly*-<a href="#anchor-functions">Funktionen</a>
+    -   Nutzung von <a href="#anchor-item-score">Itemergebnissen</a> in der Ablaufdefinition
+    -   *Blockly*-Operatoren zum <a href="#anchor-missing-coding">Kodieren fehlender Werte</a> und zum <a href="#anchor-write-data">Schreiben von Daten</a>
+-   <a href="#anchor-adaptive-testdesigns">Adaptive Testdesigns</a> in *Blockly* und Verwendung von <a href="#anchor-itempools-and-IRT">ItemPools und IRT</a>
+-   <a href="#anchor-comments">Kommentieren</a> von *Blockly*-Code
+-   Anpassung der <a href="#anchor-presentation">Darstellung</a> von *Blockly*-Code
+
+<font color="red">@SD / TODO: Ich hab hier erstmal eine vollständige Dokumentation versucht, die Testautoren benötigen um innerhalb von Erhebungsteilen das Routing zu definieren. Teile der Dokumentation wären aber identisch auch für das die Dokumentation von *Blockly* an anderen Stellen notwendig. Können wir doch auch Links ZWISCHEN Dokumenten in der Hilfe irgendwie ermöglichen?</font>
+
+<hr noshade/>
+
+::: {style="display: flex; justify-content: flex-end"}
+(<a href="#top">nach oben</a>)
+:::
+
+## Beispiele
+
+<div id="anchor-example-blockly-linear-sequence-01"/>
+
+### Beispiel für linearen Ablauf
+
+Basierend auf den einem Erhebungsteil hinzugefügten *CBA ItemBuilder Tasks* in der Ansicht *Items* entspricht eine lineare Folge der *Tasks* der folgenden *Blockly*-Definition:
+
+![](img/screenshot-show-items-from-list-lds2003-01-example-DEU){width="500"}
+
+Dem *Blockly*-Element *Show Items* wird eine Liste der *CBA ItemBuilder Tasks* übergeben, die mit dem Operator *erzeuge Liste mit* erstellt wird. Die Liste wird in der dargestellten Reihenfolge abgearbeitet, wobei jeder *CBA ItemBuilder Tasks* solange dargestellt wird, bis das `NEXT_TASK`- *Command* ausgeführt wird.
+
+Eine äquivalente Formulierung einer linearen Sequenz kann auch mit mehreren *Show Items*-Blücken erfolgen, wenn keine <a href="#anchor-back-navigation">Zurücknavigation</a> notwendig ist:
+
+![](img/screenshot-show-items-lds2003-01-example-simple-DEU){width="280"}
+
+<div id="anchor-example-blockly-simple-sequence-01"/>
+
+### Beispiel für einfache Testhefte
+
+Mit Hilfe einer <a href="#anchor-variables">Variable</a> (hier: *Booklet*) und einer einfachen *falls/mache*-<a href="#anchor-conditions">Bedingung</a> lässt sich daraus nun ein Ablauf definieren, welcher je nach Wert der Variable unterschiedliche Items administriert:
+
+![](img/screenshot-show-items-lds2003-01-example-two-booklets-DEU.png){width="300"}
+
+Die Items für Start und Ende werden immer administriert, die Tasks 1-3 nur, wenn die Variable *Booklet* der Wert *0* hat, die Tasks 4 und 5, wenn die Variable *Booklet* einen von *0* verschiedenen Wert hat.
+
+Der identische Ablauf lässt sich alternativ auch unter Verwendung des *Blockly*-Operators für das Anzeigen von Itemlisten erstellen:
+
+![](img/screenshot-show-items-lds2003-01-example-two-booklets-with-lists-DEU.png){width="440"}
+
+Beide Varianten sind bzgl. der Funktionalität völlig äquivalent, die zweite Vorgehensweise mit Listen erlaubt aber die Verwendung der Option <a href="#anchor-back-navigation">Zurücknavigation</a> innerhalb der booklet-spezifischen Tasks.
+
+<div id="anchor-example-blockly-time-restricted-01"/>
+
+### Beispiel für Ablauf mit Zeitbegrenzung
+
+Um mit Hilfe der *Blockly*-Configuration Zeitbegrenzte Abschnitte innerhalb eines Erhebugnsteils umzusetzen, kann die folgende *Blockly*-Komponente verwendet werden:
+
+![](img/screenshot-show-items-lds2003-01-example-simple-timer-ENG.png){width="280"}
+
+Jeder Ablauf beginnt mit eine nicht zeitbgrenzten Start-Tasks und endet mit einem ebenfalls nicht zeitbegrenzten End-Tasks. Dazwischen läuft eine Zeitbegrenzung für einen Abschnitt mit der Bezeichnung *MyFirstTimer*, der eine Zeitbegrenzung für *60* Sekunden hat.
+
+Die Tasks 1, 2 und 3 werden in dem Abschnitt *Runtime code* mit einer Zeitbegrenzung angezeigt. Tritt ein Timeout auf, d.h. werden die drei Tasks nicht innerhalb der *60* Sekunden bearbeitet, wird (ebenfalls ohne Zeitbegrenzung) der Task 4 angezeigt.
+
+<div id="anchor-example-blockly-booklet-design-01"/>
+
+### Beispiel für einfaches Booklet-Design mit Zeitbegrenzung
+
+Bei vielen Items kann die Definition von *Booklet Designs*, d.h. Taskreihenfolgen mit balancierten Positionen, durch Funktionen bzw. Listen vereinfacht werden.
+
+-   Wenn keine <a href="#anchor-back-navigation">Zurücknavigation</a> notwendig ist, können <a href=#anchor-functions">Funktionen</a> für die Definition von Clustern verendet werden:
+
+![](img/screenshot-show-items-example-booklet-design-example-functions-01-DEU.png){width="600"}
+
+-   Mit <a href="#anchor-back-navigation">Zurücknavigation</a> können die Funktionen <a href="#anchor-lists">Listen</a> von Tasks zurückgeben:
+
+![](img/screenshot-show-items-example-booklet-design-example-lists-01-DEU.png){width="600"}
+
+Weitere Informationen siehe [hier](https://cba.itembuilder.de/chapter-cba-principles.html#introduction-to-rotations).
+
+<hr noshade/>
+
+::: {style="display: flex; justify-content: flex-end"}
+(<a href="#top">nach oben</a>)
+:::
+
+<div id="anchor-general-notes"/>
+
+## Allgemeine Hinweise zur Bearbeitung von Ablaufdefinitionen mit *Blockly*
+
+Die Defintion von Abläufen erfolgt in dem visuellen *Blockly*-Editor. Die Ausführung beginnt mit dem Element, welches am weitesten oben ausgerichtet ist. Wenn nötig, kann der Arbeitsbereich mit der Funktion <a href="#anchor-tidy-up">Aufräumen</a> automatisch ausgerichtet werden. Zum Hinzufügen von *Blockly*-Operatoren können diese per Drag-and-Drop aus der Palette gezogen werden.
+
+<div id="anchor-delete"/>
+
+### Löschen
+
+Zum Löschen von Operatoren können diese auf den Papierkorb gezogen werden. Ausgewählte *Blockly*-Elemente können auch über die Taste *Entf(ernen)* gelöscht werden. Alternativ können ausgewählte *Blockly*-Elemente auch über Kontextmenü gelöscht werden.
+
+### Redo-/Undo
+
+Innerhalb des *Blockly*-Editor können einzelne Aktionen rückgängig gemacht werden. Dafür kann die Tastenkombination `Strg + Z` verwendet werden. Mit `Strg + Y` wird eine Aktion wiederholt. Durch einen Klick in einen leeren Bereich des *Blockly*-Editors ist der Zugriff auf ein Kontextmenü möglich, welches ebenfalls die Optionen für *Rückgängig* und *Wiederholen* bereithält:
+
+![](img/screenshot-context-menu-blockly-editor-example01-DEU.png){width="200"}
+
+### Speichern
+
+Anpassungen im *Blockly*-Editor müssen gespeichert werden. Dafür steht unten rechts das Disketten-Symbol zur Verfügung:
+
+![](img/screenshot-blockly-save-icon-example01.png){width="120"}
+
+Sollen die Änderung (insgesamt) verworfen werden, kann unten rechts die das Verwerfen-Symbol verwendet werden.
+
+### Zoom
+
+Die Ansicht im Arbeitsbereich kann mit den Icons `+` vergrößert und mit `-` verkleinert werden.
+
+<div id="anchor-context-menu"/>
+
+### Kontextmenü
+
+Weitere Optionen sind über die rechte Maustaste (Kontextmenü) im *Blocky*-Editor verfügbar. Um diese Funktionen aufzurufen, muss auf ein *Blockly*-Element ein Sekundärklick (rechte Maustaste) durchgeführt werden:
+
+![](img/screenshot-context-menu-blockly-editor-example02-DEU.png){width="200"}
+
+-   Kopieren dupliziert das ausgewählte *Blockly*-Element, inklusive aller verbunder Elemente.
+-   <a href="#anchor-comments">Kommentieren</a> von Blöcken ist möglich.
+-   Blöcke können <a href="#anchor-deactivating">deaktiviert/aktiviert</a> werden.
+-   Manche Block-Typen erlauben die Darstellungsform <a href="#anchor-internal-external">extern/intern</a> zu wechseln.
+-   Blöcke, welche weitere Blöcke enthalten, können <a href="#anchor-folding">zusammengefalten/entfaltet</a> werden.
+-   Das <a href="#anchor-delete">Löschen</a> von Blöcken ist auch über das Kontextemü möglich.
+
+Einige *Blockly*-Elemente stellen im Kontextmenü auch einen Eintrag *Hilfe* zur Vefügung, welcher auf die allgemein zugängliche *Blockly*-Dokumenten (https://github.com/google/blockly/wiki/) verweist.
+
+<hr noshade/>
+
+::: {style="display: flex; justify-content: flex-end"}
+(<a href="#top">nach oben</a>)
+:::
+
+<div id="anchor-blockly-basics"/>
+
+## Grundlagen zur Nutzung von *Blockly* zur Ablaufsteuerung
+
+Die Grundfunktionen für die Nutzung der *Blockly*-Umgebung zur Steuerung von Assessments finden sich im Abschnitt *Session*.
+
+<div id="anchor-show-item"/>
+
+### Einzelne Items anzeigen
+
+Auf *CBA ItemBuilder Tasks*, die in der Ansicht *Items* für einen Erhebugnsteil importiert wurden, kann in der Ablaufsteuerung wie in den Beispielen obgen gezeigt mit Hilfe des folgende *Blockly*-Elements für Tasks zugegriffen werden:
+
+![](img/screenshot-item-element-lds2003-01-selector.png){width="200"}
+
+Das Element, welches im Abschnitt *Session* der Palette des *Blockly*-Editors zu finden ist, kann durch die Auswahlliste konfiguriert werden. Jedes *Blockly*-Elements für Tasks kann auf genau einen konkreten Task verweisen, d.h. in der Regel besteht eine Ablaufdefinition aus mehrerer solcher Elemente.
+
+*Blockly*-Elemente für Tasks können nicht direkt in den Ablauf eingefügt werden, sonder werden zusammen mit einem *Show Item*-Element verwendet:
+
+![](img/screenshot-show-item-block-lds2023-01-example-01-ENG.png){width="300"}
+
+Das Beispiel <a href="#anchor-example-blockly-simple-sequence-01">für einfache Testhefte</a> illustriert, dass Abläufe in der *Blockly*-Definition häufig durch eine Abfolge von mehreren *Show Item*-Operatoren definiert werden. *Show Item*-Operatoren können dabei in <a href="#anchor-conditions">Bedingungen</a> und <a href="#anchor-loops">Schleifen</a>, sowohl innerhalb des Hauptablaufs als auch innerhalb von <a href="#anchor-functions">Funktionen</a> eingefügt werden.
+
+#### Verwendung von Geltungsbereichen (Scopes)
+
+Mit Hilfe der *Blocky*-basierten Ablaufsteuerung ist es auch möglich, *CBA ItemBuilder Tasks* mehrfach innerhalb eines Ablaufs zu administrieren:
+
+![](img/screenshot-item-element-two-times-without-scope-lds2003-01-example-ENG.png){width="280"}
+
+Dabe wird beim erneuten Aufruf eines Items der Zustand aus dem letzten Besuch wiederhergestellt, d.h. die Bearbeitung wird fortgesetzt. Sollen Items mehrfach neu, d.h. unbearbeitet vorgelegt werden, kann das automatische wiederherstellen nicht gewünscht sein. Dafür kann optional die Checkbox für die Angabe eines *Scopes* (Geltungsbereich) aktiviert werden:
+
+![](img/screenshot-item-element-scope-lds2003-01-default.png){width="250"}
+
+Wird nichts weiter angegeben, wird das Item im "Default"-Scope administriert. Alternativ kann ein Text definiert werde, wie in folgendem Beispiel zu sehen:
+
+![](img/screenshot-item-element-with-scope-lds2003-01-example-01-ENG.png){width="300"}
+
+Beim ersten Besuch wird der Task in dem *Scope* "Visit1" dargestellt. Danach folgt eine neue, unabhängige Darstellung des Tasks in einem anderen *Scope* ("Visit2"). Im dritten Aufruf wird der Task weder mit den Daten dargestellt, die beim ersten Besuch bereits gesammelt wurde (d.h. der *Scope* "Visit1" wird erneut verwendet).
+
+<font color="red">@SD / TODO: (Wie) Könnte der Scope auch aus einer Blockly-Variablen kommen?</font>
+
+<div id="anchor-show-items"/>
+
+### Anzeigen von Itemlisten
+
+Wie im Beispiel <a href="#anchor-example-blockly-linear-sequence-01">für linearen Ablauf</a> zu sehen, können lineare Tests auch über <a href="#anchor-lists">Listen</a> von Tasks dargestellt werden.
+
+Listen können mit dem *Blockly*-Operator *Show Items* verwendet werden:
+
+![](img/screenshot-show-items-list-lds2023-01-example-01-DEU.png){width="450"}
+
+### Anzeige von Items mit Speicherung der Ergebnisse
+
+Die Operatoren *Show Item* (für einzelne Items) und *Show Items* (für Itemlisten) sind auch als Operatoren für Wertzuweisungen verfügbar:
+
+![](img/screenshot-show-single-item-and-show-items-with-results-ENG.png){width="150"}
+
+Mit deren Hilfe lassen sich Ergebnisse der Itembearbeitung zu Variablen (String oder Array) zuweisen, und dann für die <a href="#anchor-item-score">Ablaufsteuerng auswerten</a>.
+
+-   Einzelner Task:
+
+![](img/screenshot-show-single-item-lds2023-01-with-result-example-01-DEU.png){width="550"}
+
+-   Liste von Tasks:
+
+![](img/screenshot-show-items-list-lds2023-01-with-results-example-01-DEU.png){width="550"}
+
+<font color="red">@SD / TODO: Datentypen String für einzelne und Array für mehrere Items? Warum geht "Show Item" nicht direkt mit String?</font>
+
+<div id="anchor-back-navigation"/>
+
+#### Zurücknavigation
+
+Das *Show Items*-Element für <a href="anchor-lists">Listen</a> kann über die Eigenschaft *Can navigate back* konfiguriert werden. Ist diese Eigenschaft ausgewählt, dann können *CBA ItemBuilder Tasks* mit dem *Command* `BACK_TASK` eine Navigation zum vorherigen *CBA ItemBuilder Tasks* anfordern.
+
+#### Abbrechen von Listen
+
+Die Verwendung von Listen erlaubt auch das Abbrechen von Listen. Listen können über zwei Wege abgebrochen werden:
+
+-   Das *Command* `CANCEL_TASK`, welches innerhalb von CBA ItemBuilder Tasks verwendet werden kann, wird aufgerufen.
+-   Im Testleitermenü, welches für die Studie konfiguriert und ggf. über den *Blockly*-Operator <a href="#anchor-test-administrator-menu">Testleitermenü bearbeiten</a> angepasst wurde, wird die Funktion *Itemliste abbrechen* aufgerufen.
+
+Die Adminsitration einer Itemliste wird dadurch abgebrochen, und die Abarbeitung des *Blockly*-Ablaufs nach dem *Show Items*-Block fortgesetzt.
+
+<div id="anchor-timers"/>
+
+### Definition von Zeitbegrenzungen
+
+Wie im Beispiel <a href="#anchor-example-blockly-time-restricted-01">Ablauf mit Zeitbegrenzung</a> bereits illustriert, kann mit dem *Blockly*-Block *Start time with name* die Zeitbegrenzte Administration von Items umgesetzt werden.
+
+Das *Blockly*-Element *Start timer with name* erlaubt die Definition von Zeitbegrenzungen. Jede Zeitbegrenzung kann einen eigenen Namen haben. Zusätzlich muss die Zeit in Sekunden angegeben werden. Darüber kann definiert werden, welche Art von Zeit verwendet werden soll:
+
+![](img/screenshot-timer-component-time-level-example-ENG.png){width="200"}
+
+-   Realtime:
+-   Servertime:
+-   Sessiontime:
+-   Clienttime:
+
+<font color="red">@SD / TODO: Hier fehlt mir noch die Definition / Beschreibung, wie die verschiedenen Optionen funktionieren.</font>
+
+Schließlich können zwei Stellen mit weiteren *Blockly*-Operatoren (wie bspw. ein oder mehrere <a href="#anchor-show-item">Show Item</a>-Blöcke zum Anzeigen einzelner Items oder ein oder mehrere <a href="#anchor-show-items">Show Items</a>-Blöcke zum Anzeigen von Listen) gefüllt werden:
+
+-   Runtime code: Diese Blöcke werden ausgefüllt, bis die definierte Zeit abgelaufen ist.
+-   Elapsed code: Diese Blöcke werden nur ausgefüllt, wenn der *Runtime code* nicht innerhalb der Zeit beendet wurde.
+
+<font color="red">@SD / TODO: Könnte man für die Zeit auch eine Blockly-Variable über einen Eingang verbinden lassen? Dann würden sich sinnvolle Anwendungsfälle ergeben, in denen man die Zeit in einem nicht Zeitbeschränkten Abschnitt misst, und dann nur, wenn noch genug Zeit vorhanden ist einen weiteren Zeitbeschränkten Abschnitt betreten, wo man die verbleibende Zeit dann als Timer definieren könnte.</font>
+
+<div id="anchor-test-administrator-menu"/>
+
+### Testleitermenü
+
+In der Studiendefinition können Funktionen des Testleitermenüs für eine oder mehrere Rollen angelegt werden. Rollen stellen unterschiedliche Funktionen zusammen, die mit Hilfe des vom Testleiter einzugebenden Passworts unterschieden werden können.
+
+#### Anpassen von Standardfunktionen
+
+Folgende Standardfunktionen können für eine Studie im Abschnitt *Info* / *Testleitermenü* definiert werden:
+
+-   Navigation: Aufgabe vor / Aufgabe zurück
+-   Listen: Itemliste abbrechen
+-   Beenden: Erhebungsteil beenden und Session beenden
+-   Lautstärkeregelung
+
+Während der Bearbeitung eines Erhebungsteils kann in der Ablaufsteuerung mit Hilfe des folgenden *Blockly*-Operators das Testleitermenü kontextspezifisch angepasst werden:
+
+![](img/screenshot-blockly-element-for-testadminstrator-menu-example-01-DEU.png){width="150"}
+
+Das Testleitermenüs kann für jede der Standardfunktionen (im Bereich *Funktion*) für eine Rolle (im Bereich *Gruppe*) sowohl die Beschriftung der Schaltfläche (im Bereich *Label*) geändert werden:
+
+-   Hinzufügen: Funktion wird im Testleitermenü ergänzt
+-   Entfernen: Funktion wird aus dem Testleitermenü entfernt
+-   Deaktivieren: Funktion wird im Testleitermenü deaktiviert
+-   Aktivieren: Funktion wird im Testleitermenü aktiviert
+
+![](img/screenshot-blockly-element-for-testadminstrator-menu-example-02-DEU.png){width="150"}
+
+Der Aufruf dieses *Blockly*-Operators im Testablauf definiert das Verhalten des Testleitermenüs im weiteren Testablauf. Im Unterschied zu *Entfernen* bleiben *deaktivierte* Funktionen im Testleitermenü sichtbar, können aber (bis sie wieder *aktiviert* werden) nich ausgeführt werden.
+
+#### Verwenden von *Blockly*-Funktionen im Testleitermenü
+
+Der *Blockly*-Operator für das Bearbeiten des Testleitermenüs enthält im Abschnitt *Funktion* auch die Option zum Ausführen von *Blockly*-Code (*ExecuteBockly*):
+
+![](img/screenshot-blockly-element-for-testadminstrator-menu-function-example-01-DEU.png){width="350"}
+
+Wenn als *ExecuteBlockly* ausgewählt ist, dann kann in dem *Blockly*-Element *Testleitermenü bearbeiten* eine innerhalb des *Blockly*-Editors definierte <a href=#anchor-functions">Funktionen</a> ausgewählt werden. Die in dieser Funktion definierten *Blockly*-Operatoren werden dann ausgeführt, wenn ein Testleiter die entsprechende Schaltfläche zur Laufzeit im Testleitermenü auswählt.
+
+<font color="red">@SD / TODO: Hier würde mir für ein Anwendungsbespiel jetzt die Möglichkeit fehlen, auf die Standardfunktionen im Ablauf über einen Blockly-Operator zuzugreifen. Wie ist das gedacht? Vor allem benötigt wird: "Aufgabe vor". Dann könnte man als Blockly-Funktion definieren, dass das aktuelle Item beendet und dann das Anzeigen weitere Items zu unterbinden, z.B. über die Zuweisung eines Werts zu einer (globalen) Variable.</font>
+
+<hr noshade/>
+
+::: {style="display: flex; justify-content: flex-end"}
+(<a href="#top">nach oben</a>)
+:::
+
+<div id="anchor-advanced-use"/>
+
+## Fortgeschrittene *Blockly*-Verwendung
+
+<div id="anchor-conditions"/>
+
+### Ablaufsteuerung mit Bedingungen
+
+Der Abschnitt *Logic* enthält den *Blockly*-Operator *falls/mache*, welcher zur Umsetzung von Bedingungen im Ablauf verwendet werden kann. Bedingungen sind logische Ausdrücke, bspw. die Prüfung ob eine Preload-Variable einen bestimmten Wert hat:
+
+![](img/screenshot-routing-block-if-then-example-01-DEU.png){width="300"}
+
+Nur wenn die Bedingung (*falls*) erfüllt ist, werden die Blocky-Operatoren ausgeführt, welche innerhalb des Bedingungsblocks definiert sind (d.h. neben *mache*). In dem Beispiel wird geprüft, ob eine boolsche <a href="#anchor-variables">Variable</a> den Wert `wahr` hat.
+
+Die Bedingung wird dabei als separater Block definiert, die mit dem *Blockly*-Operator *falls/mache* verbunden ist. Hier die beiden Komponenten separat:
+
+-   Bedingung:
+
+![](img/screenshot-blockly-element-if-then-separat-01-DEU.png){width="90"}
+
+-   Logischer Ausdruck:
+
+![](img/screenshot-blockly-condition-separat-01-DEU.png){width="250"}
+
+<div id="anchor-logical-expressions"/>
+
+#### Logische Ausdrücke
+
+Logische Ausdtrücke in Bedingungen basieren entweder auf Wertevergleichen oder Rückgaben von Funktionen. Wertevergleiche können mit folgendem Blockly-Element realisiert werden:
+
+![](img/screenshot-routing-block-value-comparison-empty.png){width="90"}
+
+Die beiden Slots können mit Werten gefüllt werden. Für boolsche Werte (wahr/falsch) steht ein entsprechendes Blockly-Element im Abschnitt *Logic* bereit:
+
+![](img/screenshot-routing-block-bool-value-DEU.png){width="100"}
+
+Bedingungen sind auch mit Variablen von anderem <a href="#anchor-variables-datatype">Datentyp</a> möglich:
+
+![](img/screenshot-blockly-condition-separat-02-DEU.png){width="200"}
+
+Für numerische Werte gibt es ein entsprechendes Blockly-Element im Abschnitt *Math*, welcher <a href="#anchor-math">Operatoren für Zahlen und einfache mathematische Operationen</a> enthält:
+
+![](img/screenshot-routing-block-numeric-value-example42.png){width="60"}
+
+Mit dessen Hilfe und einer numerischen <a href="#anchor-variables">Variable</a> lässt sich folgende Bedingung formulieren:
+
+Aus technischen Gründen kann es auch notwendig sein zu prüfen, ob eine Variable noch gar keinen Wert hat. Das kann durch Verwendung der Blockly-Komponente "null" umgesetzt werden:
+
+![](img/screenshot-routing-block-condition-variable-not-null-example-ENG.png){width="250"}
+
+#### Kombination von *logischen Ausdrücken*
+
+Einzelne Bedingungen oder logische Ausdrücke können mit folgendem *Blockly*-Element aus dem Abschnitt *Logik* verbunden werden:
+
+![](img/screenshot-blockly-element-logic-combine-01-DEU.png){width="100"}
+
+Dabei steht eine *und* sowie eine *oder*-Verknüpfung der Aussagen zur Auswahl. Die freien *Eingänge*
+
+![](img/screenshot-blockly-element-logic-combine-02-DEU.png){width="400"}
+
+Mehrere *logische Ausdrücke* können in einander geschachtelt werden:
+
+![](img/screenshot-blockly-element-logic-combine-03-DEU.png){width="450"}
+
+Hinweis: Für eine übersichtlichere Darstellung ist bei der äußeren *und*-Verknüpfung die <a href="#anchor-internal-external">externe</a> Darstellung gewählt.
+
+#### Mehrere Bedingungen (*sonst falls* / *sonst*)
+
+Durch Klick auf das kleine Zahnrad-Symbol eines Bedingungsblocks (*falls/mache*) kann dieser konfiguriert werden:
+
+![](img/screenshot-routing-block-if-then-configuration-01-DEU.png){width="200"}
+
+Durch das Hinzufügen eines Abschnitts *sonst falls* können kann eine weitere Bedingung hinzugefügt werden. Die in einem *sonst falls* Abschnitt definierte Bedingung wird geprüft, wenn die vorherigen Bedingunge (*falls*) nicht erfüllt sind. Ist eine Bedingung erfüllt, werden die definierten Blockly-Operatoren ausgeführt.
+
+Durch das Hinzufügen eines Abschnitts *sonst* können Blöcke hinzugefügt werden, welche dann ausgeführt werden wenn keine der Bedingungen erfüllt ist.
+
+### Spezialfall: *prüfe*-Operator für drei Bedingungen
+
+Für drei Bedingungen stellt der *Blockly*-Editor eine speziellen Operator *prüfe-falls wahr-falls falsch* zur Verfügung:
+
+![](img/screenshot-blockly-element-if-iftrue-iffalse-01-DEU.png){width="100"}
+
+Der Operator kombiniert zwei logische Ausdrücke, z.B.:
+
+![](img/screenshot-blockly-element-if-iftrue-iffalse-example-01-DEU.png){width="400"}
+
+Das Konstrukt ist eine Kurzform für folgende Prüfung, wie sie in folgender Tabelle dargestellt ist:
+
+| MyNumberVariable | MyStringVariable | MyBooleanVariable | Ergebnis |
+|------------------|------------------|-------------------|----------|
+| $= 42$           | $=$ Example      | (any)             | true     |
+| $= 42$           | $\neq$ Example   | (any)             | false    |
+| $\neq 42$        | (any)            | true              | true     |
+| $\neq 42$        | (any)            | false             | false    |
+
+Ohne den Operator für drei Bedingungen könnte die gleiche Prüfung mit folgender Kombination umgesetzt werden:
+
+![](img/screenshot-blockly-element-if-iftrue-iffalse-example-02-DEU.png){width="600"}
+
+<font color="red">@SD / TODO: Habe ich das richtig interpretiert?</font>
+
+#### Negation
+
+Um einen logischen Ausdruck umzukehren (Negation) steht folgender *Blockly*-Operator zur Verfügung:
+
+![](img/screenshot-blockly-element-negation-01-DEU.png){width="60"}
+
+<hr noshade/>
+
+::: {style="display: flex; justify-content: flex-end"}
+(<a href="#top">nach oben</a>)
+:::
+
+<div id="anchor-loops"/>
+
+### Ablaufsteuerung mit Schleifen
+
+Die mehrfache Ausführung von *Blockly*-Operatoren (und der damit darstellbaren Aktionen) ist mit Schleifen möglich. Der Abschnitt *Loops* der *Palette* enthält die dafür notwendigen *Blockly*-Elemente.
+
+#### Wiederhole n-mal
+
+Der folgende *Blockly*-Operator kann verwendet werden, um die Ausführung von Blöcke n-mal zu wiederholen:
+
+![](img/screenshot-blockly-loop-repeat-n-times-01-DEU.png){width="180"}
+
+#### Wiederhole solange
+
+Schleifen können auch solange wiederholt werden *bis* eine Bedingung zutrifft (oder *solange* eine Bedingung zutrift):
+
+![](img/screenshot-blockly-loop-repeat-while-01-DEU.png){width="180"}
+
+-   Beispiel:
+
+![](img/screenshot-blockly-loop-repeat-while-example-01-DEU.png){width="380"}
+
+#### Zähle von/bis
+
+Schleife mit Hilfsvariablen:
+
+![](img/screenshot-blockly-loop-for-01-DEU.png){width="350"}
+
+<div id="anchor-loop-over-list"/>
+
+#### Für jeden Wert aus Liste
+
+Schleife über alle Werte einer Liste
+
+![](img/screenshot-blockly-loop-list-01-DEU.png){width="250"}
+
+#### Schleifen vorzeitig abbrechen
+
+Folgendes *Blockly*-Element kann genutzt werden, um eine Schleife (vorzeitig) abzubrechen oder um vorzeitig mit dem nächsten Schleifendurchlauf zu beginnen:
+
+![](img/screenshot-blockly-loop-break-01-DEU.png){width="400"}
+
+<hr noshade/>
+
+::: {style="display: flex; justify-content: flex-end"}
+(<a href="#top">nach oben</a>)
+:::
+
+<div id="anchor-math"/>
+
+### Operatoren für Zahlen und einfache mathematische Funktionen
+
+Der Abschnitt *Math* der *Palette* enthält *Blockly*-Elemente zur Verwendung von Zahlen und einfachen mathematischen Funktionen.
+
+#### Ausdrücke
+
+-   Zahlen: Ganzzahlen / Dezimalzahlen
+
+![](img/screenshot-routing-block-numeric-value-example42.png){width="60"}
+
+![](img/screenshot-routing-block-numeric-value-example-0point5.png){width="50"}
+
+-   Symbole: Spezielle Symbole oder Konstanten:
+
+![](img/screenshot-blockly-math-symbol-01.png){width="100"}
+
+#### Basale Funktionen
+
+-   Addition, Subtraktion, Multiplikation, Division und Potenzfunktion von zwei Argumenten:
+
+![](img/screenshot-blockly-math-operation-01.png){width="120"}
+
+-   Schachtelung ist möglich, z.B.:
+
+![](img/screenshot-blockly-math-operation-example-01.png){width="180"}
+
+-   Division mit Rest:
+
+![](img/screenshot-blockly-math-function-division-with-remaining-01-DEU.png){width="160"}
+
+-   Ob eien Zahl gerade ist, kann mit diesem *Blockly*-Element geprüft werden:
+
+![](img/screenshot-blockly-math-function-is-even-01-DEU.png){width="120"}
+
+-   Mit dem folgenden *Blockly*-Element, kann eine Zahl auf einen Bereich begrenzt werden:
+
+![](img/screenshot-blockly-math-function-force-into-range-01-DEU.png){width="250"}
+
+#### Eingebaute Funktionen
+
+-   Trigonometrische Funktionen:
+
+![](img/screenshot-blockly-math-function-trigenomic-01.png){width="120"}
+
+-   Runden von Werten:
+
+![](img/screenshot-blockly-math-function-rounding-01-DEU.png){width="120"}
+
+-   Weitere Funktionen:
+
+![](img/screenshot-blockly-math-function-misc-01-DEU.png){width="150"}
+
+<font color="red">@SD / TODO: Was ist "-"?</font>
+
+#### Erzeugung von Zufallszahlen
+
+Für die Erstellung von Zufallszahlen stehen zwei *Blocky*-Elemente zur Verfügung:
+
+-   Ganzzahlen (in Wertebereich):
+
+![](img/screenshot-blockly-math-function-random-integer-01-DEU.png){width="300"}
+
+-   Zufallszahl zwischen $0$ und $1$:
+
+![](img/screenshot-blockly-math-function-random-number-zero-one-01-DEU.png){width="160"}
+
+#### Numerische Funktionen für <a href="#anchor-lists">Listen</a>
+
+Vordefinierte Funktionen für <a href="#anchor-lists">Listen</a> umfassen:
+
+![](img/screenshot-blockly-math-functions-for-lists-01-DEU.png){width="150"}
+
+Hinweise:
+
+-   Weitere Funktionen lassen sich, wenn benötigt, mit <a href="#anchor-loop-over-list">Schleifen für Listen</a> umsetzen.
+-   Bei der Verwendung der Funktionen ist darauf zu achten, dass die ausgewählte Funktion für die Datentypen der List anwendbar ist.
+
+<font color="red">@SD / TODO: Was passiert, wenn man die Funktionen auf Listen mit "Tasks" anwendet?</font>
+
+<hr noshade/>
+
+::: {style="display: flex; justify-content: flex-end"}
+(<a href="#top">nach oben</a>)
+:::
+
+<div id="anchor-text"/>
+
+### Operatoren für Text und einfache String-Operationen
+
+Der Abschnitt *Text* der *Palette* enthält *Blockly*-Elemente zur Verwendung Zeichenketten.
+
+#### Ausdrücke
+
+Zum erstellen von Text steht folgender Operator zur Verfügung:
+
+![](img/screenshot-blockly-text-string-01-ENG.png){width="150"}
+
+#### Verketten
+
+Verschiedene Operatoren können verwendet werden, um Text zusammenzufügen und zu Variablen zuzuweisen:
+
+-   Einen Text an eine Variable anfügen:
+
+![](img/screenshot-blockly-text-string-merge-example-01-DEU.png){width="300"}
+
+-   Texte (und Variablenwerte) verketten und an andere *Blockly*-Operatoren weitergeben:
+
+![](img/screenshot-blockly-text-create-text-using-variables-01-DEU.png){width="400"}
+
+-   Zusammengefügten Texte eine Variable zuweisen:
+
+![](img/screenshot-blockly-text-create-text-using-variables-02-DEU.png){width="400"}
+
+#### Textlänge
+
+Die Länge einer Zeichenkette kann mit folgendem *Blockly*-Operator ermittelt werden:
+
+![](img/screenshot-blockly-text-length-operator-empty-01-DEU.png){width="150"}
+
+#### Prüfung auf leeren String
+
+Leere String-Variablen können daran erkannt werden, dass die Anzahl der Zeichen $0$ ist.
+
+![](img/screenshot-blockly-text-is-empty-operator-empty-02-DEU.png){width="200"}
+
+Alternativ kann dafür auch der folgende *Blockly*-Operator verwendet werden:
+
+![](img/screenshot-blockly-text-is-empty-operator-empty-01-DEU.png){width="150"}
+
+#### Position in String finden
+
+Ein Operator, der *im Text* (der per Variable oder als Ausdruck übergeben wird) das *erste* oder *letzte* *Auftreten eines Begriffs* sucht, kann wie folgt verwendet werden:
+
+![](img/screenshot-blockly-text-find-operator-example-01-DEU.png){width="450"}
+
+Zurückgegben wird dabei die Position des *Begriffs* innerhalb der Zeichenkette (d.h. *im Text*).
+
+<font color="red">@SD / TODO: Richtig?</font>
+
+#### Teilzeichenketten bilden
+
+Der folgende Operator nimmt aus der übergebenen Zeichenkette *im Text* die ersten Buchstaben. Die Anzahl der Buchstaben wird dabei ebenfalls übergeben.
+
+-   Beispiel (hier wird, wenn die Option *nimm ersten* ausgewählt ist der Variable `MyStringVariable` der Text `ABC`, d.h. die ersten drei Buchstaben der Zeichenkette `ABCDEFG`) zugewiesen:
+
+![](img/screenshot-blockly-text-substring-operator-example-01-DEU.png){width="450"}
+
+<font color="red">@SD / TODO: Was ist der Unterschied zwischen 'nimm' und 'nimm ersten' bzw. 'nimm von hinten' und 'nimm letzten'?</font>
+
+Buchstaben aus einer Zeichenkette kann man auch mit folgendem Operator entnehmen, und bspw. einer Variablen zuweisen:
+
+-   Beispiel (hier können bspw. die Zeichen 3 bis 5 aus einer Zeichenkette entnommen werden):
+
+![](img/screenshot-blockly-text-substring2-operator-example-01-DEU.png){width="450"}
+
+<font color="red">@SD / TODO: Was ist 'nimm Teil ab erster'?</font>
+
+#### Texts Verändern
+
+Vorhandene Texte (entweder als Ausdrücke oder aus Variablen vom <a href="#anchor-variables-datatype">*Datentyp*</a> *String*) können durch die Anwendung von Operatoren verändert werden.
+
+-   Folgender Operator kann verwendet werden, um Text in Grossbuchstaben oder in Kleinbuchstaben umzuwandeln:
+
+![](img/screenshot-blockly-text-upper-lower-operator-example-01-DEU.png){width="300"}
+
+<font color="red">@SD / TODO: Was macht die Option 'Substantive'?</font>
+
+-   Führende, abschließende oder führende und abschließende Leerzeichen können durch folgenden Operator entfernt werden:
+
+![](img/screenshot-blockly-text-trim-operator-example-01-DEU.png){width="450"}
+
+<hr noshade/>
+
+::: {style="display: flex; justify-content: flex-end"}
+(<a href="#top">nach oben</a>)
+:::
+
+<div id="anchor-time"/>
+
+### Operatoren für Zeiten und einfache Zeit-Operationen
+
+Der Abschnitt *Date & Time* der *Palette* enthält *Blockly*-Elemente zur Verwendung Zeiten innerhalb von Ablaufdefinitionen.
+
+#### Festhalten von Zeitpunkten
+
+Variablen vom <a href="#anchor-variables-datatype">*Datentyp*</a> *DateTime* können Zeitstempel zugewiesen werden:
+
+<font color="red">@SD / TODO: </font>
+
+#### Ermitteln von Zeitdifferenzen
+
+Vollständiges Beispiel: Folgender *Blockly*-Code misst die Zeit für die Bearbeitung von Task 1 bis 4. Dafür wird zunächst der Startzeitpunkt fegesthalten, und nach der Bearbeitung der Aufgaben wird die Zeitdifferenz ermittelt und in Sekunden umgewandelt:
+
+![](img/screenshot-blockly-measure-time-difference-example-DEU.png){width="500"}
+
+#### Umrechen von Zeitmaßen
+
+![](img/screenshot-blockly-time-total-seconds-example-01-ENG.png){width="150"}
+
+<font color="red">@SD / TODO: Der "Total Sceonds" Operator hat früher (d.h. auf https://blockly.software-driven.de/) erlaubt, die Einheit mit anzugeben (also Milliseconds, Seconds, Minutes etc., vgl. Bild was von der alten Implementierung stammt). Gab es einen bestimmten Grund das zu entfernen oder kommt das noch?</font>
+
+<hr noshade/>
+
+::: {style="display: flex; justify-content: flex-end"}
+(<a href="#top">nach oben</a>)
+:::
+
+<div id="anchor-lists"/>
+
+### Operatoren für Listen
+
+Der Abschnitt *Lists* der *Palette* enthält *Blockly*-Elemente zur Erstellung und Verwendung von Listen.
+
+#### Liste erstellen
+
+Liste können aus besehenden Elementen erstellt werden:
+
+![](img/screenshot-create-list-block-lds2023-01-example-01-DEU.png){width="250"}
+
+Die Anzahl der Elemente des Operators *erzeuge Liste mit* kann per Drag-and-Drop konfiguriert werden, nachdem Zahnrad-Symbol angeklickt wurde:
+
+![](img/screenshot-configure-list-block-lds2023-01-example-01-DEU.png){width="300"}
+
+<font color="red">@SD / TODO: Aus welchen Elementen kann man Listen erstellen?</font>
+
+#### Operatoren für Listen
+
+Verbinden von Listen:
+
+Prüfung, ob eine Liste leer ist:
+
+Auswahl der distinkten Elemente einer Liste:
+
+#### Listen Sortieren
+
+<font color="red">@SD / TODO: Hier wäre vielleicht noch eine Option sinnvoll, Listen zufällig zu sortieren (als zu Mischen). Dann könnte man, in den Fällen wo man Items in einer beliebigen Reihenfolge braucht das direkt umsetzen.</font>
+
+<hr noshade/>
+
+::: {style="display: flex; justify-content: flex-end"}
+(<a href="#top">nach oben</a>)
+:::
+
+<div id="anchor-variables"/>
+
+### *Blockly*-Variablen
+
+Der Abschnitt *Variables* der *Palette* enthält *Blockly*-Elemente zur Erstellung und Verwendung von Variablen. Variablen können über die Schaltfläche *Typisierte Variable erstellen* angelegt werden:
+
+![](img/screenshot-variables-palette-create-variable-01-DEU.png){width="300"}
+
+*Blockly*-Variablen haben immer einen *Variablennamen* und einen <a href="#anchor-variables-datatype">*Datentyp*</a>:
+
+![](img/screenshot-variables-palette-create-variable-02-DEU.png){width="300"}
+
+<font color="red">@SD / TODO: Wie kann man auf Parameter zugreifen im Blockly? Einfach eine Variable anlegen, die einem Parameter entspricht? Oder sollen die Parameter künftig automatisch im Blockly-Editor angelegt werden? </font>
+
+<div id="anchor-variables-datatype"/>
+
+#### Einfache Datentypen und Wertzuweisungen
+
+Folgende basale Datentypen werden unterstützt:
+
+-   *Boolean*: Logische Wahrheitswerte und <a href="#anchor-logical-expressions">Logische Ausdrücke</a> (`wahr` oder `falsch`)
+
+![](img/screenshot-blockly-assignment-boolean-01-DEU.png){width="233"}
+
+-   *Number*: Datentyp für <a href="#anchor-math">Zahlenwerte</a> (mit und ohne Dezimalstelle)
+
+![](img/screenshot-blockly-assignment-numberic-01-ENG.png){width="208"}
+
+-   *String*: Textwerte bzw. Zeichenketten
+
+![](img/screenshot-blockly-assignment-string-01-ENG.png){width="300"}
+
+Für Zeiten werden folgende Datentypen bereitgestellt:
+
+-   *DateTime*: Datum und Uhrzeit
+
+![](img/screenshot-blockly-assignment-datetime-01-DEU.png){width="300"}
+
+<font color="red">@SD / TODO: Für Zeitspannen hätte ich gern auch Millisekunden, ggf. könnte man dann hier auch noch einen Setter mit MS haben wollen?</font>
+
+-   *TimeSpan*: Zeitspanne
+
+![](img/screenshot-blockly-assignment-timespan-01-DEU.png){width="200"}
+
+<font color="red">@SD / TODO: Für Zeitspannen weiß ich nicht, wie ich den Wert zuweisen soll (außer über die Differenz von zwei DateTimes.</font>
+
+#### Datentypen für mehrere Werte
+
+Datentypen für mehrere Elemente:
+
+-   *Array*: Datentyp für <a href="#anchor-lists">Listen</a>
+
+![](img/screenshot-blockly-assignment-array-example-01-DEU.png){width="300"}
+
+-   *Dictionary*:
+
+<font color="red">@SD / TODO: Hier braucht es noch ein Beispiel / mehr Erklärung.</font>
+
+-   *KeyTypedValuePairs*:
+
+<font color="red">@SD / TODO: Hier braucht es noch ein Beispiel / mehr Erklärung.</font>
+
+<font color="red">@SD / TODO: Welche weitere Erklärung braucht es für ItemDefinition, SessionEvent, ItemScore, Item(s)... ?</font>
+
+#### Variablenwerte Verwenden
+
+Für die Verwendung von Variablenwerten, können *Blockly*-Elemente mit *Eingängen* folgende Komponente aufnehmen:
+
+![](img/screenshot-blockly-variable-example-dropdownlist-01-DEU.png){width="300"}
+
+Welche Variable verwendet wird, kann dabei ausgewählt werden. Für defnierte Variablen findet sich dafür jeweils auch ein *Blockly*-Element im Abschnitt *Variables* der *Palette*:
+
+![](img/screenshot-blockly-palette-list-of-variables-01-DEU.png){width="400"}
+
+In der Palette findet sich auch ein *Blockly*-Element vom Typ *setze ... auf*. In diesem kann ebenfalls ausgewählt werden, den Wert welcher Variable es setzt:
+
+![](img/screenshot-blockly-set-list-of-variables-01-DEU.png){width="300"}
+
+<hr noshade/>
+
+::: {style="display: flex; justify-content: flex-end"}
+(<a href="#top">nach oben</a>)
+:::
+
+<div id="anchor-functions"/>
+
+### *Blockly*-Funktionen
+
+Der Abschnitt *Functions* der *Palette* enthält *Blockly*-Elemente zur Verwendung von Funktionen innerhalb von Ablaufdefinitionen. Funktionen kombinieren *Blocky*-Code, so dass dieser nur einmal definiert aber mehrfach verwendet werden kann.
+
+#### Definieren von Funktionen
+
+Es können zwei verschiede Formen von Funktionen definiert werden.
+
+-   Funktionen ohne Rückgabewert:
+
+![](img/screenshot-blockly-function-without-return-value-01-DEU.png){width="300"}
+
+Funktionen ohne Rückgabewert können, damit sie augerufen werden, im Ablauf einfach mit vorherigen und nachfolgenden *Blockly*-Elementen verbunden werden (d.h. sie haben eine Verbindung nach oben und unten):
+
+![](img/screenshot-blockly-function-call-without-return-value-01-DEU.png){width="250"}
+
+-   Funktionen mit Rückgabewert:
+
+![](img/screenshot-blockly-function-with-return-value-01-DEU.png){width="300"}
+
+Funktionen mit Rückgabewert können in einem Zuweisungs-Block aufgerufen werden (d.h. sie haben eine Verbindung nach links):
+
+![](img/screenshot-blockly-function-call-with-return-value-01-DEU.png){width="250"}
+
+Zu welchem Typ eine Zuweisung sinnvoll ist, hängt von dem Typ des Rückgabewerts ab.
+
+#### Definieren von Rückgabewerten von Funktionen
+
+*Rückgabewerte* können für Funktionen mit Rückgabewert definiert werden. Der Rückgabewert kann direkt an die Funktionsdefinition neben *gib zurück* angefügt werden:
+
+![](img/screenshot-blockly-function-definition-with-return-value-string-example-01-DEU.png){width="450"}
+
+Ergänzend stehen die folgenden zwei *Blockly*-Elemente zur Verfügung, die nur innerhalb einer Funktiondefintion (mit Rückgabewert) verwendet werden können:
+
+-   Der Operator *gib zurück* erlaubt die Rückgabe eines Wertes. Danach können innerhalb der Funktion keine weiteren Blockly-Element in den Ablauf platziert werden (d.h. der *gib zurück*-Operator hat keine Verbindung nach unten):
+
+![](img/screenshot-blockly-function-return-operator-example-01-DEU.png){width="100"}
+
+-   Der Operator *falls gib zurück* Operator gibt eine Wert nur dann zurück, wenn eine <a href="#anchor-conditions">Bedingungen</a> erfüllt ist. Ist die Bedingung erfüllt, endet die Abarbeitung des Ablaufs in der Funktion, ist die Bedingung nicht erfüllt, wird die Bearbeitung fortgesetzt (d.h. der *falls gib zurück*-Operator hat eine Verbindung nach unten):
+
+![](img/screenshot-blockly-function-return-if-operator-example-01-DEU.png){width="150"}
+
+-   Der *falls gib zurück* Operator ist also identisch mit folgender Kombination von Operatoren:
+
+![](img/screenshot-blockly-function-return-if-operator-equivalent-example-01-DEU.png){width="150"}
+
+-   Beide Operatoren (*falls gibt zurück* und *gib zurück*) können nicht außerhalb von Funktionen verwendet werden:
+
+![](img/screenshot-blockly-function-return-operator-outside-functions-example-01-DEU.png){width="150"}
+
+-   Die beide Operatoren (*falls gibt zurück* und *gib zurück*) können innerhalb von Funktionen ohne Rückgabewert verwendet werden, um die Abarbeitung von Funktionen zu beenden (aber nicht zum Rückgeben von Werten):
+
+![](img/screenshot-blockly-function-return-operator-in-functions-without-return-value-example-01-DEU.png){width="300"}
+
+Beispiel:
+
+-   Die folgende Funktion gibt den Wert der Variablen `MyStringVariable` (*Any value 1*) in 50% der Fälle zurück (d.h. wenn eine erste gezogene Zufallsvariable größer $0.5$ ist). In den anderen 50% der Fälle, wird eine weitere Zufallsvariable gezogen, und wenn diese größer $0.5$ ist, dann wird der Text *Any value 2* zurückgegeben. Ist auch dies nicht der Fall, dann wird der Text *Default* zurückgebeben:
+
+![](img/screenshot-blockly-function-return-operator-real-life-example-01-DEU.png){width="500"}
+
+Rückgabewerte sind typisiert. Die Ablaufsteuerung unterstützt auch Funktionen, die ...
+
+-   ... einzelne *Tasks* zurückgeben:
+
+![](img/screenshot-blockly-function-example-return-single-item-01-DEU.png){width="400"}
+
+-   ... Listen von *Tasks* zurückgeben:
+
+![](img/screenshot-blockly-function-example-return-list-of-item-01-DEU.png){width="450"}
+
+#### Definieren von Aufrufparametern von Funktionen
+
+Funktionen können auch Parameter verwenden, die beim Aufruf der Funktion zu übergeben sind (*Aufrufparametern*). Die Defintion von Aufrufparametern ist nach einem Klick auf das kleine Zahnrad-Symbol eines Funktions-Blocks möglich:
+
+![](img/screenshot-blockly-function-parameter-definition-example-DEU.png){width="350"}
+
+Passend zur Definition der Parameter, erfolgt dann der Aufruf der Funktion durch Übergabe:
+
+-   Definition eines Parameters
+
+![](img/screenshot-blockly-function-parameter-definition-detail-example-01-DEU.png){width="200"}
+
+-   Aufruf der Funktion mit Angabe von Wert:
+
+![](img/screenshot-blockly-function-with-parameter-call-detail-example-01-DEU.png){width="300"}
+
+Beispiel:
+
+-   Das folgende Beispiel zeigt eine Funktion mit zwei Parameter, deren Verwendung innerhalb der Funktion am Beispiel von Bedingungen und den Aufruf der Funktion mit festen Werten:
+
+![](img/screenshot-blockly-function-with-parameters-complete-example-01-DEU.png){width="500"}
+
+-   Alternativ kann die Funktion natürlich auch mit Variablen aufgerufen werden:
+
+![](img/screenshot-blockly-function-with-parameters-complete-example-02-DEU.png){width="300"}
+
+<hr noshade/>
+
+::: {style="display: flex; justify-content: flex-end"}
+(<a href="#top">nach oben</a>)
+:::
+
+<div id="anchor-item-score"/>
+
+### Nutzung von Itemergebnissen in der Ablaufsteuerung
+
+<hr noshade/>
+
+::: {style="display: flex; justify-content: flex-end"}
+(<a href="#top">nach oben</a>)
+:::
+
+<div id="anchor-missing-coding"/>
+
+### *Blockly*-Operatoren zum Kodieren fehlender Werte
+
+<hr noshade/>
+
+::: {style="display: flex; justify-content: flex-end"}
+(<a href="#top">nach oben</a>)
+:::
+
+<div id="anchor-write-data"/>
+
+### *Blockly*-Operatoren zum schreiben von Daten
+
+#### Log-Daten
+
+Folgender Operator kann genutzt werden, um Informationen direkt in die Log-Daten zu speichern:
+
+![](img/screenshot-write-result-log-element-with-example-01-ENG.png){width="500"}
+
+<font color="red">@SD / TODO: Könnte hier noch ein Operator fehlen, um etwas mit einer bestimmten Struktur als Log-Event gespeichert zu werten (EventName/Typ, Event-spezifische Attribute)?</font>
+
+#### Ergebnis-Daten
+
+<font color="red">@SD / TODO: Könnte hier noch ein Operator fehlen, um etwas in die Ergebnisdaten zu speichern?</font>
+
+#### Monitoring-Daten
+
+<font color="red">@SD / TODO: Wie kann man die Monitoring-Daten füllen?</font>
+
+<hr noshade/>
+
+::: {style="display: flex; justify-content: flex-end"}
+(<a href="#top">nach oben</a>)
+:::
+
+<div id="anchor-comments"/>
+
+## Kommentieren von *Blockly*-Code
+
+Der *IRTLib Editor* unterstützt zwei verschiedene Optionen zur Kommentierung von *Blockl*y-Code.
+
+### Kommentare als *Blockly*-Elemente
+
+Kommentare, die im Ablauf dauerhaft sichtbar sein sollen, können über die Plaette im Abschnitt *Development* hinzugefügt werden:
+
+![](img/screenshot-routing-palette-comment-example-ENG.png){width="200"}
+
+Diese Kommentare können wie Blocky-Operatoren verschoben werden und zeigen einzeiligen Kommentartext.
+
+![](img/screenshot-routing-block-comment-example-ENG.png){width="300"}
+
+### Ausführliche Kommentare an *Blockly*-Elementen
+
+Für ausführlichere Kommentare kann über das Kontextmenü jeder Block mit einem Kommentar hinzugefügt (und wenn vorhanden gelöscht) werden:
+
+![](img/screenshot-routing-context-menu-comment-example-DEU.png){width="200"}
+
+Diese Kommentare können mehrere Zeilen umfassen und werden dargestellt, wenn auf das kleine ?-icon eines Blocks geklickt wurde.
+
+![](img/screenshot-routing-comment-example-ENG.png){width="200"}
+
+<hr noshade/>
+
+::: {style="display: flex; justify-content: flex-end"}
+(<a href="#top">nach oben</a>)
+:::
+
+<div id="anchor-presentation"/>
+
+## Darstellung von *Blockly*-Code
+
+<div id="anchor-folding"/>
+
+### Entfalten / Zusammenfalten
+
+Große und komplexe Abläufe können im *Blockly*-Editor unter Umständen unübersichtlich werden. Um für eine Betrachtung nicht benötigte *Blockly*-Elemente auszublenden, ohne die Funktion des Ablaufdefinition zu veränern, können Blöcke *zusammengefaltet* werden:
+
+Das wird in folgendem Beispiel illustriert:
+
+-   Entfaltete (d.h. vollständige) Darstellung des markierten Blocks:
+
+![](img/screenshot-blockly-folding-unfolding-example-01-DEU.png){width="250"}
+
+-   Option zum *zusammenfalten* des Blocks im <a href="#anchor-context-menu">Kontextmenü</a>:
+
+![](img/screenshot-blockly-folding-unfolding-example-02-DEU.png){width="250"}
+
+-   *Zusammengefaltete* Darstellung des Blocks innerhalb der Ablaufdefinition:
+
+![](img/screenshot-blockly-folding-unfolding-example-03-DEU.png){width="250"}
+
+-   Option zum *entfalten* des Blocks im <a href="#anchor-context-menu">Kontextmenü</a>:
+
+![](img/screenshot-blockly-folding-unfolding-example-04-DEU.png){width="250"}
+
+Das *zusammenfalten* / *entfalten* von *Blockly*-Elementen ändert nichts an der Funktion einer Ablaufdefinition und dient nur der übersichtlicheren Anordnung von komplexen Ablaufdefinitionen.
+
+<div id="anchor-deactivating"/>
+
+### Deaktivieren / Aktivieren
+
+Der *Blockly*-Editer bietet die Option, *Blockly*-Element statt sie zu <a href="#anchor-delete">Löschen</a> nur zu deaktivieren. Deaktivierte *Blockly*-Elemente bleiben in der Ablaufdefinition enthalten, werden aber nicht ausgeführt.
+
+In folgendem Beispiel ist der Block zum <a href="#anchor-show-item">Anzeigen</a> des Tasks 3 deaktiviert, d.h. es werden nur Task 1, 2 und 4 angezeigt:
+
+![](img/screenshot-blockly-example-deactivated-blocks-01-ENG.png){width="250"}
+
+<font color="red">@SD / TODO: Ist das so implementiert?</font>
+
+Aktivieren bzw. Deaktivieren von *Blockly*-Elementen erfolgt über das <a href="#anchor-context-menu">Kontextmenü</a>:
+
+![](img/screenshot-blockly-example-activate-deactivated-blocks-01-ENG.png){width="250"}
+
+<div id="anchor-internal-external"/>
+
+### Internal / External
+
+Einige *Blockly*-Elemente mit *Eingängen* (d.h. Stellen, an denen man weitere Blöcke verbinde kann) erlauben zwischen zwei Darstellungsformen zu wechseln.
+
+-   Internal: Die *Eingänge* sind innerhalb der Blöcke angeordnet.
+
+![](img/screenshot-blockly-element-logic-combine-internal-01-DEU.png){width="120"}
+
+-   Exnternal: Die *Eingänge* sind an der Seite der Blöcke angeordnet.
+
+![](img/screenshot-blockly-element-logic-combine-external-01-DEU.png){width="70"}
+
+Beide Darstellungsformen sind bzgl. der Funktionalität äquivalent.
+
+<div id="anchor-tidy-up"/>
+
+### Aufräumen
+
+Im Kontextmenü des *Blockly*-Editors, welches durch Klick in einen leeren Bereich geöffnet werden kann, ist die Funktion *Bausteine aufräumen* enthalten:
+
+![](img/screenshot-context-menu-blockly-editor-example01-DEU.png){width="200"}
+
+Durch Aufruf von *Bausteine aufäumen* werden alle *Blockly*-Elemente im *Blockly*-Editor vertikal untereinander ausgerichtet.
+
+<hr noshade/>
+
+::: {style="display: flex; justify-content: flex-end"}
+(<a href="#top">nach oben</a>)
+:::
+
+<div id="anchor-adaptive-testdesigns"/>
+
+## Umsetzung einfacher adaptiver Testdesigns in *Blockly*
+
+### Bedingter Abbruch
+
+Eine Liste von Tasks soll nur solange administriert werden, bis drei mal in Folge eine bestimmte Antwort gegeben wurde:
+
+![](img/screenshot-blockly-conditional-skip-example-01-DEU.png){width="700"}
+
+### Multi-Stage Testing (MST)
+
+#### Definition von Stufen
+
+Zusammenstellung von Stufen (*Stages*) aus CBA ItemBuilder *Tasks*:
+
+-   Definition von <a href="#anchor-lists">Listen</a> für einzelnen Stufen, jeweils aus konkreten Tasks:
+
+![](img/screenshot-mst-example-stage-definition-as-list-01-DEU.png){width="400"}
+
+-   Verwendung von <a href="#anchor-functions">Funktionen</a> für einzelne Stufen, jeweils aus konkreten Tasks:
+
+#### Antworten Sammeln
+
+Das Administrieren der *Tasks* einer Stufe erfolgt dann passend zur Definition der Stages.
+
+-   <a href="#anchor-lists">Listen</a> für einzelnen Stufen werden vorgelegt durch:
+
+![](img/screenshot-mst-example-stage-definition-as-list-02-DEU.png){width="200"}
+
+-   <a href="#anchor-functions">Funktionen</a> für einzelne Stufen werden vorgelegt durch:
+
+#### Fähigkeit Ermitteln
+
+Rohscore (z.B. Anzahl richtige Antworten):
+
+-   ...
+
+<font color="red">@SD / TODO: Wie kommt man an die Ergebnisse???</font>
+
+IRT-basierte Fähigkeitsschätzung aus Antworten erfordert zusätzlich die Definition eines <a href="#anchor-itempools-and-IRT">ItemPools</a>.
+
+#### Stufen Verzweigen
+
+<hr noshade/>
+
+::: {style="display: flex; justify-content: flex-end"}
+(<a href="#top">nach oben</a>)
+:::
+
+<div id="anchor-itempools-and-IRT"/>
+
+## Adaptives Testen mit IRT und ItemPools (Under Development)
+
+### On-the-fly MST
+
+### Computerized Adaptive Testing (CAT)
+
+### Mehrdimensionales Adaptives Teste (MAT)
+
+<hr noshade/>
+
+::: {style="display: flex; justify-content: flex-end"}
+(<a href="#top">nach oben</a>)
+:::
+
+<div id="anchor-ai-use"/>
+
+## Nutzung von API-Funktionen in *Blockly* (Under Development)
+
+### Kodieren offener Antworten
+
+<font color="red">@SD / TODO: Hier stelle ich zwei Operatoren vor der wie folgt funktionieren:
+
+-   Modus
+    -   Synchron (Es wird gewartet, das Ergebnis kann dann sofort verwendet werden)
+    -   Asynchron (Es wird nicht gewartet, das Ergebnis wird - wenn vorhanden - nach dem nächsten ShowItem(s) berücksichtigt)
+-   Name der zu verwendenden API
+    -   je Item kann das eine andere sein
+    -   die API muss im Editor/Player registriert sein
+-   Input
+    -   Name der API
+    -   Blockly-Variable mit Ergebnistext
+    -   Timeout (z.B. 5 Sec.)
+    -   Default-Wert bei Timeout
+
+</font>
+
+<hr noshade/>
+
+::: {style="display: flex; justify-content: flex-end"}
+(<a href="#top">nach oben</a>)
+:::

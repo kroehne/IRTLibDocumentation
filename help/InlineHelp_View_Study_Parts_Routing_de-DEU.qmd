@@ -1,0 +1,10 @@
+---
+title: "IRTlib Editor: Routing zwischen Erhebungsteilen"
+format:
+  html:
+    embed-resources: true
+    minimal: true 
+    toc: false
+---
+
+## Routing zwischen Erhebungsteilen

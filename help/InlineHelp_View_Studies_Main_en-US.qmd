@@ -1,0 +1,52 @@
+---
+title: "IRTlib Editor: Study overview"
+format:
+  html:
+    embed-resources: true
+    minimal: true 
+    toc: false
+---
+
+## Studies
+
+The *IRTLib Editor* is used to create configurations for studies, which can then be used in an *IRTLib Player* to carry out computer-based assessments.
+
+### How do I get started?
+
+To start configuring a study, click on the plus icon at the bottom right:
+
+![](img/icon-plus.png){fig-align="left"}
+
+Then enter a *name* and optionally a *description* in the **Create new study** dialog.
+
+Make sure that only letters (upper and lower case), numbers and a `_` are allowed for the *name*.
+
+![](img/screenshot-new-study-empty-DEU.png){width="400" fig-align="left"}
+
+Then click on *Save*.
+
+If required, you can also assign an image to a study using the following icon. This image is used in the *IRTLib Editor* for this study:
+
+![](img/icon-study-image.png){fig-align="left"}
+
+### What's next?
+
+Created studies are displayed as tiles in the study overview:
+
+![](img/screenshot-new-study-card.DEU.png){fig-align="left"}
+
+To continue with the creation and configuration of a study, click on the small edit icon:
+
+![](img/icon-edit.png){fig-align="left"}
+
+## Further functions and notes
+
+- **Delete study**: You can also delete studies using the recycle bin icon. The deletion of studies cannot be undone:
+
+![](img/icon-delete.png){fig-align="left"}
+
+- **Change language**: The menu item *Settings* takes you to the item *General settings*, where you can change the language of the *IRTLib Editor*.
+
+![](img/icon-settings-DEU.png){fig-align="left"}
+
+This item also gives you access to the *CBA ItemBuilder Runtimes* available in the *IRTLib Editor* (support for the use of *CBA ItemBuilder* content created with different versions of the program).

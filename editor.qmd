@@ -1,0 +1,21 @@
+---
+title: "IRTlib Editor"
+format:
+  html:
+    embed-resources: true
+---
+
+::: {.content-visible when-profile="german"}
+Editor:
+
+* [Installation](installation.html)
+
+:::
+
+::: {.content-visible when-profile="english"}
+Editor:
+
+* [Installation](installation.html)
+
+
+:::

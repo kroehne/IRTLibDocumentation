@@ -1,0 +1,73 @@
+---
+format:
+  html:
+    embed-resources: true
+---
+
+::: {.content-visible when-profile="german"}
+# Github -- Mehr
+
+Die IRTlib-Software ist freie *Forschungssoftware* im Sinne von *Open Science*. Sie kann für nicht-kommerzielle Anwendungen verwendet werden. 
+
+:::
+
+::: {.content-visible when-profile="english"}
+# Github -- More
+
+The IRTlib software is free *research software* in the sense of *open science*. It can be used for non-commercial applications.
+
+:::
+
+## IRTLib Software
+
+### Download
+
+::: {.content-visible when-profile="german"}
+* Aktuelle Versionen der IRTlib Software (Windows und Docker):  
+:::
+
+::: {.content-visible when-profile="english"}
+* Current versions of the IRTlib Software (Windows und Docker): 
+:::
+
+
+## CBA ItemBuilder
+
+::: {.content-visible when-profile="german"}
+Die IRTlib Software erlaubt die Administration von Assessmentinhalten, die mit dem CBA ItemBuilder erstellt wurden. 
+:::
+
+::: {.content-visible when-profile="english"}
+The IRTlib software allows the administration of assessment content created with the CBA ItemBuilder. 
+:::
+
+### Download
+
+::: {.content-visible when-profile="german"}
+* Aktuelle Versionen des CBA ItemBuilder (Windows): [https://www.itembuilder.de/software](https://www.itembuilder.de/software)
+:::
+
+::: {.content-visible when-profile="english"}
+* Current versions of the CBA ItemBuilder (Windows): [https://www.itembuilder.de/software](https://www.itembuilder.de/software)
+:::
+
+
+### Source Code 
+
+* (In preparation)
+
+::: {.content-visible when-profile="german"}
+### Dokumentation 
+
+* Online-Dokumentation (interaktiv): [https://cba.itembuilder.de](https://cba.itembuilder.de)  
+‚* Source: (In preparation)
+
+:::
+
+::: {.content-visible when-profile="english"}
+### Documentation 
+
+
+:::
+
+

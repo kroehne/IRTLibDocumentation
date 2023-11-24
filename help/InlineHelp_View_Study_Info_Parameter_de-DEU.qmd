@@ -1,0 +1,10 @@
+---
+title: "IRTlib Editor: Definition von Parametern"
+format:
+  html:
+    embed-resources: true
+    minimal: true 
+    toc: false
+---
+
+## Definition von Parametern

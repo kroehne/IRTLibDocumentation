@@ -1,0 +1,14 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: en    
+---
+
+::: {.content-visible when-profile="german"}
+*Es ist noch keine Übersetzung vorhanden für diesen Text.*
+:::
+
+# Data Collection 
+
+## Post-Processing

@@ -1,0 +1,10 @@
+---
+title: "IRTlib Editor: Konfiguration der Anmeldung"
+format:
+  html:
+    embed-resources: true
+    minimal: true 
+    toc: false
+---
+
+## Konfiguration der Anmeldung

@@ -1,0 +1,89 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: en    
+---
+
+::: {.content-visible when-profile="german"}
+
+# Vorbereitung
+
+## Studienverwaltung
+
+Nach dem Start des *IRTlib-Editors* wird die Ansicht *Studien* angezeigt. In dieser Ansicht ist der erste Schritt zur Vorbereitung einer neuen Konfiguration das **Hinzufügen einer neuen Studie**:
+
+![](img/screenshot-studies-add-study-01-DEU.png)
+
+Die erstellten Studien erscheinen als Karten in der Ansicht *Studien*. Beachten Sie, dass die Reihenfolge, in der die Studien in der *Studienansicht* angezeigt werden, keine Rolle spielt. Weitere Konfigurationen einer bestimmten Studie, einschließlich Versionierung und Veröffentlichung, werden innerhalb von Studien verwaltet (d.h. nach dem Öffnen einer Studie zur Bearbeitung durch Klicken auf das Bearbeitungssymbol am unteren rechten Rand der Karte).
+
+::: {.callout-tip title="Embedded Help"}
+
+```{=html}
+<iframe width="100%" height="600" src="../help/InlineHelp_View_Studies_Main_de-DEU.html"></iframe>
+```
+
+:::
+
+
+## Grundlegende Konfigurationen
+
+Erstellte Studien, die im *IRTlib Editor* in der Ansicht *Studien* angezeigt werden, können zur Bearbeitung geöffnet werden.
+
+::: {.callout-tip title="Embedded Help"}
+
+```{=html}
+<iframe width="100%" height="600" src="../help/InlineHelp_View_Study_Info_Overview_de-DEU.html"></iframe>
+```
+
+:::
+
+## Konfiguration von Parametern
+
+::: {.callout-tip title="Embedded Help"}
+
+```{=html}
+<iframe width="100%" height="600" src="../help/InlineHelp_View_Study_Info_Parameter_de-DEU.html"></iframe>
+```
+
+::: 
+
+
+::: {.content-visible when-profile="english"}
+
+# Preparation
+
+## Study Management
+
+After starting the *IRTlib Editor*, the view *Studies* is displayed. In this view, the first step for preparing a new configuration is to **add a new study**:
+
+
+![](img/screenshot-studies-add-study-01-DEU.png)
+
+Created studies appear as cards in the view *Studies*. Note that the order in which studies are displayed in the *Study View* is unimportant. Further configurations of a particular study, including versioning and publishing, are managed within studies (i.e., after opening a study for editing by clicking on the edit icon on the bottom right border of the card).
+
+::: {.callout-tip title="Embedded Help"}
+
+```{=html}
+<iframe width="100%" height="600" src="../help/InlineHelp_View_Studies_Main_en-US.html"></iframe>
+```
+
+:::
+
+
+## Basic Configurations
+
+Created studies, shown in the *IRTlib Editor* in the view *Studies*, can be opened for editing.
+
+::: {.callout-tip title="Embedded Help"}
+
+```{=html}
+<iframe width="780" height="600" src="../help/InlineHelp_View_Study_Info_Overview_en-US.html"></iframe>
+```
+
+:::
+
+
+::: 
+
+

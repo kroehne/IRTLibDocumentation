@@ -1,0 +1,10 @@
+---
+title: "IRTlib Editor: Nachspann-Item(s)"
+format:
+  html:
+    embed-resources: true
+    minimal: true 
+    toc: false
+---
+
+## Nachspann-Item(s)

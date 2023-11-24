@@ -1,0 +1,10 @@
+---
+title: "IRTlib Editor: Einstellungen zum Erhebungsteil"
+format:
+  html:
+    embed-resources: true
+    minimal: true 
+    toc: false
+---
+
+## Einstellungen zum Erhebungsteil

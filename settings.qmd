@@ -1,0 +1,75 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: en    
+---
+
+::: {.content-visible when-profile="german"}
+# Einstellungen des *IRTlib Editors*
+
+Der *IRTlib Editor* hat eine kleine Anzahl von Einstellungen. Die Sprache kann auf Deutsch oder Englisch eingestellt werden.
+
+## Übersicht
+
+Die *IRTlib Software* ist im Augenblick noch unter Entwicklung. Informationen über die laufende Version (und für *Preview*-Versionen über den Build-Hash) können im Abschnitt *Über das Programm* abgerufen werden. 
+
+::: {.callout-tip title="Eingebettete Programmhilfe"}
+
+```{=html}
+<iframe width="780" height="600" src="../help/InlineHelp_View_Settings_Main_de-DEU.html"></iframe>
+```
+
+:::
+
+## Laufzeitumgebungen 
+
+Die *IRTlib Software* kann mit CBA ItemBuilder Aufgaben verschiedener CBA ItemBuilder Versionen verwendet werden. Die erforderliche **Runtime** (d.h. die Verbindung zwischen den CBA ItemBuilder-Aufgaben und der *IRTlib Software*) ist Teil der Studienkonfiguration, damit der *IRTlib Player* sicher weiß, wie er CBA ItemBuilder-Aufgaben einer bestimmten Version verwenden kann.
+
+::: {.callout-tip title="Eingebettete Programmhilfe"}
+
+```{=html}
+<iframe width="780" height="600" src="../help/InlineHelp_View_Settings_Runtimes_de-DEU.html"></iframe>
+```
+
+:::
+
+:::
+
+::: {.content-visible when-profile="english"}
+# Settings for *IRTlib Editor*
+
+The *IRTlib Editor* has a small number of settings.The language can be set to German or English.
+
+## Overview
+
+The *IRTlib software* is currently still under development. Information about the current version (and for *Preview* versions about the build hash) can be found in the section *About the Program*. 
+
+::: {.callout-tip title="Embedded Help"}
+
+```{=html}
+<iframe width="780" height="600" src="../help/InlineHelp_View_Settings_Main_en-US.html"></iframe>
+```
+
+:::
+
+
+## Runtimes 
+
+The *IRTlib Software* can be used with CBA ItemBuilder tasks of different CBA ItemBuilder versions. The required **Runtime** (i.e., the connection between the CBA ItemBuilder tasks and the *IRTlib Software*) is part of the study configuration so that the *IRTlib Player* knows for sure how to use CBA ItemBuilder tasks of a particular version.
+
+::: {.callout-tip title="Embedded Help"}
+
+```{=html}
+<iframe width="780" height="600" src="../help/InlineHelp_View_Settings_Runtimes_en-US.html"></iframe>
+```
+
+:::
+
+:::
+
+
+
+
+
+

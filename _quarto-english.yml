@@ -1,0 +1,59 @@
+project:
+  type: website
+  output-dir: ./_site/en
+
+website:
+  title: "IRTlib Documentation"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home 
+      - href: installation.qmd
+        text: Download
+      - text: Preparation
+        menu:
+          - text: Overview
+            href: preparation-overview.qmd
+          - text: Studies
+            href: preparation-studies.qmd
+          - text: Test-Parts
+            href: preparation-parts.qmd  
+      - text: Data Collection
+        menu:
+          - text: Overview
+            href: datacollectionoverviewv.qmd
+          - text: Publish & Export
+            href: publish-and-export.qmd
+          - text: Integration & Deployment
+            href: player-integration.qmd
+          - text: Data Postprocessing 
+            href: postprocessing.qmd
+      - href: settings.qmd
+        text: Settings
+    right:
+      - icon: github
+        menu:
+          - text: IRTLib Releases
+            url:  https://github.com/DIPFtba/IRTlibDeploymentSoftware
+          - text: IRTLib Documentation
+            url:  https://github.com/kroehne/IRTLibDocumentation  
+          - text: (more)
+            url:  github.qmd       
+      - href: ../de/index.html
+        text: Deutsch
+      - href: ../en/index.html
+        text: English
+  page-footer: 
+    left: "Copyright 2023-2024, Ulf Kroehne" 
+    right: 
+      - href: https://tba.dipf.de/en/startseite?set_language=en
+        text: Centre for Technology-Based Assessment (TBA Centre), DIPF | Leibniz Institute for Research and Information in Education
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+lang: en
+
+editor: visual

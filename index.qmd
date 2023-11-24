@@ -1,0 +1,45 @@
+---
+format:
+  html:
+    embed-resources: true
+---
+
+::: {.content-visible when-profile="german"}
+
+# IRTlib Dokumentation
+
+IRTlib ist eine Software zur Auslieferung computerbasierter Tests. Sie besteht aus zwei Komponenten:
+
+-   IRTLib Editor: Eine Software für Test-Autoren, welche verwendet wird um *Studien* zu konfigurieren.
+-   IRTlib Player: Eine Software zur *Datenerhebung*, mit welcher Zielpersonen Aufgaben bearbeiten, die für eine *Studie* konfiguriert sind.
+
+Die Software enthält ausführliche Dokumentation direkt im Programm, die auf dieser Seite zugänglich ist.
+
+Die Software kann direkt von [GitHub](https://github.com/DIPFtba/IRTlibDeploymentSoftware) bezogen werden. 
+
+Hinweise zur Installation und Verwendung beider Programme finden sich unter [Download & Installation](installation.qmd)
+
+:::
+
+::: {.content-visible when-profile="english"}
+
+# IRTlib Documentation
+
+IRTlib is a software for delivering computer-based tests. It consists of two components:
+
+- IRTLib Editor: A software for test authors, which is used to configure *studies*.
+- IRTlib Player: A *data collection* software used by test-takers to complete tasks configured for a *study*.
+
+The software contains detailed documentation directly in the program, which is available on this page.
+
+The software can be obtained directly from [GitHub](https://github.com/DIPFtba/IRTlibDeploymentSoftware). 
+
+Instructions for installing and using both programs can be found at [Download & Installation](installation.qmd)
+
+:::
+
+::: {.content-visible when-profile="language"}
+Please choose / bitte auswählen:
+
+[Deutsch](de/index.html) / [English](en/index.html)
+:::

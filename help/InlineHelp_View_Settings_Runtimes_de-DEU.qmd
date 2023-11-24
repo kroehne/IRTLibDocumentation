@@ -1,0 +1,63 @@
+---
+title: "IRTlib Editor: Laufzeitumgebungen"
+format:
+  html:
+    embed-resources: true
+    minimal: true 
+    toc: false
+---
+
+## Laufzeitumgebungen
+
+Um mit dem IRTLib Editor Studien zu konfigurieren, welche CBA ItemBuilder Inhalte verwenden, ist je Version die passende Laufzeitumgebung (*Runtime*) notwendig. Aktuelle getestete Version der CBA ItemBuilder Runtime sind bereits im Editor hinterlegt, in diesem Bereich können jedoch auch Runtimes für andere Versionen des CBA ItemBuilders oder aktualisierte bzw. korrigierte Runtimes in den Editor importiert werden.
+
+
+### CBA ItemBuilder Version prüfen
+
+Es ist wichtig zu  wissen, welche Version des CBA ItemBuilders für die Erstellung der Items (d.h. der CBA ItemBuilder-Projektdateien) verwendet wurde. Im Zweifelsfall kann man diese Information z.B. im *About Dialog* des CBA ItemBuilders finden:
+
+* Schritt 1: Öffnen Sie den "Apout"-Dialog über das "Help"-Menü
+
+![](img/screenshot-ib-version-01.png){width="300"}
+
+* Schritt 2: Suchen Sie die Versionsnummer im Dialog (hier `9.9.0`)
+
+![](img/screenshot-ib-version-02.png){width="300"} 
+
+Die Versionsnummer muss in den *Einstellungen* des *IRTlib-Editors* im Abschnitt *Laufzeiten* als eine der Karten aufgeführt sein:
+
+![](img/screenshot-ib-version-03.png){width="300"} 
+
+### Laufzeitdateien importieren
+
+Wenn die entsprechende Runtime nicht bereits im Editor enthalten ist, kann eine neue/zusätzliche *Runtime* importiert werden. Studienkonfigurationen, die mit dem *IRTlib-Editor* erstellt/bearbeitet werden, können mehrere *Runtimes* für verschiedene Versionen enthalten.
+
+* Schritt 1: Um eine Runtime zu integrieren, werden eine JavaScript- und eine CSS-Datei benötigt. Diese Dateien können hier heruntergeladen werden:
+
+<a href="https://cba.itembuilder.de/appendix-tables.html#previous-versions" target="_new">https://cba.itembuilder.de/appendix-tables.html#previous-versions</a>
+
+* Schritt 2: Entpacken Sie die heruntergeladene *Runtime*, die verwendet werden soll. 
+
+* Schritt 3: Navigieren Sie zum Abschnitt *Runtimes*:
+
+![](img/screenshot-import-runtime-01-DEU.png){width="300"} 
+
+* Schritt 4: Drücken Sie den Button "+" (unten rechts)
+
+* Schritt 5: Geben Sie die Versionsnummer mit drei Stellen ein (z.B. 9.9.0):
+
+![](img/screenshot-import-runtime-02-DEU.png){width="300"} 
+
+* Schritt 6: Wählen Sie die Datei `main.*.js` aus dem ZIP-Archiv aus, das die Laufzeitumgebung enthält. Beachten Sie, dass das * dem Hash der Datei entspricht (d.h. der vollständige Dateiname sieht aus wie `main.19479ac3.js`)
+
+
+* Schritt 7: Wählen Sie die Datei `main.*.css` aus dem ZIP-Archiv, das die Runtime enthält. Beachten Sie, dass der * dem Hash der Datei entspricht (d.h. der vollständige Dateiname sieht aus wie `main.b765ceca.css`)
+
+
+Hinweis: Das Feld *Description* und die beiden zusätzlichen *Map-Files* (für JavaScript Source und für CSS Source) sind optional.
+
+* Schritt 8: Drücken Sie die Schaltfläche *Speichern*, um den Import der *Runtime* abzuschließen:
+
+![](img/screenshot-import-runtime-03-DEU.png){width="300"} 
+
+Nach dem Import werden die unterstützten CBA ItemBuilder-Versionen im Abschnitt *Runtime* aufgelistet. Um eine *Runtime* für eine bestimmte Version zu löschen, klicken Sie auf das *Papierkorb*-Symbol unten rechts auf der "Karte" und bestätigen Sie mit *Löschen*.
