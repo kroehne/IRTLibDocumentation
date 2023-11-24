@@ -18,7 +18,7 @@
     "href": "index.html",
     "title": "IRTlib Documentation",
     "section": "",
-    "text": "IRTlib Documentation\nIRTlib is a software for delivering computer-based tests. It consists of two components:\n\nIRTLib Editor: A software for test authors, which is used to configure studies.\nIRTlib Player: A data collection software used by test-takers to complete tasks configured for a study.\n\nThe software contains detailed documentation directly in the program, which is available on this page.\nThe software can be obtained directly from GitHub.\nInstructions for installing and using both programs can be found at Download & Installation"
+    "text": "IRTlib Documentation\nIRTlib is a software for delivering computer-based tests. It consists of two components:\n\nIRTLib Editor: A software for test authors, which is used to configure studies.\nIRTlib Player: A data collection software used by test-takers to complete tasks configured for a study.\n\nThe software contains detailed documentation directly in the program, which is available on this page.\nThe software can be obtained directly from GitHub.\nInstructions for installing and using both programs can be found at Download & Installation\n\n\nDie Entwicklung von IRTlib wird koordinert am Zentrum für technologiebasiertes Assessment (TBA) am DIPF | Leibniz-Institut für Bildungsforschung und Bildungsinformation.\n\n\nDevelopment of IRTlib is coordinate at the Centre for Technology-Based Assessment (TBA Centre) at DIPF | Leibniz Institute for Research and Information in Education."
   },
   {
     "objectID": "editor.html",
@@ -44,44 +44,23 @@
   {
     "objectID": "preparation-studies.html",
     "href": "preparation-studies.html",
-    "title": "Vorbereitung",
+    "title": "Preparation",
     "section": "",
-    "text": "::: {.content-visible when-profile=“german”}"
-  },
-  {
-    "objectID": "preparation-studies.html#studienverwaltung",
-    "href": "preparation-studies.html#studienverwaltung",
-    "title": "Vorbereitung",
-    "section": "Studienverwaltung",
-    "text": "Studienverwaltung\nNach dem Start des IRTlib-Editors wird die Ansicht Studien angezeigt. In dieser Ansicht ist der erste Schritt zur Vorbereitung einer neuen Konfiguration das Hinzufügen einer neuen Studie:\n\nDie erstellten Studien erscheinen als Karten in der Ansicht Studien. Beachten Sie, dass die Reihenfolge, in der die Studien in der Studienansicht angezeigt werden, keine Rolle spielt. Weitere Konfigurationen einer bestimmten Studie, einschließlich Versionierung und Veröffentlichung, werden innerhalb von Studien verwaltet (d.h. nach dem Öffnen einer Studie zur Bearbeitung durch Klicken auf das Bearbeitungssymbol am unteren rechten Rand der Karte).\n\n\n\n\n\n\nEmbedded Help"
-  },
-  {
-    "objectID": "preparation-studies.html#grundlegende-konfigurationen",
-    "href": "preparation-studies.html#grundlegende-konfigurationen",
-    "title": "Vorbereitung",
-    "section": "Grundlegende Konfigurationen",
-    "text": "Grundlegende Konfigurationen\nErstellte Studien, die im IRTlib Editor in der Ansicht Studien angezeigt werden, können zur Bearbeitung geöffnet werden.\n\n\n\n\n\n\nEmbedded Help"
-  },
-  {
-    "objectID": "preparation-studies.html#konfiguration-von-parametern",
-    "href": "preparation-studies.html#konfiguration-von-parametern",
-    "title": "Vorbereitung",
-    "section": "Konfiguration von Parametern",
-    "text": "Konfiguration von Parametern\n\n\n\n\n\n\nEmbedded Help"
+    "text": "After starting the IRTlib Editor, the view Studies is displayed. In this view, the first step for preparing a new configuration is to add a new study:\n\nCreated studies appear as cards in the view Studies. Note that the order in which studies are displayed in the Study View is unimportant. Further configurations of a particular study, including versioning and publishing, are managed within studies (i.e., after opening a study for editing by clicking on the edit icon on the bottom right border of the card).\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\nCreated studies, shown in the IRTlib Editor in the view Studies, can be opened for editing.\n\n\n\n\n\n\nEmbedded Help"
   },
   {
     "objectID": "preparation-studies.html#study-management",
     "href": "preparation-studies.html#study-management",
-    "title": "Vorbereitung",
-    "section": "Study Management",
-    "text": "Study Management\nAfter starting the IRTlib Editor, the view Studies is displayed. In this view, the first step for preparing a new configuration is to add a new study:\n\nCreated studies appear as cards in the view Studies. Note that the order in which studies are displayed in the Study View is unimportant. Further configurations of a particular study, including versioning and publishing, are managed within studies (i.e., after opening a study for editing by clicking on the edit icon on the bottom right border of the card).\n\n\n\n\n\n\nEmbedded Help"
+    "title": "Preparation",
+    "section": "",
+    "text": "After starting the IRTlib Editor, the view Studies is displayed. In this view, the first step for preparing a new configuration is to add a new study:\n\nCreated studies appear as cards in the view Studies. Note that the order in which studies are displayed in the Study View is unimportant. Further configurations of a particular study, including versioning and publishing, are managed within studies (i.e., after opening a study for editing by clicking on the edit icon on the bottom right border of the card).\n\n\n\n\n\n\nEmbedded Help"
   },
   {
     "objectID": "preparation-studies.html#basic-configurations",
     "href": "preparation-studies.html#basic-configurations",
-    "title": "Vorbereitung",
-    "section": "Basic Configurations",
-    "text": "Basic Configurations\nCreated studies, shown in the IRTlib Editor in the view Studies, can be opened for editing.\n\n\n\n\n\n\nEmbedded Help"
+    "title": "Preparation",
+    "section": "",
+    "text": "Created studies, shown in the IRTlib Editor in the view Studies, can be opened for editing.\n\n\n\n\n\n\nEmbedded Help"
   },
   {
     "objectID": "settings.html",
