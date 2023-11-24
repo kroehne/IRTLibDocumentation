@@ -19,3 +19,10 @@ jobs:
 
       - name: build application
         run: make all
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.PRIVATE_KEY }}
+          publish_branch: gh-pages
+          publish_dir: ./_site/        
