@@ -39,7 +39,61 @@ Instructions for installing and using both programs can be found at [Download & 
 :::
 
 ::: {.content-visible when-profile="language"}
-Please choose / bitte auswählen:
 
-[Deutsch](de/index.html) / [English](en/index.html)
+<h1>IRTlib Software</h1>
+
+::: {.grid}
+
+::: {.g-col-6}
+
+*IRTlib* ist eine Software zur Auslieferung computerbasierter Assessments. Die Software erlaubt die Definition von flexiblen Abläufen unter Nutzung von visueller Programmierung und Funktionen der Item-Response Theoie (IRT). 
 :::
+
+::: {.g-col-6}
+*IRTlib* is a software for the delivery of computer-based assessments. The software allows the definition of flexible processes using visual programming and functions of the item-response theory (IRT). 
+:::
+
+
+:::
+
+
+
+::: {.grid}
+
+::: {.g-col-6}
+
+[Dokumentation auf Deutsch](de/index.html)
+
+:::
+
+::: {.g-col-6}
+[English Documentation](en/index.html)
+
+:::
+
+
+:::
+
+
+![](img/irtlib-cover.png)
+
+ 
+:::   
+
+
+::: {.grid}
+
+::: {.g-col-6}
+
+Die Entwicklung von *IRTlib* wird koordinert am <a href="https://tba.dipf.de/de">Zentrum für technologiebasiertes Assessment (TBA)</a> am <a href="https://www.dipf.de/de">DIPF | Leibniz-Institut für Bildungsforschung und Bildungsinformation</a>.
+
+:::
+
+::: {.g-col-6}
+Development of *IRTlib* is coordinate at the <a href="https://tba.dipf.de/en/startseite?set_language=en">Centre for Technology-Based Assessment (TBA Centre)</a> at <a href="https://www.dipf.de/en/frontpage?set_language=en">DIPF | Leibniz Institute for Research and Information in Education</a>.
+
+:::
+
+
+:::
+

@@ -32,28 +32,28 @@
     "href": "preparation-studies.html",
     "title": "Vorbereitung",
     "section": "",
-    "text": "::: {.content-visible when-profile=“german”}"
+    "text": "Nach dem Start des IRTlib-Editors wird die Ansicht Studien angezeigt. In dieser Ansicht ist der erste Schritt zur Vorbereitung einer neuen Konfiguration das Hinzufügen einer neuen Studie:\n\nDie erstellten Studien erscheinen als Karten in der Ansicht Studien. Beachten Sie, dass die Reihenfolge, in der die Studien in der Studienansicht angezeigt werden, keine Rolle spielt. Weitere Konfigurationen einer bestimmten Studie, einschließlich Versionierung und Veröffentlichung, werden innerhalb von Studien verwaltet (d.h. nach dem Öffnen einer Studie zur Bearbeitung durch Klicken auf das Bearbeitungssymbol am unteren rechten Rand der Karte).\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\nErstellte Studien, die im IRTlib Editor in der Ansicht Studien angezeigt werden, können zur Bearbeitung geöffnet werden.\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEmbedded Help"
   },
   {
     "objectID": "preparation-studies.html#studienverwaltung",
     "href": "preparation-studies.html#studienverwaltung",
     "title": "Vorbereitung",
-    "section": "Studienverwaltung",
-    "text": "Studienverwaltung\nNach dem Start des IRTlib-Editors wird die Ansicht Studien angezeigt. In dieser Ansicht ist der erste Schritt zur Vorbereitung einer neuen Konfiguration das Hinzufügen einer neuen Studie:\n\nDie erstellten Studien erscheinen als Karten in der Ansicht Studien. Beachten Sie, dass die Reihenfolge, in der die Studien in der Studienansicht angezeigt werden, keine Rolle spielt. Weitere Konfigurationen einer bestimmten Studie, einschließlich Versionierung und Veröffentlichung, werden innerhalb von Studien verwaltet (d.h. nach dem Öffnen einer Studie zur Bearbeitung durch Klicken auf das Bearbeitungssymbol am unteren rechten Rand der Karte).\n\n\n\n\n\n\nEmbedded Help"
+    "section": "",
+    "text": "Nach dem Start des IRTlib-Editors wird die Ansicht Studien angezeigt. In dieser Ansicht ist der erste Schritt zur Vorbereitung einer neuen Konfiguration das Hinzufügen einer neuen Studie:\n\nDie erstellten Studien erscheinen als Karten in der Ansicht Studien. Beachten Sie, dass die Reihenfolge, in der die Studien in der Studienansicht angezeigt werden, keine Rolle spielt. Weitere Konfigurationen einer bestimmten Studie, einschließlich Versionierung und Veröffentlichung, werden innerhalb von Studien verwaltet (d.h. nach dem Öffnen einer Studie zur Bearbeitung durch Klicken auf das Bearbeitungssymbol am unteren rechten Rand der Karte).\n\n\n\n\n\n\nEmbedded Help"
   },
   {
     "objectID": "preparation-studies.html#grundlegende-konfigurationen",
     "href": "preparation-studies.html#grundlegende-konfigurationen",
     "title": "Vorbereitung",
-    "section": "Grundlegende Konfigurationen",
-    "text": "Grundlegende Konfigurationen\nErstellte Studien, die im IRTlib Editor in der Ansicht Studien angezeigt werden, können zur Bearbeitung geöffnet werden.\n\n\n\n\n\n\nEmbedded Help"
+    "section": "",
+    "text": "Erstellte Studien, die im IRTlib Editor in der Ansicht Studien angezeigt werden, können zur Bearbeitung geöffnet werden.\n\n\n\n\n\n\nEmbedded Help"
   },
   {
     "objectID": "preparation-studies.html#konfiguration-von-parametern",
     "href": "preparation-studies.html#konfiguration-von-parametern",
     "title": "Vorbereitung",
-    "section": "Konfiguration von Parametern",
-    "text": "Konfiguration von Parametern\n\n\n\n\n\n\nEmbedded Help"
+    "section": "",
+    "text": "Embedded Help"
   },
   {
     "objectID": "player-integration.html",
@@ -179,7 +179,7 @@
     "href": "index.html",
     "title": "IRTlib Dokumentation",
     "section": "",
-    "text": "IRTlib Dokumentation\nIRTlib ist eine Software zur Auslieferung computerbasierter Tests. Sie besteht aus zwei Komponenten:\n\nIRTLib Editor: Eine Software für Test-Autoren, welche verwendet wird um Studien zu konfigurieren.\nIRTlib Player: Eine Software zur Datenerhebung, mit welcher Zielpersonen Aufgaben bearbeiten, die für eine Studie konfiguriert sind.\n\nDie Software enthält ausführliche Dokumentation direkt im Programm, die auf dieser Seite zugänglich ist.\nDie Software kann direkt von GitHub bezogen werden.\nHinweise zur Installation und Verwendung beider Programme finden sich unter Download & Installation"
+    "text": "IRTlib Dokumentation\nIRTlib ist eine Software zur Auslieferung computerbasierter Tests. Sie besteht aus zwei Komponenten:\n\nIRTLib Editor: Eine Software für Test-Autoren, welche verwendet wird um Studien zu konfigurieren.\nIRTlib Player: Eine Software zur Datenerhebung, mit welcher Zielpersonen Aufgaben bearbeiten, die für eine Studie konfiguriert sind.\n\nDie Software enthält ausführliche Dokumentation direkt im Programm, die auf dieser Seite zugänglich ist.\nDie Software kann direkt von GitHub bezogen werden.\nHinweise zur Installation und Verwendung beider Programme finden sich unter Download & Installation\n\n\nDie Entwicklung von IRTlib wird koordinert am Zentrum für technologiebasiertes Assessment (TBA) am DIPF | Leibniz-Institut für Bildungsforschung und Bildungsinformation.\n\n\nDevelopment of IRTlib is coordinate at the Centre for Technology-Based Assessment (TBA Centre) at DIPF | Leibniz Institute for Research and Information in Education."
   },
   {
     "objectID": "about.html",

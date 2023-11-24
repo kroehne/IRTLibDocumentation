@@ -17,7 +17,7 @@ Die *IRTlib Software* ist im Augenblick noch unter Entwicklung. Informationen ü
 ::: {.callout-tip title="Eingebettete Programmhilfe"}
 
 ```{=html}
-<iframe width="780" height="600" src="../help/InlineHelp_View_Settings_Main_de-DEU.html"></iframe>
+<iframe width="100%" height="600" src="../help/InlineHelp_View_Settings_Main_de-DEU.html"></iframe>
 ```
 
 :::
@@ -29,7 +29,7 @@ Die *IRTlib Software* kann mit CBA ItemBuilder Aufgaben verschiedener CBA ItemBu
 ::: {.callout-tip title="Eingebettete Programmhilfe"}
 
 ```{=html}
-<iframe width="780" height="600" src="../help/InlineHelp_View_Settings_Runtimes_de-DEU.html"></iframe>
+<iframe width="100%" height="600" src="../help/InlineHelp_View_Settings_Runtimes_de-DEU.html"></iframe>
 ```
 
 :::
@@ -48,7 +48,7 @@ The *IRTlib software* is currently still under development. Information about th
 ::: {.callout-tip title="Embedded Help"}
 
 ```{=html}
-<iframe width="780" height="600" src="../help/InlineHelp_View_Settings_Main_en-US.html"></iframe>
+<iframe width="100%" height="600" src="../help/InlineHelp_View_Settings_Main_en-US.html"></iframe>
 ```
 
 :::
@@ -61,7 +61,7 @@ The *IRTlib Software* can be used with CBA ItemBuilder tasks of different CBA It
 ::: {.callout-tip title="Embedded Help"}
 
 ```{=html}
-<iframe width="780" height="600" src="../help/InlineHelp_View_Settings_Runtimes_en-US.html"></iframe>
+<iframe width="100%" height="600" src="../help/InlineHelp_View_Settings_Runtimes_en-US.html"></iframe>
 ```
 
 :::

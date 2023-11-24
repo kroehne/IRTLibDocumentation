@@ -4,7 +4,9 @@ project:
   
 website:
   title: "IRTlib"
-        
+  page-footer: 
+    left: "Copyright 2023-2024, Ulf Kroehne" 
+    
 format:
   html:
     theme: cosmo
