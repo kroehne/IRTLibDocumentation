@@ -78,7 +78,6 @@ Instructions for installing and using both programs can be found at [Download & 
 ![](img/irtlib-cover.png)
 
  
-:::   
 
 
 ::: {.grid}
@@ -97,3 +96,4 @@ Development of *IRTlib* is coordinate at the <a href="https://tba.dipf.de/en/sta
 
 :::
 
+:::   

@@ -102,7 +102,7 @@
     "href": "index.html",
     "title": "IRTlib Documentation",
     "section": "",
-    "text": "IRTlib Documentation\nIRTlib is a software for delivering computer-based tests. It consists of two components:\n\nIRTLib Editor: A software for test authors, which is used to configure studies.\nIRTlib Player: A data collection software used by test-takers to complete tasks configured for a study.\n\nThe software contains detailed documentation directly in the program, which is available on this page.\nThe software can be obtained directly from GitHub.\nInstructions for installing and using both programs can be found at Download & Installation\n\n\nDie Entwicklung von IRTlib wird koordinert am Zentrum für technologiebasiertes Assessment (TBA) am DIPF | Leibniz-Institut für Bildungsforschung und Bildungsinformation.\n\n\nDevelopment of IRTlib is coordinate at the Centre for Technology-Based Assessment (TBA Centre) at DIPF | Leibniz Institute for Research and Information in Education."
+    "text": "IRTlib Documentation\nIRTlib is a software for delivering computer-based tests. It consists of two components:\n\nIRTLib Editor: A software for test authors, which is used to configure studies.\nIRTlib Player: A data collection software used by test-takers to complete tasks configured for a study.\n\nThe software contains detailed documentation directly in the program, which is available on this page.\nThe software can be obtained directly from GitHub.\nInstructions for installing and using both programs can be found at Download & Installation"
   },
   {
     "objectID": "about.html",

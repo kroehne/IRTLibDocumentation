@@ -47,7 +47,7 @@ website:
     left: "Copyright 2023-2024, Ulf Kroehne" 
     right: 
       - href: https://tba.dipf.de/de
-        text: Zentrum für technologiebasiertes Assessment (TBA-Zentrum),  DIPF | Leibniz-Institut für Bildungsforschung und Bildungsinformation 
+        text: Zentrum für technologiebasiertes Assessment (TBA-Zentrum)<br/>DIPF | Leibniz-Institut für Bildungsforschung und Bildungsinformation 
         
 format:
   html:

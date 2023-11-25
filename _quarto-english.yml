@@ -47,7 +47,7 @@ website:
     left: "Copyright 2023-2024, Ulf Kroehne" 
     right: 
       - href: https://tba.dipf.de/en/startseite?set_language=en
-        text: Centre for Technology-Based Assessment (TBA Centre), DIPF | Leibniz Institute for Research and Information in Education
+        text: Centre for Technology-Based Assessment (TBA Centre)<br/>DIPF | Leibniz Institute for Research and Information in Education
 format:
   html:
     theme: cosmo
