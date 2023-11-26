@@ -1,0 +1,10 @@
+---
+title: "IRTlib Editor: Study-Part Configuration"
+format:
+  html:
+    embed-resources: true
+    minimal: true 
+    toc: false
+---
+
+## Study-Part Configuration

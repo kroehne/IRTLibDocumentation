@@ -17,7 +17,9 @@ Die Software enthält ausführliche Dokumentation direkt im Programm, die auf di
 
 Die Software kann direkt von [GitHub](https://github.com/DIPFtba/IRTlibDeploymentSoftware) bezogen werden. 
 
-Hinweise zur Installation und Verwendung beider Programme finden sich unter [Download & Installation](installation.qmd)
+Hinweise zur Installation und Verwendung beider Programme finden sich unter [Download & Installation](installation.qmd).
+
+Vor der Verwendung der IRTlib Software zur Konfiguration und Erstellung von Auslieferungen, können mit dem <a href="https://cba.itembuilder.de">CBA ItemBuilder</a> die Assessmentinhalte in Form von einzelnen Tasks erstellt werden. 
 
 :::
 
@@ -34,9 +36,12 @@ The software contains detailed documentation directly in the program, which is a
 
 The software can be obtained directly from [GitHub](https://github.com/DIPFtba/IRTlibDeploymentSoftware). 
 
-Instructions for installing and using both programs can be found at [Download & Installation](installation.qmd)
+Instructions for installing and using both programs can be found at [Download & Installation](installation.qmd).
+
+Before using the IRTlib software to configure and create deliveries, the  <a href="https://cba.itembuilder.de">CBA ItemBuilder</a> can be used to create the assessment content in the form of individual tasks. 
 
 :::
+
 
 ::: {.content-visible when-profile="language"}
 
@@ -46,16 +51,21 @@ Instructions for installing and using both programs can be found at [Download & 
 
 ::: {.g-col-6}
 
-*IRTlib* ist eine Software zur Auslieferung computerbasierter Assessments. Die Software erlaubt die Definition von flexiblen Abläufen unter Nutzung von visueller Programmierung und Funktionen der Item-Response Theoie (IRT). 
+*IRTlib* ist eine Software zur Auslieferung computerbasierter Assessments basierend auf Aufgaben, die mit dem <a href="https://cba.itembuilder.de">CBA ItemBuilder</a> erstellt wurden. Die Software erlaubt die Definition von flexiblen Abläufen unter Nutzung von visueller Programmierung und Funktionen der Item-Response Theoie (IRT). 
 :::
 
 ::: {.g-col-6}
-*IRTlib* is a software for the delivery of computer-based assessments. The software allows the definition of flexible processes using visual programming and functions of the item-response theory (IRT). 
+*IRTlib* is a software for the delivery of computer-based assessments using tasks develope with the <a href="https://cba.itembuilder.de">CBA ItemBuilder</a>. The software allows the definition of flexible processes using visual programming and functions of the item-response theory (IRT). 
 :::
 
 
 :::
 
+
+
+![](img/irtlib-cover.png)
+
+ 
 
 
 ::: {.grid}
@@ -74,26 +84,5 @@ Instructions for installing and using both programs can be found at [Download & 
 
 :::
 
-
-![](img/irtlib-cover.png)
-
- 
-
-
-::: {.grid}
-
-::: {.g-col-6}
-
-Die Entwicklung von *IRTlib* wird koordinert am <a href="https://tba.dipf.de/de">Zentrum für technologiebasiertes Assessment (TBA)</a> am <a href="https://www.dipf.de/de">DIPF | Leibniz-Institut für Bildungsforschung und Bildungsinformation</a>.
-
 :::
 
-::: {.g-col-6}
-Development of *IRTlib* is coordinate at the <a href="https://tba.dipf.de/en/startseite?set_language=en">Centre for Technology-Based Assessment (TBA Centre)</a> at <a href="https://www.dipf.de/en/frontpage?set_language=en">DIPF | Leibniz Institute for Research and Information in Education</a>.
-
-:::
-
-
-:::
-
-:::   

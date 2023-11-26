@@ -39,7 +39,7 @@
     "href": "index.html",
     "title": "\nIRTlib Software\n",
     "section": "",
-    "text": "IRTlib Software\n\n\n\nIRTlib ist eine Software zur Auslieferung computerbasierter Assessments. Die Software erlaubt die Definition von flexiblen Abläufen unter Nutzung von visueller Programmierung und Funktionen der Item-Response Theoie (IRT).\n\n\nIRTlib is a software for the delivery of computer-based assessments. The software allows the definition of flexible processes using visual programming and functions of the item-response theory (IRT).\n\n\n\n\nDokumentation auf Deutsch\n\n\nEnglish Documentation\n\n\n\n\n\nDie Entwicklung von IRTlib wird koordinert am Zentrum für technologiebasiertes Assessment (TBA) am DIPF | Leibniz-Institut für Bildungsforschung und Bildungsinformation.\n\n\nDevelopment of IRTlib is coordinate at the Centre for Technology-Based Assessment (TBA Centre) at DIPF | Leibniz Institute for Research and Information in Education."
+    "text": "IRTlib Software\n\n\n\nIRTlib ist eine Software zur Auslieferung computerbasierter Assessments basierend auf Aufgaben, die mit dem CBA ItemBuilder erstellt wurden. Die Software erlaubt die Definition von flexiblen Abläufen unter Nutzung von visueller Programmierung und Funktionen der Item-Response Theoie (IRT).\n\n\nIRTlib is a software for the delivery of computer-based assessments using tasks develope with the CBA ItemBuilder. The software allows the definition of flexible processes using visual programming and functions of the item-response theory (IRT).\n\n\n\n\n\nDokumentation auf Deutsch\n\n\nEnglish Documentation"
   },
   {
     "objectID": "about.html",

@@ -13,37 +13,84 @@ lang: en
 
 Nach dem Start des *IRTlib-Editors* wird die Ansicht *Studien* angezeigt. In dieser Ansicht ist der erste Schritt zur Vorbereitung einer neuen Konfiguration das **Hinzufügen einer neuen Studie**:
 
-![](img/screenshot-studies-add-study-01-DEU.png)
+![](img/screenshot-studies-add-study-01-DEU.png){width="100%"}
 
 Die erstellten Studien erscheinen als Karten in der Ansicht *Studien*. Beachten Sie, dass die Reihenfolge, in der die Studien in der *Studienansicht* angezeigt werden, keine Rolle spielt. Weitere Konfigurationen einer bestimmten Studie, einschließlich Versionierung und Veröffentlichung, werden innerhalb von Studien verwaltet (d.h. nach dem Öffnen einer Studie zur Bearbeitung durch Klicken auf das Bearbeitungssymbol am unteren rechten Rand der Karte).
 
 ::: {.callout-tip title="Embedded Help"}
 
 ```{=html}
-<iframe width="100%" height="600" src="../help/InlineHelp_View_Studies_Main_de-DEU.html"></iframe>
+<iframe width="100%" height="300" src="../help/InlineHelp_View_Studies_Main_de-DEU.html"></iframe>
 ```
 
 :::
-
 
 ## Grundlegende Konfigurationen
 
-Erstellte Studien, die im *IRTlib Editor* in der Ansicht *Studien* angezeigt werden, können zur Bearbeitung geöffnet werden.
+Erstellte Studien, die im *IRTlib Editor* in der Ansicht *Studien* angezeigt werden, können zur Bearbeitung geöffnet werden. 
+
+![](img/screenshot-studies-info.de-DEU.png){width="100%"}
+
+Mehr informationen zu dem Grundkonfiguration finden sich hier in der eingebetteten Hilfe. 
 
 ::: {.callout-tip title="Embedded Help"}
 
 ```{=html}
-<iframe width="100%" height="600" src="../help/InlineHelp_View_Study_Info_Overview_de-DEU.html"></iframe>
+<iframe width="100%" height="300" src="../help/InlineHelp_View_Study_Info_Overview_de-DEU.html"></iframe>
 ```
 
 :::
 
-## Konfiguration von Parametern
+
+## Zugang zu Studien (Login)
+
+Die *IRTlib Software* unterstützt verschiedene Wege, wie sich Personen (Testteilnehmer, Befragte, ...) für ein Assessment Authentifizieren können. Die Konfiguratinen umfassen zwei Aspekte: 
+
+* Wird ein Zugang benötigt (Login, Login+Passwort, Passphrases/Token) oder nicht?
+* Wie wird die Login-Information abgefragt (direkte Eingabe auf der Plattform, CBA ItemBuilder Item, ....) oder übergeben (Login-Parameter oder Aufruf-Parameter)?
 
 ::: {.callout-tip title="Embedded Help"}
 
 ```{=html}
-<iframe width="100%" height="600" src="../help/InlineHelp_View_Study_Info_Parameter_de-DEU.html"></iframe>
+<iframe width="100%" height="300" src="../help/InlineHelp_View_Study_Info_Login_de-DEU.html"></iframe>
+```
+
+::: 
+
+## Konfiguration zur Anzeige
+
+Für die Darstellung der Assessmentinhalte können Eigenschaften zur Anzeige definiert werden. 
+
+::: {.callout-tip title="Embedded Help"}
+
+```{=html}
+<iframe width="100%" height="300" src="../help/InlineHelp_View_Study_Info_View_de-DEU.html"></iframe>
+```
+
+::: 
+
+
+## Konfiguration des Testleitermenüs
+
+Wenn die Durchführung von Assessments begleitet durch Testleiter oder Interviewer erfolgt, können Funktionen passwortgeschützt für Testleiter definiert werden. 
+
+::: {.callout-tip title="Embedded Help"}
+
+```{=html}
+<iframe width="100%" height="300" src="../help/InlineHelp_View_Study_Info_Menu_de-DEU.html"></iframe>
+```
+
+::: 
+
+
+## Konfiguration des Session-Ende
+
+Für die Integration von Assessments in externe Abläufe besteht die Möglichkeit zu konfiguriere, wie nach der Bearbeitung der Assessmentinhalte in einer *Session* vorgegangen werden soll, was also am *Session-Ende* geschehen wird.
+
+::: {.callout-tip title="Embedded Help"}
+
+```{=html}
+<iframe width="100%" height="300" src="../help/InlineHelp_View_Study_Info_SessionEnd_de-DEU.html"></iframe>
 ```
 
 ::: 

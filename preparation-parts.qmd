@@ -6,13 +6,97 @@ lang: en
 ---
 
 ::: {.content-visible when-profile="german"}
-*Es ist noch keine Übersetzung vorhanden für diesen Text.*
+
+# Vorbereitung
+
+## Erhebungsteile Management
+
+::: {.callout-tip title="Embedded Help"}
+
+```{=html}
+<iframe width="100%" height="600" src="../help/InlineHelp_View_Study_Part_Main_de-DEU.html"></iframe>
+```
+
 :::
+
+
+
+## Grundkonfiguration für Erhebungsteile 
+
+
+::: {.callout-tip title="Embedded Help"}
+
+```{=html}
+<iframe width="100%" height="600" src="../help/InlineHelp_View_Study_Parts_Info_Overview_de-DEU.html"></iframe>
+```
+
+:::
+
+
+## Routing innerhalb von Erhebungsteilen
+
+::: {.callout-tip title="Embedded Help"}
+
+```{=html}
+<iframe width="100%" height="600" src="../help/InlineHelp_View_Study_Routing_de-DEU.html"></iframe>
+```
+
+:::
+
+## Routing zwischen Erhebungsteilen
+
+::: {.callout-tip title="Embedded Help"}
+
+```{=html}
+<iframe width="100%" height="600" src="../help/InlineHelp_View_Study_Parts_Routing_de-DEU.html"></iframe>
+```
+
+:::
+:::
+
+::: {.content-visible when-profile="english"}
 
 # Preparation
 
-## Add (New) Survey-Part
-
 ## Survey-Part Management
 
+
+::: {.callout-tip title="Embedded Help"}
+
+```{=html}
+<iframe width="100%" height="600" src="../help/InlineHelp_View_Study_Part_Main_en-US.html"></iframe>
+```
+
+:::
+
 ## Basic Configurations for Survey-Parts
+
+::: {.callout-tip title="Embedded Help"}
+
+```{=html}
+<iframe width="100%" height="600" src="../help/InlineHelp_View_Study_Parts_Info_Overview_en-US.html"></iframe>
+```
+
+:::
+
+## Routing within Survey-Parts
+
+::: {.callout-tip title="Embedded Help"}
+
+```{=html}
+<iframe width="100%" height="600" src="../help/InlineHelp_View_Study_Routing_de-DEU.html"></iframe>
+```
+
+:::
+
+## Routing betweeen Survey-Parts
+
+::: {.callout-tip title="Embedded Help"}
+
+```{=html}
+<iframe width="100%" height="600" src="../help/InlineHelp_View_Study_Parts_Routing_de-DEU.html"></iframe>
+```
+
+:::
+
+:::
