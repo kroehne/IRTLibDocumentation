@@ -2,16 +2,16 @@
   {
     "objectID": "publish-and-export.html",
     "href": "publish-and-export.html",
-    "title": "Data Collection",
+    "title": "Datenerhebungen",
     "section": "",
-    "text": "Es ist noch keine Übersetzung vorhanden für diesen Text."
+    "text": "Embedded Help"
   },
   {
-    "objectID": "publish-and-export.html#publish-export",
-    "href": "publish-and-export.html#publish-export",
-    "title": "Data Collection",
-    "section": "Publish & Export",
-    "text": "Publish & Export\n\nPublish\n\n\nExport"
+    "objectID": "publish-and-export.html#veröffentlichen-und-exportieren",
+    "href": "publish-and-export.html#veröffentlichen-und-exportieren",
+    "title": "Datenerhebungen",
+    "section": "",
+    "text": "Embedded Help"
   },
   {
     "objectID": "postprocessing.html",
@@ -60,7 +60,7 @@
     "href": "index.html",
     "title": "IRTlib Dokumentation",
     "section": "",
-    "text": "IRTlib Dokumentation\nIRTlib ist eine Software zur Auslieferung computerbasierter Tests. Sie besteht aus zwei Komponenten:\n\nIRTLib Editor: Eine Software für Test-Autoren, welche verwendet wird um Studien zu konfigurieren.\nIRTlib Player: Eine Software zur Datenerhebung, mit welcher Zielpersonen Aufgaben bearbeiten, die für eine Studie konfiguriert sind.\n\nDie Software enthält ausführliche Dokumentation direkt im Programm, die auf dieser Seite zugänglich ist.\nDie Software kann direkt von GitHub bezogen werden.\nHinweise zur Installation und Verwendung beider Programme finden sich unter Download & Installation"
+    "text": "IRTlib Dokumentation\nIRTlib ist eine Software zur Auslieferung computerbasierter Tests. Sie besteht aus zwei Komponenten:\n\nIRTLib Editor: Eine Software für Test-Autoren, welche verwendet wird um Studien zu konfigurieren.\nIRTlib Player: Eine Software zur Datenerhebung, mit welcher Zielpersonen Aufgaben bearbeiten, die für eine Studie konfiguriert sind.\n\nDie Software enthält ausführliche Dokumentation direkt im Programm, die auf dieser Seite zugänglich ist.\nDie Software kann direkt von GitHub bezogen werden.\nHinweise zur Installation und Verwendung beider Programme finden sich unter Download & Installation.\nVor der Verwendung der IRTlib Software zur Konfiguration und Erstellung von Auslieferungen, können mit dem CBA ItemBuilder die Assessmentinhalte in Form von einzelnen Tasks erstellt werden."
   },
   {
     "objectID": "editor.html",
@@ -102,7 +102,7 @@
     "href": "preparation-studies.html",
     "title": "Vorbereitung",
     "section": "",
-    "text": "Nach dem Start des IRTlib-Editors wird die Ansicht Studien angezeigt. In dieser Ansicht ist der erste Schritt zur Vorbereitung einer neuen Konfiguration das Hinzufügen einer neuen Studie:\n\nDie erstellten Studien erscheinen als Karten in der Ansicht Studien. Beachten Sie, dass die Reihenfolge, in der die Studien in der Studienansicht angezeigt werden, keine Rolle spielt. Weitere Konfigurationen einer bestimmten Studie, einschließlich Versionierung und Veröffentlichung, werden innerhalb von Studien verwaltet (d.h. nach dem Öffnen einer Studie zur Bearbeitung durch Klicken auf das Bearbeitungssymbol am unteren rechten Rand der Karte).\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\nErstellte Studien, die im IRTlib Editor in der Ansicht Studien angezeigt werden, können zur Bearbeitung geöffnet werden.\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEmbedded Help"
+    "text": "Nach dem Start des IRTlib-Editors wird die Ansicht Studien angezeigt. In dieser Ansicht ist der erste Schritt zur Vorbereitung einer neuen Konfiguration das Hinzufügen einer neuen Studie:\n\nDie erstellten Studien erscheinen als Karten in der Ansicht Studien. Beachten Sie, dass die Reihenfolge, in der die Studien in der Studienansicht angezeigt werden, keine Rolle spielt. Weitere Konfigurationen einer bestimmten Studie, einschließlich Versionierung und Veröffentlichung, werden innerhalb von Studien verwaltet (d.h. nach dem Öffnen einer Studie zur Bearbeitung durch Klicken auf das Bearbeitungssymbol am unteren rechten Rand der Karte).\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\nErstellte Studien, die im IRTlib Editor in der Ansicht Studien angezeigt werden, können zur Bearbeitung geöffnet werden.\n\nMehr informationen zu dem Grundkonfiguration finden sich hier in der eingebetteten Hilfe.\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\nDie IRTlib Software unterstützt verschiedene Wege, wie sich Personen (Testteilnehmer, Befragte, …) für ein Assessment Authentifizieren können. Die Konfiguratinen umfassen zwei Aspekte:\n\nWird ein Zugang benötigt (Login, Login+Passwort, Passphrases/Token) oder nicht?\nWie wird die Login-Information abgefragt (direkte Eingabe auf der Plattform, CBA ItemBuilder Item, ….) oder übergeben (Login-Parameter oder Aufruf-Parameter)?\n\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\nFür die Darstellung der Assessmentinhalte können Eigenschaften zur Anzeige definiert werden.\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\nWenn die Durchführung von Assessments begleitet durch Testleiter oder Interviewer erfolgt, können Funktionen passwortgeschützt für Testleiter definiert werden.\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\nFür die Integration von Assessments in externe Abläufe besteht die Möglichkeit zu konfiguriere, wie nach der Bearbeitung der Assessmentinhalte in einer Session vorgegangen werden soll, was also am Session-Ende geschehen wird.\n\n\n\n\n\n\nEmbedded Help"
   },
   {
     "objectID": "preparation-studies.html#studienverwaltung",
@@ -116,14 +116,35 @@
     "href": "preparation-studies.html#grundlegende-konfigurationen",
     "title": "Vorbereitung",
     "section": "",
-    "text": "Erstellte Studien, die im IRTlib Editor in der Ansicht Studien angezeigt werden, können zur Bearbeitung geöffnet werden.\n\n\n\n\n\n\nEmbedded Help"
+    "text": "Erstellte Studien, die im IRTlib Editor in der Ansicht Studien angezeigt werden, können zur Bearbeitung geöffnet werden.\n\nMehr informationen zu dem Grundkonfiguration finden sich hier in der eingebetteten Hilfe.\n\n\n\n\n\n\nEmbedded Help"
   },
   {
-    "objectID": "preparation-studies.html#konfiguration-von-parametern",
-    "href": "preparation-studies.html#konfiguration-von-parametern",
+    "objectID": "preparation-studies.html#zugang-zu-studien-login",
+    "href": "preparation-studies.html#zugang-zu-studien-login",
     "title": "Vorbereitung",
     "section": "",
-    "text": "Embedded Help"
+    "text": "Die IRTlib Software unterstützt verschiedene Wege, wie sich Personen (Testteilnehmer, Befragte, …) für ein Assessment Authentifizieren können. Die Konfiguratinen umfassen zwei Aspekte:\n\nWird ein Zugang benötigt (Login, Login+Passwort, Passphrases/Token) oder nicht?\nWie wird die Login-Information abgefragt (direkte Eingabe auf der Plattform, CBA ItemBuilder Item, ….) oder übergeben (Login-Parameter oder Aufruf-Parameter)?\n\n\n\n\n\n\n\nEmbedded Help"
+  },
+  {
+    "objectID": "preparation-studies.html#konfiguration-zur-anzeige",
+    "href": "preparation-studies.html#konfiguration-zur-anzeige",
+    "title": "Vorbereitung",
+    "section": "",
+    "text": "Für die Darstellung der Assessmentinhalte können Eigenschaften zur Anzeige definiert werden.\n\n\n\n\n\n\nEmbedded Help"
+  },
+  {
+    "objectID": "preparation-studies.html#konfiguration-des-testleitermenüs",
+    "href": "preparation-studies.html#konfiguration-des-testleitermenüs",
+    "title": "Vorbereitung",
+    "section": "",
+    "text": "Wenn die Durchführung von Assessments begleitet durch Testleiter oder Interviewer erfolgt, können Funktionen passwortgeschützt für Testleiter definiert werden.\n\n\n\n\n\n\nEmbedded Help"
+  },
+  {
+    "objectID": "preparation-studies.html#konfiguration-des-session-ende",
+    "href": "preparation-studies.html#konfiguration-des-session-ende",
+    "title": "Vorbereitung",
+    "section": "",
+    "text": "Für die Integration von Assessments in externe Abläufe besteht die Möglichkeit zu konfiguriere, wie nach der Bearbeitung der Assessmentinhalte in einer Session vorgegangen werden soll, was also am Session-Ende geschehen wird.\n\n\n\n\n\n\nEmbedded Help"
   },
   {
     "objectID": "settings.html",
@@ -177,29 +198,36 @@
   {
     "objectID": "preparation-parts.html",
     "href": "preparation-parts.html",
-    "title": "Preparation",
+    "title": "Vorbereitung",
     "section": "",
-    "text": "Es ist noch keine Übersetzung vorhanden für diesen Text."
+    "text": "Embedded Help\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEmbedded Help"
   },
   {
-    "objectID": "preparation-parts.html#add-new-survey-part",
-    "href": "preparation-parts.html#add-new-survey-part",
-    "title": "Preparation",
-    "section": "Add (New) Survey-Part",
-    "text": "Add (New) Survey-Part"
+    "objectID": "preparation-parts.html#erhebungsteile-management",
+    "href": "preparation-parts.html#erhebungsteile-management",
+    "title": "Vorbereitung",
+    "section": "",
+    "text": "Embedded Help"
   },
   {
-    "objectID": "preparation-parts.html#survey-part-management",
-    "href": "preparation-parts.html#survey-part-management",
-    "title": "Preparation",
-    "section": "Survey-Part Management",
-    "text": "Survey-Part Management"
+    "objectID": "preparation-parts.html#grundkonfiguration-für-erhebungsteile",
+    "href": "preparation-parts.html#grundkonfiguration-für-erhebungsteile",
+    "title": "Vorbereitung",
+    "section": "",
+    "text": "Embedded Help"
   },
   {
-    "objectID": "preparation-parts.html#basic-configurations-for-survey-parts",
-    "href": "preparation-parts.html#basic-configurations-for-survey-parts",
-    "title": "Preparation",
-    "section": "Basic Configurations for Survey-Parts",
-    "text": "Basic Configurations for Survey-Parts"
+    "objectID": "preparation-parts.html#routing-innerhalb-von-erhebungsteilen",
+    "href": "preparation-parts.html#routing-innerhalb-von-erhebungsteilen",
+    "title": "Vorbereitung",
+    "section": "",
+    "text": "Embedded Help"
+  },
+  {
+    "objectID": "preparation-parts.html#routing-zwischen-erhebungsteilen",
+    "href": "preparation-parts.html#routing-zwischen-erhebungsteilen",
+    "title": "Vorbereitung",
+    "section": "",
+    "text": "Embedded Help"
   }
 ]

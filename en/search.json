@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "publish-and-export.html",
+    "href": "publish-and-export.html",
+    "title": "Data Collection",
+    "section": "",
+    "text": "Embedded Help"
+  },
+  {
+    "objectID": "publish-and-export.html#publish-export",
+    "href": "publish-and-export.html#publish-export",
+    "title": "Data Collection",
+    "section": "",
+    "text": "Embedded Help"
+  },
+  {
     "objectID": "installation.html",
     "href": "installation.html",
     "title": "Download & Installation",
@@ -18,7 +32,7 @@
     "href": "index.html",
     "title": "IRTlib Documentation",
     "section": "",
-    "text": "IRTlib Documentation\nIRTlib is a software for delivering computer-based tests. It consists of two components:\n\nIRTLib Editor: A software for test authors, which is used to configure studies.\nIRTlib Player: A data collection software used by test-takers to complete tasks configured for a study.\n\nThe software contains detailed documentation directly in the program, which is available on this page.\nThe software can be obtained directly from GitHub.\nInstructions for installing and using both programs can be found at Download & Installation"
+    "text": "IRTlib Documentation\nIRTlib is a software for delivering computer-based tests. It consists of two components:\n\nIRTLib Editor: A software for test authors, which is used to configure studies.\nIRTlib Player: A data collection software used by test-takers to complete tasks configured for a study.\n\nThe software contains detailed documentation directly in the program, which is available on this page.\nThe software can be obtained directly from GitHub.\nInstructions for installing and using both programs can be found at Download & Installation.\nBefore using the IRTlib software to configure and create deliveries, the CBA ItemBuilder can be used to create the assessment content in the form of individual tasks."
   },
   {
     "objectID": "editor.html",
@@ -110,5 +124,40 @@
     "title": "Github – More",
     "section": "",
     "text": "The IRTlib software allows the administration of assessment content created with the CBA ItemBuilder.\n\n\n\nCurrent versions of the CBA ItemBuilder (Windows): https://www.itembuilder.de/software\n\n\n\n\n\n(In preparation)"
+  },
+  {
+    "objectID": "preparation-parts.html",
+    "href": "preparation-parts.html",
+    "title": "Preparation",
+    "section": "",
+    "text": "Embedded Help\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEmbedded Help"
+  },
+  {
+    "objectID": "preparation-parts.html#survey-part-management",
+    "href": "preparation-parts.html#survey-part-management",
+    "title": "Preparation",
+    "section": "",
+    "text": "Embedded Help"
+  },
+  {
+    "objectID": "preparation-parts.html#basic-configurations-for-survey-parts",
+    "href": "preparation-parts.html#basic-configurations-for-survey-parts",
+    "title": "Preparation",
+    "section": "",
+    "text": "Embedded Help"
+  },
+  {
+    "objectID": "preparation-parts.html#routing-within-survey-parts",
+    "href": "preparation-parts.html#routing-within-survey-parts",
+    "title": "Preparation",
+    "section": "",
+    "text": "Embedded Help"
+  },
+  {
+    "objectID": "preparation-parts.html#routing-betweeen-survey-parts",
+    "href": "preparation-parts.html#routing-betweeen-survey-parts",
+    "title": "Preparation",
+    "section": "",
+    "text": "Embedded Help"
   }
 ]
