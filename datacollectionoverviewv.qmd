@@ -6,9 +6,22 @@ lang: en
 ---
 
 ::: {.content-visible when-profile="german"}
-*Es ist noch keine Übersetzung vorhanden für diesen Text.*
+
+# Datenerhebung 
+
+## Übersicht: Schritte zur Verwendung eines *IRTlib Player* zur *Datenerhebung*
+
+
 :::
+
+
+::: {.content-visible when-profile="english"}
+
 
 # Data Collection 
 
-## Overview
+## Overview: Steps to use *IRTlib Player* for *Data Collections*
+
+
+:::
+

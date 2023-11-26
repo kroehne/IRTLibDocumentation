@@ -9,31 +9,122 @@ lang: en
 
 # Vorbereitung
 
-## Erhebungsteile Management
+## Erhebungsteile
+
+### Erhebungsteile Management
+
+Wenn Studien aus mehreren Erhebunsteilen bestehen, kann die Reihenfolge der Erhebungsteile in der Ansichht *Erhebungsteile* / *Übersicht* angepasst werden.
 
 ::: {.callout-tip title="Embedded Help"}
 
 ```{=html}
-<iframe width="100%" height="600" src="../help/InlineHelp_View_Study_Part_Main_de-DEU.html"></iframe>
+<iframe width="100%" height="300" src="../help/InlineHelp_View_Study_Part_Main_de-DEU.html"></iframe>
+```
+
+::: 
+
+
+
+### Grundkonfiguration für Erhebungsteile 
+
+
+::: {.callout-tip title="Embedded Help"}
+
+```{=html}
+<iframe width="100%" height="300" src="../help/InlineHelp_View_Study_Parts_Info_Overview_de-DEU.html"></iframe>
+```
+
+:::
+
+
+### Vorspann-/Nachspann-Items 
+
+Items die *vor* einem potentiell Zeitbegrenzten Abschnitt eines Erhebugnsteils administriert werde, werden als *Vorspann-Items* bezeichnet. 
+
+::: {.callout-tip title="Embedded Help"}
+
+```{=html}
+<iframe width="100%" height="300" src="../help/InlineHelp_View_Study_Parts_Info_Epilog_de-DEU.html"></iframe>
+```
+
+:::
+
+
+Items die *nach* einem potentiell Zeitbegrenzten Abschnitt eines Erhebugnsteils administriert werde, werden als *Nachspann-Items* bezeichnet. 
+
+::: {.callout-tip title="Embedded Help"}
+
+```{=html}
+<iframe width="100%" height="300" src="../help/InlineHelp_View_Study_Parts_Info_Prolog_de-DEU.html"></iframe>
+```
+
+:::
+
+
+### Begrenzte Bearbeitungszeit
+
+::: {.callout-tip title="Embedded Help"}
+
+```{=html}
+<iframe width="100%" height="300" src="../help/InlineHelp_View_Study_Parts_Info_Time_de-DEU.html"></iframe>
+```
+
+:::
+
+
+### Assessmentinhalte (Items)
+
+::: {.callout-tip title="Embedded Help"}
+
+```{=html}
+<iframe width="100%" height="300" src="../help/InlineHelp_View_Study_Parts_Items_de-DEU.html"></iframe>
 ```
 
 :::
 
 
 
-## Grundkonfiguration für Erhebungsteile 
-
+### Variablen
 
 ::: {.callout-tip title="Embedded Help"}
 
 ```{=html}
-<iframe width="100%" height="600" src="../help/InlineHelp_View_Study_Parts_Info_Overview_de-DEU.html"></iframe>
+<iframe width="100%" height="300" src="../help/InlineHelp_View_Study_Parts_Variables_de-DEU.html"></iframe>
 ```
 
 :::
 
 
-## Routing innerhalb von Erhebungsteilen
+### Codebook
+
+::: {.callout-tip title="Embedded Help"}
+
+```{=html}
+<iframe width="100%" height="300" src="../help/InlineHelp_View_Study_Parts_Codebook_de-DEU.html"></iframe>
+```
+
+:::
+
+
+### ItemPool
+
+::: {.callout-tip title="Embedded Help"}
+
+```{=html}
+<iframe width="100%" height="300" src="../help/InlineHelp_View_Study_Parts_ItemPool_de-DEU.html"></iframe>
+```
+
+:::
+
+
+
+
+
+
+
+
+
+### Routing innerhalb von Erhebungsteilen
 
 ::: {.callout-tip title="Embedded Help"}
 
@@ -43,15 +134,11 @@ lang: en
 
 :::
 
-## Routing zwischen Erhebungsteilen
 
-::: {.callout-tip title="Embedded Help"}
 
-```{=html}
-<iframe width="100%" height="600" src="../help/InlineHelp_View_Study_Parts_Routing_de-DEU.html"></iframe>
-```
 
-:::
+
+
 :::
 
 ::: {.content-visible when-profile="english"}

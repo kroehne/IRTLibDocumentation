@@ -16,7 +16,7 @@ website:
             href: preparation-overview.qmd
           - text: Studien
             href: preparation-studies.qmd
-          - text: Testteile
+          - text: Erhebungsteile
             href: preparation-parts.qmd  
       - text: Datenerhebung
         menu:

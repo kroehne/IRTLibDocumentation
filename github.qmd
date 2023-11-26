@@ -23,11 +23,14 @@ The IRTlib software is free *research software* in the sense of *open science*. 
 ### Download
 
 ::: {.content-visible when-profile="german"}
-* Aktuelle Versionen der IRTlib Software (Windows und Docker):  
+* Aktuelle Versionen der IRTlib Software (Windows und Docker): [github](https://github.com/DIPFtba/IRTlibDeploymentSoftware)
+* Dokumentation: [github](https://github.com/kroehne/IRTLibDocumentation)
 :::
 
+
 ::: {.content-visible when-profile="english"}
-* Current versions of the IRTlib Software (Windows und Docker): 
+* Current versions of the IRTlib Software (Windows und Docker):  [github](https://github.com/DIPFtba/IRTlibDeploymentSoftware)
+* Documentation: [github](https://github.com/kroehne/IRTLibDocumentation)
 :::
 
 
@@ -52,21 +55,48 @@ The IRTlib software allows the administration of assessment content created with
 :::
 
 
-### Source Code 
-
-* (In preparation)
 
 ::: {.content-visible when-profile="german"}
+
+### Source Code 
+
+Source Code und Material zum CBA ItemBuilder sind aufgeteilt auf mehrere Repositorien: 
+
+* CBA ItemBuilder (Desktop Anwendung): [github](https://github.com/DIPFtba/CBAItemBuilderDesktopEditor) (In Vorbereitung / noch privat)
+* Laufzeitumgebung / Rumtime: [github](https://github.com/DIPFtba/CBAItemBuilderRuntime) (In Vorbereitung / noch privat)
+* Ausführungsumgebung / Execution Environment für Entwickler: [github](https://github.com/DIPFtba/CBAItemBuilderExecutionEnvironment) (In Vorbereitung / noch privat)
+* Technische Dokumentation: [github](https://github.com/DIPFtba/CBAItemBuilderDocumentation) (In Vorbereitung / noch privat)
+* Technische Beispielitems: [github](https://github.com/DIPFtba/CBAItemBuilderExampleItems)(In Vorbereitung / noch privat)
+
 ### Dokumentation 
 
-* Online-Dokumentation (interaktiv): [https://cba.itembuilder.de](https://cba.itembuilder.de)  
-‚* Source: (In preparation)
+Online-Dokumentation
+
+* HTML (interaktiv): [https://cba.itembuilder.de](https://cba.itembuilder.de)  
+* PDF (statisch): [Open-Assessments-with-CBA-ItemBuilder.pdf](https://cba.itembuilder.de/Open-Assessments-with-CBA-ItemBuilder.pdf)
+* Quellen [github](https://github.com/kroehne/CBAItemBuilderBook) (In Vorbereitung / noch privat)
 
 :::
 
 ::: {.content-visible when-profile="english"}
+
+### Source Code 
+
+Source code and material for the CBA ItemBuilder are divided into several repositories: 
+
+* CBA ItemBuilder (desktop application): [github](https://github.com/DIPFtba/CBAItemBuilderDesktopEditor) (In preparation / still private)
+* Runtime environment / Rumtime: [github](https://github.com/DIPFtba/CBAItemBuilderRuntime) (In preparation / still private)
+* Execution environment for developers: [github](https://github.com/DIPFtba/CBAItemBuilderExecutionEnvironment) (In preparation / still private)
+* Technical documentation: [github](https://github.com/DIPFtba/CBAItemBuilderDocumentation) (In preparation / still private)
+* Technical example items: [github](https://github.com/DIPFtba/CBAItemBuilderExampleItems)(In preparation / still private)
+
 ### Documentation 
 
+Online-Dokumentation
+
+* HTML (interaktiv): [https://cba.itembuilder.de](https://cba.itembuilder.de)  
+* PDF (static): [Open-Assessments-with-CBA-ItemBuilder.pdf](https://cba.itembuilder.de/Open-Assessments-with-CBA-ItemBuilder.pdf)
+* Source [github](https://github.com/kroehne/CBAItemBuilderBook) (In preparation / still private)
 
 :::
 

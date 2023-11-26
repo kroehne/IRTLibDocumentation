@@ -9,13 +9,28 @@ lang: en
 
 # Vorbereitung
 
+## Eingebettete Programhilfe
+
+Für die Verwendung des *IRTlib Editors* ist eine Programmhilfe direkt in die Anwendung integriert, welche über das kleine `?`-Symbol oben rechts eingeblendet werden kann. 
+
+![](img/screenshot-editor-embedded-help-de-DEU.png){width="100%"}
+
+::: {.callout-tip title="Embedded Help"}
+
+Die Inhalte dieser Hilfe-Seiten aus dem *IRTlib Editor* sind in diese *IRTlib Dokumentation* integriert und werden immer in diesem Rahmen mit der überschrift *Embedded Help* dargestellt. 
+
+:::
+
+
 ## Studienverwaltung
 
 Nach dem Start des *IRTlib-Editors* wird die Ansicht *Studien* angezeigt. In dieser Ansicht ist der erste Schritt zur Vorbereitung einer neuen Konfiguration das **Hinzufügen einer neuen Studie**:
 
 ![](img/screenshot-studies-add-study-01-DEU.png){width="100%"}
 
-Die erstellten Studien erscheinen als Karten in der Ansicht *Studien*. Beachten Sie, dass die Reihenfolge, in der die Studien in der *Studienansicht* angezeigt werden, keine Rolle spielt. Weitere Konfigurationen einer bestimmten Studie, einschließlich Versionierung und Veröffentlichung, werden innerhalb von Studien verwaltet (d.h. nach dem Öffnen einer Studie zur Bearbeitung durch Klicken auf das Bearbeitungssymbol am unteren rechten Rand der Karte).
+Die erstellten Studien erscheinen als Karten in der Ansicht *Studien*. Beachten Sie, dass die Reihenfolge, in der die Studien in der *Studienansicht* angezeigt werden, keine Rolle spielt. 
+
+Eine detaillierte Anleitung zur Erstellung einer *Studie* findet sich hier in der eingebetteten Hilfe:
 
 ::: {.callout-tip title="Embedded Help"}
 
@@ -25,13 +40,18 @@ Die erstellten Studien erscheinen als Karten in der Ansicht *Studien*. Beachten 
 
 :::
 
-## Grundlegende Konfigurationen
+
+## Konfiguration von Studien
+
+Die Konfigurationen einer bestimmten Studie, einschließlich <a href="publish-and-export.html">Versionierung und Veröffentlichung</a>, werden innerhalb von Studien verwaltet (d.h. nach dem Öffnen einer Studie zur Bearbeitung durch Klicken auf das Bearbeitungssymbol am unteren rechten Rand der Karte).
+
+### Grundlegende Konfigurationen
 
 Erstellte Studien, die im *IRTlib Editor* in der Ansicht *Studien* angezeigt werden, können zur Bearbeitung geöffnet werden. 
 
 ![](img/screenshot-studies-info.de-DEU.png){width="100%"}
 
-Mehr informationen zu dem Grundkonfiguration finden sich hier in der eingebetteten Hilfe. 
+Detaillierte Informationen zu der Grundkonfiguration einer Studie finden sich hier in der eingebetteten Hilfe:
 
 ::: {.callout-tip title="Embedded Help"}
 
@@ -42,7 +62,7 @@ Mehr informationen zu dem Grundkonfiguration finden sich hier in der eingebettet
 :::
 
 
-## Zugang zu Studien (Login)
+### Zugang zu Studien (Login)
 
 Die *IRTlib Software* unterstützt verschiedene Wege, wie sich Personen (Testteilnehmer, Befragte, ...) für ein Assessment Authentifizieren können. Die Konfiguratinen umfassen zwei Aspekte: 
 
@@ -57,7 +77,7 @@ Die *IRTlib Software* unterstützt verschiedene Wege, wie sich Personen (Testtei
 
 ::: 
 
-## Konfiguration zur Anzeige
+### Konfiguration zur Anzeige
 
 Für die Darstellung der Assessmentinhalte können Eigenschaften zur Anzeige definiert werden. 
 
@@ -70,7 +90,7 @@ Für die Darstellung der Assessmentinhalte können Eigenschaften zur Anzeige def
 ::: 
 
 
-## Konfiguration des Testleitermenüs
+### Konfiguration des Testleitermenüs
 
 Wenn die Durchführung von Assessments begleitet durch Testleiter oder Interviewer erfolgt, können Funktionen passwortgeschützt für Testleiter definiert werden. 
 
@@ -83,7 +103,7 @@ Wenn die Durchführung von Assessments begleitet durch Testleiter oder Interview
 ::: 
 
 
-## Konfiguration des Session-Ende
+### Konfiguration des Session-Ende
 
 Für die Integration von Assessments in externe Abläufe besteht die Möglichkeit zu konfiguriere, wie nach der Bearbeitung der Assessmentinhalte in einer *Session* vorgegangen werden soll, was also am *Session-Ende* geschehen wird.
 
@@ -95,42 +115,23 @@ Für die Integration von Assessments in externe Abläufe besteht die Möglichkei
 
 ::: 
 
+
+## Erhebungsteile 
+
+Assessments, die mit der *IRTlib Software* administriert werden bestehen aus sogenannten *Erehebungsteilen*. Nach der Konfiguration einer Studie muss zumindest ein <a href="preparation-parts.html">*Erhebungsteil*</a> angelegt werden.
+
+
+### Routing zwischen Erhebungsteilen
+
+Wenn mehrere *Erhebungsteile* für eine *Studie* definiert sind kann die Abfolge von Erhebungsteilen definiert werden, in welcher Befragte oder Testpersonen die Inhalte der *Erhebungsteile* präsentiert bekommen. Neben einfachen linearen Abläufen können Abläufe von mehreren Erhebungsteilen auch mit eine *Blockly*-basierten Routing konfiguriert werden. 
+
+::: {.callout-tip title="Embedded Help"}
+
+```{=html}
+<iframe width="100%" height="300" src="../help/InlineHelp_View_Study_Parts_Routing_de-DEU.html"></iframe>
+```
+
 ::: 
-
-
-::: {.content-visible when-profile="english"}
-
-# Preparation
-
-## Study Management
-
-After starting the *IRTlib Editor*, the view *Studies* is displayed. In this view, the first step for preparing a new configuration is to **add a new study**:
-
-
-![](img/screenshot-studies-add-study-01-DEU.png)
-
-Created studies appear as cards in the view *Studies*. Note that the order in which studies are displayed in the *Study View* is unimportant. Further configurations of a particular study, including versioning and publishing, are managed within studies (i.e., after opening a study for editing by clicking on the edit icon on the bottom right border of the card).
-
-::: {.callout-tip title="Embedded Help"}
-
-```{=html}
-<iframe width="100%" height="600" src="../help/InlineHelp_View_Studies_Main_en-US.html"></iframe>
-```
-
-:::
-
-
-## Basic Configurations
-
-Created studies, shown in the *IRTlib Editor* in the view *Studies*, can be opened for editing.
-
-::: {.callout-tip title="Embedded Help"}
-
-```{=html}
-<iframe width="780" height="600" src="../help/InlineHelp_View_Study_Info_Overview_en-US.html"></iframe>
-```
-
-:::
 
 
 ::: 
