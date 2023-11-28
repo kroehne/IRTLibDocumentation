@@ -8,37 +8,83 @@ format:
 
 # IRTlib Dokumentation
 
-IRTlib ist eine Software zur Auslieferung computerbasierter Tests. Sie besteht aus zwei Komponenten:
+*IRTlib* ist eine Software zur Auslieferung computerbasierter Tests. Sie besteht aus zwei Komponenten:
 
--   IRTLib Editor: Eine Software für Test-Autoren, welche verwendet wird um *Studien* zu konfigurieren.
--   IRTlib Player: Eine Software zur *Datenerhebung*, mit welcher Zielpersonen Aufgaben bearbeiten, die für eine *Studie* konfiguriert sind.
+-   *IRTLib Editor*: Eine Software für Test-Autoren, welche verwendet wird um *Studien* zu konfigurieren.
+-   *IRTlib Player*: Eine Software zur *Datenerhebung*, mit welcher Zielpersonen Aufgaben bearbeiten, die für eine *Studie* konfiguriert sind.
 
 Die Software enthält ausführliche Dokumentation direkt im Programm, die auf dieser Seite zugänglich ist.
 
 Die Software kann direkt von [GitHub](https://github.com/DIPFtba/IRTlibDeploymentSoftware) bezogen werden. 
 
-Hinweise zur Installation und Verwendung beider Programme finden sich unter [Download & Installation](installation.qmd).
+Hinweise zur Installation und Einrichtung beider Programme zur ersten Verwendung finden sich unter [Download](installation.qmd).
 
-Vor der Verwendung der IRTlib Software zur Konfiguration und Erstellung von Auslieferungen, können mit dem <a href="https://cba.itembuilder.de">CBA ItemBuilder</a> die Assessmentinhalte in Form von einzelnen Tasks erstellt werden. 
+<hr noshade/>
+
+::: {.grid}
+
+::: {.g-col-9}
+
+Vor der Verwendung der *IRTlib Software* zur Konfiguration und Erstellung von Auslieferungen, können mit dem <a href="https://tba.dipf.de/de/infrastruktur/softwareentwicklung/cba-itembuilder">CBA ItemBuilder</a> die Assessmentinhalte in Form von einzelnen Tasks erstellt werden. 
+
+Der *CBA ItemBuilder* kann hier heruntergeladen werden: <a href="https://www.itembuilder.de/software">https://www.itembuilder.de/software</a>
+
+Die interaktive Dokumentation des *CBA ItemBuilder* ist hier zugänglich: <a href="https://cba.itembuilder.de">https://cba.itembuilder.de/</a>
+
+:::
+
+::: {.g-col-3}
+
+[![CBA ItemBuilder Dokumentation (PDF)](https://cba.itembuilder.de/img/cover_html.png){wdith=80}](https://cba.itembuilder.de/Open-Assessments-with-CBA-ItemBuilder.pdf)
+
+
+:::
+
+
+:::
+
 
 :::
 
 ::: {.content-visible when-profile="english"}
 
+
 # IRTlib Documentation
 
-IRTlib is a software for delivering computer-based tests. It consists of two components:
+*IRTlib* is a software for the delivery of computer-based tests. It consists of two components:
 
-- IRTLib Editor: A software for test authors, which is used to configure *studies*.
-- IRTlib Player: A *data collection* software used by test-takers to complete tasks configured for a *study*.
+- *IRTLib Editor*: A software for test authors, which is used to configure *studies*.
+- *IRTlib Player*: A *data collection* software used by test-takers to complete tasks configured for a *study*.
 
-The software contains detailed documentation directly in the program, which is available on this page.
+The software contains detailed documentation directly in the program, which is accessible on this page.
 
 The software can be obtained directly from [GitHub](https://github.com/DIPFtba/IRTlibDeploymentSoftware). 
 
-Instructions for installing and using both programs can be found at [Download & Installation](installation.qmd).
+Instructions for installing and setting up both programs for first use can be found at [Download](installation.qmd).
 
-Before using the IRTlib software to configure and create deliveries, the  <a href="https://cba.itembuilder.de">CBA ItemBuilder</a> can be used to create the assessment content in the form of individual tasks. 
+<hr noshade/>
+
+::: {.grid}
+
+::: {.g-col-9}
+
+Before using the *IRTlib Software* to configure and create deployments, the assessment content can be created in the form of individual tasks using the <a href="https://tba.dipf.de/de/infrastruktur/softwareentwicklung/cba-itembuilder">CBA ItemBuilder</a>. 
+
+The *CBA ItemBuilder* can be downloaded here: <a href="https://www.itembuilder.de/software">https://www.itembuilder.de/software</a>
+
+The interactive documentation of the *CBA ItemBuilder* is available here: <a href="https://cba.itembuilder.de">https://cba.itembuilder.de/</a>
+
+:::
+
+::: {.g-col-3}
+
+[![CBA ItemBuilder Documentation (PDF)](https://cba.itembuilder.de/img/cover_html.png){wdith=80}](https://cba.itembuilder.de/Open-Assessments-with-CBA-ItemBuilder.pdf)
+
+
+:::
+
+
+:::
 
 :::
 

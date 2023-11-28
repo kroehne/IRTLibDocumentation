@@ -5,14 +5,14 @@ project:
 website:
   title: "IRTlib"
   page-footer: 
-    left: "Copyright 2023-2024, Ulf Kroehne" 
+    right: "2023-2024, Ulf Kroehne" 
     
 format:
   html:
     theme: cosmo
     css: styles.css
-    toc: true
-
+    toc: true 
+    
 profile:
   default: language
 

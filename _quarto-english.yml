@@ -42,10 +42,10 @@ website:
       - href: ../de/index.html
         text: Deutsch
       - href: ../en/index.html
-        text: English
+        text: English 
   page-footer: 
-    left: "Copyright 2023-2024, Ulf Kroehne" 
-    right: 
+    right: "2023-2024, Ulf Kroehne" 
+    left: 
       - href: https://tba.dipf.de/en/startseite?set_language=en
         text: Centre for Technology-Based Assessment (TBA Centre)<br/>DIPF | Leibniz Institute for Research and Information in Education
 format:
