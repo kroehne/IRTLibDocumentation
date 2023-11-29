@@ -4539,12 +4539,8 @@ vertical-align: -.125em;
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./../de/index.html" rel target>
- <span class="menu-text">Deutsch</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./../en/index.html" rel target>
- <span class="menu-text">English</span></a>
+ <span class="menu-text">(English Version)</span></a>
   </li>  
 </ul>
             <div class="quarto-navbar-tools">
@@ -4564,10 +4560,10 @@ vertical-align: -.125em;
   <ul>
   <li><a href="#download-installation" id="toc-download-installation" class="nav-link active" data-scroll-target="#download-installation">Download &amp; Installation</a>
   <ul class="collapse">
-  <li><a href="#versions" id="toc-versions" class="nav-link" data-scroll-target="#versions">Versions</a>
+  <li><a href="#versionen" id="toc-versionen" class="nav-link" data-scroll-target="#versionen">Versionen</a>
   <ul class="collapse">
   <li><a href="#offline-windows" id="toc-offline-windows" class="nav-link" data-scroll-target="#offline-windows">Offline (Windows)</a></li>
-  <li><a href="#online-editor-docker" id="toc-online-editor-docker" class="nav-link" data-scroll-target="#online-editor-docker">Online Editor (Docker)</a></li>
+  <li><a href="#online-editor-docker" id="toc-online-editor-docker" class="nav-link" data-scroll-target="#online-editor-docker">Online-Editor (Docker)</a></li>
   </ul></li>
   </ul></li>
   </ul>
@@ -4578,16 +4574,15 @@ vertical-align: -.125em;
 
 
 
-<p><em>Es ist noch keine Übersetzung vorhanden für diesen Text.</em></p>
 <section id="download-installation" class="level1">
 <h1>Download &amp; Installation</h1>
-<section id="versions" class="level2">
-<h2 class="anchored" data-anchor-id="versions">Versions</h2>
-<p>The “IRTLib” software is provided for offline use (Windows) and for online use (Docker Container).</p>
+<section id="versionen" class="level2">
+<h2 class="anchored" data-anchor-id="versionen">Versionen</h2>
+<p>Die <em>IRTlib</em>-Software wird für die Offline-Nutzung (Windows) und für die Online-Nutzung (Docker Container) bereitgestellt.</p>
 <section id="offline-windows" class="level3">
 <h3 class="anchored" data-anchor-id="offline-windows">Offline (Windows)</h3>
-<p>The IRTLib software (Editor and Player) for offline use can be obtained and downloaded from the releases section of the repository <a href="https://github.com/DIPFtba/IRTlibDeploymentSoftware" class="uri">https://github.com/DIPFtba/IRTlibDeploymentSoftware</a>.</p>
-<p>The section <a href="https://github.com/DIPFtba/IRTlibDeploymentSoftware/releases">Releases</a> contains the two archives “TestApp.Editor.Desktop.zip” and “TestApp.Player.Desktop.zip” for download.</p>
+<p>Die <em>IRTlib</em>-Software (<em>IRTlib Editor</em> und <em>IRTlib Player</em>) für die Offline-Nutzung kann aus dem Abschnitt [Releases] des Repository <a href="https://github.com/DIPFtba/IRTlibDeploymentSoftware" class="uri">https://github.com/DIPFtba/IRTlibDeploymentSoftware</a> bezogen und heruntergeladen werden.</p>
+<p>Im Abschnitt <a href="https://github.com/DIPFtba/IRTlibDeploymentSoftware/releases">Releases</a> stehen die beiden Archive <code>TestApp.Editor.Desktop.zip</code> und <code>TestApp.Player.Desktop.zip</code> zum Download bereit.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -4598,29 +4593,19 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Note that currently the latest build can be found in the section <a href="https://github.com/DIPFtba/IRTlibDeploymentSoftware/releases/tag/preview-231025">Preview</a> of the <em>Release</em>-section of the <a href="https://github.com/DIPFtba/IRTlibDeploymentSoftware/releases">repository</a>.</p>
+<p>Beachten Sie, dass der aktuellste Build im Abschnitt <a href="https://github.com/DIPFtba/IRTlibDeploymentSoftware/releases/tag/preview-231025">Preview</a> des <em>Release</em>-Abschnitts des <a href="https://github.com/DIPFtba/IRTlibDeploymentSoftware/releases">repository</a> zu finden ist.</p>
 </div>
 </div>
-<p>The editor for offline use will be provided as a ZIP archive (e.g., <code>TestApp.Editor.Desktop.zip</code>) that needs to be extracted. After extracting the editor, the application <code>TestApp.Editor.Desktop.exe</code> can be started on a Windows device.</p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<p>Der <em>IRTlib Editor</em> für die Offline-Nutzung wird als ZIP-Archiv (z.B. <code>TestApp.Editor.Desktop.zip</code>) bereitgestellt, das entpackt werden muss. Nach dem Entpacken des Editors kann die Anwendung <code>TestApp.Editor.Desktop.exe</code> auf einem Windows-Gerät gestartet werden.</p>
+<div class="Hinweis-Warnung">
+<p>Die automatisch erstellten Vorschauversionen des <em>IRTlib Editors</em> und <em>IRTlib Players</em> sind nicht signiert. Eine Warnmeldung des Betriebssystems muss akzeptiert werden, bevor die Programme ausgeführt werden können.</p>
 </div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The automatically created preview versions of the IRTLib Editor and Player are not signed. A warning message from the operating system must be accepted before the programs can be executed.</p>
-</div>
-</div>
-<p>The player is also available as a Windows application for offline use, provided as ZIP-archive (e.g., <code>TestApp.Player.Desktop.zip</code>). However, after extracting the player, it requires a published study configuration before the player can be used to collect data. Only after adding content of provided as study configuration of a published study, the executable <code>TestApp.Player.Desktop.exe</code> can be started (either with or without startup parameters).</p>
+<p>Der Player ist auch als Windows-Anwendung für die Offline-Nutzung verfügbar und wird als ZIP-Archiv (z.B. <code>TestApp.Player.Desktop.zip</code>) bereitgestellt. Nach dem Entpacken des Players ist jedoch eine veröffentlichte Studienkonfiguration erforderlich, bevor der Player zur Datenerfassung verwendet werden kann. Erst nach dem Hinzufügen der als Studienkonfiguration bereitgestellten Inhalte einer veröffentlichten Studie kann die ausführbare Datei <code>TestApp.Player.Desktop.exe</code> gestartet werden (entweder mit oder ohne Startparameter).</p>
 </section>
 <section id="online-editor-docker" class="level3">
-<h3 class="anchored" data-anchor-id="online-editor-docker">Online Editor (Docker)</h3>
-<p>The IRTLib software (editor and player) for online use can be obtained as a docker container. An example is also provided at <a href="https://github.com/DIPFtba/IRTlibDeploymentSoftware" class="uri">https://github.com/DIPFtba/IRTlibDeploymentSoftware</a>. To use the docker container, it is suggested to check out the repository on the target device (requiring git) and to run the command <code>./start.sh</code> inside the folder <code>docker</code> (requiring installed <code>docker</code> and <code>docker compose</code>) to start the software.</p>
-<p>When not changed in the file <code>docker-compose.yml</code>, the editor is accessible on port <em>8002</em> and the player software is accessible on port <em>8001</em>.</p>
+<h3 class="anchored" data-anchor-id="online-editor-docker">Online-Editor (Docker)</h3>
+<p>Die <em>IRTlib</em>-Software (<em>IRTlib Editor</em> und <em>IRTlib Player</em>) für die Online-Nutzung kann als Docker-Container bezogen werden. Ein Beispiel ist auch unter <a href="https://github.com/DIPFtba/IRTlibDeploymentSoftware" class="uri">https://github.com/DIPFtba/IRTlibDeploymentSoftware</a> zu finden. Um den Docker-Container zu verwenden, wird empfohlen, das Repository auf dem Zielgerät auszuchecken (erfordert git) und den Befehl <code>./start.sh</code> im Ordner <code>docker</code> auszuführen (erfordert installiertes <code>docker</code> und <code>docker compose</code>), um die Software zu starten.</p>
+<p>Wenn in der Datei <code>docker-compose.yml</code> nichts geändert wird, ist der Editor über Port <em>8002</em> und die Player-Software über Port <em>8001</em> erreichbar.</p>
 
 
 </section>

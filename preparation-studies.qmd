@@ -9,26 +9,17 @@ lang: en
 
 # Vorbereitung
 
-## Eingebettete Programhilfe
+## Studien 
 
-Für die Verwendung des *IRTlib Editors* ist eine Programmhilfe direkt in die Anwendung integriert, welche über das kleine `?`-Symbol oben rechts eingeblendet werden kann. 
+Konfigurationen die mit dem *IRTlib-Editor* erstellt werden, werden in sogenannten *Studien* zusammengefasst. Eine *Studie* soll die Assessmentinhalte zusammenfassen, welche in einer Erhebung oder Sitzung administriert werden. 
 
-![](img/screenshot-editor-embedded-help-de-DEU.png){width="100%"}
-
-::: {.callout-tip title="Embedded Help"}
-
-Die Inhalte dieser Hilfe-Seiten aus dem *IRTlib Editor* sind in diese *IRTlib Dokumentation* integriert und werden immer in diesem Rahmen mit der überschrift *Embedded Help* dargestellt. 
-
-:::
-
-
-## Studienverwaltung
+### Studienverwaltung
 
 Nach dem Start des *IRTlib-Editors* wird die Ansicht *Studien* angezeigt. In dieser Ansicht ist der erste Schritt zur Vorbereitung einer neuen Konfiguration das **Hinzufügen einer neuen Studie**:
 
-![](img/screenshot-studies-add-study-01-DEU.png){width="100%"}
+{{< video https://youtu.be/7VKf6U3oeM4 >}}
 
-Die erstellten Studien erscheinen als Karten in der Ansicht *Studien*. Beachten Sie, dass die Reihenfolge, in der die Studien in der *Studienansicht* angezeigt werden, keine Rolle spielt. 
+Die erstellten *Studie*n erscheinen als Karten in der Ansicht *Studien*. Beachten Sie, dass die Reihenfolge, in der die Studien in der *Studienansicht* angezeigt werden, keine Rolle spielt. 
 
 Eine detaillierte Anleitung zur Erstellung einer *Studie* findet sich hier in der eingebetteten Hilfe:
 
@@ -115,23 +106,6 @@ Für die Integration von Assessments in externe Abläufe besteht die Möglichkei
 
 ::: 
 
-
-## Erhebungsteile 
-
-Assessments, die mit der *IRTlib Software* administriert werden bestehen aus sogenannten *Erehebungsteilen*. Nach der Konfiguration einer Studie muss zumindest ein <a href="preparation-parts.html">*Erhebungsteil*</a> angelegt werden.
-
-
-### Routing zwischen Erhebungsteilen
-
-Wenn mehrere *Erhebungsteile* für eine *Studie* definiert sind kann die Abfolge von Erhebungsteilen definiert werden, in welcher Befragte oder Testpersonen die Inhalte der *Erhebungsteile* präsentiert bekommen. Neben einfachen linearen Abläufen können Abläufe von mehreren Erhebungsteilen auch mit eine *Blockly*-basierten Routing konfiguriert werden. 
-
-::: {.callout-tip title="Embedded Help"}
-
-```{=html}
-<iframe width="100%" height="300" src="../help/InlineHelp_View_Study_Parts_Routing_de-DEU.html"></iframe>
-```
-
-::: 
 
 
 ::: 

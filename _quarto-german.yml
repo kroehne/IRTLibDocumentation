@@ -39,10 +39,8 @@ website:
             url:  https://github.com/kroehne/IRTLibDocumentation  
           - text: (mehr)
             url:  github.qmd       
-      - href: ../de/index.html
-        text: Deutsch
       - href: ../en/index.html
-        text: English 
+        text: (English Version)
   page-footer: 
     right: "2023-2024, Ulf Kroehne" 
     left: 

@@ -11,9 +11,17 @@ lang: en
 
 ## Erhebungsteile
 
-### Erhebungsteile Management
+Assessments, die mit der *IRTlib Software* administriert werden bestehen aus sogenannten *Erehebungsteilen*. Nach der Konfiguration einer  <a href="preparation-studies.qmd">Studie</a> muss zumindest ein *Erhebungsteil* angelegt werden.
 
-Wenn Studien aus mehreren Erhebunsteilen bestehen, kann die Reihenfolge der Erhebungsteile in der Ansichht *Erhebungsteile* / *Übersicht* angepasst werden.
+### Erhebungsteilverwaltung
+
+Nach dem Erstellen einer *Studie* erfolgt in der Ansicht *Erhebungsteile* als nächster Schritt zur Vorbereitung einer Testauslifierung das **Hinzufügen eines neuen Erhebungsteils**:
+
+{{< video https://youtu.be/YFgu8uz8nkc >}}
+
+Die erstellten *Erhebungsteile* erscheinen als Karten in der Ansicht *Erhebungsteile*. Wenn Studien aus mehreren Erhebunsteilen bestehen, kann für *lineare Abläufe* die Reihenfolge der Erhebungsteile in der Ansichht *Erhebungsteile* / *Übersicht* angepasst werden. Sollen *Erhebungsteile* in Abhängigkeit von Variablen (z.B. übergebene *Preload*-Variablen oder andere *Blockly*-Variablen gesteuert werden, kann alternativ ein <a href="preparation-parts.html#routing-zwischen-erhebungsteilen">Routing zwischen Erhebungsteilen</a> konfiguriert werden. 
+
+Eine detaillierte Anleitung zur Erstellung von *Erhebungsteilen* findet sich hier in der eingebetteten Hilfe:
 
 ::: {.callout-tip title="Embedded Help"}
 
@@ -23,7 +31,9 @@ Wenn Studien aus mehreren Erhebunsteilen bestehen, kann die Reihenfolge der Erhe
 
 ::: 
 
+Die Reihenfolge von *Erhebunsteilen* kann in der Ansicht *Erhebungsteile* verändert werden: 
 
+{{< video https://youtu.be/Ag0IcETZTdM >}}
 
 ### Grundkonfiguration für Erhebungsteile 
 
@@ -117,13 +127,6 @@ Items die *nach* einem potentiell Zeitbegrenzten Abschnitt eines Erhebugnsteils 
 :::
 
 
-
-
-
-
-
-
-
 ### Routing innerhalb von Erhebungsteilen
 
 ::: {.callout-tip title="Embedded Help"}
@@ -135,6 +138,19 @@ Items die *nach* einem potentiell Zeitbegrenzten Abschnitt eines Erhebugnsteils 
 :::
 
 
+### Routing zwischen Erhebungsteilen
+
+Wenn mehrere *Erhebungsteile* für eine *Studie* definiert sind kann die Abfolge von Erhebungsteilen definiert werden, in welcher Befragte oder Testpersonen die Inhalte der *Erhebungsteile* präsentiert bekommen. 
+
+Neben einfachen linearen Abläufen können Abläufe von mehreren Erhebungsteilen auch mit eine *Blockly*-basierten Routing konfiguriert werden. 
+
+::: {.callout-tip title="Embedded Help"}
+
+```{=html}
+<iframe width="100%" height="300" src="../help/InlineHelp_View_Study_Parts_Routing_de-DEU.html"></iframe>
+```
+
+::: 
 
 
 
