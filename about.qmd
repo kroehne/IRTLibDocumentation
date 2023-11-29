@@ -1,18 +1,17 @@
 ---
-title: "About"
 format:
   html:
     embed-resources: true
 ---
 
-About this site
+::: {.content-visible when-profile="german"}
 
+# Über IRTlib.net
 
-This is a Quarto website.
+:::
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+::: {.content-visible when-profile="english"}
 
-```{=html}
-<iframe width="780" height="600" src="../help/test1.html" title="Quarto Documentation"></iframe>
-```
+# About IRTlib.net
 
+:::

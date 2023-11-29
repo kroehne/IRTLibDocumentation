@@ -30,6 +30,8 @@ website:
             href: data-collection-post-processing.qmd
       - href: settings.qmd
         text: Einstellungen
+      - href: about.qmd
+        text: Über
     right:
       - icon: github
         menu:

@@ -23,14 +23,28 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: 6.0.x
-          dotnet-quality: 'preview'  
+          dotnet-version: '6.x'
+
+      - name: Prepare Temp Folder
+        run: |
+           mkdir $GITHUB_WORKSPACE/_tmp/    
 
       - name: Show Structure
         run: |      
            echo `ls $GITHUB_WORKSPACE/`         
-           echo `ls $GITHUB_WORKSPACE/tools/` 
+           echo `ls $GITHUB_WORKSPACE/vs/` 
 
+      - name: Build Tool 
+        run: dotnet build vs/html2resx.sln
+
+      - name: Publish Tool 
+        run: dotnet publish vs/html2resx/html2resx.csproj -r ubuntu.16.10-x64 -o "$GITHUB_WORKSPACE/_tmp"
+
+      - name: Run Tool 
+        run: |      
+           echo `ls $GITHUB_WORKSPACE/`            
+           $GITHUB_WORKSPACE/_tmp/html2resx $GITHUB_WORKSPACE/_site/help/ $GITHUB_WORKSPACE/_site/ ${GITHUB_REF##*/} $(git rev-parse --short "$GITHUB_SHA")
+           rm -r $GITHUB_WORKSPACE/_tmp/ 
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

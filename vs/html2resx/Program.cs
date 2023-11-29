@@ -11,7 +11,7 @@ namespace ResxFileCreator
         {
 
             if (args.Length == 0)
-                args = new string[] { "/Users/kroehne/Documents/work/github/IRTLibDocumentation/_site/help/", "/Users/kroehne/Documents/work/github/IRTLibDocumentation/_site/" };
+                args = new string[] { "/Users/kroehne/Documents/work/github/IRTLibDocumentation/_site/help/", "/Users/kroehne/Documents/work/github/IRTLibDocumentation/_site/", "none" };
 
             for (int i = 0; i < args.Length; i++)
                 Console.WriteLine("Argument " + i + ": " + args[i]);
@@ -32,6 +32,12 @@ namespace ResxFileCreator
                 else if (_filename.EndsWith("en-US"))
                     resx_en_US.AddResource(_key, File.ReadAllText(_f));
             }
+
+            resx_de_DEU.AddResource("Help-Version-Git-Hash", args[2]);
+            resx_en_US.AddResource("Help-Version-Git-Hash", args[2]);
+
+            resx_de_DEU.AddResource("Help-Version-Last-Change", DateTime.Now.ToString());
+            resx_en_US.AddResource("Help-Version-Last-Change", DateTime.Now.ToString());
 
             resx_de_DEU.Close();
             resx_en_US.Close();

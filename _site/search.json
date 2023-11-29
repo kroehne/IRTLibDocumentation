@@ -1,17 +1,24 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "\nIRTlib Software\n",
     "section": "",
     "text": "IRTlib Software\n\n\n\nIRTlib ist eine Software zur Auslieferung computerbasierter Assessments basierend auf Aufgaben, die mit dem CBA ItemBuilder erstellt wurden. Die Software erlaubt die Definition von flexiblen Abläufen unter Nutzung von visueller Programmierung und Funktionen der Item-Response Theoie (IRT).\n\n\nIRTlib is a software for the delivery of computer-based assessments using tasks develope with the CBA ItemBuilder. The software allows the definition of flexible processes using visual programming and functions of the item-response theory (IRT).\n\n\n\n\n\nDokumentation auf Deutsch\n\n\nEnglish Documentation"
+  },
+  {
+    "objectID": "github.html",
+    "href": "github.html",
+    "title": "IRTlib",
+    "section": "",
+    "text": "Resx de-DEU.rex en-US.rex"
+  },
+  {
+    "objectID": "github.html#irtlib-software",
+    "href": "github.html#irtlib-software",
+    "title": "IRTlib",
+    "section": "",
+    "text": "Resx de-DEU.rex en-US.rex"
   },
   {
     "objectID": "github.html#cba-itembuilder",
