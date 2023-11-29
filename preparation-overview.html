@@ -4444,87 +4444,15 @@ vertical-align: -.125em;
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#preparation" id="toc-preparation" class="nav-link active" data-scroll-target="#preparation">Preparation</a>
-  <ul class="collapse">
-  <li><a href="#overview-steps-to-use-irtlib-editor-for-study-preparation" id="toc-overview-steps-to-use-irtlib-editor-for-study-preparation" class="nav-link" data-scroll-target="#overview-steps-to-use-irtlib-editor-for-study-preparation">Overview: Steps to use <em>IRTlib Editor</em> for Study Preparation</a></li>
-  </ul></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
 
-<section id="preparation" class="level1">
-<h1>Preparation</h1>
-<section id="overview-steps-to-use-irtlib-editor-for-study-preparation" class="level2">
-<h2 class="anchored" data-anchor-id="overview-steps-to-use-irtlib-editor-for-study-preparation">Overview: Steps to use <em>IRTlib Editor</em> for Study Preparation</h2>
-<p>Preparing a computer-based assessment based on CBA ItemBuilder items begins with using the <em>IRTlib Editor</em> to create a study configuration. This typically involves the following steps:</p>
-<div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Optional
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul>
-<li><strong>Pre-requisite</strong>: Check the availability of the <a href="./settings.html">Runtime</a>. The <em>IRTlib Editor</em> can be used to prepare assessments using CBA ItemBuilder <em>Tasks</em>. Using CBA ItemBuilder <em>Tasks</em> are stored in <em>Project Files</em> require a <em>Runtime</em> (i.e., the files “main..js” and “main..css”) in the version corresponding exactly to the version of the CBA ItemBuilder that was used to generate the items (e.g., 9.9.0). Before using the IRTLib editor, ensure the required <em>Runtime</em> is included or import the runtime files (see here for details).</li>
-</ul>
-<p>Note: This step is usually not necessary for the use of CBA ItemBuilder items from version 9.9.</p>
-</div>
-</div>
-</div>
-<ul>
-<li><strong>Create a new “Study”</strong>: The <em>IRTlib Editor</em> is used to configure so-called <em>Studies</em>. The version of studies can be tracked in the editor, and studies can be published (i.e., sealed to be used for data collection). To start creating content using the <em>IRTlib Editor</em>, a study must be created first (see here for details).</li>
-</ul>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Note that at least one study must be defined in the <em>IRTlib Editor</em>, before a study configuration can be used to collect data with an <em>IRTlib Player</em>.</p>
-</div>
-</div>
-<ul>
-<li><p><strong>Specify “Basic Configurations” for the Study (Info)</strong>: Basic configurations that apply to the content of a prepared study include the study label and description, the login mode, the display configuration, the menu for test administrators and the specification how to continue after completing all content defined in a study (see here for details).</p></li>
-<li><p><strong>Create a new “Survey-Part”</strong>: Each study is composed of one or multiple survey parts (see here for details). Parts are considered segments of an assessment that are administered together, like items from a particular domain. Survey parts of type “CBA ItemBuilder” can be used to administer CBA ITemBuilder tasks in a linear sequence or with Blockly-based routing (see Routing Across Survey Parts for details).</p></li>
-</ul>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Note that each study neads at least one test-part defined in the <em>IRTlib Editor</em>, before a study configuration can be used to collect data with an <em>IRTlib Player</em>.</p>
-</div>
-</div>
-<ul>
-<li><p><strong>Configure “Basic Settings” for Survey Part (Info)</strong>: A study part of type “CBA ItemBuilder” is a set of CBA ItemBuilder projects that belong together. Each CBA ItemBuilder project requires at least one Task, but projects with multiple tasks are also supported. If items are administered with a common time limit, test parts allow for assigning tasks to a structure differentiating assessment content presented before a time-restricted section (“instructional items”), after a time-restricted section (“epilogue items”), and items in between with restricted time (“core items”, see here).</p></li>
-<li><p><strong>Define “Core Items” (Items)</strong>: To finalize the definition of a study-part, the CBA ItemBuilder tasks must be imported in the section “Items”. By default, the sequence of CBA ItemBuilder tasks is assumed to be linear. However, when routing is activated for a study part, Blockly-based routing (see Routing Within Survey Parts for details) can be used to implement various test designs (e.g., multiple booklets, multi-stage testing, etc.).</p></li>
-</ul>
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

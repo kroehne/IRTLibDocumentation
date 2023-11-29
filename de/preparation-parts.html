@@ -4539,12 +4539,8 @@ vertical-align: -.125em;
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./../de/index.html" rel target>
- <span class="menu-text">Deutsch</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./../en/index.html" rel target>
- <span class="menu-text">English</span></a>
+ <span class="menu-text">(English Version)</span></a>
   </li>  
 </ul>
             <div class="quarto-navbar-tools">
@@ -4566,7 +4562,7 @@ vertical-align: -.125em;
   <ul class="collapse">
   <li><a href="#erhebungsteile" id="toc-erhebungsteile" class="nav-link" data-scroll-target="#erhebungsteile">Erhebungsteile</a>
   <ul class="collapse">
-  <li><a href="#erhebungsteile-management" id="toc-erhebungsteile-management" class="nav-link" data-scroll-target="#erhebungsteile-management">Erhebungsteile Management</a></li>
+  <li><a href="#erhebungsteilverwaltung" id="toc-erhebungsteilverwaltung" class="nav-link" data-scroll-target="#erhebungsteilverwaltung">Erhebungsteilverwaltung</a></li>
   <li><a href="#grundkonfiguration-für-erhebungsteile" id="toc-grundkonfiguration-für-erhebungsteile" class="nav-link" data-scroll-target="#grundkonfiguration-für-erhebungsteile">Grundkonfiguration für Erhebungsteile</a></li>
   <li><a href="#vorspann-nachspann-items" id="toc-vorspann-nachspann-items" class="nav-link" data-scroll-target="#vorspann-nachspann-items">Vorspann-/Nachspann-Items</a></li>
   <li><a href="#begrenzte-bearbeitungszeit" id="toc-begrenzte-bearbeitungszeit" class="nav-link" data-scroll-target="#begrenzte-bearbeitungszeit">Begrenzte Bearbeitungszeit</a></li>
@@ -4575,6 +4571,7 @@ vertical-align: -.125em;
   <li><a href="#codebook" id="toc-codebook" class="nav-link" data-scroll-target="#codebook">Codebook</a></li>
   <li><a href="#itempool" id="toc-itempool" class="nav-link" data-scroll-target="#itempool">ItemPool</a></li>
   <li><a href="#routing-innerhalb-von-erhebungsteilen" id="toc-routing-innerhalb-von-erhebungsteilen" class="nav-link" data-scroll-target="#routing-innerhalb-von-erhebungsteilen">Routing innerhalb von Erhebungsteilen</a></li>
+  <li><a href="#routing-zwischen-erhebungsteilen" id="toc-routing-zwischen-erhebungsteilen" class="nav-link" data-scroll-target="#routing-zwischen-erhebungsteilen">Routing zwischen Erhebungsteilen</a></li>
   </ul></li>
   </ul></li>
   </ul>
@@ -4589,9 +4586,13 @@ vertical-align: -.125em;
 <h1>Vorbereitung</h1>
 <section id="erhebungsteile" class="level2">
 <h2 class="anchored" data-anchor-id="erhebungsteile">Erhebungsteile</h2>
-<section id="erhebungsteile-management" class="level3">
-<h3 class="anchored" data-anchor-id="erhebungsteile-management">Erhebungsteile Management</h3>
-<p>Wenn Studien aus mehreren Erhebunsteilen bestehen, kann die Reihenfolge der Erhebungsteile in der Ansichht <em>Erhebungsteile</em> / <em>Übersicht</em> angepasst werden.</p>
+<p>Assessments, die mit der <em>IRTlib Software</em> administriert werden bestehen aus sogenannten <em>Erehebungsteilen</em>. Nach der Konfiguration einer <a href="./preparation-studies.html">Studie</a> muss zumindest ein <em>Erhebungsteil</em> angelegt werden.</p>
+<section id="erhebungsteilverwaltung" class="level3">
+<h3 class="anchored" data-anchor-id="erhebungsteilverwaltung">Erhebungsteilverwaltung</h3>
+<p>Nach dem Erstellen einer <em>Studie</em> erfolgt in der Ansicht <em>Erhebungsteile</em> als nächster Schritt zur Vorbereitung einer Testauslifierung das <strong>Hinzufügen eines neuen Erhebungsteils</strong>:</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/YFgu8uz8nkc" title frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>Die erstellten <em>Erhebungsteile</em> erscheinen als Karten in der Ansicht <em>Erhebungsteile</em>. Wenn Studien aus mehreren Erhebunsteilen bestehen, kann für <em>lineare Abläufe</em> die Reihenfolge der Erhebungsteile in der Ansichht <em>Erhebungsteile</em> / <em>Übersicht</em> angepasst werden. Sollen <em>Erhebungsteile</em> in Abhängigkeit von Variablen (z.B. übergebene <em>Preload</em>-Variablen oder andere <em>Blockly</em>-Variablen gesteuert werden, kann alternativ ein <a href="preparation-parts.html#routing-zwischen-erhebungsteilen">Routing zwischen Erhebungsteilen</a> konfiguriert werden.</p>
+<p>Eine detaillierte Anleitung zur Erstellung von <em>Erhebungsteilen</em> findet sich hier in der eingebetteten Hilfe:</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Embedded Help">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -4605,6 +4606,8 @@ Embedded Help
 <iframe width="100%" height="300" src="../help/InlineHelp_View_Study_Part_Main_de-DEU.html"></iframe>
 </div>
 </div>
+<p>Die Reihenfolge von <em>Erhebunsteilen</em> kann in der Ansicht <em>Erhebungsteile</em> verändert werden:</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/Ag0IcETZTdM" title frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 </section>
 <section id="grundkonfiguration-für-erhebungsteile" class="level3">
 <h3 class="anchored" data-anchor-id="grundkonfiguration-für-erhebungsteile">Grundkonfiguration für Erhebungsteile</h3>
@@ -4746,6 +4749,24 @@ Embedded Help
 </div>
 <div class="callout-body-container callout-body">
 <iframe width="100%" height="600" src="../help/InlineHelp_View_Study_Routing_de-DEU.html"></iframe>
+</div>
+</div>
+</section>
+<section id="routing-zwischen-erhebungsteilen" class="level3">
+<h3 class="anchored" data-anchor-id="routing-zwischen-erhebungsteilen">Routing zwischen Erhebungsteilen</h3>
+<p>Wenn mehrere <em>Erhebungsteile</em> für eine <em>Studie</em> definiert sind kann die Abfolge von Erhebungsteilen definiert werden, in welcher Befragte oder Testpersonen die Inhalte der <em>Erhebungsteile</em> präsentiert bekommen.</p>
+<p>Neben einfachen linearen Abläufen können Abläufe von mehreren Erhebungsteilen auch mit eine <em>Blockly</em>-basierten Routing konfiguriert werden.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Embedded Help">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Embedded Help
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<iframe width="100%" height="300" src="../help/InlineHelp_View_Study_Parts_Routing_de-DEU.html"></iframe>
 </div>
 </div>
 
