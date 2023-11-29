@@ -46,14 +46,14 @@
     "href": "github.html",
     "title": "Github – More",
     "section": "",
-    "text": "The IRTlib software is free research software in the sense of open science. It can be used for non-commercial applications.\n\n\n\n\n\nCurrent versions of the IRTlib Software (Windows und Docker): github\nDocumentation: github\n\n\nResx de-DEU.rex en-US.rex\n\n\n\n\n\nThe IRTlib software allows the administration of assessment content created with the CBA ItemBuilder.\n\n\n\nCurrent versions of the CBA ItemBuilder (Windows): https://www.itembuilder.de/software\n\n\n\n\nSource code and material for the CBA ItemBuilder are divided into several repositories:\n\nCBA ItemBuilder (desktop application): github (In preparation / still private)\nRuntime environment / Rumtime: github (In preparation / still private)\nExecution environment for developers: github (In preparation / still private)\nTechnical documentation: github (In preparation / still private)\nTechnical example items: github(In preparation / still private)\n\n\n\n\nOnline-Dokumentation\n\nHTML (interaktiv): https://cba.itembuilder.de\n\nPDF (static): Open-Assessments-with-CBA-ItemBuilder.pdf\nSource github (In preparation / still private)"
+    "text": "The IRTlib software is free research software in the sense of open science. It can be used for non-commercial applications.\n\n\n\n\n\nCurrent versions of the IRTlib Software (Windows und Docker): github\nDocumentation: github\n\n\nResx de-DEU.rex ../en-US.rex\n\n\n\n\n\nThe IRTlib software allows the administration of assessment content created with the CBA ItemBuilder.\n\n\n\nCurrent versions of the CBA ItemBuilder (Windows): https://www.itembuilder.de/software\n\n\n\n\nSource code and material for the CBA ItemBuilder are divided into several repositories:\n\nCBA ItemBuilder (desktop application): github (In preparation / still private)\nRuntime environment / Rumtime: github (In preparation / still private)\nExecution environment for developers: github (In preparation / still private)\nTechnical documentation: github (In preparation / still private)\nTechnical example items: github(In preparation / still private)\n\n\n\n\nOnline-Dokumentation\n\nHTML (interaktiv): https://cba.itembuilder.de\n\nPDF (static): Open-Assessments-with-CBA-ItemBuilder.pdf\nSource github (In preparation / still private)"
   },
   {
     "objectID": "github.html#irtlib-software",
     "href": "github.html#irtlib-software",
     "title": "Github – More",
     "section": "",
-    "text": "Current versions of the IRTlib Software (Windows und Docker): github\nDocumentation: github\n\n\nResx de-DEU.rex en-US.rex"
+    "text": "Current versions of the IRTlib Software (Windows und Docker): github\nDocumentation: github\n\n\nResx de-DEU.rex ../en-US.rex"
   },
   {
     "objectID": "github.html#cba-itembuilder",
