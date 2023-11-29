@@ -1,17 +1,24 @@
 [
   {
+    "objectID": "github.html",
+    "href": "github.html",
+    "title": "IRTlib",
+    "section": "",
+    "text": "Resx de-DEU.rex en-US.rex"
+  },
+  {
+    "objectID": "github.html#irtlib-software",
+    "href": "github.html#irtlib-software",
+    "title": "IRTlib",
+    "section": "",
+    "text": "Resx de-DEU.rex en-US.rex"
+  },
+  {
     "objectID": "github.html#cba-itembuilder",
     "href": "github.html#cba-itembuilder",
     "title": "IRTlib",
     "section": "CBA ItemBuilder",
     "text": "CBA ItemBuilder\n\nDownload"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   },
   {
     "objectID": "index.html",
