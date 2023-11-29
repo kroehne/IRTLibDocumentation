@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>IRTlib Dokumentation – postprocessing</title>
+<title>IRTlib Documentation – data-collection-player-integration</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -4452,7 +4452,7 @@ vertical-align: -.125em;
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">IRTlib Dokumentation</span>
+    <span class="navbar-title">IRTlib Documentation</span>
     </a>
   </div>
             <div id="quarto-search" class title="Search"></div>
@@ -4470,50 +4470,50 @@ vertical-align: -.125em;
  <span class="menu-text">Download</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-vorbereitung" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel target>
- <span class="menu-text">Vorbereitung</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-preparation" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel target>
+ <span class="menu-text">Preparation</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-vorbereitung">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-preparation">    
         <li>
     <a class="dropdown-item" href="./preparation-overview.html" rel target>
- <span class="dropdown-text">Übersicht</span></a>
+ <span class="dropdown-text">Overview</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./preparation-studies.html" rel target>
- <span class="dropdown-text">Studien</span></a>
+ <span class="dropdown-text">Studies</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./preparation-parts.html" rel target>
- <span class="dropdown-text">Erhebungsteile</span></a>
+ <span class="dropdown-text">Test-Parts</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-datenerhebung" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel target>
- <span class="menu-text">Datenerhebung</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-data-collection" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel target>
+ <span class="menu-text">Data Collection</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-datenerhebung">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-data-collection">    
         <li>
-    <a class="dropdown-item" href="./datacollectionoverviewv.html" rel target>
- <span class="dropdown-text">Übersicht</span></a>
+    <a class="dropdown-item" href="./data-collection-overview.html" rel target>
+ <span class="dropdown-text">Overview</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./publish-and-export.html" rel target>
- <span class="dropdown-text">Veröffentlichen &amp; Export</span></a>
+    <a class="dropdown-item" href="./data-collection-publish-and-export.html" rel target>
+ <span class="dropdown-text">Publish &amp; Export</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./player-integration.html" rel target>
- <span class="dropdown-text">Integration &amp; Auslieferung</span></a>
+    <a class="dropdown-item" href="./data-collection-player-integration.html" rel target>
+ <span class="dropdown-text">Integration &amp; Deployment</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./postprocessing.html" rel target>
- <span class="dropdown-text">Daten-Nachbearbeitung</span></a>
+    <a class="dropdown-item" href="./data-collection-post-processing.html" rel target>
+ <span class="dropdown-text">Data Postprocessing</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="./settings.html" rel target>
- <span class="menu-text">Einstellungen</span></a>
+ <span class="menu-text">Settings</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -4530,17 +4530,17 @@ vertical-align: -.125em;
   </li>  
         <li>
     <a class="dropdown-item" href="https://github.com/kroehne/IRTLibDocumentation" rel target>
- <span class="dropdown-text">IRTLib Dokumentation</span></a>
+ <span class="dropdown-text">IRTLib Documentation</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./github.html" rel target>
- <span class="dropdown-text">(mehr)</span></a>
+ <span class="dropdown-text">(more)</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./../en/index.html" rel target>
- <span class="menu-text">(English Version)</span></a>
+    <a class="nav-link" href="./../de/index.html" rel target>
+ <span class="menu-text">(Deutsche Version)</span></a>
   </li>  
 </ul>
             <div class="quarto-navbar-tools">
@@ -4560,7 +4560,17 @@ vertical-align: -.125em;
   <ul>
   <li><a href="#data-collection" id="toc-data-collection" class="nav-link active" data-scroll-target="#data-collection">Data Collection</a>
   <ul class="collapse">
-  <li><a href="#post-processing" id="toc-post-processing" class="nav-link" data-scroll-target="#post-processing">Post-Processing</a></li>
+  <li><a href="#import-configuration" id="toc-import-configuration" class="nav-link" data-scroll-target="#import-configuration">Import Configuration</a>
+  <ul class="collapse">
+  <li><a href="#automatic-import" id="toc-automatic-import" class="nav-link" data-scroll-target="#automatic-import">Automatic Import</a></li>
+  <li><a href="#manual-import" id="toc-manual-import" class="nav-link" data-scroll-target="#manual-import">Manual Import</a></li>
+  </ul></li>
+  <li><a href="#testing-deployments" id="toc-testing-deployments" class="nav-link" data-scroll-target="#testing-deployments">Testing Deployments</a>
+  <ul class="collapse">
+  <li><a href="#suggested-test-plans" id="toc-suggested-test-plans" class="nav-link" data-scroll-target="#suggested-test-plans">Suggested Test-Plans</a></li>
+  </ul></li>
+  <li><a href="#run-data-collection" id="toc-run-data-collection" class="nav-link" data-scroll-target="#run-data-collection">Run Data Collection</a></li>
+  <li><a href="#export-data" id="toc-export-data" class="nav-link" data-scroll-target="#export-data">Export Data</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -4570,11 +4580,28 @@ vertical-align: -.125em;
 
 
 
-<p><em>Es ist noch keine Übersetzung vorhanden für diesen Text.</em></p>
 <section id="data-collection" class="level1">
 <h1>Data Collection</h1>
-<section id="post-processing" class="level2">
-<h2 class="anchored" data-anchor-id="post-processing">Post-Processing</h2>
+<section id="import-configuration" class="level2">
+<h2 class="anchored" data-anchor-id="import-configuration">Import Configuration</h2>
+<section id="automatic-import" class="level3">
+<h3 class="anchored" data-anchor-id="automatic-import">Automatic Import</h3>
+</section>
+<section id="manual-import" class="level3">
+<h3 class="anchored" data-anchor-id="manual-import">Manual Import</h3>
+</section>
+</section>
+<section id="testing-deployments" class="level2">
+<h2 class="anchored" data-anchor-id="testing-deployments">Testing Deployments</h2>
+<section id="suggested-test-plans" class="level3">
+<h3 class="anchored" data-anchor-id="suggested-test-plans">Suggested Test-Plans</h3>
+</section>
+</section>
+<section id="run-data-collection" class="level2">
+<h2 class="anchored" data-anchor-id="run-data-collection">Run Data Collection</h2>
+</section>
+<section id="export-data" class="level2">
+<h2 class="anchored" data-anchor-id="export-data">Export Data</h2>
 
 
 </section>
@@ -4820,7 +4847,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="https://tba.dipf.de/de">Zentrum für technologiebasiertes Assessment (TBA-Zentrum)<br>DIPF | Leibniz-Institut für Bildungsforschung und Bildungsinformation</a>
+    <a class="nav-link" href="https://tba.dipf.de/en/startseite?set_language=en">Centre for Technology-Based Assessment (TBA Centre)<br>DIPF | Leibniz Institute for Research and Information in Education</a>
   </li>  
 </ul>
     </div>   

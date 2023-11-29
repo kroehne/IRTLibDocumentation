@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "github.html#cba-itembuilder",
+    "href": "github.html#cba-itembuilder",
+    "title": "IRTlib",
+    "section": "CBA ItemBuilder",
+    "text": "CBA ItemBuilder\n\nDownload"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -12,12 +19,5 @@
     "title": "\nIRTlib Software\n",
     "section": "",
     "text": "IRTlib Software\n\n\n\nIRTlib ist eine Software zur Auslieferung computerbasierter Assessments basierend auf Aufgaben, die mit dem CBA ItemBuilder erstellt wurden. Die Software erlaubt die Definition von flexiblen Abläufen unter Nutzung von visueller Programmierung und Funktionen der Item-Response Theoie (IRT).\n\n\nIRTlib is a software for the delivery of computer-based assessments using tasks develope with the CBA ItemBuilder. The software allows the definition of flexible processes using visual programming and functions of the item-response theory (IRT).\n\n\n\n\n\nDokumentation auf Deutsch\n\n\nEnglish Documentation"
-  },
-  {
-    "objectID": "github.html#cba-itembuilder",
-    "href": "github.html#cba-itembuilder",
-    "title": "IRTlib",
-    "section": "CBA ItemBuilder",
-    "text": "CBA ItemBuilder\n\nDownload"
   }
 ]
