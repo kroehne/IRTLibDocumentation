@@ -1,19 +1,5 @@
 [
   {
-    "objectID": "postprocessing.html",
-    "href": "postprocessing.html",
-    "title": "Data Collection",
-    "section": "",
-    "text": "Es ist noch keine Übersetzung vorhanden für diesen Text."
-  },
-  {
-    "objectID": "postprocessing.html#post-processing",
-    "href": "postprocessing.html#post-processing",
-    "title": "Data Collection",
-    "section": "Post-Processing",
-    "text": "Post-Processing"
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -25,56 +11,21 @@
     "href": "index.html",
     "title": "IRTlib Dokumentation",
     "section": "",
-    "text": "IRTlib Dokumentation\nIRTlib ist eine Software zur Auslieferung computerbasierter Tests. Sie besteht aus zwei Komponenten:\n\nIRTLib Editor: Eine Software für Test-Autoren, welche verwendet wird um Studien zu konfigurieren.\nIRTlib Player: Eine Software zur Datenerhebung, mit welcher Zielpersonen Aufgaben bearbeiten, die für eine Studie konfiguriert sind.\n\nDie Software enthält ausführliche Dokumentation direkt im Programm, die auf dieser Seite zugänglich ist.\nDie Software kann direkt von https://github.com/DIPFtba/IRTlibDeploymentSoftware bezogen werden.\nHinweise zur Installation und Einrichtung beider Programme zur ersten Verwendung finden sich unter Download.\n\n\n\nVor der Verwendung der IRTlib Software zur Konfiguration und Erstellung von Auslieferungen, können mit dem CBA ItemBuilder die Assessmentinhalte in Form von einzelnen Tasks erstellt werden.\nDer CBA ItemBuilder kann hier heruntergeladen werden: https://www.itembuilder.de/software\nDie interaktive Dokumentation des CBA ItemBuilder ist hier zugänglich: https://cba.itembuilder.de/\n\n\n\n\n\nCBA ItemBuilder Dokumentation (PDF)"
+    "text": "IRTlib Dokumentation\nIRTlib ist eine Software zur Auslieferung computerbasierter Tests. Sie besteht aus zwei Komponenten:\n\nIRTLib Editor: Eine Software für Test-Autoren, welche verwendet wird um Studien zu konfigurieren.\nIRTlib Player: Eine Software zur Datenerhebung, mit welcher Zielpersonen Aufgaben bearbeiten, die für eine Studie konfiguriert sind.\n\nDie Software enthält ausführliche Dokumentation direkt im Programm, die auf dieser Seite zugänglich ist.\nDie Software kann direkt aus dem IRTlibDeploymentSoftware-Repository bezogen werden.\nHinweise zur Installation und Einrichtung beider Programme zur ersten Verwendung finden sich unter Download.\n\n\n\nVor der Verwendung der IRTlib Software zur Konfiguration und Erstellung von Auslieferungen, können mit dem CBA ItemBuilder die Assessmentinhalte in Form von einzelnen Tasks erstellt werden.\nDer CBA ItemBuilder kann hier heruntergeladen werden: https://www.itembuilder.de/software\nDie interaktive Dokumentation des CBA ItemBuilder ist hier zugänglich: https://cba.itembuilder.de/\n\n\n\n\n\nCBA ItemBuilder Dokumentation (PDF)"
   },
   {
-    "objectID": "settings.html",
-    "href": "settings.html",
-    "title": "Einstellungen des IRTlib Editors",
+    "objectID": "data-collection-publish-and-export.html",
+    "href": "data-collection-publish-and-export.html",
+    "title": "Datenerhebungen",
     "section": "",
-    "text": "Der IRTlib Editor hat eine kleine Anzahl von Einstellungen. Die Sprache kann auf Deutsch oder Englisch eingestellt werden.\n\n\nDie IRTlib Software ist im Augenblick noch unter Entwicklung. Informationen über die laufende Version (und für Preview-Versionen über den Build-Hash) können im Abschnitt Über das Programm abgerufen werden.\n\n\n\n\n\n\nEingebettete Programmhilfe\n\n\n\n\n\n\n\n\n\nDie IRTlib Software kann mit CBA ItemBuilder Aufgaben verschiedener CBA ItemBuilder Versionen verwendet werden. Die erforderliche Runtime (d.h. die Verbindung zwischen den CBA ItemBuilder-Aufgaben und der IRTlib Software) ist Teil der Studienkonfiguration, damit der IRTlib Player sicher weiß, wie er CBA ItemBuilder-Aufgaben einer bestimmten Version verwenden kann.\n\n\n\n\n\n\nEingebettete Programmhilfe"
+    "text": "Embedded Help"
   },
   {
-    "objectID": "settings.html#übersicht",
-    "href": "settings.html#übersicht",
-    "title": "Einstellungen des IRTlib Editors",
+    "objectID": "data-collection-publish-and-export.html#veröffentlichen",
+    "href": "data-collection-publish-and-export.html#veröffentlichen",
+    "title": "Datenerhebungen",
     "section": "",
-    "text": "Die IRTlib Software ist im Augenblick noch unter Entwicklung. Informationen über die laufende Version (und für Preview-Versionen über den Build-Hash) können im Abschnitt Über das Programm abgerufen werden.\n\n\n\n\n\n\nEingebettete Programmhilfe"
-  },
-  {
-    "objectID": "settings.html#laufzeitumgebungen",
-    "href": "settings.html#laufzeitumgebungen",
-    "title": "Einstellungen des IRTlib Editors",
-    "section": "",
-    "text": "Die IRTlib Software kann mit CBA ItemBuilder Aufgaben verschiedener CBA ItemBuilder Versionen verwendet werden. Die erforderliche Runtime (d.h. die Verbindung zwischen den CBA ItemBuilder-Aufgaben und der IRTlib Software) ist Teil der Studienkonfiguration, damit der IRTlib Player sicher weiß, wie er CBA ItemBuilder-Aufgaben einer bestimmten Version verwenden kann.\n\n\n\n\n\n\nEingebettete Programmhilfe"
-  },
-  {
-    "objectID": "editor.html",
-    "href": "editor.html",
-    "title": "IRTlib Editor",
-    "section": "",
-    "text": "Editor:\n\nInstallation"
-  },
-  {
-    "objectID": "github.html",
-    "href": "github.html",
-    "title": "Github – Mehr",
-    "section": "",
-    "text": "Die IRTlib-Software ist freie Forschungssoftware im Sinne von Open Science. Sie kann für nicht-kommerzielle Anwendungen verwendet werden.\n\n\n\n\n\nAktuelle Versionen der IRTlib Software (Windows und Docker): github\nDokumentation: github\n\n\n\n\n\nDie IRTlib Software erlaubt die Administration von Assessmentinhalten, die mit dem CBA ItemBuilder erstellt wurden.\n\n\n\nAktuelle Versionen des CBA ItemBuilder (Windows): https://www.itembuilder.de/software\n\n\n\n\nSource Code und Material zum CBA ItemBuilder sind aufgeteilt auf mehrere Repositorien:\n\nCBA ItemBuilder (Desktop Anwendung): github (In Vorbereitung / noch privat)\nLaufzeitumgebung / Rumtime: github (In Vorbereitung / noch privat)\nAusführungsumgebung / Execution Environment für Entwickler: github (In Vorbereitung / noch privat)\nTechnische Dokumentation: github (In Vorbereitung / noch privat)\nTechnische Beispielitems: github(In Vorbereitung / noch privat)\n\n\n\n\nOnline-Dokumentation\n\nHTML (interaktiv): https://cba.itembuilder.de\n\nPDF (statisch): Open-Assessments-with-CBA-ItemBuilder.pdf\nQuellen github (In Vorbereitung / noch privat)"
-  },
-  {
-    "objectID": "github.html#irtlib-software",
-    "href": "github.html#irtlib-software",
-    "title": "Github – Mehr",
-    "section": "",
-    "text": "Aktuelle Versionen der IRTlib Software (Windows und Docker): github\nDokumentation: github"
-  },
-  {
-    "objectID": "github.html#cba-itembuilder",
-    "href": "github.html#cba-itembuilder",
-    "title": "Github – Mehr",
-    "section": "",
-    "text": "Die IRTlib Software erlaubt die Administration von Assessmentinhalten, die mit dem CBA ItemBuilder erstellt wurden.\n\n\n\nAktuelle Versionen des CBA ItemBuilder (Windows): https://www.itembuilder.de/software\n\n\n\n\nSource Code und Material zum CBA ItemBuilder sind aufgeteilt auf mehrere Repositorien:\n\nCBA ItemBuilder (Desktop Anwendung): github (In Vorbereitung / noch privat)\nLaufzeitumgebung / Rumtime: github (In Vorbereitung / noch privat)\nAusführungsumgebung / Execution Environment für Entwickler: github (In Vorbereitung / noch privat)\nTechnische Dokumentation: github (In Vorbereitung / noch privat)\nTechnische Beispielitems: github(In Vorbereitung / noch privat)\n\n\n\n\nOnline-Dokumentation\n\nHTML (interaktiv): https://cba.itembuilder.de\n\nPDF (statisch): Open-Assessments-with-CBA-ItemBuilder.pdf\nQuellen github (In Vorbereitung / noch privat)"
+    "text": "Embedded Help"
   },
   {
     "objectID": "preparation-overview.html",
@@ -98,6 +49,34 @@
     "text": "Für die Verwendung des IRTlib Editors ist eine Programmhilfe direkt in die Anwendung integriert, welche über das kleine ?-Symbol oben rechts eingeblendet werden kann.\n\n\n\n\n\n\n\nEmbedded Help\n\n\n\nDie Inhalte dieser Hilfe-Seiten aus dem IRTlib Editor sind in diese IRTlib Dokumentation integriert und werden immer in diesem Rahmen mit der überschrift Embedded Help dargestellt."
   },
   {
+    "objectID": "github.html",
+    "href": "github.html",
+    "title": "Github – Mehr",
+    "section": "",
+    "text": "Die IRTlib-Software ist freie Forschungssoftware im Sinne von Open Science. Sie kann für nicht-kommerzielle Anwendungen verwendet werden.\n\n\n\n\n\nAktuelle Versionen der IRTlib Software (Windows und Docker): github\nDokumentation: github\n\n\n\n\n\nDie IRTlib Software erlaubt die Administration von Assessmentinhalten, die mit dem CBA ItemBuilder erstellt wurden.\n\n\n\nAktuelle Versionen des CBA ItemBuilder (Windows): https://www.itembuilder.de/software\n\n\n\n\nSource Code und Material zum CBA ItemBuilder sind aufgeteilt auf mehrere Repositorien:\n\nCBA ItemBuilder (Desktop Anwendung): github (In Vorbereitung / noch privat)\nLaufzeitumgebung / Rumtime: github (In Vorbereitung / noch privat)\nAusführungsumgebung / Execution Environment für Entwickler: github (In Vorbereitung / noch privat)\nTechnische Dokumentation: github (In Vorbereitung / noch privat)\nTechnische Beispielitems: github(In Vorbereitung / noch privat)\n\n\n\n\nOnline-Dokumentation\n\nHTML (interaktiv): https://cba.itembuilder.de\n\nPDF (statisch): Open-Assessments-with-CBA-ItemBuilder.pdf\nQuellen github (In Vorbereitung / noch privat)"
+  },
+  {
+    "objectID": "github.html#irtlib-software",
+    "href": "github.html#irtlib-software",
+    "title": "Github – Mehr",
+    "section": "",
+    "text": "Aktuelle Versionen der IRTlib Software (Windows und Docker): github\nDokumentation: github"
+  },
+  {
+    "objectID": "github.html#cba-itembuilder",
+    "href": "github.html#cba-itembuilder",
+    "title": "Github – Mehr",
+    "section": "",
+    "text": "Die IRTlib Software erlaubt die Administration von Assessmentinhalten, die mit dem CBA ItemBuilder erstellt wurden.\n\n\n\nAktuelle Versionen des CBA ItemBuilder (Windows): https://www.itembuilder.de/software\n\n\n\n\nSource Code und Material zum CBA ItemBuilder sind aufgeteilt auf mehrere Repositorien:\n\nCBA ItemBuilder (Desktop Anwendung): github (In Vorbereitung / noch privat)\nLaufzeitumgebung / Rumtime: github (In Vorbereitung / noch privat)\nAusführungsumgebung / Execution Environment für Entwickler: github (In Vorbereitung / noch privat)\nTechnische Dokumentation: github (In Vorbereitung / noch privat)\nTechnische Beispielitems: github(In Vorbereitung / noch privat)\n\n\n\n\nOnline-Dokumentation\n\nHTML (interaktiv): https://cba.itembuilder.de\n\nPDF (statisch): Open-Assessments-with-CBA-ItemBuilder.pdf\nQuellen github (In Vorbereitung / noch privat)"
+  },
+  {
+    "objectID": "editor.html",
+    "href": "editor.html",
+    "title": "IRTlib Editor",
+    "section": "",
+    "text": "Editor:\n\nInstallation"
+  },
+  {
     "objectID": "preparation-parts.html",
     "href": "preparation-parts.html",
     "title": "Vorbereitung",
@@ -112,32 +91,39 @@
     "text": "Assessments, die mit der IRTlib Software administriert werden bestehen aus sogenannten Erehebungsteilen. Nach der Konfiguration einer Studie muss zumindest ein Erhebungsteil angelegt werden.\n\n\nNach dem Erstellen einer Studie erfolgt in der Ansicht Erhebungsteile als nächster Schritt zur Vorbereitung einer Testauslifierung das Hinzufügen eines neuen Erhebungsteils:\n\nDie erstellten Erhebungsteile erscheinen als Karten in der Ansicht Erhebungsteile. Wenn Studien aus mehreren Erhebunsteilen bestehen, kann für lineare Abläufe die Reihenfolge der Erhebungsteile in der Ansichht Erhebungsteile / Übersicht angepasst werden. Sollen Erhebungsteile in Abhängigkeit von Variablen (z.B. übergebene Preload-Variablen oder andere Blockly-Variablen gesteuert werden, kann alternativ ein Routing zwischen Erhebungsteilen konfiguriert werden.\nEine detaillierte Anleitung zur Erstellung von Erhebungsteilen findet sich hier in der eingebetteten Hilfe:\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\nDie Reihenfolge von Erhebunsteilen kann in der Ansicht Erhebungsteile verändert werden:\n\n\n\n\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\nItems die vor einem potentiell Zeitbegrenzten Abschnitt eines Erhebugnsteils administriert werde, werden als Vorspann-Items bezeichnet.\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\nItems die nach einem potentiell Zeitbegrenzten Abschnitt eines Erhebugnsteils administriert werde, werden als Nachspann-Items bezeichnet.\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\nWenn mehrere Erhebungsteile für eine Studie definiert sind kann die Abfolge von Erhebungsteilen definiert werden, in welcher Befragte oder Testpersonen die Inhalte der Erhebungsteile präsentiert bekommen.\nNeben einfachen linearen Abläufen können Abläufe von mehreren Erhebungsteilen auch mit eine Blockly-basierten Routing konfiguriert werden.\n\n\n\n\n\n\nEmbedded Help"
   },
   {
-    "objectID": "player-integration.html",
-    "href": "player-integration.html",
-    "title": "Data Collection",
+    "objectID": "settings.html",
+    "href": "settings.html",
+    "title": "Einstellungen des IRTlib Editors",
     "section": "",
-    "text": "Es ist noch keine Übersetzung vorhanden für diesen Text."
+    "text": "Der IRTlib Editor hat eine kleine Anzahl von Einstellungen. Die Sprache kann auf Deutsch oder Englisch eingestellt werden.\n\n\nDie IRTlib Software ist im Augenblick noch unter Entwicklung. Informationen über die laufende Version (und für Preview-Versionen über den Build-Hash) können im Abschnitt Über das Programm abgerufen werden.\n\n\n\n\n\n\nEingebettete Programmhilfe\n\n\n\n\n\n\n\n\n\nDie IRTlib Software kann mit CBA ItemBuilder Aufgaben verschiedener CBA ItemBuilder Versionen verwendet werden. Die erforderliche Runtime (d.h. die Verbindung zwischen den CBA ItemBuilder-Aufgaben und der IRTlib Software) ist Teil der Studienkonfiguration, damit der IRTlib Player sicher weiß, wie er CBA ItemBuilder-Aufgaben einer bestimmten Version verwenden kann.\n\n\n\n\n\n\nEingebettete Programmhilfe"
   },
   {
-    "objectID": "player-integration.html#integration",
-    "href": "player-integration.html#integration",
-    "title": "Data Collection",
-    "section": "Integration",
-    "text": "Integration"
+    "objectID": "settings.html#übersicht",
+    "href": "settings.html#übersicht",
+    "title": "Einstellungen des IRTlib Editors",
+    "section": "",
+    "text": "Die IRTlib Software ist im Augenblick noch unter Entwicklung. Informationen über die laufende Version (und für Preview-Versionen über den Build-Hash) können im Abschnitt Über das Programm abgerufen werden.\n\n\n\n\n\n\nEingebettete Programmhilfe"
+  },
+  {
+    "objectID": "settings.html#laufzeitumgebungen",
+    "href": "settings.html#laufzeitumgebungen",
+    "title": "Einstellungen des IRTlib Editors",
+    "section": "",
+    "text": "Die IRTlib Software kann mit CBA ItemBuilder Aufgaben verschiedener CBA ItemBuilder Versionen verwendet werden. Die erforderliche Runtime (d.h. die Verbindung zwischen den CBA ItemBuilder-Aufgaben und der IRTlib Software) ist Teil der Studienkonfiguration, damit der IRTlib Player sicher weiß, wie er CBA ItemBuilder-Aufgaben einer bestimmten Version verwenden kann.\n\n\n\n\n\n\nEingebettete Programmhilfe"
   },
   {
     "objectID": "preparation-studies.html",
     "href": "preparation-studies.html",
     "title": "Vorbereitung",
     "section": "",
-    "text": "Nach dem Start des IRTlib-Editors wird die Ansicht Studien angezeigt. In dieser Ansicht ist der erste Schritt zur Vorbereitung einer neuen Konfiguration das Hinzufügen einer neuen Studie:\n\nDie erstellten Studien erscheinen als Karten in der Ansicht Studien. Beachten Sie, dass die Reihenfolge, in der die Studien in der Studienansicht angezeigt werden, keine Rolle spielt.\nEine detaillierte Anleitung zur Erstellung einer Studie findet sich hier in der eingebetteten Hilfe:\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\nDie Konfigurationen einer bestimmten Studie, einschließlich Versionierung und Veröffentlichung, werden innerhalb von Studien verwaltet (d.h. nach dem Öffnen einer Studie zur Bearbeitung durch Klicken auf das Bearbeitungssymbol am unteren rechten Rand der Karte).\n\n\nErstellte Studien, die im IRTlib Editor in der Ansicht Studien angezeigt werden, können zur Bearbeitung geöffnet werden.\n\nDetaillierte Informationen zu der Grundkonfiguration einer Studie finden sich hier in der eingebetteten Hilfe:\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\nDie IRTlib Software unterstützt verschiedene Wege, wie sich Personen (Testteilnehmer, Befragte, …) für ein Assessment Authentifizieren können. Die Konfiguratinen umfassen zwei Aspekte:\n\nWird ein Zugang benötigt (Login, Login+Passwort, Passphrases/Token) oder nicht?\nWie wird die Login-Information abgefragt (direkte Eingabe auf der Plattform, CBA ItemBuilder Item, ….) oder übergeben (Login-Parameter oder Aufruf-Parameter)?\n\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\nFür die Darstellung der Assessmentinhalte können Eigenschaften zur Anzeige definiert werden.\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\nWenn die Durchführung von Assessments begleitet durch Testleiter oder Interviewer erfolgt, können Funktionen passwortgeschützt für Testleiter definiert werden.\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\nFür die Integration von Assessments in externe Abläufe besteht die Möglichkeit zu konfiguriere, wie nach der Bearbeitung der Assessmentinhalte in einer Session vorgegangen werden soll, was also am Session-Ende geschehen wird.\n\n\n\n\n\n\nEmbedded Help"
+    "text": "Konfigurationen die mit dem IRTlib-Editor erstellt werden, werden in sogenannten Studien zusammengefasst. Eine Studie soll die Assessmentinhalte zusammenfassen, welche in einer Erhebung oder Sitzung administriert werden.\n\n\nNach dem Start des IRTlib-Editors wird die Ansicht Studien angezeigt. In dieser Ansicht ist der erste Schritt zur Vorbereitung einer neuen Konfiguration das Hinzufügen einer neuen Studie:\n\nDie erstellten Studien erscheinen als Karten in der Ansicht Studien. Beachten Sie, dass die Reihenfolge, in der die Studien in der Studienansicht angezeigt werden, keine Rolle spielt.\nEine detaillierte Anleitung zur Erstellung einer Studie findet sich hier in der eingebetteten Hilfe:\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\n\nDie Konfigurationen einer bestimmten Studie, einschließlich Versionierung und Veröffentlichung, werden innerhalb von Studien verwaltet (d.h. nach dem Öffnen einer Studie zur Bearbeitung durch Klicken auf das Bearbeitungssymbol am unteren rechten Rand der Karte).\n\n\nErstellte Studien, die im IRTlib Editor in der Ansicht Studien angezeigt werden, können zur Bearbeitung geöffnet werden.\n\nDetaillierte Informationen zu der Grundkonfiguration einer Studie finden sich hier in der eingebetteten Hilfe:\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\nDie IRTlib Software unterstützt verschiedene Wege, wie sich Personen (Testteilnehmer, Befragte, …) für ein Assessment Authentifizieren können. Die Konfiguratinen umfassen zwei Aspekte:\n\nWird ein Zugang benötigt (Login, Login+Passwort, Passphrases/Token) oder nicht?\nWie wird die Login-Information abgefragt (direkte Eingabe auf der Plattform, CBA ItemBuilder Item, ….) oder übergeben (Login-Parameter oder Aufruf-Parameter)?\n\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\nFür die Darstellung der Assessmentinhalte können Eigenschaften zur Anzeige definiert werden.\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\nWenn die Durchführung von Assessments begleitet durch Testleiter oder Interviewer erfolgt, können Funktionen passwortgeschützt für Testleiter definiert werden.\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\nFür die Integration von Assessments in externe Abläufe besteht die Möglichkeit zu konfiguriere, wie nach der Bearbeitung der Assessmentinhalte in einer Session vorgegangen werden soll, was also am Session-Ende geschehen wird.\n\n\n\n\n\n\nEmbedded Help"
   },
   {
-    "objectID": "preparation-studies.html#studienverwaltung",
-    "href": "preparation-studies.html#studienverwaltung",
+    "objectID": "preparation-studies.html#studien",
+    "href": "preparation-studies.html#studien",
     "title": "Vorbereitung",
     "section": "",
-    "text": "Nach dem Start des IRTlib-Editors wird die Ansicht Studien angezeigt. In dieser Ansicht ist der erste Schritt zur Vorbereitung einer neuen Konfiguration das Hinzufügen einer neuen Studie:\n\nDie erstellten Studien erscheinen als Karten in der Ansicht Studien. Beachten Sie, dass die Reihenfolge, in der die Studien in der Studienansicht angezeigt werden, keine Rolle spielt.\nEine detaillierte Anleitung zur Erstellung einer Studie findet sich hier in der eingebetteten Hilfe:\n\n\n\n\n\n\nEmbedded Help"
+    "text": "Konfigurationen die mit dem IRTlib-Editor erstellt werden, werden in sogenannten Studien zusammengefasst. Eine Studie soll die Assessmentinhalte zusammenfassen, welche in einer Erhebung oder Sitzung administriert werden.\n\n\nNach dem Start des IRTlib-Editors wird die Ansicht Studien angezeigt. In dieser Ansicht ist der erste Schritt zur Vorbereitung einer neuen Konfiguration das Hinzufügen einer neuen Studie:\n\nDie erstellten Studien erscheinen als Karten in der Ansicht Studien. Beachten Sie, dass die Reihenfolge, in der die Studien in der Studienansicht angezeigt werden, keine Rolle spielt.\nEine detaillierte Anleitung zur Erstellung einer Studie findet sich hier in der eingebetteten Hilfe:\n\n\n\n\n\n\nEmbedded Help"
   },
   {
     "objectID": "preparation-studies.html#konfiguration-von-studien",
@@ -147,18 +133,18 @@
     "text": "Die Konfigurationen einer bestimmten Studie, einschließlich Versionierung und Veröffentlichung, werden innerhalb von Studien verwaltet (d.h. nach dem Öffnen einer Studie zur Bearbeitung durch Klicken auf das Bearbeitungssymbol am unteren rechten Rand der Karte).\n\n\nErstellte Studien, die im IRTlib Editor in der Ansicht Studien angezeigt werden, können zur Bearbeitung geöffnet werden.\n\nDetaillierte Informationen zu der Grundkonfiguration einer Studie finden sich hier in der eingebetteten Hilfe:\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\nDie IRTlib Software unterstützt verschiedene Wege, wie sich Personen (Testteilnehmer, Befragte, …) für ein Assessment Authentifizieren können. Die Konfiguratinen umfassen zwei Aspekte:\n\nWird ein Zugang benötigt (Login, Login+Passwort, Passphrases/Token) oder nicht?\nWie wird die Login-Information abgefragt (direkte Eingabe auf der Plattform, CBA ItemBuilder Item, ….) oder übergeben (Login-Parameter oder Aufruf-Parameter)?\n\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\nFür die Darstellung der Assessmentinhalte können Eigenschaften zur Anzeige definiert werden.\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\nWenn die Durchführung von Assessments begleitet durch Testleiter oder Interviewer erfolgt, können Funktionen passwortgeschützt für Testleiter definiert werden.\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\nFür die Integration von Assessments in externe Abläufe besteht die Möglichkeit zu konfiguriere, wie nach der Bearbeitung der Assessmentinhalte in einer Session vorgegangen werden soll, was also am Session-Ende geschehen wird.\n\n\n\n\n\n\nEmbedded Help"
   },
   {
-    "objectID": "publish-and-export.html",
-    "href": "publish-and-export.html",
-    "title": "Datenerhebungen",
+    "objectID": "data-collection-overview.html",
+    "href": "data-collection-overview.html",
+    "title": "Datenerhebung",
     "section": "",
-    "text": "Embedded Help"
+    "text": "Nachdem eine Studienkonfiguration mit dem IRTlib-Editor vorbereitet wurde, muss zunächst eine finalisierte Version erstellt werden. Versionen versiegeln und vervollständigen alle Konfigurationen und haben eine eindeutige Versionsnummer (bezeichnet als Revision). Die Verwendung von Revisionen macht die Durchführung von Datensammlungen mit dem IRTlib-Editor und IRTlib-Player reproduzierbar, da die Revisionsnummer einer Konfiguration auch in den Datensätzen gespeichert wird.\n\nKonfigurationen Prüfen: Vor der Fertigstellung und dem Versiegeln einer Version ist es ratsam, alle Einstellungen noch einmal zu überprüfen. Der IRTlib-Editor stellt dafür eine zusätzliche Funktion der Validierung zur Verfügung. Eine Checkliste der zu prüfenden Einstellungen findet sich hier.\nVersiegelte Version Erstellen: Wenn keine weiteren Änderungen erforderlich sind, kann die Version versiegelt werden. Weitere Details dazu finden sich hier.\nVersion Exportieren: Versionen von Studien, die im IRTlib-Editor verfügbar sind, können exportiert werden. Der Export der Konfiguraiton ist notwendig, bevor diese mit dem IRTlib-Player verwendet werden können. Weitere Details dazu finden sich hier.\nStudie in IRTlib-Player Importieren: Exportierte Versionen von Studien aus dem IRTlib-Editor können zur Verwendung in einen IRTlib-Player importiert werden. Weitere Details dazu finden sich hier.\nTesten der Studie: Bevor mit der eigentlichen Datenerfassung begonnen wird kann, sollte jede Konfiguration zunächst mit synthetischen Testfällen (d.h. systematisch) gestetet werden. Vorschläge für Testpläne finden sich hier.\n\nFalls in einer exportierten Studie noch Probleme festgestellt werden, ist es möglich, zur Vorbereitung (siehe Vorbereitung von Studien und Vorbereitung von Erhebungsteilen) zurückzukehren, die Studiendefinition und die Konfiguration der Testteile zu ändern, eine weitere versiegelte Version zu erstellen und mit der geänderten Konfiguration fortzufahren."
   },
   {
-    "objectID": "publish-and-export.html#veröffentlichen-und-exportieren",
-    "href": "publish-and-export.html#veröffentlichen-und-exportieren",
-    "title": "Datenerhebungen",
+    "objectID": "data-collection-overview.html#übersicht-schritte-zur-verwendung-eines-irtlib-player-zur-datenerhebung",
+    "href": "data-collection-overview.html#übersicht-schritte-zur-verwendung-eines-irtlib-player-zur-datenerhebung",
+    "title": "Datenerhebung",
     "section": "",
-    "text": "Embedded Help"
+    "text": "Nachdem eine Studienkonfiguration mit dem IRTlib-Editor vorbereitet wurde, muss zunächst eine finalisierte Version erstellt werden. Versionen versiegeln und vervollständigen alle Konfigurationen und haben eine eindeutige Versionsnummer (bezeichnet als Revision). Die Verwendung von Revisionen macht die Durchführung von Datensammlungen mit dem IRTlib-Editor und IRTlib-Player reproduzierbar, da die Revisionsnummer einer Konfiguration auch in den Datensätzen gespeichert wird.\n\nKonfigurationen Prüfen: Vor der Fertigstellung und dem Versiegeln einer Version ist es ratsam, alle Einstellungen noch einmal zu überprüfen. Der IRTlib-Editor stellt dafür eine zusätzliche Funktion der Validierung zur Verfügung. Eine Checkliste der zu prüfenden Einstellungen findet sich hier.\nVersiegelte Version Erstellen: Wenn keine weiteren Änderungen erforderlich sind, kann die Version versiegelt werden. Weitere Details dazu finden sich hier.\nVersion Exportieren: Versionen von Studien, die im IRTlib-Editor verfügbar sind, können exportiert werden. Der Export der Konfiguraiton ist notwendig, bevor diese mit dem IRTlib-Player verwendet werden können. Weitere Details dazu finden sich hier.\nStudie in IRTlib-Player Importieren: Exportierte Versionen von Studien aus dem IRTlib-Editor können zur Verwendung in einen IRTlib-Player importiert werden. Weitere Details dazu finden sich hier.\nTesten der Studie: Bevor mit der eigentlichen Datenerfassung begonnen wird kann, sollte jede Konfiguration zunächst mit synthetischen Testfällen (d.h. systematisch) gestetet werden. Vorschläge für Testpläne finden sich hier.\n\nFalls in einer exportierten Studie noch Probleme festgestellt werden, ist es möglich, zur Vorbereitung (siehe Vorbereitung von Studien und Vorbereitung von Erhebungsteilen) zurückzukehren, die Studiendefinition und die Konfiguration der Testteile zu ändern, eine weitere versiegelte Version zu erstellen und mit der geänderten Konfiguration fortzufahren."
   },
   {
     "objectID": "installation.html",

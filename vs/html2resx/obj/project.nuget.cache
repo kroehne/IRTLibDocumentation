@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "J68NKGql8anhruYPxZA5ICmZIlTyxonAmvUrVqV5MNzdFddw2fFcNQMnFAoJd/jH5xrjAp4YStycpxkbAjQBwQ==",
+  "success": true,
+  "projectFilePath": "/Users/kroehne/Documents/work/github/IRTLibDocumentation/vs/html2resx/html2resx.csproj",
+  "expectedPackageFiles": [
+    "/Users/kroehne/.nuget/packages/resxresourcereader.netstandard/1.1.0/resxresourcereader.netstandard.1.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

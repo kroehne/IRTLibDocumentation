@@ -7,21 +7,27 @@ lang: en
 
 ::: {.content-visible when-profile="german"}
 
-# Datenerhebung 
+# Datenerhebungen
 
-## Übersicht: Schritte zur Verwendung eines *IRTlib Player* zur *Datenerhebung*
+## Datenaufbereitung
 
+### Ergebnisdaten
+
+### Log-Daten
 
 :::
-
 
 ::: {.content-visible when-profile="english"}
 
 
+
 # Data Collection 
 
-## Overview: Steps to use *IRTlib Player* for *Data Collections*
+## Data Post-Processing
 
+### Result Data
+
+
+### Log Data 
 
 :::
-

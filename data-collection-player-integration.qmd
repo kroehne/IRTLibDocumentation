@@ -1,0 +1,49 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: en    
+---
+
+::: {.content-visible when-profile="german"}
+
+# Datenerhebungen
+
+## Konfiguration Importieren
+
+### Automatischer Import
+
+### Manueller Importieren
+
+## Auslieferungen Testen
+
+### Vorgeschlagene Testpläne
+
+## Datenerhbung Durchführen
+
+## Daten Exportieren 
+
+:::
+
+::: {.content-visible when-profile="english"}
+
+
+
+# Data Collection 
+
+## Import Configuration
+
+### Automatic Import
+
+### Manual Import
+
+## Testing Deployments 
+
+### Suggested Test-Plans 
+
+## Run Data Collection
+
+## Export Data
+
+
+:::

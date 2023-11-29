@@ -15,7 +15,7 @@ format:
 
 Die Software enthält ausführliche Dokumentation direkt im Programm, die auf dieser Seite zugänglich ist.
 
-Die Software kann direkt von [https://github.com/DIPFtba/IRTlibDeploymentSoftware   ](https://github.com/DIPFtba/IRTlibDeploymentSoftware) bezogen werden. 
+Die Software kann direkt aus dem [IRTlibDeploymentSoftware](https://github.com/DIPFtba/IRTlibDeploymentSoftware)-Repository bezogen werden. 
 
 Hinweise zur Installation und Einrichtung beider Programme zur ersten Verwendung finden sich unter [Download](installation.qmd).
 

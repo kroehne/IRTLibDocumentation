@@ -14,32 +14,32 @@
     "text": "IRTlib Documentation\nIRTlib is a software for the delivery of computer-based tests. It consists of two components:\n\nIRTLib Editor: A software for test authors, which is used to configure studies.\nIRTlib Player: A data collection software used by test-takers to complete tasks configured for a study.\n\nThe software contains detailed documentation directly in the program, which is accessible on this page.\nThe software can be obtained directly from https://github.com/DIPFtba/IRTlibDeploymentSoftware.\nInstructions for installing and setting up both programs for first use can be found at Download.\n\n\n\nBefore using the IRTlib Software to configure and create deployments, the assessment content can be created in the form of individual tasks using the CBA ItemBuilder.\nThe CBA ItemBuilder can be downloaded here: https://www.itembuilder.de/software\nThe interactive documentation of the CBA ItemBuilder is available here: https://cba.itembuilder.de/\n\n\n\n\n\nCBA ItemBuilder Documentation (PDF)"
   },
   {
-    "objectID": "settings.html",
-    "href": "settings.html",
-    "title": "Settings for IRTlib Editor",
+    "objectID": "data-collection-publish-and-export.html",
+    "href": "data-collection-publish-and-export.html",
+    "title": "Data Collection",
     "section": "",
-    "text": "The IRTlib Editor has a small number of settings.The language can be set to German or English.\n\n\nThe IRTlib software is currently still under development. Information about the current version (and for Preview versions about the build hash) can be found in the section About the Program.\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\nThe IRTlib Software can be used with CBA ItemBuilder tasks of different CBA ItemBuilder versions. The required Runtime (i.e., the connection between the CBA ItemBuilder tasks and the IRTlib Software) is part of the study configuration so that the IRTlib Player knows for sure how to use CBA ItemBuilder tasks of a particular version.\n\n\n\n\n\n\nEmbedded Help"
+    "text": "Embedded Help"
   },
   {
-    "objectID": "settings.html#overview",
-    "href": "settings.html#overview",
-    "title": "Settings for IRTlib Editor",
+    "objectID": "data-collection-publish-and-export.html#publish-export",
+    "href": "data-collection-publish-and-export.html#publish-export",
+    "title": "Data Collection",
     "section": "",
-    "text": "The IRTlib software is currently still under development. Information about the current version (and for Preview versions about the build hash) can be found in the section About the Program.\n\n\n\n\n\n\nEmbedded Help"
+    "text": "Embedded Help"
   },
   {
-    "objectID": "settings.html#runtimes",
-    "href": "settings.html#runtimes",
-    "title": "Settings for IRTlib Editor",
+    "objectID": "preparation-overview.html",
+    "href": "preparation-overview.html",
+    "title": "Preparation",
     "section": "",
-    "text": "The IRTlib Software can be used with CBA ItemBuilder tasks of different CBA ItemBuilder versions. The required Runtime (i.e., the connection between the CBA ItemBuilder tasks and the IRTlib Software) is part of the study configuration so that the IRTlib Player knows for sure how to use CBA ItemBuilder tasks of a particular version.\n\n\n\n\n\n\nEmbedded Help"
+    "text": "Preparing a computer-based assessment based on CBA ItemBuilder items begins with using the IRTlib Editor to create a study configuration. This typically involves the following steps:\n\n\n\n\n\n\nOptional\n\n\n\n\n\n\nPre-requisite: Check the availability of the Runtime. The IRTlib Editor can be used to prepare assessments using CBA ItemBuilder Tasks. Using CBA ItemBuilder Tasks are stored in Project Files require a Runtime (i.e., the files “main..js” and “main..css”) in the version corresponding exactly to the version of the CBA ItemBuilder that was used to generate the items (e.g., 9.9.0). Before using the IRTLib editor, ensure the required Runtime is included or import the runtime files (see here for details).\n\nNote: This step is usually not necessary for the use of CBA ItemBuilder items from version 9.9.\n\n\n\n\nCreate a new “Study”: The IRTlib Editor is used to configure so-called Studies. The version of studies can be tracked in the editor, and studies can be published (i.e., sealed to be used for data collection). To start creating content using the IRTlib Editor, a study must be created first (see section Settings for details).\n\n\n\n\n\n\n\nNote\n\n\n\nNote that at least one study must be defined in the IRTlib Editor, before a study configuration can be used to collect data with an IRTlib Player.\n\n\n\nSpecify “Basic Configurations” for the Study (Info): Basic configurations that apply to the content of a prepared study include the study label and description, the login mode, the display configuration, the menu for test administrators and the specification how to continue after completing all content defined in a study (see section Studies for details).\nCreate a new “Survey-Part”: Each study is composed of one or multiple survey parts (see here for details). Parts are considered segments of an assessment that are administered together, like items from a particular domain. Survey parts of type “CBA ItemBuilder” can be used to administer CBA ITemBuilder tasks in a linear sequence or with Blockly-based routing (see Routing Across Survey Parts for details).\n\n\n\n\n\n\n\nNote\n\n\n\nNote that each study neads at least one test-part defined in the IRTlib Editor, before a study configuration can be used to collect data with an IRTlib Player.\n\n\n\nConfigure “Basic Settings” for Survey Part (Info): A study part of type “CBA ItemBuilder” is a set of CBA ItemBuilder projects that belong together. Each CBA ItemBuilder project requires at least one Task, but projects with multiple tasks are also supported. If items are administered with a common time limit, test parts allow for assigning tasks to a structure differentiating assessment content presented before a time-restricted section (“instructional items”), after a time-restricted section (“epilogue items”), and items in between with restricted time (“core items”, see here).\nDefine “Core Items” (Items): To finalize the definition of a study-part, the CBA ItemBuilder tasks must be imported in the section “Items”. By default, the sequence of CBA ItemBuilder tasks is assumed to be linear. However, when routing is activated for a study part, Blockly-based routing (see Routing Within Survey Parts for details) can be used to implement various test designs (e.g., multiple booklets, multi-stage testing, etc.)."
   },
   {
-    "objectID": "editor.html",
-    "href": "editor.html",
-    "title": "IRTlib Editor",
+    "objectID": "preparation-overview.html#overview-steps-to-use-irtlib-editor-for-study-preparation",
+    "href": "preparation-overview.html#overview-steps-to-use-irtlib-editor-for-study-preparation",
+    "title": "Preparation",
     "section": "",
-    "text": "Editor:\n\nInstallation"
+    "text": "Preparing a computer-based assessment based on CBA ItemBuilder items begins with using the IRTlib Editor to create a study configuration. This typically involves the following steps:\n\n\n\n\n\n\nOptional\n\n\n\n\n\n\nPre-requisite: Check the availability of the Runtime. The IRTlib Editor can be used to prepare assessments using CBA ItemBuilder Tasks. Using CBA ItemBuilder Tasks are stored in Project Files require a Runtime (i.e., the files “main..js” and “main..css”) in the version corresponding exactly to the version of the CBA ItemBuilder that was used to generate the items (e.g., 9.9.0). Before using the IRTLib editor, ensure the required Runtime is included or import the runtime files (see here for details).\n\nNote: This step is usually not necessary for the use of CBA ItemBuilder items from version 9.9.\n\n\n\n\nCreate a new “Study”: The IRTlib Editor is used to configure so-called Studies. The version of studies can be tracked in the editor, and studies can be published (i.e., sealed to be used for data collection). To start creating content using the IRTlib Editor, a study must be created first (see section Settings for details).\n\n\n\n\n\n\n\nNote\n\n\n\nNote that at least one study must be defined in the IRTlib Editor, before a study configuration can be used to collect data with an IRTlib Player.\n\n\n\nSpecify “Basic Configurations” for the Study (Info): Basic configurations that apply to the content of a prepared study include the study label and description, the login mode, the display configuration, the menu for test administrators and the specification how to continue after completing all content defined in a study (see section Studies for details).\nCreate a new “Survey-Part”: Each study is composed of one or multiple survey parts (see here for details). Parts are considered segments of an assessment that are administered together, like items from a particular domain. Survey parts of type “CBA ItemBuilder” can be used to administer CBA ITemBuilder tasks in a linear sequence or with Blockly-based routing (see Routing Across Survey Parts for details).\n\n\n\n\n\n\n\nNote\n\n\n\nNote that each study neads at least one test-part defined in the IRTlib Editor, before a study configuration can be used to collect data with an IRTlib Player.\n\n\n\nConfigure “Basic Settings” for Survey Part (Info): A study part of type “CBA ItemBuilder” is a set of CBA ItemBuilder projects that belong together. Each CBA ItemBuilder project requires at least one Task, but projects with multiple tasks are also supported. If items are administered with a common time limit, test parts allow for assigning tasks to a structure differentiating assessment content presented before a time-restricted section (“instructional items”), after a time-restricted section (“epilogue items”), and items in between with restricted time (“core items”, see here).\nDefine “Core Items” (Items): To finalize the definition of a study-part, the CBA ItemBuilder tasks must be imported in the section “Items”. By default, the sequence of CBA ItemBuilder tasks is assumed to be linear. However, when routing is activated for a study part, Blockly-based routing (see Routing Within Survey Parts for details) can be used to implement various test designs (e.g., multiple booklets, multi-stage testing, etc.)."
   },
   {
     "objectID": "github.html",
@@ -63,18 +63,11 @@
     "text": "The IRTlib software allows the administration of assessment content created with the CBA ItemBuilder.\n\n\n\nCurrent versions of the CBA ItemBuilder (Windows): https://www.itembuilder.de/software\n\n\n\n\nSource code and material for the CBA ItemBuilder are divided into several repositories:\n\nCBA ItemBuilder (desktop application): github (In preparation / still private)\nRuntime environment / Rumtime: github (In preparation / still private)\nExecution environment for developers: github (In preparation / still private)\nTechnical documentation: github (In preparation / still private)\nTechnical example items: github(In preparation / still private)\n\n\n\n\nOnline-Dokumentation\n\nHTML (interaktiv): https://cba.itembuilder.de\n\nPDF (static): Open-Assessments-with-CBA-ItemBuilder.pdf\nSource github (In preparation / still private)"
   },
   {
-    "objectID": "preparation-overview.html",
-    "href": "preparation-overview.html",
-    "title": "Preparation",
+    "objectID": "editor.html",
+    "href": "editor.html",
+    "title": "IRTlib Editor",
     "section": "",
-    "text": "Preparing a computer-based assessment based on CBA ItemBuilder items begins with using the IRTlib Editor to create a study configuration. This typically involves the following steps:\n\n\n\n\n\n\nOptional\n\n\n\n\n\n\nPre-requisite: Check the availability of the Runtime. The IRTlib Editor can be used to prepare assessments using CBA ItemBuilder Tasks. Using CBA ItemBuilder Tasks are stored in Project Files require a Runtime (i.e., the files “main..js” and “main..css”) in the version corresponding exactly to the version of the CBA ItemBuilder that was used to generate the items (e.g., 9.9.0). Before using the IRTLib editor, ensure the required Runtime is included or import the runtime files (see here for details).\n\nNote: This step is usually not necessary for the use of CBA ItemBuilder items from version 9.9.\n\n\n\n\nCreate a new “Study”: The IRTlib Editor is used to configure so-called Studies. The version of studies can be tracked in the editor, and studies can be published (i.e., sealed to be used for data collection). To start creating content using the IRTlib Editor, a study must be created first (see section Settings for details).\n\n\n\n\n\n\n\nNote\n\n\n\nNote that at least one study must be defined in the IRTlib Editor, before a study configuration can be used to collect data with an IRTlib Player.\n\n\n\nSpecify “Basic Configurations” for the Study (Info): Basic configurations that apply to the content of a prepared study include the study label and description, the login mode, the display configuration, the menu for test administrators and the specification how to continue after completing all content defined in a study (see section Studies for details).\nCreate a new “Survey-Part”: Each study is composed of one or multiple survey parts (see here for details). Parts are considered segments of an assessment that are administered together, like items from a particular domain. Survey parts of type “CBA ItemBuilder” can be used to administer CBA ITemBuilder tasks in a linear sequence or with Blockly-based routing (see Routing Across Survey Parts for details).\n\n\n\n\n\n\n\nNote\n\n\n\nNote that each study neads at least one test-part defined in the IRTlib Editor, before a study configuration can be used to collect data with an IRTlib Player.\n\n\n\nConfigure “Basic Settings” for Survey Part (Info): A study part of type “CBA ItemBuilder” is a set of CBA ItemBuilder projects that belong together. Each CBA ItemBuilder project requires at least one Task, but projects with multiple tasks are also supported. If items are administered with a common time limit, test parts allow for assigning tasks to a structure differentiating assessment content presented before a time-restricted section (“instructional items”), after a time-restricted section (“epilogue items”), and items in between with restricted time (“core items”, see here).\nDefine “Core Items” (Items): To finalize the definition of a study-part, the CBA ItemBuilder tasks must be imported in the section “Items”. By default, the sequence of CBA ItemBuilder tasks is assumed to be linear. However, when routing is activated for a study part, Blockly-based routing (see Routing Within Survey Parts for details) can be used to implement various test designs (e.g., multiple booklets, multi-stage testing, etc.)."
-  },
-  {
-    "objectID": "preparation-overview.html#overview-steps-to-use-irtlib-editor-for-study-preparation",
-    "href": "preparation-overview.html#overview-steps-to-use-irtlib-editor-for-study-preparation",
-    "title": "Preparation",
-    "section": "",
-    "text": "Preparing a computer-based assessment based on CBA ItemBuilder items begins with using the IRTlib Editor to create a study configuration. This typically involves the following steps:\n\n\n\n\n\n\nOptional\n\n\n\n\n\n\nPre-requisite: Check the availability of the Runtime. The IRTlib Editor can be used to prepare assessments using CBA ItemBuilder Tasks. Using CBA ItemBuilder Tasks are stored in Project Files require a Runtime (i.e., the files “main..js” and “main..css”) in the version corresponding exactly to the version of the CBA ItemBuilder that was used to generate the items (e.g., 9.9.0). Before using the IRTLib editor, ensure the required Runtime is included or import the runtime files (see here for details).\n\nNote: This step is usually not necessary for the use of CBA ItemBuilder items from version 9.9.\n\n\n\n\nCreate a new “Study”: The IRTlib Editor is used to configure so-called Studies. The version of studies can be tracked in the editor, and studies can be published (i.e., sealed to be used for data collection). To start creating content using the IRTlib Editor, a study must be created first (see section Settings for details).\n\n\n\n\n\n\n\nNote\n\n\n\nNote that at least one study must be defined in the IRTlib Editor, before a study configuration can be used to collect data with an IRTlib Player.\n\n\n\nSpecify “Basic Configurations” for the Study (Info): Basic configurations that apply to the content of a prepared study include the study label and description, the login mode, the display configuration, the menu for test administrators and the specification how to continue after completing all content defined in a study (see section Studies for details).\nCreate a new “Survey-Part”: Each study is composed of one or multiple survey parts (see here for details). Parts are considered segments of an assessment that are administered together, like items from a particular domain. Survey parts of type “CBA ItemBuilder” can be used to administer CBA ITemBuilder tasks in a linear sequence or with Blockly-based routing (see Routing Across Survey Parts for details).\n\n\n\n\n\n\n\nNote\n\n\n\nNote that each study neads at least one test-part defined in the IRTlib Editor, before a study configuration can be used to collect data with an IRTlib Player.\n\n\n\nConfigure “Basic Settings” for Survey Part (Info): A study part of type “CBA ItemBuilder” is a set of CBA ItemBuilder projects that belong together. Each CBA ItemBuilder project requires at least one Task, but projects with multiple tasks are also supported. If items are administered with a common time limit, test parts allow for assigning tasks to a structure differentiating assessment content presented before a time-restricted section (“instructional items”), after a time-restricted section (“epilogue items”), and items in between with restricted time (“core items”, see here).\nDefine “Core Items” (Items): To finalize the definition of a study-part, the CBA ItemBuilder tasks must be imported in the section “Items”. By default, the sequence of CBA ItemBuilder tasks is assumed to be linear. However, when routing is activated for a study part, Blockly-based routing (see Routing Within Survey Parts for details) can be used to implement various test designs (e.g., multiple booklets, multi-stage testing, etc.)."
+    "text": "Editor:\n\nInstallation"
   },
   {
     "objectID": "preparation-parts.html",
@@ -112,18 +105,25 @@
     "text": "Embedded Help"
   },
   {
-    "objectID": "publish-and-export.html",
-    "href": "publish-and-export.html",
-    "title": "Data Collection",
+    "objectID": "settings.html",
+    "href": "settings.html",
+    "title": "Settings for IRTlib Editor",
     "section": "",
-    "text": "Embedded Help"
+    "text": "The IRTlib Editor has a small number of settings.The language can be set to German or English.\n\n\nThe IRTlib software is currently still under development. Information about the current version (and for Preview versions about the build hash) can be found in the section About the Program.\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\nThe IRTlib Software can be used with CBA ItemBuilder tasks of different CBA ItemBuilder versions. The required Runtime (i.e., the connection between the CBA ItemBuilder tasks and the IRTlib Software) is part of the study configuration so that the IRTlib Player knows for sure how to use CBA ItemBuilder tasks of a particular version.\n\n\n\n\n\n\nEmbedded Help"
   },
   {
-    "objectID": "publish-and-export.html#publish-export",
-    "href": "publish-and-export.html#publish-export",
-    "title": "Data Collection",
+    "objectID": "settings.html#overview",
+    "href": "settings.html#overview",
+    "title": "Settings for IRTlib Editor",
     "section": "",
-    "text": "Embedded Help"
+    "text": "The IRTlib software is currently still under development. Information about the current version (and for Preview versions about the build hash) can be found in the section About the Program.\n\n\n\n\n\n\nEmbedded Help"
+  },
+  {
+    "objectID": "settings.html#runtimes",
+    "href": "settings.html#runtimes",
+    "title": "Settings for IRTlib Editor",
+    "section": "",
+    "text": "The IRTlib Software can be used with CBA ItemBuilder tasks of different CBA ItemBuilder versions. The required Runtime (i.e., the connection between the CBA ItemBuilder tasks and the IRTlib Software) is part of the study configuration so that the IRTlib Player knows for sure how to use CBA ItemBuilder tasks of a particular version.\n\n\n\n\n\n\nEmbedded Help"
   },
   {
     "objectID": "installation.html",

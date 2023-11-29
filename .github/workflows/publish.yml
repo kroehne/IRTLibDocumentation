@@ -3,7 +3,7 @@ on:
   push:
     branches: main
 
-name: Quarto Publish
+name: Publish Website and Build resX file
 
 jobs:
   build-deploy:
@@ -19,6 +19,18 @@ jobs:
 
       - name: build application
         run: make all
+         
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 6.0.x
+          dotnet-quality: 'preview'  
+
+      - name: Show Structure
+        run: |      
+           echo `ls $GITHUB_WORKSPACE/`         
+           echo `ls $GITHUB_WORKSPACE/tools/` 
+
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

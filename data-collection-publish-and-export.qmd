@@ -9,7 +9,10 @@ lang: en
 
 # Datenerhebungen
 
-## Veröffentlichen und Exportieren
+## Checkliste vor dem Veröffentlichen
+
+
+## Veröffentlichen 
 
 ::: {.callout-tip title="Embedded Help"}
 
@@ -18,6 +21,10 @@ lang: en
 ```
 
 :::
+
+## Exportieren
+
+
 
 :::
 

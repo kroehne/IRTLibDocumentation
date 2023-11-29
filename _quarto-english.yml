@@ -21,13 +21,13 @@ website:
       - text: Data Collection
         menu:
           - text: Overview
-            href: datacollectionoverviewv.qmd
+            href: data-collection-overview.qmd
           - text: Publish & Export
-            href: publish-and-export.qmd
+            href: data-collection-publish-and-export.qmd
           - text: Integration & Deployment
-            href: player-integration.qmd
+            href: data-collection-player-integration.qmd
           - text: Data Postprocessing 
-            href: postprocessing.qmd
+            href: data-collection-post-processing.qmd
       - href: settings.qmd
         text: Settings
     right:

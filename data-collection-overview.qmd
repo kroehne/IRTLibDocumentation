@@ -1,0 +1,41 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: en    
+---
+
+::: {.content-visible when-profile="german"}
+
+# Datenerhebung 
+
+## Übersicht: Schritte zur Verwendung eines *IRTlib Player* zur *Datenerhebung*
+
+Nachdem eine Studienkonfiguration mit dem *IRTlib-Editor* vorbereitet wurde, muss zunächst eine finalisierte *Version* erstellt werden. Versionen *versiegeln* und vervollständigen alle Konfigurationen und haben eine eindeutige Versionsnummer (bezeichnet als *Revision*). Die Verwendung von *Revisionen* macht die Durchführung von Datensammlungen mit dem *IRTlib-Editor* und *IRTlib-Player* reproduzierbar, da die Revisionsnummer einer Konfiguration auch in den Datensätzen gespeichert wird.
+
+* **Konfigurationen Prüfen**: Vor der Fertigstellung und dem *Versiegeln* einer Version ist es ratsam, alle Einstellungen noch einmal zu überprüfen. Der *IRTlib-Editor* stellt dafür eine zusätzliche Funktion der *Validierung* zur Verfügung. Eine Checkliste der zu prüfenden Einstellungen findet sich [hier]().
+
+* **Versiegelte Version Erstellen**: Wenn keine weiteren Änderungen erforderlich sind, kann die Version *versiegelt* werden. Weitere Details dazu finden sich [hier]().
+
+* **Version Exportieren**: Versionen von Studien, die im *IRTlib-Editor* verfügbar sind, können exportiert werden. Der Export der Konfiguraiton ist notwendig, bevor diese mit dem *IRTlib-Player* verwendet werden können. Weitere Details dazu finden sich [hier]().
+
+* **Studie in *IRTlib-Player* Importieren**: Exportierte Versionen von Studien aus dem *IRTlib-Editor* können zur Verwendung in einen *IRTlib-Player* importiert werden. Weitere Details dazu finden sich [hier]().
+
+* **Testen der Studie**: Bevor mit der eigentlichen Datenerfassung begonnen wird kann, sollte jede Konfiguration zunächst mit synthetischen Testfällen (d.h. systematisch) gestetet werden. Vorschläge für Testpläne finden sich [hier]().
+
+Falls in einer exportierten Studie noch Probleme festgestellt werden, ist es möglich, zur Vorbereitung (siehe [Vorbereitung von Studien](preparation-studies.qmd) und [Vorbereitung von Erhebungsteilen](preparation-parts.qmd)) zurückzukehren, die Studiendefinition und die Konfiguration der Testteile zu ändern, eine weitere versiegelte Version zu erstellen und mit der geänderten Konfiguration fortzufahren.
+
+
+:::
+
+
+::: {.content-visible when-profile="english"}
+
+
+# Data Collection 
+
+## Overview: Steps to use *IRTlib Player* for *Data Collections*
+
+
+:::
+
