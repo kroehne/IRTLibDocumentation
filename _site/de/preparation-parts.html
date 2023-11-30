@@ -4548,6 +4548,11 @@ vertical-align: -.125em;
   </li>  
 </ul>
             <div class="quarto-navbar-tools">
+  <a href class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
 </div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
@@ -4568,9 +4573,9 @@ vertical-align: -.125em;
   <ul class="collapse">
   <li><a href="#erhebungsteilverwaltung" id="toc-erhebungsteilverwaltung" class="nav-link" data-scroll-target="#erhebungsteilverwaltung">Erhebungsteilverwaltung</a></li>
   <li><a href="#grundkonfiguration-für-erhebungsteile" id="toc-grundkonfiguration-für-erhebungsteile" class="nav-link" data-scroll-target="#grundkonfiguration-für-erhebungsteile">Grundkonfiguration für Erhebungsteile</a></li>
-  <li><a href="#vorspann-nachspann-items" id="toc-vorspann-nachspann-items" class="nav-link" data-scroll-target="#vorspann-nachspann-items">Vorspann-/Nachspann-Items</a></li>
-  <li><a href="#begrenzte-bearbeitungszeit" id="toc-begrenzte-bearbeitungszeit" class="nav-link" data-scroll-target="#begrenzte-bearbeitungszeit">Begrenzte Bearbeitungszeit</a></li>
   <li><a href="#assessmentinhalte-items" id="toc-assessmentinhalte-items" class="nav-link" data-scroll-target="#assessmentinhalte-items">Assessmentinhalte (Items)</a></li>
+  <li><a href="#bearbeitungszeit" id="toc-bearbeitungszeit" class="nav-link" data-scroll-target="#bearbeitungszeit">Bearbeitungszeit</a></li>
+  <li><a href="#vorspann-nachspann-items" id="toc-vorspann-nachspann-items" class="nav-link" data-scroll-target="#vorspann-nachspann-items">Vorspann-/Nachspann-Items</a></li>
   <li><a href="#variablen" id="toc-variablen" class="nav-link" data-scroll-target="#variablen">Variablen</a></li>
   <li><a href="#codebook" id="toc-codebook" class="nav-link" data-scroll-target="#codebook">Codebook</a></li>
   <li><a href="#itempool" id="toc-itempool" class="nav-link" data-scroll-target="#itempool">ItemPool</a></li>
@@ -4598,16 +4603,19 @@ vertical-align: -.125em;
 <p>Die erstellten <em>Erhebungsteile</em> erscheinen als Karten in der Ansicht <em>Erhebungsteile</em>. Wenn Studien aus mehreren Erhebunsteilen bestehen, kann für <em>lineare Abläufe</em> die Reihenfolge der Erhebungsteile in der Ansichht <em>Erhebungsteile</em> / <em>Übersicht</em> angepasst werden. Sollen <em>Erhebungsteile</em> in Abhängigkeit von Variablen (z.B. übergebene <em>Preload</em>-Variablen oder andere <em>Blockly</em>-Variablen gesteuert werden, kann alternativ ein <a href="preparation-parts.html#routing-zwischen-erhebungsteilen">Routing zwischen Erhebungsteilen</a> konfiguriert werden.</p>
 <p>Eine detaillierte Anleitung zur Erstellung von <em>Erhebungsteilen</em> findet sich hier in der eingebetteten Hilfe:</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Embedded Help">
-<div class="callout-header d-flex align-content-center">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 Embedded Help
 </div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <iframe width="100%" height="300" src="../help/InlineHelp_View_Study_Part_Main_de-DEU.html"></iframe>
+</div>
 </div>
 </div>
 <p>Die Reihenfolge von <em>Erhebunsteilen</em> kann in der Ansicht <em>Erhebungsteile</em> verändert werden:</p>
@@ -4615,17 +4623,81 @@ Embedded Help
 </section>
 <section id="grundkonfiguration-für-erhebungsteile" class="level3">
 <h3 class="anchored" data-anchor-id="grundkonfiguration-für-erhebungsteile">Grundkonfiguration für Erhebungsteile</h3>
+<p>Vor dem Hinzufügen bzw. Auswählen von CBA ItemBuilder Projekten, sie im Abschnitt <a href="#assessmentinhalte-items">Assessmentinhalte (Items)</a> beschrieben, können in der Ansicht <em>Info</em> ausgewählte Eintsellungen konfiguriert werden.</p>
+<p>Eine detaillierte Beschreibung der findet sich hier in der eingebetteten Hilfe:</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Embedded Help">
-<div class="callout-header d-flex align-content-center">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 Embedded Help
 </div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <iframe width="100%" height="300" src="../help/InlineHelp_View_Study_Parts_Info_Overview_de-DEU.html"></iframe>
+</div>
+</div>
+</div>
+<p>Das Hinzufügen und Verwalten von CBA ItemBuilder Projekte innerhalb des <em>IRTlib-Editors</em> erfolgt im Abschnitt <a href="#assessmentinhalte-items">Items</a>.</p>
+<div class="callout callout-style-default callout-caution callout-titled" title="Hinweis zur Zeitbegrenzung">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hinweis zur Zeitbegrenzung
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Für die Administration von zeitbegrenzten Erhebungsteilen kann unter <a href="#preparation-parts.html#bearbeitungszeit-items">Bearbeitungszeit</a> ein Zeitlimit definiert werden. Wenn die Option <em>Bearbeitungszeit begrenzen</em> aktiviert ist, können ein oder mehere <em>Tasks</em> definiert werden, welche bei einem <em>Timeout</em> angezeigt werden. Außerdem können im Abschnitt <a href="#vorspann-nachspann-items">Vorspann-Items(s)</a> und <a href="#vorspann-nachspann-items">Nachspann-Item(s)</a> Inhalte definiert werden, welche vor bzw. nach dem zeitbegrenzten Teil administriert werden.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="assessmentinhalte-items" class="level3">
+<h3 class="anchored" data-anchor-id="assessmentinhalte-items">Assessmentinhalte (Items)</h3>
+<p>Die Inhalte, welche in einem Erhebungsteil vom Typ <em>CBA ItemBuilder</em> verwendet werden sollen, werden über den <em>IRTlib Editor</em> in die Konfiguration übernommen, d.h. die mit dem <em>IRTlib Editor</em> erstellte Konfiguration enthält auch die <em>CBA ItemBuilder</em> <em>Project Files</em>. Für das Hinzufügen oder Aktualisierung von <em>CBA ItemBuilder</em> Projekten steht die Ansicht <em>Items</em> zur Verfügung.</p>
+<p>Eine detaillierte Beschreibung der findet sich hier in der eingebetteten Hilfe:</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Embedded Help">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Embedded Help
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<iframe width="100%" height="300" src="../help/InlineHelp_View_Study_Parts_Items_de-DEU.html"></iframe>
+</div>
+</div>
+</div>
+</section>
+<section id="bearbeitungszeit" class="level3">
+<h3 class="anchored" data-anchor-id="bearbeitungszeit">Bearbeitungszeit</h3>
+<p>Wenn die Administration einer linearen Folge von <em>CBA ItemBuilder</em> <em>Tasks</em> mit einer begrenzten Bearbeitungszeit administriert werden sollen, lässt sich dies durch Definieren einer maximalen Bearbeitungszeit (in Sekunden) umsetzen. Soll bspw. ein Testinhalt maximal <em>28</em> min. administriert werden, wird als <em>Bearbeitungszeit</em> eine Zeit von <em>1680</em> Sekunden definiert. Die Nachricht, welche beim Ablaufen der Bearbeitungszeit angezeigt werden soll, lässt sich als ein (oder mehrere) <em>CBA ItemBuilder</em> <em>Tasks</em> definieren.</p>
+<p>Eine detaillierte Beschreibung der findet sich hier in der eingebetteten Hilfe:</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Embedded Help">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Embedded Help
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<iframe width="100%" height="300" src="../help/InlineHelp_View_Study_Parts_Info_Time_de-DEU.html"></iframe>
+</div>
 </div>
 </div>
 </section>
@@ -4633,110 +4705,132 @@ Embedded Help
 <h3 class="anchored" data-anchor-id="vorspann-nachspann-items">Vorspann-/Nachspann-Items</h3>
 <p>Items die <em>vor</em> einem potentiell Zeitbegrenzten Abschnitt eines Erhebugnsteils administriert werde, werden als <em>Vorspann-Items</em> bezeichnet.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Embedded Help">
-<div class="callout-header d-flex align-content-center">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 Embedded Help
 </div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <iframe width="100%" height="300" src="../help/InlineHelp_View_Study_Parts_Info_Epilog_de-DEU.html"></iframe>
 </div>
 </div>
+</div>
 <p>Items die <em>nach</em> einem potentiell Zeitbegrenzten Abschnitt eines Erhebugnsteils administriert werde, werden als <em>Nachspann-Items</em> bezeichnet.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Embedded Help">
-<div class="callout-header d-flex align-content-center">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 Embedded Help
 </div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <iframe width="100%" height="300" src="../help/InlineHelp_View_Study_Parts_Info_Prolog_de-DEU.html"></iframe>
 </div>
-</div>
-</section>
-<section id="begrenzte-bearbeitungszeit" class="level3">
-<h3 class="anchored" data-anchor-id="begrenzte-bearbeitungszeit">Begrenzte Bearbeitungszeit</h3>
-<div class="callout callout-style-default callout-tip callout-titled" title="Embedded Help">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Embedded Help
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<iframe width="100%" height="300" src="../help/InlineHelp_View_Study_Parts_Info_Time_de-DEU.html"></iframe>
-</div>
-</div>
-</section>
-<section id="assessmentinhalte-items" class="level3">
-<h3 class="anchored" data-anchor-id="assessmentinhalte-items">Assessmentinhalte (Items)</h3>
-<div class="callout callout-style-default callout-tip callout-titled" title="Embedded Help">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Embedded Help
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<iframe width="100%" height="300" src="../help/InlineHelp_View_Study_Parts_Items_de-DEU.html"></iframe>
 </div>
 </div>
 </section>
 <section id="variablen" class="level3">
 <h3 class="anchored" data-anchor-id="variablen">Variablen</h3>
-<div class="callout callout-style-default callout-tip callout-titled" title="Embedded Help">
+<div class="callout callout-style-default callout-important callout-titled" title="Under Development">
 <div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Under Development
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Diese Funktion ist gerade in Entwicklung.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Embedded Help">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 Embedded Help
 </div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <iframe width="100%" height="300" src="../help/InlineHelp_View_Study_Parts_Variables_de-DEU.html"></iframe>
+</div>
 </div>
 </div>
 </section>
 <section id="codebook" class="level3">
 <h3 class="anchored" data-anchor-id="codebook">Codebook</h3>
-<div class="callout callout-style-default callout-tip callout-titled" title="Embedded Help">
+<div class="callout callout-style-default callout-important callout-titled" title="Under Development">
 <div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Under Development
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Diese Funktion ist gerade in Entwicklung.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Embedded Help">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 Embedded Help
 </div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <iframe width="100%" height="300" src="../help/InlineHelp_View_Study_Parts_Codebook_de-DEU.html"></iframe>
+</div>
 </div>
 </div>
 </section>
 <section id="itempool" class="level3">
 <h3 class="anchored" data-anchor-id="itempool">ItemPool</h3>
-<div class="callout callout-style-default callout-tip callout-titled" title="Embedded Help">
+<div class="callout callout-style-default callout-important callout-titled" title="Under Development">
 <div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Under Development
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Diese Funktion ist gerade in Entwicklung.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Embedded Help">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 Embedded Help
 </div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <iframe width="100%" height="300" src="../help/InlineHelp_View_Study_Parts_ItemPool_de-DEU.html"></iframe>
+</div>
 </div>
 </div>
 </section>

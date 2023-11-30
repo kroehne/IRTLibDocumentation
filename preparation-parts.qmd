@@ -23,7 +23,7 @@ Die erstellten *Erhebungsteile* erscheinen als Karten in der Ansicht *Erhebungst
 
 Eine detaillierte Anleitung zur Erstellung von *Erhebungsteilen* findet sich hier in der eingebetteten Hilfe:
 
-::: {.callout-tip title="Embedded Help"}
+::: {.callout-tip collapse="true" title="Embedded Help"}
 
 ```{=html}
 <iframe width="100%" height="300" src="../help/InlineHelp_View_Study_Part_Main_de-DEU.html"></iframe>
@@ -37,8 +37,11 @@ Die Reihenfolge von *Erhebunsteilen* kann in der Ansicht *Erhebungsteile* verän
 
 ### Grundkonfiguration für Erhebungsteile 
 
+Vor dem Hinzufügen bzw. Auswählen von CBA ItemBuilder Projekten, sie im Abschnitt <a href="#assessmentinhalte-items">Assessmentinhalte (Items)</a> beschrieben, können in der Ansicht *Info* ausgewählte Eintsellungen konfiguriert werden.
 
-::: {.callout-tip title="Embedded Help"}
+Eine detaillierte Beschreibung der findet sich hier in der eingebetteten Hilfe:
+
+::: {.callout-tip collapse="true" title="Embedded Help"}
 
 ```{=html}
 <iframe width="100%" height="300" src="../help/InlineHelp_View_Study_Parts_Info_Overview_de-DEU.html"></iframe>
@@ -46,12 +49,47 @@ Die Reihenfolge von *Erhebunsteilen* kann in der Ansicht *Erhebungsteile* verän
 
 :::
 
+Das Hinzufügen und Verwalten von CBA ItemBuilder Projekte innerhalb des *IRTlib-Editors* erfolgt im Abschnitt <a href="#assessmentinhalte-items">Items</a>. 
+
+::: {.callout-caution collapse="true" title="Hinweis zur Zeitbegrenzung"}
+Für die Administration von zeitbegrenzten Erhebungsteilen kann unter <a href="#preparation-parts.html#bearbeitungszeit-items">Bearbeitungszeit</a> ein Zeitlimit definiert werden. Wenn die Option *Bearbeitungszeit begrenzen* aktiviert ist, können ein oder mehere *Tasks* definiert werden, welche bei einem *Timeout* angezeigt werden. Außerdem können im Abschnitt <a href="#vorspann-nachspann-items">Vorspann-Items(s)</a> und <a href="#vorspann-nachspann-items">Nachspann-Item(s)</a> Inhalte definiert werden, welche vor bzw. nach dem zeitbegrenzten Teil administriert werden. 
+:::
+
+### Assessmentinhalte (Items)
+
+Die Inhalte, welche in einem Erhebungsteil vom Typ *CBA ItemBuilder* verwendet werden sollen, werden über den *IRTlib Editor* in die Konfiguration übernommen, d.h. die mit dem *IRTlib Editor* erstellte Konfiguration enthält auch die *CBA ItemBuilder* *Project Files*. Für das Hinzufügen oder Aktualisierung von *CBA ItemBuilder* Projekten  steht die Ansicht *Items* zur Verfügung.
+
+Eine detaillierte Beschreibung der findet sich hier in der eingebetteten Hilfe:
+
+::: {.callout-tip collapse="true" title="Embedded Help"}
+
+```{=html}
+<iframe width="100%" height="300" src="../help/InlineHelp_View_Study_Parts_Items_de-DEU.html"></iframe>
+```
+
+:::
+
+### Bearbeitungszeit
+
+Wenn die Administration einer linearen Folge von  *CBA ItemBuilder* *Tasks* mit einer begrenzten Bearbeitungszeit administriert werden sollen, lässt sich dies durch Definieren einer maximalen Bearbeitungszeit (in Sekunden) umsetzen. Soll bspw. ein Testinhalt maximal *28* min. administriert werden, wird als *Bearbeitungszeit* eine Zeit von *1680* Sekunden definiert. Die Nachricht, welche beim Ablaufen der Bearbeitungszeit angezeigt werden soll, lässt sich als ein (oder mehrere)  *CBA ItemBuilder* *Tasks* definieren. 
+
+Eine detaillierte Beschreibung der findet sich hier in der eingebetteten Hilfe:
+
+::: {.callout-tip collapse="true" title="Embedded Help"}
+
+```{=html}
+<iframe width="100%" height="300" src="../help/InlineHelp_View_Study_Parts_Info_Time_de-DEU.html"></iframe>
+```
+
+:::
+
+
 
 ### Vorspann-/Nachspann-Items 
 
 Items die *vor* einem potentiell Zeitbegrenzten Abschnitt eines Erhebugnsteils administriert werde, werden als *Vorspann-Items* bezeichnet. 
 
-::: {.callout-tip title="Embedded Help"}
+::: {.callout-tip collapse="true" title="Embedded Help"}
 
 ```{=html}
 <iframe width="100%" height="300" src="../help/InlineHelp_View_Study_Parts_Info_Epilog_de-DEU.html"></iframe>
@@ -62,7 +100,7 @@ Items die *vor* einem potentiell Zeitbegrenzten Abschnitt eines Erhebugnsteils a
 
 Items die *nach* einem potentiell Zeitbegrenzten Abschnitt eines Erhebugnsteils administriert werde, werden als *Nachspann-Items* bezeichnet. 
 
-::: {.callout-tip title="Embedded Help"}
+::: {.callout-tip collapse="true" title="Embedded Help"}
 
 ```{=html}
 <iframe width="100%" height="300" src="../help/InlineHelp_View_Study_Parts_Info_Prolog_de-DEU.html"></iframe>
@@ -71,32 +109,14 @@ Items die *nach* einem potentiell Zeitbegrenzten Abschnitt eines Erhebugnsteils 
 :::
 
 
-### Begrenzte Bearbeitungszeit
-
-::: {.callout-tip title="Embedded Help"}
-
-```{=html}
-<iframe width="100%" height="300" src="../help/InlineHelp_View_Study_Parts_Info_Time_de-DEU.html"></iframe>
-```
-
-:::
-
-
-### Assessmentinhalte (Items)
-
-::: {.callout-tip title="Embedded Help"}
-
-```{=html}
-<iframe width="100%" height="300" src="../help/InlineHelp_View_Study_Parts_Items_de-DEU.html"></iframe>
-```
-
-:::
-
-
 
 ### Variablen
 
-::: {.callout-tip title="Embedded Help"}
+::: {.callout-important title="Under Development"}
+Diese Funktion ist gerade in Entwicklung. 
+:::
+
+::: {.callout-tip collapse="true" title="Embedded Help"}
 
 ```{=html}
 <iframe width="100%" height="300" src="../help/InlineHelp_View_Study_Parts_Variables_de-DEU.html"></iframe>
@@ -107,7 +127,11 @@ Items die *nach* einem potentiell Zeitbegrenzten Abschnitt eines Erhebugnsteils 
 
 ### Codebook
 
-::: {.callout-tip title="Embedded Help"}
+::: {.callout-important title="Under Development"}
+Diese Funktion ist gerade in Entwicklung. 
+:::
+
+::: {.callout-tip collapse="true" title="Embedded Help"}
 
 ```{=html}
 <iframe width="100%" height="300" src="../help/InlineHelp_View_Study_Parts_Codebook_de-DEU.html"></iframe>
@@ -118,7 +142,11 @@ Items die *nach* einem potentiell Zeitbegrenzten Abschnitt eines Erhebugnsteils 
 
 ### ItemPool
 
-::: {.callout-tip title="Embedded Help"}
+::: {.callout-important title="Under Development"}
+Diese Funktion ist gerade in Entwicklung. 
+:::
+
+::: {.callout-tip collapse="true" title="Embedded Help"}
 
 ```{=html}
 <iframe width="100%" height="300" src="../help/InlineHelp_View_Study_Parts_ItemPool_de-DEU.html"></iframe>
@@ -129,7 +157,8 @@ Items die *nach* einem potentiell Zeitbegrenzten Abschnitt eines Erhebugnsteils 
 
 ### Routing innerhalb von Erhebungsteilen
 
-::: {.callout-tip title="Embedded Help"}
+
+::: {.callout-tip collapse="true" title="Embedded Help"}
 
 ```{=html}
 <iframe width="100%" height="600" src="../help/InlineHelp_View_Study_Routing_de-DEU.html"></iframe>
@@ -144,7 +173,7 @@ Wenn mehrere *Erhebungsteile* für eine *Studie* definiert sind kann die Abfolge
 
 Neben einfachen linearen Abläufen können Abläufe von mehreren Erhebungsteilen auch mit eine *Blockly*-basierten Routing konfiguriert werden. 
 
-::: {.callout-tip title="Embedded Help"}
+::: {.callout-tip collapse="true" title="Embedded Help"}
 
 ```{=html}
 <iframe width="100%" height="300" src="../help/InlineHelp_View_Study_Parts_Routing_de-DEU.html"></iframe>
@@ -158,48 +187,5 @@ Neben einfachen linearen Abläufen können Abläufe von mehreren Erhebungsteilen
 :::
 
 ::: {.content-visible when-profile="english"}
-
-# Preparation
-
-## Survey-Part Management
-
-
-::: {.callout-tip title="Embedded Help"}
-
-```{=html}
-<iframe width="100%" height="600" src="../help/InlineHelp_View_Study_Part_Main_en-US.html"></iframe>
-```
-
-:::
-
-## Basic Configurations for Survey-Parts
-
-::: {.callout-tip title="Embedded Help"}
-
-```{=html}
-<iframe width="100%" height="600" src="../help/InlineHelp_View_Study_Parts_Info_Overview_en-US.html"></iframe>
-```
-
-:::
-
-## Routing within Survey-Parts
-
-::: {.callout-tip title="Embedded Help"}
-
-```{=html}
-<iframe width="100%" height="600" src="../help/InlineHelp_View_Study_Routing_de-DEU.html"></iframe>
-```
-
-:::
-
-## Routing betweeen Survey-Parts
-
-::: {.callout-tip title="Embedded Help"}
-
-```{=html}
-<iframe width="100%" height="600" src="../help/InlineHelp_View_Study_Parts_Routing_de-DEU.html"></iframe>
-```
-
-:::
-
+(No translation defined yet.) 
 :::

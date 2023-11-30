@@ -7,4 +7,35 @@ format:
     toc: false
 ---
 
-## Bearbeitungszeit
+## Zeitbegrenzung
+
+*Erhebungsteile* ohne *Routing* können auf einfache Weise einen zeitbegrenzten Abschnitt enthalten. Dafür wird in der Sicht *Bearbeitungszeit* die Option *Bearbeitungszeit begrenzen* aktiviert und ein Zeitlimit in Sekunden (>0) eingetragen. 
+
+Für eine Zeitbegrenzung werden vier Gruppen von *CBA ItemBuilder* *Tasks* unterschieden, die an unterschiedlichen Stellen im *IRTlib Editor* definiert werden. In der Sicht *Items* (analog zu nicht zeitbegrenzten *Erhebungsteilen*) werden die Items für welche die Zeitbegrenzug gelten soll definiert: 
+
+* **Items**: Items die so lange angezeigt werden, bis das Zeitlimit erreicht wurde.
+
+In der Ansicht *Bearbeitungszeit* kann zusätzlich definiert werden:
+
+* **Timeout-Items**: Items die nur angezeigt werden, wenn die zeitbegrenzten Items nicht in der begrenzten Bearbeitungszeit abgeschlossen wurden.
+
+Als einzelne Sichten der Konfiguration von *Erhebungsteile* können schließlich folgende Tasks definiert werden:
+
+* **Vorspann-Items**: Items die vor dem zeitbegrenzten Abschnitt angezeigt werden. 
+* **Nachspann-Items**: Items die nach dem zeitbegrenzten Abschnitt angezeigt werden. 
+
+In allen genannten Dialogen stehen die Symbole für folgende Operationen zur Verfügung:
+
+* Hinzufügen: ![](img/screenshot-add-project-plus-icon.png){width="40"}
+* Aktualisieren: ![](img/screenshot-update-item-icon-01.png){width="40"}
+* Vorschau/Preview: ![](img/screenshot-preview-icon-01.png){width="40"}
+* Download/Export: ![](img/screenshot-download-item-icon-01.png){width="40"}
+* Löschen: ![](img/screenshot-delete-item-icon-01.png){width="40"}
+* Sortieren: ![](img/screenshot-sort-items-icon-01.png){width="80"}
+
+Hinweis: Komplexere Designs mit ggf. mehreren Timern lassen sich mit dem *IRTlib Editor* umsetzen, wenn die Option *Routing aktivieren* in der Übersichtsansicht zu einem *Erhebungsteil* aktiviert ist. 
+
+Hinweis: Änderungen an der Sicht *Bearbeitungszeit* müssen über das Disketten-Symbol gespeichert oder mit dem Rückgängig-Symbol verwerfen werden:
+
+![](img/screenshot-icons-undo-and-save-01.png){width="120" fig-align="left"}
+

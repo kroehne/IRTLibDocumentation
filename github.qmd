@@ -33,7 +33,7 @@ The IRTlib software is free *research software* in the sense of *open science*. 
 * Documentation: [github](https://github.com/kroehne/IRTLibDocumentation)
 :::
 
-* Resx [de-DEU.rex](../Help-de-DEU.rex) [../en-US.rex](Help-en-US.rex)
+* Resx [de-DEU.rex](../Help-de-DEU.rex) [en-US.rex](../Help-en-US.rex)
 
 ## CBA ItemBuilder
 

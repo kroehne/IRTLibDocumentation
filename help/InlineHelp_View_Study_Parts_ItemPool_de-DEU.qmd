@@ -7,4 +7,4 @@ format:
     toc: false
 ---
 
-## Definition von ItemPool
+(Diese Funktionalität ist gerade noch in *Entwicklung*.)

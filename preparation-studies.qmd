@@ -32,11 +32,9 @@ Eine detaillierte Anleitung zur Erstellung einer *Studie* findet sich hier in de
 :::
 
 
-## Konfiguration von Studien
+### Grundlegende Konfigurationen
 
 Die Konfigurationen einer bestimmten Studie, einschließlich <a href="publish-and-export.html">Versionierung und Veröffentlichung</a>, werden innerhalb von Studien verwaltet (d.h. nach dem Öffnen einer Studie zur Bearbeitung durch Klicken auf das Bearbeitungssymbol am unteren rechten Rand der Karte).
-
-### Grundlegende Konfigurationen
 
 Erstellte Studien, die im *IRTlib Editor* in der Ansicht *Studien* angezeigt werden, können zur Bearbeitung geöffnet werden. 
 

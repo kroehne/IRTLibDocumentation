@@ -7,4 +7,51 @@ format:
     toc: false
 ---
 
-## Items
+## Assessmentinhalte Konfigurieren
+
+### Grundfunktionen
+
+* **Importieren von *CBA ItemBuilder*-Projektdateien**: Der *IRTlib Editor* pflegt eine *Liste bekannter Items*, zu denen *CBA ItemBuilder*-Projekdateien die noch nicht bekannt sind hinzugefügt werden können. Um eine Projektdatei hinzuzufügen, öffnet man zunächst mit dem `+`-Symbol die *Liste bekannter Items* und wählt dann die Schaltfläche *Imporiteren* aus. 
+ 
+![](img/screenshot-add-project-plus-icon.png){width="40" fig-align="left"}
+
+![](img/screenshot-import-items-button-01.png){width="120" fig-align="left"}
+
+
+* **Aktualisieren bereits importiereter *CBA ItemBuilder*-Projektdateien**: Wenn eine *CBA ItemBuilder*-Projektdatei bereits in der *Liste der bekannten Items* enthalten ist, können die Projektdateien aktualisiert werden. Sie werden dann nicht zusätzlich zur *Liste der bekannten Items* hinzugefügt, sondern die bereits vorhandene *CBA ItemBuilder*-Projektdatei wird in einer neueren Version hinterlegt. Um ein Item zu aktualisieren muss es zunächst in der Liste der Items eines *Erhebungsteils* ausgewählt werden. Dadurch wird das Aktualisieren-Symbol aktiv. In dem sich dann öffnenenden Dialog *Item aktualisieren* kann über die Schaltfläche *Imporiteren* eine aktualisierte Version einer *CBA ItemBuilder*-Projektdatei hinzugefügt werden. 
+
+![](img/screenshot-update-item-icon-01.png){width="40" fig-align="left"}
+
+![](img/screenshot-import-items-button-01.png){width="120" fig-align="left"}
+
+
+* **Vorschau von *CBA ItemBuilder*-Projektdateien**: Die in einem *Erhebungsteil* hinzugefügten Items können direkt im *IRTlib Editor* in einer eingebauten Preview-Funktion angesehen werden. Um ein Item zu anzusehen muss es zunächst in der Liste der Items eines *Erhebungsteils* ausgewählt werden. Danach kann die *Vorschau* über das Augen-Symbol aufgerufen werden:
+
+![](img/screenshot-preview-icon-01.png){width="40" fig-align="left"}
+
+
+* **Exportieren von *CBA ItemBuilder*-Projektdateien**: *CBA ItemBuilder*-Projektdateien die in den *IRTlib Editor* importiert wurden, können zur weiteren Bearbeitung mit dem *CBA ItemBuilder* exportiert werden. Um ein ausgewhähltes Item aus der Liste der Items eines *Erhebungsteils* zu exportieren, kann das Download-Symbol augerufen werden:
+
+![](img/screenshot-download-item-icon-01.png){width="40" fig-align="left"}
+
+* **Löschen von *CBA ItemBuilder*-Projektdateien**: Die in *Erhebungsteilen* eingefügten Items können aus einem *Erhebungsteil* wieder gelöscht werden. Durch das Löschen-Symbol wird das Item aus einem *Erhebungsteil* entfernt, es verbleibt aber in der *Liste bekannter Items*:
+
+![](img/screenshot-delete-item-icon-01.png){width="40" fig-align="left"}
+
+> Hinweis: Es ist bisher nicht möglich, *CBA ItemBuilder*-Projektdateien aus der *Liste bekannter Items* wieder zu löschen. Diese Funktionalität ist nicht notwendig, da *CBA ItemBuilder*-Projektdateien vom *IRTlib-Editor* nur dann in die Konfiguration einer *Studie* übernommen werden, wenn *Tasks* aus einer  *CBA ItemBuilder*-Projektdatei in einem *Erhebungsteil* verwendet werden. 
+
+
+### Sortieren von Items (Linearer Ablauf)
+
+* **Sortieren *CBA ItemBuilder*-Projektdateien**: Wenn für einen *Erhebungsteil* die Option *Routing aktivieren* nicht ausgewählt ist, dann kann in der Liste der Items die Reihenfolge über die folgenden Schaltfläche angepasst werden:
+
+![](img/screenshot-sort-items-icon-01.png){width="80" fig-align="left"}
+
+> Die Items dann exakt so administriert, wie sie für einen *Erhebungsteil* in dieser Liste aufgeführt sind.
+
+
+Hinweis: Änderungen an der Sicht *Items* müssen über das Disketten-Symbol gespeichert oder mit dem Rückgängig-Symbol verwerfen werden:
+
+![](img/screenshot-icons-undo-and-save-01.png){width="120" fig-align="left"}
+
+

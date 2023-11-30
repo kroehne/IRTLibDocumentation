@@ -4,6 +4,7 @@ project:
   
 website:
   title: "IRTlib Dokumentation"
+  reader-mode: true  
   navbar:
     left:
       - href: index.qmd
