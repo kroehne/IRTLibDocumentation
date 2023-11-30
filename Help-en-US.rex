@@ -573,9 +573,9 @@ margin: 0 0.8em 0.2em -1em;  vertical-align: middle;
 &lt;/body&gt;&lt;/html&gt;</value>
   </data>
   <data name="Help-Version-Git-Hash" xml:space="preserve">
-    <value>06956ea</value>
+    <value>3f59a6f</value>
   </data>
   <data name="Help-Version-Last-Change" xml:space="preserve">
-    <value>11/29/2023 20:48:05</value>
+    <value>11/30/2023 15:08:15</value>
   </data>
 </root>
