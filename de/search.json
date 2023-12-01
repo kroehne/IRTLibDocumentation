@@ -18,14 +18,14 @@
     "href": "github.html",
     "title": "Github – Mehr",
     "section": "",
-    "text": "Die IRTlib-Software ist freie Forschungssoftware im Sinne von Open Science. Sie kann für nicht-kommerzielle Anwendungen verwendet werden.\n\n\n\n\n\nAktuelle Versionen der IRTlib Software (Windows und Docker): github\nDokumentation: github\n\n\nResx de-DEU.rex en-US.rex\n\n\n\n\n\nDie IRTlib Software erlaubt die Administration von Assessmentinhalten, die mit dem CBA ItemBuilder erstellt wurden.\n\n\n\nAktuelle Versionen des CBA ItemBuilder (Windows): https://www.itembuilder.de/software\n\n\n\n\nSource Code und Material zum CBA ItemBuilder sind aufgeteilt auf mehrere Repositorien:\n\nCBA ItemBuilder (Desktop Anwendung): github (In Vorbereitung / noch privat)\nLaufzeitumgebung / Rumtime: github (In Vorbereitung / noch privat)\nAusführungsumgebung / Execution Environment für Entwickler: github (In Vorbereitung / noch privat)\nTechnische Dokumentation: github (In Vorbereitung / noch privat)\nTechnische Beispielitems: github(In Vorbereitung / noch privat)\n\n\n\n\nOnline-Dokumentation\n\nHTML (interaktiv): https://cba.itembuilder.de\n\nPDF (statisch): Open-Assessments-with-CBA-ItemBuilder.pdf\nQuellen github (In Vorbereitung / noch privat)"
+    "text": "Die IRTlib-Software ist freie Forschungssoftware im Sinne von Open Science. Sie kann für nicht-kommerzielle Anwendungen verwendet werden.\n\n\n\n\n\n\n\n\nHinweis\n\n\n\nÜbersetzung: Wenn Sie uns bei der Übersetzung dieser Software helfen wollen, finden Sie hier weitere Informationen.\n\n\n\n\n\nAktuelle Versionen der IRTlib Software (Windows und Docker): github\nDokumentation: github\n\n\n\n\n\nDie IRTlib Software erlaubt die Administration von Assessmentinhalten, die mit dem CBA ItemBuilder erstellt wurden.\n\n\n\nAktuelle Versionen des CBA ItemBuilder (Windows): https://www.itembuilder.de/software\n\n\n\n\nSource Code und Material zum CBA ItemBuilder sind aufgeteilt auf mehrere Repositorien:\n\nCBA ItemBuilder (Desktop Anwendung): github (In Vorbereitung / noch privat)\nLaufzeitumgebung / Rumtime: github (In Vorbereitung / noch privat)\nAusführungsumgebung / Execution Environment für Entwickler: github (In Vorbereitung / noch privat)\nTechnische Dokumentation: github (In Vorbereitung / noch privat)\nTechnische Beispielitems: github(In Vorbereitung / noch privat)\n\n\n\n\nOnline-Dokumentation\n\nHTML (interaktiv): https://cba.itembuilder.de\n\nPDF (statisch): Open-Assessments-with-CBA-ItemBuilder.pdf\nQuellen github (In Vorbereitung / noch privat)"
   },
   {
     "objectID": "github.html#irtlib-software",
     "href": "github.html#irtlib-software",
     "title": "Github – Mehr",
     "section": "",
-    "text": "Aktuelle Versionen der IRTlib Software (Windows und Docker): github\nDokumentation: github\n\n\nResx de-DEU.rex en-US.rex"
+    "text": "Hinweis\n\n\n\nÜbersetzung: Wenn Sie uns bei der Übersetzung dieser Software helfen wollen, finden Sie hier weitere Informationen.\n\n\n\n\n\nAktuelle Versionen der IRTlib Software (Windows und Docker): github\nDokumentation: github"
   },
   {
     "objectID": "github.html#cba-itembuilder",
@@ -77,18 +77,32 @@
     "text": "Konfigurationen die mit dem IRTlib-Editor erstellt werden, werden in sogenannten Studien zusammengefasst. Eine Studie soll die Assessmentinhalte zusammenfassen, welche in einer Erhebung oder Sitzung administriert werden.\n\n\nNach dem Start des IRTlib-Editors wird die Ansicht Studien angezeigt. In dieser Ansicht ist der erste Schritt zur Vorbereitung einer neuen Konfiguration das Hinzufügen einer neuen Studie:\n\nDie erstellten Studien erscheinen als Karten in der Ansicht Studien. Beachten Sie, dass die Reihenfolge, in der die Studien in der Studienansicht angezeigt werden, keine Rolle spielt.\nEine detaillierte Anleitung zur Erstellung einer Studie findet sich hier in der eingebetteten Hilfe:\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\n\n\n\nDie Konfigurationen einer bestimmten Studie, einschließlich Versionierung und Veröffentlichung, werden innerhalb von Studien verwaltet (d.h. nach dem Öffnen einer Studie zur Bearbeitung durch Klicken auf das Bearbeitungssymbol am unteren rechten Rand der Karte).\nErstellte Studien, die im IRTlib Editor in der Ansicht Studien angezeigt werden, können zur Bearbeitung geöffnet werden.\n\nDetaillierte Informationen zu der Grundkonfiguration einer Studie finden sich hier in der eingebetteten Hilfe:\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\n\n\n\nDie IRTlib Software unterstützt verschiedene Wege, wie sich Personen (Testteilnehmer, Befragte, …) für ein Assessment Authentifizieren können. Die Konfiguratinen umfassen zwei Aspekte:\n\nLogin-Modus: Wird ein Zugang benötigt (Login, Login+Passwort, Passphrases/Token) oder nicht? Und wenn Zugangsdaten benötigt werden, was sind gültige Werge?\nLoginquelle: Wie wird die Login-Information abgefragt (direkte Eingabe auf der Plattform, CBA ItemBuilder Item, ….) oder übergeben (Login-Parameter oder Aufruf-Parameter)?\n\nDetaillierte Informationen zu der Konfiguration der Anmeldung einer Studie finden sich hier in der eingebetteten Hilfe:\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\n\n\n\nStudien können festlegen, wie der CBA ItemBuilder-Inhalt dargestellt werden soll. Die Einstellungen im Aschnitt Anzeige können sich auf die Skalierung und die Ausrichtung der Inhalte sowie auf das Verhalten der IRTlib-Player-Anwendung beziehen.\nDetaillierte Informationen zu der Konfiguration der Anzeige einer Studie finden sich hier in der eingebetteten Hilfe:\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\n\n\n\nWenn die Durchführung von Assessments begleitet durch Testleiter oder Interviewer erfolgt, können Funktionen passwortgeschützt für Testleiter definiert werden.\n\n\n\n\n\n\nWarning\n\n\n\nAuch wenn Sie die Funktionalität eines Testadministratormenüs für die Durchführung Ihrer Datenerfassung nicht benötigen, sollten Sie dennoch ein Testadministratormenü definieren, wenn Sie planen, mit dem IRTlib Player Daten offline zu erfassen. Nur so können Sie sicherstellen, dass Sie die Anwendung im Falle unvorhergesehener Ereignisse ohne den Task-Manager (und ohne möglichen Datenverlust) beenden können.\n\n\nDetaillierte Informationen zu der Konfiguration des Testleitermenüs finden sich hier in der eingebetteten Hilfe:\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\n\n\n\nFür die Integration von Assessments in externe Abläufe besteht die Möglichkeit zu konfiguriere, wie nach der Bearbeitung der Assessmentinhalte in einer Session vorgegangen werden soll, was also am Session-Ende geschehen wird.\n\n\n\n\n\n\nEmbedded Help"
   },
   {
-    "objectID": "data-collection-overview.html",
-    "href": "data-collection-overview.html",
-    "title": "Datenerhebung",
+    "objectID": "data-collection-publish-and-export.html",
+    "href": "data-collection-publish-and-export.html",
+    "title": "Datenerhebungen",
     "section": "",
-    "text": "Nachdem eine Studienkonfiguration mit dem IRTlib-Editor vorbereitet wurde, muss zunächst eine finalisierte Version erstellt werden. Versionen versiegeln und vervollständigen alle Konfigurationen und haben eine eindeutige Versionsnummer (bezeichnet als Revision). Die Verwendung von Revisionen macht die Durchführung von Datensammlungen mit dem IRTlib-Editor und IRTlib-Player reproduzierbar, da die Revisionsnummer einer Konfiguration auch in den Datensätzen gespeichert wird.\n\nKonfigurationen Prüfen: Vor der Fertigstellung und dem Versiegeln einer Version ist es ratsam, alle Einstellungen noch einmal zu überprüfen. Der IRTlib-Editor stellt dafür eine zusätzliche Funktion der Validierung zur Verfügung. Eine Checkliste der zu prüfenden Einstellungen findet sich hier.\nVersiegelte Version Erstellen: Wenn keine weiteren Änderungen erforderlich sind, kann die Version versiegelt werden. Weitere Details dazu finden sich hier.\nVersion Exportieren: Versionen von Studien, die im IRTlib-Editor verfügbar sind, können exportiert werden. Der Export der Konfiguraiton ist notwendig, bevor diese mit dem IRTlib-Player verwendet werden können. Weitere Details dazu finden sich hier.\nStudie in IRTlib-Player Importieren: Exportierte Versionen von Studien aus dem IRTlib-Editor können zur Verwendung in einen IRTlib-Player importiert werden. Weitere Details dazu finden sich hier.\nTesten der Studie: Bevor mit der eigentlichen Datenerfassung begonnen wird kann, sollte jede Konfiguration zunächst mit synthetischen Testfällen (d.h. systematisch) gestetet werden. Vorschläge für Testpläne finden sich hier.\n\nFalls in einer exportierten Studie noch Probleme festgestellt werden, ist es möglich, zur Vorbereitung (siehe Vorbereitung von Studien und Vorbereitung von Erhebungsteilen) zurückzukehren, die Studiendefinition und die Konfiguration der Testteile zu ändern, eine weitere versiegelte Version zu erstellen und mit der geänderten Konfiguration fortzufahren."
+    "text": "Ist ein Testleitermenü konfiguriert, mit welchem die Anwendung beendet werden kann? Wenn im Offline IRTlib Player der Kiosk-Modus aktiviert ist, kann das Beenden der Anwendung ohne konfiguriertes Testleitermenü schwierig bzw. unmöglich sein.\n\n\n\n\n\n\n\n\n\n\n\nEmbedded Help"
   },
   {
-    "objectID": "data-collection-overview.html#übersicht-schritte-zur-verwendung-eines-irtlib-player-zur-datenerhebung",
-    "href": "data-collection-overview.html#übersicht-schritte-zur-verwendung-eines-irtlib-player-zur-datenerhebung",
-    "title": "Datenerhebung",
+    "objectID": "data-collection-publish-and-export.html#checkliste-vor-dem-veröffentlichen",
+    "href": "data-collection-publish-and-export.html#checkliste-vor-dem-veröffentlichen",
+    "title": "Datenerhebungen",
     "section": "",
-    "text": "Nachdem eine Studienkonfiguration mit dem IRTlib-Editor vorbereitet wurde, muss zunächst eine finalisierte Version erstellt werden. Versionen versiegeln und vervollständigen alle Konfigurationen und haben eine eindeutige Versionsnummer (bezeichnet als Revision). Die Verwendung von Revisionen macht die Durchführung von Datensammlungen mit dem IRTlib-Editor und IRTlib-Player reproduzierbar, da die Revisionsnummer einer Konfiguration auch in den Datensätzen gespeichert wird.\n\nKonfigurationen Prüfen: Vor der Fertigstellung und dem Versiegeln einer Version ist es ratsam, alle Einstellungen noch einmal zu überprüfen. Der IRTlib-Editor stellt dafür eine zusätzliche Funktion der Validierung zur Verfügung. Eine Checkliste der zu prüfenden Einstellungen findet sich hier.\nVersiegelte Version Erstellen: Wenn keine weiteren Änderungen erforderlich sind, kann die Version versiegelt werden. Weitere Details dazu finden sich hier.\nVersion Exportieren: Versionen von Studien, die im IRTlib-Editor verfügbar sind, können exportiert werden. Der Export der Konfiguraiton ist notwendig, bevor diese mit dem IRTlib-Player verwendet werden können. Weitere Details dazu finden sich hier.\nStudie in IRTlib-Player Importieren: Exportierte Versionen von Studien aus dem IRTlib-Editor können zur Verwendung in einen IRTlib-Player importiert werden. Weitere Details dazu finden sich hier.\nTesten der Studie: Bevor mit der eigentlichen Datenerfassung begonnen wird kann, sollte jede Konfiguration zunächst mit synthetischen Testfällen (d.h. systematisch) gestetet werden. Vorschläge für Testpläne finden sich hier.\n\nFalls in einer exportierten Studie noch Probleme festgestellt werden, ist es möglich, zur Vorbereitung (siehe Vorbereitung von Studien und Vorbereitung von Erhebungsteilen) zurückzukehren, die Studiendefinition und die Konfiguration der Testteile zu ändern, eine weitere versiegelte Version zu erstellen und mit der geänderten Konfiguration fortzufahren."
+    "text": "Ist ein Testleitermenü konfiguriert, mit welchem die Anwendung beendet werden kann? Wenn im Offline IRTlib Player der Kiosk-Modus aktiviert ist, kann das Beenden der Anwendung ohne konfiguriertes Testleitermenü schwierig bzw. unmöglich sein."
+  },
+  {
+    "objectID": "data-collection-publish-and-export.html#veröffentlichen-exportieren",
+    "href": "data-collection-publish-and-export.html#veröffentlichen-exportieren",
+    "title": "Datenerhebungen",
+    "section": "",
+    "text": "Embedded Help"
+  },
+  {
+    "objectID": "editor.html",
+    "href": "editor.html",
+    "title": "IRTlib Editor",
+    "section": "",
+    "text": "Editor:\n\nInstallation"
   },
   {
     "objectID": "preparation-overview.html",
@@ -112,32 +126,39 @@
     "text": "Für die Verwendung des IRTlib Editors ist eine Programmhilfe direkt in die Anwendung integriert, welche über das kleine ?-Symbol oben rechts eingeblendet werden kann.\n\n\n\n\n\n\n\nEmbedded Help\n\n\n\nDie Inhalte dieser Hilfe-Seiten aus dem IRTlib Editor sind in diese IRTlib Dokumentation integriert und werden immer in diesem Rahmen mit der überschrift Embedded Help dargestellt."
   },
   {
-    "objectID": "editor.html",
-    "href": "editor.html",
-    "title": "IRTlib Editor",
+    "objectID": "data-collection-overview.html",
+    "href": "data-collection-overview.html",
+    "title": "Datenerhebung",
     "section": "",
-    "text": "Editor:\n\nInstallation"
+    "text": "Nachdem eine Studienkonfiguration mit dem IRTlib-Editor vorbereitet wurde, muss zunächst eine finalisierte Version erstellt werden. Versionen versiegeln und vervollständigen alle Konfigurationen und haben eine eindeutige Versionsnummer (bezeichnet als Revision). Die Verwendung von Revisionen macht die Durchführung von Datensammlungen mit dem IRTlib-Editor und IRTlib-Player reproduzierbar, da die Revisionsnummer einer Konfiguration auch in den Datensätzen gespeichert wird.\n\nKonfigurationen Prüfen: Vor der Fertigstellung und dem Versiegeln einer Version ist es ratsam, alle Einstellungen noch einmal zu überprüfen. Der IRTlib-Editor stellt dafür eine zusätzliche Funktion der Validierung zur Verfügung. Eine Checkliste der zu prüfenden Einstellungen findet sich hier.\nVersiegelte Version Erstellen: Wenn keine weiteren Änderungen erforderlich sind, kann die Version versiegelt werden. Weitere Details dazu finden sich hier.\nVersion Exportieren: Versionen von Studien, die im IRTlib-Editor verfügbar sind, können exportiert werden. Der Export der Konfiguraiton ist notwendig, bevor diese mit dem IRTlib-Player verwendet werden können. Weitere Details dazu finden sich hier.\nStudie in IRTlib-Player Importieren: Exportierte Versionen von Studien aus dem IRTlib-Editor können zur Verwendung in einen IRTlib-Player importiert werden. Weitere Details dazu finden sich hier.\nTesten der Studie: Bevor mit der eigentlichen Datenerfassung begonnen wird kann, sollte jede Konfiguration zunächst mit synthetischen Testfällen (d.h. systematisch) gestetet werden. Vorschläge für Testpläne finden sich hier.\n\nFalls in einer exportierten Studie noch Probleme festgestellt werden, ist es möglich, zur Vorbereitung (siehe Vorbereitung von Studien und Vorbereitung von Erhebungsteilen) zurückzukehren, die Studiendefinition und die Konfiguration der Testteile zu ändern, eine weitere versiegelte Version zu erstellen und mit der geänderten Konfiguration fortzufahren."
   },
   {
-    "objectID": "data-collection-publish-and-export.html",
-    "href": "data-collection-publish-and-export.html",
-    "title": "Datenerhebungen",
+    "objectID": "data-collection-overview.html#übersicht-schritte-zur-verwendung-eines-irtlib-player-zur-datenerhebung",
+    "href": "data-collection-overview.html#übersicht-schritte-zur-verwendung-eines-irtlib-player-zur-datenerhebung",
+    "title": "Datenerhebung",
     "section": "",
-    "text": "Ist ein Testleitermenü konfiguriert, mit welchem die Anwendung beendet werden kann? Wenn im Offline IRTlib Player der Kiosk-Modus aktiviert ist, kann das Beenden der Anwendung ohne konfiguriertes Testleitermenü schwierig bzw. unmöglich sein.\n\n\n\n\n\n\n\n\n\n\n\nEmbedded Help"
+    "text": "Nachdem eine Studienkonfiguration mit dem IRTlib-Editor vorbereitet wurde, muss zunächst eine finalisierte Version erstellt werden. Versionen versiegeln und vervollständigen alle Konfigurationen und haben eine eindeutige Versionsnummer (bezeichnet als Revision). Die Verwendung von Revisionen macht die Durchführung von Datensammlungen mit dem IRTlib-Editor und IRTlib-Player reproduzierbar, da die Revisionsnummer einer Konfiguration auch in den Datensätzen gespeichert wird.\n\nKonfigurationen Prüfen: Vor der Fertigstellung und dem Versiegeln einer Version ist es ratsam, alle Einstellungen noch einmal zu überprüfen. Der IRTlib-Editor stellt dafür eine zusätzliche Funktion der Validierung zur Verfügung. Eine Checkliste der zu prüfenden Einstellungen findet sich hier.\nVersiegelte Version Erstellen: Wenn keine weiteren Änderungen erforderlich sind, kann die Version versiegelt werden. Weitere Details dazu finden sich hier.\nVersion Exportieren: Versionen von Studien, die im IRTlib-Editor verfügbar sind, können exportiert werden. Der Export der Konfiguraiton ist notwendig, bevor diese mit dem IRTlib-Player verwendet werden können. Weitere Details dazu finden sich hier.\nStudie in IRTlib-Player Importieren: Exportierte Versionen von Studien aus dem IRTlib-Editor können zur Verwendung in einen IRTlib-Player importiert werden. Weitere Details dazu finden sich hier.\nTesten der Studie: Bevor mit der eigentlichen Datenerfassung begonnen wird kann, sollte jede Konfiguration zunächst mit synthetischen Testfällen (d.h. systematisch) gestetet werden. Vorschläge für Testpläne finden sich hier.\n\nFalls in einer exportierten Studie noch Probleme festgestellt werden, ist es möglich, zur Vorbereitung (siehe Vorbereitung von Studien und Vorbereitung von Erhebungsteilen) zurückzukehren, die Studiendefinition und die Konfiguration der Testteile zu ändern, eine weitere versiegelte Version zu erstellen und mit der geänderten Konfiguration fortzufahren."
   },
   {
-    "objectID": "data-collection-publish-and-export.html#checkliste-vor-dem-veröffentlichen",
-    "href": "data-collection-publish-and-export.html#checkliste-vor-dem-veröffentlichen",
-    "title": "Datenerhebungen",
+    "objectID": "translation.html",
+    "href": "translation.html",
+    "title": "Translation",
     "section": "",
-    "text": "Ist ein Testleitermenü konfiguriert, mit welchem die Anwendung beendet werden kann? Wenn im Offline IRTlib Player der Kiosk-Modus aktiviert ist, kann das Beenden der Anwendung ohne konfiguriertes Testleitermenü schwierig bzw. unmöglich sein."
+    "text": "This editor can be used to created localized resx-files for the application: ResXResourceManager\n\nThe source file can be found here: (TODO)\n\nHelp (included in the application) is generated using quarto from markdown files in this folder.\n\nHelp.de-DE.resx\nHelp.en-US.resx\n\n\n\n\n\n\n\n\nMarkdown (DEU)\nen-US\nde-DEU\n…\n\n\n\n\n*IRTlib Player*\nIRTlib Player\nIRTlib Player\n\n\n\n*IRTlib Editor*\nIRTlib Editor\nIRTlib Editor\n\n\n\n*Studien*\nStudies\nStudien\n\n\n\n*Einstellungen*\nSettings\nEinstellungen\n\n\n\n*Testleitermenü*\nSession Menu\nTestleitermenü"
   },
   {
-    "objectID": "data-collection-publish-and-export.html#veröffentlichen-exportieren",
-    "href": "data-collection-publish-and-export.html#veröffentlichen-exportieren",
-    "title": "Datenerhebungen",
+    "objectID": "translation.html#current-translations",
+    "href": "translation.html#current-translations",
+    "title": "Translation",
     "section": "",
-    "text": "Embedded Help"
+    "text": "This editor can be used to created localized resx-files for the application: ResXResourceManager\n\nThe source file can be found here: (TODO)\n\nHelp (included in the application) is generated using quarto from markdown files in this folder.\n\nHelp.de-DE.resx\nHelp.en-US.resx"
+  },
+  {
+    "objectID": "translation.html#terminology-and-standardizing-the-notation",
+    "href": "translation.html#terminology-and-standardizing-the-notation",
+    "title": "Translation",
+    "section": "",
+    "text": "Markdown (DEU)\nen-US\nde-DEU\n…\n\n\n\n\n*IRTlib Player*\nIRTlib Player\nIRTlib Player\n\n\n\n*IRTlib Editor*\nIRTlib Editor\nIRTlib Editor\n\n\n\n*Studien*\nStudies\nStudien\n\n\n\n*Einstellungen*\nSettings\nEinstellungen\n\n\n\n*Testleitermenü*\nSession Menu\nTestleitermenü"
   },
   {
     "objectID": "index.html",
