@@ -20,6 +20,20 @@ The IRTlib software is free *research software* in the sense of *open science*. 
 
 ## IRTLib Software
 
+::: {.content-visible when-profile="german"}
+::: callout-note
+Übersetzung: Wenn Sie uns bei der Übersetzung dieser Software helfen wollen, finden Sie [hier](translation.qmd) weitere Informationen.
+:::
+:::
+
+
+::: {.content-visible when-profile="english"}
+::: callout-note
+Translation: If you would like to help us with the translation of this software, you can find more information [here](translation.qmd).
+:::
+:::
+
+
 ### Download
 
 ::: {.content-visible when-profile="german"}
@@ -33,7 +47,6 @@ The IRTlib software is free *research software* in the sense of *open science*. 
 * Documentation: [github](https://github.com/kroehne/IRTLibDocumentation)
 :::
 
-* Resx [de-DEU.rex](../Help-de-DEU.rex) [en-US.rex](../Help-en-US.rex)
 
 ## CBA ItemBuilder
 

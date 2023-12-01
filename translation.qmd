@@ -1,0 +1,37 @@
+---
+format:
+  html:
+    embed-resources: true
+---
+
+# Translation
+
+## Help Requested
+
+
+## Current Translations
+
+* This editor can be used to created localized resx-files for the application: [ResXResourceManager](https://github.com/dotnet/ResXResourceManager)
+
+  - The source file can be found here: (TODO)
+
+* Help (included in the application) is generated using [quarto](https://quarto.org/) from markdown files in this  [folder](https://github.com/kroehne/IRTLibDocumentation/tree/main/help).
+
+  - [Help.de-DE.resx](../Help.de-DE.resx) 
+  - [Help.en-US.resx](../Help.en-US.resx)
+
+
+## Terminology and Standardizing the Notation
+
+
+| Markdown (DEU)| en-US | de-DEU | ...| 
+| --- | ---- | --- | --- | 
+|`*IRTlib Player*` | *IRTlib Player* | *IRTlib Player* | |
+|`*IRTlib Editor*` | *IRTlib Editor* | *IRTlib Editor* | |
+|`*Studien*` | *Studies* | *Studien* | |
+|`*Einstellungen*` | *Settings* | *Einstellungen* | |
+|`*Testleitermenü*` | *Session Menu* | *Testleitermenü* | |
+
+
+
+ 

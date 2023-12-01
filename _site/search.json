@@ -7,18 +7,25 @@
     "text": "IRTlib Software\n\n\n\nIRTlib ist eine Software zur Auslieferung computerbasierter Assessments basierend auf Aufgaben, die mit dem CBA ItemBuilder erstellt wurden. Die Software erlaubt die Definition von flexiblen Abläufen unter Nutzung von visueller Programmierung und Funktionen der Item-Response Theoie (IRT).\n\n\nIRTlib is a software for the delivery of computer-based assessments using tasks develope with the CBA ItemBuilder. The software allows the definition of flexible processes using visual programming and functions of the item-response theory (IRT).\n\n\n\n\n\nDokumentation auf Deutsch\n\n\nEnglish Documentation"
   },
   {
-    "objectID": "github.html",
-    "href": "github.html",
-    "title": "IRTlib",
+    "objectID": "translation.html",
+    "href": "translation.html",
+    "title": "Translation",
     "section": "",
-    "text": "Resx de-DEU.rex en-US.rex"
+    "text": "This editor can be used to created localized resx-files for the application: ResXResourceManager\n\nThe source file can be found here: (TODO)\n\nHelp (included in the application) is generated using quarto from markdown files in this folder.\n\nHelp.de-DE.resx\nHelp.en-US.resx\n\n\n\n\n\n\n\n\nMarkdown (DEU)\nen-US\nde-DEU\n…\n\n\n\n\n*IRTlib Player*\nIRTlib Player\nIRTlib Player\n\n\n\n*IRTlib Editor*\nIRTlib Editor\nIRTlib Editor\n\n\n\n*Studien*\nStudies\nStudien\n\n\n\n*Einstellungen*\nSettings\nEinstellungen\n\n\n\n*Testleitermenü*\nSession Menu\nTestleitermenü"
   },
   {
-    "objectID": "github.html#irtlib-software",
-    "href": "github.html#irtlib-software",
-    "title": "IRTlib",
+    "objectID": "translation.html#current-translations",
+    "href": "translation.html#current-translations",
+    "title": "Translation",
     "section": "",
-    "text": "Resx de-DEU.rex en-US.rex"
+    "text": "This editor can be used to created localized resx-files for the application: ResXResourceManager\n\nThe source file can be found here: (TODO)\n\nHelp (included in the application) is generated using quarto from markdown files in this folder.\n\nHelp.de-DE.resx\nHelp.en-US.resx"
+  },
+  {
+    "objectID": "translation.html#terminology-and-standardizing-the-notation",
+    "href": "translation.html#terminology-and-standardizing-the-notation",
+    "title": "Translation",
+    "section": "",
+    "text": "Markdown (DEU)\nen-US\nde-DEU\n…\n\n\n\n\n*IRTlib Player*\nIRTlib Player\nIRTlib Player\n\n\n\n*IRTlib Editor*\nIRTlib Editor\nIRTlib Editor\n\n\n\n*Studien*\nStudies\nStudien\n\n\n\n*Einstellungen*\nSettings\nEinstellungen\n\n\n\n*Testleitermenü*\nSession Menu\nTestleitermenü"
   },
   {
     "objectID": "github.html#cba-itembuilder",

@@ -5,3 +5,6 @@
 **/.DS_Store
 .Rproj.user
 .Rhistory
+vs/html2resx/bin
+vs/html2resx/obj 
+

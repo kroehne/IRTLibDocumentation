@@ -19,8 +19,8 @@ namespace ResxFileCreator
             string basePath = args[0];
             string outputPath = args[1];
 
-            ResXResourceWriter resx_de_DEU = new ResXResourceWriter(Path.Combine(outputPath, "Help-de-DEU.rex"));
-            ResXResourceWriter resx_en_US = new ResXResourceWriter(Path.Combine(outputPath, "Help-en-US.rex"));
+            ResXResourceWriter resx_de_DEU = new ResXResourceWriter(Path.Combine(outputPath, "Help.de-DE.resx"));
+            ResXResourceWriter resx_en_US = new ResXResourceWriter(Path.Combine(outputPath, "Help.en-US.resx"));
 
             var _files = Directory.GetFiles(basePath);
             foreach (var _f in _files)

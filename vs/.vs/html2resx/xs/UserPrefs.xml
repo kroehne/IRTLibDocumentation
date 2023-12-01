@@ -1,15 +1,21 @@
 ﻿<Properties StartupConfiguration="{7ABE292E-E344-48F0-A9FD-20B60ACB8325}|Default">
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.html2resx PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.html2resx PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workbench ActiveDocument="html2resx/Program.cs">
     <Files>
-      <File FileName="html2resx/Program.cs" Line="37" Column="69" />
+      <File FileName="html2resx/Program.cs" Line="23" Column="109" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
-        <State name="__root__" />
+        <State name="__root__">
+          <Node name="html2resx">
+            <Node name="html2resx">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
