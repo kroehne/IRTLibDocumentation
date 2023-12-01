@@ -11,10 +11,14 @@ lang: en
 
 ## Checkliste vor dem Veröffentlichen
 
+* Ist ein *Testleitermenü* konfiguriert, mit welchem die Anwendung beendet werden kann? Wenn im Offline *IRTlib Player* der Kiosk-Modus aktiviert ist, kann das Beenden der Anwendung ohne konfiguriertes *Testleitermenü* schwierig bzw. unmöglich sein. 
 
-## Veröffentlichen 
+* 
 
-::: {.callout-tip title="Embedded Help"}
+
+## Veröffentlichen & Exportieren
+
+::: {.callout-tip collapse="true" title="Embedded Help"}
 
 ```{=html}
 <iframe width="100%" height="600" src="../help/InlineHelp_View_Study_Publish_de-DEU.html"></iframe>
@@ -22,27 +26,12 @@ lang: en
 
 :::
 
-## Exportieren
-
+ 
 
 
 :::
+
 
 ::: {.content-visible when-profile="english"}
-
-
-
-# Data Collection 
-
-##  Publish & Export
-
-::: {.callout-tip title="Embedded Help"}
-
-```{=html}
-<iframe width="100%" height="600" src="../help/InlineHelp_View_Study_Publish_en-US.html"></iframe>
-```
-
+(No translation defined yet.) 
 :::
-
-:::
-

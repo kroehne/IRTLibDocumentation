@@ -30,12 +30,5 @@ Falls in einer exportierten Studie noch Probleme festgestellt werden, ist es mö
 
 
 ::: {.content-visible when-profile="english"}
-
-
-# Data Collection 
-
-## Overview: Steps to use *IRTlib Player* for *Data Collections*
-
-
+(No translation defined yet.) 
 :::
-

@@ -1,5 +1,5 @@
 ---
-title: "IRTlib Editor: Studienübersicht"
+title: "IRTlib Editor: Studienverwaltung"
 format:
   html:
     embed-resources: true

@@ -10,9 +10,9 @@ lang: en
 
 # Vorbereitung
 
-## Überblick: Schritte zur Verwendung von *IRTlib Editor* für die Studienvorbereitung
+## Übersicht: Schritte zur Verwendung von *IRTlib Editor* für die Studienvorbereitung
 
-Die Vorbereitung eines computerbasierten Assessments auf der Grundlage von CBA ItemBuilder-Inhalten beginnt mit der Verwendung des *IRTlib-Editors* zur Erstellung einer Studienkonfiguration. Dies umfasst in der Regel die folgenden Schritte:
+Die Vorbereitung eines computerbasierten Assessments auf der Grundlage von *CBA ItemBuilder*-Inhalten beginnt mit der Verwendung des *IRTlib-Editors* zur Erstellung einer Studienkonfiguration. Dies umfasst in der Regel die folgenden Schritte:
 
 ::: {.callout-caution collapse="true"}
 ## Optional

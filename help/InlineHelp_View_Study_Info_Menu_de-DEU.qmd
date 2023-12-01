@@ -7,4 +7,57 @@ format:
     toc: false
 ---
 
-## Konfiguration des Testleitermenüs
+## Testleitermenüs
+
+### Zugriff für Testleitung
+
+
+Die Konfiguration des Testmanager-Menüs erfolgt in zwei Schritten. Zunächst muss eine Tastenkombination definiert werden, mit der das Testmanager-Menü aufgerufen werden kann. Wird diese Tastenkombination während der Testbearbeitung gedrückt, erscheint ein Fenster zur Passworteingabe. Testadministratoren geben das (nur) ihnen bekannte Passwort ein und erhalten so Zugriff auf ausgewählte Funktionen. Zu diesem Zweck müssen in einem zweiten Schritt eine oder mehrere Rollen im *IRTlib Editor* definiert werden.
+
+* **Taste**: Die Konfiguration der Tastenkombination für das Testleitermenü erfordert zunächst die Definition einer Taste. Um eine Taste festzulegen klickt man in das Feld und drückt die Taste, welche für das Testleitermenü verwendet werden soll.
+
+* **Modifikatoren** (Alt, Strg und Shift): Für eine Taste kann dann zusätzlich festgelegt werden, ob eine oder mehrere Modifkatoren gedrück werden müssen damit das Testleitermenü geöffnet wird. 
+
+Beispiel: 
+
+* Die folgende Konfiguration definiert die Tastenkombination `Strg` + `Shift`+ `X`:
+
+> ![](img/screenshot-test-adminstrator-strg-shift-x-example-01.png){width="250"}
+
+Die definierte Tastenkombination öffnet nur die Option zur Eingabe eines Passowrt für Testleiter während der Testbearbeitung im *IRTlib Player*. Um die Funktion zu nutzen ist ein Passwot notwendig, welches zusammen mit einer Rolle im zweiten Schritt definiert wird.
+
+### Rollen
+
+Nach dem Aufruf der definierten Tastenkombination wird während der Testbearbeitung die Aufforderung zur Eingabe eines Passworts angezeigt:
+
+![](img/screenshot-test-adminstrator-menue-password-example-01-DEU.png){width="80%"}
+
+Welche Funktionen nun wirklich zugreifbar sind wird dadurch gesteuert, welches Passwort eingegeben wird. Nur wenn ein gültige Passwort bekannt ist, können Funktionen der Testleitung aufgerufen werden. 
+
+Beispiel:
+
+* In der folgenden Konfiguration können Testleiter mit diesem Passwort zur nächaten Aufgaben springen (*Weiter*) oder die Anwendung beenden (*Sitzung beenden*):
+
+> ![](img/screenshot-test-adminstrator-menue-two-functions-example-01-DEU.png){width="250"}
+
+> Um eine Rolle zu definieren, muss zunächst das `+`-Symbol unten rechts geklickt werden. Danach kann der Name einer Rolle und ein Passwort definiert:
+
+> ![](img/screenshot-test-adminstrator-menue-example-configuration-01-DEU.png){width="450"}
+
+> Der Name der Rolle dient nur der Dokumentation. Entscheidend für die Funktionalität ist die Vergabe eines eindeutigen Passwortes und die Auswahl einer oder mehrerer der folgenden Funktionen: 
+
+* **Aufgabe zurück**: Ermöglicht die Navigation zur vorherigen Aufgabe.
+* **Aufgabe vor**: Ermöglicht die Navigation zur nächsten Aufgabe an.
+* **Itemliste abbrechen**: Ermöglicht die Abarbeitung der aktuellen Itemliste abzubrechen. Diese Option ist insbesondere sinnvoll, wenn in einem *Erhebungsteil* die Option *Routing* aktiviert ist und die Definition von *CBA ItemBuilder* Tasks mit Hilfe von Itemlisten umgesetzt ist.  
+* **Erhebungsteil abbrechen**: Ermöglicht den Abbruch des aktuellen Erhebungsteils.
+* **Sitzung beenden**: Ermöglicht das Beenden der aktuellen Sitzung. 
+* **Lautstärkeregelung**: Ermöglicht die Änderung der Lautstärke. 
+
+Die Audiodatei, welche zur Kontrolle der Audioausgabe abgespielt wird nachdem die Lautstärke verändert wurde, kann im Abschnitt *Audio für Soundtest* eingefügt und in der Studienkonfiguration hinterlegt werden. 
+
+
+<hr/>
+
+Wenn geänderte Einstellungen erhalten bleiben sollen müssen die Änderungen über das Disketten-Symbol gespeichert werden. Andernfalls kann das Verwerfen-Symbol verwendet werden:
+
+![](img/screenshot-icons-undo-and-save-01.png){width="120" fig-align="left"}

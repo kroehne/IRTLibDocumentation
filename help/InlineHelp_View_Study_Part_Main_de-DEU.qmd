@@ -1,5 +1,5 @@
 ---
-title: "IRTlib Editor: Erhebungsteile"
+title: "IRTlib Editor: Erhebungsteilverwaltung"
 format:
   html:
     embed-resources: true
@@ -8,3 +8,50 @@ format:
 ---
 
 ## Erhebungsteile
+
+Mit dem *IRTLib Editor* werden Konfigurationen für *Studien* erstellt, welche dann in einem *IRTLib Player* zur Durchführung computerbasierter Assessments verwendet werden können. *Studie* bestehen aus einem oder mehreren *Erhebungsteilen*. 
+
+### Wie geht's weiter?
+
+Nachdem eine *Studie* angelegt ist, kann nun über Plus-Icon unten rechts ein *Erhebungsteil* hinzugefügt werden:
+
+![](img/icon-plus.png){width="50" fig-align="left"}
+
+Danach geben Sie bitte in dem Dialog **Neuen Erhebungsteil erstellen** eine *Bezeichnung* und optional eine *Beschreibung* ein.
+
+Achten Sie darauf, dass für die *Bezeichnung* wieder nur Buchstaben (Groß und Kleinschreibung), Ziffer und ein `_` erlaubt sind.
+
+
+Klicken Sie anschließend auf *Speichern*.
+
+![](img/screenshot-new-study-part-empty-DEU.png){width="400" fig-align="left"}
+
+Bei Bedarf können Sie über das folgende Icon einem *Erhebungsteil* auch ein Bild zuordnen. Dieses Bild wird im *IRTLib Editor* für diesen Erhebungsteil verwendet:
+
+![](img/icon-study-image.png){fig-align="left"}
+
+### Erhebungsteil Bearbeiten
+
+Erstellten *Erhebungsteile* werden in der Erhebungsteilübersicht als Kacheln angezeigt:
+
+![](img/screenshot-new-study-part-card.DEU.png){width="300" fig-align="left"}
+
+* Um nun mit der Konfiguration eines *Erhebungsteils* fortzufahren, klicken Sie auf das kleine Bearbeiten-Icon:
+
+![](img/icon-edit.png){fig-align="left"}
+
+* **Erhebungsteil Löschen**: Mit dem Papierkorb-Icon können Sie *Erhebungsteile* auch wieder löschen. Das Löschen von *Erhebungsteilen* kann nicht rückgängig gemacht werden:
+
+![](img/icon-delete.png){fig-align="left"}
+ 
+### Erhebungsteile Sortieren
+
+Wenn in der Konfiguration einer *Studie* in der Ansicht *Info* (Abschnitt *Übersicht*) die Option *Routing für Erhebungsteile aktivieren* nicht ausgewählt ist, dann werden *Erhebungsteile* in der Reihenfolge administriert, in welcher sie in der Erhebungsteilverwaltung angezeigt werden.
+
+* **Erhebungsteile Verschieben**: Um per drag-and-drop die Reihenfolge von *Erhebungsteilen* zu verändern, muss zunächst über folgendes Toggle-Icon der Modus  *Reihenfolge Ändern* aktiviert werden:
+
+![](img/icon-toggle.png){width="50" fig-align="left"}
+
+> Danach können die Kacheln in die gewünschte Reihenfolge gebracht werden. Der Modus *Reihenfolge Ändern* wird beendet, wenn das Disketten-Symbol angeklickt oder die Änderungen verworfen werden: 
+
+![](img/screenshot-icons-undo-and-save-01.png){width="120" fig-align="left"}

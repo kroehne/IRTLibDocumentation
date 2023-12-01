@@ -11,7 +11,16 @@ lang: en
 
 ## Konfiguration Importieren
 
+Wenn eine *versiegelte* Studienkonfiguration aus dem *IRTlib Editor* exportiert wurde, kann diese in einen *IRTlib Player* integriert werden. 
+
+Zur Zeit werden zwei Optionen unterstützt:
+
+* Automatischer Import
+* Manueller Import
+
 ### Automatischer Import
+
+screenshot-irtlib-player-message-no-study01-de-DEU.png
 
 ### Manueller Importieren
 
@@ -25,25 +34,7 @@ lang: en
 
 :::
 
+
 ::: {.content-visible when-profile="english"}
-
-
-
-# Data Collection 
-
-## Import Configuration
-
-### Automatic Import
-
-### Manual Import
-
-## Testing Deployments 
-
-### Suggested Test-Plans 
-
-## Run Data Collection
-
-## Export Data
-
-
+(No translation defined yet.) 
 :::

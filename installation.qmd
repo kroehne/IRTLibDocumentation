@@ -25,7 +25,7 @@ Beachten Sie, dass der aktuellste Build im Abschnitt [Preview](https://github.co
 
 Der *IRTlib Editor* für die Offline-Nutzung wird als ZIP-Archiv (z.B. `TestApp.Editor.Desktop.zip`) bereitgestellt, das entpackt werden muss. Nach dem Entpacken des Editors kann die Anwendung `TestApp.Editor.Desktop.exe` auf einem Windows-Gerät gestartet werden.
 
-::: Hinweis-Warnung
+::: callout-warning
 Die automatisch erstellten Vorschauversionen des *IRTlib Editors* und *IRTlib Players* sind nicht signiert. Eine Warnmeldung des Betriebssystems muss akzeptiert werden, bevor die Programme ausgeführt werden können.
 :::
 

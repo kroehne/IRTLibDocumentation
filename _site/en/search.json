@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "data-collection-player-integration.html",
+    "href": "data-collection-player-integration.html",
+    "title": "IRTlib Documentation",
+    "section": "",
+    "text": "(No translation defined yet.)"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About IRTlib.net",
@@ -16,16 +23,9 @@
   {
     "objectID": "data-collection-publish-and-export.html",
     "href": "data-collection-publish-and-export.html",
-    "title": "Data Collection",
+    "title": "IRTlib Documentation",
     "section": "",
-    "text": "Embedded Help"
-  },
-  {
-    "objectID": "data-collection-publish-and-export.html#publish-export",
-    "href": "data-collection-publish-and-export.html#publish-export",
-    "title": "Data Collection",
-    "section": "",
-    "text": "Embedded Help"
+    "text": "(No translation defined yet.)"
   },
   {
     "objectID": "preparation-overview.html",
@@ -72,44 +72,16 @@
   {
     "objectID": "preparation-parts.html",
     "href": "preparation-parts.html",
-    "title": "Preparation",
+    "title": "IRTlib Documentation",
     "section": "",
-    "text": "Embedded Help\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEmbedded Help"
-  },
-  {
-    "objectID": "preparation-parts.html#survey-part-management",
-    "href": "preparation-parts.html#survey-part-management",
-    "title": "Preparation",
-    "section": "",
-    "text": "Embedded Help"
-  },
-  {
-    "objectID": "preparation-parts.html#basic-configurations-for-survey-parts",
-    "href": "preparation-parts.html#basic-configurations-for-survey-parts",
-    "title": "Preparation",
-    "section": "",
-    "text": "Embedded Help"
-  },
-  {
-    "objectID": "preparation-parts.html#routing-within-survey-parts",
-    "href": "preparation-parts.html#routing-within-survey-parts",
-    "title": "Preparation",
-    "section": "",
-    "text": "Embedded Help"
-  },
-  {
-    "objectID": "preparation-parts.html#routing-betweeen-survey-parts",
-    "href": "preparation-parts.html#routing-betweeen-survey-parts",
-    "title": "Preparation",
-    "section": "",
-    "text": "Embedded Help"
+    "text": "(No translation defined yet.)"
   },
   {
     "objectID": "settings.html",
     "href": "settings.html",
     "title": "Settings for IRTlib Editor",
     "section": "",
-    "text": "The IRTlib Editor has a small number of settings.The language can be set to German or English.\n\n\nThe IRTlib software is currently still under development. Information about the current version (and for Preview versions about the build hash) can be found in the section About the Program.\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\nThe IRTlib Software can be used with CBA ItemBuilder tasks of different CBA ItemBuilder versions. The required Runtime (i.e., the connection between the CBA ItemBuilder tasks and the IRTlib Software) is part of the study configuration so that the IRTlib Player knows for sure how to use CBA ItemBuilder tasks of a particular version.\n\n\n\n\n\n\nEmbedded Help"
+    "text": "The IRTlib Editor has a small number of settings.The language can be set to German or English.\n\n\nThe IRTlib software is currently still under development. Information about the current version (and for Preview versions about the build hash) can be found in the section About the Program.\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\n\n\n\nThe IRTlib Software can be used with CBA ItemBuilder tasks of different CBA ItemBuilder versions. The required Runtime (i.e., the connection between the CBA ItemBuilder tasks and the IRTlib Software) is part of the study configuration so that the IRTlib Player knows for sure how to use CBA ItemBuilder tasks of a particular version.\n\n\n\n\n\n\nEmbedded Help"
   },
   {
     "objectID": "settings.html#overview",
@@ -124,6 +96,20 @@
     "title": "Settings for IRTlib Editor",
     "section": "",
     "text": "The IRTlib Software can be used with CBA ItemBuilder tasks of different CBA ItemBuilder versions. The required Runtime (i.e., the connection between the CBA ItemBuilder tasks and the IRTlib Software) is part of the study configuration so that the IRTlib Player knows for sure how to use CBA ItemBuilder tasks of a particular version.\n\n\n\n\n\n\nEmbedded Help"
+  },
+  {
+    "objectID": "preparation-studies.html",
+    "href": "preparation-studies.html",
+    "title": "IRTlib Documentation",
+    "section": "",
+    "text": "(No translation defined yet.)"
+  },
+  {
+    "objectID": "data-collection-overview.html",
+    "href": "data-collection-overview.html",
+    "title": "IRTlib Documentation",
+    "section": "",
+    "text": "(No translation defined yet.)"
   },
   {
     "objectID": "installation.html",
