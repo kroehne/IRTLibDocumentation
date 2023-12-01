@@ -39,7 +39,7 @@
     "href": "settings.html",
     "title": "Settings for IRTlib Editor",
     "section": "",
-    "text": "The IRTlib Editor has a small number of settings.The language can be set to German or English.\n\n\nThe IRTlib software is currently still under development. Information about the current version (and for Preview versions about the build hash) can be found in the section About the Program.\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\nThe IRTlib Software can be used with CBA ItemBuilder tasks of different CBA ItemBuilder versions. The required Runtime (i.e., the connection between the CBA ItemBuilder tasks and the IRTlib Software) is part of the study configuration so that the IRTlib Player knows for sure how to use CBA ItemBuilder tasks of a particular version.\n\n\n\n\n\n\nEmbedded Help"
+    "text": "The IRTlib Editor has a small number of settings.The language can be set to German or English.\n\n\nThe IRTlib software is currently still under development. Information about the current version (and for Preview versions about the build hash) can be found in the section About the Program.\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n\n\n\n\n\n\nThe IRTlib Software can be used with CBA ItemBuilder tasks of different CBA ItemBuilder versions. The required Runtime (i.e., the connection between the CBA ItemBuilder tasks and the IRTlib Software) is part of the study configuration so that the IRTlib Player knows for sure how to use CBA ItemBuilder tasks of a particular version.\n\n\n\n\n\n\nEmbedded Help"
   },
   {
     "objectID": "settings.html#overview",
@@ -54,6 +54,20 @@
     "title": "Settings for IRTlib Editor",
     "section": "",
     "text": "The IRTlib Software can be used with CBA ItemBuilder tasks of different CBA ItemBuilder versions. The required Runtime (i.e., the connection between the CBA ItemBuilder tasks and the IRTlib Software) is part of the study configuration so that the IRTlib Player knows for sure how to use CBA ItemBuilder tasks of a particular version.\n\n\n\n\n\n\nEmbedded Help"
+  },
+  {
+    "objectID": "preparation-studies.html",
+    "href": "preparation-studies.html",
+    "title": "IRTlib Documentation",
+    "section": "",
+    "text": "(No translation defined yet.)"
+  },
+  {
+    "objectID": "data-collection-overview.html",
+    "href": "data-collection-overview.html",
+    "title": "IRTlib Documentation",
+    "section": "",
+    "text": "(No translation defined yet.)"
   },
   {
     "objectID": "preparation-overview.html",
@@ -79,16 +93,9 @@
   {
     "objectID": "data-collection-publish-and-export.html",
     "href": "data-collection-publish-and-export.html",
-    "title": "Data Collection",
+    "title": "IRTlib Documentation",
     "section": "",
-    "text": "Embedded Help"
-  },
-  {
-    "objectID": "data-collection-publish-and-export.html#publish-export",
-    "href": "data-collection-publish-and-export.html#publish-export",
-    "title": "Data Collection",
-    "section": "",
-    "text": "Embedded Help"
+    "text": "(No translation defined yet.)"
   },
   {
     "objectID": "index.html",
@@ -110,5 +117,12 @@
     "title": "Download & Installation",
     "section": "",
     "text": "The IRTlib software is provided for offline use (Windows) and for online use (Docker Container).\n\n\nThe IRTlib software (IRTlib Editor and IRTlib Player) for offline use can be obtained and downloaded from the releases section of the repository https://github.com/DIPFtba/IRTlibDeploymentSoftware.\nThe section Releases contains the two archives TestApp.Editor.Desktop.zip and TestApp.Player.Desktop.zip for download.\n\n\n\n\n\n\nNote\n\n\n\nNote that currently the latest build can be found in the section Preview of the Release-section of the repository.\n\n\nThe editor for offline use will be provided as a ZIP archive (e.g., TestApp.Editor.Desktop.zip) that needs to be extracted. After extracting the editor, the application TestApp.Editor.Desktop.exe can be started on a Windows device.\n\n\n\n\n\n\nWarning\n\n\n\nThe automatically created preview versions of the IRTlib Editor and IRTlib Player are not signed. A warning message from the operating system must be accepted before the programs can be executed.\n\n\nThe player is also available as a Windows application for offline use, provided as ZIP-archive (e.g., TestApp.Player.Desktop.zip). However, after extracting the player, it requires a published study configuration before the player can be used to collect data. Only after adding content of provided as study configuration of a published study, the executable TestApp.Player.Desktop.exe can be started (either with or without startup parameters).\n\n\n\nThe IRTlib software (IRTlib Editor and IRTlib Player) for online use can be obtained as a docker container. An example is also provided at https://github.com/DIPFtba/IRTlibDeploymentSoftware. To use the docker container, it is suggested to check out the repository on the target device (requiring git) and to run the command ./start.sh inside the folder docker (requiring installed docker and docker compose) to start the software.\nWhen not changed in the file docker-compose.yml, the editor is accessible on port 8002 and the player software is accessible on port 8001."
+  },
+  {
+    "objectID": "data-collection-player-integration.html",
+    "href": "data-collection-player-integration.html",
+    "title": "IRTlib Documentation",
+    "section": "",
+    "text": "(No translation defined yet.)"
   }
 ]

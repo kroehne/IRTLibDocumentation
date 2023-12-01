@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>IRTlib Documentation - IRTlib Editor: Konfiguration der Anmeldung</title>
+<title>IRTlib Documentation - IRTlib Editor: Studienkonfiguration zum Login</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -36,11 +36,104 @@ margin: 0 0.8em 0.2em -1em;  vertical-align: middle;
 
 
 <header id="title-block-header">
-<h1 class="title">IRTlib Editor: Konfiguration der Anmeldung</h1>
+<h1 class="title">IRTlib Editor: Studienkonfiguration zum Login</h1>
 
 </header>
 
 <h2 id="konfiguration-der-anmeldung">Konfiguration der Anmeldung</h2>
+<p>Im Abschnitt <em>Login</em> kann konfiguriert werden, wie Testteilnehmer, die ein Assessment starten (entweder durch Aufruf eines Links in einem Browser der auf den Online-<em>IRTlib-Player</em> verweist oder durch Start des Offline-<em>IRTlib-Players</em>), identifiziert oder authentifiziert werden sollen.</p>
+<ul>
+<li><p><strong>Login-Modus</strong>: Die <em>IRTlib-Software</em> unterstützt verschiedene <em>Login-Modi</em>.</p>
+<ul>
+<li><p><em>Zufälliger Inditifikator</em>: Wenn eine Sitzung zum ersten Mal gestartet wird, wird in diesem <em>Login-Modus</em> ein Identifikator generiert. Diese zufällige, aber eindeutige Zeichenkette (eine sogenannte <em>UUID</em>, d.h. ein <em>Universally Unique Identifier</em>) wird als Personenidentifikator in allen Daten (d.h. Ergebnisdaten) und allen anderen gespeicherten Daten (z.B. Log-Daten/Trace-Daten, Snapshot-Daten, etc.) verwendet.</p></li>
+<li><p><em>Benutzername</em>: Wenn von den Testteilnehmern erwartet wird, dass sie sich durch eine eindeutige Zeichenfolge identifizieren (z.B. eine Zahl oder ein Text, der als Zugangskennung verwendet wird), kann eine <em>Studie</em> mit dem <em>Login-Modus</em> <em>Benutzername</em> konfiguriert werden. Der Zugang zum Assessment ist dann nur möglich, wennd die als <em>Benutzername</em> eingegebene Zeichenkette gültig ist. Die zugrundeliegende Idee ist, dass die Studienkonfiguration mit einer Liste gültiger Benutzernamen geladen wird und dass ein Testteilnehmer einen gültigen Benutzernamen eingeben muss, bevor er oder sie das Assessment starten kann. Nur authentifizierte Testteilnehmer können auf die als <em>Studie</em> definierten Assessmentinhalte zugreifen und die Aufgaben bzw. Fragen beantworten.</p></li>
+<li><p><em>Benutzername und Passwort</em>: Wenn in einer <em>Studie</em> nicht nur gültige Benutzernamen, sondern ein Passwort zur Authentifizierung der Testpersonen verwendet werden sollen, ermöglicht der <em>Login-Modus</em> <em>Benutzername und Passwort</em> eine Eingabe von Benutzernamen und Passwort. Analog zu <em>Benutzername</em> müssen dann beide Informationen in der Studienkonfiguration hinterlegt sein.</p></li>
+<li><p><em>Zugriffstoken</em>: Wenn in der Studienkonfiguration die gültigen Benutzernamen nicht gespeichert werden sollen, kann die Option <em>Zugriffstoken</em> verwendet werden. Jedes Token, das einem definierten Schema entspricht, wird dann akzeptiert und als Identifikator für die Testteilnehmer verwendet.</p></li>
+</ul></li>
+<li><p><strong>Speicher für Sessiondaten</strong>: Bei Onlineauslieferungen kann nach einer Unterbrechung ein Assessment forgesetzt werden. Diese Funktionalität wird bspw. auch benötigt, wenn im Browser die Seite neu geladen wird (bspw. durch Erzwingen eines <em>Reload</em>/F5, oder durch Schließen und erneutes Aufrufen der URL). Um sicherzustellen, dass Sitzungen, die von derselben Person (d.h. vom selben Browser) stammen, auch fortgesetzt werden können, kann die Software so konfiguriert werden, dass der Identifikator im Client gespeichert wird.</p></li>
+<li><p><strong>Gültige Werte</strong>: Die <em>IRTlib-Software</em> bietet für die <em>Login-Modu</em> <em>Benutzername</em>, <em>Benutzername + Passwort</em> und <em>Zugriffstoken</em> folgende Mechanismen zur Validierung von Anmeldeinformationen:</p>
+<ul>
+<li><p><em>Liste</em>: Eine Liste gültiger Berechtigungen (Benutzername oder Benutzername und Passwort, je nach Konfiguration des <em>Login-Modus</em>) kann als Teil der Studienkonfiguration definiert werden. Die Informationen können entweder im <em>IRTlib-Editor</em> bearbeitet oder aus einer CSV-Datei importiert werden. Definierte Werte können auch als CSV-Datei exportiert werden.</p></li>
+<li><p><em>Code zur Prüfung</em>: Es kann eine <em>Blockly</em>-Funktion angegeben werden, welche <em>Wahr</em> zurückmeldet, wenn die übergebenen Anmeldedaten gültig sind (sonst <em>Falsch</em>).</p></li>
+</ul></li>
+<li><p><strong>Gruppenlogin</strong>: Je nach <em>Login-Modus</em> dienen Benutzername oder Zugriffstoken als Personenidentifikator. Wenn die Option <em>Gruppenanmeldung</em> aktiviert wird, dann werden diese übergebenen Anmeldedaten zur Authentifizierung verwendet, um den Testteilnehmer als Mitglied einer Gruppe zu identifizieren (d. h. nur Testteilnehmer, die den Benutzernamen kennen, können sich als Teil der Gruppe authentifizieren). Innerhalb der Gruppe wird dann ein zusätzlicher Zufallsidentifikator generiert, um verschiedene Personen aus einer Gruppe zu unterscheiden.</p></li>
+<li><p><strong>Loginquelle</strong>: Die <em>IRTlib-Software</em> unterstützt verschiedenen möglichen Optionen, wie für Anmeldeinformationen bereitgestellt werden können.</p>
+<ul>
+<li><p><em>Plattform</em>: Ein Anmeldedialog wird vom <em>IRTlib-Player</em> (d.h. der Plattform) angezeigt. Die Überschrift zur Eingabe der Zugangsdaten, die Beschriftung der Eingabe für Benutzernamen und Passwort, die Beschriftung ddes Weiter-Buttons, dein Begrüßungs- und ein Instruktionstext sowie ein Fehlertextbei fehlgeschlagenen Login-Versuchen können konfiguriert werden.</p></li>
+<li><p><em>Parameter</em>: Gültige Anmeldedaten für Testteilnehmer können auch über die <em>Befehlszeile</em> (d.h. Parameter beim Aufruf der Offline-Version des <em>IRTlib Players</em>) oder über URL-Parameter (d.h. Parameter beim Aufruf der <em>Studie</em> über einen Link auf eine Online-Version des <em>IRTlib Players</em>) bereitgestellt werden. In diesem Fall wird kein Anmeldedialog oder Loginitem angezeigt.</p></li>
+<li><p><em>Item</em>: Alternativ zu einem Dialog des <em>IRlLib-Players</em> kann auch ein <em>CBA ItemBuilder</em>-Task konfiguriert werden, der als Login-Eingabemaske dient. Innerhalb des Items wird ein sogenannter <em>ExternalPageFrame</em> verwendet, um zur Validierung einer Eingabe einen bestimmten JavaScript-Befehl an den <em>IRlLib-Player</em> zu senden (ein Beispiel finden Sie <a href="https://kroehne.github.io/CBAItemBuilderBook/items/10_00/IRTLibLoginExample.zip">hier</a>).</p></li>
+</ul></li>
+</ul>
+<blockquote>
+<blockquote>
+<p>Das Login Item muss als <em>CBA ItemBuilder</em> Projektdatei für die konfigurierte Laufzeitumgebung (Runtime) verfügbar sein und der Studienkonfiguration hinzugefügt werden. Um ein Login Item zur Studienkonfiguration hinzuzufügen, kann der integrierte Importdialog verwendet werden. Mehr Informationen zum Importieren von <em>CBA ItemBuilder</em>-Projekten findet sich in der Hilfe zum Abschnitt <em>Items</em> eines <em>Erhebungsteils</em>.</p>
+</blockquote>
+</blockquote>
+<ul>
+<li><p><strong>Zusätzliche Parameter</strong>: Neben der <em>Authentifizierung</em> von Testteilnehmern können die Anmeldeinformationen in der <em>IRTlib-Software</em> auch als zusätzlicher Parameter hinterlegt werden, die dann bspw. in der Ablaufsteuerung verwendet werden können.</p>
+<ul>
+<li><p>Parameter für Dateinamen: Der <code>RawDataPath</code> (d.h. der relative Pfad unter dem der Offline-<em>IRTlib-Player</em> die Ergebnisdaten speichert) und der <code>MonitoringFile</code> (d.h. der Name der Datei in welcher der Offline-<em>IRTlib-Player</em> Informationen fürs Studienmonitoring schreibt) können als Teil der Anmeldedaten konfiguriert werden.</p></li>
+<li><p><em>Blockly</em>-Variablen: Zusätzliche Parameter können auch als sogenannte <em>Preload</em>-Variablen mit den Anmeldeinformationen hinterlegt werde.</p></li>
+</ul></li>
+</ul>
+<hr>
+<div id="tbl-letters">
+<table style="width:100%;">
+<caption>Table 1: Zusammenfassung der Optionen, die als <em>Konfiguration der Anmeldung</em> kombiniert werden können</caption>
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Login Modus</th>
+<th style="text-align: center;">Speicher für Sessiondaten</th>
+<th style="text-align: center;">Gruppenlogin</th>
+<th style="text-align: center;">Gültige Werte</th>
+<th style="text-align: center;">Loginquelle</th>
+<th style="text-align: center;">Zusätzliche Parameter</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Zufälliger Inditifikator</td>
+<td style="text-align: center;">ja</td>
+<td style="text-align: center;">nein</td>
+<td style="text-align: center;">nein</td>
+<td style="text-align: center;">keine</td>
+<td style="text-align: center;">nein</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Benutzername</td>
+<td style="text-align: center;">ja</td>
+<td style="text-align: center;">ja</td>
+<td style="text-align: center;">Liste oder Code</td>
+<td style="text-align: center;">Plattform, Item + Parameter</td>
+<td style="text-align: center;">Werte oder Parameter</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Benutzername und Passwort</td>
+<td style="text-align: center;">ja</td>
+<td style="text-align: center;">ja</td>
+<td style="text-align: center;">Liste oder Code</td>
+<td style="text-align: center;">Plattform, Item + Parameter</td>
+<td style="text-align: center;">Werte oder Parameter</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Zugriffstoken</td>
+<td style="text-align: center;">ja</td>
+<td style="text-align: center;">ja</td>
+<td style="text-align: center;">Schema oder Code</td>
+<td style="text-align: center;">Plattform, Item + Parameter</td>
+<td style="text-align: center;">Parameter</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 
 
