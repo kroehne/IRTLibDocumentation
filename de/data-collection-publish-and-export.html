@@ -4582,6 +4582,8 @@ vertical-align: -.125em;
 
 <section id="datenerhebungen" class="level1">
 <h1>Datenerhebungen</h1>
+<p>Die Konfiguration von <em>Studien</em> und den darin enthaltenen <em>Erhebungsteil(en)</em> erfolgt im <em>IRTlib Editor</em> und wird innerhalb des Editors gespeichert, wenn das Disketten-Symbol unten rechts geklickt wird.</p>
+<p>Damit zu jeder Zeit eindeutig benennbar ist, mit welcher Konfiguration einer <em>Studie</em> eine Datenerhebung durchgeführt wird, muss die Konfiguration vor der Übertragung an einen <em>IRTlib Player</em> versiegelt werden. Das geschieht in der Ansicht <em>Veröffentlichen</em> einer Studie, in welcher die <em>Studienversionen</em> aufgelistet werden:</p>
 <section id="checkliste-vor-dem-veröffentlichen" class="level2">
 <h2 class="anchored" data-anchor-id="checkliste-vor-dem-veröffentlichen">Checkliste vor dem Veröffentlichen</h2>
 <ul>
@@ -4844,6 +4846,22 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          // default icon
+          link.classList.add("external");
+      }
+    }
 });
 </script>
 </div> <!-- /content -->

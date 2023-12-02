@@ -4572,7 +4572,9 @@ vertical-align: -.125em;
   <li><a href="#versionen" id="toc-versionen" class="nav-link" data-scroll-target="#versionen">Versionen</a>
   <ul class="collapse">
   <li><a href="#offline-windows" id="toc-offline-windows" class="nav-link" data-scroll-target="#offline-windows">Offline (Windows)</a></li>
-  <li><a href="#online-editor-docker" id="toc-online-editor-docker" class="nav-link" data-scroll-target="#online-editor-docker">Online-Editor (Docker)</a></li>
+  <li><a href="#studienvorbereitung-mit-offline-editor" id="toc-studienvorbereitung-mit-offline-editor" class="nav-link" data-scroll-target="#studienvorbereitung-mit-offline-editor">Studienvorbereitung mit Offline Editor</a></li>
+  <li><a href="#studiendurchführung-mit-offline-player" id="toc-studiendurchführung-mit-offline-player" class="nav-link" data-scroll-target="#studiendurchführung-mit-offline-player">Studiendurchführung mit Offline Player</a></li>
+  <li><a href="#online-docker" id="toc-online-docker" class="nav-link" data-scroll-target="#online-docker">Online (Docker)</a></li>
   </ul></li>
   </ul></li>
   </ul>
@@ -4605,7 +4607,6 @@ Note
 <p>Beachten Sie, dass der aktuellste Build im Abschnitt <a href="https://github.com/DIPFtba/IRTlibDeploymentSoftware/releases/tag/preview-231025">Preview</a> des <em>Release</em>-Abschnitts des <a href="https://github.com/DIPFtba/IRTlibDeploymentSoftware/releases">repository</a> zu finden ist.</p>
 </div>
 </div>
-<p>Der <em>IRTlib Editor</em> für die Offline-Nutzung wird als ZIP-Archiv (z.B. <code>TestApp.Editor.Desktop.zip</code>) bereitgestellt, das entpackt werden muss. Nach dem Entpacken des Editors kann die Anwendung <code>TestApp.Editor.Desktop.exe</code> auf einem Windows-Gerät gestartet werden.</p>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -4619,12 +4620,28 @@ Warning
 <p>Die automatisch erstellten Vorschauversionen des <em>IRTlib Editors</em> und <em>IRTlib Players</em> sind nicht signiert. Eine Warnmeldung des Betriebssystems muss akzeptiert werden, bevor die Programme ausgeführt werden können.</p>
 </div>
 </div>
-<p>Der Player ist auch als Windows-Anwendung für die Offline-Nutzung verfügbar und wird als ZIP-Archiv (z.B. <code>TestApp.Player.Desktop.zip</code>) bereitgestellt. Nach dem Entpacken des Players ist jedoch eine veröffentlichte Studienkonfiguration erforderlich, bevor der Player zur Datenerfassung verwendet werden kann. Erst nach dem Hinzufügen der als Studienkonfiguration bereitgestellten Inhalte einer veröffentlichten Studie kann die ausführbare Datei <code>TestApp.Player.Desktop.exe</code> gestartet werden (entweder mit oder ohne Startparameter).</p>
 </section>
-<section id="online-editor-docker" class="level3">
-<h3 class="anchored" data-anchor-id="online-editor-docker">Online-Editor (Docker)</h3>
-<p>Die <em>IRTlib</em>-Software (<em>IRTlib Editor</em> und <em>IRTlib Player</em>) für die Online-Nutzung kann als Docker-Container bezogen werden. Ein Beispiel ist auch unter <a href="https://github.com/DIPFtba/IRTlibDeploymentSoftware" class="uri">https://github.com/DIPFtba/IRTlibDeploymentSoftware</a> zu finden. Um den Docker-Container zu verwenden, wird empfohlen, das Repository auf dem Zielgerät auszuchecken (erfordert git) und den Befehl <code>./start.sh</code> im Ordner <code>docker</code> auszuführen (erfordert installiertes <code>docker</code> und <code>docker compose</code>), um die Software zu starten.</p>
+<section id="studienvorbereitung-mit-offline-editor" class="level3">
+<h3 class="anchored" data-anchor-id="studienvorbereitung-mit-offline-editor">Studienvorbereitung mit Offline Editor</h3>
+<p>Der <em>IRTlib Editor</em> für die Offline-Nutzung wird als ZIP-Archiv (z.B. <code>TestApp.Editor.Desktop.zip</code>) bereitgestellt, das entpackt werden muss. Nach dem Entpacken des Editors kann die Anwendung <code>TestApp.Editor.Desktop.exe</code> auf einem Windows-Gerät gestartet werden.</p>
+<p>In den Abschnitten <a href="./preparation-overview.html">Vorbereitung &gt; Übersicht</a>, <a href="./preparation-studies.html">Vorbereitung &gt; Studien</a> und <a href="./preparation-parts.html">Vorbereitung &gt; Erhebungsteile</a> ist dokumentiert, wie man mit Hilfe von <em>CBA ItemBuilder</em>-Items Datenerhebungen vorbereitet und konfiguriert.</p>
+</section>
+<section id="studiendurchführung-mit-offline-player" class="level3">
+<h3 class="anchored" data-anchor-id="studiendurchführung-mit-offline-player">Studiendurchführung mit Offline Player</h3>
+<p>Der <em>IRTlib Player</em> ist auch als Windows-Anwendung für die Offline-Nutzung verfügbar und wird als ZIP-Archiv (z.B. <code>TestApp.Player.Desktop.zip</code>) bereitgestellt. Nach dem Entpacken des <em>IRTlib Player</em> ist eine veröffentlichte Studienkonfiguration erforderlich, die zur Datenerhebung verwendet werden soll.</p>
+<p>Nach dem Hinzufügen der als Studienkonfiguration bereitgestellten Inhalte einer veröffentlichten Studie kann die ausführbare Datei <code>TestApp.Player.Desktop.exe</code> gestartet werden (entweder mit oder ohne Startparameter).</p>
+<ul>
+<li><p><strong>Kiosk Mode</strong>: Der <em>IRTlib Player</em> kann über die ausführbare Datei <code>TestApp.Player.Desktop.exe</code> auf dem Computer, auf dem er lokal ausgeführt wird, direkt zur Datenerhebung verwendet werden. Die <em>Studie</em> kann dazu so konfirugiert werden, dass es in einem <em>Kiosk Mode</em> auf einem Bildschirm angezeigt wird und nur über den <em>Task Manager</em> oder das <em>Testleitermenü</em> beendet werden kann (siehe <em>Vollbildmodus</em> im Abschnitt <a href="preparation-studies.html#konfiguration-zur-anzeige">Konfiguration zur Anzeige</a>). ‚</p></li>
+<li><p><strong>Lokaler Server</strong>: Der <em>IRTlib Player</em> kann aber auch als lokaler Server ausgeführt werden. Nach dem Start des Programms <code>TestApp.Player.Server.exe</code> kann eine konfigurierte <em>Studie</em> auch über <em>Webbrowser</em> oder andere Browser mit <em>Kiosk Mode</em> ausgeliefert werden (z.B. den <a href="https://safeexambrowser.org/">Safe Exam Browser</a>). Mit dieser Konfiguration lassen sich Datenerhebungen bspw. in Schulen ohne Internetverbindung aber mit einem als <em>Bring-in</em>-Server fungierenden Notebook durchführen.</p></li>
+</ul>
+<p>In den Abschnitten <a href="./data-collection-overview.html">Datenerhebung &gt; Übersicht</a>, <a href="./data-collection-publish-and-export.html">Datenerhebung &gt; Veröffentlichen &amp; Export</a> und <a href="./data-collection-player-integration.html">Datenerhebung &gt; Integration &amp; Auslieferung</a> ist dokumentiert, wie man mit Hilfe des <em>IRTlib Players</em> in den unterschiedlichen Konstellationen Datenerhebungen durchführen kann.</p>
+</section>
+<section id="online-docker" class="level3">
+<h3 class="anchored" data-anchor-id="online-docker">Online (Docker)</h3>
+<p>Die <em>IRTlib</em>-Software (<em>IRTlib Editor</em> und <em>IRTlib Player</em>) für die Online-Nutzung kann als <em>Docker</em>-Container bezogen werden. Ein Beispiel ist unter <a href="https://github.com/DIPFtba/IRTlibDeploymentSoftware" class="uri">https://github.com/DIPFtba/IRTlibDeploymentSoftware</a> zu finden.</p>
+<p>Um den Docker-Container zu verwenden, wird empfohlen, das Repository auf dem Zielgerät auszuchecken (erfordert git) und den Befehl <code>./start.sh</code> im Ordner <code>docker</code> auszuführen (erfordert installiertes <code>docker</code> und <code>docker compose</code>), um die Software zu starten.</p>
 <p>Wenn in der Datei <code>docker-compose.yml</code> nichts geändert wird, ist der Editor über Port <em>8002</em> und die Player-Software über Port <em>8001</em> erreichbar.</p>
+<p>In dem Abschnitt <a href="./data-collection-player-integration.html">Datenerhebung &gt; Integration &amp; Auslieferung</a> finden sich weitere Informationen zur Verwendung der <em>Docker</em>-Container.</p>
 
 
 </section>
@@ -4863,6 +4880,22 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          // default icon
+          link.classList.add("external");
+      }
+    }
 });
 </script>
 </div> <!-- /content -->

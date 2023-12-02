@@ -25,7 +25,14 @@
     "href": "translation.html",
     "title": "Translation",
     "section": "",
-    "text": "This editor can be used to created localized resx-files for the application: ResXResourceManager\n\nThe source file can be found here: (TODO)\n\nHelp (included in the application) is generated using quarto from markdown files in this folder.\n\nHelp.de-DE.resx\nHelp.en-US.resx\n\n\n\n\n\n\n\n\nMarkdown (DEU)\nen-US\nde-DEU\n…\n\n\n\n\n*IRTlib Player*\nIRTlib Player\nIRTlib Player\n\n\n\n*IRTlib Editor*\nIRTlib Editor\nIRTlib Editor\n\n\n\n*Studien*\nStudies\nStudien\n\n\n\n*Einstellungen*\nSettings\nEinstellungen\n\n\n\n*Testleitermenü*\nSession Menu\nTestleitermenü"
+    "text": "Note\n\n\n\nThe software has been designed so that it can also be translated into other languages. If you would like to support us in this, please contact us.\n\n\n\n\n\n\nThis editor can be used to created localized resx-files for the application: ResXResourceManager\n\nThe source file can be found here: (TODO)\n\nHelp (included in the application) is generated using quarto from markdown files in this folder.\n\nHelp.de-DE.resx\nHelp.en-US.resx\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMarkdown (DEU)\nen-US\nde-DEU\n…\n\n\n\n\n*IRTlib Player*\nIRTlib Player\nIRTlib Player\n\n\n\n*IRTlib Editor*\nIRTlib Editor\nIRTlib Editor\n\n\n\n*IRTlib Software*\nIRTlib Software\nIRTlib Software\n\n\n\nOffline-*IRTlib Player*\nOffline-IRTlib Player\nOffline-IRTlib Player\n\n\n\nOnline-*IRTlib Player*\nOnline-IRTlib Player\nOnline-IRTlib Player\n\n\n\n*Studie*\nStudy\nStudie\n\n\n\n*Erhebungsteil*\nStudy Part \nErhebungsteil\n\n\n\n*Einstellungen*\nSettings\nEinstellungen\n\n\n\n*Testleitermenü*\nSession Menu\nTestleitermenü\n\n\n\n*Bearbeitungszeit*\nCompletion time\nBearbeitungszeit\n\n\n\n*Bearbeitungszeit begrenzen*\nRestrict time allowed\nBearbeitungszeit begrenzen\n\n\n\n*Studienversion*\nStudy version\nStudienversion\n\n\n\n*Revision*\nRevision\nRevision\n\n\n\n*Vorspann-Item(s)*\nProlog Item(s)\nVorspann-Item(s)\n\n\n\n*Nachspann-Items(s)*\nEpilog Item(s)\nNachspann-Items(s)\n\n\n\n*Testleiter*\nTest Administrator\nTestleiter\n\n\n\n*CBA ItemBuilder*-Items\nCBA ItemBuilder-Items\nCBA ItemBuilder-Items\n\n\n\n*Docker*-Container\nDocker-Container\nDocker-Container"
+  },
+  {
+    "objectID": "translation.html#help-requested",
+    "href": "translation.html#help-requested",
+    "title": "Translation",
+    "section": "",
+    "text": "Note\n\n\n\nThe software has been designed so that it can also be translated into other languages. If you would like to support us in this, please contact us."
   },
   {
     "objectID": "translation.html#current-translations",
@@ -39,7 +46,7 @@
     "href": "translation.html#terminology-and-standardizing-the-notation",
     "title": "Translation",
     "section": "",
-    "text": "Markdown (DEU)\nen-US\nde-DEU\n…\n\n\n\n\n*IRTlib Player*\nIRTlib Player\nIRTlib Player\n\n\n\n*IRTlib Editor*\nIRTlib Editor\nIRTlib Editor\n\n\n\n*Studien*\nStudies\nStudien\n\n\n\n*Einstellungen*\nSettings\nEinstellungen\n\n\n\n*Testleitermenü*\nSession Menu\nTestleitermenü"
+    "text": "Markdown (DEU)\nen-US\nde-DEU\n…\n\n\n\n\n*IRTlib Player*\nIRTlib Player\nIRTlib Player\n\n\n\n*IRTlib Editor*\nIRTlib Editor\nIRTlib Editor\n\n\n\n*IRTlib Software*\nIRTlib Software\nIRTlib Software\n\n\n\nOffline-*IRTlib Player*\nOffline-IRTlib Player\nOffline-IRTlib Player\n\n\n\nOnline-*IRTlib Player*\nOnline-IRTlib Player\nOnline-IRTlib Player\n\n\n\n*Studie*\nStudy\nStudie\n\n\n\n*Erhebungsteil*\nStudy Part \nErhebungsteil\n\n\n\n*Einstellungen*\nSettings\nEinstellungen\n\n\n\n*Testleitermenü*\nSession Menu\nTestleitermenü\n\n\n\n*Bearbeitungszeit*\nCompletion time\nBearbeitungszeit\n\n\n\n*Bearbeitungszeit begrenzen*\nRestrict time allowed\nBearbeitungszeit begrenzen\n\n\n\n*Studienversion*\nStudy version\nStudienversion\n\n\n\n*Revision*\nRevision\nRevision\n\n\n\n*Vorspann-Item(s)*\nProlog Item(s)\nVorspann-Item(s)\n\n\n\n*Nachspann-Items(s)*\nEpilog Item(s)\nNachspann-Items(s)\n\n\n\n*Testleiter*\nTest Administrator\nTestleiter\n\n\n\n*CBA ItemBuilder*-Items\nCBA ItemBuilder-Items\nCBA ItemBuilder-Items\n\n\n\n*Docker*-Container\nDocker-Container\nDocker-Container"
   },
   {
     "objectID": "index.html",

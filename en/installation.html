@@ -4567,7 +4567,7 @@ vertical-align: -.125em;
   <li><a href="#versions" id="toc-versions" class="nav-link" data-scroll-target="#versions">Versions</a>
   <ul class="collapse">
   <li><a href="#offline-windows-1" id="toc-offline-windows-1" class="nav-link" data-scroll-target="#offline-windows-1">Offline (Windows)</a></li>
-  <li><a href="#online-editor-docker-1" id="toc-online-editor-docker-1" class="nav-link" data-scroll-target="#online-editor-docker-1">Online Editor (Docker)</a></li>
+  <li><a href="#online-editor-docker" id="toc-online-editor-docker" class="nav-link" data-scroll-target="#online-editor-docker">Online Editor (Docker)</a></li>
   </ul></li>
   </ul></li>
   </ul>
@@ -4614,10 +4614,10 @@ Warning
 <p>The automatically created preview versions of the <em>IRTlib Editor</em> and <em>IRTlib Player</em> are not signed. A warning message from the operating system must be accepted before the programs can be executed.</p>
 </div>
 </div>
-<p>The player is also available as a Windows application for offline use, provided as ZIP-archive (e.g., <code>TestApp.Player.Desktop.zip</code>). However, after extracting the player, it requires a published study configuration before the player can be used to collect data. Only after adding content of provided as study configuration of a published study, the executable <code>TestApp.Player.Desktop.exe</code> can be started (either with or without startup parameters).</p>
+<p>The player is also available as a Windows application for offline use, provided as ZIP-archive (e.g., <code>TestApp.Player.Desktop.zip</code>). After extracting the player, it requires a published study configuration before the player can be used to collect data. Only after adding content of provided as study configuration of a published study, the executable <code>TestApp.Player.Desktop.exe</code> can be started (either with or without startup parameters).</p>
 </section>
-<section id="online-editor-docker-1" class="level3">
-<h3 class="anchored" data-anchor-id="online-editor-docker-1">Online Editor (Docker)</h3>
+<section id="online-editor-docker" class="level3">
+<h3 class="anchored" data-anchor-id="online-editor-docker">Online Editor (Docker)</h3>
 <p>The <em>IRTlib</em> software (<em>IRTlib Editor</em> and <em>IRTlib Player</em>) for online use can be obtained as a docker container. An example is also provided at <a href="https://github.com/DIPFtba/IRTlibDeploymentSoftware" class="uri">https://github.com/DIPFtba/IRTlibDeploymentSoftware</a>. To use the docker container, it is suggested to check out the repository on the target device (requiring git) and to run the command <code>./start.sh</code> inside the folder <code>docker</code> (requiring installed <code>docker</code> and <code>docker compose</code>) to start the software.</p>
 <p>When not changed in the file <code>docker-compose.yml</code>, the editor is accessible on port <em>8002</em> and the player software is accessible on port <em>8001</em>.</p>
 
@@ -4858,6 +4858,22 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          // default icon
+          link.classList.add("external");
+      }
+    }
 });
 </script>
 </div> <!-- /content -->

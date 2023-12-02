@@ -4585,7 +4585,7 @@ vertical-align: -.125em;
 <h2 class="anchored" data-anchor-id="übersicht-schritte-zur-verwendung-eines-irtlib-player-zur-datenerhebung">Übersicht: Schritte zur Verwendung eines <em>IRTlib Player</em> zur <em>Datenerhebung</em></h2>
 <p>Nachdem eine Studienkonfiguration mit dem <em>IRTlib-Editor</em> vorbereitet wurde, muss zunächst eine finalisierte <em>Version</em> erstellt werden. Versionen <em>versiegeln</em> und vervollständigen alle Konfigurationen und haben eine eindeutige Versionsnummer (bezeichnet als <em>Revision</em>). Die Verwendung von <em>Revisionen</em> macht die Durchführung von Datensammlungen mit dem <em>IRTlib-Editor</em> und <em>IRTlib-Player</em> reproduzierbar, da die Revisionsnummer einer Konfiguration auch in den Datensätzen gespeichert wird.</p>
 <ul>
-<li><p><strong>Konfigurationen Prüfen</strong>: Vor der Fertigstellung und dem <em>Versiegeln</em> einer Version ist es ratsam, alle Einstellungen noch einmal zu überprüfen. Der <em>IRTlib-Editor</em> stellt dafür eine zusätzliche Funktion der <em>Validierung</em> zur Verfügung. Eine Checkliste der zu prüfenden Einstellungen findet sich <a href>hier</a>.</p></li>
+<li><p><strong>Konfigurationen Prüfen</strong>: Vor der Fertigstellung und dem <em>Versiegeln</em> einer Version ist es ratsam, alle Einstellungen noch einmal zu überprüfen. Der <em>IRTlib-Editor</em> stellt dafür eine zusätzliche Funktion der <em>Validierung</em> zur Verfügung. Eine Checkliste der zu prüfenden Einstellungen findet sich im Abschnitt <a href="data-collection-publish-and-export.html#checkliste-vor-dem-veröffentlichen">Datenerhebung &gt; Veröffentlichen &amp; Export</a>.</p></li>
 <li><p><strong>Versiegelte Version Erstellen</strong>: Wenn keine weiteren Änderungen erforderlich sind, kann die Version <em>versiegelt</em> werden. Weitere Details dazu finden sich <a href>hier</a>.</p></li>
 <li><p><strong>Version Exportieren</strong>: Versionen von Studien, die im <em>IRTlib-Editor</em> verfügbar sind, können exportiert werden. Der Export der Konfiguraiton ist notwendig, bevor diese mit dem <em>IRTlib-Player</em> verwendet werden können. Weitere Details dazu finden sich <a href>hier</a>.</p></li>
 <li><p><strong>Studie in <em>IRTlib-Player</em> Importieren</strong>: Exportierte Versionen von Studien aus dem <em>IRTlib-Editor</em> können zur Verwendung in einen <em>IRTlib-Player</em> importiert werden. Weitere Details dazu finden sich <a href>hier</a>.</p></li>
@@ -4829,6 +4829,22 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          // default icon
+          link.classList.add("external");
+      }
+    }
 });
 </script>
 </div> <!-- /content -->

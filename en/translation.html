@@ -4580,6 +4580,19 @@ vertical-align: -.125em;
 <h1>Translation</h1>
 <section id="help-requested" class="level2">
 <h2 class="anchored" data-anchor-id="help-requested">Help Requested</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The software has been designed so that it can also be translated into other languages. If you would like to support us in this, please <a href="./about.html">contact</a> us.</p>
+</div>
+</div>
 </section>
 <section id="current-translations" class="level2">
 <h2 class="anchored" data-anchor-id="current-translations">Current Translations</h2>
@@ -4598,6 +4611,12 @@ vertical-align: -.125em;
 <section id="terminology-and-standardizing-the-notation" class="level2">
 <h2 class="anchored" data-anchor-id="terminology-and-standardizing-the-notation">Terminology and Standardizing the Notation</h2>
 <table class="table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 30%">
+<col style="width: 23%">
+<col style="width: 23%">
+</colgroup>
 <thead>
 <tr class="header">
 <th>Markdown (DEU)</th>
@@ -4620,9 +4639,33 @@ vertical-align: -.125em;
 <td></td>
 </tr>
 <tr class="odd">
-<td><code>*Studien*</code></td>
-<td><em>Studies</em></td>
-<td><em>Studien</em></td>
+<td><code>*IRTlib Software*</code></td>
+<td><em>IRTlib Software</em></td>
+<td><em>IRTlib Software</em></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>Offline-*IRTlib Player*</code></td>
+<td>Offline-<em>IRTlib Player</em></td>
+<td>Offline-<em>IRTlib Player</em></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>Online-*IRTlib Player*</code></td>
+<td>Online-<em>IRTlib Player</em></td>
+<td>Online-<em>IRTlib Player</em></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>*Studie*</code></td>
+<td><em>Study</em></td>
+<td><em>Studie</em></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>*Erhebungsteil*</code></td>
+<td><em>Study Part </em></td>
+<td><em>Erhebungsteil</em></td>
 <td></td>
 </tr>
 <tr class="even">
@@ -4635,6 +4678,60 @@ vertical-align: -.125em;
 <td><code>*Testleitermenü*</code></td>
 <td><em>Session Menu</em></td>
 <td><em>Testleitermenü</em></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>*Bearbeitungszeit*</code></td>
+<td><em>Completion time</em></td>
+<td><em>Bearbeitungszeit</em></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>*Bearbeitungszeit begrenzen*</code></td>
+<td><em>Restrict time allowed</em></td>
+<td><em>Bearbeitungszeit begrenzen</em></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>*Studienversion*</code></td>
+<td><em>Study version</em></td>
+<td><em>Studienversion</em></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>*Revision*</code></td>
+<td><em>Revision</em></td>
+<td><em>Revision</em></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>*Vorspann-Item(s)*</code></td>
+<td><em>Prolog Item(s)</em></td>
+<td><em>Vorspann-Item(s)</em></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>*Nachspann-Items(s)*</code></td>
+<td><em>Epilog Item(s)</em></td>
+<td><em>Nachspann-Items(s)</em></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>*Testleiter*</code></td>
+<td><em>Test Administrator</em></td>
+<td><em>Testleiter</em></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>*CBA ItemBuilder*-Items</code></td>
+<td><em>CBA ItemBuilder</em>-Items</td>
+<td><em>CBA ItemBuilder</em>-Items</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>*Docker*-Container</code></td>
+<td><em>Docker</em>-Container</td>
+<td><em>Docker</em>-Container</td>
 <td></td>
 </tr>
 </tbody>
@@ -4876,6 +4973,22 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          // default icon
+          link.classList.add("external");
+      }
+    }
 });
 </script>
 </div> <!-- /content -->

@@ -4580,6 +4580,13 @@ vertical-align: -.125em;
   </ul></li>
   <li><a href="#datenerhbung-durchführen" id="toc-datenerhbung-durchführen" class="nav-link" data-scroll-target="#datenerhbung-durchführen">Datenerhbung Durchführen</a></li>
   <li><a href="#daten-exportieren" id="toc-daten-exportieren" class="nav-link" data-scroll-target="#daten-exportieren">Daten Exportieren</a></li>
+  <li><a href="#steuerung-lokaler-server" id="toc-steuerung-lokaler-server" class="nav-link" data-scroll-target="#steuerung-lokaler-server">Steuerung (Lokaler Server)</a></li>
+  <li><a href="#hosting-docker" id="toc-hosting-docker" class="nav-link" data-scroll-target="#hosting-docker">Hosting (Docker)</a>
+  <ul class="collapse">
+  <li><a href="#integration" id="toc-integration" class="nav-link" data-scroll-target="#integration">Integration</a></li>
+  <li><a href="#zugriff-auf-editor" id="toc-zugriff-auf-editor" class="nav-link" data-scroll-target="#zugriff-auf-editor">Zugriff auf Editor</a></li>
+  <li><a href="#monitoring" id="toc-monitoring" class="nav-link" data-scroll-target="#monitoring">Monitoring</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 </nav>
@@ -4618,8 +4625,28 @@ vertical-align: -.125em;
 </section>
 <section id="daten-exportieren" class="level2">
 <h2 class="anchored" data-anchor-id="daten-exportieren">Daten Exportieren</h2>
+<hr>
+<hr>
+</section>
+<section id="steuerung-lokaler-server" class="level2">
+<h2 class="anchored" data-anchor-id="steuerung-lokaler-server">Steuerung (Lokaler Server)</h2>
+</section>
+<section id="hosting-docker" class="level2">
+<h2 class="anchored" data-anchor-id="hosting-docker">Hosting (Docker)</h2>
+<section id="integration" class="level3">
+<h3 class="anchored" data-anchor-id="integration">Integration</h3>
+<ul>
+<li>Reverse Proxy für SSL</li>
+</ul>
+</section>
+<section id="zugriff-auf-editor" class="level3">
+<h3 class="anchored" data-anchor-id="zugriff-auf-editor">Zugriff auf Editor</h3>
+</section>
+<section id="monitoring" class="level3">
+<h3 class="anchored" data-anchor-id="monitoring">Monitoring</h3>
 
 
+</section>
 </section>
 </section>
 
@@ -4855,6 +4882,22 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          // default icon
+          link.classList.add("external");
+      }
+    }
 });
 </script>
 </div> <!-- /content -->
