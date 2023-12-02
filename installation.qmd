@@ -23,20 +23,37 @@ Im Abschnitt [Releases](https://github.com/DIPFtba/IRTlibDeploymentSoftware/rele
 Beachten Sie, dass der aktuellste Build im Abschnitt [Preview](https://github.com/DIPFtba/IRTlibDeploymentSoftware/releases/tag/preview-231025) des *Release*-Abschnitts des [repository](https://github.com/DIPFtba/IRTlibDeploymentSoftware/releases) zu finden ist.
 :::
 
-Der *IRTlib Editor* für die Offline-Nutzung wird als ZIP-Archiv (z.B. `TestApp.Editor.Desktop.zip`) bereitgestellt, das entpackt werden muss. Nach dem Entpacken des Editors kann die Anwendung `TestApp.Editor.Desktop.exe` auf einem Windows-Gerät gestartet werden.
-
 ::: callout-warning
 Die automatisch erstellten Vorschauversionen des *IRTlib Editors* und *IRTlib Players* sind nicht signiert. Eine Warnmeldung des Betriebssystems muss akzeptiert werden, bevor die Programme ausgeführt werden können.
 :::
 
-Der Player ist auch als Windows-Anwendung für die Offline-Nutzung verfügbar und wird als ZIP-Archiv (z.B. `TestApp.Player.Desktop.zip`) bereitgestellt. Nach dem Entpacken des Players ist jedoch eine veröffentlichte Studienkonfiguration erforderlich, bevor der Player zur Datenerfassung verwendet werden kann. Erst nach dem Hinzufügen der als Studienkonfiguration bereitgestellten Inhalte einer veröffentlichten Studie kann die ausführbare Datei `TestApp.Player.Desktop.exe` gestartet werden (entweder mit oder ohne Startparameter).
+### Studienvorbereitung mit Offline Editor
 
-### Online-Editor (Docker)
+Der *IRTlib Editor* für die Offline-Nutzung wird als ZIP-Archiv (z.B. `TestApp.Editor.Desktop.zip`) bereitgestellt, das entpackt werden muss. Nach dem Entpacken des Editors kann die Anwendung `TestApp.Editor.Desktop.exe` auf einem Windows-Gerät gestartet werden.
 
-Die *IRTlib*-Software (*IRTlib Editor* und *IRTlib Player*) für die Online-Nutzung kann als Docker-Container bezogen werden. Ein Beispiel ist auch unter <https://github.com/DIPFtba/IRTlibDeploymentSoftware> zu finden. Um den Docker-Container zu verwenden, wird empfohlen, das Repository auf dem Zielgerät auszuchecken (erfordert git) und den Befehl `./start.sh` im Ordner `docker` auszuführen (erfordert installiertes `docker` und `docker compose`), um die Software zu starten.
+In den Abschnitten [Vorbereitung > Übersicht](preparation-overview.qmd), [Vorbereitung > Studien](preparation-studies.qmd) und [Vorbereitung > Erhebungsteile](preparation-parts.qmd) ist dokumentiert, wie man mit Hilfe von *CBA ItemBuilder*-Items Datenerhebungen vorbereitet und konfiguriert.
+
+### Studiendurchführung mit Offline Player 
+
+Der *IRTlib Player* ist auch als Windows-Anwendung für die Offline-Nutzung verfügbar und wird als ZIP-Archiv (z.B. `TestApp.Player.Desktop.zip`) bereitgestellt. Nach dem Entpacken des *IRTlib Player* ist eine veröffentlichte Studienkonfiguration erforderlich, die zur Datenerhebung verwendet werden soll.  
+
+Nach dem Hinzufügen der als Studienkonfiguration bereitgestellten Inhalte einer veröffentlichten Studie kann die ausführbare Datei `TestApp.Player.Desktop.exe` gestartet werden (entweder mit oder ohne Startparameter). 
+
+* **Kiosk Mode**: Der *IRTlib Player* kann über die ausführbare Datei `TestApp.Player.Desktop.exe` auf dem Computer, auf dem er lokal ausgeführt wird, direkt zur Datenerhebung verwendet werden. Die *Studie* kann dazu so konfirugiert werden, dass es in einem *Kiosk Mode* auf einem Bildschirm angezeigt wird und nur über den *Task Manager* oder das *Testleitermenü* beendet werden kann (siehe *Vollbildmodus* im Abschnitt [Konfiguration zur Anzeige](preparation-studies.html#konfiguration-zur-anzeige)). ‚
+
+* **Lokaler Server**: Der *IRTlib Player* kann aber auch als lokaler Server ausgeführt werden. Nach dem Start des Programms `TestApp.Player.Server.exe` kann eine konfigurierte *Studie* auch über *Webbrowser* oder andere Browser mit *Kiosk Mode* ausgeliefert werden (z.B. den [Safe Exam Browser](https://safeexambrowser.org/)). Mit dieser Konfiguration lassen sich Datenerhebungen bspw. in Schulen ohne Internetverbindung aber mit einem als *Bring-in*-Server fungierenden Notebook durchführen.
+
+In den Abschnitten [Datenerhebung > Übersicht](data-collection-overview.qmd), [Datenerhebung > Veröffentlichen & Export](data-collection-publish-and-export.qmd) und [Datenerhebung > Integration & Auslieferung](data-collection-player-integration.qmd) ist dokumentiert, wie man mit Hilfe des *IRTlib Players* in den unterschiedlichen Konstellationen Datenerhebungen durchführen kann. 
+
+### Online (Docker)
+
+Die *IRTlib*-Software (*IRTlib Editor* und *IRTlib Player*) für die Online-Nutzung kann als *Docker*-Container bezogen werden. Ein Beispiel ist unter <https://github.com/DIPFtba/IRTlibDeploymentSoftware> zu finden. 
+
+Um den Docker-Container zu verwenden, wird empfohlen, das Repository auf dem Zielgerät auszuchecken (erfordert git) und den Befehl `./start.sh` im Ordner `docker` auszuführen (erfordert installiertes `docker` und `docker compose`), um die Software zu starten.
 
 Wenn in der Datei `docker-compose.yml` nichts geändert wird, ist der Editor über Port *8002* und die Player-Software über Port *8001* erreichbar.
 
+In dem Abschnitt [Datenerhebung > Integration & Auslieferung](data-collection-player-integration.qmd) finden sich weitere Informationen zur Verwendung der *Docker*-Container. 
 :::
 
 ::: {.content-visible when-profile="english"}
@@ -63,7 +80,7 @@ The editor for offline use will be provided as a ZIP archive (e.g., `TestApp.Edi
 The automatically created preview versions of the *IRTlib Editor* and *IRTlib Player* are not signed. A warning message from the operating system must be accepted before the programs can be executed.
 :::
 
-The player is also available as a Windows application for offline use, provided as ZIP-archive (e.g., `TestApp.Player.Desktop.zip`). However, after extracting the player, it requires a published study configuration before the player can be used to collect data. Only after adding content of provided as study configuration of a published study, the executable `TestApp.Player.Desktop.exe` can be started (either with or without startup parameters).
+The player is also available as a Windows application for offline use, provided as ZIP-archive (e.g., `TestApp.Player.Desktop.zip`). After extracting the player, it requires a published study configuration before the player can be used to collect data. Only after adding content of provided as study configuration of a published study, the executable `TestApp.Player.Desktop.exe` can be started (either with or without startup parameters).
 
 ### Online Editor (Docker)
 

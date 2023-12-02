@@ -32,6 +32,26 @@ screenshot-irtlib-player-message-no-study01-de-DEU.png
 
 ## Daten Exportieren 
 
+<hr />
+
+<hr />
+
+## Steuerung (Lokaler Server)
+
+
+
+## Hosting (Docker)
+
+### Integration
+
+* Reverse Proxy für SSL
+
+### Zugriff auf Editor
+
+### Monitoring
+
+
+
 :::
 
 

@@ -1,5 +1,4 @@
 ---
-title: "IRTlib Editor: Routing innerhalb von Erhebungsteilen"
 format:
   html:
     embed-resources: true
@@ -7,9 +6,11 @@ format:
     toc: false
 ---
 
-## Kurzusammennfassung
+## Routing innerhalb von Erhebungsteilen
 
 Die Reihenfolge von CBA ItemBuilder-Tasks kann hier mit Hilfe von *Blockly* (also einer Form des visuellen Programmierens) definiert werden. *Blockly*-basierte Ablaufsteuerung ist verfügbar, wenn bei einem Erhebungsteil die Option *Routing aktivieren* ausgewählt ist. Die Option ist im Abschnit *Info* eines Erhebungsteils zu finden. Ist sie aktiviert, enthält der Erhebungsteil den Eintrag *Routing*.
+
+::: {.content-visible when-format="html"}
 
 Gliederung:
 
@@ -30,12 +31,15 @@ Gliederung:
 -   <a href="#anchor-comments">Kommentieren</a> von *Blockly*-Code
 -   Anpassung der <a href="#anchor-presentation">Darstellung</a> von *Blockly*-Code
 
+:::
+
+
 <font color="red">@SD / TODO: Ich hab hier erstmal eine vollständige Dokumentation versucht, die Testautoren benötigen um innerhalb von Erhebungsteilen das Routing zu definieren. Teile der Dokumentation wären aber identisch auch für das die Dokumentation von *Blockly* an anderen Stellen notwendig. Können wir doch auch Links ZWISCHEN Dokumenten in der Hilfe irgendwie ermöglichen?</font>
 
-<hr noshade/>
 
-::: {style="display: flex; justify-content: flex-end"}
-(<a href="#top">nach oben</a>)
+::: {.content-visible when-format="html"}
+<hr noshade/>
+<div style="display: flex; justify-content: flex-end">(<a href="#top">nach oben</a>)</div>
 :::
 
 ## Beispiele
@@ -46,13 +50,13 @@ Gliederung:
 
 Basierend auf den einem Erhebungsteil hinzugefügten *CBA ItemBuilder Tasks* in der Ansicht *Items* entspricht eine lineare Folge der *Tasks* der folgenden *Blockly*-Definition:
 
-![](img/screenshot-show-items-from-list-lds2003-01-example-DEU){width="500"}
+![](img/screenshot-show-items-from-list-lds2003-01-example-DEU.png){width="500"}
 
 Dem *Blockly*-Element *Show Items* wird eine Liste der *CBA ItemBuilder Tasks* übergeben, die mit dem Operator *erzeuge Liste mit* erstellt wird. Die Liste wird in der dargestellten Reihenfolge abgearbeitet, wobei jeder *CBA ItemBuilder Tasks* solange dargestellt wird, bis das `NEXT_TASK`- *Command* ausgeführt wird.
 
 Eine äquivalente Formulierung einer linearen Sequenz kann auch mit mehreren *Show Items*-Blücken erfolgen, wenn keine <a href="#anchor-back-navigation">Zurücknavigation</a> notwendig ist:
 
-![](img/screenshot-show-items-lds2003-01-example-simple-DEU){width="280"}
+![](img/screenshot-show-items-lds2003-01-example-simple-DEU.png){width="280"}
 
 <div id="anchor-example-blockly-simple-sequence-01"/>
 

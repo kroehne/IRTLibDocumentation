@@ -53,7 +53,9 @@ format:
     theme: cosmo
     css: styles.css
     toc: true
-
+    link-external-icon: true
+    link-external-newwindow: true
+    
 lang: en
 
 editor: visual

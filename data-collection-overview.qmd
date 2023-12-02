@@ -13,7 +13,7 @@ lang: en
 
 Nachdem eine Studienkonfiguration mit dem *IRTlib-Editor* vorbereitet wurde, muss zunächst eine finalisierte *Version* erstellt werden. Versionen *versiegeln* und vervollständigen alle Konfigurationen und haben eine eindeutige Versionsnummer (bezeichnet als *Revision*). Die Verwendung von *Revisionen* macht die Durchführung von Datensammlungen mit dem *IRTlib-Editor* und *IRTlib-Player* reproduzierbar, da die Revisionsnummer einer Konfiguration auch in den Datensätzen gespeichert wird.
 
-* **Konfigurationen Prüfen**: Vor der Fertigstellung und dem *Versiegeln* einer Version ist es ratsam, alle Einstellungen noch einmal zu überprüfen. Der *IRTlib-Editor* stellt dafür eine zusätzliche Funktion der *Validierung* zur Verfügung. Eine Checkliste der zu prüfenden Einstellungen findet sich [hier]().
+* **Konfigurationen Prüfen**: Vor der Fertigstellung und dem *Versiegeln* einer Version ist es ratsam, alle Einstellungen noch einmal zu überprüfen. Der *IRTlib-Editor* stellt dafür eine zusätzliche Funktion der *Validierung* zur Verfügung. Eine Checkliste der zu prüfenden Einstellungen findet sich im Abschnitt [Datenerhebung > Veröffentlichen & Export](data-collection-publish-and-export.html#checkliste-vor-dem-veröffentlichen).
 
 * **Versiegelte Version Erstellen**: Wenn keine weiteren Änderungen erforderlich sind, kann die Version *versiegelt* werden. Weitere Details dazu finden sich [hier]().
 

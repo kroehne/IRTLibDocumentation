@@ -8,6 +8,9 @@ format:
 
 ## Help Requested
 
+::: callout-note
+The software has been designed so that it can also be translated into other languages. If you would like to support us in this, please [contact](about.qmd) us.
+:::
 
 ## Current Translations
 
@@ -28,9 +31,22 @@ format:
 | --- | ---- | --- | --- | 
 |`*IRTlib Player*` | *IRTlib Player* | *IRTlib Player* | |
 |`*IRTlib Editor*` | *IRTlib Editor* | *IRTlib Editor* | |
-|`*Studien*` | *Studies* | *Studien* | |
+|`*IRTlib Software*` | *IRTlib Software* | *IRTlib Software* | |
+|`Offline-*IRTlib Player*` | Offline-*IRTlib Player*| Offline-*IRTlib Player* | |
+|`Online-*IRTlib Player*` | Online-*IRTlib Player*| Online-*IRTlib Player* | |
+|`*Studie*` | *Study* | *Studie* | |
+|`*Erhebungsteil*` | *Study Part    * | *Erhebungsteil* | |
 |`*Einstellungen*` | *Settings* | *Einstellungen* | |
 |`*Testleitermenü*` | *Session Menu* | *Testleitermenü* | |
+|`*Bearbeitungszeit*` | *Completion time* | *Bearbeitungszeit* | |
+|`*Bearbeitungszeit begrenzen*` | *Restrict time allowed* | *Bearbeitungszeit begrenzen* | |
+|`*Studienversion*` | *Study version* | *Studienversion* | |
+|`*Revision*` | *Revision* | *Revision* | |
+|`*Vorspann-Item(s)*` | *Prolog Item(s)* | *Vorspann-Item(s)* | |
+|`*Nachspann-Items(s)*` | *Epilog Item(s)* | *Nachspann-Items(s)* | |
+|`*Testleiter*` | *Test Administrator* | *Testleiter* | |
+|`*CBA ItemBuilder*-Items` | *CBA ItemBuilder*-Items | *CBA ItemBuilder*-Items | |
+|`*Docker*-Container` | *Docker*-Container | *Docker*-Container | |
 
 
 

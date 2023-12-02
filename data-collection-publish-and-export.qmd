@@ -9,6 +9,10 @@ lang: en
 
 # Datenerhebungen
 
+Die Konfiguration von *Studien* und den darin enthaltenen *Erhebungsteil(en)* erfolgt im *IRTlib Editor* und wird innerhalb des Editors gespeichert, wenn das Disketten-Symbol unten rechts geklickt wird.
+
+Damit zu jeder Zeit eindeutig benennbar ist, mit welcher Konfiguration einer *Studie* eine Datenerhebung durchgeführt wird, muss die Konfiguration vor der Übertragung an einen *IRTlib Player* versiegelt werden. Das geschieht in der Ansicht *Veröffentlichen* einer Studie, in welcher die *Studienversionen* aufgelistet werden:
+
 ## Checkliste vor dem Veröffentlichen
 
 * Ist ein *Testleitermenü* konfiguriert, mit welchem die Anwendung beendet werden kann? Wenn im Offline *IRTlib Player* der Kiosk-Modus aktiviert ist, kann das Beenden der Anwendung ohne konfiguriertes *Testleitermenü* schwierig bzw. unmöglich sein. 
