@@ -1,0 +1,9 @@
+---
+format:
+  html:
+    embed-resources: true
+    minimal: true 
+    toc: false
+---
+
+(Diese Funktionalität ist gerade noch in *Entwicklung*.)

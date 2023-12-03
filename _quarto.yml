@@ -11,9 +11,7 @@ format:
   html:
     theme: cosmo
     css: styles.css
-    toc: true 
-    link-external-icon: true
-    link-external-newwindow: true
+    toc: false  
     
 profile:
   default: language

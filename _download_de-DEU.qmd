@@ -1,0 +1,45 @@
+# Download & Installation
+
+Die *IRTlib*-Software wird für die Offline-Nutzung (Windows) und für die Online-Nutzung (Docker Container) bereitgestellt.
+
+## Offline (Windows)
+
+Die *IRTlib*-Software (*IRTlib Editor* und *IRTlib Player*) für die Offline-Nutzung kann aus dem Abschnitt [Releases] des Repository <https://github.com/DIPFtba/IRTlibDeploymentSoftware> bezogen und heruntergeladen werden.
+
+Im Abschnitt [Releases](https://github.com/DIPFtba/IRTlibDeploymentSoftware/releases) stehen die beiden Archive `TestApp.Editor.Desktop.zip` und `TestApp.Player.Desktop.zip` zum Download bereit.
+
+::: callout-note
+Beachten Sie, dass der aktuellste Build im Abschnitt [Preview](https://github.com/DIPFtba/IRTlibDeploymentSoftware/releases/tag/preview-231025) des *Release*-Abschnitts des [repository](https://github.com/DIPFtba/IRTlibDeploymentSoftware/releases) zu finden ist.
+:::
+
+::: callout-warning
+Die automatisch erstellten Vorschauversionen des *IRTlib Editors* und *IRTlib Players* sind nicht signiert. Eine Warnmeldung des Betriebssystems muss akzeptiert werden, bevor die Programme ausgeführt werden können.
+:::
+
+### Studienvorbereitung mit Offline Editor
+
+Der *IRTlib Editor* für die Offline-Nutzung wird als ZIP-Archiv (z.B. `TestApp.Editor.Desktop.zip`) bereitgestellt, das entpackt werden muss. Nach dem Entpacken des Editors kann die Anwendung `TestApp.Editor.Desktop.exe` auf einem Windows-Gerät gestartet werden.
+
+In den Abschnitten [Vorbereitung > Übersicht](preparation-overview.qmd), [Vorbereitung > Studien](preparation-studies.qmd) und [Vorbereitung > Erhebungsteile](preparation-parts.qmd) ist dokumentiert, wie man mit Hilfe von *CBA ItemBuilder*-Items Datenerhebungen vorbereitet und konfiguriert.
+
+### Studiendurchführung mit Offline Player 
+
+Der *IRTlib Player* ist auch als Windows-Anwendung für die Offline-Nutzung verfügbar und wird als ZIP-Archiv (z.B. `TestApp.Player.Desktop.zip`) bereitgestellt. Nach dem Entpacken des *IRTlib Player* ist eine veröffentlichte Studienkonfiguration erforderlich, die zur Datenerhebung verwendet werden soll.  
+
+Nach dem Hinzufügen der als Studienkonfiguration bereitgestellten Inhalte einer veröffentlichten Studie kann die ausführbare Datei `TestApp.Player.Desktop.exe` gestartet werden (entweder mit oder ohne Startparameter). 
+
+* **Kiosk Mode**: Der *IRTlib Player* kann über die ausführbare Datei `TestApp.Player.Desktop.exe` auf dem Computer, auf dem er lokal ausgeführt wird, direkt zur Datenerhebung verwendet werden. Die *Studie* kann dazu so konfirugiert werden, dass es in einem *Kiosk Mode* auf einem Bildschirm angezeigt wird und nur über den *Task Manager* oder das *Testleitermenü* beendet werden kann (siehe *Vollbildmodus* im Abschnitt [Konfiguration zur Anzeige](preparation-studies.html#konfiguration-zur-anzeige)).
+
+* **Lokaler Server**: Der *IRTlib Player* kann aber auch als lokaler Server ausgeführt werden. Nach dem Start des Programms `TestApp.Player.Server.exe` kann eine konfigurierte *Studie* auch über *Webbrowser* oder andere Browser mit *Kiosk Mode* ausgeliefert werden (z.B. den [Safe Exam Browser](https://safeexambrowser.org/)). Mit dieser Konfiguration lassen sich Datenerhebungen bspw. in Schulen ohne Internetverbindung aber mit einem als *Bring-in*-Server fungierenden Notebook durchführen.
+
+In den Abschnitten [Datenerhebung > Übersicht](data-collection-overview.qmd), [Datenerhebung > Veröffentlichen & Export](data-collection-publish-and-export.qmd) und [Datenerhebung > Integration & Auslieferung](data-collection-player-integration.qmd) ist dokumentiert, wie man mit Hilfe des *IRTlib Players* in den unterschiedlichen Konstellationen Datenerhebungen durchführen kann. 
+
+## Online (Docker)
+
+Die *IRTlib*-Software (*IRTlib Editor* und *IRTlib Player*) für die Online-Nutzung kann als *Docker*-Container bezogen werden. Ein Beispiel ist unter <https://github.com/DIPFtba/IRTlibDeploymentSoftware> zu finden. 
+
+Um den Docker-Container zu verwenden, wird empfohlen, das Repository auf dem Zielgerät auszuchecken (erfordert git) und den Befehl `./start.sh` im Ordner `docker` auszuführen (erfordert installiertes `docker` und `docker compose`), um die Software zu starten.
+
+Wenn in der Datei `docker-compose.yml` nichts geändert wird, ist der Editor über Port *8002* und die Player-Software über Port *8001* erreichbar.
+
+In dem Abschnitt [Datenerhebung > Integration & Auslieferung](data-collection-player-integration.qmd) finden sich weitere Informationen zur Verwendung der *Docker*-Container. 

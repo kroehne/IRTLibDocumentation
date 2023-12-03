@@ -3,12 +3,10 @@ project:
   output-dir: ./_site/en
 
 website:
-  title: "IRTlib Documentation"
+  title: "Home | IRTlib"
   navbar:
-    left:
-      - href: index.qmd
-        text: Home 
-      - href: installation.qmd
+    left: 
+      - href: download.qmd
         text: Download
       - text: Preparation
         menu:

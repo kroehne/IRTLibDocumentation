@@ -1,0 +1,78 @@
+---
+format:
+  html:
+    embed-resources: true
+    minimal: true 
+    toc: false
+---
+
+### Anzeigeeinstellungen 
+
+Für die Konfiguration der Anzeige stehen ausgewählte Optionen zur Verfügung, die sich auf die Darstellung der Assessmentinhalte und die Verwendung von *CBA ItemBuilder*-Inhalten beziehen, welche mit einem festgelegten Seitenverhältnis (Breite und Höhe) erstellt werden.
+
+#### Fenstermodus 
+
+In der Auswahl **Fenstermodus** kann konfiguriert werden, ob ein zusätzliches Fenster im *IRTlib Player* angezeigt wird. Die Konfiguration wird je nach Umgebung unterschiedlich umgesetzt: 
+
+*  *Window*: In diesem *Fenstermodus* wird im Offline-*IRTlib Player* ein reguläres Programmfenster verwendet, im Online-*IRTlib Player* wird der Assessmentinhalt im normalen Browserbereich angezeigt, und die Adressleiste und die Navigationsschaltflächen des Browsers sind in diesem Modus sichtbar. 
+
+> ![](img/screenshot-window-mode-example-offline-player-01.png){width="80%"}
+
+* *Vollbild*: Der Offline-*IRTlib Player* startet direkt im Vollbildmodus, wenn diese Option konfiguriert ist. Damit verbunden ist auch ein *Kiosk-Modus*, d.h. der Zugriff auf andere Programme und das (versehentliche) Beenden des Programms ist nur über den *Task Manager* möglich. Soll die Möglichkeit zum Beenden der Testung bspw. für einen Testleiter möglich sein, muss ein *Testleitermenü* konfiguriert sein. 
+
+> Der Online-*IRlLib Player* kann Assessmentinhalte auch im Vollbildmodus an, wenn diese Option gewählt ist. Wird der Vollbildmodus im Browser verlassen, wird dann der Assessmentinhalt ausgeblendet. Da automatisiert nicht in einem Browser in den Vollbildmodus gewechselt werden kann, sieht die Zielperson zunächst folgende Nachricht der Plattform:
+
+> ![](img/screenshot-irtlib-player-message-fullscreen-not-started-DEU.png){width="80%"}
+
+> Durch klick auf den Button *Vollbild Aktivieren* wird der Vollbildmodus gestartet und der Assessmentinhalt dann ohne Fensterrahmen und Navigationsflächen des Browsers dargestellt. Für kurze Zeit wird dann von den Browser typischerweise ein Hinweis eingeblendet dass mit `Esc`der Vollbildmodus wieder beendet werden kann. 
+
+> ![](img/screenshot-irtlib-player-message-fullscreen-notification-DEU.png){width="80%"}
+
+
+> Beachten Sie, dass diese Funktion nur in Browsern zur Verfügung steht, die den Vollbildmodus unterstützen (insbesondere auf älteren mobilen Geräten wird der Vollbildmodus nicht vollständig unterstützt; siehe für Details z.B. auf [caniuse.com](https://caniuse.com/?search=fullscreen)).
+
+* *Vollbild, wenn unterstützt*: In diesem Modus wird das Assessment im Online-*IRTlib Player* nur dann im im Vollbildmodus angezeigt, wenn der Browser den Vollbildmodus unterstützt.  Der Inhalt des computerbasierten Assessments wird jedoch im Fenstermodus angezeigt, wenn eine Studie online bereitgestellt wird und ein Browser verwendet wird, der den Vollbildmodus nicht unterstützt. Für den *IRlLib Player* offline ist diese Konfiguration identisch mit *Vollbild*. 
+
+> ![](img/screenshot-irtlib-player-message-fullscreen-not-supported-DEU.png){width="80%"}
+
+* *Debug*: Dieser Modus ermöglicht während der Testausführung den Zugriff auf die Entwicklerwerkzeuge des Browsers, die für die Fehlersuche von Softwareentwicklern vorgesehen sind.
+
+> Wennd der Offline-*IRTlib Player* mit einer Studie gestartet wird, welche als *Festermodus* den Eintrag *Debug* konfiguriert hat, dann lassen sich über die rechte Maustaste während der Aufgabenpräsentation die sogenannten Entwickertools (*DevTools*) abrufen.
+
+> ![](img/screenshot-debug-view-dev-tools-example-01.png){width="80%"}
+ 
+### Skalierung und Ausrichtung
+
+Assessmentinhalte, die mit dem *CBA ItemBuilder* erstellt werden, werden für eine konkrete Größe in Pixeln (Breite mal Höhe) erstellt. Für die Darstellung auf Geräten mit unterschiedlichen Bildschirmgröße und Bildschirmauflösungen können die Inhalte dann skaliert werden. Im *CBA ItemBuilder* stehen deshalb in der *Preview* die Optione unter *Scaling Options* zur Verfügung: 
+
+> ![](img/screenshot-cba-itembuilder-preview-scaling-mode-01.png){width="200"}
+ 
+Im *IRTlib Editor* können analoge Einstellung vorgenommen werden.
+ 
+* **Skalierung**: Einstellung wie Inhalte angepasst werden sollen, wenn verfügbarer Platz und Größe der Items abweichen (*Scaling Mode*). 
+
+  - *keine*: Die Inhalte werden ohne Anpassung an die verfügbare Fenster- bzw. Bildschirmgröße angezeigt (entspricht `None`).
+  - *hochskalieren*: Inhalte werden vergrößert, damit der verfügbare Platz ausgenutzt wird (entspricht `Up`).
+  - *runterskalieren*: Inhalte werden verkleinert, damit sie auf den Bildschirm/ins Fenster passen (entspricht `Down`).
+  - *Fenstergröße*: Inhalte werden vergrößert und verkleinert (entspricht `Both`).
+
+* **Horizontale Ausrichtung**: Die Optionen *zentriert* / *links* / *rechts* werden genutzt um Iteminhalte horizontal auszurichten, wenn die Breite von Fenster oder Bildschirm größer ist als die Breite des Inhalts.
+
+* **Vertikale Ausrichtung**: Die Optionen *zentriert* / *oben* / *unten* werden genutzt um Iteminhalte vertikal auszurichten, wenn die Höhe von Fenster oder Bildschirm größer ist als die Höhe des Inhalts.
+
+#### Weitere Einstellungen
+
+*  **Passende Bildschirmgröße erzwingen**: Wenn bei *Skalierung* nicht *runterskalieren* oder *Fenstergröße* ausgewählt ist, kann über diese Option erzwungen werden, dass man nur dann mit der Aufgabenbearbeitung starten kann, wenn die verfügbare Größe des Fensters bzw. Bildschirms größer ist als die benötigte Breite/Höhe der Items. Andernfalls wird folgende Nachricht angezeigt: 
+
+> ![](img/screenshot-irtlib-player-message-resolution-too-low-DEU.png){width="80%"}
+ 
+
+<hr/>
+
+Hinweis: Die Einstellungen zur Anzeige beziehen sich auf alle *Erhebungsteile* innerhalb einer *Studie*. Werden in einem *IRTlib-Player* mehrere Studien konfiguriert, müssen die Einstellungen zueinander passen, d.h. es ist nicht mögliche mit einer Instanz eines *IRTlib-Players* gleichzeitig eine Studie im *Fenstermodus: Fenster* oder im *Fenstermodus: Vollbild* zu adminsitrieren.
+
+<hr/>
+
+Wenn geänderte Einstellungen erhalten bleiben sollen müssen die Änderungen über das Disketten-Symbol gespeichert werden. Andernfalls kann das Verwerfen-Symbol verwendet werden:
+
+![](img/screenshot-icons-undo-and-save-01.png){width="120" fig-align="left"}

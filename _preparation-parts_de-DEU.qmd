@@ -1,0 +1,145 @@
+# Vorbereitung: Erhebungsteile
+
+Assessments, die mit der *IRTlib Software* administriert werden bestehen aus sogenannten *Erehebungsteilen*. Nach der Konfiguration einer  <a href="preparation-studies.qmd">Studie</a> muss zumindest ein *Erhebungsteil* angelegt werden.
+
+## Erhebungsteilverwaltung
+
+Nach dem Erstellen einer *Studie* erfolgt in der Ansicht *Erhebungsteile* als nächster Schritt zur Vorbereitung einer Testauslifierung das **Hinzufügen eines neuen Erhebungsteils**:
+
+{{< video https://youtu.be/YFgu8uz8nkc >}}
+
+Die erstellten *Erhebungsteile* erscheinen als Karten in der Ansicht *Erhebungsteile*. Wenn Studien aus mehreren Erhebunsteilen bestehen, kann für *lineare Abläufe* die Reihenfolge der Erhebungsteile in der Ansichht *Erhebungsteile* / *Übersicht* angepasst werden. Sollen *Erhebungsteile* in Abhängigkeit von Variablen (z.B. übergebene *Preload*-Variablen oder andere *Blockly*-Variablen gesteuert werden, kann alternativ ein <a href="preparation-parts.html#routing-zwischen-erhebungsteilen">Routing zwischen Erhebungsteilen</a> konfiguriert werden. 
+
+Eine detaillierte Anleitung zur Erstellung von *Erhebungsteilen* findet sich hier in der eingebetteten Hilfe:
+
+::: {.callout-tip collapse="true" title="Eingebettete Programmhilfe"}
+
+{{< include InlineHelp_View_Study_Part_Main_de-DEU.qmd >}}
+
+::: 
+
+Die Reihenfolge von *Erhebunsteilen* kann in der Ansicht *Erhebungsteile* verändert werden: 
+
+{{< video https://youtu.be/Ag0IcETZTdM >}}
+
+Vor dem Hinzufügen bzw. Auswählen von CBA ItemBuilder Projekten, sie im Abschnitt <a href="#assessmentinhalte-items">Assessmentinhalte (Items)</a> beschrieben, können in der Ansicht *Info* ausgewählte Eintsellungen konfiguriert werden.
+
+Eine detaillierte Beschreibung der findet sich hier in der eingebetteten Hilfe:
+
+::: {.callout-tip collapse="true" title="Eingebettete Programmhilfe"}
+
+{{< include InlineHelp_View_Study_Parts_Info_Overview_de-DEU.qmd >}}
+
+:::
+
+Das Hinzufügen und Verwalten von CBA ItemBuilder Projekte innerhalb des *IRTlib-Editors* erfolgt im Abschnitt <a href="#assessmentinhalte-items">Items</a>. 
+
+::: {.callout-caution collapse="true" title="Hinweis zur Zeitbegrenzung"}
+Für die Administration von zeitbegrenzten Erhebungsteilen kann unter <a href="#preparation-parts.html#bearbeitungszeit-items">Bearbeitungszeit</a> ein Zeitlimit definiert werden. Wenn die Option *Bearbeitungszeit begrenzen* aktiviert ist, können ein oder mehere *Tasks* definiert werden, welche bei einem *Timeout* angezeigt werden. Außerdem können im Abschnitt <a href="#vorspann-nachspann-items">Vorspann-Items(s)</a> und <a href="#vorspann-nachspann-items">Nachspann-Item(s)</a> Inhalte definiert werden, welche vor bzw. nach dem zeitbegrenzten Teil administriert werden. 
+:::
+
+## Assessmentinhalte (Items) Einfügen
+
+Die Inhalte, welche in einem Erhebungsteil vom Typ *CBA ItemBuilder* verwendet werden sollen, werden über den *IRTlib Editor* in die Konfiguration übernommen, d.h. die mit dem *IRTlib Editor* erstellte Konfiguration enthält auch die *CBA ItemBuilder* *Project Files*. Für das Hinzufügen oder Aktualisierung von *CBA ItemBuilder* Projekten  steht die Ansicht *Items* zur Verfügung.
+
+Eine detaillierte Beschreibung der findet sich hier in der eingebetteten Hilfe:
+
+
+::: {.callout-tip collapse="true" title="Eingebettete Programmhilfe"}
+
+{{< include InlineHelp_View_Study_Parts_Items_de-DEU.qmd >}}
+ 
+:::
+
+## Bearbeitungszeit
+
+Wenn die Administration einer linearen Folge von  *CBA ItemBuilder* *Tasks* mit einer begrenzten Bearbeitungszeit administriert werden sollen, lässt sich dies durch Definieren einer maximalen Bearbeitungszeit (in Sekunden) umsetzen. Soll bspw. ein Testinhalt maximal *28* min. administriert werden, wird als *Bearbeitungszeit* eine Zeit von *1680* Sekunden definiert. Die Nachricht, welche beim Ablaufen der Bearbeitungszeit angezeigt werden soll, lässt sich als ein (oder mehrere)  *CBA ItemBuilder* *Tasks* definieren. 
+
+Eine detaillierte Beschreibung der findet sich hier in der eingebetteten Hilfe:
+
+
+::: {.callout-tip collapse="true" title="Eingebettete Programmhilfe"}
+
+{{< include InlineHelp_View_Study_Parts_Info_Time_de-DEU.qmd >}}
+
+:::
+
+::: {.callout-caution title="Vorspann-/Nachspann-Items "}
+Ein zentrales Konzept für die Umsetzung von Zeitbegrenzungen in der *IRTlib Software* ist die Trennung der zeitbegrenzten Items, und zusätzlicher Assessmentinhalte, die *vor* oder *nach* dem zeitbegrenzten Teil administriert werden.
+
+:::
+
+* Items die *nach* einem potentiell Zeitbegrenzten Abschnitt eines Erhebugnsteils administriert werde, werden als *Nachspann-Items* bezeichnet. 
+
+::: {.callout-tip collapse="true" title="Eingebettete Programmhilfe"}
+
+{{< include InlineHelp_View_Study_Parts_Info_Epilog_de-DEU.qmd >}}
+
+:::
+
+* Items die *vor* einem potentiell Zeitbegrenzten Abschnitt eines Erhebugnsteils administriert werde, werden als *Vorspann-Items* bezeichnet.
+
+::: {.callout-tip collapse="true" title="Eingebettete Programmhilfe"}
+{{< include InlineHelp_View_Study_Parts_Info_Prolog_de-DEU.qmd >}}
+:::
+
+
+
+## Variablen
+
+::: {.callout-important title="Under Development"}
+Diese Funktion ist gerade in Entwicklung. 
+:::
+
+::: {.callout-tip collapse="true" title="Eingebettete Programmhilfe"}
+{{< include InlineHelp_View_Study_Parts_Variables_de-DEU.qmd >}}
+:::
+
+
+## Codebook
+
+::: {.callout-important title="Under Development"}
+Diese Funktion ist gerade in Entwicklung. 
+:::
+
+
+::: {.callout-tip collapse="true" title="Eingebettete Programmhilfe"}
+{{< include InlineHelp_View_Study_Parts_Codebook_de-DEU.qmd >}}
+:::
+  
+
+
+## ItemPool
+
+::: {.callout-important title="Under Development"}
+Diese Funktion ist gerade in Entwicklung. 
+:::
+
+::: {.callout-tip collapse="true" title="Eingebettete Programmhilfe"}
+{{< include InlineHelp_View_Study_Parts_ItemPool_de-DEU.qmd >}}
+:::
+    
+## Routing innerhalb von Erhebungsteilen
+
+Wenn *CBA ItemBuilder*-Tasks nicht in einer lineare Abfolge administriert werden sollen, die im Vorhinein festteht und für alle Testpersonen identisch ist, dann kann die Funktion *Routing* der *IRTlib Software* verwendet werden. 
+
+Eine detaillierte Beschreibung zum *Routing innerhalb von Erhebungsteilen* findet sich hier in der eingebetteten Hilfe:
+
+::: {.callout-tip collapse="true" title="Eingebettete Programmhilfe"}
+{{< include InlineHelp_View_Study_Parts_Routing_de-DEU.qmd >}}
+::: 
+
+
+## Routing zwischen Erhebungsteilen
+
+Wenn mehrere *Erhebungsteile* für eine *Studie* definiert sind kann die Abfolge von Erhebungsteilen definiert werden, in welcher Befragte oder Testpersonen die Inhalte der *Erhebungsteile* präsentiert bekommen. 
+
+Neben einfachen linearen Abläufen können Abläufe von mehreren Erhebungsteilen auch mit eine *Blockly*-basierten Routing konfiguriert werden. 
+
+Eine detaillierte Beschreibung zum *Routing zwischen Erhebungsteilen* findet sich hier in der eingebetteten Hilfe:
+
+::: {.callout-tip collapse="true" title="Eingebettete Programmhilfe"}
+{{< include InlineHelp_View_Study_Routing_de-DEU.qmd >}}
+::: 
+ 
+

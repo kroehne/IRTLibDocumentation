@@ -1,0 +1,55 @@
+# Einführung
+
+*IRTlib* ist eine Software zur Auslieferung computerbasierter Tests. Sie besteht aus zwei Komponenten:
+
+-   *IRTLib Editor*: Eine Software für Test-Autoren, welche verwendet wird um *Studien* zu konfigurieren.
+-   *IRTlib Player*: Eine Software zur *Datenerhebung*, mit welcher Zielpersonen Aufgaben bearbeiten, die für eine *Studie* konfiguriert sind.
+
+Hinweise zur Installation und Einrichtung beider Programme zur ersten Verwendung finden sich unter [Download](download.qmd).
+
+<hr noshade/>
+
+::: {.grid}
+
+::: {.g-col-9}
+
+Vor der Verwendung der *IRTlib Software* zur Konfiguration und Erstellung von Auslieferungen, können mit dem <a href="https://tba.dipf.de/de/infrastruktur/softwareentwicklung/cba-itembuilder">CBA ItemBuilder</a> die Assessmentinhalte in Form von einzelnen Tasks erstellt werden. 
+
+Der *CBA ItemBuilder* kann hier heruntergeladen werden: [www.itembuilder.de/software](https://www.itembuilder.de/software)
+
+Die interaktive Dokumentation des *CBA ItemBuilder* ist hier zugänglich: [cba.itembuilder.de](https://cba.itembuilder.de)
+
+:::
+
+::: {.g-col-3}
+
+::: {.content-visible when-format="html"}
+[![CBA ItemBuilder Dokumentation (PDF)](https://cba.itembuilder.de/img/cover_html.png){wdith="70"}](https://cba.itembuilder.de/Open-Assessments-with-CBA-ItemBuilder.pdf)
+:::
+
+:::
+
+:::
+
+::: {.content-visible when-format="html"}
+<hr noshade/>
+
+::: {.grid}
+::: {.g-col-9}
+
+Für die Verwendung der *IRTlib Software* ist eine kontext-sensitive [Programmhilfe](preparation-overview.qmd#sec-embedded-help) direkt in die Anwendung hinterlegt. Die Dokumentation mit der eingebetteten Hilfe ist auf dieser Seite online verfügbar und steht auch als <a href="IRTlib-Software.pdf">PDF</a> zur Verfügung. 
+
+:::
+
+::: {.g-col-3}
+
+[![IRTlib Software Dokumentation (PDF)](img/irtlib-cover.png){wdith="70"}](IRTlib-Software.pdf)
+
+:::
+
+:::
+<hr noshade/>
+
+:::
+
+Die Entwicklung vom *CBA ItemBuilder* und der *IRTlib Software* wird vom [Zentrum für technologiebasiertes Assessment (TBA)](https://tba.dipf.de/de/ueber-tba/) am [DIPF | Leibniz-Institut für Bildungsforschung und Bildungsinformation](https://www.dipf.de/) koordiniert.  

@@ -9,9 +9,14 @@ namespace ResxFileCreator
     {
         static void Main(string[] args)
         {
+            /* Argument 1: Base Path
+             * Argument 2: Output Path
+             * Argument 3: Branch Name
+             * Argument 4: Gith Hash
+             */
 
             if (args.Length == 0)
-                args = new string[] { "/Users/kroehne/Documents/work/github/IRTLibDocumentation/_site/help/", "/Users/kroehne/Documents/work/github/IRTLibDocumentation/_site/", "branch", "hash" };
+                args = new string[] { "/Users/kroehne/Documents/work/github/IRTLibDocumentation/_site/", "/Users/kroehne/Documents/work/github/IRTLibDocumentation/_site/", "branch", "hash" };
 
             for (int i = 0; i < args.Length; i++)
                 Console.WriteLine("Argument " + i + ": " + args[i]);
@@ -22,7 +27,7 @@ namespace ResxFileCreator
             ResXResourceWriter resx_de_DEU = new ResXResourceWriter(Path.Combine(outputPath, "Help.de-DE.resx"));
             ResXResourceWriter resx_en_US = new ResXResourceWriter(Path.Combine(outputPath, "Help.en-US.resx"));
 
-            var _files = Directory.GetFiles(basePath);
+            var _files = Directory.GetFiles(basePath, "InlineHelp*.html");
             foreach (var _f in _files)
             {
                 string _filename = Path.GetFileNameWithoutExtension(_f);

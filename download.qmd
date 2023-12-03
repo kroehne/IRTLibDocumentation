@@ -1,0 +1,9 @@
+---
+format:
+  html:
+    embed-resources: true
+---
+
+\let\clearpage\standardclearpage
+
+{{< include _download_de-DEU.qmd >}}

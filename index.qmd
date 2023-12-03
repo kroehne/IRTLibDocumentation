@@ -1,134 +1,25 @@
 ---
 format:
   html:
-    embed-resources: true
+    embed-resources: true 
+    toc: false    
 ---
 
-::: {.content-visible when-profile="german"}
+\let\standardclearpage\clearpage
+\let\clearpage\relax 
 
-# IRTlib Dokumentation
-
-*IRTlib* ist eine Software zur Auslieferung computerbasierter Tests. Sie besteht aus zwei Komponenten:
-
--   *IRTLib Editor*: Eine Software für Test-Autoren, welche verwendet wird um *Studien* zu konfigurieren.
--   *IRTlib Player*: Eine Software zur *Datenerhebung*, mit welcher Zielpersonen Aufgaben bearbeiten, die für eine *Studie* konfiguriert sind.
-
-Die Software enthält ausführliche Dokumentation direkt im Programm, die auf dieser Seite zugänglich ist.
-
-Die Software kann direkt aus dem [IRTlibDeploymentSoftware](https://github.com/DIPFtba/IRTlibDeploymentSoftware)-Repository bezogen werden. 
-
-Hinweise zur Installation und Einrichtung beider Programme zur ersten Verwendung finden sich unter [Download](installation.qmd).
-
-<hr noshade/>
-
-::: {.grid}
-
-::: {.g-col-9}
-
-Vor der Verwendung der *IRTlib Software* zur Konfiguration und Erstellung von Auslieferungen, können mit dem <a href="https://tba.dipf.de/de/infrastruktur/softwareentwicklung/cba-itembuilder">CBA ItemBuilder</a> die Assessmentinhalte in Form von einzelnen Tasks erstellt werden. 
-
-Der *CBA ItemBuilder* kann hier heruntergeladen werden: <a href="https://www.itembuilder.de/software">https://www.itembuilder.de/software</a>
-
-Die interaktive Dokumentation des *CBA ItemBuilder* ist hier zugänglich: <a href="https://cba.itembuilder.de">https://cba.itembuilder.de/</a>
-
+:::{.content-visible when-profile="german"}
+{{< include _index_de-DEU.qmd >}}
 :::
-
-::: {.g-col-3}
-
-[![CBA ItemBuilder Dokumentation (PDF)](https://cba.itembuilder.de/img/cover_html.png){wdith=80}](https://cba.itembuilder.de/Open-Assessments-with-CBA-ItemBuilder.pdf)
-
-
+:::{.content-visible when-profile="germanbook"}
+{{< include _index_de-DEU.qmd >}}
 :::
-
-
+:::{.content-visible when-profile="english"}
+(No translation available yet.)
 :::
-
-
+:::{.content-visible when-profile="englishbook"}
+(No translation available yet.)
 :::
-
-::: {.content-visible when-profile="english"}
-
-
-# IRTlib Documentation
-
-*IRTlib* is a software for the delivery of computer-based tests. It consists of two components:
-
-- *IRTLib Editor*: A software for test authors, which is used to configure *studies*.
-- *IRTlib Player*: A *data collection* software used by test-takers to complete tasks configured for a *study*.
-
-The software contains detailed documentation directly in the program, which is accessible on this page.
-
-The software can be obtained directly from [https://github.com/DIPFtba/IRTlibDeploymentSoftware](https://github.com/DIPFtba/IRTlibDeploymentSoftware). 
-
-Instructions for installing and setting up both programs for first use can be found at [Download](installation.qmd).
-
-<hr noshade/>
-
-::: {.grid}
-
-::: {.g-col-9}
-
-Before using the *IRTlib Software* to configure and create deployments, the assessment content can be created in the form of individual tasks using the <a href="https://tba.dipf.de/de/infrastruktur/softwareentwicklung/cba-itembuilder">CBA ItemBuilder</a>. 
-
-The *CBA ItemBuilder* can be downloaded here: <a href="https://www.itembuilder.de/software">https://www.itembuilder.de/software</a>
-
-The interactive documentation of the *CBA ItemBuilder* is available here: <a href="https://cba.itembuilder.de">https://cba.itembuilder.de/</a>
-
+:::{.content-visible when-profile="language"}
+{{< include _index_language.qmd >}}
 :::
-
-::: {.g-col-3}
-
-[![CBA ItemBuilder Documentation (PDF)](https://cba.itembuilder.de/img/cover_html.png){wdith=80}](https://cba.itembuilder.de/Open-Assessments-with-CBA-ItemBuilder.pdf)
-
-
-:::
-
-
-:::
-
-:::
-
-
-::: {.content-visible when-profile="language"}
-
-<h1>IRTlib Software</h1>
-
-::: {.grid}
-
-::: {.g-col-6}
-
-*IRTlib* ist eine Software zur Auslieferung computerbasierter Assessments basierend auf Aufgaben, die mit dem <a href="https://cba.itembuilder.de">CBA ItemBuilder</a> erstellt wurden. Die Software erlaubt die Definition von flexiblen Abläufen unter Nutzung von visueller Programmierung und Funktionen der Item-Response Theoie (IRT). 
-:::
-
-::: {.g-col-6}
-*IRTlib* is a software for the delivery of computer-based assessments using tasks develope with the <a href="https://cba.itembuilder.de">CBA ItemBuilder</a>. The software allows the definition of flexible processes using visual programming and functions of the item-response theory (IRT). 
-:::
-
-
-:::
-
-
-
-![](img/irtlib-cover.png)
-
- 
-
-
-::: {.grid}
-
-::: {.g-col-6}
-
-[Dokumentation auf Deutsch](de/index.html)
-
-:::
-
-::: {.g-col-6}
-[English Documentation](en/index.html)
-
-:::
-
-
-:::
-
-:::
-

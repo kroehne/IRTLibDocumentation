@@ -5,89 +5,17 @@ format:
 lang: en    
 ---
 
-::: {.content-visible when-profile="german"}
+\let\clearpage\standardclearpage
 
-
-# Vorbereitung
-
-## Übersicht: Schritte zur Verwendung von *IRTlib Editor* für die Studienvorbereitung
-
-Die Vorbereitung eines computerbasierten Assessments auf der Grundlage von *CBA ItemBuilder*-Inhalten beginnt mit der Verwendung des *IRTlib-Editors* zur Erstellung einer Studienkonfiguration. Dies umfasst in der Regel die folgenden Schritte:
-
-::: {.callout-caution collapse="true"}
-## Optional
-
-- **Voraussetzung**: Überprüfen Sie die Verfügbarkeit der [Runtime](settings.qmd). Der *IRTlib Editor* kann zur Vorbereitung von Assessments mit im CBA ItemBuilder erstellten Inhalten verwendet werden. Für die Verwendung von CBA ItemBuilder *Tasks*, die in *Projektdateien* gespeichert sind, ist eine *Runtime* (d.h. die Dateien `main.*.js` und `main.*.css`) in der Version erforderlich, die genau der Version des CBA ItemBuilders entspricht, der zur Erstellung der Items verwendet wurde (z.B. `9.9.0`). Bevor Sie den *IRTLib-Editor* verwenden, vergewissern Sie sich, dass die erforderliche *Runtime* enthalten ist, oder importieren Sie die Runtime-Dateien (siehe Abschnitt [Einstellungen](settings.qmd) für Details).
-
-Hinweis: Für die Verwendung von CBA ItemBuilder-Items ab Version 9.9 ist dieser Schritt in der Regel nicht notwendig.
+:::{.content-visible when-profile="german"}
+{{< include _preparation-overview_de-DEU.qmd >}}
 :::
-
-- **Erstellen Sie eine neue "Studie "**: Der *IRTlib-Editor* wird verwendet, um sogenannte *Studien* zu konfigurieren. Die Version von Studien kann im Editor nachverfolgt werden, und Studien können veröffentlicht (d.h. für die Datenerfassung *versiegelt*) werden. Um mit dem *IRTlib-Editor* mit der Erstellung von Inhalten zu beginnen, muss zuerst eine Studie erstellt werden (siehe Abschnitt [Studien](preparation-studies.qmd) für Details).
-
-::: callout-note
-Beachten Sie, dass mindestens eine Studie im *IRTlib Editor* definiert sein muss, bevor eine Studienkonfiguration zur Datenerfassung mit einem *IRTlib Player* verwendet werden kann.
+:::{.content-visible when-profile="germanbook"}
+{{< include _preparation-overview_de-DEU.qmd >}}
 :::
-
-- **Basiskonfigurationen" für die Studie festlegen (Info)**: Zu den Basiskonfigurationen, die sich auf den Inhalt einer vorbereiteten Studie beziehen, gehören die Studienbezeichnung und -beschreibung, der Anmeldemodus, die Anzeigekonfiguration, das Menü für die Testadministratoren und die Angabe, wie nach Abschluss aller in einer Studie definierten Inhalte fortgefahren werden soll (siehe [hier](preparation-studies.html#konfiguration-von-studien) für weitere Einzelheiten).
-
-- **Erstellen Sie einen neuen "Erhebungsteil"**: Jede Studie besteht aus einem oder mehreren Umfrageteilen (siehe hier für Details). Teile werden als Segmente eines Assessments betrachtet, die zusammen verwaltet werden, wie z.B. Items aus einem bestimmten Bereich. Umfrageteile vom Typ "CBA ItemBuilder" können verwendet werden, um CBA ITemBuilder-Aufgaben in einer linearen Sequenz oder mit Blockly-basiertem Routing zu verwalten (siehe Routing über Umfrageteile hinweg für Details).
-
-::: callout-note
-Beachten Sie, dass jede Studie mindestens einen im *IRTlib Editor* definierten *Erhebungsteil* benötigt, bevor eine Studienkonfiguration zur Datenerhebung mit einem *IRTlib Player* verwendet werden kann.
+:::{.content-visible when-profile="english"}
+{{< include _preparation-overview_en-US.qmd >}}
 :::
-
-- **Grundeinstellungen" für Erhebungsteil konfigurieren (Info)**: Ein Erhebungsteil vom Typ *CBA ItemBuilder* basiert auf einer Menge von CBA ItemBuilder-Projekten. Jedes CBA ItemBuilder-Projekt benötigt mindestens einen *Task*, es werden aber auch Projekte mit mehreren *Tasks* unterstützt. Wenn CBA ItemBuilder Inhalte mit einem gemeinsamen Zeitlimit über *Tasks* hinweg administriert werden sollen, erlauben Erhebungsteil die Zuordnung von Aufgaben zu einer Struktur, die Assessmentinhalte unterscheidet, welche vor einem zeitlich begrenzten Abschnitt administriert werden (z.B. Instruktionen, im Abschnitt *Vorspann-Items*), Inhalte die nach einem zeitlich begrenzten Abschnitt administriert werden (z.B. Danksagung, im Abschnitt *Nachspann-Items*) und dazwischen liegende Aufgaben mit begrenzter Zeit (*Items*, siehe Abschnitt [Assessmentinhalte (Items)](preparation-parts.html#assessmentinhalte-items)).
-
-- **Bestimmen Sie "Kernaufgaben" (Items)**: Um die Definition eines Studienteils abzuschließen, müssen die CBA ItemBuilder-Aufgaben in den Abschnitt "Items" importiert werden. Standardmäßig wird davon ausgegangen, dass die Reihenfolge der CBA ItemBuilder-Aufgaben linear ist. Wenn jedoch das Routing für einen Studienteil aktiviert ist, kann das Blockly-basierte Routing (siehe Routing innerhalb von Studienteilen für Details) verwendet werden, um verschiedene Testdesigns zu implementieren (z. B. mehrere Hefte, mehrstufige Tests usw.).
-
-
-## Eingebettete Programhilfe
-
-Für die Verwendung des *IRTlib Editors* ist eine Programmhilfe direkt in die Anwendung integriert, welche über das kleine `?`-Symbol oben rechts eingeblendet werden kann. 
-
-![](img/screenshot-editor-embedded-help-de-DEU.png){width="100%"}
-
-::: {.callout-tip title="Embedded Help"}
-
-Die Inhalte dieser Hilfe-Seiten aus dem *IRTlib Editor* sind in diese *IRTlib Dokumentation* integriert und werden immer in diesem Rahmen mit der überschrift *Embedded Help* dargestellt. 
-
-:::
-
-
-:::
-
-::: {.content-visible when-profile="english"}
-
-# Preparation
-
-## Overview: Steps to use *IRTlib Editor* for Study Preparation
-
-Preparing a computer-based assessment based on CBA ItemBuilder items begins with using the *IRTlib Editor* to create a study configuration. This typically involves the following steps:
-
-::: {.callout-caution collapse="true"}
-## Optional
-
--   **Pre-requisite**: Check the availability of the [Runtime](settings.qmd). The *IRTlib Editor* can be used to prepare assessments using CBA ItemBuilder *Tasks*. Using CBA ItemBuilder *Tasks* are stored in *Project Files* require a *Runtime* (i.e., the files "main..js" and "main..css") in the version corresponding exactly to the version of the CBA ItemBuilder that was used to generate the items (e.g., 9.9.0). Before using the IRTLib editor, ensure the required *Runtime* is included or import the runtime files (see here for details).
-
-Note: This step is usually not necessary for the use of CBA ItemBuilder items from version 9.9.
-:::
-
--   **Create a new "Study"**: The *IRTlib Editor* is used to configure so-called *Studies*. The version of studies can be tracked in the editor, and studies can be published (i.e., sealed to be used for data collection). To start creating content using the *IRTlib Editor*, a study must be created first (see section [Settings](settings.qmd) for details).
-
-::: callout-note
-Note that at least one study must be defined in the *IRTlib Editor*, before a study configuration can be used to collect data with an *IRTlib Player*.
-:::
-
--   **Specify "Basic Configurations" for the Study (Info)**: Basic configurations that apply to the content of a prepared study include the study label and description, the login mode, the display configuration, the menu for test administrators and the specification how to continue after completing all content defined in a study (see section [Studies](preparation-studies.qmd) for details).
-
--   **Create a new "Survey-Part"**: Each study is composed of one or multiple survey parts (see here for details). Parts are considered segments of an assessment that are administered together, like items from a particular domain. Survey parts of type "CBA ItemBuilder" can be used to administer CBA ITemBuilder tasks in a linear sequence or with Blockly-based routing (see Routing Across Survey Parts for details).
-
-::: callout-note
-Note that each study neads at least one test-part defined in the *IRTlib Editor*, before a study configuration can be used to collect data with an *IRTlib Player*.
-:::
-
--   **Configure "Basic Settings" for Survey Part (Info)**: A study part of type "CBA ItemBuilder" is a set of CBA ItemBuilder projects that belong together. Each CBA ItemBuilder project requires at least one Task, but projects with multiple tasks are also supported. If items are administered with a common time limit, test parts allow for assigning tasks to a structure differentiating assessment content presented before a time-restricted section ("instructional items"), after a time-restricted section ("epilogue items"), and items in between with restricted time ("core items", see here).
-
--   **Define "Core Items" (Items)**: To finalize the definition of a study-part, the CBA ItemBuilder tasks must be imported in the section "Items". By default, the sequence of CBA ItemBuilder tasks is assumed to be linear. However, when routing is activated for a study part, Blockly-based routing (see Routing Within Survey Parts for details) can be used to implement various test designs (e.g., multiple booklets, multi-stage testing, etc.).
-
+:::{.content-visible when-profile="englishbook"}
+{{< include _preparation-overview_en-US.qmd >}}
 :::
