@@ -16,7 +16,9 @@ jobs:
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
-
+        with: 
+          tinytex: true 
+          
       - name: build application
         run: make all
          
@@ -43,7 +45,7 @@ jobs:
       - name: Run Tool 
         run: |      
            echo `ls $GITHUB_WORKSPACE/`            
-           $GITHUB_WORKSPACE/_tmp/html2resx $GITHUB_WORKSPACE/_site/help/ $GITHUB_WORKSPACE/_site/ ${GITHUB_REF##*/} $(git rev-parse --short "$GITHUB_SHA")
+           $GITHUB_WORKSPACE/_tmp/html2resx $GITHUB_WORKSPACE/_site/ $GITHUB_WORKSPACE/_site/ ${GITHUB_REF##*/} $(git rev-parse --short "$GITHUB_SHA")
            rm -r $GITHUB_WORKSPACE/_tmp/ 
 
       - name: Deploy
