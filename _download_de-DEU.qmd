@@ -1,13 +1,17 @@
-Die *IRTlib*-Software wird für die Offline-Nutzung (Windows) und für die Online-Nutzung (Docker Container) bereitgestellt.
+Die *IRTlib*-Software wird für die Offline-Nutzung (z.Zt. für Windows-Betriebssysteme) und für die Online-Nutzung (in Form von *Docker-Container*) bereitgestellt.
 
 ## Offline (Windows)
 
 Die *IRTlib*-Software (*IRTlib Editor* und *IRTlib Player*) für die Offline-Nutzung kann aus dem Abschnitt [Releases] des Repository <https://github.com/DIPFtba/IRTlibDeploymentSoftware> bezogen und heruntergeladen werden.
 
-Im Abschnitt [Releases](https://github.com/DIPFtba/IRTlibDeploymentSoftware/releases) stehen die beiden Archive `TestApp.Editor.Desktop.zip` und `TestApp.Player.Desktop.zip` zum Download bereit.
+Im Abschnitt [Releases](https://github.com/DIPFtba/IRTlibDeploymentSoftware/releases) stehen zwei ZIP-Archive zum Download bereit.
+
+* **`TestApp.Editor.Desktop.exe`**: Ist in `TestApp.Player.Desktop.zip`  und muss gestartet werden, umd den  *IRTlib Editor* zu verwenden. 
+
+* **`TestApp.Player.Desktop.exe`**: Ist in `TestApp.Editor.Desktop.zip` enthalten und muss gestartet werden, umd den  *IRTlib Player* zu verwenden. 
 
 ::: callout-note
-Beachten Sie, dass der aktuellste Build im Abschnitt [Preview](https://github.com/DIPFtba/IRTlibDeploymentSoftware/releases/tag/preview-231025) des *Release*-Abschnitts des [repository](https://github.com/DIPFtba/IRTlibDeploymentSoftware/releases) zu finden ist.
+Beachten Sie, dass der aktuellste Build im Abschnitt [Preview](https://github.com/DIPFtba/IRTlibDeploymentSoftware/releases/tag/preview-231025) des *Release*-Abschnitts des [repository](https://github.com/DIPFtba/IRTlibDeploymentSoftware/releases) zu finden ist. Preview-Versionen sind die aktuellsten Version der Software, nach der letzten veröffentlichten Version der *IRTlib Software*. Um reproduzierbare Ergebnisse zu erhalten, sollten immer veröffentlichte Versionen verwendet werden. 
 :::
 
 ::: callout-warning

@@ -4,7 +4,7 @@ format:
     embed-resources: false 
 ---
 
-# Vorbereitung Erhebungsteile / Preparation Study Parts
+# Vorbereitung: Erhebungsteile / Preparation: Study Parts
 
 \let\clearpage\standardclearpage
 

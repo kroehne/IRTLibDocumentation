@@ -3,7 +3,9 @@
 
 An diesem Manual mitgeholfen haben:
 
-* ...
+::: {.callout-important title="In Entwicklung"}
+* Überarbeitung, sprachliche Korrektur und Übersetzung der Anleitung sind gerade in Arbeit...
+:::
 
 
 ## Entwicklung

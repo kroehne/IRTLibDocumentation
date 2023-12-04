@@ -29,4 +29,4 @@ web:
 	quarto render --profile english	
   
 book: 
-	quarto render --profile englishbook	
+	quarto render --profile germanbook	

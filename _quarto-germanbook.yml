@@ -27,12 +27,17 @@ book:
       - settings.qmd
       - github.qmd      
       - about.qmd
-      
-format:
-  pdf:
-    documentclass: scrreprt
-    header-includes: |
-      \titlehead{\includegraphics[width=6in]{img/irtlib-cover.png}}  
+       
+format: 
+  html:
+    theme: cosmo
+  pdf: 
+    include-in-header: 
+       - "tex/general.tex"
+    include-before-body:
+       - "tex/pagestyle.tex"
+    toc: true
+    number-depth: 4
 
 lang: de       
 
