@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -187,8 +221,11 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#datenaufbereitung" id="toc-datenaufbereitung" class="nav-link" data-scroll-target="#datenaufbereitung">Datenaufbereitung</a>
   <ul class="collapse">
+  <li><a href="#datenabruf-mit-logfsm" id="toc-datenabruf-mit-logfsm" class="nav-link" data-scroll-target="#datenabruf-mit-logfsm">Datenabruf mit <code>LogFSM</code></a></li>
+  <li><a href="#datenabruf-über-die-kommandozeile" id="toc-datenabruf-über-die-kommandozeile" class="nav-link" data-scroll-target="#datenabruf-über-die-kommandozeile">Datenabruf über die Kommandozeile</a></li>
   <li><a href="#ergebnisdaten" id="toc-ergebnisdaten" class="nav-link" data-scroll-target="#ergebnisdaten">Ergebnisdaten</a></li>
   <li><a href="#log-daten" id="toc-log-daten" class="nav-link" data-scroll-target="#log-daten">Log-Daten</a></li>
+  <li><a href="#dateien-in-den-rohdatenarchiven" id="toc-dateien-in-den-rohdatenarchiven" class="nav-link" data-scroll-target="#dateien-in-den-rohdatenarchiven">Dateien in den <em>Rohdatenarchiven</em></a></li>
   </ul></li>
   </ul></li>
   </ul>
@@ -203,11 +240,215 @@ ul.task-list li input[type="checkbox"] {
 <h1>Datenerhebung: Datenaufbereitung / Data Collection: Data Post-Processing</h1>
 <section id="datenaufbereitung" class="level2">
 <h2 class="anchored" data-anchor-id="datenaufbereitung">Datenaufbereitung</h2>
+<p>Daten werden vom <em>IRTlib Player</em> in <em>Rohdatenarchiven</em> pro <em>Session</em> (d.h. pro Testdurchführung mit einer <em>Studie</em>) gespeichert. Die <em>Rohdatenarchive</em> sind ZIP-Archive, deren Dateinamen dem <em>Benutzernamen</em> oder dem <em>Universally Unique Identifier</em> (UUID) entsprechen. Abweichungen von diesem Schema sind möglich, wenn zum Zeitpunkt der Speicherung bereits ein <em>Rohdatenarchiv</em> mit diesem Dateinamen vorhanden war. In diesem Fall werden die Daten vim <em>IRTlib Player</em> nicht überschrieben, sondern es wird ein Suffix <code>_1</code>, <code>_2</code>, … angehängt, bis der Dateiname verwendbar ist.</p>
+<ul>
+<li><strong>Offline <em>IRTlib Player</em></strong>: Wenn nicht anders konfiguriert werden die Ergebnisdaten im Verzeichnis <code>Temp/{Studien-Name}/Results</code> gespeichert. Die <em>Rohdatenarchive</em> werden erstellt, wenn eine <em>Session</em> beendet, d.h. die letzte definierte <em>CBA ItemBuilder</em>-<em>Task</em> mit <code>NEXT_TASK</code> verlassen wird. Erst wenn die <em>Rohdatenarchive</em> erstellt wurden, ist ein <em>Fortsetzen</em> der angefangenen <em>Session</em>, wie es beispielsweise bei einem Computerabsturz notwendig sein kann, nicht mehr möglich.</li>
+</ul>
+<blockquote class="blockquote">
+<p>Analog verhält es sich auch, wenn die Offline-Version des <em>IRTlib Player</em> als lokaler Server eingesetzt wird. Die <em>Rohdatenarchive</em> werden nach der Testbearbeitung im Verzeichnis <code>Temp/{Studien-Name}/Results</code> gespeichert.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Die Sammlung von Daten aus den Offline <em>IRTlib Playern</em> entspricht dem Einsammeln der <em>Rohdatenarchive</em>, die auf den verschiedenen Geräten erhoben werden.</p>
+</blockquote>
+<div class="callout callout-style-default callout-tip callout-titled" title="Hinweis">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hinweis
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Da die Offline <em>IRTlib Player</em> untereinander nicht in Verbindung stehen, können - je nach <em>Loginmodus</em> - identische Anmeldedaten in verschiedenen <em>IRTlib Playern</em> parallel erstellt werden. Nach einer Datenerhebung müssen die <em>Rohdatenarchive</em> deshalb mit Sorgfalt zusammengefügt und ggf. durch Unterordner getrennt werden.</p>
+</div>
+</div>
+<ul>
+<li><strong>Online <em>IRTlib Player</em></strong>: Der Online-Player sammelt die Daten, wenn nicht anders konfiguriert, in dem <em>Volume</em> welches für die Ergebnisdaten konfiguriert ist (vgl. <code>/app/results</code> in <a href="https://github.com/DIPFtba/IRTlibDeploymentSoftware/blob/main/docker/docker-compose.yml"><code>docker-compse.yml</code>-File</a>). Jede <em>Session</em> wird dort in einem separaten Unterverzeichnis gespeichert und kann, von Administratoren die Zugriff auf das <em>Volume</em> haben (!), heruntergeladen werden.</li>
+</ul>
+<p>Wenn ein <em>API</em>-key für den Datenzugriff definiert ist, kann der <em>Download</em> der Ergebnisdaten auch über das R-Paket <a href="http://logfsm.com">LogFSM</a> erfolgen.</p>
+<section id="datenabruf-mit-logfsm" class="level3">
+<h3 class="anchored" data-anchor-id="datenabruf-mit-logfsm">Datenabruf mit <code>LogFSM</code></h3>
+<p>Dazu kann mit folgendem Aufruf zunächst (einmalig) das R-Paket installiert werden:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"http://logfsm.com/latest"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Danach ist der Download der <em>Rohdatenarchive</em> mit folgendem R-Skript möglich:</p>
+<div id="logfsm-download-and-convert">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(LogFSM)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">dir.exists</span>(<span class="fu">paste0</span>(<span class="fu">getwd</span>(),<span class="st">"/in/"</span>)))</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">dir.create</span>(<span class="fu">paste0</span>(<span class="fu">getwd</span>(),<span class="st">"/in/"</span>))</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">dir.exists</span>(<span class="fu">paste0</span>(<span class="fu">getwd</span>(),<span class="st">"/out/"</span>)))</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">dir.create</span>(<span class="fu">paste0</span>(<span class="fu">getwd</span>(),<span class="st">"/out/"</span>))</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>SECRET_KEY <span class="ot">&lt;-</span> <span class="st">"(your secret key)"</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>API_URL <span class="ot">&lt;-</span> <span class="st">"(your API-URL)"</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>LogFSM<span class="sc">::</span><span class="fu">TransformToUniversalLogFormat</span>(<span class="at">inputfolders =</span> <span class="fu">paste0</span>(<span class="fu">getwd</span>(),<span class="st">"/in/"</span>),</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>                              <span class="at">inputformat =</span> <span class="st">"irtlibv01a"</span>, </span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>                              <span class="at">zcsvoutput  =</span> <span class="fu">paste0</span>(<span class="fu">getwd</span>(),<span class="st">"/out/data_csv.zip"</span>),  </span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>                              <span class="at">stataoutput =</span> <span class="fu">paste0</span>(<span class="fu">getwd</span>(),<span class="st">"/out/data_dta.zip"</span>),</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>                              <span class="at">spssoutput =</span>  <span class="fu">paste0</span>(<span class="fu">getwd</span>(),<span class="st">"/out/data_sav.zip"</span>),</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>                              <span class="at">key =</span> SECRET_KEY,</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>                              <span class="at">web =</span> API_URL, </span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>                              <span class="at">outputtimestampformatstring=</span><span class="st">"dd.MM.yyyy HH:mm:ss.fff"</span>)</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>results <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="fu">unz</span>(<span class="fu">paste0</span>(<span class="fu">getwd</span>(),<span class="st">"/out/data_csv.zip"</span>), <span class="st">"Results.csv"</span>),</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>                    <span class="at">sep=</span><span class="st">";"</span>, <span class="at">encoding =</span> <span class="st">"UTF-8"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><em>Datenabruf und Konvertierung der Daten mit LogFSM</em></p>
+</div>
+<p>Mit dem Aufruf der Funktion <code>TransformToUniversalLogFormat</code> aus dem Paket <code>LogFSM</code> werden die Daten heruntergeladen und in das spezifzierte Verzeichnis <code>infolders</code> aggelegt, wenn ein API-Key (<code>key</code>) und eine API-Url (<code>web</code>) übergeben werden.</p>
+</section>
+<section id="datenabruf-über-die-kommandozeile" class="level3">
+<h3 class="anchored" data-anchor-id="datenabruf-über-die-kommandozeile">Datenabruf über die Kommandozeile</h3>
+<p>Die für den Datenabruf und die Datenkonvertierung über <code>LogFSM</code> verwendete Anwendung <code>TransformToUniversalLogFormat</code> ist als Konsolen-Anwendung aus dem <em>Releases</em>-Abschnitt von <a href="https://github.com/kroehne/LogFSM/releases">https://github.com/kroehne/LogFSM/</a> verfügbar.</p>
+<p>Darüber lassen sich Datenabruf und Datenumwandlung auch ohne R ausführen.</p>
+<div class="callout callout-style-default callout-important callout-titled" title="In Entwicklung">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+In Entwicklung
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Eine Mac-Version für ARM64 ist in Entwicklung.</p>
+</div>
+</div>
+</section>
 <section id="ergebnisdaten" class="level3">
 <h3 class="anchored" data-anchor-id="ergebnisdaten">Ergebnisdaten</h3>
+<p>Wenn die Daten über <code>LogFSM</code> von einem Online <em>IRTlib Player</em> abgerufen oder Offline eingesammelt wurden, liegen sie am Ende in einem Verzeichnis vor. Je <em>Session</em> (d.h. je Person oder Person x Zeitpunkt) als <em>Rohdaten</em>-Archiv.</p>
+<p>Die Funktion <code>TransformToUniversalLogFormat</code> in <code>LogFSM</code> oder über die Kommando-Zeile kann auch verwendet werden, um die <em>Rohdatenarchive</em> aus einem Verzeichnis auszulesen und die Ergebnisdaten zu Extrahieren:</p>
+<div id="logfsm-convert-only">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(LogFSM)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">dir.exists</span>(<span class="fu">paste0</span>(<span class="fu">getwd</span>(),<span class="st">"/out/"</span>)))</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">dir.create</span>(<span class="fu">paste0</span>(<span class="fu">getwd</span>(),<span class="st">"/out/"</span>))</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>LogFSM<span class="sc">::</span><span class="fu">TransformToUniversalLogFormat</span>(<span class="at">inputfolders =</span> <span class="fu">paste0</span>(<span class="fu">getwd</span>(),<span class="st">"/in/"</span>),</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>                              <span class="at">inputformat =</span> <span class="st">"irtlibv01a"</span>, </span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>                              <span class="at">zcsvoutput  =</span> <span class="fu">paste0</span>(<span class="fu">getwd</span>(),<span class="st">"/out/data_csv.zip"</span>),  </span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>                              <span class="at">stataoutput =</span> <span class="fu">paste0</span>(<span class="fu">getwd</span>(),<span class="st">"/out/data_dta.zip"</span>),</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>                              <span class="at">spssoutput =</span>  <span class="fu">paste0</span>(<span class="fu">getwd</span>(),<span class="st">"/out/data_sav.zip"</span>),</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>                              <span class="at">outputtimestampformatstring=</span><span class="st">"dd.MM.yyyy HH:mm:ss.fff"</span>)</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>results <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="fu">unz</span>(<span class="fu">paste0</span>(<span class="fu">getwd</span>(),<span class="st">"/out/data_csv.zip"</span>), <span class="st">"Results.csv"</span>),</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>                    <span class="at">sep=</span><span class="st">";"</span>, <span class="at">encoding =</span> <span class="st">"UTF-8"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
 </section>
 <section id="log-daten" class="level3">
 <h3 class="anchored" data-anchor-id="log-daten">Log-Daten</h3>
+<p>Die Konvertierung der Daten mit <code>TransformToUniversalLogFormat</code> in <code>LogFSM</code> oder über die Kommando-Zeile wandelt die erhobenen Log-Daten, welche von den <em>CBA ItemBuilder</em>-<em>Tasks</em> bereitgestellt werden, in folgende Formate um:</p>
+<ul>
+<li><p><em>Flat and Sparse Log-Data Table</em>: Eine große Tabelle (als CSV, Stata, SPSS) mit einer Zeile je Event. Da die event-spezifische Attribute (d.h. die unterschiedlichen zusätzlichen Informationen die von einem Event vorhanden sind) sich auf viele Spalten verteilen, die aber jeweils nur je <em>Event-Typ</em> gefüllt sind, ist diese Tabelle zwar <em>flach</em>, aber ggf. auch sehr <em>löchrig</em>.</p></li>
+<li><p><em>Universal Log-Format</em>: Alternativ enthalten die von <code>LogFSM</code> bzw. dem Komandozeilen-Werkzeug <code>TransformToUniversalLogFormat</code> erstellten ZIP-Archive auch einzelne Datensatz-Tabellen je <em>Evenet-Typ</em>. Die event-spezifischen Attribute in diesen Tabellen sind weniger <em>löchrig</em> (d.h. sie enthalten nur fehlende Werte für optionale Attribute) und können zu einer <em>Flat and Sparse Log-Data Table</em> kombiniert werden, wenn erforderlich.</p></li>
+<li><p><em>XES (eXtensible Event Stream)</em>: Die Log-Daten können auch in dem standardisierten <code>XML</code>-Format (<a href="https://xes-standard.org/">https://xes-standard.org/</a>) umgewandelt werden.</p></li>
+</ul>
+</section>
+<section id="dateien-in-den-rohdatenarchiven" class="level3">
+<h3 class="anchored" data-anchor-id="dateien-in-den-rohdatenarchiven">Dateien in den <em>Rohdatenarchiven</em></h3>
+<p>Die <em>Rohdatenarchive</em> enthalten folgende Dateien:</p>
+<ul>
+<li><code>Trace.json</code>: Log-Daten (<em>Traces</em>) wie von der <em>CBA ItemBuilder</em>-<em>Runtime</em> geliefert, zusammen mit dem Kontext aus dem <em>IRTlib Player</em>.</li>
+</ul>
+<blockquote class="blockquote">
+<p>Die Datei enthält folgende Struktur, mit Komma getrennt. Die Datei ist kein gültiges JSON, bis nicht das letzte Komma entfernt und ein <code>[</code> vor und ein <code>]</code> nach dem inhalt eingefügt wird.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Der Eintrag <code>Trace</code> enthält die Log-Daten (<em>Traces</em>) in Päkchen (wie von der <em>CBA ItemBuilder</em>-<em>Runtime</em> geliefert) quotiert (d.h. <code>"</code> wird als <code>\u0022</code> dargestellt). Die <code>TraceId</code> ist ein Zähler, welcher die Übermittelten Päkchen durchzählt. <code>Timestamp</code> ist der Zeitstempel der Übermittlung. <code>SessionId</code> der Benutzername oder die UUID (<em>PersonIdentifier</em>). Der <code>Context</code> gibt über Name des <em>CBA ItemBuilder</em>-Projekts, <em>Task</em> und <em>Scope</em> eine Referenz zum Assessmentinhalt (<em>Element</em>). Unter <code>Assemblies</code> sind die Informationen zum verwendeten <em>IRTlib Player</em> gespeichert und <code>StudyRevision</code> verweist auf die <em>Revision</em> einer (veröffentlichten) <em>Studie</em>.</p>
+</blockquote>
+<pre><code>{
+    "Trace": "(TRACE-JSON)",
+    "TraceId": 1,
+    "Timestamp": "2023-12-04T20:53:06.297Z",
+    "SessionId": "(SESSION-ID OR USERNAME)",
+    "Context": {
+        "Item": "(PROJECT NAME)",
+        "Task": "(TASK NAME)",
+        "Scope": "(SCOPE)",
+        "Preview": ""
+    },
+    "Assemblies": [
+        {
+            "Name": "TestApp.Player.Desktop",
+            "Version": "(APPLICATION VERSION)",
+            "GitHash": "(APPLICATION BUILD HASH)"
+        }
+    ],
+    "StudyRevision": "(STUDY REVISION)"
+},</code></pre>
+<ul>
+<li><code>Snapshot.json</code>: Snapshot-Daten wie von der <em>CBA ItemBuilder</em>-<em>Runtime</em> geliefert, zusammen mit dem Kontext aus dem <em>IRTlib Player</em>.</li>
+</ul>
+<blockquote class="blockquote">
+<p>Die Datei enthält folgende Struktur, mit Komma getrennt. Die Datei ist kein gültiges JSON, bis nicht das letzte Komma entfernt und ein <code>[</code> vor und ein <code>]</code> nach dem inhalt eingefügt wird.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Der Eintrag <code>Snapshot</code> enthält die Snapshot-Informationen (wie von der <em>CBA ItemBuilder</em>-<em>Runtime</em> geliefert) quotiert (d.h. <code>"</code> wird als <code>\u0022</code> dargestellt). Der <code>ContextFlag</code> gibt an, wie der <em>CBA ItemBuilder</em>-<em>Task</em> verlassen wurde (NextTask, PreviousTask oder Cancel). Der <code>ContextScope</code> ist (TODO). <code>Timestamp</code> ist der Zeitstempel der Übermittlung. <code>SessionId</code> der Benutzername oder die UUID (<em>PersonIdentifier</em>). Der <code>Context</code> gibt über Name des <em>CBA ItemBuilder</em>-Projekts, <em>Task</em> und <em>Scope</em> eine Referenz zum Assessmentinhalt (<em>Element</em>). Unter <code>Assemblies</code> sind die Informationen zum verwendeten <em>IRTlib Player</em> gespeichert und <code>StudyRevision</code> verweist auf die <em>Revision</em> einer (veröffentlichten) <em>Studie</em>.</p>
+</blockquote>
+<p>(TODO: Warum ist <code>Assemblies</code> und <code>StudyRevision</code> null?)</p>
+<pre><code>{
+    "Snapshot": "(SNAPSHOT-JSON)",
+    "ContextFlag": "NextTask",
+    "ContextScope": 0,
+    "Timestamp": "2023-12-04T20:53:06.497Z",
+    "SessionId": "(SESSION-ID OR USERNAME)",
+    "Context": {
+        "Item": "(PROJECT NAME)",
+        "Task": "(TASK NAME)",
+        "Scope": "(SCOPE)",
+        "Preview": ""
+    },
+    "Assemblies": null,
+    "StudyRevision": null
+},</code></pre>
+<ul>
+<li><code>ItemScore.json</code>: Scoring-Information (wie von <em>CBA ItemBuilder</em>-<em>Runtime</em> geliefert).</li>
+</ul>
+<blockquote class="blockquote">
+<p>Die Datei enthält folgende Struktur, mit Komma getrennt. Die Datei ist kein gültiges JSON, bis nicht das letzte Komma entfernt und ein <code>[</code> vor und ein <code>]</code> nach dem inhalt eingefügt wird.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Der Eintrag <code>ItemScore</code> enthält den <em>ItemScore</em> (wie von der <em>CBA ItemBuilder</em>-<em>Runtime</em> geliefert) quotiert (d.h. <code>"</code> wird als <code>\u0022</code> dargestellt).Der <code>ContextFlag</code> gibt an, wie der <em>CBA ItemBuilder</em>-<em>Task</em> verlassen wurde (NextTask, PreviousTask oder Cancel). Der <code>ContextScope</code> ist (TODO). <code>Timestamp</code> ist der Zeitstempel der Übermittlung. <code>SessionId</code> der Benutzername oder die UUID (<em>PersonIdentifier</em>). Der <code>Context</code> gibt über Name des <em>CBA ItemBuilder</em>-Projekts, <em>Task</em> und <em>Scope</em> eine Referenz zum Assessmentinhalt (<em>Element</em>). Unter <code>Assemblies</code> sind die Informationen zum verwendeten <em>IRTlib Player</em> gespeichert und <code>StudyRevision</code> verweist auf die <em>Revision</em> einer (veröffentlichten) <em>Studie</em>.</p>
+</blockquote>
+<pre><code>{
+    "ItemScore": "(SCORING-JSON)",
+    "ContextFlag": "NextTask",
+    "ContextScope": 0,
+    "Timestamp": "2023-12-04T20:53:06.474Z",
+    "SessionId": "(SESSION-ID OR USERNAME)",
+    "Context": {
+        "Item": "(PROJECT NAME)",
+        "Task": "(TASK NAME)",
+        "Scope": "(SCOPE)",
+        "Preview": ""
+     },
+    "Assemblies": [
+        {
+            "Name": "TestApp.Player.Desktop",
+            "Version": "(APPLICATION VERSION)",
+            "GitHash": "(APPLICATION BUILD HASH)"
+        }
+    ],
+    "StudyRevision": "(STUDY REVISION)"
+},</code></pre>
+<ul>
+<li><code>Session.json</code>: Die Datei enthält Daten des <em>IRTlib Players</em> welche die Auführung der <em>Session</em> beschreiben.</li>
+<li><code>Log.json</code>: Log-Events der <em>IRTlib Player</em> (enthält u.A. Log-Informationen zur Verarbeitung des <em>Blockly</em>-Routings).</li>
+<li><code>browser.log</code>: Ausgabe der Konsole, die während der Bearbeitung der Aufgaben im Browser gesammelt wurden (unstruktruierter Text, für Entwickler).</li>
+<li><code>server.log</code>: Log-Ausgaben des Servers des <em>IRTlib Players</em> (unstruktruierter Text, für Entwickler)</li>
+<li><code>Keyboard.json</code>: Tastatureingaben und Zeitstempel.</li>
+<li><code>Monitoring.json</code>: Kopie der Monitoring-Datei, welche erstellt wurde.</li>
+</ul>
+<p>(TODO: Wie lässt sich Mouse-Tracking aktivieren?)</p>
 
 
 </section>

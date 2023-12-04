@@ -185,7 +185,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#vorbereitung-übersicht-preparation-overview" id="toc-vorbereitung-übersicht-preparation-overview" class="nav-link active" data-scroll-target="#vorbereitung-übersicht-preparation-overview">Vorbereitung: Übersicht / Preparation: Overview</a>
   <ul class="collapse">
-  <li><a href="#sec-embedded-help" id="toc-sec-embedded-help" class="nav-link" data-scroll-target="#sec-embedded-help">Eingebettete Programhilfe</a></li>
+  <li><a href="#eingebettete-programhilfe" id="toc-eingebettete-programhilfe" class="nav-link" data-scroll-target="#eingebettete-programhilfe">Eingebettete Programhilfe</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -234,7 +234,7 @@ Hinweis
 </div>
 </div>
 <ul>
-<li><p><strong>Basiskonfigurationen für <em>Studie</em> festlegen (Info)</strong>: Zu den Basiskonfigurationen, die sich auf den Inhalt einer vorbereiteten Studie beziehen, gehören die Studienbezeichnung und -beschreibung, der Anmeldemodus, die Anzeigekonfiguration, das Menü für die Testadministratoren und die Angabe, wie nach Abschluss aller in einer Studie definierten Inhalte fortgefahren werden soll (siehe <a href="preparation-studies.html#konfiguration-von-studien">hier</a> für weitere Einzelheiten).</p></li>
+<li><p><strong>Basiskonfigurationen für <em>Studie</em> festlegen (Info)</strong>: Zu den Basiskonfigurationen, die sich auf den Inhalt einer vorbereiteten Studie beziehen, gehören die Studienbezeichnung und -beschreibung, der Anmeldemodus, die Anzeigekonfiguration, das Menü für die Testadministratoren und die Angabe, wie nach Abschluss aller in einer Studie definierten Inhalte fortgefahren werden soll (siehe Abschnitt <a href="./preparation-studies.html">Studien</a> für weitere Einzelheiten).</p></li>
 <li><p><strong>Erstellen eines neuen <em>Erhebungsteils</em></strong>: Jede <em>Studie</em> besteht aus einem oder mehreren <em>Erhebungsteilen</em>. <em>Erhebungsteile</em> werden als Bausteine von Assessments betrachtet, die zusammen verwaltet werden, wie z.B. Items aus einer bestimmte Domäne. <em>Erhebungsteile</em> vom Typ <em>CBA ItemBuilder</em> können verwendet werden, um <em>CBA ItemBuilder</em>-Aufgaben in einer linearen Sequenz oder mit <em>Blockly</em>-basiertem Routing zu administrieren.</p></li>
 </ul>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -251,11 +251,11 @@ Hinweis
 </div>
 </div>
 <ul>
-<li><p><strong>Grundeinstellungen für <em>Erhebungsteil</em> konfigurieren (Info)</strong>: Ein <em>Erhebungsteil</em> vom Typ <em>CBA ItemBuilder</em> basiert auf einer Menge von <em>CBA ItemBuilder</em>-<em>Tasks</em>. Jede <em>CBA ItemBuilder</em>-<em>Projektdatei</em> benötigt mindestens einen <em>Task</em>, es werden aber auch Projekte mit mehreren <em>Tasks</em> unterstützt. Wenn <em>CBA ItemBuilder</em>-Inhalte mit einem gemeinsamen Zeitlimit über <em>Tasks</em> hinweg administriert werden sollen, erlauben <em>Erhebungsteile</em> die Zuordnung von Aufgaben zu einer Struktur, die Assessmentinhalte unterscheidet, welche <em>vor</em> einem zeitlich begrenzten Abschnitt administriert werden (z.B. Instruktionen, im Abschnitt <em>Vorspann-Items</em>), Inhalte die <em>nach</em> einem zeitlich begrenzten Abschnitt administriert werden (z.B. Danksagung, im Abschnitt <em>Nachspann-Items</em>) und dazwischen liegende Aufgaben mit begrenzter Zeit (<em>Items</em>, siehe Abschnitt <a href="preparation-parts.html#assessmentinhalte-items">Assessmentinhalte (Items)</a>).</p></li>
+<li><p><strong>Grundeinstellungen für <em>Erhebungsteil</em> konfigurieren (Info)</strong>: Ein <em>Erhebungsteil</em> vom Typ <em>CBA ItemBuilder</em> basiert auf einer Menge von <em>CBA ItemBuilder</em>-<em>Tasks</em>. Jede <em>CBA ItemBuilder</em>-<em>Projektdatei</em> benötigt mindestens einen <em>Task</em>, es werden aber auch Projekte mit mehreren <em>Tasks</em> unterstützt. Wenn <em>CBA ItemBuilder</em>-Inhalte mit einem gemeinsamen Zeitlimit über <em>Tasks</em> hinweg administriert werden sollen, erlauben <em>Erhebungsteile</em> die Zuordnung von Aufgaben zu einer Struktur, die Assessmentinhalte unterscheidet, welche <em>vor</em> einem zeitlich begrenzten Abschnitt administriert werden (z.B. Instruktionen, im Abschnitt <em>Vorspann-Items</em>), Inhalte die <em>nach</em> einem zeitlich begrenzten Abschnitt administriert werden (z.B. Danksagung, im Abschnitt <em>Nachspann-Items</em>) und dazwischen liegende Aufgaben mit begrenzter Zeit (<em>Items</em>, siehe Abschnitt <a href="./preparation-parts.html">Erhebungsteile</a>).</p></li>
 <li><p><strong>Items Hinzufügen</strong>: Um die Definition eines <em>Erhebungsteils</em> abzuschließen, müssen die <em>CBA ItemBuilder</em>-<em>Projektdateien</em> in den Abschnitt <em>Items</em> importiert werden. Standardmäßig wird davon ausgegangen, dass die Reihenfolge der <em>CBA ItemBuilder</em>-<em>Tasks</em> linear ist. Wenn jedoch das <em>Routing</em> für einen Studienteil aktiviert ist, kann das <em>Blockly</em>-basierte Ablaufdefinition verwendet werden, um verschiedene Testdesigns zu implementieren (z. B. mehrere Hefte, mehrstufige Tests usw.).</p></li>
 </ul>
-<section id="sec-embedded-help" class="level2">
-<h2 class="anchored" data-anchor-id="sec-embedded-help">Eingebettete Programhilfe</h2>
+<section id="eingebettete-programhilfe" class="level2">
+<h2 class="anchored" data-anchor-id="eingebettete-programhilfe">Eingebettete Programhilfe</h2>
 <p>Für die Verwendung des <em>IRTlib Editors</em> ist eine Programmhilfe direkt in die Anwendung integriert, welche über das kleine <code>?</code>-Symbol oben rechts eingeblendet werden kann.</p>
 <p><img src="img/screenshot-editor-embedded-help-de-DEU.png" class="img-fluid" style="width:100.0%"></p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Eingebettete Programmhilfe">
