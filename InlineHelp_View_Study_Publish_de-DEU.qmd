@@ -7,3 +7,44 @@ format:
 ---
 
 ### Veröffentlichen
+
+Bevor eine *Version* einer *Studie* zu veröffentlicht wird, kann über die Schaltfläche *Validieren* geprüft werden, ob die *StudieÜ fehlerfrei konfiguriert wurde.
+
+> ![](img/screenshot-validate-version-item-icon-01.png){width="40"}
+
+Eine *Studie* muss beispielsweise immer mindestens einen *Erhebungsteil* enthalten. Ist das nicht der Fall, erscheint beim *Validieren* die folgende Meldung: 
+
+![](img/sreenshot-irtlib-editor-showing-example-validation-failed-DEU-01.png){width="100%"}
+
+Hinweis: Werden keine Fehler beim *Validieren* gefunden, wird keine weitere Nachricht angezeigt und die Studie kann veröffentlicht werden. 
+
+Wenn keine Fehler mehr enthalten sind und die *Studie* für den Export vorbereitet werden soll, kann eine *Version* erstellt werden. Dazu dient die folgende Schaltfläche: 
+
+> ![](img/screenshot-create-version-item-icon-01.png){width="40"}
+
+Danach erscheint der folgende Dialog:
+
+![](img/sreenshot-irtlib-editor-create-new-version-DEU-01.png){width="450"}
+
+Versionen benötigen eine *Bezeichnung* und können optional mit einer *Beschreibung* dokumentiert werden. Nach dem Bestätigen mit *Speichern* erscheint die *Studie* mit einem *Veröffentlichungsdatum* in der Liste:
+
+![](img/sreenshot-irtlib-editor-download-version-DEU-01.png){width="100%"}
+
+### Exportieren
+
+Veröffentliche Versionen können über die folgende Schaltfläche kann die *Version* heruntergeladen werden: 
+
+> ![](img/screenshot-download-version-item-icon-01.png){width="40"}
+
+Nach dem Betätigen dieser Schaltfläche erscheint ein *Save As* / *Speichern unter* - Dialog, und die vollständige Studienkonfiguration kann als ZIP-Archiv gespeichert werden. Dieses ZIP-Archiv kann dann in einem nächsten Schritt verwendet werden, um es in einen *IRTlib Player* zu laden.
+
+### Studienversionen
+
+Die *IRTlib Software* ist so erstellt, dass im Datensatz immer die *Revision* der *Studie* gespeichert wird, sodass nachvollzogen werden kann mit welcher Konfiguration (d.h. welche *CBA ItemBuilder*-Inhalten und Einstellungen im *IRTlib Editor*) Daten erhoben werden. 
+
+**Unveröffentlichte Versionen**: Es ist auch möglich, nicht veröffentliche Versionen herunterzuladen und in einem *IRTlib Player* auszuprobieren. Zur Sicherheit wird dann aber eine farbliche Markierung während der Testung angezeigt, damit klar erstichtlich ist dass es sich hierbei nur eine Vorabversion handelt. Mit nicht veröffentlichten Studien sollten niemals Daten erhoben werden.
+
+**Änderungen veröffentlichter Versionen**: Versionen *versiegeln* die Konfiguration, und machen Änderungen durch eine *Revisionsnummer*, eine *Bezeichnung* und eine optionale *Beschreibung* nachvollziehbar. Änderungen nach dem Versiegeln einer Version sind aber weiterhin möglich. Bevor veränderte Versionen für eine Datenerhebung verwendet werden können, müssen diese aber ebenfalls versiegelt werden, d.h. eine neue *Version* muss über *Veröffentlichen* erstellt werden. 
+
+
+

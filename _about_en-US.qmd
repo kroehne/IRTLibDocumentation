@@ -1,0 +1,11 @@
+
+## Acknowledgments
+
+Contributors to this manual:
+
+* ...
+
+
+## Development
+
+The development of the *IRTlib Software* is done at [Software-Driven](https://software-driven.de/).

@@ -7,7 +7,7 @@ lang: en
 
 \let\clearpage\standardclearpage
 
-# Datenerhebung - Datenaufbereitung / Data Collection - Data Post-Processing
+# Datenerhebung: Datenaufbereitung / Data Collection: Data Post-Processing
 
 :::{.content-visible when-profile="german"}
 {{< include _data-collection-post-processing_de-DEU.qmd >}}

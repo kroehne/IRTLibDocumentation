@@ -1,0 +1,11 @@
+
+## Danksagung
+
+An diesem Manual mitgeholfen haben:
+
+* ...
+
+
+## Entwicklung
+
+Die Entwicklung der *IRTlib Software* erfolgt bei [Software-Driven](https://software-driven.de/).

@@ -6,7 +6,7 @@ format:
 
 \let\clearpage\standardclearpage
 
-# Vorbereitung Übersicht / Preparation Overview
+# Vorbereitung: Übersicht / Preparation: Overview
 
 :::{.content-visible when-profile="german"}
 {{< include _preparation-overview_de-DEU.qmd >}}

@@ -7,7 +7,7 @@ lang: en
 
 \let\clearpage\standardclearpage
 
-# Datenerhebung Veröffentlichen & Exportieren / Data Collection Publish & Export
+# Datenerhebung: Veröffentlichen & Exportieren / Data Collection: Publish & Export
 
 :::{.content-visible when-profile="german"}
 {{< include _data-collection-publish-and-export_de-DEU.qmd >}}

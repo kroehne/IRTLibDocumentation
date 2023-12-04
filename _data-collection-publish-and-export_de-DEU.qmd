@@ -1,6 +1,19 @@
-Die Konfiguration von *Studien* und den darin enthaltenen *Erhebungsteil(en)* erfolgt im *IRTlib Editor* und wird innerhalb des Editors gespeichert, wenn das Disketten-Symbol unten rechts geklickt wird.
+Die Konfiguration von *Studien* und den darin enthaltenen *Erhebungsteil(en)* erfolgt im *IRTlib Editor*. Änderungen werden  innerhalb des *IRTlib Editors* immer gespeichert, wenn das Disketten-Symbol unten rechts geklickt wird. Während der Vorbereitung einer Studie speichert man die Änderungen, wenn sie übernommen werden sollen. Aber sobald die Vorbereitung abgeschlossen ist, sollten Änderungen nicht mehr möglich sein oder zumindest nachvollzogen werden, damit die Version im *IRTlib Editor* der Version im *IRTlib Player* entspricht. 
 
-Damit zu jeder Zeit eindeutig benennbar ist, mit welcher Konfiguration einer *Studie* eine Datenerhebung durchgeführt wird, muss die Konfiguration vor der Übertragung an einen *IRTlib Player* versiegelt werden. Das geschieht in der Ansicht *Veröffentlichen* einer Studie, in welcher die *Studienversionen* aufgelistet werden:
+Um diesen Prozess der Verwendung von *IRTlib Editor* und *IRTlib Player* zu unterstützen, ist folgendes Konzept implementiert. Damit zu jeder Zeit eindeutig benennbar ist, mit welcher Konfiguration einer *Studie* eine Datenerhebung durchgeführt wird, muss die Konfiguration vor der Übertragung an einen *IRTlib Player* versiegelt werden. 
+
+Das geschieht in der Ansicht *Veröffentlichen* einer Studie, in welcher die *Studienversionen* aufgelistet werden. Bei einer neuen *Studie* sieht diese Ansicht zunächst so aus:
+
+![](img/sreenshot-irtlib-editor-showing-unpublished-version-DEU-01.png){width="100%"}
+
+In diesem Zustand könenn Sie Änderungen an den Einstellung der *Studie* und aller enthaltenen *Erhebungsteile* vornehmen. 
+
+Die Schaltflächen zum *Validieren*, *Herunterladen* und *Veröffentlichen* von Studien sind ausgegraut, weil keine Revision markiert ist. Durch Klick auf die Zeile mit der noch nicht veröffentlichten *Revision 1* sind die Schaltflächen aktivierbar:
+
+![](img/sreenshot-irtlib-editor-showing-unpublished-version-DEU-02.png){width="100%"}
+
+Bevor Sie nun fortfahren, prüfen Sie bitte ob Sie an alles gedacht haben. Dafür dient die folgende *Checkliste*.
+
 
 ## Checkliste vor dem Veröffentlichen
 
@@ -20,7 +33,11 @@ Damit zu jeder Zeit eindeutig benennbar ist, mit welcher Konfiguration einer *St
 
 > Die Konfiguration von *Runtimes* erfolgt in den [Einstellungen](settings.qmd).
 
+Wenn Sie diese Checkliste geprüft haben können Sie mit fortsetzen wie im nächsten Abschnitt beschrieben. 
+
 ## Veröffentlichen & Exportieren
+
+Der Prozess zum *Validieren*, *Veröffentlichen* und *Herunterlade* von Studienkonfigurationen ist in der eingebetteten Hilfe beschrieben:
 
 ::: {.callout-tip collapse="true" title="Eingebettete Programmhilfe"}
 
@@ -28,3 +45,4 @@ Damit zu jeder Zeit eindeutig benennbar ist, mit welcher Konfiguration einer *St
  
 ::: 
  
+Eine Datenerhebung mit einem *IRTlib Player* kann erfolgen, wenn eine veröffentlichte *Studie* aus dem *IRTlib Editor* als ZIP-Archiv heruntergeladen wurde.

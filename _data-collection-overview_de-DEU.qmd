@@ -8,7 +8,7 @@ Nachdem eine *Studie* mit dem *IRTlib Editor* angelegt und konfiguriert wurde, m
 
 * **Version Exportieren**: Versionen von Studien, die im *IRTlib-Editor* verfügbar sind, können exportiert werden. Der Export der Konfiguraiton ist notwendig, bevor diese mit dem *IRTlib-Player* verwendet werden können. Beim Exportieren wird die vollständige Studienkonfiguration inklusive der importierten *CBA ItemBuilder*-Inhalte als ZIP-Archiv heruntergeladen. 
 
-* **Studie in *IRTlib-Player* Importieren**: Exportierte Versionen von Studien aus dem *IRTlib-Editor* können zur Verwendung in einen *IRTlib-Player* importiert werden. 
+* **Studie in *IRTlib Player* Importieren**: Exportierte Versionen von Studien aus dem *IRTlib-Editor* können zur Verwendung in einen *IRTlib-Player* importiert werden. Für einzelne *Studien* gibt es einen automatische Modus, wenn mehrere *Studien* in einem *IRTlib Player* simultan verwendet werden sollen, kann diese manuell erfolgen.  
 
 * **Testen der Studie**: Bevor mit der eigentlichen Datenerfassung begonnen wird kann, sollte jede Konfiguration zunächst mit synthetischen Testfällen (d.h. systematisch) gestetet werden. 
 

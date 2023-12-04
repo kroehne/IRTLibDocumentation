@@ -20,10 +20,13 @@ book:
       chapters:
       - data-collection-overview.qmd
       - data-collection-publish-and-export.qmd
+      - data-collection-player-integration.qmd
+      - data-collection-post-processing.qmd
     - part: "Allgemein / General" 
       chapters:
       - settings.qmd
       - github.qmd      
+      - about.qmd
       
 format:
   pdf:

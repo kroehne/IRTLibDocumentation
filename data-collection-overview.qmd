@@ -7,7 +7,7 @@ lang: en
 
 \let\clearpage\standardclearpage
 
-# Datenerhebung Übersicht / Data Collection Overview
+# Datenerhebung: Übersicht / Data Collection: Overview
 
 :::{.content-visible when-profile="german"}
 {{< include _data-collection-overview_de-DEU.qmd >}}

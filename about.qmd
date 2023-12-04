@@ -1,17 +1,20 @@
 ---
 format:
   html:
-    embed-resources: false
+    embed-resources: false 
 ---
 
-::: {.content-visible when-profile="german"}
+# About
 
-# Über IRTlib.net
-
+:::{.content-visible when-profile="german"}
+{{< include _about_de-DEU.qmd >}}
 :::
-
-::: {.content-visible when-profile="english"}
-
-# About IRTlib.net
-
+:::{.content-visible when-profile="germanbook"}
+{{< include _about_de-DEU.qmd >}}
+:::
+:::{.content-visible when-profile="english"}
+{{< include _about_en-US.qmd >}}
+:::
+:::{.content-visible when-profile="englishbook"}
+{{< include _about_en-US.qmd >}}
 :::

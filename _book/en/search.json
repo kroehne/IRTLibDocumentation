@@ -23,7 +23,7 @@
   {
     "objectID": "preparation-overview.html",
     "href": "preparation-overview.html",
-    "title": "3  Vorbereitung Übersicht / Preparation Overview",
+    "title": "3  Vorbereitung: Übersicht / Preparation: Overview",
     "section": "",
     "text": "Preparing a computer-based assessment based on CBA ItemBuilder items begins with using the IRTlib Editor to create a study configuration. This typically involves the following steps:\n\n\n\n\n\n\nOptional\n\n\n\n\n\n\nPre-requisite: Check the availability of the Runtime. The IRTlib Editor can be used to prepare assessments using CBA ItemBuilder Tasks. Using CBA ItemBuilder Tasks are stored in Project Files require a Runtime (i.e., the files “main..js” and “main..css”) in the version corresponding exactly to the version of the CBA ItemBuilder that was used to generate the items (e.g., 9.9.0). Before using the IRTLib editor, ensure the required Runtime is included or import the runtime files (see here for details).\n\nNote: This step is usually not necessary for the use of CBA ItemBuilder items from version 9.9.\n\n\n\n\nCreate a new “Study”: The IRTlib Editor is used to configure so-called Studies. The version of studies can be tracked in the editor, and studies can be published (i.e., sealed to be used for data collection). To start creating content using the IRTlib Editor, a study must be created first (see section Settings for details).\n\n\n\n\n\n\n\nNote\n\n\n\nNote that at least one study must be defined in the IRTlib Editor, before a study configuration can be used to collect data with an IRTlib Player.\n\n\n\nSpecify “Basic Configurations” for the Study (Info): Basic configurations that apply to the content of a prepared study include the study label and description, the login mode, the display configuration, the menu for test administrators and the specification how to continue after completing all content defined in a study (see section Studies for details).\nCreate a new “Survey-Part”: Each study is composed of one or multiple survey parts (see here for details). Parts are considered segments of an assessment that are administered together, like items from a particular domain. Survey parts of type “CBA ItemBuilder” can be used to administer CBA ITemBuilder tasks in a linear sequence or with Blockly-based routing (see Routing Across Survey Parts for details).\n\n\n\n\n\n\n\nNote\n\n\n\nNote that each study neads at least one test-part defined in the IRTlib Editor, before a study configuration can be used to collect data with an IRTlib Player.\n\n\n\nConfigure “Basic Settings” for Survey Part (Info): A study part of type “CBA ItemBuilder” is a set of CBA ItemBuilder projects that belong together. Each CBA ItemBuilder project requires at least one Task, but projects with multiple tasks are also supported. If items are administered with a common time limit, test parts allow for assigning tasks to a structure differentiating assessment content presented before a time-restricted section (“instructional items”), after a time-restricted section (“epilogue items”), and items in between with restricted time (“core items”, see here).\nDefine “Core Items” (Items): To finalize the definition of a study-part, the CBA ItemBuilder tasks must be imported in the section “Items”. By default, the sequence of CBA ItemBuilder tasks is assumed to be linear. However, when routing is activated for a study part, Blockly-based routing (see Routing Within Survey Parts for details) can be used to implement various test designs (e.g., multiple booklets, multi-stage testing, etc.)."
   },
@@ -154,31 +154,115 @@
     "text": "5.9 Routing between survey parts\nIf several survey parts are defined for a study, the sequence of survey parts can be defined in which respondents or test persons are presented with the contents of the survey parts.\nIn addition to simple linear sequences, sequences of several survey parts can also be configured with blockly-based routing.\nA detailed description of routing between survey parts can be found here in the embedded help:\n\n\n\n\n\n\nEmbedded program help\n\n\n\n\n\n5.9.1 Summary of routing between survey parts\nThe order of survey parts can be defined using Blockly (analogous to defining the order of Items within Survey parts). This option is available if the option Enable routing for survey parts is selected in the basic configuration for a study (in the Overview view).\nFor the general principles of using Blockly in the IRTlib Editor, see the help on Routing within survey parts.\nFunctions that are only available in Routing between survey parts are:\n\nDisplay survey part\n\n\n\n\n\nThis Blockly operator replaces the Show Item within survey parts.\n\n\nSuccessful login\n\n\n\n\n\nThis Blockly operator has the value true if valid login information was specified before the number of maximum attempts (here: infinite, i.e. unlimited hoft).\n\nNote: Changes to the Routing view between Collection parts must be saved using the diskette symbol or discarded using the undo symbol:"
   },
   {
+    "objectID": "data-collection-overview.html#overview-steps-for-using-an-irtlib-player-for-data-collection-1",
+    "href": "data-collection-overview.html#overview-steps-for-using-an-irtlib-player-for-data-collection-1",
+    "title": "6  Datenerhebung: Übersicht / Data Collection: Overview",
+    "section": "6.1 Overview: Steps for using an IRTlib Player for data collection",
+    "text": "6.1 Overview: Steps for using an IRTlib Player for data collection\n(No translation defined yet.)"
+  },
+  {
+    "objectID": "data-collection-publish-and-export.html#checklist-before-publishing-1",
+    "href": "data-collection-publish-and-export.html#checklist-before-publishing-1",
+    "title": "7  Datenerhebung: Veröffentlichen & Exportieren / Data Collection: Publish & Export",
+    "section": "7.1 Checklist before publishing",
+    "text": "7.1 Checklist before publishing\n\nIs the login configured?\n\n\nTo ensure that the correct study can be started after starting the IRTlib Player, a login mode suitable for the planned use must be configured. The login mode can be defined in the Study configuration in the Login section.\n\n\nIs a test administrator menu configured?\n\n\nIf kiosk mode is activated in the offline IRTlib Player, it may be difficult or impossible to exit the application without a configured test conductor menu. Key combinations and passwords with roles are defined in the Study configuration in the Test leader menu section.\n\n\nAre the items inserted?\n\n\nThe assessment contents are configured in one or more study-parts. Most CBA ItemBuilder-tasks will be located in the Items section of a assessment part.\n\n\nAre the runtime environments (Runtimes) available?\n\n\nThe configuration of Runtimes is done in the Settings."
+  },
+  {
+    "objectID": "data-collection-publish-and-export.html#publish-export-1",
+    "href": "data-collection-publish-and-export.html#publish-export-1",
+    "title": "7  Datenerhebung: Veröffentlichen & Exportieren / Data Collection: Publish & Export",
+    "section": "7.2 Publish & Export",
+    "text": "7.2 Publish & Export\n\n\n\n\n\n\nEmbedded program help\n\n\n\n\n\n7.2.1 Publish"
+  },
+  {
+    "objectID": "data-collection-player-integration.html#konfiguration-importieren-3",
+    "href": "data-collection-player-integration.html#konfiguration-importieren-3",
+    "title": "8  Datenerhebung: In IRTlib Player Importieren / Data Collection: Import into IRTlib Player",
+    "section": "8.1 Konfiguration Importieren",
+    "text": "8.1 Konfiguration Importieren\nWenn eine versiegelte Studienkonfiguration aus dem IRTlib Editor exportiert wurde, kann diese in einen IRTlib Player integriert werden.\nZur Zeit werden zwei Optionen unterstützt:\n\nAutomatischer Import\nManueller Import\n\n\n8.1.1 Automatischer Import\nscreenshot-irtlib-player-message-no-study01-de-DEU.png\n\n\n8.1.2 Manueller Importieren"
+  },
+  {
+    "objectID": "data-collection-player-integration.html#auslieferungen-testen-1",
+    "href": "data-collection-player-integration.html#auslieferungen-testen-1",
+    "title": "8  Datenerhebung: In IRTlib Player Importieren / Data Collection: Import into IRTlib Player",
+    "section": "8.2 Auslieferungen Testen",
+    "text": "8.2 Auslieferungen Testen\n\n8.2.1 Vorgeschlagene Testpläne"
+  },
+  {
+    "objectID": "data-collection-player-integration.html#datenerhbung-durchführen-3",
+    "href": "data-collection-player-integration.html#datenerhbung-durchführen-3",
+    "title": "8  Datenerhebung: In IRTlib Player Importieren / Data Collection: Import into IRTlib Player",
+    "section": "8.3 Datenerhbung Durchführen",
+    "text": "8.3 Datenerhbung Durchführen"
+  },
+  {
+    "objectID": "data-collection-player-integration.html#daten-exportieren-1",
+    "href": "data-collection-player-integration.html#daten-exportieren-1",
+    "title": "8  Datenerhebung: In IRTlib Player Importieren / Data Collection: Import into IRTlib Player",
+    "section": "8.4 Daten Exportieren",
+    "text": "8.4 Daten Exportieren"
+  },
+  {
+    "objectID": "data-collection-player-integration.html#steuerung-lokaler-server-1",
+    "href": "data-collection-player-integration.html#steuerung-lokaler-server-1",
+    "title": "8  Datenerhebung: In IRTlib Player Importieren / Data Collection: Import into IRTlib Player",
+    "section": "8.5 Steuerung (Lokaler Server)",
+    "text": "8.5 Steuerung (Lokaler Server)"
+  },
+  {
+    "objectID": "data-collection-player-integration.html#hosting-docker-1",
+    "href": "data-collection-player-integration.html#hosting-docker-1",
+    "title": "8  Datenerhebung: In IRTlib Player Importieren / Data Collection: Import into IRTlib Player",
+    "section": "8.6 Hosting (Docker)",
+    "text": "8.6 Hosting (Docker)\n\n8.6.1 Integration\n\nReverse Proxy für SSL\n\n\n\n8.6.2 Zugriff auf Editor\n\n\n8.6.3 Monitoring"
+  },
+  {
+    "objectID": "data-collection-post-processing.html#data-post-processing-1",
+    "href": "data-collection-post-processing.html#data-post-processing-1",
+    "title": "9  Datenerhebung: Datenaufbereitung / Data Collection: Data Post-Processing",
+    "section": "9.1 Data Post-Processing",
+    "text": "9.1 Data Post-Processing\n\n9.1.1 Result Data\n\n\n9.1.2 Log Data"
+  },
+  {
     "objectID": "settings.html#overview-1",
     "href": "settings.html#overview-1",
-    "title": "6  Einstellungen / Settings",
-    "section": "6.1 Overview",
-    "text": "6.1 Overview\nThe IRTlib software is currently still under development. Information about the current version (and for Preview versions about the build hash) can be found in the section About the Program.\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n6.1.1 Settings\nIn this area, settings can be made that affect work with the Editor and all studies.\n\n6.1.1.1 Runtime management\nTo configure studies that use CBA ItemBuilder content with the IRTLib Editor, the appropriate runtime environment (Runtime) is required for each version. Current tested versions of the CBA ItemBuilder runtime are already stored in the Editor, but runtimes for other versions of the CBA ItemBuilder or updated or corrected runtimes can also be imported into the Editor in this area.\nRuntimes that are available in the Editor are automatically integrated as part of the study configuration when studies are published and are thus available to the IRTLib Player.\n\n\n6.1.1.2 General settings\nChange the language for the editor in this section. The setting selected here has no influence on the language of the assessment content in the configured studies.\n\n\n\n6.1.2 About the program\nUnder the Version info button, you will find a summary of the latest changes and information on the current program version."
+    "title": "10  Einstellungen / Settings",
+    "section": "10.1 Overview",
+    "text": "10.1 Overview\nThe IRTlib software is currently still under development. Information about the current version (and for Preview versions about the build hash) can be found in the section About the Program.\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n\n10.1.1 Settings\nIn this area, settings can be made that affect work with the Editor and all studies.\n\n10.1.1.1 Runtime management\nTo configure studies that use CBA ItemBuilder content with the IRTLib Editor, the appropriate runtime environment (Runtime) is required for each version. Current tested versions of the CBA ItemBuilder runtime are already stored in the Editor, but runtimes for other versions of the CBA ItemBuilder or updated or corrected runtimes can also be imported into the Editor in this area.\nRuntimes that are available in the Editor are automatically integrated as part of the study configuration when studies are published and are thus available to the IRTLib Player.\n\n\n10.1.1.2 General settings\nChange the language for the editor in this section. The setting selected here has no influence on the language of the assessment content in the configured studies.\n\n\n\n10.1.2 About the program\nUnder the Version info button, you will find a summary of the latest changes and information on the current program version."
   },
   {
     "objectID": "settings.html#runtimes-2",
     "href": "settings.html#runtimes-2",
-    "title": "6  Einstellungen / Settings",
-    "section": "6.2 Runtimes",
-    "text": "6.2 Runtimes\nThe IRTlib Software can be used with CBA ItemBuilder tasks of different CBA ItemBuilder versions. The required Runtime (i.e., the connection between the CBA ItemBuilder tasks and the IRTlib Software) is part of the study configuration so that the IRTlib Player knows for sure how to use CBA ItemBuilder tasks of a particular version.\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n6.2.1 Runtimes\nTo use the IRTLib Editor for configuring studies that use CBA ItemBuilder content, the appropriate runtime environment (Runtime) is required for that version. Current tested versions of the CBA ItemBuilder runtime are already stored in the Editor, but runtimes for other versions of the CBA ItemBuilder or updated or corrected runtimes can also be imported into the Editor in this section.\n\n6.2.1.1 Check CBA ItemBuilder Version\nYou need to know which version of the CBA ItemBuilder was used to prepare the items (i.e., the CBA ItemBuilder project files). If you are in doubt, this information can be found, for instance, in the About Dialog of the CBA ItemBuilder:\n\nStep 1: Open the “About”-dialog using the “Help”-menu\n\n\n\n\n\nStep 2: Find the version number in the dialog (here 9.9.0)\n\n\n\n\n\nThe version number must be listed as one of the cards shown in the section Runtimes of the IRTlib Editor’s Settings:\n\n\n\n\n\n\n6.2.1.2 Import Runtime Files\nIf the appropriate runtime is not already included in the editor, a new/additional Runtime can be imported. Study configurations created/edited with the IRTlib Editor can contain multiple Runtimes for different versions.\n\nStep 1: To integrate a runtime, a JavaScript and a CSS file are required. These files can be downloaded here:\n\n\nhttps://cba.itembuilder.de/appendix-tables.html#previous-versions\n\n\nStep 2: Unzip the downloaded Runtime that should be used.\nStep 3: Navigate to the section Runtimes:\n\n\n\n\n\nStep 4: Push the button “+” (bottom right)\nStep 5: Enter the version number with three places (e.g., 9.9.0):\n\n\n\n\n\nStep 6: Select the file main.*.js from the ZIP archive that contains the runtime. Note that the * equals the hash of the file (i.e., the complete file name looks like main.19479ac3.js)\nStep 7: Select the file main.*.css from the ZIP archive that contains the runtime. Note that the * equals the hash of the file (i.e., the complete file name looks like main.b765ceca.css)\n\n\nNote: The field Description and the additional two Map-Files (for JavaScript Source and for CSS Source) are optional.\n\n\nStep 8: Press the button Save to complete the import of the Runtime:\n\n\n\n\nAfter importing the supported CBA ItemBuilder versions are listed in the section Runtime. To delete a Runtime for a particular version, click the Trash icon on the bottom right of the “card” and confirm with Delete."
+    "title": "10  Einstellungen / Settings",
+    "section": "10.2 Runtimes",
+    "text": "10.2 Runtimes\nThe IRTlib Software can be used with CBA ItemBuilder tasks of different CBA ItemBuilder versions. The required Runtime (i.e., the connection between the CBA ItemBuilder tasks and the IRTlib Software) is part of the study configuration so that the IRTlib Player knows for sure how to use CBA ItemBuilder tasks of a particular version.\n\n\n\n\n\n\nEmbedded Help\n\n\n\n\n\n10.2.1 Runtimes\nTo use the IRTLib Editor for configuring studies that use CBA ItemBuilder content, the appropriate runtime environment (Runtime) is required for that version. Current tested versions of the CBA ItemBuilder runtime are already stored in the Editor, but runtimes for other versions of the CBA ItemBuilder or updated or corrected runtimes can also be imported into the Editor in this section.\n\n10.2.1.1 Check CBA ItemBuilder Version\nYou need to know which version of the CBA ItemBuilder was used to prepare the items (i.e., the CBA ItemBuilder project files). If you are in doubt, this information can be found, for instance, in the About Dialog of the CBA ItemBuilder:\n\nStep 1: Open the “About”-dialog using the “Help”-menu\n\n\n\n\n\nStep 2: Find the version number in the dialog (here 9.9.0)\n\n\n\n\n\nThe version number must be listed as one of the cards shown in the section Runtimes of the IRTlib Editor’s Settings:\n\n\n\n\n\n\n10.2.1.2 Import Runtime Files\nIf the appropriate runtime is not already included in the editor, a new/additional Runtime can be imported. Study configurations created/edited with the IRTlib Editor can contain multiple Runtimes for different versions.\n\nStep 1: To integrate a runtime, a JavaScript and a CSS file are required. These files can be downloaded here:\n\n\nhttps://cba.itembuilder.de/appendix-tables.html#previous-versions\n\n\nStep 2: Unzip the downloaded Runtime that should be used.\nStep 3: Navigate to the section Runtimes:\n\n\n\n\n\nStep 4: Push the button “+” (bottom right)\nStep 5: Enter the version number with three places (e.g., 9.9.0):\n\n\n\n\n\nStep 6: Select the file main.*.js from the ZIP archive that contains the runtime. Note that the * equals the hash of the file (i.e., the complete file name looks like main.19479ac3.js)\nStep 7: Select the file main.*.css from the ZIP archive that contains the runtime. Note that the * equals the hash of the file (i.e., the complete file name looks like main.b765ceca.css)\n\n\nNote: The field Description and the additional two Map-Files (for JavaScript Source and for CSS Source) are optional.\n\n\nStep 8: Press the button Save to complete the import of the Runtime:\n\n\n\n\nAfter importing the supported CBA ItemBuilder versions are listed in the section Runtime. To delete a Runtime for a particular version, click the Trash icon on the bottom right of the “card” and confirm with Delete."
   },
   {
     "objectID": "github.html#irtlib-software-3",
     "href": "github.html#irtlib-software-3",
-    "title": "7  Github",
-    "section": "7.1 IRTLib Software",
-    "text": "7.1 IRTLib Software\nThe IRTlib software is free research software in the sense of open science. It can be used for non-commercial applications.\n\n\n\n\n\n\nNote\n\n\n\nTranslation: If you would like to help us with the translation of this software, you can find more information here.\n\n\n\n7.1.1 Download\n\nCurrent versions of the IRTlib Software (Windows und Docker): github\nDocumentation: github"
+    "title": "11  Github",
+    "section": "11.1 IRTLib Software",
+    "text": "11.1 IRTLib Software\nThe IRTlib software is free research software in the sense of open science. It can be used for non-commercial applications.\n\n\n\n\n\n\nNote\n\n\n\nTranslation: If you would like to help us with the translation of this software, you can find more information here.\n\n\n\n11.1.1 Download\n\nCurrent versions of the IRTlib Software (Windows und Docker): github\nDocumentation: github"
   },
   {
     "objectID": "github.html#cba-itembuilder-3",
     "href": "github.html#cba-itembuilder-3",
-    "title": "7  Github",
-    "section": "7.2 CBA ItemBuilder",
-    "text": "7.2 CBA ItemBuilder\nThe IRTlib Software allows the administration of assessment content created with the CBA ItemBuilder.\n\n7.2.1 Download\n\nCurrent versions of the CBA ItemBuilder (Windows): https://www.itembuilder.de/software\n\n\n\n7.2.2 Source Code\nSource code and material for the CBA ItemBuilder are divided into several repositories:\n\nCBA ItemBuilder (desktop application): github (In preparation / still private)\nRuntime environment / Rumtime: github (In preparation / still private)\nExecution environment for developers: github (In preparation / still private)\nTechnical documentation: github (In preparation / still private)\nTechnical example items: github(In preparation / still private)\n\n\n\n7.2.3 Documentation\nOnline-Dokumentation\n\nHTML (interaktiv): https://cba.itembuilder.de\n\nPDF (static): Open-Assessments-with-CBA-ItemBuilder.pdf\nSource github (In preparation / still private)"
+    "title": "11  Github",
+    "section": "11.2 CBA ItemBuilder",
+    "text": "11.2 CBA ItemBuilder\nThe IRTlib Software allows the administration of assessment content created with the CBA ItemBuilder.\n\n11.2.1 Download\n\nCurrent versions of the CBA ItemBuilder (Windows): https://www.itembuilder.de/software\n\n\n\n11.2.2 Source Code\nSource code and material for the CBA ItemBuilder are divided into several repositories:\n\nCBA ItemBuilder (desktop application): github (In preparation / still private)\nRuntime environment / Rumtime: github (In preparation / still private)\nExecution environment for developers: github (In preparation / still private)\nTechnical documentation: github (In preparation / still private)\nTechnical example items: github(In preparation / still private)\n\n\n\n11.2.3 Documentation\nOnline-Dokumentation\n\nHTML (interaktiv): https://cba.itembuilder.de\n\nPDF (static): Open-Assessments-with-CBA-ItemBuilder.pdf\nSource github (In preparation / still private)"
+  },
+  {
+    "objectID": "about.html#acknowledgments-1",
+    "href": "about.html#acknowledgments-1",
+    "title": "12  About",
+    "section": "12.1 Acknowledgments",
+    "text": "12.1 Acknowledgments\nContributors to this manual:\n\n…"
+  },
+  {
+    "objectID": "about.html#development-1",
+    "href": "about.html#development-1",
+    "title": "12  About",
+    "section": "12.2 Development",
+    "text": "12.2 Development\nThe development of the IRTlib Software is done at Software-Driven."
   }
 ]
