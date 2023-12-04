@@ -183,7 +183,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#datenerhebung-veröffentlichen-exportieren-data-collection-publish-export" id="toc-datenerhebung-veröffentlichen-exportieren-data-collection-publish-export" class="nav-link active" data-scroll-target="#datenerhebung-veröffentlichen-exportieren-data-collection-publish-export">Datenerhebung Veröffentlichen &amp; Exportieren / Data Collection Publish &amp; Export</a>
+  <li><a href="#datenerhebung-veröffentlichen-exportieren-data-collection-publish-export" id="toc-datenerhebung-veröffentlichen-exportieren-data-collection-publish-export" class="nav-link active" data-scroll-target="#datenerhebung-veröffentlichen-exportieren-data-collection-publish-export">Datenerhebung: Veröffentlichen &amp; Exportieren / Data Collection: Publish &amp; Export</a>
   <ul class="collapse">
   <li><a href="#checkliste-vor-dem-veröffentlichen" id="toc-checkliste-vor-dem-veröffentlichen" class="nav-link" data-scroll-target="#checkliste-vor-dem-veröffentlichen">Checkliste vor dem Veröffentlichen</a></li>
   <li><a href="#veröffentlichen-exportieren" id="toc-veröffentlichen-exportieren" class="nav-link" data-scroll-target="#veröffentlichen-exportieren">Veröffentlichen &amp; Exportieren</a></li>
@@ -197,9 +197,15 @@ ul.task-list li input[type="checkbox"] {
 
 
 <section id="datenerhebung-veröffentlichen-exportieren-data-collection-publish-export" class="level1">
-<h1>Datenerhebung Veröffentlichen &amp; Exportieren / Data Collection Publish &amp; Export</h1>
-<p>Die Konfiguration von <em>Studien</em> und den darin enthaltenen <em>Erhebungsteil(en)</em> erfolgt im <em>IRTlib Editor</em> und wird innerhalb des Editors gespeichert, wenn das Disketten-Symbol unten rechts geklickt wird.</p>
-<p>Damit zu jeder Zeit eindeutig benennbar ist, mit welcher Konfiguration einer <em>Studie</em> eine Datenerhebung durchgeführt wird, muss die Konfiguration vor der Übertragung an einen <em>IRTlib Player</em> versiegelt werden. Das geschieht in der Ansicht <em>Veröffentlichen</em> einer Studie, in welcher die <em>Studienversionen</em> aufgelistet werden:</p>
+<h1>Datenerhebung: Veröffentlichen &amp; Exportieren / Data Collection: Publish &amp; Export</h1>
+<p>Die Konfiguration von <em>Studien</em> und den darin enthaltenen <em>Erhebungsteil(en)</em> erfolgt im <em>IRTlib Editor</em>. Änderungen werden innerhalb des <em>IRTlib Editors</em> immer gespeichert, wenn das Disketten-Symbol unten rechts geklickt wird. Während der Vorbereitung einer Studie speichert man die Änderungen, wenn sie übernommen werden sollen. Aber sobald die Vorbereitung abgeschlossen ist, sollten Änderungen nicht mehr möglich sein oder zumindest nachvollzogen werden, damit die Version im <em>IRTlib Editor</em> der Version im <em>IRTlib Player</em> entspricht.</p>
+<p>Um diesen Prozess der Verwendung von <em>IRTlib Editor</em> und <em>IRTlib Player</em> zu unterstützen, ist folgendes Konzept implementiert. Damit zu jeder Zeit eindeutig benennbar ist, mit welcher Konfiguration einer <em>Studie</em> eine Datenerhebung durchgeführt wird, muss die Konfiguration vor der Übertragung an einen <em>IRTlib Player</em> versiegelt werden.</p>
+<p>Das geschieht in der Ansicht <em>Veröffentlichen</em> einer Studie, in welcher die <em>Studienversionen</em> aufgelistet werden. Bei einer neuen <em>Studie</em> sieht diese Ansicht zunächst so aus:</p>
+<p><img src="img/sreenshot-irtlib-editor-showing-unpublished-version-DEU-01.png" class="img-fluid" style="width:100.0%"></p>
+<p>In diesem Zustand könenn Sie Änderungen an den Einstellung der <em>Studie</em> und aller enthaltenen <em>Erhebungsteile</em> vornehmen.</p>
+<p>Die Schaltflächen zum <em>Validieren</em>, <em>Herunterladen</em> und <em>Veröffentlichen</em> von Studien sind ausgegraut, weil keine Revision markiert ist. Durch Klick auf die Zeile mit der noch nicht veröffentlichten <em>Revision 1</em> sind die Schaltflächen aktivierbar:</p>
+<p><img src="img/sreenshot-irtlib-editor-showing-unpublished-version-DEU-02.png" class="img-fluid" style="width:100.0%"></p>
+<p>Bevor Sie nun fortfahren, prüfen Sie bitte ob Sie an alles gedacht haben. Dafür dient die folgende <em>Checkliste</em>.</p>
 <section id="checkliste-vor-dem-veröffentlichen" class="level2">
 <h2 class="anchored" data-anchor-id="checkliste-vor-dem-veröffentlichen">Checkliste vor dem Veröffentlichen</h2>
 <ul>
@@ -226,9 +232,11 @@ ul.task-list li input[type="checkbox"] {
 <blockquote class="blockquote">
 <p>Die Konfiguration von <em>Runtimes</em> erfolgt in den <a href="./settings.html">Einstellungen</a>.</p>
 </blockquote>
+<p>Wenn Sie diese Checkliste geprüft haben können Sie mit fortsetzen wie im nächsten Abschnitt beschrieben.</p>
 </section>
 <section id="veröffentlichen-exportieren" class="level2">
 <h2 class="anchored" data-anchor-id="veröffentlichen-exportieren">Veröffentlichen &amp; Exportieren</h2>
+<p>Der Prozess zum <em>Validieren</em>, <em>Veröffentlichen</em> und <em>Herunterlade</em> von Studienkonfigurationen ist in der eingebetteten Hilfe beschrieben:</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Eingebettete Programmhilfe">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -240,11 +248,43 @@ Eingebettete Programmhilfe
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<section id="veröffentlichen" class="level3 callout-body-container callout-body">
+<div class="callout-body-container callout-body">
+<section id="veröffentlichen" class="level3">
 <h3 class="anchored" data-anchor-id="veröffentlichen">Veröffentlichen</h3>
+<p>Bevor eine <em>Version</em> einer <em>Studie</em> zu veröffentlicht wird, kann über die Schaltfläche <em>Validieren</em> geprüft werden, ob die *StudieÜ fehlerfrei konfiguriert wurde.</p>
+<blockquote class="blockquote">
+<p><img src="img/screenshot-validate-version-item-icon-01.png" class="img-fluid" width="40"></p>
+</blockquote>
+<p>Eine <em>Studie</em> muss beispielsweise immer mindestens einen <em>Erhebungsteil</em> enthalten. Ist das nicht der Fall, erscheint beim <em>Validieren</em> die folgende Meldung:</p>
+<p><img src="img/sreenshot-irtlib-editor-showing-example-validation-failed-DEU-01.png" class="img-fluid" style="width:100.0%"></p>
+<p>Hinweis: Werden keine Fehler beim <em>Validieren</em> gefunden, wird keine weitere Nachricht angezeigt und die Studie kann veröffentlicht werden.</p>
+<p>Wenn keine Fehler mehr enthalten sind und die <em>Studie</em> für den Export vorbereitet werden soll, kann eine <em>Version</em> erstellt werden. Dazu dient die folgende Schaltfläche:</p>
+<blockquote class="blockquote">
+<p><img src="img/screenshot-create-version-item-icon-01.png" class="img-fluid" width="40"></p>
+</blockquote>
+<p>Danach erscheint der folgende Dialog:</p>
+<p><img src="img/sreenshot-irtlib-editor-create-new-version-DEU-01.png" class="img-fluid" width="450"></p>
+<p>Versionen benötigen eine <em>Bezeichnung</em> und können optional mit einer <em>Beschreibung</em> dokumentiert werden. Nach dem Bestätigen mit <em>Speichern</em> erscheint die <em>Studie</em> mit einem <em>Veröffentlichungsdatum</em> in der Liste:</p>
+<p><img src="img/sreenshot-irtlib-editor-download-version-DEU-01.png" class="img-fluid" style="width:100.0%"></p>
+</section>
+<section id="exportieren" class="level3">
+<h3 class="anchored" data-anchor-id="exportieren">Exportieren</h3>
+<p>Veröffentliche Versionen können über die folgende Schaltfläche kann die <em>Version</em> heruntergeladen werden:</p>
+<blockquote class="blockquote">
+<p><img src="img/screenshot-download-version-item-icon-01.png" class="img-fluid" width="40"></p>
+</blockquote>
+<p>Nach dem Betätigen dieser Schaltfläche erscheint ein <em>Save As</em> / <em>Speichern unter</em> - Dialog, und die vollständige Studienkonfiguration kann als ZIP-Archiv gespeichert werden. Dieses ZIP-Archiv kann dann in einem nächsten Schritt verwendet werden, um es in einen <em>IRTlib Player</em> zu laden.</p>
+</section>
+<section id="studienversionen" class="level3">
+<h3 class="anchored" data-anchor-id="studienversionen">Studienversionen</h3>
+<p>Die <em>IRTlib Software</em> ist so erstellt, dass im Datensatz immer die <em>Revision</em> der <em>Studie</em> gespeichert wird, sodass nachvollzogen werden kann mit welcher Konfiguration (d.h. welche <em>CBA ItemBuilder</em>-Inhalten und Einstellungen im <em>IRTlib Editor</em>) Daten erhoben werden.</p>
+<p><strong>Unveröffentlichte Versionen</strong>: Es ist auch möglich, nicht veröffentliche Versionen herunterzuladen und in einem <em>IRTlib Player</em> auszuprobieren. Zur Sicherheit wird dann aber eine farbliche Markierung während der Testung angezeigt, damit klar erstichtlich ist dass es sich hierbei nur eine Vorabversion handelt. Mit nicht veröffentlichten Studien sollten niemals Daten erhoben werden.</p>
+<p><strong>Änderungen veröffentlichter Versionen</strong>: Versionen <em>versiegeln</em> die Konfiguration, und machen Änderungen durch eine <em>Revisionsnummer</em>, eine <em>Bezeichnung</em> und eine optionale <em>Beschreibung</em> nachvollziehbar. Änderungen nach dem Versiegeln einer Version sind aber weiterhin möglich. Bevor veränderte Versionen für eine Datenerhebung verwendet werden können, müssen diese aber ebenfalls versiegelt werden, d.h. eine neue <em>Version</em> muss über <em>Veröffentlichen</em> erstellt werden.</p>
 </section>
 </div>
 </div>
+</div>
+<p>Eine Datenerhebung mit einem <em>IRTlib Player</em> kann erfolgen, wenn eine veröffentlichte <em>Studie</em> aus dem <em>IRTlib Editor</em> als ZIP-Archiv heruntergeladen wurde.</p>
 
 
 </section>

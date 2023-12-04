@@ -21,11 +21,25 @@
     "text": "Vorbereitung Erhebungsteile / Preparation Study Parts"
   },
   {
+    "objectID": "data-collection-player-integration.html",
+    "href": "data-collection-player-integration.html",
+    "title": "Datenerhebung: In IRTlib Player Importieren / Data Collection: Import into IRTlib Player",
+    "section": "",
+    "text": "Datenerhebung: In IRTlib Player Importieren / Data Collection: Import into IRTlib Player"
+  },
+  {
     "objectID": "github.html",
     "href": "github.html",
     "title": "Github",
     "section": "",
     "text": "Github"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About"
   },
   {
     "objectID": "preparation-studies.html",
@@ -65,30 +79,30 @@
   {
     "objectID": "preparation-overview.html",
     "href": "preparation-overview.html",
-    "title": "Vorbereitung Übersicht / Preparation Overview",
+    "title": "Vorbereitung: Übersicht / Preparation: Overview",
     "section": "",
-    "text": "Vorbereitung Übersicht / Preparation Overview"
+    "text": "Vorbereitung: Übersicht / Preparation: Overview"
   },
   {
     "objectID": "data-collection-post-processing.html",
     "href": "data-collection-post-processing.html",
-    "title": "Datenerhebung - Datenaufbereitung / Data Collection - Data Post-Processing",
+    "title": "Datenerhebung: Datenaufbereitung / Data Collection: Data Post-Processing",
     "section": "",
-    "text": "Datenerhebung - Datenaufbereitung / Data Collection - Data Post-Processing"
+    "text": "Datenerhebung: Datenaufbereitung / Data Collection: Data Post-Processing"
   },
   {
     "objectID": "data-collection-overview.html",
     "href": "data-collection-overview.html",
-    "title": "Datenerhebung Übersicht / Data Collection Overview",
+    "title": "Datenerhebung: Übersicht / Data Collection: Overview",
     "section": "",
-    "text": "Datenerhebung Übersicht / Data Collection Overview"
+    "text": "Datenerhebung: Übersicht / Data Collection: Overview"
   },
   {
     "objectID": "data-collection-publish-and-export.html",
     "href": "data-collection-publish-and-export.html",
-    "title": "Datenerhebung Veröffentlichen & Exportieren / Data Collection Publish & Export",
+    "title": "Datenerhebung: Veröffentlichen & Exportieren / Data Collection: Publish & Export",
     "section": "",
-    "text": "Datenerhebung Veröffentlichen & Exportieren / Data Collection Publish & Export"
+    "text": "Datenerhebung: Veröffentlichen & Exportieren / Data Collection: Publish & Export"
   },
   {
     "objectID": "index.html",

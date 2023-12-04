@@ -79,9 +79,23 @@
   {
     "objectID": "data-collection-player-integration.html",
     "href": "data-collection-player-integration.html",
-    "title": "Home | IRTlib",
+    "title": "Datenerhebung: In IRTlib Player Importieren / Data Collection: Import into IRTlib Player",
     "section": "",
-    "text": "(No translation defined yet.)"
+    "text": "Wenn eine versiegelte Studienkonfiguration aus dem IRTlib Editor exportiert wurde, kann diese in einen IRTlib Player integriert werden.\nZur Zeit werden zwei Optionen unterstützt:\n\nAutomatischer Import\nManueller Import\n\n\n\nscreenshot-irtlib-player-message-no-study01-de-DEU.png\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nReverse Proxy für SSL"
+  },
+  {
+    "objectID": "data-collection-player-integration.html#konfiguration-importieren-2",
+    "href": "data-collection-player-integration.html#konfiguration-importieren-2",
+    "title": "Datenerhebung: In IRTlib Player Importieren / Data Collection: Import into IRTlib Player",
+    "section": "",
+    "text": "Wenn eine versiegelte Studienkonfiguration aus dem IRTlib Editor exportiert wurde, kann diese in einen IRTlib Player integriert werden.\nZur Zeit werden zwei Optionen unterstützt:\n\nAutomatischer Import\nManueller Import\n\n\n\nscreenshot-irtlib-player-message-no-study01-de-DEU.png"
+  },
+  {
+    "objectID": "data-collection-player-integration.html#hosting-docker",
+    "href": "data-collection-player-integration.html#hosting-docker",
+    "title": "Datenerhebung: In IRTlib Player Importieren / Data Collection: Import into IRTlib Player",
+    "section": "",
+    "text": "Reverse Proxy für SSL"
   },
   {
     "objectID": "github.html",
@@ -107,9 +121,23 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About IRTlib.net",
+    "title": "About",
     "section": "",
-    "text": "About IRTlib.net"
+    "text": "Contributors to this manual:\n\n…\n\n\n\n\nThe development of the IRTlib Software is done at Software-Driven."
+  },
+  {
+    "objectID": "about.html#acknowledgments",
+    "href": "about.html#acknowledgments",
+    "title": "About",
+    "section": "",
+    "text": "Contributors to this manual:\n\n…"
+  },
+  {
+    "objectID": "about.html#development",
+    "href": "about.html#development",
+    "title": "About",
+    "section": "",
+    "text": "The development of the IRTlib Software is done at Software-Driven."
   },
   {
     "objectID": "preparation-studies.html",
@@ -212,42 +240,42 @@
   {
     "objectID": "preparation-overview.html",
     "href": "preparation-overview.html",
-    "title": "Vorbereitung Übersicht / Preparation Overview",
+    "title": "Vorbereitung: Übersicht / Preparation: Overview",
     "section": "",
-    "text": "Vorbereitung Übersicht / Preparation Overview\nPreparing a computer-based assessment based on CBA ItemBuilder items begins with using the IRTlib Editor to create a study configuration. This typically involves the following steps:\n\n\n\n\n\n\nOptional\n\n\n\n\n\n\nPre-requisite: Check the availability of the Runtime. The IRTlib Editor can be used to prepare assessments using CBA ItemBuilder Tasks. Using CBA ItemBuilder Tasks are stored in Project Files require a Runtime (i.e., the files “main..js” and “main..css”) in the version corresponding exactly to the version of the CBA ItemBuilder that was used to generate the items (e.g., 9.9.0). Before using the IRTLib editor, ensure the required Runtime is included or import the runtime files (see here for details).\n\nNote: This step is usually not necessary for the use of CBA ItemBuilder items from version 9.9.\n\n\n\n\nCreate a new “Study”: The IRTlib Editor is used to configure so-called Studies. The version of studies can be tracked in the editor, and studies can be published (i.e., sealed to be used for data collection). To start creating content using the IRTlib Editor, a study must be created first (see section Settings for details).\n\n\n\n\n\n\n\nNote\n\n\n\nNote that at least one study must be defined in the IRTlib Editor, before a study configuration can be used to collect data with an IRTlib Player.\n\n\n\nSpecify “Basic Configurations” for the Study (Info): Basic configurations that apply to the content of a prepared study include the study label and description, the login mode, the display configuration, the menu for test administrators and the specification how to continue after completing all content defined in a study (see section Studies for details).\nCreate a new “Survey-Part”: Each study is composed of one or multiple survey parts (see here for details). Parts are considered segments of an assessment that are administered together, like items from a particular domain. Survey parts of type “CBA ItemBuilder” can be used to administer CBA ITemBuilder tasks in a linear sequence or with Blockly-based routing (see Routing Across Survey Parts for details).\n\n\n\n\n\n\n\nNote\n\n\n\nNote that each study neads at least one test-part defined in the IRTlib Editor, before a study configuration can be used to collect data with an IRTlib Player.\n\n\n\nConfigure “Basic Settings” for Survey Part (Info): A study part of type “CBA ItemBuilder” is a set of CBA ItemBuilder projects that belong together. Each CBA ItemBuilder project requires at least one Task, but projects with multiple tasks are also supported. If items are administered with a common time limit, test parts allow for assigning tasks to a structure differentiating assessment content presented before a time-restricted section (“instructional items”), after a time-restricted section (“epilogue items”), and items in between with restricted time (“core items”, see here).\nDefine “Core Items” (Items): To finalize the definition of a study-part, the CBA ItemBuilder tasks must be imported in the section “Items”. By default, the sequence of CBA ItemBuilder tasks is assumed to be linear. However, when routing is activated for a study part, Blockly-based routing (see Routing Within Survey Parts for details) can be used to implement various test designs (e.g., multiple booklets, multi-stage testing, etc.)."
+    "text": "Vorbereitung: Übersicht / Preparation: Overview\nPreparing a computer-based assessment based on CBA ItemBuilder items begins with using the IRTlib Editor to create a study configuration. This typically involves the following steps:\n\n\n\n\n\n\nOptional\n\n\n\n\n\n\nPre-requisite: Check the availability of the Runtime. The IRTlib Editor can be used to prepare assessments using CBA ItemBuilder Tasks. Using CBA ItemBuilder Tasks are stored in Project Files require a Runtime (i.e., the files “main..js” and “main..css”) in the version corresponding exactly to the version of the CBA ItemBuilder that was used to generate the items (e.g., 9.9.0). Before using the IRTLib editor, ensure the required Runtime is included or import the runtime files (see here for details).\n\nNote: This step is usually not necessary for the use of CBA ItemBuilder items from version 9.9.\n\n\n\n\nCreate a new “Study”: The IRTlib Editor is used to configure so-called Studies. The version of studies can be tracked in the editor, and studies can be published (i.e., sealed to be used for data collection). To start creating content using the IRTlib Editor, a study must be created first (see section Settings for details).\n\n\n\n\n\n\n\nNote\n\n\n\nNote that at least one study must be defined in the IRTlib Editor, before a study configuration can be used to collect data with an IRTlib Player.\n\n\n\nSpecify “Basic Configurations” for the Study (Info): Basic configurations that apply to the content of a prepared study include the study label and description, the login mode, the display configuration, the menu for test administrators and the specification how to continue after completing all content defined in a study (see section Studies for details).\nCreate a new “Survey-Part”: Each study is composed of one or multiple survey parts (see here for details). Parts are considered segments of an assessment that are administered together, like items from a particular domain. Survey parts of type “CBA ItemBuilder” can be used to administer CBA ITemBuilder tasks in a linear sequence or with Blockly-based routing (see Routing Across Survey Parts for details).\n\n\n\n\n\n\n\nNote\n\n\n\nNote that each study neads at least one test-part defined in the IRTlib Editor, before a study configuration can be used to collect data with an IRTlib Player.\n\n\n\nConfigure “Basic Settings” for Survey Part (Info): A study part of type “CBA ItemBuilder” is a set of CBA ItemBuilder projects that belong together. Each CBA ItemBuilder project requires at least one Task, but projects with multiple tasks are also supported. If items are administered with a common time limit, test parts allow for assigning tasks to a structure differentiating assessment content presented before a time-restricted section (“instructional items”), after a time-restricted section (“epilogue items”), and items in between with restricted time (“core items”, see here).\nDefine “Core Items” (Items): To finalize the definition of a study-part, the CBA ItemBuilder tasks must be imported in the section “Items”. By default, the sequence of CBA ItemBuilder tasks is assumed to be linear. However, when routing is activated for a study part, Blockly-based routing (see Routing Within Survey Parts for details) can be used to implement various test designs (e.g., multiple booklets, multi-stage testing, etc.)."
   },
   {
     "objectID": "data-collection-overview.html",
     "href": "data-collection-overview.html",
-    "title": "Datenerhebung Übersicht / Data Collection Overview",
+    "title": "Datenerhebung: Übersicht / Data Collection: Overview",
     "section": "",
     "text": "(No translation defined yet.)"
   },
   {
     "objectID": "data-collection-overview.html#overview-steps-for-using-an-irtlib-player-for-data-collection",
     "href": "data-collection-overview.html#overview-steps-for-using-an-irtlib-player-for-data-collection",
-    "title": "Datenerhebung Übersicht / Data Collection Overview",
+    "title": "Datenerhebung: Übersicht / Data Collection: Overview",
     "section": "",
     "text": "(No translation defined yet.)"
   },
   {
     "objectID": "data-collection-publish-and-export.html",
     "href": "data-collection-publish-and-export.html",
-    "title": "Datenerhebung Veröffentlichen & Exportieren / Data Collection Publish & Export",
+    "title": "Datenerhebung: Veröffentlichen & Exportieren / Data Collection: Publish & Export",
     "section": "",
     "text": "The configuration of Studies and the Collection part(s) contained therein is carried out in the IRTlib Editor and is saved within the editor when the diskette symbol at the bottom right is clicked.\nTo ensure that the configuration of a study used for data collection can be clearly identified at all times, the configuration must be sealed before being transferred to an IRTlib Player. This is done in the Publish view of a study, in which the Study versions are listed:\n\n\n\nIs the login configured?\n\n\nTo ensure that the correct study can be started after starting the IRTlib Player, a login mode suitable for the planned use must be configured. The login mode can be defined in the Study configuration in the Login section.\n\n\nIs a test administrator menu configured?\n\n\nIf kiosk mode is activated in the offline IRTlib Player, it may be difficult or impossible to exit the application without a configured test conductor menu. Key combinations and passwords with roles are defined in the Study configuration in the Test leader menu section.\n\n\nAre the items inserted?\n\n\nThe assessment contents are configured in one or more study-parts. Most CBA ItemBuilder-tasks will be located in the Items section of a assessment part.\n\n\nAre the runtime environments (Runtimes) available?\n\n\nThe configuration of Runtimes is done in the Settings.\n\n\n\n\n\n\n\n\n\n\nEmbedded program help"
   },
   {
     "objectID": "data-collection-publish-and-export.html#checklist-before-publishing",
     "href": "data-collection-publish-and-export.html#checklist-before-publishing",
-    "title": "Datenerhebung Veröffentlichen & Exportieren / Data Collection Publish & Export",
+    "title": "Datenerhebung: Veröffentlichen & Exportieren / Data Collection: Publish & Export",
     "section": "",
     "text": "Is the login configured?\n\n\nTo ensure that the correct study can be started after starting the IRTlib Player, a login mode suitable for the planned use must be configured. The login mode can be defined in the Study configuration in the Login section.\n\n\nIs a test administrator menu configured?\n\n\nIf kiosk mode is activated in the offline IRTlib Player, it may be difficult or impossible to exit the application without a configured test conductor menu. Key combinations and passwords with roles are defined in the Study configuration in the Test leader menu section.\n\n\nAre the items inserted?\n\n\nThe assessment contents are configured in one or more study-parts. Most CBA ItemBuilder-tasks will be located in the Items section of a assessment part.\n\n\nAre the runtime environments (Runtimes) available?\n\n\nThe configuration of Runtimes is done in the Settings."
   },
   {
     "objectID": "data-collection-publish-and-export.html#publish-export",
     "href": "data-collection-publish-and-export.html#publish-export",
-    "title": "Datenerhebung Veröffentlichen & Exportieren / Data Collection Publish & Export",
+    "title": "Datenerhebung: Veröffentlichen & Exportieren / Data Collection: Publish & Export",
     "section": "",
     "text": "Embedded program help"
   },
