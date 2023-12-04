@@ -11,7 +11,7 @@
     "href": "index.html",
     "title": "Einführung / Introduction",
     "section": "",
-    "text": "Einführung / Introduction\n\n\n\nIRTlib Software\n\n\nIRTlib ist eine Software zur Auslieferung computerbasierter Assessments basierend auf Aufgaben, die mit dem CBA ItemBuilder erstellt wurden. Die Software erlaubt die Definition von flexiblen Abläufen unter Nutzung von visueller Programmierung und Funktionen der Item-Response Theoie (IRT).\n\n\nIRTlib is a software for the delivery of computer-based assessments using tasks develope with the CBA ItemBuilder. The software allows the definition of flexible processes using visual programming and functions of the item-response theory (IRT).\n\n\n\n\n\nDokumentation auf Deutsch (als Buch)\n\n\nEnglish Documentation (as Book)"
+    "text": "Einführung / Introduction\n\n\n\nIRTlib Software\n\n\nIRTlib ist eine Software zur Auslieferung computerbasierter Assessments basierend auf Aufgaben, die mit dem CBA ItemBuilder erstellt wurden. Die Software erlaubt die Definition von flexiblen Abläufen unter Nutzung von visueller Programmierung und Funktionen der Item-Response Theoie (IRT).\n\n\nIRTlib is a software for the delivery of computer-based assessments using tasks develope with the CBA ItemBuilder. The software allows the definition of flexible processes using visual programming and functions of the item-response theory (IRT).\n\n\n\n\n\nDokumentation auf Deutsch (als Buch)\n\n\nEnglish documentation under preparation…"
   },
   {
     "objectID": "data-collection-publish-and-export.html",
@@ -47,6 +47,13 @@
     "title": "Translation",
     "section": "",
     "text": "Markdown (DEU)\nen-US\nde-DEU\n…\n\n\n\n\n*IRTlib Player*\nIRTlib Player\nIRTlib Player\n\n\n\n*IRTlib Editor*\nIRTlib Editor\nIRTlib Editor\n\n\n\n*IRTlib Software*\nIRTlib Software\nIRTlib Software\n\n\n\nOffline-*IRTlib Player*\nOffline-IRTlib Player\nOffline-IRTlib Player\n\n\n\nOnline-*IRTlib Player*\nOnline-IRTlib Player\nOnline-IRTlib Player\n\n\n\n*Studie*\nStudy\nStudie\n\n\n\n*Erhebungsteil*\nStudy Part \nErhebungsteil\n\n\n\n*Einstellungen*\nSettings\nEinstellungen\n\n\n\n*Testleitermenü*\nSession Menu\nTestleitermenü\n\n\n\n*Bearbeitungszeit*\nCompletion time\nBearbeitungszeit\n\n\n\n*Bearbeitungszeit begrenzen*\nRestrict time allowed\nBearbeitungszeit begrenzen\n\n\n\n*Studienversion*\nStudy version\nStudienversion\n\n\n\n*Revision*\nRevision\nRevision\n\n\n\n*Vorspann-Item(s)*\nProlog Item(s)\nVorspann-Item(s)\n\n\n\n*Nachspann-Items(s)*\nEpilog Item(s)\nNachspann-Items(s)\n\n\n\n*Testleiter*\nTest Administrator\nTestleiter\n\n\n\n*CBA ItemBuilder*-Items\nCBA ItemBuilder-Items\nCBA ItemBuilder-Items\n\n\n\n*Docker*-Container\nDocker-Container\nDocker-Container"
+  },
+  {
+    "objectID": "data-collection-post-processing.html",
+    "href": "data-collection-post-processing.html",
+    "title": "Datenerhebung - Datenaufbereitung / Data Collection - Data Post-Processing",
+    "section": "",
+    "text": "Datenerhebung - Datenaufbereitung / Data Collection - Data Post-Processing"
   },
   {
     "objectID": "github.html",

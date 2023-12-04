@@ -59,4 +59,4 @@ format:
 lang: de
  
 execute:
-  freeze: auto 
+  freeze: false

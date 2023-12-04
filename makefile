@@ -6,6 +6,10 @@ all:
 	quarto render --profile englishbook	
 	cp _book/de/IRTlib-Dokumentation.pdf _site/de/IRTlib-Software.pdf
 	cp _book/en/IRTlib-Documentation.pdf _site/en/IRTlib-Software.pdf
+	cp -R _book/de/site_libs/ _site/site_libs/
+	cp -R _book/de/site_libs/ _site/de/site_libs/
+	cp -R _book/de/site_libs/ _site/en/site_libs/
+	
 
 de:
 	quarto render --profile language 

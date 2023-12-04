@@ -14,7 +14,7 @@ Damit zu jeder Zeit eindeutig benennbar ist, mit welcher Konfiguration einer *St
 
 * Sind die *Items* eingefügt? 
 
-> Die Assessmentinhalte werden in einem oder mehreren [*Erhebunsteilen*](preparation-pars.qmd)  konfiguriert. Die meisten *CBA ItemBuilder*-*Tasks* werden sich im Abschnitt *Items* eines *Erhebungsteils* befinden.
+> Die Assessmentinhalte werden in einem oder mehreren [*Erhebunsteilen*](preparation-parts.qmd)  konfiguriert. Die meisten *CBA ItemBuilder*-*Tasks* werden sich im Abschnitt *Items* eines *Erhebungsteils* befinden.
 
 * Sind die Laufzeitumgebungen (*Runtimes*) vorhanden? 
 

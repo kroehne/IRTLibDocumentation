@@ -57,4 +57,4 @@ format:
 lang: en
 
 execute:
-  freeze: auto 
+  freeze: false 

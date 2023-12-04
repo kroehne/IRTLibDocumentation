@@ -14,7 +14,7 @@ To ensure that the configuration of a *study* used for data collection can be cl
 
 * Are the *items* inserted? 
 
-> The assessment contents are configured in one or more [*study-parts*](preparation-pars.qmd). Most *CBA ItemBuilder*-*tasks* will be located in the *Items* section of a *assessment part*.
+> The assessment contents are configured in one or more [*study-parts*](preparation-parts.qmd). Most *CBA ItemBuilder*-*tasks* will be located in the *Items* section of a *assessment part*.
 
 * Are the runtime environments (*Runtimes*) available? 
 

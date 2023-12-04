@@ -1,33 +1,23 @@
 ---
 format:
   html:
-    embed-resources: true
+    embed-resources: false
 lang: en    
 ---
 
-::: {.content-visible when-profile="german"}
+\let\clearpage\standardclearpage
 
-# Datenerhebungen
+# Datenerhebung - Datenaufbereitung / Data Collection - Data Post-Processing
 
-## Datenaufbereitung
-
-### Ergebnisdaten
-
-### Log-Daten
-
+:::{.content-visible when-profile="german"}
+{{< include _data-collection-post-processing_de-DEU.qmd >}}
 :::
-
-::: {.content-visible when-profile="english"}
-
-
-
-# Data Collection 
-
-## Data Post-Processing
-
-### Result Data
-
-
-### Log Data 
-
+:::{.content-visible when-profile="germanbook"}
+{{< include _data-collection-post-processing_de-DEU.qmd >}}
+:::
+:::{.content-visible when-profile="english"}
+{{< include _data-collection-post-processing_en-US.qmd >}}
+:::
+:::{.content-visible when-profile="englishbook"}
+{{< include _data-collection-post-processing_en-US.qmd >}}
 :::
