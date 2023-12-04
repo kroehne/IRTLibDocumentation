@@ -27,14 +27,11 @@ jobs:
         with:
           path: ${{ env.R_LIBS_USER }}
           key: ${{ runner.os }}-${{ steps.get-r-version.outputs.version }}-3-
-      - name: Install pak
+      - name: Install RMarkdown
         run: |
-          install.packages("pak", repos = "https://r-lib.github.io/p/pak/dev/")
+          install.packages("rmarkdown")
         shell: Rscript {0}
-      - name: Install dependencies
-        run: |
-          pak::local_install_dev_deps()
-        shell: Rscript {0}
+
       - name: Install knitr 1.42 to avoid bug in 1.43
         run: |
           devtools::install_version("knitr", version = "1.42")
