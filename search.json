@@ -1,24 +1,38 @@
 [
   {
-    "objectID": "download.html",
-    "href": "download.html",
-    "title": "Download & Installation",
+    "objectID": "development.html",
+    "href": "development.html",
+    "title": "Development",
     "section": "",
-    "text": "Die IRTlib-Software wird für die Offline-Nutzung (Windows) und für die Online-Nutzung (Docker Container) bereitgestellt.\n\n\nDie IRTlib-Software (IRTlib Editor und IRTlib Player) für die Offline-Nutzung kann aus dem Abschnitt [Releases] des Repository https://github.com/DIPFtba/IRTlibDeploymentSoftware bezogen und heruntergeladen werden.\nIm Abschnitt Releases stehen die beiden Archive TestApp.Editor.Desktop.zip und TestApp.Player.Desktop.zip zum Download bereit.\n\n\n\n\n\n\nNote\n\n\n\nBeachten Sie, dass der aktuellste Build im Abschnitt Preview des Release-Abschnitts des repository zu finden ist.\n\n\n\n\n\n\n\n\nWarning\n\n\n\nDie automatisch erstellten Vorschauversionen des IRTlib Editors und IRTlib Players sind nicht signiert. Eine Warnmeldung des Betriebssystems muss akzeptiert werden, bevor die Programme ausgeführt werden können.\n\n\n\n\nDer IRTlib Editor für die Offline-Nutzung wird als ZIP-Archiv (z.B. TestApp.Editor.Desktop.zip) bereitgestellt, das entpackt werden muss. Nach dem Entpacken des Editors kann die Anwendung TestApp.Editor.Desktop.exe auf einem Windows-Gerät gestartet werden.\nIn den Abschnitten Vorbereitung &gt; Übersicht, Vorbereitung &gt; Studien und Vorbereitung &gt; Erhebungsteile ist dokumentiert, wie man mit Hilfe von CBA ItemBuilder-Items Datenerhebungen vorbereitet und konfiguriert.\n\n\n\nDer IRTlib Player ist auch als Windows-Anwendung für die Offline-Nutzung verfügbar und wird als ZIP-Archiv (z.B. TestApp.Player.Desktop.zip) bereitgestellt. Nach dem Entpacken des IRTlib Player ist eine veröffentlichte Studienkonfiguration erforderlich, die zur Datenerhebung verwendet werden soll.\nNach dem Hinzufügen der als Studienkonfiguration bereitgestellten Inhalte einer veröffentlichten Studie kann die ausführbare Datei TestApp.Player.Desktop.exe gestartet werden (entweder mit oder ohne Startparameter).\n\nKiosk Mode: Der IRTlib Player kann über die ausführbare Datei TestApp.Player.Desktop.exe auf dem Computer, auf dem er lokal ausgeführt wird, direkt zur Datenerhebung verwendet werden. Die Studie kann dazu so konfirugiert werden, dass es in einem Kiosk Mode auf einem Bildschirm angezeigt wird und nur über den Task Manager oder das Testleitermenü beendet werden kann (siehe Vollbildmodus im Abschnitt Konfiguration zur Anzeige).\nLokaler Server: Der IRTlib Player kann aber auch als lokaler Server ausgeführt werden. Nach dem Start des Programms TestApp.Player.Server.exe kann eine konfigurierte Studie auch über Webbrowser oder andere Browser mit Kiosk Mode ausgeliefert werden (z.B. den Safe Exam Browser). Mit dieser Konfiguration lassen sich Datenerhebungen bspw. in Schulen ohne Internetverbindung aber mit einem als Bring-in-Server fungierenden Notebook durchführen.\n\nIn den Abschnitten Datenerhebung &gt; Übersicht, Datenerhebung &gt; Veröffentlichen & Export und Datenerhebung &gt; Integration & Auslieferung ist dokumentiert, wie man mit Hilfe des IRTlib Players in den unterschiedlichen Konstellationen Datenerhebungen durchführen kann.\n\n\n\n\nDie IRTlib-Software (IRTlib Editor und IRTlib Player) für die Online-Nutzung kann als Docker-Container bezogen werden. Ein Beispiel ist unter https://github.com/DIPFtba/IRTlibDeploymentSoftware zu finden.\nUm den Docker-Container zu verwenden, wird empfohlen, das Repository auf dem Zielgerät auszuchecken (erfordert git) und den Befehl ./start.sh im Ordner docker auszuführen (erfordert installiertes docker und docker compose), um die Software zu starten.\nWenn in der Datei docker-compose.yml nichts geändert wird, ist der Editor über Port 8002 und die Player-Software über Port 8001 erreichbar.\nIn dem Abschnitt Datenerhebung &gt; Integration & Auslieferung finden sich weitere Informationen zur Verwendung der Docker-Container."
+    "text": "Editor for defining Codebooks\nEditor for managing IRT Parameters for ItemPools\nIRT-Integration in Blockly for MST/CAT/MCAT/…\nWebservice Integration required for NLP/Scoring/AI"
   },
   {
-    "objectID": "download.html#offline-windows",
-    "href": "download.html#offline-windows",
-    "title": "Download & Installation",
+    "objectID": "development.html#missing-features-in-version-1.1",
+    "href": "development.html#missing-features-in-version-1.1",
+    "title": "Development",
     "section": "",
-    "text": "Die IRTlib-Software (IRTlib Editor und IRTlib Player) für die Offline-Nutzung kann aus dem Abschnitt [Releases] des Repository https://github.com/DIPFtba/IRTlibDeploymentSoftware bezogen und heruntergeladen werden.\nIm Abschnitt Releases stehen die beiden Archive TestApp.Editor.Desktop.zip und TestApp.Player.Desktop.zip zum Download bereit.\n\n\n\n\n\n\nNote\n\n\n\nBeachten Sie, dass der aktuellste Build im Abschnitt Preview des Release-Abschnitts des repository zu finden ist.\n\n\n\n\n\n\n\n\nWarning\n\n\n\nDie automatisch erstellten Vorschauversionen des IRTlib Editors und IRTlib Players sind nicht signiert. Eine Warnmeldung des Betriebssystems muss akzeptiert werden, bevor die Programme ausgeführt werden können.\n\n\n\n\nDer IRTlib Editor für die Offline-Nutzung wird als ZIP-Archiv (z.B. TestApp.Editor.Desktop.zip) bereitgestellt, das entpackt werden muss. Nach dem Entpacken des Editors kann die Anwendung TestApp.Editor.Desktop.exe auf einem Windows-Gerät gestartet werden.\nIn den Abschnitten Vorbereitung &gt; Übersicht, Vorbereitung &gt; Studien und Vorbereitung &gt; Erhebungsteile ist dokumentiert, wie man mit Hilfe von CBA ItemBuilder-Items Datenerhebungen vorbereitet und konfiguriert.\n\n\n\nDer IRTlib Player ist auch als Windows-Anwendung für die Offline-Nutzung verfügbar und wird als ZIP-Archiv (z.B. TestApp.Player.Desktop.zip) bereitgestellt. Nach dem Entpacken des IRTlib Player ist eine veröffentlichte Studienkonfiguration erforderlich, die zur Datenerhebung verwendet werden soll.\nNach dem Hinzufügen der als Studienkonfiguration bereitgestellten Inhalte einer veröffentlichten Studie kann die ausführbare Datei TestApp.Player.Desktop.exe gestartet werden (entweder mit oder ohne Startparameter).\n\nKiosk Mode: Der IRTlib Player kann über die ausführbare Datei TestApp.Player.Desktop.exe auf dem Computer, auf dem er lokal ausgeführt wird, direkt zur Datenerhebung verwendet werden. Die Studie kann dazu so konfirugiert werden, dass es in einem Kiosk Mode auf einem Bildschirm angezeigt wird und nur über den Task Manager oder das Testleitermenü beendet werden kann (siehe Vollbildmodus im Abschnitt Konfiguration zur Anzeige).\nLokaler Server: Der IRTlib Player kann aber auch als lokaler Server ausgeführt werden. Nach dem Start des Programms TestApp.Player.Server.exe kann eine konfigurierte Studie auch über Webbrowser oder andere Browser mit Kiosk Mode ausgeliefert werden (z.B. den Safe Exam Browser). Mit dieser Konfiguration lassen sich Datenerhebungen bspw. in Schulen ohne Internetverbindung aber mit einem als Bring-in-Server fungierenden Notebook durchführen.\n\nIn den Abschnitten Datenerhebung &gt; Übersicht, Datenerhebung &gt; Veröffentlichen & Export und Datenerhebung &gt; Integration & Auslieferung ist dokumentiert, wie man mit Hilfe des IRTlib Players in den unterschiedlichen Konstellationen Datenerhebungen durchführen kann."
+    "text": "Editor for defining Codebooks\nEditor for managing IRT Parameters for ItemPools\nIRT-Integration in Blockly for MST/CAT/MCAT/…\nWebservice Integration required for NLP/Scoring/AI"
   },
   {
-    "objectID": "download.html#online-docker",
-    "href": "download.html#online-docker",
-    "title": "Download & Installation",
+    "objectID": "preparation-parts.html",
+    "href": "preparation-parts.html",
+    "title": "Vorbereitung Erhebungsteile / Preparation Study Parts",
     "section": "",
-    "text": "Die IRTlib-Software (IRTlib Editor und IRTlib Player) für die Online-Nutzung kann als Docker-Container bezogen werden. Ein Beispiel ist unter https://github.com/DIPFtba/IRTlibDeploymentSoftware zu finden.\nUm den Docker-Container zu verwenden, wird empfohlen, das Repository auf dem Zielgerät auszuchecken (erfordert git) und den Befehl ./start.sh im Ordner docker auszuführen (erfordert installiertes docker und docker compose), um die Software zu starten.\nWenn in der Datei docker-compose.yml nichts geändert wird, ist der Editor über Port 8002 und die Player-Software über Port 8001 erreichbar.\nIn dem Abschnitt Datenerhebung &gt; Integration & Auslieferung finden sich weitere Informationen zur Verwendung der Docker-Container."
+    "text": "Vorbereitung Erhebungsteile / Preparation Study Parts"
+  },
+  {
+    "objectID": "github.html",
+    "href": "github.html",
+    "title": "Github",
+    "section": "",
+    "text": "Github"
+  },
+  {
+    "objectID": "preparation-studies.html",
+    "href": "preparation-studies.html",
+    "title": "Vorbereitung Studien / Preparation Studies",
+    "section": "",
+    "text": "Vorbereitung Studien / Preparation Studies"
   },
   {
     "objectID": "translation.html",
@@ -49,17 +63,52 @@
     "text": "Markdown (DEU)\nen-US\nde-DEU\n…\n\n\n\n\n*IRTlib Player*\nIRTlib Player\nIRTlib Player\n\n\n\n*IRTlib Editor*\nIRTlib Editor\nIRTlib Editor\n\n\n\n*IRTlib Software*\nIRTlib Software\nIRTlib Software\n\n\n\nOffline-*IRTlib Player*\nOffline-IRTlib Player\nOffline-IRTlib Player\n\n\n\nOnline-*IRTlib Player*\nOnline-IRTlib Player\nOnline-IRTlib Player\n\n\n\n*Studie*\nStudy\nStudie\n\n\n\n*Erhebungsteil*\nStudy Part \nErhebungsteil\n\n\n\n*Einstellungen*\nSettings\nEinstellungen\n\n\n\n*Testleitermenü*\nSession Menu\nTestleitermenü\n\n\n\n*Bearbeitungszeit*\nCompletion time\nBearbeitungszeit\n\n\n\n*Bearbeitungszeit begrenzen*\nRestrict time allowed\nBearbeitungszeit begrenzen\n\n\n\n*Studienversion*\nStudy version\nStudienversion\n\n\n\n*Revision*\nRevision\nRevision\n\n\n\n*Vorspann-Item(s)*\nProlog Item(s)\nVorspann-Item(s)\n\n\n\n*Nachspann-Items(s)*\nEpilog Item(s)\nNachspann-Items(s)\n\n\n\n*Testleiter*\nTest Administrator\nTestleiter\n\n\n\n*CBA ItemBuilder*-Items\nCBA ItemBuilder-Items\nCBA ItemBuilder-Items\n\n\n\n*Docker*-Container\nDocker-Container\nDocker-Container"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "IRTlib Software",
+    "objectID": "preparation-overview.html",
+    "href": "preparation-overview.html",
+    "title": "Vorbereitung Übersicht / Preparation Overview",
     "section": "",
-    "text": "IRTlib Software\n\n\nIRTlib ist eine Software zur Auslieferung computerbasierter Assessments basierend auf Aufgaben, die mit dem CBA ItemBuilder erstellt wurden. Die Software erlaubt die Definition von flexiblen Abläufen unter Nutzung von visueller Programmierung und Funktionen der Item-Response Theoie (IRT).\n\n\nIRTlib is a software for the delivery of computer-based assessments using tasks develope with the CBA ItemBuilder. The software allows the definition of flexible processes using visual programming and functions of the item-response theory (IRT).\n\n\n\n\n\nDokumentation auf Deutsch (als Buch)\n\n\nEnglish Documentation (as Book)"
+    "text": "Vorbereitung Übersicht / Preparation Overview"
   },
   {
-    "objectID": "github.html#cba-itembuilder",
-    "href": "github.html#cba-itembuilder",
-    "title": "IRTlib",
-    "section": "CBA ItemBuilder",
-    "text": "CBA ItemBuilder\n\nDownload"
+    "objectID": "data-collection-post-processing.html",
+    "href": "data-collection-post-processing.html",
+    "title": "Datenerhebung - Datenaufbereitung / Data Collection - Data Post-Processing",
+    "section": "",
+    "text": "Datenerhebung - Datenaufbereitung / Data Collection - Data Post-Processing"
+  },
+  {
+    "objectID": "data-collection-overview.html",
+    "href": "data-collection-overview.html",
+    "title": "Datenerhebung Übersicht / Data Collection Overview",
+    "section": "",
+    "text": "Datenerhebung Übersicht / Data Collection Overview"
+  },
+  {
+    "objectID": "data-collection-publish-and-export.html",
+    "href": "data-collection-publish-and-export.html",
+    "title": "Datenerhebung Veröffentlichen & Exportieren / Data Collection Publish & Export",
+    "section": "",
+    "text": "Datenerhebung Veröffentlichen & Exportieren / Data Collection Publish & Export"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Einführung / Introduction",
+    "section": "",
+    "text": "Einführung / Introduction\n\n\n\nIRTlib Software\n\n\nIRTlib ist eine Software zur Auslieferung computerbasierter Assessments basierend auf Aufgaben, die mit dem CBA ItemBuilder erstellt wurden. Die Software erlaubt die Definition von flexiblen Abläufen unter Nutzung von visueller Programmierung und Funktionen der Item-Response Theoie (IRT).\n\n\nIRTlib is a software for the delivery of computer-based assessments using tasks develope with the CBA ItemBuilder. The software allows the definition of flexible processes using visual programming and functions of the item-response theory (IRT).\n\n\n\n\n\nDokumentation auf Deutsch (als Buch)\n\n\nEnglish documentation under preparation…"
+  },
+  {
+    "objectID": "settings.html",
+    "href": "settings.html",
+    "title": "Einstellungen / Settings",
+    "section": "",
+    "text": "Einstellungen / Settings"
+  },
+  {
+    "objectID": "download.html",
+    "href": "download.html",
+    "title": "Download & Installation",
+    "section": "",
+    "text": "Download & Installation"
   }
 ]
