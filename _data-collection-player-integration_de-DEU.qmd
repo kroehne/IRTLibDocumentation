@@ -155,13 +155,13 @@ Allgemeingültige Empfehlungen zu (unbedingt) notwendigen Tests sind schwer zu f
 
 | Test | Empfehlung | Bedingung |
 |------|----|------------------|
-| CBA ItemBuilder Preview | Immer | (Fehler in Darstellung, Verhalten und Scoring, die sich breits bei der Itemerstellung finden lassen, sollte vor der Erstellung einer Studienkonfiguration systematisch getestet und ausgeschlossen werden.) |
-| Funktionale Tests | Immer | Nur wenn *IRTlib Player* und *CBA ItemBuilder*-*Tasks* interagieren müssen und bezogen auf im *IRTlib Editor* definierte Funktionalität (z.B. antwortabhängige Verzweigungen).  |
-| Cross-Browser-Testung | Immer | |
-| Performanz-Tests | Immer | |
-| Last-Tests | Immer | |
-| Datenablageprüfung | Immer | | 
-| Smoke-Test | Immer | |
+| *CBA ItemBuilder*-*Preview* | Immer | (Fehler in Darstellung, Verhalten und Scoring, die sich breits bei der Itemerstellung finden lassen, sollte vor der Erstellung einer Studienkonfiguration systematisch getestet und ausgeschlossen werden.) |
+| Funktionale Tests | Bei Bedarf | Nur wenn *IRTlib Player* und *CBA ItemBuilder*-*Tasks* interagieren müssen und bezogen auf im *IRTlib Editor* definierte Funktionalität (z.B. antwortabhängige Verzweigungen).  |
+| Cross-Browser-Testung | Bei Bedarf | Nur wenn *IRTlib Player* online verwendet wird und die Browser nicht den Browsern entsprechen, welche bereits für die *CBA ItemBuilder*-*Preview* verwendet wurden. |
+| Performanz-Tests | Bei Bedarf | Wenn große Multimedia-Teien enthalten sind oder wenn mit schlecheter Netzwerkverbindung zu rechnen ist. |
+| Last-Tests | Bei Bedarf | Nur wenn Online *IRTlib Player* mit vielen parallelen Tests administriert werden soll. |
+| Datenablageprüfung | Immer | Prüfung aller Daten (inkl. Log-Daten, wenn diese für die Auswertung benötigt werden). | 
+| Smoke-Test | Immer | Smoke-Testung bei jeder Version, vor allem um versehentliche Konfigurationsfehler in *letzter Minute* auszuschließen. |
 
 ### Datenerhbung Durchführen
 
