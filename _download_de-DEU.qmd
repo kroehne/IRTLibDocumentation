@@ -1,5 +1,3 @@
-# Download & Installation
-
 Die *IRTlib*-Software wird für die Offline-Nutzung (Windows) und für die Online-Nutzung (Docker Container) bereitgestellt.
 
 ## Offline (Windows)

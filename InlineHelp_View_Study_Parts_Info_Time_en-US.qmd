@@ -1,0 +1,51 @@
+---
+format:
+  html:
+    embed-resources: true
+    minimal: true 
+    toc: false
+---
+
+### Define time limit
+
+
+*Survey parts* without *routing* can easily contain a time-limited section. To do this, the option *Limit processing time* is activated in the *Processing time* view and a time limit in seconds (>0) is entered. 
+
+
+Four groups of *CBA ItemBuilder* *tasks* are distinguished for a time limit, which are defined in different places in the *IRTlib Editor*.The items for which the time limit is to apply are defined in the *Items* view (analogous to non-time-limited *survey parts*): 
+
+
+* **Items**: Items that are displayed until the time limit has been reached.
+
+
+In the *Processing time* view, the following can also be defined:
+
+
+* **Timeout items**:Items that are only displayed if the time-limited items have not been completed within the limited processing time.
+
+
+Finally, the following tasks can be defined as individual views of the configuration of *survey items*:
+
+
+* **Lead items**:Items that are displayed before the time-limited section. 
+**Follow-up items**: Items that are displayed after the time-limited section. 
+
+
+The icons for the following operations are available in all of the above dialogs:
+
+
+* Add:![](img/screenshot-add-project-plus-icon.png){width="40"}
+* Refresh: ![](img/screenshot-update-item-icon-01.png){width="40"}
+* Preview:![](img/screenshot-preview-icon-01.png){width="40"}
+* Download/Export: ![](img/screenshot-download-item-icon-01.png){width="40"}
+* Delete: ![](img/screenshot-delete-item-icon-01.png){width="40"}
+* Sort:![](img/screenshot-sort-items-icon-01.png){width="80"}
+
+
+Note: More complex designs with possibly several timers can be implemented with the *IRTlib Editor* if the option *Enable routing* is activated in the overview view for a *Survey part*. 
+
+
+Note: Changes to the *Editing time* view must be saved using the diskette symbol or discarded using the undo symbol:
+
+
+![](img/screenshot-icons-undo-and-save-01.png){width="120" fig-align="left"}

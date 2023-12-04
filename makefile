@@ -25,6 +25,4 @@ web:
 	quarto render --profile english	
   
 book: 
-	quarto render
-	quarto render --profile germanbook
-	quarto render --profile germanenglish
+	quarto render --profile englishbook	

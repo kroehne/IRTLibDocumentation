@@ -2,8 +2,20 @@
 format:
   html:
     embed-resources: true
+lang: en    
 ---
 
-\let\clearpage\standardclearpage
+# Download & Installation
 
+:::{.content-visible when-profile="german"}
 {{< include _download_de-DEU.qmd >}}
+:::
+:::{.content-visible when-profile="germanbook"}
+{{< include _download_de-DEU.qmd >}}
+:::
+:::{.content-visible when-profile="english"}
+{{< include _download_en-US.qmd >}}
+:::
+:::{.content-visible when-profile="englishbook"}
+{{< include _download_en-US.qmd >}}
+:::

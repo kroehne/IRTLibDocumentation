@@ -1,0 +1,87 @@
+Configurations that are created with the *IRTlib editor* are summarized in so-called *studies*. A *study* is intended to summarize the assessment content that is administered in a survey or session. 
+
+## Study administration
+
+After starting the *IRTlib Editor*, the *Studies* view is displayed. In this view, the first step to prepare a new configuration is to **add a new study**:
+
+{{< video https://youtu.be/7VKf6U3oeM4 >}}
+
+The created *studies* appear as cards in the *Studies* view. Note that the order in which the studies are displayed in the *Study view* does not matter. 
+
+Detailed instructions on how to create a *study* can be found here in the embedded help:
+
+::: {.callout-tip collapse="true" title="Embedded program help"}
+
+{{< include InlineHelp_View_Studies_Main_en-US.qmd >}}
+
+:::
+
+## Basic configurations
+
+The configurations of a particular study, including <a href="publish-and-export.html">versioning and publishing</a>, are managed within studies (i.e. after opening a study for editing by clicking on the edit icon at the bottom right of the card).
+
+Created studies that are displayed in the *IRTlib Editor* in the *Studies* view can be opened for editing. 
+
+![](img/screenshot-studies-info.de-DEU.png){width="100%"}
+
+Detailed information on the basic configuration of a study can be found here in the embedded help:
+
+::: {.callout-tip collapse="true" title="Embedded program help"}
+
+{{< include InlineHelp_View_Study_Info_Overview_en-US.qmd >}}
+ 
+:::
+
+## Access to studies (login)
+
+The *IRTlib software* supports various ways in which people (test participants, respondents, ...) can authenticate themselves for an assessment. The configurations include two aspects: 
+
+* *Login mode*: Is access required (login, login+password, passphrases/token) or not? And if credentials are required, what are *valid values*?
+* *Login source*: How is the login information retrieved (direct input on the platform, CBA ItemBuilder item, ....) or passed (login parameter or call parameter)?
+
+Detailed information on the configuration of the login of a *study* can be found here in the embedded help:
+
+::: {.callout-tip collapse="true" title="Embedded program help"}
+
+{{< include InlineHelp_View_Study_Info_Login_en-US.qmd >}}
+
+::: 
+
+## Display of assessment content 
+
+*Studies* can define how the *CBA ItemBuilder* content is to be displayed. The settings in the *Display* section can relate to the scaling and alignment of the content as well as the behavior of the *IRTlib Player* application. 
+
+Detailed information on configuring the *Display* of a *Study* can be found here in the embedded help:
+ 
+::: {.callout-tip collapse="true" title="Embedded program help"}
+
+{{< include InlineHelp_View_Study_Info_View_en-US.qmd >}}
+ 
+::: 
+
+## Menu for test administrators 
+
+If the execution of assessments is accompanied by test administrators or interviewers, functions can be defined password-protected for test administrators. 
+
+::: callout-warning
+Even if you do not need the functionality of a test administrator menu to carry out your data collection, you should still define a test administrator menu if you plan to collect data offline with the *IRTlib Player*. This is the only way to ensure that you can exit the application without the Task Manager (and without possible data loss) in the event of unforeseen events.
+:::
+
+Detailed information on the configuration of the *Test Manager menu* can be found here in the embedded help:
+
+::: {.callout-tip collapse="true" title="Embedded program help"}
+
+{{< include InlineHelp_View_Study_Info_Menu_en-US.qmd >}}
+ 
+::: 
+
+## Completion of surveys
+
+For the integration of assessments into external processes, it is possible to configure how to proceed after processing the assessment content in a *session*, i.e. what will happen at the *end of the session*.
+
+::: {.callout-tip collapse="true" title="Embedded program help"}
+
+{{< include InlineHelp_View_Study_Info_SessionEnd_en-US.qmd >}}
+ 
+::: 
+ 

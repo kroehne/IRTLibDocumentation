@@ -1,6 +1,3 @@
-
-## Overview: Steps to use *IRTlib Editor* for Study Preparation
-
 Preparing a computer-based assessment based on CBA ItemBuilder items begins with using the *IRTlib Editor* to create a study configuration. This typically involves the following steps:
 
 ::: {.callout-caution collapse="true"}

@@ -1,0 +1,301 @@
+Assessments that are administered with the *IRTlib software* consist of so-called *survey parts*.After configuring a <a href="preparation-studies.qmd">study</a>, at least one *survey part* must be created.
+
+## Survey part administration
+
+After creating a *study*, the next step in preparing a test evaluation is to **add a new survey part** in the *Survey parts* view:
+
+{{< video https://youtu.be/YFgu8uz8nkc >}}
+
+The created *survey parts* appear as cards in the *Survey parts* view. If studies consist of several survey parts, the order of the survey parts can be adjusted in the *Survey parts* / *Overview* view for *linear processes*. If *survey parts* are to be controlled depending on variables (e.g. passed *preload* variables or other *blockly* variables), <a href="preparation-parts.html#routing-between-survey-parts">routing between survey parts</a> can be configured as an alternative. 
+
+Detailed instructions for creating *survey parts* can be found here in the embedded help:
+
+::: {.callout-tip collapse="true" title="Embedded program help"}
+
+{{< include InlineHelp_View_Study_Part_Main_en-US.qmd >}}
+
+::: 
+
+
+
+
+The order of *study parts* can be changed in the *study parts* view: 
+
+
+
+
+{{< video https://youtu.be/Ag0IcETZTdM >}}
+
+
+
+
+Before adding or selecting CBA ItemBuilder projects, as described in the section <a href="#assessmentinhalte-items">Assessment contents (items)</a>, selected items can be configured in the *Info* view.
+
+
+
+
+A detailed description can be found here in the embedded help:
+
+
+
+
+::: {.callout-tip collapse="true" title="Embedded program help"}
+
+
+
+
+{{< include InlineHelp_View_Study_Parts_Info_Overview_en-US.qmd >}}
+
+
+
+
+:::
+
+
+
+
+Adding and managing CBA ItemBuilder projects within the *IRTlib Editor* is done in the <a href="#assessment-content-items">Items</a> section. 
+
+
+
+
+::: {.callout-caution collapse="true" title="Note on time limit"}
+For the administration of time-limited survey parts, a time limit can be defined under <a href="#preparation-parts.html#processing-time-items">processing-time</a>. If the option *Limit processing time* is activated, one or more *tasks* can be defined, which are displayed in the event of a *timeout*. In addition, content can be defined in the <a href="#pre-spann-nachspann-items">pre-item(s)</a> and <a href="#pre-spann-nachspann-items">post-item(s)</a> section, which is administered before or after the time-limited part. 
+:::
+
+
+
+
+## Insert assessment content (items)
+
+
+
+
+The contents that are to be used in a survey section of type *CBA ItemBuilder* are transferred to the configuration via the *IRTlib Editor*, i.e. the configuration created with the *IRTlib Editor* also contains the *CBA ItemBuilder* *Project Files*. The *Items* view is available for adding or updating *CBA ItemBuilder* projects.
+
+
+
+
+A detailed description can be found here in the embedded help:
+
+
+
+
+
+
+
+
+::: {.callout-tip collapse="true" title="Embedded program help"}
+
+
+
+
+{{< include InlineHelp_View_Study_Parts_Items_en-US.qmd >}}
+ 
+:::
+
+
+
+
+## Processing time
+
+
+
+
+If the administration of a linear sequence of *CBA ItemBuilder* *tasks* is to be administered with a limited processing time, this can be implemented by defining a maximum processing time (in seconds). If, for example, a test content is to be administered for a maximum of *28* minutes, a time of *1680* seconds is defined as the *processing time*. The message that is to be displayed when the processing time expires can be defined as one (or more) *CBA ItemBuilder* *tasks*. 
+
+
+
+
+A detailed description can be found here in the embedded help:
+
+
+
+
+
+
+
+
+::: {.callout-tip collapse="true" title="Embedded program help"}
+
+
+
+
+{{< include InlineHelp_View_Study_Parts_Info_Time_en-US.qmd >}}
+
+
+
+
+:::
+
+
+
+
+::: {.callout-caution title="Opening/closing credits items"}
+A central concept for the implementation of time limits in the *IRTlib software* is the separation of time-limited items and additional assessment content that is administered *before* or *after* the time-limited part.
+
+
+
+
+:::
+
+
+
+
+* Items administered *after* a potentially time-limited section of an assessment are referred to as *post-items*. 
+
+
+
+
+::: {.callout-tip collapse="true" title="Embedded program help"}
+
+
+
+
+{{< include InlineHelp_View_Study_Parts_Info_Epilog_en-US.qmd >}}
+
+
+
+
+:::
+
+
+
+
+* Items that are administered *before* a potentially time-limited section of a survey part are called *prefix items*.
+
+
+
+
+::: {.callout-tip collapse="true" title="Embedded program help"}
+{{< include InlineHelp_View_Study_Parts_Info_Prolog_en-US.qmd >}}
+:::
+
+
+
+
+
+
+
+
+
+
+
+
+## Variables
+
+
+
+
+::: {.callout-important title="Under Development"}
+This function is currently under development. 
+:::
+
+
+
+
+::: {.callout-tip collapse="true" title="Embedded Program Help"}
+{{< include InlineHelp_View_Study_Parts_Variables_en-US.qmd >}}
+:::
+
+
+
+
+
+
+
+
+## Codebook
+
+
+
+
+::: {.callout-important title="Under Development"}
+This function is currently under development. 
+:::
+
+
+
+
+
+
+
+
+::: {.callout-tip collapse="true" title="Embedded Program Help"}
+{{< include InlineHelp_View_Study_Parts_Codebook_en-US.qmd >}}
+:::
+  
+
+
+
+
+
+
+
+
+## ItemPool
+
+
+
+
+::: {.callout-important title="Under Development"}
+This function is currently under development. 
+:::
+
+
+
+
+::: {.callout-tip collapse="true" title="Embedded Program Help"}
+{{< include InlineHelp_View_Study_Parts_ItemPool_en-US.qmd >}}
+:::
+    
+## Routing within survey parts
+
+
+
+
+If *CBA ItemBuilder* tasks are not to be administered in a linear sequence that is fixed in advance and identical for all test subjects, then the *Routing* function of the *IRTlib software* can be used. 
+
+
+
+
+A detailed description of *Routing within survey parts* can be found here in the embedded help:
+
+
+
+
+::: {.callout-tip collapse="true" title="Embedded program help"}
+{{< include InlineHelp_View_Study_Parts_Routing_en-US.qmd >}}
+::: 
+
+
+
+
+
+
+
+
+## Routing between survey parts
+
+
+
+
+If several *survey parts* are defined for a *study*, the sequence of survey parts can be defined in which respondents or test persons are presented with the contents of the *survey parts*. 
+
+
+
+
+In addition to simple linear sequences, sequences of several survey parts can also be configured with *blockly*-based routing. 
+
+
+
+
+A detailed description of *routing between survey parts* can be found here in the embedded help:
+
+
+
+
+::: {.callout-tip collapse="true" title="Embedded program help"}
+{{< include InlineHelp_View_Study_Routing_en-US.qmd >}}
+::: 
+ 

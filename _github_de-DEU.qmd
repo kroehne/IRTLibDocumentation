@@ -1,0 +1,38 @@
+## IRTLib Software
+
+Die *IRTlib Software* ist freie *Forschungssoftware* im Sinne von *Open Science*. Sie kann für nicht-kommerzielle Anwendungen verwendet werden. 
+
+::: callout-note
+Übersetzung: Wenn Sie uns bei der Übersetzung dieser Software helfen wollen, finden Sie [hier](translation.qmd) weitere Informationen.
+:::
+
+### Download
+
+* Aktuelle Versionen der IRTlib Software (Windows und Docker): [github](https://github.com/DIPFtba/IRTlibDeploymentSoftware)
+* Dokumentation: [github](https://github.com/kroehne/IRTLibDocumentation)
+
+## CBA ItemBuilder
+
+Die *IRTlib Software* erlaubt die Administration von Assessmentinhalten, die mit dem CBA ItemBuilder erstellt wurden. 
+
+### Download
+
+* Aktuelle Versionen des CBA ItemBuilder (Windows): [https://www.itembuilder.de/software](https://www.itembuilder.de/software)
+
+### Source Code 
+
+Source Code und Material zum CBA ItemBuilder sind aufgeteilt auf mehrere Repositorien: 
+
+* CBA ItemBuilder (Desktop Anwendung): [github](https://github.com/DIPFtba/CBAItemBuilderDesktopEditor) (In Vorbereitung / noch privat)
+* Laufzeitumgebung / Rumtime: [github](https://github.com/DIPFtba/CBAItemBuilderRuntime) (In Vorbereitung / noch privat)
+* Ausführungsumgebung / Execution Environment für Entwickler: [github](https://github.com/DIPFtba/CBAItemBuilderExecutionEnvironment) (In Vorbereitung / noch privat)
+* Technische Dokumentation: [github](https://github.com/DIPFtba/CBAItemBuilderDocumentation) (In Vorbereitung / noch privat)
+* Technische Beispielitems: [github](https://github.com/DIPFtba/CBAItemBuilderExampleItems)(In Vorbereitung / noch privat)
+
+### Dokumentation 
+
+Online-Dokumentation
+
+* HTML (interaktiv): [https://cba.itembuilder.de](https://cba.itembuilder.de)  
+* PDF (statisch): [Open-Assessments-with-CBA-ItemBuilder.pdf](https://cba.itembuilder.de/Open-Assessments-with-CBA-ItemBuilder.pdf)
+* Quellen [github](https://github.com/kroehne/CBAItemBuilderBook) (In Vorbereitung / noch privat)

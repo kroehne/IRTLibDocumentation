@@ -1,0 +1,30 @@
+Die Konfiguration von *Studien* und den darin enthaltenen *Erhebungsteil(en)* erfolgt im *IRTlib Editor* und wird innerhalb des Editors gespeichert, wenn das Disketten-Symbol unten rechts geklickt wird.
+
+Damit zu jeder Zeit eindeutig benennbar ist, mit welcher Konfiguration einer *Studie* eine Datenerhebung durchgeführt wird, muss die Konfiguration vor der Übertragung an einen *IRTlib Player* versiegelt werden. Das geschieht in der Ansicht *Veröffentlichen* einer Studie, in welcher die *Studienversionen* aufgelistet werden:
+
+## Checkliste vor dem Veröffentlichen
+
+* Ist die *Anmeldung* konfiguriert?
+
+> Damit nach dem Start des *IRTlib Players* die richtige *Studie* gestartet werden kann, muss ein zu der geplanten Verwendung passender *Loginmodus* konfiguriert sein. Die Definition des *Loginmodus* ist in der [Studienkonfiguration](preparation-studies.qmd) im Abschnitt *Login* möglich. 
+
+* Ist ein *Testleitermenü* konfiguriert? 
+
+> Wenn im Offline *IRTlib Player* der Kiosk-Modus aktiviert ist, kann das Beenden der Anwendung ohne konfiguriertes *Testleitermenü* schwierig bzw. unmöglich sein. Die Definition von Tastenkombination und Passwörtern mit Rollen erfolgt in der [Studienkonfiguration](preparation-studies.qmd) im Abschnitt *Testleitermenü*.
+
+* Sind die *Items* eingefügt? 
+
+> Die Assessmentinhalte werden in einem oder mehreren [*Erhebunsteilen*](preparation-pars.qmd)  konfiguriert. Die meisten *CBA ItemBuilder*-*Tasks* werden sich im Abschnitt *Items* eines *Erhebungsteils* befinden.
+
+* Sind die Laufzeitumgebungen (*Runtimes*) vorhanden? 
+
+> Die Konfiguration von *Runtimes* erfolgt in den [Einstellungen](settings.qmd).
+
+## Veröffentlichen & Exportieren
+
+::: {.callout-tip collapse="true" title="Eingebettete Programmhilfe"}
+
+{{< include InlineHelp_View_Study_Publish_de-DEU.qmd >}}
+ 
+::: 
+ 

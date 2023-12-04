@@ -1,5 +1,3 @@
-# Vorbereitung: Erhebungsteile
-
 Assessments, die mit der *IRTlib Software* administriert werden bestehen aus sogenannten *Erehebungsteilen*. Nach der Konfiguration einer  <a href="preparation-studies.qmd">Studie</a> muss zumindest ein *Erhebungsteil* angelegt werden.
 
 ## Erhebungsteilverwaltung

@@ -1,5 +1,4 @@
 ---
-title: "IRTlib Editor: Einstellungen"
 format:
   html:
     embed-resources: true
@@ -7,20 +6,20 @@ format:
     toc: false
 ---
 
-## Einstellungen
+### Einstellungen
 
 In diesem Bereich können Einstellungen vorgenommen werden, welche die Arbeit mit dem Editor und alle Studien betreffen.
 
-### Runtimesverwaltung
+#### Runtimesverwaltung
 
 Um mit dem IRTLib Editor Studien zu konfigurieren, welche CBA ItemBuilder Inhalte verwenden, ist je Version die passende Laufzeitumgebung (*Runtime*) notwendig. Aktuelle getestete Version der CBA ItemBuilder Runtime sind bereits im Editor hinterlegt, in diesem Bereich können jedoch auch Runtimes für andere Versionen des CBA ItemBuilders oder aktualisierte bzw. korrigierte Runtimes in den Editor importiert werden.
 
 Runtimes, die im Editor verfügbar sind, werden beim Veröffentlichen von Studien automatisch als Teil der Studienkonfiguration integriert und stehen auf diesem Weg aud dem *IRTLib Player* zur Verfügung.
 
-### Allgemeine Einstellungen
+#### Allgemeine Einstellungen
 
 Ändern Sie in diesem Abschnitt die Sprache für den Editor. Die hier ausgewählte Einstellung hat keinen Einfluss auf die Sprache der Assessmentinhalte in den konfigurierten Studien.
 
-## Über das Programm
+### Über das Programm
 
 Finden Sie unter der Schaltfläche **Versionsinfo** eine Zusammenfassung der letzten Änderungen und Angaben zur aktuellen Programmversion.

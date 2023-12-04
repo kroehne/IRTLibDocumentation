@@ -1,0 +1,30 @@
+The configuration of *Studies* and the *Collection part(s)* contained therein is carried out in the *IRTlib Editor* and is saved within the editor when the diskette symbol at the bottom right is clicked.
+
+To ensure that the configuration of a *study* used for data collection can be clearly identified at all times, the configuration must be sealed before being transferred to an *IRTlib Player*. This is done in the *Publish* view of a study, in which the *Study versions* are listed:
+
+## Checklist before publishing
+
+* Is the *login* configured?
+
+> To ensure that the correct *study* can be started after starting the *IRTlib Player*, a *login mode* suitable for the planned use must be configured. The *login mode* can be defined in the [Study configuration](preparation-studies.qmd) in the *Login* section. 
+
+* Is a *test administrator menu* configured? 
+
+> If kiosk mode is activated in the offline *IRTlib Player*, it may be difficult or impossible to exit the application without a configured *test conductor menu*. Key combinations and passwords with roles are defined in the [Study configuration](preparation-studies.qmd) in the *Test leader menu* section.
+
+* Are the *items* inserted? 
+
+> The assessment contents are configured in one or more [*study-parts*](preparation-pars.qmd). Most *CBA ItemBuilder*-*tasks* will be located in the *Items* section of a *assessment part*.
+
+* Are the runtime environments (*Runtimes*) available? 
+
+> The configuration of *Runtimes* is done in the [Settings](settings.qmd).
+
+## Publish & Export
+
+::: {.callout-tip collapse="true" title="Embedded program help"}
+
+{{< include InlineHelp_View_Study_Publish_en-US.qmd >}}
+ 
+::: 
+ 

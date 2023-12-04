@@ -4,6 +4,11 @@ format:
     embed-resources: true
 lang: en    
 ---
+
+# Vorbereitung Studien / Preparation Studies
+
+\let\clearpage\standardclearpage
+
 :::{.content-visible when-profile="german"}
 {{< include _preparation-studies_de-DEU.qmd >}}
 :::
@@ -11,8 +16,8 @@ lang: en
 {{< include _preparation-studies_de-DEU.qmd >}}
 :::
 :::{.content-visible when-profile="english"}
-{{< include _preparation-studies_de-DEU.qmd >}}
+{{< include _preparation-studies_en-US.qmd >}}
 :::
 :::{.content-visible when-profile="englishbook"}
-{{< include _preparation-studies_de-DEU.qmd >}}
+{{< include _preparation-studies_en-US.qmd >}}
 :::

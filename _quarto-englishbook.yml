@@ -7,21 +7,27 @@ book:
   subtitle: "Software for the administration of computer-based assessments"
   author: "Ulf Kroehne"
   date: last-modified
-  date-format: "[Laste Change: ] Do MMMM, YYYY"  
-  cover-image: img/irtlib-cover.png  
+  date-format: "[Laste Change: ] Do MMMM, YYYY"   
   chapters:
     - index.qmd 
     - download.qmd
-    - preparation-overview.qmd
-    - preparation-studies.qmd
-    - preparation-parts.qmd
+    - part: "Vorbereitung / Preparation" 
+      chapters:
+      - preparation-overview.qmd
+      - preparation-studies.qmd
+      - preparation-parts.qmd
+    - part: "Allgemein / General" 
+      chapters:
+      - settings.qmd
+      - github.qmd      
     
 format:
-  html:
-    theme: cosmo
   pdf:
     documentclass: scrreprt
     header-includes: |
       \titlehead{\includegraphics[width=6in]{img/irtlib-cover.png}}
 
 lang: en
+
+execute:
+  freeze: false 

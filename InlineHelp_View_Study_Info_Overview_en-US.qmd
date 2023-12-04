@@ -1,5 +1,4 @@
 ---
-title: "IRTlib Editor: Study Configurations"
 format:
   html:
     embed-resources: true

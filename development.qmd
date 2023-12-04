@@ -1,0 +1,14 @@
+---
+format:
+  html:
+    embed-resources: true
+---
+
+# Development
+
+## Missing Features in Version 1.1
+
+* Editor for defining Codebooks
+* Editor for managing IRT Parameters for ItemPools
+* IRT-Integration in Blockly for MST/CAT/MCAT/...
+* Webservice Integration required for NLP/Scoring/AI

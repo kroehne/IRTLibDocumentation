@@ -1,0 +1,35 @@
+---
+format:
+  html:
+    embed-resources: true
+    minimal: true
+    toc: false
+---
+
+### Session and end of session
+
+A *session* refers to the execution of a survey with *one* person at *a* specific time. The content displayed in a session corresponds to a configured *study* as it can be created in the *IRTlib Editor*. After all parts of the survey defined in a *study* have been carried out, the *end of session* is reached. 
+
+#### Configuration of the session end 
+
+What happens after a *session end*, i.e. how the *IRTlib Player* behaves at the end of a session, can be defined with the following options:
+
+* **Start new session**: A new session is started. This behavior does not make sense if the login data is passed (either as *startup parameter* or as *URL parameter*).
+
+* Show **end text**: If this option is selected, the platform displays the configured text. The text can be configured as *Message on end page*. 
+
+* **Display end item**: Analogous to a *login item*, a *CBA ItemBuilder* item can also be defined to be displayed at the end of a session. 
+
+> The *End-Item* can finally trigger the termination of the offline *IRTlib Player*. An example of an *end item* with the necessary JavaScript call can be found [here](https://kroehne.github.io/CBAItemBuilderBook/items/9_09/IRTLibEndItemExample.zip).
+
+**Redirect to Exit URL (Redirct to Exit-Url)**: For online deliveries with the *IRTlib Player* it is possible to redirect to a URL. The *redirect URL* can then be configured. 
+
+#### Further options
+
+**Session ID can be reused**: If this option is activated, multiple data captures can be administered with one session ID.
+
+<hr/>
+
+If changed settings are to be retained, the changes must be saved using the diskette icon. Otherwise, the discard icon can be used:
+
+![](img/screenshot-icons-undo-and-save-01.png){width="120" fig-align="left"}

@@ -1,9 +1,11 @@
 ---
 format:
   html:
-    embed-resources: true 
-    toc: false    
+    embed-resources: true
+lang: en    
 ---
+
+# Einführung / Introduction
 
 \let\standardclearpage\clearpage
 \let\clearpage\relax 
@@ -15,10 +17,10 @@ format:
 {{< include _index_de-DEU.qmd >}}
 :::
 :::{.content-visible when-profile="english"}
-(No translation available yet.)
+{{< include _index_en-US.qmd >}}
 :::
 :::{.content-visible when-profile="englishbook"}
-(No translation available yet.)
+{{< include _index_en-US.qmd >}}
 :::
 :::{.content-visible when-profile="language"}
 {{< include _index_language.qmd >}}

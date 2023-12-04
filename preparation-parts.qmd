@@ -5,6 +5,8 @@ format:
 lang: en    
 ---
 
+# Vorbereitung Erhebungsteile / Preparation Study Parts
+
 \let\clearpage\standardclearpage
 
 :::{.content-visible when-profile="german"}
@@ -14,8 +16,8 @@ lang: en
 {{< include _preparation-parts_de-DEU.qmd >}}
 :::
 :::{.content-visible when-profile="english"}
-{{< include _preparation-parts_de-DEU.qmd >}}
+{{< include _preparation-parts_en-US.qmd >}}
 :::
 :::{.content-visible when-profile="englishbook"}
-{{< include _preparation-parts_de-DEU.qmd >}}
+{{< include _preparation-parts_en-US.qmd >}}
 :::

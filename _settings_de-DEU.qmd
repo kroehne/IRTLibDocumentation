@@ -1,0 +1,17 @@
+Der *IRTlib Editor* hat eine kleine Anzahl von Einstellungen.  
+
+## Übersicht
+
+Die *IRTlib Software* ist im Augenblick noch unter Entwicklung. Informationen über die laufende Version (und für *Preview*-Versionen über den Build-Hash) können im Abschnitt *Über das Programm* abgerufen werden. 
+
+::: {.callout-tip collapse="true" title="Eingebettete Programmhilfe"}
+{{< include InlineHelp_View_Settings_Main_de-DEU.qmd >}}
+::: 
+
+## Laufzeitumgebungen 
+
+Die *IRTlib Software* kann mit CBA ItemBuilder Aufgaben verschiedener CBA ItemBuilder Versionen verwendet werden. Die erforderliche **Runtime** (d.h. die Verbindung zwischen den CBA ItemBuilder-Aufgaben und der *IRTlib Software*) ist Teil der Studienkonfiguration, damit der *IRTlib Player* sicher weiß, wie er CBA ItemBuilder-Aufgaben einer bestimmten Version verwenden kann.
+
+::: {.callout-tip collapse="true" title="Eingebettete Programmhilfe"}
+{{< include InlineHelp_View_Settings_Runtimes_de-DEU.qmd >}}
+::: 

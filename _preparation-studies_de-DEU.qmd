@@ -1,5 +1,3 @@
-# Vorbereitung: Studien 
-
 Konfigurationen die mit dem *IRTlib-Editor* erstellt werden, werden in sogenannten *Studien* zusammengefasst. Eine *Studie* soll die Assessmentinhalte zusammenfassen, welche in einer Erhebung oder Sitzung administriert werden. 
 
 ## Studienverwaltung

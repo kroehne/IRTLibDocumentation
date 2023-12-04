@@ -1,0 +1,18 @@
+The *IRTlib Editor* has a small number of settings.The language can be set to German or English.
+
+## Overview
+
+The *IRTlib software* is currently still under development. Information about the current version (and for *Preview* versions about the build hash) can be found in the section *About the Program*. 
+
+::: {.callout-tip collapse="true" title="Embedded Help"}
+{{< include InlineHelp_View_Settings_Main_en-US.qmd >}}
+:::
+
+## Runtimes 
+
+The *IRTlib Software* can be used with CBA ItemBuilder tasks of different CBA ItemBuilder versions. The required **Runtime** (i.e., the connection between the CBA ItemBuilder tasks and the *IRTlib Software*) is part of the study configuration so that the *IRTlib Player* knows for sure how to use CBA ItemBuilder tasks of a particular version.
+
+::: {.callout-tip collapse="true" title="Embedded Help"}
+{{< include InlineHelp_View_Settings_Runtimes_en-US.qmd >}}
+:::
+

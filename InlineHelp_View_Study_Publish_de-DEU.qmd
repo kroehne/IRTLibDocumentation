@@ -1,5 +1,4 @@
 ---
-title: "IRTlib Editor: Veröffentlichen"
 format:
   html:
     embed-resources: true

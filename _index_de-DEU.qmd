@@ -1,5 +1,3 @@
-# Einführung
-
 *IRTlib* ist eine Software zur Auslieferung computerbasierter Tests. Sie besteht aus zwei Komponenten:
 
 -   *IRTLib Editor*: Eine Software für Test-Autoren, welche verwendet wird um *Studien* zu konfigurieren.

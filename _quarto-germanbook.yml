@@ -8,19 +8,30 @@ book:
   author: "Ulf Kroehne"
   date: last-modified
   date-format: "[Letzte Änderung: ] D. MMMM, YYYY"
-  cover-image: img/irtlib-cover.png  
   chapters:
     - index.qmd 
     - download.qmd
-    - preparation-overview.qmd
-    - preparation-studies.qmd
-    - preparation-parts.qmd
-
+    - part: "Vorbereitung / Preparation" 
+      chapters:
+      - preparation-overview.qmd
+      - preparation-studies.qmd
+      - preparation-parts.qmd
+    - part: "Datenerhebung / Data Collection" 
+      chapters:
+      - data-collection-overview.qmd
+      - data-collection-publish-and-export.qmd
+    - part: "Allgemein / General" 
+      chapters:
+      - settings.qmd
+      - github.qmd      
+      
 format:
   pdf:
     documentclass: scrreprt
-    keep-tex: true
     header-includes: |
-      \titlehead{\includegraphics[width=6in]{img/irtlib-cover.png}}
+      \titlehead{\includegraphics[width=6in]{img/irtlib-cover.png}}  
 
 lang: de       
+
+execute:
+  freeze: false 

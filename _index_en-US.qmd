@@ -1,0 +1,53 @@
+*IRTlib* is a software for the delivery of computer-based tests. It consists of two components:
+
+- *IRTLib Editor*: A software for test authors, which is used to configure *studies*.
+- *IRTlib Player*: A *data collection* software program used by test-takers to complete tasks configured for a *study*.
+
+Instructions for installing and setting up both programs for first use can be found at [Download](download.qmd).
+
+<hr noshade/>
+
+::: {.grid}
+
+::: {.g-col-9}
+
+Before using the *IRTlib software* to configure and create deliveries, the assessment content can be created in the form of individual tasks using the <a href="https://tba.dipf.de/de/infrastruktur/softwareentwicklung/cba-itembuilder">CBA ItemBuilder</a>. 
+
+The *CBA ItemBuilder* can be downloaded here: [www.itembuilder.de/software](https://www.itembuilder.de/software)
+
+The interactive documentation of the *CBA ItemBuilder* is available here: [cba.itembuilder.de](https://cba.itembuilder.de)
+
+:::
+
+::: {.g-col-3}
+
+::: {.content-visible when-format="html"}
+[![CBA ItemBuilder Documentation (PDF)](https://cba.itembuilder.de/img/cover_html.png){wdith="70"}](https://cba.itembuilder.de/Open-Assessments-with-CBA-ItemBuilder.pdf)
+:::
+
+:::
+
+:::
+
+::: {.content-visible when-format="html"}
+<hr noshade/>
+
+::: {.grid}
+::: {.g-col-9}
+
+To use the *IRTlib software*, a context-sensitive [program help](preparation-overview.qmd#sec-embedded-help) is stored directly in the application. The documentation with the embedded help is available online on this page and is also available as <a href="IRTlib-Software.pdf">PDF</a>. 
+
+:::
+
+::: {.g-col-3}
+
+[![IRTlib Software Documentation (PDF)](img/irtlib-cover.png){wdith="70"}](IRTlib-Software.pdf)
+
+:::
+
+:::
+<hr noshade/>
+
+:::
+
+The development of the *CBA ItemBuilder* and the *IRTlib software* is coordinated by the [Center for Technology-Based Assessment (TBA)](https://tba.dipf.de/de/ueber-tba/) at the [DIPF | Leibniz Institute for Research and Information in Education](https://www.dipf.de/).  

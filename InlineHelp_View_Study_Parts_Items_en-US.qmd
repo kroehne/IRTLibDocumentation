@@ -1,0 +1,120 @@
+---
+format:
+  html:
+    embed-resources: true
+    minimal: true 
+    toc: false
+---
+
+### Configure items
+
+#### Basic functions
+
+
+
+
+**Import *CBA ItemBuilder* project files**:The *IRTlib Editor* maintains a *list of known items* to which *CBA ItemBuilder* project files that are not yet known can be added. To add a project file, first open the *List of known items* with the `+` symbol and then select the *Import* button. 
+ 
+![](img/screenshot-add-project-plus-icon.png){width="40" fig-align="left"}
+
+
+
+
+![](img/screenshot-import-items-button-01.png){width="120" fig-align="left"}
+
+
+
+
+
+
+
+
+**Update already imported *CBA ItemBuilder* project files**: If a *CBA ItemBuilder* project file is already included in the *List of Known Items*, the project files can be updated. They are then not added to the *List of known items*, but the existing *CBA ItemBuilder* project file is stored in a newer version. To update an item, it must first be selected in the list of items in a *survey section*.This activates the update symbol. In the *Update item* dialog that then opens, an updated version of a *CBA ItemBuilder* project file can be added using the *Import* button. 
+
+
+
+
+![](img/screenshot-update-item-icon-01.png){width="40" fig-align="left"}
+
+
+
+
+![](img/screenshot-import-items-button-01.png){width="120" fig-align="left"}
+
+
+
+
+
+
+
+
+* **Preview of *CBA ItemBuilder* project files**:Items added in a *survey* section can be viewed directly in the *IRTlib Editor* in a built-in preview function. To view an item, it must first be selected in the list of items in a *survey part*.The *Preview* can then be called up via the eye symbol:
+
+
+
+
+![](img/screenshot-preview-icon-01.png){width="40" fig-align="left"}
+
+
+
+
+
+
+
+
+* **Exporting *CBA ItemBuilder* project files**: *CBA ItemBuilder* project files that have been imported into the *IRTlib Editor* can be exported for further editing with the *CBA ItemBuilder*. To export a selected item from the list of items of a *survey part*, the download icon can be called up:
+
+
+
+
+![](img/screenshot-download-item-icon-01.png){width="40" fig-align="left"}
+
+
+
+
+**Deletion of *CBA ItemBuilder* project files**: The items inserted in *survey parts* can be deleted from a *survey part*.The delete symbol removes the item from a *survey part*, but it remains in the *list of known items*:
+
+
+
+
+![](img/screenshot-delete-item-icon-01.png){width="40" fig-align="left"}
+> Note: It is not yet possible to delete *CBA ItemBuilder* project files from the *List of known items*. This functionality is not necessary because *CBA ItemBuilder* project files are only included in the configuration of a *study* by the *IRTlib Editor* if *tasks* from a *CBA ItemBuilder* project file are used in a *survey* section. 
+
+
+
+
+
+
+
+
+#### Sorting items (linear process)
+
+
+
+
+* Sorting *CBA ItemBuilder* project files**:If the option *Enable routing* is not selected for a *Survey part*, then the order can be adjusted in the list of items using the following button:
+
+
+
+
+![](img/screenshot-sort-items-icon-01.png){width="80" fig-align="left"}
+
+
+
+
+> The items are then administered exactly as they appear for a *survey part* in this list.
+
+
+
+
+
+
+
+
+Note: Changes to the *Items* view must be saved using the diskette icon or discarded using the undo icon:
+
+
+
+
+![](img/screenshot-icons-undo-and-save-01.png){width="120" fig-align="left"}
+
