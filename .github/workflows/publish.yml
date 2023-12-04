@@ -32,11 +32,6 @@ jobs:
           install.packages("rmarkdown")
         shell: Rscript {0}
 
-      - name: Install knitr 1.42 to avoid bug in 1.43
-        run: |
-          devtools::install_version("knitr", version = "1.42")
-        shell: Rscript {0}
-        
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
         with: 
