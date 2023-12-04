@@ -4,8 +4,6 @@ format:
     embed-resources: false 
 ---
 
-# Einführung / Introduction
-
 \let\standardclearpage\clearpage
 \let\clearpage\relax 
 

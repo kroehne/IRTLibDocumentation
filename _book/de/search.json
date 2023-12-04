@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "IRTlib Dokumentation",
     "section": "",
-    "text": "1 Einführung / Introduction\nIRTlib ist eine Software zur Auslieferung computerbasierter Tests. Sie besteht aus zwei Komponenten:\n\nIRTLib Editor: Eine Software für Test-Autoren, welche verwendet wird um Studien zu konfigurieren.\nIRTlib Player: Eine Software zur Datenerhebung, mit welcher Zielpersonen Aufgaben bearbeiten, die für eine Studie konfiguriert sind.\n\nHinweise zur Installation und Einrichtung beider Programme zur ersten Verwendung finden sich unter Download.\n\n\n\nVor der Verwendung der IRTlib Software zur Konfiguration und Erstellung von Auslieferungen, können mit dem CBA ItemBuilder die Assessmentinhalte in Form von einzelnen Tasks erstellt werden.\nDer CBA ItemBuilder kann hier heruntergeladen werden: www.itembuilder.de/software\nDie interaktive Dokumentation des CBA ItemBuilder ist hier zugänglich: cba.itembuilder.de\n\n\n\n\n\nCBA ItemBuilder Dokumentation (PDF)\n\n\n\n\n\n\n\nFür die Verwendung der IRTlib Software ist eine kontext-sensitive Programmhilfe direkt in die Anwendung hinterlegt. Die Dokumentation mit der eingebetteten Hilfe ist auf dieser Seite online verfügbar und steht auch als PDF zur Verfügung.\n\n\n\n\n\nIRTlib Software Dokumentation (PDF)\n\n\n\n\n\nDie Entwicklung vom CBA ItemBuilder und der IRTlib Software wird vom Zentrum für technologiebasiertes Assessment (TBA) am DIPF | Leibniz-Institut für Bildungsforschung und Bildungsinformation koordiniert."
+    "text": "IRTlib ist eine Software zur Auslieferung computerbasierter Tests. Sie besteht aus zwei Komponenten:\n\nIRTLib Editor: Eine Software für Test-Autoren, welche verwendet wird um Studien zu konfigurieren.\nIRTlib Player: Eine Software zur Datenerhebung, mit welcher Zielpersonen Aufgaben bearbeiten, die für eine Studie konfiguriert sind.\n\nHinweise zur Installation und Einrichtung beider Programme zur ersten Verwendung finden sich unter Download.\n\n\n\nVor der Verwendung der IRTlib Software zur Konfiguration und Erstellung von Auslieferungen, können mit dem CBA ItemBuilder die Assessmentinhalte in Form von einzelnen Tasks erstellt werden.\nDer CBA ItemBuilder kann hier heruntergeladen werden: www.itembuilder.de/software\nDie interaktive Dokumentation des CBA ItemBuilder ist hier zugänglich: cba.itembuilder.de\n\n\n\n\n\nCBA ItemBuilder Dokumentation (PDF)\n\n\n\n\n\n\n\nFür die Verwendung der IRTlib Software ist eine kontext-sensitive Programmhilfe direkt in die Anwendung hinterlegt. Die Dokumentation mit der eingebetteten Hilfe ist auf dieser Seite online verfügbar und steht auch als PDF zur Verfügung.\n\n\n\n\n\nIRTlib Software Dokumentation (PDF)\n\n\n\n\n\nDie Entwicklung vom CBA ItemBuilder und der IRTlib Software wird vom Zentrum für technologiebasiertes Assessment (TBA) am DIPF | Leibniz-Institut für Bildungsforschung und Bildungsinformation koordiniert."
   },
   {
     "objectID": "download.html#offline-windows-1",
@@ -144,14 +144,7 @@
     "href": "data-collection-publish-and-export.html#veröffentlichen-exportieren-1",
     "title": "7  Datenerhebung Veröffentlichen & Exportieren / Data Collection Publish & Export",
     "section": "7.2 Veröffentlichen & Exportieren",
-    "text": "7.2 Veröffentlichen & Exportieren\n\n\n\n\n\n\nEingebettete Programmhilfe\n\n\n\n\n\n7.3 Veröffentlichen"
-  },
-  {
-    "objectID": "data-collection-publish-and-export.html#veröffentlichen-1",
-    "href": "data-collection-publish-and-export.html#veröffentlichen-1",
-    "title": "7  Datenerhebung Veröffentlichen & Exportieren / Data Collection Publish & Export",
-    "section": "7.3 Veröffentlichen",
-    "text": "7.3 Veröffentlichen"
+    "text": "7.2 Veröffentlichen & Exportieren\n\n\n\n\n\n\nEingebettete Programmhilfe\n\n\n\n\n\n7.2.1 Veröffentlichen"
   },
   {
     "objectID": "settings.html#übersicht-1",
