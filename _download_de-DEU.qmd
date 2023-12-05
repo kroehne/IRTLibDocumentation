@@ -1,4 +1,4 @@
-Die *IRTlib*-Software wird für die Offline-Nutzung (z.Zt. für Windows-Betriebssysteme) und für die Online-Nutzung (in Form von *Docker-Container*) bereitgestellt.
+Die *IRTlib*-Software wird für die Offline-Nutzung (z.Zt. für Windows-Betriebssysteme) und für die Online-Nutzung (in Form von *Docker-Containern*) bereitgestellt.
 
 ## Offline (Windows)
 
@@ -10,12 +10,12 @@ Im Abschnitt [Releases](https://github.com/DIPFtba/IRTlibDeploymentSoftware/rele
 
 * **`TestApp.Player.Desktop.exe`**: Ist in `TestApp.Editor.Desktop.zip` enthalten und muss gestartet werden, umd den  *IRTlib Player* zu verwenden. 
 
-::: callout-note
+::: {.callout-note collapse="true" title="Hinweis: Versionen aus der aktuellen Entwicklung als *Preview*."}
 Beachten Sie, dass der aktuellste Build im Abschnitt [Preview](https://github.com/DIPFtba/IRTlibDeploymentSoftware/releases/tag/preview-231025) des *Release*-Abschnitts des [repository](https://github.com/DIPFtba/IRTlibDeploymentSoftware/releases) zu finden ist. Preview-Versionen sind die aktuellsten Version der Software, nach der letzten veröffentlichten Version der *IRTlib Software*. Um reproduzierbare Ergebnisse zu erhalten, sollten immer veröffentlichte Versionen verwendet werden. 
 :::
 
-::: callout-warning
-Die automatisch erstellten Vorschauversionen des *IRTlib Editors* und *IRTlib Players* sind nicht signiert. Eine Warnmeldung des Betriebssystems muss akzeptiert werden, bevor die Programme ausgeführt werden können.
+::: {.callout-warning collapse="false" title="Hinweis: Warnmeldung beim Programmstart"}
+Die automatisch erstellten Vorschauversionen des *IRTlib Editors* und *IRTlib Players* sind nicht signiert. Eine Warnmeldung des Betriebssystems muss akzeptiert werden, bevor die Programme ausgeführt werden können. Je nach Konfiguration des Betriebssystems können die ausführbaren Dateien der *IRTlib Software* auch als unbekannt eingestuft und vor ihrer Verwendung zusätzlich gewarnt werden. 
 :::
 
 ### Studienvorbereitung mit Offline Editor
