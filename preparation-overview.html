@@ -78,8 +78,454 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="vorbereitung-übersicht-preparation-overview" class="level1">
 <h1>Vorbereitung: Übersicht / Preparation: Overview</h1>
+<ul>
+<li><p><strong>Basiskonfigurationen für <em>Studie</em> festlegen (Info)</strong>: Zu den Basiskonfigurationen, die sich auf den Inhalt einer vorbereiteten Studie beziehen, gehören die Studienbezeichnung und -beschreibung, der Anmeldemodus, die Anzeigekonfiguration, das Menü für die Testadministratoren und die Angabe, wie nach Abschluss aller in einer Studie definierten Inhalte fortgefahren werden soll (siehe Abschnitt <a href="./preparation-studies.html">Studien</a> für weitere Einzelheiten).</p></li>
+<li><p><strong>Erstellen eines neuen <em>Erhebungsteils</em></strong>: Jede <em>Studie</em> besteht aus einem oder mehreren <em>Erhebungsteilen</em>. <em>Erhebungsteile</em> werden als Bausteine von Assessments betrachtet, die zusammen verwaltet werden, wie z.B. Items aus einer bestimmte Domäne. <em>Erhebungsteile</em> vom Typ <em>CBA ItemBuilder</em> können verwendet werden, um <em>CBA ItemBuilder</em>-Aufgaben in einer linearen Sequenz oder mit <em>Blockly</em>-basiertem Routing zu administrieren.</p></li>
+</ul>
+<blockquote class="blockquote">
+<div class="callout callout-style-default callout-note callout-titled" title="Hinweis: Das Anlegen eines *Erhebungsteils* ist immer notwendig.">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hinweis: Das Anlegen eines <em>Erhebungsteils</em> ist immer notwendig.
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>Beachten Sie, dass jede Studie mindestens einen im <em>IRTlib Editor</em> definierten <em>Erhebungsteil</em> benötigt, bevor eine Studienkonfiguration zur Datenerhebung mit einem <em>IRTlib Player</em> verwendet werden kann.</p>
+</div>
+</div>
+</div>
+</blockquote>
+<ul>
+<li><p><strong>Grundeinstellungen für <em>Erhebungsteil</em> konfigurieren (Info)</strong>: Ein <em>Erhebungsteil</em> vom Typ <em>CBA ItemBuilder</em> basiert auf einer Menge von <em>CBA ItemBuilder</em>-<em>Tasks</em>. Jede <em>CBA ItemBuilder</em>-<em>Projektdatei</em> benötigt mindestens einen <em>Task</em>, es werden aber auch Projekte mit mehreren <em>Tasks</em> unterstützt. Wenn <em>CBA ItemBuilder</em>-Inhalte mit einem gemeinsamen Zeitlimit über <em>Tasks</em> hinweg administriert werden sollen, erlauben <em>Erhebungsteile</em> die Zuordnung von Aufgaben zu einer Struktur, die Assessmentinhalte unterscheidet, welche <em>vor</em> einem zeitlich begrenzten Abschnitt administriert werden (z.B. Instruktionen, im Abschnitt <em>Vorspann-Items</em>), Inhalte die <em>nach</em> einem zeitlich begrenzten Abschnitt administriert werden (z.B. Danksagung, im Abschnitt <em>Nachspann-Items</em>) und dazwischen liegende Aufgaben mit begrenzter Zeit (<em>Items</em>, siehe Abschnitt <a href="./preparation-parts.html">Erhebungsteile</a>).</p></li>
+<li><p><strong>Items Hinzufügen</strong>: Um die Definition eines <em>Erhebungsteils</em> abzuschließen, müssen die <em>CBA ItemBuilder</em>-<em>Projektdateien</em> in den Abschnitt <em>Items</em> importiert werden. Standardmäßig wird davon ausgegangen, dass die Reihenfolge der <em>CBA ItemBuilder</em>-<em>Tasks</em> linear ist. Wenn jedoch das <em>Routing</em> für einen Studienteil aktiviert ist, kann das <em>Blockly</em>-basierte Ablaufdefinition verwendet werden, um verschiedene Testdesigns zu implementieren (z. B. mehrere Hefte, mehrstufige Tests usw.).</p></li>
+</ul>
+<section id="eingebettete-programhilfe" class="level2">
+<h2 class="anchored" data-anchor-id="eingebettete-programhilfe">Eingebettete Programhilfe</h2>
+<p>Für die Verwendung des <em>IRTlib Editors</em> ist eine Programmhilfe direkt in die Anwendung integriert, welche über das kleine <code>?</code>-Symbol oben rechts eingeblendet werden kann.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/screenshot-editor-embedded-help-de-DEU.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption">Beispiel des <em>IRTlib Editors</em> mit eingeblendeter Hilfe</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Eingebettete Programmhilfe">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Eingebettete Programmhilfe
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Die Inhalte dieser Hilfe-Seiten aus dem <em>IRTlib Editor</em> sind in diese <em>IRTlib Dokumentation</em> integriert und werden immer in diesem Rahmen mit der überschrift <em>Eingebettete Programmhilfe</em> dargestellt.</p>
+</div>
+</div>
+</section>
+<section id="vorbereitung-von-cba-itembuilder-inhalten" class="level2">
+<h2 class="anchored" data-anchor-id="vorbereitung-von-cba-itembuilder-inhalten">Vorbereitung von <em>CBA ItemBuilder</em>-Inhalten</h2>
+<p>Die <em>IRTlib Software</em> wird benötigt, um die mit dem <em>CBA ItemBuilder</em> erstellten Assessmentinhalte anzuzeigen und für Datenerhebungen zu verwenden. Dafür müssen die <em>Projektdateien</em> (ZIP-Archive), die mit dem <em>CBA ItemBuilder</em> erstellt werden können vorliegen.</p>
+<section id="einsprungpunkt-task" class="level3">
+<h3 class="anchored" data-anchor-id="einsprungpunkt-task">Einsprungpunkt (<em>Task</em>)</h3>
+<p>Jede <em>CBA ItemBuilder</em>-<em>Projektdatei</em> muss mindestens einen <em>Task</em> definieren. Nur <em>Tasks</em> können in der <em>IRTlib Software</em> verwendet werden. Das ein <em>Task</em> vollständig definiert ist, lässt sich in der <em>Preview</em> des <em>CBA ItemBuilder</em> leicht überprüfen:</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="img/screenshot-cba-itembuilder-preview-check-task-example-01.png" class="img-fluid figure-img" width="450"></p>
+<figcaption class="figure-caption">Beispiel aus <em>CBA ItemBuilder</em> zur Anforderung einer <em>Preview</em> für einen <em>Task</em></figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Die *IRTlib Software* benötigt definierte *Tasks*.">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Die <em>IRTlib Software</em> benötigt definierte <em>Tasks</em>.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Assessmentinhalte können mit der <em>IRTlib Software</em> aus einzelnen <em>Task</em> zusammgengesetzt werden. Die Reihenfolge von <em>Tasks</em> kann statisch als <em>lineare Sequenz</em> oder als probrammierten Ablauf in <em>Blockly</em> definiert werden. Aus der <em>IRTlib Software</em> heraus können keine einzelnen Seiten innerhalb von <em>CBA ItemBuilder</em>-<em>Tasks</em> angesteuert werden.</p>
+</div>
+</div>
+<p><em>CBA ItemBuilder</em>-<em>Projektdateien</em> welche nur über die Option <em>Project</em> oder <em>Page</em> in der <em>Preview</em> angezeigt werden können, lassen sich in der <em>IRTlib Software</em> nicht verwenden.</p>
+</section>
+<section id="verhalten-der-anzeige-scaling-options" class="level3">
+<h3 class="anchored" data-anchor-id="verhalten-der-anzeige-scaling-options">Verhalten der Anzeige (<em>Scaling Options</em>)</h3>
+<p>Mit Hilfe der <em>Preview</em> des <em>CBA ItemBuilder</em> kann auch geprüft werden, dass die Assessmentinhalte in der gewünschten Skalierung, die unter <em>Scaling Options</em> eingestellt werden kann, den Erfordernissen entsprechend angezeigt werden.</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="img/screenshot-cba-itembuilder-preview-scaling-mode-01.png" class="img-fluid figure-img" width="200"></p>
+<figcaption class="figure-caption">Einstellungen zu <em>Scaling Options</em> aus <em>CBA ItemBuilder</em>-<em>Preview</em></figcaption>
+</figure>
+</div>
+<p>Einstellungen analog zur <em>Preview</em> können in dem <em>IRTlib Editor</em> für die Anzeigeeinstellungen einer <em>Studie</em> definiert werden (siehe Abschnitt <a href="./preparation-studies.html">Studien</a>).</p>
+</section>
+<section id="definition-des-scorings-ergebnisdaten" class="level3">
+<h3 class="anchored" data-anchor-id="definition-des-scorings-ergebnisdaten">Definition des <em>Scorings</em> (Ergebnisdaten)</h3>
+<p>Die <em>IRTlib Software</em> ist dafür gedacht, Daten mit Hilfe von <em>CBA ItemBuilder</em>-<em>Task</em> zu erheben. Was aus der Bearbeitung eines <em>Tasks</em> an Ergebnisvariablen gespeichert wird, können <em>Itemautoren</em> in der <em>Scoring</em>-Definition einer <em>Tasks</em> definieren.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Das *Scoring* muss bereits im *CBA ItemBuilder* definiert werden.">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Das <em>Scoring</em> muss bereits im <em>CBA ItemBuilder</em> definiert werden.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Aus der Bearbeitung von <em>Tasks</em> werden die als <em>Classes</em> definierten Ergebnisvariablen gespeichert, deren Werte entweder einzelne <em>Hits</em> sein können, oder die Übernahme von Informationen mit Hilfe des so-genannten <em>ResultText</em>-Operators im <em>CBA ItemBuilder</em>.</p>
+</div>
+</div>
+<p>Mit Hilfe des eingebauten <em>Scoring Debug Window</em> sollte das <em>Scoring</em> einzelner <em>CBA ItemBuider</em>-<em>Tasks</em> bereits im <em>CBA ItemBuilder</em> geprüft werden, bevor die Assessmentinhalte mit Hilfe der <em>IRTlib Software</em> zu <em>Studien</em> mit einem oder mehreren <em>Erhebungsteilen</em> kombiniert werden. Weitere Hinweise zu vorgeschlagenen Prüfungen sind im Abschnitt <a href="./data-collection-player-integration.html">Auslieferungen Testen und Freigeben</a> formuliert.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Log-Daten werden automatisch gesammelt.">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Log-Daten werden automatisch gesammelt.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Ohne weitere Konfiguration werden Log-Daten in den mit dem <em>CBA ItemBuilder</em> erstellten Assessmentinhalten automatisch erfasst und über die <em>IRTlib Software</em> gesammelt.</p>
+</div>
+</div>
+</section>
+<section id="integrierte-multimedia-inhalte-ressourcen" class="level3">
+<h3 class="anchored" data-anchor-id="integrierte-multimedia-inhalte-ressourcen">Integrierte Multimedia-Inhalte (Ressourcen)</h3>
+<p>Die mit dem <em>CBA ItemBuilder</em> erstellten Assessmentinhalte können Multimedia-Inhalte (Bilder, Videos, Audiodateien) enthalten. Bilder und Videos werden dabei in einer Größe angezeigt, die in der entsprechenden Komponente des <em>CBA ItemBuilder</em> im <em>Page Editor</em> verwendet wird. In den <em>Projektdateien</em> werden Bilder, Videos und Audiodateien als <em>Ressourcen</em> gespeichert, sobald diese über den <em>Ressource Browser</em> eingefügt wurden. Nicht verwendete <em>Ressourcen</em> bleiben dabei in den <em>Projektdateien</em> enthalten.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Dateigröße von *CBA ItemBuilder*-*Projektdateien* sollte möglichst klein sein.">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Dateigröße von <em>CBA ItemBuilder</em>-<em>Projektdateien</em> sollte möglichst klein sein.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Die Dateigröße von <em>CBA ItemBuilder</em>-<em>Projekdateien</em> ist für die Verwendung insbesondere in Online-Auslieferungen relevant und sollte so klein wie möglich gehalten werden.</p>
+</div>
+</div>
+<p>Vor der Verwendung von <em>CBA ItemBuilder</em>-<em>Projektdateien</em> wird empfohlen, folgende Punkte zu berücksichtigen:</p>
+<ul>
+<li><p>Bilder und Videos nur in der benötigten Größe: Bilder und Videos können ohne Qualitätsverlust auf die Größe (Breite/Width udn Höhe/Height) reduziert werden, in welcher sie in <em>CBA ItemBuilder</em>-<em>Projekten</em> auch wirklich verwendet werden.</p></li>
+<li><p>Bilder wenn möglich komprimieren: Ohne die Bildgröße zu verändern können Bilder häufig in der Dateigröße weiter reduziert werden.</p></li>
+<li><p>Videos wenn möglich komprimieren: Ohne die Video zu verändern können Videos häufig in der Dateigröße weiter reduziert werden.</p></li>
+<li><p>Audios nicht in höchster Qualität: Wenn nicht notwendig, sollten Audio-Dateien in ihrer Qualität soweit reduziert werden, dass sie noch akzeptabel klingen, aber bzgl. der Übertragungszeiten optimiert sind.</p></li>
+<li><p>Entfernen nicht verwendeter Ressourcen: Der <em>CBA ItemBuilder</em> stellt eine Schaltfläche im <em>Resource Browser</em> zur verfügung, um nicht verwendeten <em>Ressourcen</em> automatisch zu entfernen. Diese Funktion sollte abschließend genutzt werden, damit die <em>Projekt-Dateien</em> keine unnötigen <em>Ressourcen</em> enthalten.</p></li>
+</ul>
+<p>Ein sorgsamer Umgang mit <em>Ressourcen</em> und eine Optimierung der Dateigröße von <em>CBA ItemBuilder</em>-<em>Projektdateien</em> kann entscheidend für ein flüssiges und reibungsfreie Assessment sein, was sich mit der <em>IRTlib Software</em> online ausliefern und bspw. über Mobilgeräte mit beschränkter Internetbandbreite nutze lässt.</p>
+<p>::: :::{.content-visible when-profile=“germanbook”} Die Vorbereitung eines computerbasierten Assessments auf der Grundlage von <em>CBA ItemBuilder</em>-Inhalten beginnt mit der Verwendung des <em>IRTlib-Editors</em> zur Erstellung einer Studienkonfiguration. Dies umfasst in der Regel die folgenden Schritte:</p>
+<div class="callout callout-style-default callout-caution callout-titled" title="Optional: Verwenden eine *Runtime* für *CBA ItemBuilder* vor Version 9.9?">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Optional: Verwenden eine <em>Runtime</em> für <em>CBA ItemBuilder</em> vor Version 9.9?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Voraussetzung</strong>: Überprüfen Sie die Verfügbarkeit der <a href="./settings.html">Runtime</a>. Der <em>IRTlib Editor</em> kann zur Vorbereitung von Assessments mit im CBA ItemBuilder erstellten Inhalten verwendet werden. Für die Verwendung von CBA ItemBuilder <em>Tasks</em>, die in <em>Projektdateien</em> gespeichert sind, ist eine <em>Runtime</em> (d.h. die Dateien <code>main.*.js</code> und <code>main.*.css</code>) in der Version erforderlich, die genau der Version des CBA ItemBuilders entspricht, der zur Erstellung der Items verwendet wurde (z.B. <code>9.9.0</code>). Bevor Sie den <em>IRTLib-Editor</em> verwenden, vergewissern Sie sich, dass die erforderliche <em>Runtime</em> enthalten ist, oder importieren Sie die Runtime-Dateien (siehe Abschnitt <a href="./settings.html">Einstellungen</a> für Details).</li>
+</ul>
+<p>Hinweis: Für die Verwendung von CBA ItemBuilder-Items ab Version 9.9 ist dieser Schritt in der Regel nicht notwendig.</p>
+</div>
+</div>
+</div>
+<ul>
+<li><strong>Erstellen einer neuen <em>Studie</em></strong>: Der <em>IRTlib-Editor</em> wird verwendet, um sogenannte <em>Studien</em> zu konfigurieren. Die Version von Studien kann im Editor nachverfolgt werden, und Studien können veröffentlicht (d.h. für die Datenerfassung <em>versiegelt</em>) werden. Um mit dem <em>IRTlib-Editor</em> mit der Erstellung von Inhalten zu beginnen, muss zuerst eine Studie erstellt werden (siehe Abschnitt <a href="./preparation-studies.html">Studien</a> für Details).</li>
+</ul>
+<blockquote class="blockquote">
+<div class="callout callout-style-default callout-note callout-titled" title="Hinweis: Das Anlegen einer *Studie* ist immer notwendig.">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hinweis: Das Anlegen einer <em>Studie</em> ist immer notwendig.
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>Beachten Sie, dass mindestens eine Studie im <em>IRTlib Editor</em> definiert sein muss, bevor eine Studienkonfiguration zur Datenerfassung mit einem <em>IRTlib Player</em> verwendet werden kann.</p>
+</div>
+</div>
+</div>
+</blockquote>
+<ul>
+<li><p><strong>Basiskonfigurationen für <em>Studie</em> festlegen (Info)</strong>: Zu den Basiskonfigurationen, die sich auf den Inhalt einer vorbereiteten Studie beziehen, gehören die Studienbezeichnung und -beschreibung, der Anmeldemodus, die Anzeigekonfiguration, das Menü für die Testadministratoren und die Angabe, wie nach Abschluss aller in einer Studie definierten Inhalte fortgefahren werden soll (siehe Abschnitt <a href="./preparation-studies.html">Studien</a> für weitere Einzelheiten).</p></li>
+<li><p><strong>Erstellen eines neuen <em>Erhebungsteils</em></strong>: Jede <em>Studie</em> besteht aus einem oder mehreren <em>Erhebungsteilen</em>. <em>Erhebungsteile</em> werden als Bausteine von Assessments betrachtet, die zusammen verwaltet werden, wie z.B. Items aus einer bestimmte Domäne. <em>Erhebungsteile</em> vom Typ <em>CBA ItemBuilder</em> können verwendet werden, um <em>CBA ItemBuilder</em>-Aufgaben in einer linearen Sequenz oder mit <em>Blockly</em>-basiertem Routing zu administrieren.</p></li>
+</ul>
+<blockquote class="blockquote">
+<div class="callout callout-style-default callout-note callout-titled" title="Hinweis: Das Anlegen eines *Erhebungsteils* ist immer notwendig.">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hinweis: Das Anlegen eines <em>Erhebungsteils</em> ist immer notwendig.
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>Beachten Sie, dass jede Studie mindestens einen im <em>IRTlib Editor</em> definierten <em>Erhebungsteil</em> benötigt, bevor eine Studienkonfiguration zur Datenerhebung mit einem <em>IRTlib Player</em> verwendet werden kann.</p>
+</div>
+</div>
+</div>
+</blockquote>
+<ul>
+<li><p><strong>Grundeinstellungen für <em>Erhebungsteil</em> konfigurieren (Info)</strong>: Ein <em>Erhebungsteil</em> vom Typ <em>CBA ItemBuilder</em> basiert auf einer Menge von <em>CBA ItemBuilder</em>-<em>Tasks</em>. Jede <em>CBA ItemBuilder</em>-<em>Projektdatei</em> benötigt mindestens einen <em>Task</em>, es werden aber auch Projekte mit mehreren <em>Tasks</em> unterstützt. Wenn <em>CBA ItemBuilder</em>-Inhalte mit einem gemeinsamen Zeitlimit über <em>Tasks</em> hinweg administriert werden sollen, erlauben <em>Erhebungsteile</em> die Zuordnung von Aufgaben zu einer Struktur, die Assessmentinhalte unterscheidet, welche <em>vor</em> einem zeitlich begrenzten Abschnitt administriert werden (z.B. Instruktionen, im Abschnitt <em>Vorspann-Items</em>), Inhalte die <em>nach</em> einem zeitlich begrenzten Abschnitt administriert werden (z.B. Danksagung, im Abschnitt <em>Nachspann-Items</em>) und dazwischen liegende Aufgaben mit begrenzter Zeit (<em>Items</em>, siehe Abschnitt <a href="./preparation-parts.html">Erhebungsteile</a>).</p></li>
+<li><p><strong>Items Hinzufügen</strong>: Um die Definition eines <em>Erhebungsteils</em> abzuschließen, müssen die <em>CBA ItemBuilder</em>-<em>Projektdateien</em> in den Abschnitt <em>Items</em> importiert werden. Standardmäßig wird davon ausgegangen, dass die Reihenfolge der <em>CBA ItemBuilder</em>-<em>Tasks</em> linear ist. Wenn jedoch das <em>Routing</em> für einen Studienteil aktiviert ist, kann das <em>Blockly</em>-basierte Ablaufdefinition verwendet werden, um verschiedene Testdesigns zu implementieren (z. B. mehrere Hefte, mehrstufige Tests usw.).</p></li>
+</ul>
+</section>
+</section>
+<section id="eingebettete-programhilfe-1" class="level2">
+<h2 class="anchored" data-anchor-id="eingebettete-programhilfe-1">Eingebettete Programhilfe</h2>
+<p>Für die Verwendung des <em>IRTlib Editors</em> ist eine Programmhilfe direkt in die Anwendung integriert, welche über das kleine <code>?</code>-Symbol oben rechts eingeblendet werden kann.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/screenshot-editor-embedded-help-de-DEU.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption">Beispiel des <em>IRTlib Editors</em> mit eingeblendeter Hilfe</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Eingebettete Programmhilfe">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Eingebettete Programmhilfe
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Die Inhalte dieser Hilfe-Seiten aus dem <em>IRTlib Editor</em> sind in diese <em>IRTlib Dokumentation</em> integriert und werden immer in diesem Rahmen mit der überschrift <em>Eingebettete Programmhilfe</em> dargestellt.</p>
+</div>
+</div>
+</section>
+<section id="vorbereitung-von-cba-itembuilder-inhalten-1" class="level2">
+<h2 class="anchored" data-anchor-id="vorbereitung-von-cba-itembuilder-inhalten-1">Vorbereitung von <em>CBA ItemBuilder</em>-Inhalten</h2>
+<p>Die <em>IRTlib Software</em> wird benötigt, um die mit dem <em>CBA ItemBuilder</em> erstellten Assessmentinhalte anzuzeigen und für Datenerhebungen zu verwenden. Dafür müssen die <em>Projektdateien</em> (ZIP-Archive), die mit dem <em>CBA ItemBuilder</em> erstellt werden können vorliegen.</p>
+<section id="einsprungpunkt-task-1" class="level3">
+<h3 class="anchored" data-anchor-id="einsprungpunkt-task-1">Einsprungpunkt (<em>Task</em>)</h3>
+<p>Jede <em>CBA ItemBuilder</em>-<em>Projektdatei</em> muss mindestens einen <em>Task</em> definieren. Nur <em>Tasks</em> können in der <em>IRTlib Software</em> verwendet werden. Das ein <em>Task</em> vollständig definiert ist, lässt sich in der <em>Preview</em> des <em>CBA ItemBuilder</em> leicht überprüfen:</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="img/screenshot-cba-itembuilder-preview-check-task-example-01.png" class="img-fluid figure-img" width="450"></p>
+<figcaption class="figure-caption">Beispiel aus <em>CBA ItemBuilder</em> zur Anforderung einer <em>Preview</em> für einen <em>Task</em></figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Die *IRTlib Software* benötigt definierte *Tasks*.">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Die <em>IRTlib Software</em> benötigt definierte <em>Tasks</em>.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Assessmentinhalte können mit der <em>IRTlib Software</em> aus einzelnen <em>Task</em> zusammgengesetzt werden. Die Reihenfolge von <em>Tasks</em> kann statisch als <em>lineare Sequenz</em> oder als probrammierten Ablauf in <em>Blockly</em> definiert werden. Aus der <em>IRTlib Software</em> heraus können keine einzelnen Seiten innerhalb von <em>CBA ItemBuilder</em>-<em>Tasks</em> angesteuert werden.</p>
+</div>
+</div>
+<p><em>CBA ItemBuilder</em>-<em>Projektdateien</em> welche nur über die Option <em>Project</em> oder <em>Page</em> in der <em>Preview</em> angezeigt werden können, lassen sich in der <em>IRTlib Software</em> nicht verwenden.</p>
+</section>
+<section id="verhalten-der-anzeige-scaling-options-1" class="level3">
+<h3 class="anchored" data-anchor-id="verhalten-der-anzeige-scaling-options-1">Verhalten der Anzeige (<em>Scaling Options</em>)</h3>
+<p>Mit Hilfe der <em>Preview</em> des <em>CBA ItemBuilder</em> kann auch geprüft werden, dass die Assessmentinhalte in der gewünschten Skalierung, die unter <em>Scaling Options</em> eingestellt werden kann, den Erfordernissen entsprechend angezeigt werden.</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="img/screenshot-cba-itembuilder-preview-scaling-mode-01.png" class="img-fluid figure-img" width="200"></p>
+<figcaption class="figure-caption">Einstellungen zu <em>Scaling Options</em> aus <em>CBA ItemBuilder</em>-<em>Preview</em></figcaption>
+</figure>
+</div>
+<p>Einstellungen analog zur <em>Preview</em> können in dem <em>IRTlib Editor</em> für die Anzeigeeinstellungen einer <em>Studie</em> definiert werden (siehe Abschnitt <a href="./preparation-studies.html">Studien</a>).</p>
+</section>
+<section id="definition-des-scorings-ergebnisdaten-1" class="level3">
+<h3 class="anchored" data-anchor-id="definition-des-scorings-ergebnisdaten-1">Definition des <em>Scorings</em> (Ergebnisdaten)</h3>
+<p>Die <em>IRTlib Software</em> ist dafür gedacht, Daten mit Hilfe von <em>CBA ItemBuilder</em>-<em>Task</em> zu erheben. Was aus der Bearbeitung eines <em>Tasks</em> an Ergebnisvariablen gespeichert wird, können <em>Itemautoren</em> in der <em>Scoring</em>-Definition einer <em>Tasks</em> definieren.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Das *Scoring* muss bereits im *CBA ItemBuilder* definiert werden.">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Das <em>Scoring</em> muss bereits im <em>CBA ItemBuilder</em> definiert werden.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Aus der Bearbeitung von <em>Tasks</em> werden die als <em>Classes</em> definierten Ergebnisvariablen gespeichert, deren Werte entweder einzelne <em>Hits</em> sein können, oder die Übernahme von Informationen mit Hilfe des so-genannten <em>ResultText</em>-Operators im <em>CBA ItemBuilder</em>.</p>
+</div>
+</div>
+<p>Mit Hilfe des eingebauten <em>Scoring Debug Window</em> sollte das <em>Scoring</em> einzelner <em>CBA ItemBuider</em>-<em>Tasks</em> bereits im <em>CBA ItemBuilder</em> geprüft werden, bevor die Assessmentinhalte mit Hilfe der <em>IRTlib Software</em> zu <em>Studien</em> mit einem oder mehreren <em>Erhebungsteilen</em> kombiniert werden. Weitere Hinweise zu vorgeschlagenen Prüfungen sind im Abschnitt <a href="./data-collection-player-integration.html">Auslieferungen Testen und Freigeben</a> formuliert.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Log-Daten werden automatisch gesammelt.">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Log-Daten werden automatisch gesammelt.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Ohne weitere Konfiguration werden Log-Daten in den mit dem <em>CBA ItemBuilder</em> erstellten Assessmentinhalten automatisch erfasst und über die <em>IRTlib Software</em> gesammelt.</p>
+</div>
+</div>
+</section>
+<section id="integrierte-multimedia-inhalte-ressourcen-1" class="level3">
+<h3 class="anchored" data-anchor-id="integrierte-multimedia-inhalte-ressourcen-1">Integrierte Multimedia-Inhalte (Ressourcen)</h3>
+<p>Die mit dem <em>CBA ItemBuilder</em> erstellten Assessmentinhalte können Multimedia-Inhalte (Bilder, Videos, Audiodateien) enthalten. Bilder und Videos werden dabei in einer Größe angezeigt, die in der entsprechenden Komponente des <em>CBA ItemBuilder</em> im <em>Page Editor</em> verwendet wird. In den <em>Projektdateien</em> werden Bilder, Videos und Audiodateien als <em>Ressourcen</em> gespeichert, sobald diese über den <em>Ressource Browser</em> eingefügt wurden. Nicht verwendete <em>Ressourcen</em> bleiben dabei in den <em>Projektdateien</em> enthalten.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Dateigröße von *CBA ItemBuilder*-*Projektdateien* sollte möglichst klein sein.">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Dateigröße von <em>CBA ItemBuilder</em>-<em>Projektdateien</em> sollte möglichst klein sein.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Die Dateigröße von <em>CBA ItemBuilder</em>-<em>Projekdateien</em> ist für die Verwendung insbesondere in Online-Auslieferungen relevant und sollte so klein wie möglich gehalten werden.</p>
+</div>
+</div>
+<p>Vor der Verwendung von <em>CBA ItemBuilder</em>-<em>Projektdateien</em> wird empfohlen, folgende Punkte zu berücksichtigen:</p>
+<ul>
+<li><p>Bilder und Videos nur in der benötigten Größe: Bilder und Videos können ohne Qualitätsverlust auf die Größe (Breite/Width udn Höhe/Height) reduziert werden, in welcher sie in <em>CBA ItemBuilder</em>-<em>Projekten</em> auch wirklich verwendet werden.</p></li>
+<li><p>Bilder wenn möglich komprimieren: Ohne die Bildgröße zu verändern können Bilder häufig in der Dateigröße weiter reduziert werden.</p></li>
+<li><p>Videos wenn möglich komprimieren: Ohne die Video zu verändern können Videos häufig in der Dateigröße weiter reduziert werden.</p></li>
+<li><p>Audios nicht in höchster Qualität: Wenn nicht notwendig, sollten Audio-Dateien in ihrer Qualität soweit reduziert werden, dass sie noch akzeptabel klingen, aber bzgl. der Übertragungszeiten optimiert sind.</p></li>
+<li><p>Entfernen nicht verwendeter Ressourcen: Der <em>CBA ItemBuilder</em> stellt eine Schaltfläche im <em>Resource Browser</em> zur verfügung, um nicht verwendeten <em>Ressourcen</em> automatisch zu entfernen. Diese Funktion sollte abschließend genutzt werden, damit die <em>Projekt-Dateien</em> keine unnötigen <em>Ressourcen</em> enthalten.</p></li>
+</ul>
+<p>Ein sorgsamer Umgang mit <em>Ressourcen</em> und eine Optimierung der Dateigröße von <em>CBA ItemBuilder</em>-<em>Projektdateien</em> kann entscheidend für ein flüssiges und reibungsfreie Assessment sein, was sich mit der <em>IRTlib Software</em> online ausliefern und bspw. über Mobilgeräte mit beschränkter Internetbandbreite nutze lässt.</p>
+<p>::: :::{.content-visible when-profile=“english”} Preparing a computer-based assessment based on CBA ItemBuilder items begins with using the <em>IRTlib Editor</em> to create a study configuration. This typically involves the following steps:</p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-15-contents" aria-controls="callout-15" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Optional
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-15" class="callout-15-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Pre-requisite</strong>: Check the availability of the <a href="./settings.html">Runtime</a>. The <em>IRTlib Editor</em> can be used to prepare assessments using CBA ItemBuilder <em>Tasks</em>. Using CBA ItemBuilder <em>Tasks</em> are stored in <em>Project Files</em> require a <em>Runtime</em> (i.e., the files “main..js” and “main..css”) in the version corresponding exactly to the version of the CBA ItemBuilder that was used to generate the items (e.g., 9.9.0). Before using the IRTLib editor, ensure the required <em>Runtime</em> is included or import the runtime files (see here for details).</li>
+</ul>
+<p>Note: This step is usually not necessary for the use of CBA ItemBuilder items from version 9.9.</p>
+</div>
+</div>
+</div>
+<ul>
+<li><strong>Create a new “Study”</strong>: The <em>IRTlib Editor</em> is used to configure so-called <em>Studies</em>. The version of studies can be tracked in the editor, and studies can be published (i.e., sealed to be used for data collection). To start creating content using the <em>IRTlib Editor</em>, a study must be created first (see section <a href="./settings.html">Settings</a> for details).</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Note that at least one study must be defined in the <em>IRTlib Editor</em>, before a study configuration can be used to collect data with an <em>IRTlib Player</em>.</p>
+</div>
+</div>
+<ul>
+<li><p><strong>Specify “Basic Configurations” for the Study (Info)</strong>: Basic configurations that apply to the content of a prepared study include the study label and description, the login mode, the display configuration, the menu for test administrators and the specification how to continue after completing all content defined in a study (see section <a href="./preparation-studies.html">Studies</a> for details).</p></li>
+<li><p><strong>Create a new “Survey-Part”</strong>: Each study is composed of one or multiple survey parts (see here for details). Parts are considered segments of an assessment that are administered together, like items from a particular domain. Survey parts of type “CBA ItemBuilder” can be used to administer CBA ITemBuilder tasks in a linear sequence or with Blockly-based routing (see Routing Across Survey Parts for details).</p></li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Note that each study neads at least one test-part defined in the <em>IRTlib Editor</em>, before a study configuration can be used to collect data with an <em>IRTlib Player</em>.</p>
+</div>
+</div>
+<ul>
+<li><p><strong>Configure “Basic Settings” for Survey Part (Info)</strong>: A study part of type “CBA ItemBuilder” is a set of CBA ItemBuilder projects that belong together. Each CBA ItemBuilder project requires at least one Task, but projects with multiple tasks are also supported. If items are administered with a common time limit, test parts allow for assigning tasks to a structure differentiating assessment content presented before a time-restricted section (“instructional items”), after a time-restricted section (“epilogue items”), and items in between with restricted time (“core items”, see here).</p></li>
+<li><p><strong>Define “Core Items” (Items)</strong>: To finalize the definition of a study-part, the CBA ItemBuilder tasks must be imported in the section “Items”. By default, the sequence of CBA ItemBuilder tasks is assumed to be linear. However, when routing is activated for a study part, Blockly-based routing (see Routing Within Survey Parts for details) can be used to implement various test designs (e.g., multiple booklets, multi-stage testing, etc.).</p></li>
+</ul>
+<p>::: :::{.content-visible when-profile=“englishbook”} Preparing a computer-based assessment based on CBA ItemBuilder items begins with using the <em>IRTlib Editor</em> to create a study configuration. This typically involves the following steps:</p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-18-contents" aria-controls="callout-18" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Optional
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-18" class="callout-18-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Pre-requisite</strong>: Check the availability of the <a href="./settings.html">Runtime</a>. The <em>IRTlib Editor</em> can be used to prepare assessments using CBA ItemBuilder <em>Tasks</em>. Using CBA ItemBuilder <em>Tasks</em> are stored in <em>Project Files</em> require a <em>Runtime</em> (i.e., the files “main..js” and “main..css”) in the version corresponding exactly to the version of the CBA ItemBuilder that was used to generate the items (e.g., 9.9.0). Before using the IRTLib editor, ensure the required <em>Runtime</em> is included or import the runtime files (see here for details).</li>
+</ul>
+<p>Note: This step is usually not necessary for the use of CBA ItemBuilder items from version 9.9.</p>
+</div>
+</div>
+</div>
+<ul>
+<li><strong>Create a new “Study”</strong>: The <em>IRTlib Editor</em> is used to configure so-called <em>Studies</em>. The version of studies can be tracked in the editor, and studies can be published (i.e., sealed to be used for data collection). To start creating content using the <em>IRTlib Editor</em>, a study must be created first (see section <a href="./settings.html">Settings</a> for details).</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Note that at least one study must be defined in the <em>IRTlib Editor</em>, before a study configuration can be used to collect data with an <em>IRTlib Player</em>.</p>
+</div>
+</div>
+<ul>
+<li><p><strong>Specify “Basic Configurations” for the Study (Info)</strong>: Basic configurations that apply to the content of a prepared study include the study label and description, the login mode, the display configuration, the menu for test administrators and the specification how to continue after completing all content defined in a study (see section <a href="./preparation-studies.html">Studies</a> for details).</p></li>
+<li><p><strong>Create a new “Survey-Part”</strong>: Each study is composed of one or multiple survey parts (see here for details). Parts are considered segments of an assessment that are administered together, like items from a particular domain. Survey parts of type “CBA ItemBuilder” can be used to administer CBA ITemBuilder tasks in a linear sequence or with Blockly-based routing (see Routing Across Survey Parts for details).</p></li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Note that each study neads at least one test-part defined in the <em>IRTlib Editor</em>, before a study configuration can be used to collect data with an <em>IRTlib Player</em>.</p>
+</div>
+</div>
+<ul>
+<li><p><strong>Configure “Basic Settings” for Survey Part (Info)</strong>: A study part of type “CBA ItemBuilder” is a set of CBA ItemBuilder projects that belong together. Each CBA ItemBuilder project requires at least one Task, but projects with multiple tasks are also supported. If items are administered with a common time limit, test parts allow for assigning tasks to a structure differentiating assessment content presented before a time-restricted section (“instructional items”), after a time-restricted section (“epilogue items”), and items in between with restricted time (“core items”, see here).</p></li>
+<li><p><strong>Define “Core Items” (Items)</strong>: To finalize the definition of a study-part, the CBA ItemBuilder tasks must be imported in the section “Items”. By default, the sequence of CBA ItemBuilder tasks is assumed to be linear. However, when routing is activated for a study part, Blockly-based routing (see Routing Within Survey Parts for details) can be used to implement various test designs (e.g., multiple booklets, multi-stage testing, etc.).</p></li>
+</ul>
+<p>:::</p>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->
