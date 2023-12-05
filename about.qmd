@@ -4,7 +4,7 @@ format:
     embed-resources: false 
 ---
 
-# About
+# Über / About 
 
 :::{.content-visible when-profile="german"}
 {{< include _about_de-DEU.qmd >}}

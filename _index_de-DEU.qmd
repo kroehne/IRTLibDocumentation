@@ -52,4 +52,4 @@ Für die Verwendung der *IRTlib Software* ist eine kontext-sensitive [Programmhi
 
 :::
 
-Die Entwicklung vom *CBA ItemBuilder* und der *IRTlib Software* wird vom *Zentrum für technologiebasiertes Assessment ([TBA](https://tba.dipf.de/de/ueber-tba/))*  am *[DIPF](https://www.dipf.de/) |  | Leibniz-Institut für Bildungsforschung und Bildungsinformation* koordiniert.  
+Die Entwicklung vom *CBA ItemBuilder* und der *IRTlib Software* wird vom *Zentrum für technologiebasiertes Assessment ([TBA](https://tba.dipf.de/de/ueber-tba/))*  am *[DIPF](https://www.dipf.de/)* | *Leibniz-Institut für Bildungsforschung und Bildungsinformation* koordiniert.  

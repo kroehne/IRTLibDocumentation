@@ -1,12 +1,18 @@
-Der *IRTlib Editor* hat eine kleine Anzahl von Einstellungen.  
+Die Einstellungen des *IRTlib Players* werden als Teil der *Studienkonfiguration* festgelegt. Der *IRTlib Editor* hat eine kleine Anzahl von Einstellungen. 
 
 ## Übersicht
 
-Die *IRTlib Software* ist im Augenblick noch unter Entwicklung. Informationen über die laufende Version (und für *Preview*-Versionen über den Build-Hash) können im Abschnitt *Über das Programm* abgerufen werden. 
+Die *IRTlib Software* wird kontinuierlich weiterentwickelt. Informationen über die laufende Version können im Abschnitt *Über das Programm* abgerufen werden. 
 
 ::: {.callout-tip collapse="true" title="Eingebettete Programmhilfe"}
 {{< include InlineHelp_View_Settings_Main_de-DEU.qmd >}}
 ::: 
+
+Wenn eine  *Preview*-Versionen verwendet wird (d.h. eine Version der *IRTlib Software* die Änderungen enthält die seit dem letzten *Release* gemacht wurden, dann können die Programmversionen über den Build-Hash identifiziert werden:
+ 
+
+![Beispiel aus Dialog *Über das Programm* mit dem Build-Hash `b1cd92b0`](img/sreenshot-irtlib-editor-build-hash-example-01.png){width="450" fig-align="left" }
+
 
 ## Laufzeitumgebungen 
 

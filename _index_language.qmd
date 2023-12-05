@@ -20,8 +20,8 @@
 
 ::: {.g-col-6}
 
-[Dokumentation auf Deutsch](de/index.html)
-[(als Buch)](de/IRTlib-Software.pdf)
+Dokumentation auf Deutsch [als Website](de/index.html) 
+([als PDF](de/IRTlib-Software.pdf))
 
 :::
 
