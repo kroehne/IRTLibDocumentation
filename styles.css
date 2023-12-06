@@ -1,1 +1,5 @@
-/* css styles */
+.blockquote {
+    margin: 0 0 1rem;
+    padding: 0rem 1.25rem;
+    border-left: 0.9rem solid #ffffff !important;
+}/* css styles */
