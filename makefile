@@ -9,7 +9,7 @@ all:
 	cp -R _book/de/site_libs/ _site/site_libs/
 	cp -R _book/de/site_libs/ _site/de/site_libs/
 	cp -R _book/de/site_libs/ _site/en/site_libs/
-  echo "www.irtlib.net" > _site/CNAME
+	echo "www.irtlib.net" > _site/CNAME
 
 de:
 	quarto render --profile language 
