@@ -70,7 +70,7 @@ Die für den Datenabruf und die Datenkonvertierung über `LogFSM` verwendete Anw
 Darüber lassen sich Datenabruf und Datenumwandlung auch ohne R ausführen.
 
 ::: {.callout-important title="In Entwicklung"}
-Eine Mac-Version für ARM64 ist in Entwicklung.
+Eine Mac-Version von `LogFSM` und dem `TransformToUniversalLogFormat`-Tool für `ARM64` ist in Entwicklung.
 :::
 
 ### Ergebnisdaten

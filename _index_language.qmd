@@ -4,30 +4,36 @@
 
 ::: {.g-col-6}
 
-*IRTlib* ist eine Software zur Auslieferung computerbasierter Assessments basierend auf Aufgaben, die mit dem <a href="https://cba.itembuilder.de">CBA ItemBuilder</a> erstellt wurden. Die Software erlaubt die Definition von flexiblen Abläufen unter Nutzung von visueller Programmierung und Funktionen der Item-Response Theoie (IRT). 
+*IRTlib* ist eine Software zur Auslieferung computerbasierter Assessments basierend auf Aufgaben, die mit dem *CBA ItemBuilder* erstellt wurden. Die Software erlaubt die Definition von flexiblen Abläufen unter Nutzung von visueller Programmierung und Funktionen der Item-Response Theoie (IRT). 
 :::
 
-::: {.g-col-6}
-*IRTlib* is a software for the delivery of computer-based assessments using tasks develope with the <a href="https://cba.itembuilder.de">CBA ItemBuilder</a>. The software allows the definition of flexible processes using visual programming and functions of the item-response theory (IRT). 
+::: {.g-col-5}
+*IRTlib* is a software for the delivery of computer-based assessments using tasks develope with the *CBA ItemBuilder*. The software allows the definition of flexible processes using visual programming and functions of the item-response theory (IRT). 
 :::
 
 
 :::
 
-![](img/irtlib-cover.png)
+[![](img/irtlib-cover.png)](de/index.html) 
 
 ::: {.grid}
 
 ::: {.g-col-6}
+Dokumentation auf Deutsch 
 
-Dokumentation auf Deutsch [als Website](de/index.html) 
-([als PDF](de/IRTlib-Software.pdf))
+* [als HTML](de/index.html) 
+* [als PDF](de/IRTlib-Software.pdf)
+:::
+
+::: {.g-col-5}
+
+Documentation in English 
+
+* [as HTML](en/index.html) 
+* [as PDF](en/IRTlib-Software.pdf)
 
 :::
 
-::: {.g-col-6}
-English documentation under preparation...
 :::
 
-
-:::
+ 
