@@ -40,6 +40,7 @@ In den Abschnitten [Datenerhebung > Übersicht](data-collection-overview.qmd), [
 
 Die *IRTlib*-Software (*IRTlib Editor* und *IRTlib Player*) für die Online-Nutzung kann als *Docker*-Container bezogen werden. Ein Beispiel ist unter <https://github.com/DIPFtba/IRTlibDeploymentSoftware> zu finden. 
 
+Um den Docker-Container zu verwenden, wird empfohlen, das Repository auf dem Zielgerät zu *klonen* und den Befehl `./start.sh` im Ordner `docker` auszuführen (erfordert installiertes `docker` und `docker compose`), um die Software zu starten.
 
 Wenn in der Datei `docker-compose.yml` nichts geändert wird, ist der Editor über Port *8002* und die Player-Software über Port *8001* erreichbar.
 
