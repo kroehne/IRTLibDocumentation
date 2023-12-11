@@ -4,7 +4,7 @@ format:
     embed-resources: false 
 ---
 
-# Github
+# Github Repositorien / Github Repositories
 
 :::{.content-visible when-profile="german"}
 {{< include _github_de-DEU.qmd >}}

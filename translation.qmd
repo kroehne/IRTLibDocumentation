@@ -18,7 +18,7 @@ The software has been designed so that it can also be translated into other lang
 
   - The source file can be found here: (TODO)
 
-* Help (included in the application) is generated using [quarto](https://quarto.org/) from markdown files in this  [folder](https://github.com/kroehne/IRTLibDocumentation/tree/main/help).
+* Help (included in the application) is generated using [quarto](https://quarto.org/) useing all markdown files starting with `InlineHelp_*` in this  [folder](https://github.com/kroehne/IRTLibDocumentation/tree/main/).
 
   - [Help.de-DE.resx](../Help.de-DE.resx) 
   - [Help.en-US.resx](../Help.en-US.resx)

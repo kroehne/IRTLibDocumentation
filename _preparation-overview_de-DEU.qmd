@@ -6,7 +6,7 @@ Die Vorbereitung eines computerbasierten Assessments auf der Grundlage von *CBA 
 Hinweis: Für die Verwendung von CBA ItemBuilder-Items ab Version 9.9 ist dieser Schritt in der Regel nicht notwendig.
 :::
 
-- **Erstellen einer neuen *Studie***: Der *IRTlib-Editor* wird verwendet, um sogenannte *Studien* zu konfigurieren. Die Version von Studien kann im Editor nachverfolgt werden, und Studien können veröffentlicht (d.h. für die Datenerfassung *versiegelt*) werden. Um mit dem *IRTlib-Editor* mit der Erstellung von Inhalten zu beginnen, muss zuerst eine Studie erstellt werden (siehe Abschnitt [Studien](preparation-studies.qmd) für Details).
+- **Erstellen einer neuen *Studie***: Der *IRTlib-Editor* wird verwendet, um sogenannte *Studien* zu konfigurieren. Die Versionen von Studien können im Editor nachverfolgt werden, Studien können dort veröffentlicht (d.h. für die Datenerfassung *versiegelt*) werden. Um mit dem *IRTlib-Editor* mit der Erstellung von Inhalten zu beginnen, muss zuerst eine Studie erstellt werden (siehe Abschnitt [Studien](preparation-studies.qmd) für Details).
 
 ::: {.callout-note collapse="false" title="Hinweis: Das Anlegen einer *Studie* ist immer notwendig."}
 Beachten Sie, dass mindestens eine Studie im *IRTlib Editor* definiert sein muss, bevor eine Studienkonfiguration zur Datenerfassung mit einem *IRTlib Player* verwendet werden kann.
@@ -39,23 +39,23 @@ Die Inhalte dieser Hilfe-Seiten aus dem *IRTlib Editor* sind in diese *IRTlib Do
 
 ## Vorbereitung von *CBA ItemBuilder*-Inhalten
 
-Die *IRTlib Software* wird benötigt, um die mit dem *CBA ItemBuilder* erstellten Assessmentinhalte anzuzeigen und für Datenerhebungen zu verwenden. Dafür müssen die *Projektdateien* (ZIP-Archive), die mit dem *CBA ItemBuilder* erstellt werden können vorliegen. 
+Die *IRTlib Software* wird benötigt, um die mit dem *CBA ItemBuilder* erstellten Assessmentinhalte anzuzeigen und für Datenerhebungen zu verwenden. Dafür müssen die *Projektdateien* (ZIP-Archive), die mit dem *CBA ItemBuilder* erstellt werden können, vorliegen. 
 
 ### Einsprungpunkt (*Task*)
 
-Jede *CBA ItemBuilder*-*Projektdatei* muss mindestens einen *Task* definieren. Nur *Tasks* können in der *IRTlib Software* verwendet werden. Das ein *Task* vollständig definiert ist, lässt sich in der *Preview* des *CBA ItemBuilder* leicht überprüfen:
+Jede *CBA ItemBuilder*-*Projektdatei* muss mindestens einen *Task* definieren. Nur *Tasks* können in der *IRTlib Software* verwendet werden. Dass ein *Task* vollständig definiert ist, lässt sich in der *Preview* des *CBA ItemBuilder* leicht überprüfen:
 
 ![Beispiel aus *CBA ItemBuilder* zur Anforderung einer *Preview* für einen *Task*](img/screenshot-cba-itembuilder-preview-check-task-example-01.png){width="450" fig-align="left" }
 
 ::: {.callout-note title="Die *IRTlib Software* benötigt definierte *Tasks*."}
-Assessmentinhalte können mit der *IRTlib Software* aus einzelnen *Task* zusammgengesetzt werden. Die Reihenfolge von *Tasks* kann statisch als *lineare Sequenz* oder als probrammierten Ablauf in *Blockly* definiert werden. Aus der *IRTlib Software* heraus können keine einzelnen Seiten innerhalb von *CBA ItemBuilder*-*Tasks* angesteuert werden.
+Assessmentinhalte können mit der *IRTlib Software* aus einzelnen *Task* zusammgengesetzt werden. Die Reihenfolge von *Tasks* kann statisch als *lineare Sequenz* oder als programmierter Ablauf in *Blockly* definiert werden. Aus der *IRTlib Software* heraus können keine einzelnen Seiten innerhalb von *CBA ItemBuilder*-*Tasks* angesteuert werden.
 :::
 
 *CBA ItemBuilder*-*Projektdateien* welche nur über die Option *Project* oder *Page* in der *Preview* angezeigt werden können, lassen sich in der *IRTlib Software* nicht verwenden.
 
 ### Verhalten der Anzeige (*Scaling Options*)
 
-Mit Hilfe der *Preview* des *CBA ItemBuilder* kann auch geprüft werden, dass die Assessmentinhalte in der gewünschten Skalierung, die unter *Scaling Options* eingestellt werden kann, den Erfordernissen entsprechend angezeigt werden.
+Mit Hilfe der *Preview* des *CBA ItemBuilder* kann auch geprüft werden, ob die Assessmentinhalte in der gewünschten Skalierung, die unter *Scaling Options* eingestellt werden kann, den Erfordernissen entsprechend angezeigt werden.
 
 ![Einstellungen zu *Scaling Options* aus *CBA ItemBuilder*-*Preview*](img/screenshot-cba-itembuilder-preview-scaling-mode-01.png){width="200" fig-align="left" }
 
@@ -65,10 +65,10 @@ Einstellungen analog zur *Preview* können in dem *IRTlib Editor* für die Anzei
 
 ### Definition des *Scorings* (Ergebnisdaten)
 
-Die *IRTlib Software* ist dafür gedacht, Daten mit Hilfe von *CBA ItemBuilder*-*Task* zu erheben. Was aus der Bearbeitung eines *Tasks* an Ergebnisvariablen gespeichert wird, können *Itemautoren* in der *Scoring*-Definition einer *Tasks* definieren. 
+Die *IRTlib Software* ist dafür gedacht, Daten mit Hilfe von *CBA ItemBuilder*-*Task* zu erheben. Was aus der Bearbeitung eines *Tasks* an Ergebnisvariablen gespeichert wird, können *Itemautoren* in der *Scoring*-Definition eines *Tasks* definieren. 
 
 ::: {.callout-note title="Das *Scoring* muss bereits im *CBA ItemBuilder* definiert werden."}
-Aus der Bearbeitung von *Tasks* werden die als *Classes* definierten Ergebnisvariablen gespeichert, deren Werte entweder einzelne *Hits* sein können, oder die Übernahme von Informationen mit Hilfe des so-genannten *ResultText*-Operators im *CBA ItemBuilder*. 
+Aus der Bearbeitung von *Tasks* werden die als *Classes* definierten Ergebnisvariablen gespeichert, deren Werte entweder einzelne *Hits* sein können, oder die Übernahme von Informationen mit Hilfe des sogenannten *ResultText*-Operators im *CBA ItemBuilder*. 
 :::
 
 Mit Hilfe des eingebauten *Scoring Debug Window* sollte das *Scoring* einzelner *CBA ItemBuider*-*Tasks* bereits im *CBA ItemBuilder* geprüft werden, bevor die Assessmentinhalte mit Hilfe der *IRTlib Software* zu *Studien* mit einem oder mehreren *Erhebungsteilen* kombiniert werden. Weitere Hinweise zu vorgeschlagenen Prüfungen sind im Abschnitt [Auslieferungen Testen und Freigeben](data-collection-player-integration.qmd) formuliert. 
@@ -99,4 +99,4 @@ Vor der Verwendung von *CBA ItemBuilder*-*Projektdateien* wird empfohlen, folgen
 
 * Entfernen nicht verwendeter Ressourcen: Der *CBA ItemBuilder* stellt eine Schaltfläche im *Resource Browser* zur verfügung, um nicht verwendeten *Ressourcen* automatisch zu entfernen. Diese Funktion sollte abschließend genutzt werden, damit die *Projekt-Dateien* keine unnötigen *Ressourcen* enthalten. 
 
-Ein sorgsamer Umgang mit *Ressourcen* und eine Optimierung der Dateigröße von *CBA ItemBuilder*-*Projektdateien* kann entscheidend für ein flüssiges und reibungsfreie Assessment sein, was sich mit der *IRTlib Software* online ausliefern und bspw. über Mobilgeräte mit beschränkter Internetbandbreite nutze lässt. 
+Ein sorgsamer Umgang mit *Ressourcen* und eine Optimierung der Dateigröße von *CBA ItemBuilder*-*Projektdateien* kann entscheidend für ein flüssiges und reibungsfreies Assessment sein, was sich mit der *IRTlib Software* online ausliefern und bspw. über Mobilgeräte mit beschränkter Internetbandbreite nutze lässt. 

@@ -6,9 +6,9 @@ Die *IRTlib*-Software (*IRTlib Editor* und *IRTlib Player*) für die Offline-Nut
 
 Im Abschnitt [Releases](https://github.com/DIPFtba/IRTlibDeploymentSoftware/releases) stehen zwei ZIP-Archive zum Download bereit.
 
-* **`TestApp.Editor.Desktop.exe`**: Ist in `TestApp.Player.Desktop.zip`  und muss gestartet werden, umd den  *IRTlib Editor* zu verwenden. 
+* **`TestApp.Editor.Desktop.exe`**: Ist in `TestApp.Editor.Desktop.zip`  und muss gestartet werden, umd den  *IRTlib Editor* zu verwenden. 
 
-* **`TestApp.Player.Desktop.exe`**: Ist in `TestApp.Editor.Desktop.zip` enthalten und muss gestartet werden, umd den  *IRTlib Player* zu verwenden. 
+* **`TestApp.Player.Desktop.exe`**: Ist in `TestApp.Player.Desktop.zip` enthalten und muss gestartet werden, umd den  *IRTlib Player* zu verwenden. 
 
 ::: {.callout-note collapse="true" title="Hinweis: Versionen aus der aktuellen Entwicklung als *Preview*."}
 Beachten Sie, dass der aktuellste Build im Abschnitt [Preview](https://github.com/DIPFtba/IRTlibDeploymentSoftware/releases/tag/preview-231025) des *Release*-Abschnitts des [repository](https://github.com/DIPFtba/IRTlibDeploymentSoftware/releases) zu finden ist. Preview-Versionen sind die aktuellsten Version der Software, nach der letzten veröffentlichten Version der *IRTlib Software*. Um reproduzierbare Ergebnisse zu erhalten, sollten immer veröffentlichte Versionen verwendet werden. 
@@ -30,7 +30,7 @@ Der *IRTlib Player* ist auch als Windows-Anwendung für die Offline-Nutzung verf
 
 Nach dem Hinzufügen der als Studienkonfiguration bereitgestellten Inhalte einer veröffentlichten Studie kann die ausführbare Datei `TestApp.Player.Desktop.exe` gestartet werden (entweder mit oder ohne Startparameter). 
 
-* **Kiosk Mode**: Der *IRTlib Player* kann über die ausführbare Datei `TestApp.Player.Desktop.exe` auf dem Computer, auf dem er lokal ausgeführt wird, direkt zur Datenerhebung verwendet werden. Die *Studie* kann dazu so konfirugiert werden, dass es in einem *Kiosk Mode* auf einem Bildschirm angezeigt wird und nur über den *Task Manager* oder das *Testleitermenü* beendet werden kann (siehe *Vollbildmodus* im Abschnitt [Konfiguration zur Anzeige](preparation-studies.html#konfiguration-zur-anzeige)).
+* **Kiosk Mode**: Der *IRTlib Player* kann über die ausführbare Datei `TestApp.Player.Desktop.exe` auf dem Computer, auf dem er lokal ausgeführt wird, direkt zur Datenerhebung verwendet werden. Die *Studie* kann dazu so konfiguriert werden, dass es in einem *Kiosk Mode* auf einem Bildschirm angezeigt wird und nur über den *Task Manager* oder das *Testleitermenü* beendet werden kann (siehe *Vollbildmodus* im Abschnitt [Konfiguration zur Anzeige](preparation-studies.html#konfiguration-zur-anzeige)).
 
 * **Lokaler Server**: Der *IRTlib Player* kann aber auch als lokaler Server ausgeführt werden. Nach dem Start des Programms `TestApp.Player.Server.exe` kann eine konfigurierte *Studie* auch über *Webbrowser* oder andere Browser mit *Kiosk Mode* ausgeliefert werden (z.B. den [Safe Exam Browser](https://safeexambrowser.org/)). Mit dieser Konfiguration lassen sich Datenerhebungen bspw. in Schulen ohne Internetverbindung aber mit einem als *Bring-in*-Server fungierenden Notebook durchführen.
 
@@ -40,7 +40,6 @@ In den Abschnitten [Datenerhebung > Übersicht](data-collection-overview.qmd), [
 
 Die *IRTlib*-Software (*IRTlib Editor* und *IRTlib Player*) für die Online-Nutzung kann als *Docker*-Container bezogen werden. Ein Beispiel ist unter <https://github.com/DIPFtba/IRTlibDeploymentSoftware> zu finden. 
 
-Um den Docker-Container zu verwenden, wird empfohlen, das Repository auf dem Zielgerät auszuchecken (erfordert git) und den Befehl `./start.sh` im Ordner `docker` auszuführen (erfordert installiertes `docker` und `docker compose`), um die Software zu starten.
 
 Wenn in der Datei `docker-compose.yml` nichts geändert wird, ist der Editor über Port *8002* und die Player-Software über Port *8001* erreichbar.
 

@@ -55,8 +55,8 @@ format:
     toc: true
     link-external-icon: true
     link-external-newwindow: true
-    
-lang: de
- 
+      
+  lang: de
+   
 execute:
   freeze: false

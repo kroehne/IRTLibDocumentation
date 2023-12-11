@@ -118,11 +118,48 @@ Die bereitgestellten *Docker*-Container für *IRTlib Player* und *IRTlib Editor*
 
 **Datenspeicherung**: Die während einer Datenerhebung mit dem Online *IRTlib Player* erhobenen Daten werden in dem *Volume* `app/result` gespeichert. Sie können von dort als Verzeichnisse (ein Verzeichnis je *Session*) oder als *Rohdatenarchive* über eine *API* abgerufen werden (wenn ein *API*-key definiert ist). 
 
-(TODO: Zugriff über Routen beschreiben)
-
 ::: {.callout-warning title="Hinweis"}
 Bei Verwendung der *Docker*-Container können Assessmentinhalte und Daten online zugreifbar sein. Assessmentinhalte sind nur über den in der Studienkonfiguration definierten *Loginmodus* geschützt. Personendaten und Assessmentinhalte könne zusätzlich zugreifbar sein, wenn ein *API*-key definiert ist. 
 :::
+
+**Konfiguration des Players**: Zentral für die technische Konfiguration des Players ist die Datei[`appsettings.json`](https://github.com/DIPFtba/IRTlibDeploymentSoftware/blob/main/docker/TestApp.Player/appsettings.json), welche im Verzeichnis `TestApp.Player` enthalten ist. In dieser Datei können drei verschiedene *API-Keys* (also Zugriffsschlüssel) hinterlegt werden, in dem sie in folgender `JSON`-Struktur hinterlegt werden, bevor der *Docker*-Container gestartet wird:
+
+````
+"API": {
+   "ExternalExportKey": "",
+   "DevelopmentKey": "",
+   "LoginManagementKeys": []
+ }
+````
+
+Die *API-Keys* haben die folgenden Funktionen:
+
+* `ExternalExportKey`: Über diesen *Schlüssel* erhält man Zugang zu den mit dem *IRTlib Player* erhobenen Daten. Der Zugriff auf die Daten kann bspw. über das R-Paket [LogFSM](http://www.logfsm.com) erfolgen, wie im Abschnitt [*Datenabruf*](ata-collection-post-processing.qmd#datenabruf-mit-logfsm) beschrieben.
+
+::: {.callout-note title="Routen zum Direkten Zugriff" collapse="true"}
+
+Die Liste der bearbeiteten Session, d.h. die *Session-Identifier* lassen sich mit einem *API-Key* für `ExternalExportKey` über folgenden Aufruf als `JSON` abrufen:
+
+`https://{URL des Players}/{Studienname}/api/session/?apiKey={ExternalExportKey}`
+
+Mit einer bekanntem *Session-Identifier* lassen sich dann die Rohdaten über folgende Abruf mit einem *API-Key* für `ExternalExportKey` beziehen:
+
+`https://{URL des Players}/{Studienname}/api/session/{Session-Identifier}/result?apiKey={ExternalExportKey}`
+
+:::
+
+* `DevelopmentKey`: Dieser *API-Key* ist für das Anpassen von Studienkonfigurationen in einem laufenden Player vorgesehen. 
+
+::: {.callout-important title="Under Development"}
+Diese Funktion ist gerade in Entwicklung. 
+:::
+
+* `LoginManagementKeys`: Diese Liste von *API-Keys* ist für das Anpassen Zugangsdaten (Accounts)  in einem laufenden Player vorgesehen.
+
+::: {.callout-important title="Under Development"}
+Diese Funktion ist gerade in Entwicklung. 
+:::
+
 
 **Monitoring**: (Eine Methode zur Überwachung von *Docker*-Containern ist in Entwicklung).
 
