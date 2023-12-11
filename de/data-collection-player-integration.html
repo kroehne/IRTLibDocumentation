@@ -389,7 +389,6 @@ Wichtiger Hinweis
 <p><strong>Zugriff auf Editor</strong>: Für unbefugte Personen, die nicht mit der Studienvorbereitung betraut sind, darf kein Zugriff auf den <em>IRTlib Editor</em> möglich sein. Über das <a href="https://github.com/DIPFtba/IRTlibDeploymentSoftware/">Github</a>-Repository werden <em>IRTlib Editor</em> und <em>IRTlib Player</em> bereitgestellt. Für eine operative Datenerhebung ist es nicht notwendig, den <em>IRTlib Editor</em> online zu betreiben, da die Studienvorbereitung auch mit der Offline-Version des <em>IRTlib Editors</em> erstellt werden kann. Wird der <em>IRTlib Editor</em> online gehostet muss er vor dem Zugriff unbefugter geschützt werden.</p>
 <p><strong>Zugriff auf Verzeichnisse</strong>: In den im <a href="https://github.com/DIPFtba/IRTlibDeploymentSoftware/blob/main/docker/docker-compose.yml"><code>docker-compse.yml</code>-File</a> definierten <em>Volumes</em> <code>/app/Content</code> (<em>IRTlib Player</em>) und <code>/app/data</code> (<em>IRTlib Editor</em>) sind die Iteminhalte hinterlegt, die für ein Assessment konfiguriert werden. Um den Schutz von Instrumenten sicherzustellen, darf kein Zugriff für Unbefugte auf diese <em>Volumes</em> möglich sein.</p>
 <p><strong>Datenspeicherung</strong>: Die während einer Datenerhebung mit dem Online <em>IRTlib Player</em> erhobenen Daten werden in dem <em>Volume</em> <code>app/result</code> gespeichert. Sie können von dort als Verzeichnisse (ein Verzeichnis je <em>Session</em>) oder als <em>Rohdatenarchive</em> über eine <em>API</em> abgerufen werden (wenn ein <em>API</em>-key definiert ist).</p>
-<p>(TODO: Zugriff über Routen beschreiben)</p>
 <div class="callout callout-style-default callout-warning callout-titled" title="Hinweis">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -401,6 +400,67 @@ Hinweis
 </div>
 <div class="callout-body-container callout-body">
 <p>Bei Verwendung der <em>Docker</em>-Container können Assessmentinhalte und Daten online zugreifbar sein. Assessmentinhalte sind nur über den in der Studienkonfiguration definierten <em>Loginmodus</em> geschützt. Personendaten und Assessmentinhalte könne zusätzlich zugreifbar sein, wenn ein <em>API</em>-key definiert ist.</p>
+</div>
+</div>
+<p><strong>Konfiguration des Players</strong>: Zentral für die technische Konfiguration des Players ist die Datei<a href="https://github.com/DIPFtba/IRTlibDeploymentSoftware/blob/main/docker/TestApp.Player/appsettings.json"><code>appsettings.json</code></a>, welche im Verzeichnis <code>TestApp.Player</code> enthalten ist. In dieser Datei können drei verschiedene <em>API-Keys</em> (also Zugriffsschlüssel) hinterlegt werden, in dem sie in folgender <code>JSON</code>-Struktur hinterlegt werden, bevor der <em>Docker</em>-Container gestartet wird:</p>
+<pre><code>"API": {
+   "ExternalExportKey": "",
+   "DevelopmentKey": "",
+   "LoginManagementKeys": []
+ }</code></pre>
+<p>Die <em>API-Keys</em> haben die folgenden Funktionen:</p>
+<ul>
+<li><code>ExternalExportKey</code>: Über diesen <em>Schlüssel</em> erhält man Zugang zu den mit dem <em>IRTlib Player</em> erhobenen Daten. Der Zugriff auf die Daten kann bspw. über das R-Paket <a href="http://www.logfsm.com">LogFSM</a> erfolgen, wie im Abschnitt <a href="ata-collection-post-processing.qmd#datenabruf-mit-logfsm"><em>Datenabruf</em></a> beschrieben.</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled" title="Routen zum Direkten Zugriff">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Routen zum Direkten Zugriff
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Die Liste der bearbeiteten Session, d.h. die <em>Session-Identifier</em> lassen sich mit einem <em>API-Key</em> für <code>ExternalExportKey</code> über folgenden Aufruf als <code>JSON</code> abrufen:</p>
+<p><code>https://{URL des Players}/{Studienname}/api/session/?apiKey={ExternalExportKey}</code></p>
+<p>Mit einer bekanntem <em>Session-Identifier</em> lassen sich dann die Rohdaten über folgende Abruf mit einem <em>API-Key</em> für <code>ExternalExportKey</code> beziehen:</p>
+<p><code>https://{URL des Players}/{Studienname}/api/session/{Session-Identifier}/result?apiKey={ExternalExportKey}</code></p>
+</div>
+</div>
+</div>
+<ul>
+<li><code>DevelopmentKey</code>: Dieser <em>API-Key</em> ist für das Anpassen von Studienkonfigurationen in einem laufenden Player vorgesehen.</li>
+</ul>
+<div class="callout callout-style-default callout-important callout-titled" title="Under Development">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Under Development
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Diese Funktion ist gerade in Entwicklung.</p>
+</div>
+</div>
+<ul>
+<li><code>LoginManagementKeys</code>: Diese Liste von <em>API-Keys</em> ist für das Anpassen Zugangsdaten (Accounts) in einem laufenden Player vorgesehen.</li>
+</ul>
+<div class="callout callout-style-default callout-important callout-titled" title="Under Development">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Under Development
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Diese Funktion ist gerade in Entwicklung.</p>
 </div>
 </div>
 <p><strong>Monitoring</strong>: (Eine Methode zur Überwachung von <em>Docker</em>-Containern ist in Entwicklung).</p>

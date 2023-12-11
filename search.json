@@ -1,5 +1,61 @@
 [
   {
+    "objectID": "download.html",
+    "href": "download.html",
+    "title": "Download & Installation",
+    "section": "",
+    "text": "Download & Installation"
+  },
+  {
+    "objectID": "translation.html",
+    "href": "translation.html",
+    "title": "Translation",
+    "section": "",
+    "text": "Note\n\n\n\nThe software has been designed so that it can also be translated into other languages. If you would like to support us in this, please contact us.\n\n\n\n\n\n\nThis editor can be used to created localized resx-files for the application: ResXResourceManager\n\nThe source file can be found here: (TODO)\n\nHelp (included in the application) is generated using quarto useing all markdown files starting with InlineHelp_* in this folder.\n\nHelp.de-DE.resx\nHelp.en-US.resx\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMarkdown (DEU)\nen-US\nde-DEU\n…\n\n\n\n\n*IRTlib Player*\nIRTlib Player\nIRTlib Player\n\n\n\n*IRTlib Editor*\nIRTlib Editor\nIRTlib Editor\n\n\n\n*IRTlib Software*\nIRTlib Software\nIRTlib Software\n\n\n\nOffline-*IRTlib Player*\nOffline-IRTlib Player\nOffline-IRTlib Player\n\n\n\nOnline-*IRTlib Player*\nOnline-IRTlib Player\nOnline-IRTlib Player\n\n\n\n*Studie*\nStudy\nStudie\n\n\n\n*Erhebungsteil*\nStudy Part \nErhebungsteil\n\n\n\n*Einstellungen*\nSettings\nEinstellungen\n\n\n\n*Testleitermenü*\nSession Menu\nTestleitermenü\n\n\n\n*Bearbeitungszeit*\nCompletion time\nBearbeitungszeit\n\n\n\n*Bearbeitungszeit begrenzen*\nRestrict time allowed\nBearbeitungszeit begrenzen\n\n\n\n*Studienversion*\nStudy version\nStudienversion\n\n\n\n*Revision*\nRevision\nRevision\n\n\n\n*Vorspann-Item(s)*\nProlog Item(s)\nVorspann-Item(s)\n\n\n\n*Nachspann-Items(s)*\nEpilog Item(s)\nNachspann-Items(s)\n\n\n\n*Testleiter*\nTest Administrator\nTestleiter\n\n\n\n*CBA ItemBuilder*-Items\nCBA ItemBuilder-Items\nCBA ItemBuilder-Items\n\n\n\n*Docker*-Container\nDocker-Container\nDocker-Container"
+  },
+  {
+    "objectID": "translation.html#help-requested",
+    "href": "translation.html#help-requested",
+    "title": "Translation",
+    "section": "",
+    "text": "Note\n\n\n\nThe software has been designed so that it can also be translated into other languages. If you would like to support us in this, please contact us."
+  },
+  {
+    "objectID": "translation.html#current-translations",
+    "href": "translation.html#current-translations",
+    "title": "Translation",
+    "section": "",
+    "text": "This editor can be used to created localized resx-files for the application: ResXResourceManager\n\nThe source file can be found here: (TODO)\n\nHelp (included in the application) is generated using quarto useing all markdown files starting with InlineHelp_* in this folder.\n\nHelp.de-DE.resx\nHelp.en-US.resx"
+  },
+  {
+    "objectID": "translation.html#terminology-and-standardizing-the-notation",
+    "href": "translation.html#terminology-and-standardizing-the-notation",
+    "title": "Translation",
+    "section": "",
+    "text": "Markdown (DEU)\nen-US\nde-DEU\n…\n\n\n\n\n*IRTlib Player*\nIRTlib Player\nIRTlib Player\n\n\n\n*IRTlib Editor*\nIRTlib Editor\nIRTlib Editor\n\n\n\n*IRTlib Software*\nIRTlib Software\nIRTlib Software\n\n\n\nOffline-*IRTlib Player*\nOffline-IRTlib Player\nOffline-IRTlib Player\n\n\n\nOnline-*IRTlib Player*\nOnline-IRTlib Player\nOnline-IRTlib Player\n\n\n\n*Studie*\nStudy\nStudie\n\n\n\n*Erhebungsteil*\nStudy Part \nErhebungsteil\n\n\n\n*Einstellungen*\nSettings\nEinstellungen\n\n\n\n*Testleitermenü*\nSession Menu\nTestleitermenü\n\n\n\n*Bearbeitungszeit*\nCompletion time\nBearbeitungszeit\n\n\n\n*Bearbeitungszeit begrenzen*\nRestrict time allowed\nBearbeitungszeit begrenzen\n\n\n\n*Studienversion*\nStudy version\nStudienversion\n\n\n\n*Revision*\nRevision\nRevision\n\n\n\n*Vorspann-Item(s)*\nProlog Item(s)\nVorspann-Item(s)\n\n\n\n*Nachspann-Items(s)*\nEpilog Item(s)\nNachspann-Items(s)\n\n\n\n*Testleiter*\nTest Administrator\nTestleiter\n\n\n\n*CBA ItemBuilder*-Items\nCBA ItemBuilder-Items\nCBA ItemBuilder-Items\n\n\n\n*Docker*-Container\nDocker-Container\nDocker-Container"
+  },
+  {
+    "objectID": "preparation-overview.html",
+    "href": "preparation-overview.html",
+    "title": "Vorbereitung: Übersicht / Preparation: Overview",
+    "section": "",
+    "text": "Vorbereitung: Übersicht / Preparation: Overview"
+  },
+  {
+    "objectID": "data-collection-player-integration.html",
+    "href": "data-collection-player-integration.html",
+    "title": "Datenerhebung: In IRTlib Player Importieren / Data Collection: Import into IRTlib Player",
+    "section": "",
+    "text": "Datenerhebung: In IRTlib Player Importieren / Data Collection: Import into IRTlib Player"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Über / About",
+    "section": "",
+    "text": "Über / About"
+  },
+  {
     "objectID": "development.html",
     "href": "development.html",
     "title": "Development",
@@ -21,25 +77,25 @@
     "text": "Vorbereitung: Erhebungsteile / Preparation: Study Parts"
   },
   {
-    "objectID": "data-collection-player-integration.html",
-    "href": "data-collection-player-integration.html",
-    "title": "Datenerhebung: In IRTlib Player Importieren / Data Collection: Import into IRTlib Player",
+    "objectID": "data-collection-post-processing.html",
+    "href": "data-collection-post-processing.html",
+    "title": "Datenerhebung: Datenaufbereitung / Data Collection: Data Post-Processing",
     "section": "",
-    "text": "Datenerhebung: In IRTlib Player Importieren / Data Collection: Import into IRTlib Player"
+    "text": "Datenerhebung: Datenaufbereitung / Data Collection: Data Post-Processing"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "IRTlib Software",
+    "section": "",
+    "text": "IRTlib Software\n\n\nIRTlib ist eine Software zur Auslieferung computerbasierter Assessments basierend auf Aufgaben, die mit dem CBA ItemBuilder erstellt wurden. Die Software erlaubt die Definition von flexiblen Abläufen unter Nutzung von visueller Programmierung und Funktionen der Item-Response Theoie (IRT).\n\n\nIRTlib is a software for the delivery of computer-based assessments using tasks develope with the CBA ItemBuilder. The software allows the definition of flexible processes using visual programming and functions of the item-response theory (IRT).\n\n\n\n\n\n\n\n\n\nDokumentation auf Deutsch\n\nals HTML\nals PDF\n\n\n\nDocumentation in English\n\nas HTML\nas PDF"
   },
   {
     "objectID": "github.html",
     "href": "github.html",
-    "title": "Github",
+    "title": "Github Repositorien / Github Repositories",
     "section": "",
-    "text": "Github"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Über / About",
-    "section": "",
-    "text": "Über / About"
+    "text": "Github Repositorien / Github Repositories"
   },
   {
     "objectID": "preparation-studies.html",
@@ -49,46 +105,11 @@
     "text": "Vorbereitung Studien / Preparation Studies"
   },
   {
-    "objectID": "translation.html",
-    "href": "translation.html",
-    "title": "Translation",
+    "objectID": "settings.html",
+    "href": "settings.html",
+    "title": "Einstellungen / Settings",
     "section": "",
-    "text": "Note\n\n\n\nThe software has been designed so that it can also be translated into other languages. If you would like to support us in this, please contact us.\n\n\n\n\n\n\nThis editor can be used to created localized resx-files for the application: ResXResourceManager\n\nThe source file can be found here: (TODO)\n\nHelp (included in the application) is generated using quarto from markdown files in this folder.\n\nHelp.de-DE.resx\nHelp.en-US.resx\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMarkdown (DEU)\nen-US\nde-DEU\n…\n\n\n\n\n*IRTlib Player*\nIRTlib Player\nIRTlib Player\n\n\n\n*IRTlib Editor*\nIRTlib Editor\nIRTlib Editor\n\n\n\n*IRTlib Software*\nIRTlib Software\nIRTlib Software\n\n\n\nOffline-*IRTlib Player*\nOffline-IRTlib Player\nOffline-IRTlib Player\n\n\n\nOnline-*IRTlib Player*\nOnline-IRTlib Player\nOnline-IRTlib Player\n\n\n\n*Studie*\nStudy\nStudie\n\n\n\n*Erhebungsteil*\nStudy Part \nErhebungsteil\n\n\n\n*Einstellungen*\nSettings\nEinstellungen\n\n\n\n*Testleitermenü*\nSession Menu\nTestleitermenü\n\n\n\n*Bearbeitungszeit*\nCompletion time\nBearbeitungszeit\n\n\n\n*Bearbeitungszeit begrenzen*\nRestrict time allowed\nBearbeitungszeit begrenzen\n\n\n\n*Studienversion*\nStudy version\nStudienversion\n\n\n\n*Revision*\nRevision\nRevision\n\n\n\n*Vorspann-Item(s)*\nProlog Item(s)\nVorspann-Item(s)\n\n\n\n*Nachspann-Items(s)*\nEpilog Item(s)\nNachspann-Items(s)\n\n\n\n*Testleiter*\nTest Administrator\nTestleiter\n\n\n\n*CBA ItemBuilder*-Items\nCBA ItemBuilder-Items\nCBA ItemBuilder-Items\n\n\n\n*Docker*-Container\nDocker-Container\nDocker-Container"
-  },
-  {
-    "objectID": "translation.html#help-requested",
-    "href": "translation.html#help-requested",
-    "title": "Translation",
-    "section": "",
-    "text": "Note\n\n\n\nThe software has been designed so that it can also be translated into other languages. If you would like to support us in this, please contact us."
-  },
-  {
-    "objectID": "translation.html#current-translations",
-    "href": "translation.html#current-translations",
-    "title": "Translation",
-    "section": "",
-    "text": "This editor can be used to created localized resx-files for the application: ResXResourceManager\n\nThe source file can be found here: (TODO)\n\nHelp (included in the application) is generated using quarto from markdown files in this folder.\n\nHelp.de-DE.resx\nHelp.en-US.resx"
-  },
-  {
-    "objectID": "translation.html#terminology-and-standardizing-the-notation",
-    "href": "translation.html#terminology-and-standardizing-the-notation",
-    "title": "Translation",
-    "section": "",
-    "text": "Markdown (DEU)\nen-US\nde-DEU\n…\n\n\n\n\n*IRTlib Player*\nIRTlib Player\nIRTlib Player\n\n\n\n*IRTlib Editor*\nIRTlib Editor\nIRTlib Editor\n\n\n\n*IRTlib Software*\nIRTlib Software\nIRTlib Software\n\n\n\nOffline-*IRTlib Player*\nOffline-IRTlib Player\nOffline-IRTlib Player\n\n\n\nOnline-*IRTlib Player*\nOnline-IRTlib Player\nOnline-IRTlib Player\n\n\n\n*Studie*\nStudy\nStudie\n\n\n\n*Erhebungsteil*\nStudy Part \nErhebungsteil\n\n\n\n*Einstellungen*\nSettings\nEinstellungen\n\n\n\n*Testleitermenü*\nSession Menu\nTestleitermenü\n\n\n\n*Bearbeitungszeit*\nCompletion time\nBearbeitungszeit\n\n\n\n*Bearbeitungszeit begrenzen*\nRestrict time allowed\nBearbeitungszeit begrenzen\n\n\n\n*Studienversion*\nStudy version\nStudienversion\n\n\n\n*Revision*\nRevision\nRevision\n\n\n\n*Vorspann-Item(s)*\nProlog Item(s)\nVorspann-Item(s)\n\n\n\n*Nachspann-Items(s)*\nEpilog Item(s)\nNachspann-Items(s)\n\n\n\n*Testleiter*\nTest Administrator\nTestleiter\n\n\n\n*CBA ItemBuilder*-Items\nCBA ItemBuilder-Items\nCBA ItemBuilder-Items\n\n\n\n*Docker*-Container\nDocker-Container\nDocker-Container"
-  },
-  {
-    "objectID": "preparation-overview.html",
-    "href": "preparation-overview.html",
-    "title": "Vorbereitung: Übersicht / Preparation: Overview",
-    "section": "",
-    "text": "Vorbereitung: Übersicht / Preparation: Overview"
-  },
-  {
-    "objectID": "data-collection-post-processing.html",
-    "href": "data-collection-post-processing.html",
-    "title": "Datenerhebung: Datenaufbereitung / Data Collection: Data Post-Processing",
-    "section": "",
-    "text": "Datenerhebung: Datenaufbereitung / Data Collection: Data Post-Processing"
+    "text": "Einstellungen / Settings"
   },
   {
     "objectID": "data-collection-overview.html",
@@ -103,26 +124,5 @@
     "title": "Datenerhebung: Veröffentlichen & Exportieren / Data Collection: Publish & Export",
     "section": "",
     "text": "Datenerhebung: Veröffentlichen & Exportieren / Data Collection: Publish & Export"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "IRTlib Software",
-    "section": "",
-    "text": "IRTlib Software\n\n\nIRTlib ist eine Software zur Auslieferung computerbasierter Assessments basierend auf Aufgaben, die mit dem CBA ItemBuilder erstellt wurden. Die Software erlaubt die Definition von flexiblen Abläufen unter Nutzung von visueller Programmierung und Funktionen der Item-Response Theoie (IRT).\n\n\nIRTlib is a software for the delivery of computer-based assessments using tasks develope with the CBA ItemBuilder. The software allows the definition of flexible processes using visual programming and functions of the item-response theory (IRT).\n\n\n\n\n\n\n\n\n\nDokumentation auf Deutsch\n\nals HTML\nals PDF\n\n\n\nDocumentation in English\n\nas HTML\nas PDF"
-  },
-  {
-    "objectID": "settings.html",
-    "href": "settings.html",
-    "title": "Einstellungen / Settings",
-    "section": "",
-    "text": "Einstellungen / Settings"
-  },
-  {
-    "objectID": "download.html",
-    "href": "download.html",
-    "title": "Download & Installation",
-    "section": "",
-    "text": "Download & Installation"
   }
 ]
