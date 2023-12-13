@@ -1,8 +1,7 @@
 ---
 format:
   html:
-    embed-resources: false
-lang: en    
+    embed-resources: false 
 ---
 
 \let\clearpage\standardclearpage

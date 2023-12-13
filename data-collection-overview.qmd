@@ -2,7 +2,6 @@
 format:
   html:
     embed-resources: false
-lang: en    
 ---
 
 \let\clearpage\standardclearpage

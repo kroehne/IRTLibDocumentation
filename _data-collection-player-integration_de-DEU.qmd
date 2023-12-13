@@ -103,11 +103,38 @@ Die über das [Github](https://github.com/DIPFtba/IRTlibDeploymentSoftware/relea
 Die Version `TestApp.Player.Server.exe` ist gedacht für einen Offline-Betrieb in Bring-in Netzwerken, z.B. wenn WLAN-Router und Server-Notebook in Schulen gebracht werden. Diese Version ist nicht für Online-Ehrebungen gedacht (wofür die Docker-Version bereitgestellt wird).
 :::
 
-
 ### Online-Version (Docker)
 
-::: {.callout-important title="Wichtiger Hinweis"}
+::: {.callout-important title="Wichtiger Hinweis" collapse="true"}
 Die bereitgestellten *Docker*-Container für *IRTlib Player* und *IRTlib Editor* müssen von einem Administrator in eine sichere Umgebung integriert werden, bevor sie für Datenerhebungen verwendet werden können. 
+
+
+Das folgende Beispiel dient nur der Illustration. [Docker]() und [Git]() müssen für dieses Beispiel installiert sein.
+
+
+|Schritt|Beschreibung|
+|---|-------------| 
+|1  | Konsole starten: |
+|   | * Windows:  |
+|   | * Mac:  |
+|2  | Prüfen, ob *Docker* installiert ist und läuft: |
+|   | `docker info` |
+|3  | Prüfen, ob *Git* installiert ist: |
+|   | `git version` |
+|4  | Konfiguration von [Github](https://github.com/DIPFtba/IRTlibDeploymentSoftware/) beziehen: |
+|   | * Download (wenn kein *Git* installiert ist):  |
+|   | * Git:  |
+|   | `git clone --branch develop https://github.com/DIPFtba/IRTlibDeploymentSoftware.git`  |
+|5  | Datei `appsettings.json` im Verzeichnis `IRTlibDeploymentSoftware/` `docker/` `TestApp.Player/` bearbeiten und `ExternalExportKey` eintragen: |
+|   | `"ExternalExportKey": "mykey123",`|
+|6  | Datei `docker-compose.yml` im Verzeichnis `IRTlibDeploymentSoftware/` `docker/` bearbeiten und Ports eintragen: |
+|   | |
+|7  | Im Verzeichnis `IRTlibDeploymentSoftware/` `docker/` das Skript `start.sh` ausführen: |
+|   | `./start.sh`|
+
+
+
+
 :::
 
 **Integration**: Für die Durchführung einer Datenerhebung sollte das *Docker*-Image des *IRTlib Players* nur über https-gesicherte Verbindungen erreichbar sein. Das kann bspw. mit Hilfe eines als *Reverse Proxy* konfiugrierten zusätzlichen *nginx* realisiert werden. 
@@ -122,7 +149,7 @@ Die bereitgestellten *Docker*-Container für *IRTlib Player* und *IRTlib Editor*
 Bei Verwendung der *Docker*-Container können Assessmentinhalte und Daten online zugreifbar sein. Assessmentinhalte sind nur über den in der Studienkonfiguration definierten *Loginmodus* geschützt. Personendaten und Assessmentinhalte könne zusätzlich zugreifbar sein, wenn ein *API*-key definiert ist. 
 :::
 
-**Konfiguration des Players**: Zentral für die technische Konfiguration des Players ist die Datei[`appsettings.json`](https://github.com/DIPFtba/IRTlibDeploymentSoftware/blob/main/docker/TestApp.Player/appsettings.json), welche im Verzeichnis `TestApp.Player` enthalten ist. In dieser Datei können drei verschiedene *API-Keys* (also Zugriffsschlüssel) hinterlegt werden, in dem sie in folgender `JSON`-Struktur hinterlegt werden, bevor der *Docker*-Container gestartet wird:
+**Konfiguration des Players**: Zentral für die technische Konfiguration des Players ist die Datei [`appsettings.json`](https://github.com/DIPFtba/IRTlibDeploymentSoftware/blob/main/docker/TestApp.Player/appsettings.json), welche im Verzeichnis `TestApp.Player` enthalten ist. In dieser Datei können drei verschiedene *API-Keys* (also Zugriffsschlüssel) hinterlegt werden, in dem sie in folgender `JSON`-Struktur hinterlegt werden, bevor der *Docker*-Container gestartet wird:
 
 ````
 "API": {
@@ -140,11 +167,17 @@ Die *API-Keys* haben die folgenden Funktionen:
 
 Die Liste der bearbeiteten Session, d.h. die *Session-Identifier* lassen sich mit einem *API-Key* für `ExternalExportKey` über folgenden Aufruf als `JSON` abrufen:
 
-`https://{URL des Players}/{Studienname}/api/session/?apiKey={ExternalExportKey}`
+`https://{U}/{S}/api/session/?apiKey={K}`
+
+* `{U}` ist die URL des *IRTlib Players* 
+* `{S}` ist der Bezeichner der *Studie* 
+* `{K}` ist die `ExternalExportKey` wie in der `appsettings.json` definiert 
 
 Mit einer bekanntem *Session-Identifier* lassen sich dann die Rohdaten über folgende Abruf mit einem *API-Key* für `ExternalExportKey` beziehen:
 
-`https://{URL des Players}/{Studienname}/api/session/{Session-Identifier}/result?apiKey={ExternalExportKey}`
+`https://{U}/{S}/api/session/{ID}/result?apiKey={K}`
+
+* `{ID}` ist der *Session-Identifier* (z.B. der Benutzername, je nach Konfiguration des Logins)
 
 :::
 

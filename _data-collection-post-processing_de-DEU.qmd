@@ -57,11 +57,25 @@ results <- read.csv(unz(paste0(getwd(),"/out/data_csv.zip"), "Results.csv"),
                     sep=";", encoding = "UTF-8")
 ```
 
+
 *Datenabruf und Konvertierung der Daten mit LogFSM*
 
 :::
 
 Mit dem Aufruf der Funktion `TransformToUniversalLogFormat` aus dem Paket `LogFSM` werden die Daten heruntergeladen und in das spezifzierte Verzeichnis `infolders` aggelegt, wenn ein API-Key (`key`) und eine API-Url (`web`) übergeben werden. 
+
+::: {.callout-note title="Hinweis zur `SECRET_KEY` und `API_URL`" collapse="true"}
+
+Der Wert für `SECRET_KEY` mus dem Eintrag entsprechen, der bei der Konfiguration des *Docker*-Images in der `appsettings.json` als `ExternalExportKey` definiert wurde, siehe Abschnitt [Online-Version (Docker)](data-collection-player-integration.qmd#online-version-docker). 
+
+Der Wert für die `API_URL` bildet sich nach folgendem Schema: `https://{U}/{S}/api/session/`
+
+* `{U}` ist die URL des *IRTlib Players* 
+* `{S}` ist der Bezeichner der *Studie* 
+
+:::
+
+Die Funktion `TransformToUniversalLogFormat` aus dem Paket `LogFSM` (oder analog das im folgenden beschriebene *Kommandozeilenwerkzeug*) können auch verwendet werden, um bereits lokal vorhandene Rohdatenarchive auszulesen. 
 
 ### Datenabruf über die Kommandozeile
 
@@ -69,8 +83,14 @@ Die für den Datenabruf und die Datenkonvertierung über `LogFSM` verwendete Anw
 
 Darüber lassen sich Datenabruf und Datenumwandlung auch ohne R ausführen.
 
+* **Windows**: 
+
+* **Linux**: 
+
+* **Mac**: 
+
 ::: {.callout-important title="In Entwicklung"}
-Eine Mac-Version von `LogFSM` und dem `TransformToUniversalLogFormat`-Tool für `ARM64` ist in Entwicklung.
+Eine zertifizierte Version von  `TransformToUniversalLogFormat` für Apple ist im Moment in Entwicklung.
 :::
 
 ### Ergebnisdaten
@@ -112,6 +132,12 @@ Die Konvertierung der Daten mit `TransformToUniversalLogFormat` in `LogFSM` oder
 * *Universal Log-Format*: Alternativ enthalten die von `LogFSM` bzw. dem Komandozeilen-Werkzeug `TransformToUniversalLogFormat` erstellten ZIP-Archive auch einzelne Datensatz-Tabellen je *Evenet-Typ*. Die event-spezifischen Attribute in diesen Tabellen sind weniger *löchrig* (d.h. sie enthalten nur fehlende Werte für optionale Attribute) und können zu einer *Flat and Sparse Log-Data Table* kombiniert werden, wenn erforderlich.
 
 * *XES (eXtensible Event Stream)*: Die Log-Daten können auch in dem standardisierten `XML`-Format ([https://xes-standard.org/](https://xes-standard.org/)) umgewandelt werden. 
+
+
+::: {.callout-note title="Hinweis zu Zeitstempeln"}
+Die mit der *IRTlib Software* erhobenen Zeitstempel sind im *UTC*-Format (*Coordinated Universal Time*).
+:::
+
 
 ### Dateien in den *Rohdatenarchiven*
 
