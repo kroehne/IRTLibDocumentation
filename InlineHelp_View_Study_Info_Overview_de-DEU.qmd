@@ -8,7 +8,7 @@ format:
 
 ### Einstellungen zur Studie
 
--   **Bezeichnung**: Wie soll die *Studie* benannt werden? Achten Sie darauf, dass für die Bezeichnung nur Buchstaben (Groß- und Kleinschreibung), Ziffer und ein `_` erlaubt sind.
+-   **Bezeichnung**: Wie soll die *Studie* benannt werden? Achten Sie darauf, dass für die Bezeichnung nur Buchstaben (Groß- und Kleinbuchstaben), Ziffern und ein `_` erlaubt sind.
 
 -   **Beschreibung**: Um eine ausführliche Beschreibung der *Studie* hinterlegen zu können, ist dieses optionle Feld vorgesehen. Hier können auch Sonderzeichen und Umlaute usw. eingegeben werden.
 

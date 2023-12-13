@@ -14,15 +14,15 @@ Eine *Session* bezieht sich auf die Durchführung einer Erhebung mit *einer* Per
 
 Was nach einem *Session-Ende* erfolgt, d.h. wie sich der *IRTlib Players* am Ende einer Sitzung verhält, kann mit den folgenden Optionen festgelegt werden:
 
-* **Neue Session starten**: Es wird eine neue Sitzung gestartet. Deses Verhalten ist nicht sinnvoll, wenn die Anmeldedaten übergeben werde (entweder als *Startup-Parameter* oder als *URL-Parameter*).
+* **Neue Session starten**: Es wird eine neue Sitzung gestartet. Dieses Verhalten ist nicht sinnvoll, wenn die Anmeldedaten übergeben werden (entweder als *Startup-Parameter* oder als *URL-Parameter*).
 
-* **Endtext anzeigen**: Wenn diese Option ausgewählt ist, zeigt die Plattform den konfigurierten Text an. Der Text kann als *Nachricht auf Endseite* konfiguirert werden. 
+* **Endtext anzeigen**: Wenn diese Option ausgewählt ist, zeigt die Plattform den konfigurierten Text an. Der Text kann als *Nachricht auf Endseite* konfiguriert werden. 
 
 * **End-Item anzeigen**: Analog zu einem *Login-Item* kann auch ein *CBA ItemBuilder*-Item definiert werden, das am Ende einer Sitzung angezeigt wird. 
 
 > Das *End-Item* kann schließlich das Beenden des Offline-*IRTlib Players* anstoßen. Ein Beispiel für ein *End-Item* mit dem notwendigen JavaScript-Aufruf findet sich [hier](https://kroehne.github.io/CBAItemBuilderBook/items/9_09/IRTLibEndItemExample.zip).
 
-* **Redirect to Exit URL (Redirct zu Exit-Url)**: Bei Online-Lieferungen mit dem *IRTlib Player* ist es möglich, auf eine URL umzuleiten. Die *Weiterleitungs-URL* kann dann konfiguriert werden. 
+* **Redirect to Exit URL (Redirect zu Exit-Url)**: Bei Online-Lieferungen mit dem *IRTlib Player* ist es möglich, auf eine URL umzuleiten. Die *Weiterleitungs-URL* kann dann konfiguriert werden. 
 
 #### Weitere Optionen
 

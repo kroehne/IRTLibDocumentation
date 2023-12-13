@@ -18,7 +18,7 @@ Um mit der Konfiguration einer Studie zu beginnen, klicken Sie auf das Plus-Icon
 
 Danach geben Sie bitte in dem Dialog **Neue Studie erstellen** eine *Bezeichnung* und optional eine *Beschreibung* ein.
 
-Achten Sie darauf, dass für die *Bezeichnung* nur Buchstaben (Groß und Kleinschreibung), Ziffer und ein `_` erlaubt sind.
+Achten Sie darauf, dass für die *Bezeichnung* nur Buchstaben (Groß- und Kleinbuchstaben), Ziffern und ein `_` erlaubt sind.
 
 ![](img/screenshot-new-study-empty-DEU.png){width="400" fig-align="left"}
 

@@ -1,4 +1,4 @@
-Konfigurationen die mit dem *IRTlib-Editor* erstellt werden, werden in sogenannten *Studien* zusammengefasst. Eine *Studie* soll die Assessmentinhalte zusammenfassen, welche in einer Erhebung oder Sitzung administriert werden. 
+Konfigurationen, die mit dem *IRTlib-Editor* erstellt werden, werden in sogenannten *Studien* zusammengefasst. Eine *Studie* soll die Assessmentinhalte zusammenfassen, welche in einer Erhebung oder Sitzung administriert werden. 
 
 ## Studienverwaltung
 
@@ -24,7 +24,7 @@ Erstellte Studien, die im *IRTlib Editor* in der Ansicht *Studien* angezeigt wer
 
 ![](img/screenshot-studies-info.de-DEU.png){width="100%"}
 
-Detaillierte Informationen zu der Grundkonfiguration einer Studie finden sich hier in der eingebetteten Hilfe:
+Detaillierte Informationen zur Grundkonfiguration einer Studie finden sich hier in der eingebetteten Hilfe:
 
 ::: {.callout-tip collapse="true" title="Eingebettete Programmhilfe"}
 
@@ -34,9 +34,9 @@ Detaillierte Informationen zu der Grundkonfiguration einer Studie finden sich hi
 
 ## Zugang zu Studien (Login)
 
-Die *IRTlib Software* unterstützt verschiedene Wege, wie sich Personen (Testteilnehmer, Befragte, ...) für ein Assessment Authentifizieren können. Die Konfiguratinen umfassen zwei Aspekte: 
+Die *IRTlib Software* unterstützt verschiedene Wege, wie sich Personen (Testteilnehmer, Befragte, ...) für ein Assessment authentifizieren können. Die Konfigurationen umfassen zwei Aspekte: 
 
-* *Login-Modus*: Wird ein Zugang benötigt (Login, Login+Passwort, Passphrases/Token) oder nicht? Und wenn Zugangsdaten benötigt werden, was sind *gültige Werge*?
+* *Login-Modus*: Wird ein Zugang benötigt (Login, Login+Passwort, Passphrases/Token) oder nicht? Und wenn Zugangsdaten benötigt werden, was sind *gültige Werte*?
 * *Loginquelle*: Wie wird die Login-Information abgefragt (direkte Eingabe auf der Plattform, CBA ItemBuilder Item, ....) oder übergeben (Login-Parameter oder Aufruf-Parameter)?
 
 Detaillierte Informationen zu der Konfiguration der Anmeldung einer *Studie* finden sich hier in der eingebetteten Hilfe:
@@ -77,7 +77,7 @@ Detaillierte Informationen zu der Konfiguration des *Testleitermenüs* finden si
 
 ## Abschluss von Erhebungen
 
-Für die Integration von Assessments in externe Abläufe besteht die Möglichkeit zu konfiguriere, wie nach der Bearbeitung der Assessmentinhalte in einer *Session* vorgegangen werden soll, was also am *Session-Ende* geschehen wird.
+Für die Integration von Assessments in externe Abläufe besteht die Möglichkeit, zu konfigurieren, wie nach der Bearbeitung der Assessmentinhalte in einer *Session* vorgegangen werden soll, was also am *Session-Ende* geschehen wird.
 
 ::: {.callout-tip collapse="true" title="Eingebettete Programmhilfe"}
 

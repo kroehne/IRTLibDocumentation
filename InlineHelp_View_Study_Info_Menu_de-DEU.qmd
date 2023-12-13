@@ -8,7 +8,7 @@ format:
 
 ### Konzept eines Testleitermenüs (Menü für Testadministratoren)
 
-Die Konfiguration des Menü für Testadministratoren erfolgt in zwei Schritten. Zunächst muss eine Tastenkombination definiert werden, mit der das Testmanager-Menü aufgerufen werden kann. Wird diese Tastenkombination während der Testbearbeitung gedrückt, erscheint ein Fenster zur Passworteingabe. Testadministratoren geben das (nur) ihnen bekannte Passwort ein und erhalten so Zugriff auf ausgewählte Funktionen. Zu diesem Zweck müssen in einem zweiten Schritt eine oder mehrere Rollen im *IRTlib Editor* definiert werden.
+Die Konfiguration des Menüs für Testadministratoren erfolgt in zwei Schritten. Zunächst muss eine Tastenkombination definiert werden, mit der das Testleitermenü aufgerufen werden kann. Wird diese Tastenkombination während der Testbearbeitung gedrückt, erscheint ein Fenster zur Passworteingabe. Testadministratoren geben das (nur) ihnen bekannte Passwort ein und erhalten so Zugriff auf ausgewählte Funktionen. Zu diesem Zweck müssen in einem zweiten Schritt eine oder mehrere Rollen im *IRTlib Editor* definiert werden.
 
 #### Zugriff für Testleitung
 
@@ -24,7 +24,7 @@ Beispiel:
 
 > ![](img/screenshot-test-adminstrator-strg-shift-x-example-01.png){width="200"}
 
-Die definierte Tastenkombination öffnet nur die Option zur Eingabe eines Passowrt für Testleiter während der Testbearbeitung im *IRTlib Player*. Um die Funktion zu nutzen ist ein Passwot notwendig, welches zusammen mit einer Rolle im zweiten Schritt definiert wird.
+Die definierte Tastenkombination öffnet nur die Option zur Eingabe eines Passowrt für Testleiter während der Testbearbeitung im *IRTlib Player*. Um die Funktion zu nutzen, ist ein Passwort notwendig, welches zusammen mit einer Rolle im zweiten Schritt definiert wird.
 
 #### Rollen
 
@@ -36,7 +36,7 @@ Welche Funktionen nun wirklich zugreifbar sind wird dadurch gesteuert, welches P
 
 Beispiel:
 
-* In der folgenden Konfiguration können Testleiter mit diesem Passwort zur nächaten Aufgaben springen (*Weiter*) oder die Anwendung beenden (*Sitzung beenden*):
+* In der folgenden Konfiguration können Testleiter mit diesem Passwort zur nächsten Aufgabe springen (*Weiter*) oder die Anwendung beenden (*Sitzung beenden*):
 
 > ![](img/screenshot-test-adminstrator-menue-two-functions-example-01-DEU.png){width="250"}
 
@@ -47,7 +47,7 @@ Beispiel:
 > Der Name der Rolle dient nur der Dokumentation. Entscheidend für die Funktionalität ist die Vergabe eines eindeutigen Passwortes und die Auswahl einer oder mehrerer der folgenden Funktionen: 
 
 * **Aufgabe zurück**: Ermöglicht die Navigation zur vorherigen Aufgabe.
-* **Aufgabe vor**: Ermöglicht die Navigation zur nächsten Aufgabe an.
+* **Aufgabe vor**: Ermöglicht die Navigation zur nächsten Aufgabe.
 * **Itemliste abbrechen**: Ermöglicht die Abarbeitung der aktuellen Itemliste abzubrechen. Diese Option ist insbesondere sinnvoll, wenn in einem *Erhebungsteil* die Option *Routing* aktiviert ist und die Definition von *CBA ItemBuilder* Tasks mit Hilfe von Itemlisten umgesetzt ist.  
 * **Erhebungsteil abbrechen**: Ermöglicht den Abbruch des aktuellen Erhebungsteils.
 * **Sitzung beenden**: Ermöglicht das Beenden der aktuellen Sitzung. 
@@ -57,6 +57,6 @@ Die Audiodatei, welche zur Kontrolle der Audioausgabe abgespielt wird nachdem di
 
 <hr/>
 
-Wenn geänderte Einstellungen erhalten bleiben sollen müssen die Änderungen über das Disketten-Symbol gespeichert werden. Andernfalls kann das Verwerfen-Symbol verwendet werden:
+Wenn geänderte Einstellungen erhalten bleiben sollen, müssen die Änderungen über das Disketten-Symbol gespeichert werden. Andernfalls kann das Verwerfen-Symbol verwendet werden:
 
 ![](img/screenshot-icons-undo-and-save-01.png){width="120" fig-align="left"}
