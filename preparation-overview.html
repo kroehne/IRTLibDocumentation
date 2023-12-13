@@ -78,8 +78,195 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="vorbereitung-übersicht-preparation-overview" class="level1">
 <h1>Vorbereitung: Übersicht / Preparation: Overview</h1>
+<p>Using the built-in <em>Scoring Debug Window</em>, the <em>scoring</em> of individual <em>CBA ItemBuider</em> <em>tasks</em> should already be checked in the <em>CBA ItemBuilder</em> before the assessment contents are combined into <em>studies</em> with one or more <em>survey parts</em> using the <em>IRTlib software</em>. Further information on suggested checks is formulated in the section <a href="./data-collection-player-integration.html">Deliveries Testing and Release</a>.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Log data is collected automatically.">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Log data is collected automatically.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Without further configuration, log data is automatically recorded in the assessment content created with the <em>CBA ItemBuilder</em> and collected via the <em>IRTlib software</em>.</p>
+</div>
+</div>
+<section id="integrated-multimedia-content-resources" class="level3">
+<h3 class="anchored" data-anchor-id="integrated-multimedia-content-resources">Integrated multimedia content (resources)</h3>
+<p>The assessment content created with the <em>CBA ItemBuilder</em> can contain multimedia content (images, videos, audio files). Images and videos are displayed in a size that is used in the corresponding component of the <em>CBA ItemBuilder</em> in the <em>Page Editor</em>. Images, videos and audio files are saved as <em>resources</em> in the <em>project files</em> as soon as they have been inserted via the <em>Resource Browser</em>. Unused <em>resources</em> remain in the <em>project files</em>.</p>
+<p>::: {.callout-note title=“File size of <em>CBA ItemBuilder</em> <em>project files</em> should be as small as possible”}. The file size of <em>CBA ItemBuilder</em> <em>project files</em> is particularly relevant for use in online deliveries and should be kept as small as possible. :::</p>
+<p>Before using <em>CBA ItemBuilder</em>-<em>project files</em>, it is recommended to consider the following points:</p>
+<ul>
+<li><p>Images and videos only in the required size: Images and videos can be reduced to the size (width and height) in which they are actually used in <em>CBA ItemBuilder</em>-<em>Projects</em> without any loss of quality.</p></li>
+<li><p>Compress images if possible: Without changing the image size, images can often be further reduced in file size.</p></li>
+<li><p>Compress videos if possible: Without changing the video, videos can often be further reduced in file size.</p></li>
+<li><p>Audio not in the highest quality: If not necessary, audio files should be reduced in quality so that they still sound acceptable but are optimised in terms of transmission times.</p></li>
+<li><p>Remove unused resources: The <em>CBA ItemBuilder</em> provides a button in the <em>Resource Browser</em> to automatically remove unused <em>resources</em>. This function should be used at the end so that the <em>project files</em> do not contain any unnecessary <em>resources</em>.</p></li>
+</ul>
+<p>Careful handling of <em>resources</em> and optimisation of the file size of <em>CBA ItemBuilder</em> <em>project files</em> can be decisive for a smooth and trouble-free assessment, which can be delivered online with the <em>IRTlib software</em> and used, for example, via mobile devices with limited internet bandwidth.</p>
+<p>::: :::{.content-visible when-profile=“englishbook”} The preparation of a computer-based assessment based on <em>CBA ItemBuilder</em> content begins with the use of the <em>IRTlib Editor</em> to create a study configuration. This usually involves the following steps:</p>
+<div class="callout callout-style-default callout-caution callout-titled" title="Optional: Using a *Runtime* for *CBA ItemBuilder* before version 9.9?">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Optional: Using a <em>Runtime</em> for <em>CBA ItemBuilder</em> before version 9.9?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Requirement</strong>: Check the availability of the <a href="./settings.html">Runtime</a>. The <em>IRTlib Editor</em> can be used to prepare assessments with content created using <em>CBA ItemBuilder</em>. To use <em>CBA ItemBuilder</em> <em>tasks</em> stored in <em>project files</em>, a <em>runtime</em> (i.e.&nbsp;the files <code>main.*.js</code> and <code>main.*.css</code>) is required in the version that corresponds exactly to the version of the <em>CBA ItemBuilder</em> used to create the items (e.g., <code>9.9.0</code>). Before using the <em>IRTLib-Editor</em>, make sure that the required <em>Runtime</em> is included or import the runtime files (see section <a href="./settings.html">Settings</a> for details).</li>
+</ul>
+<p>Note: When using <em>CBA ItemBuilder</em> items from version 9.9 or newer, this step is generally not necessary.</p>
+</div>
+</div>
+</div>
+<ul>
+<li><strong>Creating a new <em>study</em></strong>: The <em>IRTlib Editor</em> is used to configure so-called <em>studies</em>. The versions of studies can be tracked in the editor, studies can be published (i.e.&nbsp;<em>sealed</em> for data collection). To start creating content with the <em>IRTlib Editor</em>, a study must first be created (see section <a href="./preparation-studies.html">Studies</a> for details).</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled" title="Note: Creating a *study* is always necessary.">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note: Creating a <em>study</em> is always necessary.
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>Note that at least one study must be defined in the <em>IRTlib Editor</em> before a study configuration can be used for data collection with an <em>IRTlib Player</em>.</p>
+</div>
+</div>
+</div>
+<ul>
+<li><p><strong>Define basic configurations for <em>Study</em> (Info)</strong>: Basic configurations related to the content of a prepared study include the study name and description, login mode, display configuration, test administrator menu, and how to proceed after completing all content defined in a study (see <a href="./preparation-studies.html">Studies</a>-section for more details).</p></li>
+<li><p><strong>Creating a new <em>survey part</em></strong>:Each <em>study</em> consists of one or more <em>Survey Parts</em>. <em>Survey Parts</em> are considered to be building blocks of assessments that are administered together, using, for instance, all items from a particular domain. <em>Survey Parts</em> of type <em>CBA ItemBuilder</em> can be used to administer <em>CBA ItemBuilder</em>-<em>tasks</em> in a linear sequence or with <em>blockly</em> based routing.</p></li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled" title="Note: Creating a *survey* part is always necessary.">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note: Creating a <em>survey</em> part is always necessary.
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>Note that each study requires at least one <em>survey part</em> defined in the <em>IRTlib Editor</em> before a study configuration can be used for data collection with an <em>IRTlib Player</em>.</p>
+</div>
+</div>
+</div>
+<ul>
+<li><p><strong>Configure basic settings for <em>survey part</em> (Info)</strong>:A <em>Survey Part</em> of type <em>CBA ItemBuilder</em> is based on a set of <em>CBA ItemBuilder</em>-<em>Tasks</em>. Each <em>CBA ItemBuilder</em>-<em>project file</em> requires at least one <em>task</em>, but projects with multiple <em>tasks</em> are also supported.If <em>CBA ItemBuilder</em> content with a common time limit is to be administered across <em>tasks</em>, <em>assessment sections</em> allow the assignment of tasks to a structure that distinguishes assessment content that is administered <em>before</em> a time-limited section (e.g.&nbsp;instructions, in the <em>task</em> section). e.g.&nbsp;instructions, in the section <em>preparation-parts</em>), content that is administered <em>after</em> a time-limited section (e.g.&nbsp;acknowledgements, in the section <em>post-parts</em>) and tasks with limited time in between (<em>items</em>, see section [preparation-parts.qmd]).</p></li>
+<li><p>Add items**: To finalise the definition of a <em>survey part</em>, the <em>CBA ItemBuilder</em> <em>project files</em> must be imported into the <em>Items</em> section. By default, it is assumed that the order of the <em>CBA ItemBuilder</em>-<em>Tasks</em> is linear. However, if <em>routing</em> is enabled for a study section, the <em>blockly</em>-based sequence definition can be used to implement different test designs (e.g.&nbsp;multiple booklets, multi-stage tests, etc.).</p></li>
+</ul>
+</section>
+<section id="embedded-programme-help-1" class="level2">
+<h2 class="anchored" data-anchor-id="embedded-programme-help-1">Embedded programme help</h2>
+<p>For the use of the <em>IRTlib Editor</em>, a programme help is integrated directly into the application, which can be displayed via the small <code>?</code> symbol in the top right-hand corner.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/screenshot-editor-embedded-help-de-DEU.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption">Example of the <em>IRTlib Editor</em> with embedded help</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Embedded programme help">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Embedded programme help
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The contents of these help pages from the <em>IRTlib Editor</em> are integrated into this <em>IRTlib documentation</em> and are always displayed in this frame with the title <em>Embedded programme help</em>.</p>
+</div>
+</div>
+</section>
+<section id="preparation-of-cba-itembuilder-content-1" class="level2">
+<h2 class="anchored" data-anchor-id="preparation-of-cba-itembuilder-content-1">Preparation of <em>CBA ItemBuilder</em> content</h2>
+<p>The <em>IRTlib software</em> is required to display the assessment content created with the <em>CBA ItemBuilder</em> and to use it for data collection. The <em>project files</em> (ZIP archives) that can be created with the <em>CBA ItemBuilder</em> must be available for this.</p>
+<section id="entry-point-task-1" class="level3">
+<h3 class="anchored" data-anchor-id="entry-point-task-1">Entry point (<em>Task</em>)</h3>
+<p>Each <em>CBA ItemBuilder</em> <em>project file</em> must define at least one <em>task</em>. Only <em>tasks</em> can be used in the <em>IRTlib software</em>. It is easy to check that a <em>task</em> is fully defined in the <em>Preview</em> of the <em>CBA ItemBuilder</em>:</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="img/screenshot-cba-itembuilder-preview-check-task-example-01.png" class="img-fluid figure-img" width="450"></p>
+<figcaption class="figure-caption">Example from <em>CBA ItemBuilder</em> to request a <em>Preview</em> for a <em>Task</em></figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="The *IRTlib software* requires defined *tasks*.">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+The <em>IRTlib software</em> requires defined <em>tasks</em>.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Assessment content can be assembled from individual <em>tasks</em> using the <em>IRTlib software</em>. The sequence of <em>tasks</em> can be defined statically as a <em>linear sequence</em> or as a programmed sequence in <em>blockly</em>. No individual pages within <em>CBA ItemBuilder</em>-<em>Tasks</em> can be controlled from the <em>IRTlib software</em>.</p>
+</div>
+</div>
+<p><em>CBA ItemBuilder</em>-<em>Project files</em> which can only be displayed via the <em>Project</em> or <em>Page</em> option in the <em>Preview</em> cannot be used in the <em>IRTlib software</em>.</p>
+</section>
+<section id="display-behaviour-scaling-options-1" class="level3">
+<h3 class="anchored" data-anchor-id="display-behaviour-scaling-options-1">Display behaviour (<em>Scaling Options</em>)</h3>
+<p>The <em>Preview</em> of the <em>CBA ItemBuilder</em> can also be used to check whether the assessment contents are displayed in the desired scaling, which can be set under <em>Scaling Options</em>, according to the requirements.</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="img/screenshot-cba-itembuilder-preview-scaling-mode-01.png" class="img-fluid figure-img" width="200"></p>
+<figcaption class="figure-caption">Settings for <em>Scaling Options</em> from <em>CBA ItemBuilder</em>-<em>Preview</em></figcaption>
+</figure>
+</div>
+<p>Settings similar to <em>Preview</em> can be defined in the <em>IRTlib Editor</em> for the display settings of a <em>Study</em> (see section <a href="./preparation-studies.html">Studies</a>).</p>
+</section>
+<section id="definition-of-the-scoring-results-data-1" class="level3">
+<h3 class="anchored" data-anchor-id="definition-of-the-scoring-results-data-1">Definition of the <em>scoring</em> (results data)</h3>
+<p>The <em>IRTlib software</em> is designed to collect data with the help of <em>CBA ItemBuilder</em>-<em>Task</em>. What result variables are saved from the processing of a <em>task</em> can be defined by <em>item authors</em> in the <em>scoring</em> definition of a <em>task</em>.</p>
+<p>::: {.callout-note title=“The <em>scoring</em> must already be defined in the <em>CBA ItemBuilder</em>.”}. The result variables defined as <em>Classes</em> are saved from the processing of <em>Tasks</em>, the values of which can either be individual <em>Hits</em> or the transfer of information using the so-called <em>ResultText</em> operator in the <em>CBA ItemBuilder</em>. :::</p>
+<p>Using the built-in <em>Scoring Debug Window</em>, the <em>scoring</em> of individual <em>CBA ItemBuider</em> <em>tasks</em> should already be checked in the <em>CBA ItemBuilder</em> before the assessment contents are combined into <em>studies</em> with one or more <em>survey parts</em> using the <em>IRTlib software</em>. Further information on suggested checks is formulated in the section <a href="./data-collection-player-integration.html">Deliveries Testing and Release</a>.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Log data is collected automatically.">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Log data is collected automatically.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Without further configuration, log data is automatically recorded in the assessment content created with the <em>CBA ItemBuilder</em> and collected via the <em>IRTlib software</em>.</p>
+</div>
+</div>
+</section>
+<section id="integrated-multimedia-content-resources-1" class="level3">
+<h3 class="anchored" data-anchor-id="integrated-multimedia-content-resources-1">Integrated multimedia content (resources)</h3>
+<p>The assessment content created with the <em>CBA ItemBuilder</em> can contain multimedia content (images, videos, audio files). Images and videos are displayed in a size that is used in the corresponding component of the <em>CBA ItemBuilder</em> in the <em>Page Editor</em>. Images, videos and audio files are saved as <em>resources</em> in the <em>project files</em> as soon as they have been inserted via the <em>Resource Browser</em>. Unused <em>resources</em> remain in the <em>project files</em>.</p>
+<p>::: {.callout-note title=“File size of <em>CBA ItemBuilder</em> <em>project files</em> should be as small as possible”}. The file size of <em>CBA ItemBuilder</em> <em>project files</em> is particularly relevant for use in online deliveries and should be kept as small as possible. :::</p>
+<p>Before using <em>CBA ItemBuilder</em>-<em>project files</em>, it is recommended to consider the following points:</p>
+<ul>
+<li><p>Images and videos only in the required size: Images and videos can be reduced to the size (width and height) in which they are actually used in <em>CBA ItemBuilder</em>-<em>Projects</em> without any loss of quality.</p></li>
+<li><p>Compress images if possible: Without changing the image size, images can often be further reduced in file size.</p></li>
+<li><p>Compress videos if possible: Without changing the video, videos can often be further reduced in file size.</p></li>
+<li><p>Audio not in the highest quality: If not necessary, audio files should be reduced in quality so that they still sound acceptable but are optimised in terms of transmission times.</p></li>
+<li><p>Remove unused resources: The <em>CBA ItemBuilder</em> provides a button in the <em>Resource Browser</em> to automatically remove unused <em>resources</em>. This function should be used at the end so that the <em>project files</em> do not contain any unnecessary <em>resources</em>.</p></li>
+</ul>
+<p>Careful handling of <em>resources</em> and optimisation of the file size of <em>CBA ItemBuilder</em> <em>project files</em> can be decisive for a smooth and trouble-free assessment, which can be delivered online with the <em>IRTlib software</em> and used, for example, via mobile devices with limited internet bandwidth.</p>
+<p>:::</p>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->

@@ -182,8 +182,8 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#offline-windows-2" id="toc-offline-windows-2" class="nav-link" data-scroll-target="#offline-windows-2">Offline (Windows)</a>
   <ul class="collapse">
-  <li><a href="#study-preparation-with-offline-editor" id="toc-study-preparation-with-offline-editor" class="nav-link" data-scroll-target="#study-preparation-with-offline-editor">Study Preparation with Offline Editor</a></li>
-  <li><a href="#study-execution-with-offline-player" id="toc-study-execution-with-offline-player" class="nav-link" data-scroll-target="#study-execution-with-offline-player">Study Execution with Offline Player</a></li>
+  <li><a href="#study-preparation-with-offline-editor" id="toc-study-preparation-with-offline-editor" class="nav-link" data-scroll-target="#study-preparation-with-offline-editor">Study preparation with offline editor</a></li>
+  <li><a href="#study-execution-with-offline-player" id="toc-study-execution-with-offline-player" class="nav-link" data-scroll-target="#study-execution-with-offline-player">Study execution with offline player</a></li>
   </ul></li>
   <li><a href="#online-docker-2" id="toc-online-docker-2" class="nav-link" data-scroll-target="#online-docker-2">Online (Docker)</a></li>
   </ul></li>
@@ -197,57 +197,65 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="download-installation" class="level1">
 <h1>Download &amp; Installation</h1>
-<p>The <em>IRTlib</em> software is provided for offline use (Windows) and for online use (Docker Container).</p>
+<p>The <em>IRTlib</em> software is provided for offline use (currently for Windows operating systems) and for online use (in the form of <em>Docker containers</em>).</p>
 <section id="offline-windows-2" class="level2">
 <h2 class="anchored" data-anchor-id="offline-windows-2">Offline (Windows)</h2>
 <p>The <em>IRTlib</em> software (<em>IRTlib Editor</em> and <em>IRTlib Player</em>) for offline use can be obtained and downloaded from the [Releases] section of the repository <a href="https://github.com/DIPFtba/IRTlibDeploymentSoftware" class="uri">https://github.com/DIPFtba/IRTlibDeploymentSoftware</a>.</p>
-<p>The two archives <code>TestApp.Editor.Desktop.zip</code> and <code>TestApp.Player.Desktop.zip</code> are available for download in the [Releases] section (https://github.com/DIPFtba/IRTlibDeploymentSoftware/releases).</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
+<p>Two ZIP archives are available for download in the <a href="https://github.com/DIPFtba/IRTlibDeploymentSoftware/releases">Releases</a> section.</p>
+<p><strong><code>TestApp.Editor.Desktop.exe</code></strong>: Is in <code>TestApp.Editor.Desktop.zip</code> and must be started to use the <em>IRTlib Editor</em>.</p>
+<p><strong><code>TestApp.Player.Desktop.exe</code></strong>: Is included in <code>TestApp.Player.Desktop.zip</code> and must be started to use the <em>IRTlib Player</em>.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Note: Versions from the current development as *Preview*.">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+Note: Versions from the current development as <em>Preview</em>.
 </div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Note that the latest build can be found in the <a href="https://github.com/DIPFtba/IRTlibDeploymentSoftware/releases/tag/preview-231025">Preview</a> section of the <em>Release</em> section of the <a href="https://github.com/DIPFtba/IRTlibDeploymentSoftware/releases">repository</a>.</p>
+<p>Note that the latest build can be found in the <a href="https://github.com/DIPFtba/IRTlibDeploymentSoftware/releases/tag/preview-231025">Preview</a> section of the <em>Release</em> section of the <a href="https://github.com/DIPFtba/IRTlibDeploymentSoftware/releases">repository</a>. Preview versions are the latest version of the software, after the last published version of the <em>IRTlib software</em>. To obtain reproducible results, published versions should always be used.</p>
 </div>
 </div>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
+</div>
+<div class="callout callout-style-default callout-warning callout-titled" title="Note: Warning message at programme start">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Warning
+Note: Warning message at programme start
 </div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
-<p>The automatically generated preview versions of the <em>IRTlib Editor</em> and <em>IRTlib Player</em> are not signed. A warning message from the operating system must be accepted before the programs can be executed.</p>
+<p>The automatically created preview versions of the <em>IRTlib Editor</em> and <em>IRTlib Player</em> are not signed. A warning message from the operating system must be accepted before the programs can be executed. Depending on the configuration of the operating system, the executable files of the <em>IRTlib software</em> can also be classified as unknown and anti-virus software might show additional warnings.</p>
+</div>
 </div>
 </div>
 <section id="study-preparation-with-offline-editor" class="level3">
-<h3 class="anchored" data-anchor-id="study-preparation-with-offline-editor">Study Preparation with Offline Editor</h3>
+<h3 class="anchored" data-anchor-id="study-preparation-with-offline-editor">Study preparation with offline editor</h3>
 <p>The <em>IRTlib Editor</em> for offline use is provided as a ZIP archive (e.g.&nbsp;<code>TestApp.Editor.Desktop.zip</code>), which must be unpacked. After unpacking the editor, the application <code>TestApp.Editor.Desktop.exe</code> can be started on a Windows device.</p>
 <p>The sections <a href="./preparation-overview.html">Preparation &gt; Overview</a>, <a href="./preparation-studies.html">Preparation &gt; Studies</a> and <a href="./preparation-parts.html">Preparation &gt; Survey parts</a> document how to prepare and configure data surveys with the help of <em>CBA ItemBuilder</em> items.</p>
 </section>
 <section id="study-execution-with-offline-player" class="level3">
-<h3 class="anchored" data-anchor-id="study-execution-with-offline-player">Study Execution with Offline Player</h3>
-<p>The <em>IRTlib Player</em> is also available as a Windows application for offline use and is provided as a ZIP archive (e.g.&nbsp;<code>TestApp.Player.Desktop.zip</code>). After unpacking the <em>IRTlib Player</em>, a published study configuration is required that is to be used for data collection.</p>
-<p>After adding the contents of a published study provided as study configuration, the executable file <code>TestApp.Player.Desktop.exe</code> can be started (either with or without start parameters).</p>
-<p><strong>Kiosk Mode</strong>: The <em>IRTlib Player</em> can be used directly for data collection via the executable file <code>TestApp.Player.Desktop.exe</code> on the computer on which it is run locally. The <em>Study</em> can be configured so that it is displayed in a <em>Kiosk Mode</em> on one screen and can only be terminated via the <em>Task Manager</em> or the <em>Test Manager Menu</em> (see <em>Full Screen Mode</em> in the section <a href="preparation-studies.html#configuration-for-display">Configuration for display</a>).</p>
-<p><strong>Local server</strong>: The <em>IRTlib Player</em> can also be run as a local server. After starting the program <code>TestApp.Player.Server.exe</code>, a configured <em>Study</em> can also be delivered via <em>Webbrowser</em> or other browsers with <em>Kiosk Mode</em> (e.g.&nbsp;the <a href="https://safeexambrowser.org/">Safe Exam Browser</a>). With this configuration, data can be collected, for example, in schools without an Internet connection but with a notebook that acts as a <em>bring-in</em> server.</p>
+<h3 class="anchored" data-anchor-id="study-execution-with-offline-player">Study execution with offline player</h3>
+<p>The <em>IRTlib Player</em> is also available as a Windows application for offline use and is provided as a ZIP archive (e.g.&nbsp;<code>TestApp.Player.Desktop.zip</code>). After unpacking the <em>IRTlib Player</em>, a published study configuration is required that is to be used for a data collection.</p>
+<p>After adding the contents of a published study provided as study configuration, the executable file <code>TestApp.Player.Desktop.exe</code> can be started (either with or without command-line parameters).</p>
+<p><strong>Kiosk Mode</strong>: The <em>IRTlib Player</em> can be used directly for data collection via the executable file <code>TestApp.Player.Desktop.exe</code> on the computer on which it is running locally. The <em>Study</em> can be configured so that it is displayed in a <em>Kiosk Mode</em> on one screen. In the <em>Kiosk Mode</em> the software can only be terminated before the last item via the <em>Task Manager</em> or the <em>Test Manager Menu</em> (see <em>Full Screen Mode</em> in the section <a href="preparation-studies.html#configuration-for-display">Configuration for display</a>).</p>
+<p><strong>Local server</strong>: The <em>IRTlib Player</em> can also be run as a local server. After starting the executable <code>TestApp.Player.Server.exe</code>, a configured <em>Study</em> can also be delivered via standard <em>Web Browsers</em> or other browsers with <em>Kiosk Mode</em> (e.g., the <a href="https://safeexambrowser.org/">Safe Exam Browser</a>). With this configuration, data can be collected, for example, in schools without an internet connection but with a notebook acting as a <em>bring-in</em> server.</p>
 <p>The sections <a href="./data-collection-overview.html">Data collection &gt; Overview</a>, <a href="./data-collection-publish-and-export.html">Data collection &gt; Publish &amp; export</a> and <a href="./data-collection-player-integration.html">Data collection &gt; Integration &amp; delivery</a> document how data collection can be carried out using the <em>IRTlib Player</em> in the various constellations.</p>
 </section>
 </section>
 <section id="online-docker-2" class="level2">
 <h2 class="anchored" data-anchor-id="online-docker-2">Online (Docker)</h2>
 <p>The <em>IRTlib</em> software (<em>IRTlib Editor</em> and <em>IRTlib Player</em>) for online use can be obtained as a <em>Docker</em> container. An example can be found at <a href="https://github.com/DIPFtba/IRTlibDeploymentSoftware" class="uri">https://github.com/DIPFtba/IRTlibDeploymentSoftware</a>.</p>
-<p>To use the Docker container, it is recommended to check out the repository on the target device (requires git) and run the command <code>./start.sh</code> in the <code>docker</code> folder (requires installed <code>docker</code> and <code>docker compose</code>) to start the software.</p>
+<p>To use the Docker container, it is recommended to <em>clone</em> the repository on the target device and execute the command <code>./start.sh</code> in the <code>docker</code> folder (requires installed <code>docker</code> and <code>docker compose</code>) to start the software.</p>
 <p>If nothing is changed in the <code>docker-compose.yml</code> file, the editor is accessible via port <em>8002</em> and the player software via port <em>8001</em>.</p>
-<p>See the section <a href="./data-collection-player-integration.html">Data collection &gt; Integration &amp; delivery</a> for more information on using the <em>Docker</em> containers.</p>
+<p>The section <a href="./data-collection-player-integration.html">Data collection &gt; Integration &amp; delivery</a> contains further information on using the <em>Docker</em> containers.</p>
 
 
 </section>

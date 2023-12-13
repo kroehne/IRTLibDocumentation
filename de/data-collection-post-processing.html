@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.3.450">
@@ -81,16 +81,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   "type": "overlay",
   "limit": 20,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-no-results-text": "Keine Treffer",
+    "search-matching-documents-text": "Treffer",
+    "search-copy-link-title": "Link in die Suche kopieren",
+    "search-hide-matches-text": "Zusätzliche Treffer verbergen",
+    "search-more-match-text": "weitere Treffer in diesem Dokument",
+    "search-more-matches-text": "weitere Treffer in diesem Dokument",
+    "search-clear-button-title": "Zurücksetzen",
+    "search-detached-cancel-button-title": "Abbrechen",
+    "search-submit-button-title": "Abschicken",
+    "search-label": "Suchen"
   }
 }</script>
 
@@ -109,8 +109,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <span class="navbar-title">Home | IRTlib</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Suchen"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Navigation umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -198,7 +198,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
 </ul>
             <div class="quarto-navbar-tools">
-  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Lesemodus umschalten">
   <div class="quarto-reader-toggle-btn">
   <i class="bi"></i>
   </div>
@@ -214,7 +214,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+    <h2 id="toc-title">Auf dieser Seite</h2>
    
   <ul>
   <li><a href="#datenerhebung-datenaufbereitung-data-collection-data-post-processing" id="toc-datenerhebung-datenaufbereitung-data-collection-data-post-processing" class="nav-link active" data-scroll-target="#datenerhebung-datenaufbereitung-data-collection-data-post-processing">Datenerhebung: Datenaufbereitung / Data Collection: Data Post-Processing</a>
@@ -271,7 +271,7 @@ Hinweis
 <h3 class="anchored" data-anchor-id="datenabruf-mit-logfsm">Datenabruf mit <code>LogFSM</code></h3>
 <p>Dazu kann mit folgendem Aufruf zunächst (einmalig) das R-Paket installiert werden:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"http://logfsm.com/latest"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"http://logfsm.com/latest"</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Danach ist der Download der <em>Rohdatenarchive</em> mit folgendem R-Skript möglich:</p>
 <div id="logfsm-download-and-convert">
@@ -297,16 +297,43 @@ Hinweis
 <span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>                              <span class="at">outputtimestampformatstring=</span><span class="st">"dd.MM.yyyy HH:mm:ss.fff"</span>)</span>
 <span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>results <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="fu">unz</span>(<span class="fu">paste0</span>(<span class="fu">getwd</span>(),<span class="st">"/out/data_csv.zip"</span>), <span class="st">"Results.csv"</span>),</span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>                    <span class="at">sep=</span><span class="st">";"</span>, <span class="at">encoding =</span> <span class="st">"UTF-8"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>                    <span class="at">sep=</span><span class="st">";"</span>, <span class="at">encoding =</span> <span class="st">"UTF-8"</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><em>Datenabruf und Konvertierung der Daten mit LogFSM</em></p>
 </div>
 <p>Mit dem Aufruf der Funktion <code>TransformToUniversalLogFormat</code> aus dem Paket <code>LogFSM</code> werden die Daten heruntergeladen und in das spezifzierte Verzeichnis <code>infolders</code> aggelegt, wenn ein API-Key (<code>key</code>) und eine API-Url (<code>web</code>) übergeben werden.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Hinweis zur `SECRET_KEY` und `API_URL`">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hinweis zur <code>SECRET_KEY</code> und <code>API_URL</code>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Der Wert für <code>SECRET_KEY</code> mus dem Eintrag entsprechen, der bei der Konfiguration des <em>Docker</em>-Images in der <code>appsettings.json</code> als <code>ExternalExportKey</code> definiert wurde, siehe Abschnitt <a href="./data-collection-player-integration.html#online-version-docker">Online-Version (Docker)</a>.</p>
+<p>Der Wert für die <code>API_URL</code> bildet sich nach folgendem Schema: <code>https://{U}/{S}/api/session/</code></p>
+<ul>
+<li><code>{U}</code> ist die URL des <em>IRTlib Players</em></li>
+<li><code>{S}</code> ist der Bezeichner der <em>Studie</em></li>
+</ul>
+</div>
+</div>
+</div>
+<p>Die Funktion <code>TransformToUniversalLogFormat</code> aus dem Paket <code>LogFSM</code> (oder analog das im folgenden beschriebene <em>Kommandozeilenwerkzeug</em>) können auch verwendet werden, um bereits lokal vorhandene Rohdatenarchive auszulesen.</p>
 </section>
 <section id="datenabruf-über-die-kommandozeile" class="level3">
 <h3 class="anchored" data-anchor-id="datenabruf-über-die-kommandozeile">Datenabruf über die Kommandozeile</h3>
 <p>Die für den Datenabruf und die Datenkonvertierung über <code>LogFSM</code> verwendete Anwendung <code>TransformToUniversalLogFormat</code> ist als Konsolen-Anwendung aus dem <em>Releases</em>-Abschnitt von <a href="https://github.com/kroehne/LogFSM/releases">https://github.com/kroehne/LogFSM/</a> verfügbar.</p>
 <p>Darüber lassen sich Datenabruf und Datenumwandlung auch ohne R ausführen.</p>
+<ul>
+<li><p><strong>Windows</strong>:</p></li>
+<li><p><strong>Linux</strong>:</p></li>
+<li><p><strong>Mac</strong>:</p></li>
+</ul>
 <div class="callout callout-style-default callout-important callout-titled" title="In Entwicklung">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -317,7 +344,7 @@ In Entwicklung
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Eine Mac-Version von <code>LogFSM</code> und dem <code>TransformToUniversalLogFormat</code>-Tool für <code>ARM64</code> ist in Entwicklung.</p>
+<p>Eine zertifizierte Version von <code>TransformToUniversalLogFormat</code> für Apple ist im Moment in Entwicklung.</p>
 </div>
 </div>
 </section>
@@ -340,7 +367,7 @@ In Entwicklung
 <span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>                              <span class="at">outputtimestampformatstring=</span><span class="st">"dd.MM.yyyy HH:mm:ss.fff"</span>)</span>
 <span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>results <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="fu">unz</span>(<span class="fu">paste0</span>(<span class="fu">getwd</span>(),<span class="st">"/out/data_csv.zip"</span>), <span class="st">"Results.csv"</span>),</span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>                    <span class="at">sep=</span><span class="st">";"</span>, <span class="at">encoding =</span> <span class="st">"UTF-8"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>                    <span class="at">sep=</span><span class="st">";"</span>, <span class="at">encoding =</span> <span class="st">"UTF-8"</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -352,6 +379,19 @@ In Entwicklung
 <li><p><em>Universal Log-Format</em>: Alternativ enthalten die von <code>LogFSM</code> bzw. dem Komandozeilen-Werkzeug <code>TransformToUniversalLogFormat</code> erstellten ZIP-Archive auch einzelne Datensatz-Tabellen je <em>Evenet-Typ</em>. Die event-spezifischen Attribute in diesen Tabellen sind weniger <em>löchrig</em> (d.h. sie enthalten nur fehlende Werte für optionale Attribute) und können zu einer <em>Flat and Sparse Log-Data Table</em> kombiniert werden, wenn erforderlich.</p></li>
 <li><p><em>XES (eXtensible Event Stream)</em>: Die Log-Daten können auch in dem standardisierten <code>XML</code>-Format (<a href="https://xes-standard.org/">https://xes-standard.org/</a>) umgewandelt werden.</p></li>
 </ul>
+<div class="callout callout-style-default callout-note callout-titled" title="Hinweis zu Zeitstempeln">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hinweis zu Zeitstempeln
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Die mit der <em>IRTlib Software</em> erhobenen Zeitstempel sind im <em>UTC</em>-Format (<em>Coordinated Universal Time</em>).</p>
+</div>
+</div>
 </section>
 <section id="dateien-in-den-rohdatenarchiven" class="level3">
 <h3 class="anchored" data-anchor-id="dateien-in-den-rohdatenarchiven">Dateien in den <em>Rohdatenarchiven</em></h3>
@@ -510,12 +550,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
+    button.setAttribute("title", "Kopiert");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
+      button.setAttribute("data-bs-title", "Kopiert");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",
