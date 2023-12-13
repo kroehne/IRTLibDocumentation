@@ -10,7 +10,7 @@ format:
 
 *Erhebungsteile* ohne *Routing* können auf einfache Weise einen zeitbegrenzten Abschnitt enthalten. Dafür wird in der Sicht *Bearbeitungszeit* die Option *Bearbeitungszeit begrenzen* aktiviert und ein Zeitlimit in Sekunden (>0) eingetragen. 
 
-Für eine Zeitbegrenzung werden vier Gruppen von *CBA ItemBuilder* *Tasks* unterschieden, die an unterschiedlichen Stellen im *IRTlib Editor* definiert werden. In der Sicht *Items* (analog zu nicht zeitbegrenzten *Erhebungsteilen*) werden die Items für welche die Zeitbegrenzug gelten soll definiert: 
+Für eine Zeitbegrenzung werden vier Gruppen von *CBA ItemBuilder* *Tasks* unterschieden, die an unterschiedlichen Stellen im *IRTlib Editor* definiert werden. In der Sicht *Items* (analog zu nicht zeitbegrenzten *Erhebungsteilen*) werden die Items, für welche die Zeitbegrenzug gelten soll, definiert: 
 
 * **Items**: Items die so lange angezeigt werden, bis das Zeitlimit erreicht wurde.
 

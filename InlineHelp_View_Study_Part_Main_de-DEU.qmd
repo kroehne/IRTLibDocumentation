@@ -8,7 +8,7 @@ format:
 
 ### Erhebungsteil Anlegen
 
-Mit dem *IRTLib Editor* werden Konfigurationen für *Studien* erstellt, welche dann in einem *IRTLib Player* zur Durchführung computerbasierter Assessments verwendet werden können. *Studie* bestehen aus einem oder mehreren *Erhebungsteilen*. 
+Mit dem *IRTLib Editor* werden Konfigurationen für *Studien* erstellt, welche dann in einem *IRTLib Player* zur Durchführung computerbasierter Assessments verwendet werden können. *Studien* bestehen aus einem oder mehreren *Erhebungsteilen*. 
 
 #### Wie geht's?
 
@@ -18,7 +18,7 @@ Nachdem eine *Studie* angelegt ist, kann nun über Plus-Icon unten rechts ein *E
 
 Danach geben Sie bitte in dem Dialog **Neuen Erhebungsteil erstellen** eine *Bezeichnung* und optional eine *Beschreibung* ein.
 
-Achten Sie darauf, dass für die *Bezeichnung* wieder nur Buchstaben (Groß und Kleinschreibung), Ziffer und ein `_` erlaubt sind.
+Achten Sie darauf, dass für die *Bezeichnung* wieder nur Buchstaben (Groß- und Kleinschreibung), Ziffer und ein `_` erlaubt sind.
 
 
 Klicken Sie anschließend auf *Speichern*.

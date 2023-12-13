@@ -6,11 +6,11 @@ format:
     toc: false
 ---
 
-### Items nach einer Zeitebgrenzung
+### Items nach einer Zeitbegrenzung
 
 Der *Erhebungsteile* erlauben die Definition von Items in verschiedenen Abschnitten. Items in diesem Abschnitt *Nachspann-Item(s)* werden nach den Items angezeigt, welche im Abschnitt *Items* eines *Erhebungsteils* definiert sind. Die Trennung in *Nachspann-Item(s)* und *Items* ist besonders sinnvoll, wenn unter *Bearbeitungszeit* eine Zeitbegrenzung aktiviert ist. 
 
-Um Items in dem Abschnitt *Nachspann-Item(s)*  zu konfigurieren stehen die folgenden Optionen zur Verfügung: 
+Um Items in dem Abschnitt *Nachspann-Item(s)*  zu konfigurieren, stehen die folgenden Optionen zur Verfügung: 
 
 * Hinzufügen: ![](img/screenshot-add-project-plus-icon.png){width="40"}
 * Aktualisieren: ![](img/screenshot-update-item-icon-01.png){width="40"}
