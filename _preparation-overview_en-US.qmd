@@ -7,10 +7,10 @@ Note: When using *CBA ItemBuilder* items from version 9.9 or newer, this step is
 :::
 
 
-- **Creating a new *study***: The *IRTlib Editor* is used to configure so-called *studies*. The versions of studies can be tracked in the editor, studies can be published (i.e. *sealed* for data collection). To start creating content with the *IRTlib Editor*, a study must first be created (see section [Studies](preparation-studies.qmd) for details).
+- **Creating a new *Study***: The *IRTlib Editor* is used to configure so-called *studies*. The versions of studies can be tracked in the editor, studies can be published (i.e. *sealed* for data collection). To start creating content with the *IRTlib Editor*, a study must first be created (see section [Studies](preparation-studies.qmd) for details).
 
 
-::: {.callout-note collapse="false" title="Note: Creating a *study* is always necessary."}
+::: {.callout-note collapse="false" title="Note: Creating a *Sstudy* is always necessary."}
 Note that at least one study must be defined in the *IRTlib Editor* before a study configuration can be used for data collection with an *IRTlib Player*.
 :::
 
@@ -18,24 +18,21 @@ Note that at least one study must be defined in the *IRTlib Editor* before a stu
 - **Define basic configurations for *Study* (Info)**: Basic configurations related to the content of a prepared study include the study name and description, login mode, display configuration, test administrator menu, and how to proceed after completing all content defined in a study (see [Studies](preparation-studies.qmd)-section for more details).
 
 
-- **Creating a new *survey part***:Each *study* consists of one or more *Survey Parts*. *Survey Parts* are considered to be building blocks of assessments that are administered together, using, for instance, all items from a particular domain. *Survey Parts* of type *CBA ItemBuilder* can be used to administer *CBA ItemBuilder*-*tasks* in a linear sequence or with *blockly* based routing.
+- **Creating a new *Survey-Part***: Each *Study* consists of one or more *Survey-Parts*. *Survey-Parts* are considered to be building blocks of assessments that are administered together, using, for instance, all items from a particular domain. *Survey-Parts* of type *CBA ItemBuilder* can be used to administer *CBA ItemBuilder*-*tasks* in a linear sequence or with *Blockly*-based routing.
 
 ::: {.callout-note collapse="false" title="Note: Creating a *survey* part is always necessary."}
-Note that each study requires at least one *survey part* defined in the *IRTlib Editor* before a study configuration can be used for data collection with an *IRTlib Player*.
+Note that each study requires at least one *Survey-Part* defined in the *IRTlib Editor* before a study configuration can be used for data collection with an *IRTlib Player*.
 :::
 
+- **Configure basic settings for *Survey-Part* (Info)**: A *Survey Part* of type *CBA ItemBuilder* is based on a set of *CBA ItemBuilder*-*Tasks*. Each *CBA ItemBuilder*-*project file* requires at least one *task*, but projects with multiple *tasks* are also supported.If *CBA ItemBuilder* content with a common time limit is to be administered across *tasks*, *assessment sections* allow the assignment of tasks to a structure that distinguishes assessment content that is administered *before* a time-limited section (e.g. instructions, in the *task* section). e.g. instructions, in the section *preparation-parts*), content that is administered *after* a time-limited section (e.g. acknowledgements, in the section *post-parts*) and tasks with limited time in between (*items*, see section [preparation-parts.qmd]).
 
-- **Configure basic settings for *survey part* (Info)**:A *Survey Part* of type *CBA ItemBuilder* is based on a set of *CBA ItemBuilder*-*Tasks*. Each *CBA ItemBuilder*-*project file* requires at least one *task*, but projects with multiple *tasks* are also supported.If *CBA ItemBuilder* content with a common time limit is to be administered across *tasks*, *assessment sections* allow the assignment of tasks to a structure that distinguishes assessment content that is administered *before* a time-limited section (e.g. instructions, in the *task* section). e.g. instructions, in the section *preparation-parts*), content that is administered *after* a time-limited section (e.g. acknowledgements, in the section *post-parts*) and tasks with limited time in between (*items*, see section [preparation-parts.qmd]).
 
-
-- Add items**: To finalise the definition of a *survey part*, the *CBA ItemBuilder* *project files* must be imported into the *Items* section. By default, it is assumed that the order of the *CBA ItemBuilder*-*Tasks* is linear. However, if *routing* is enabled for a study section, the *blockly*-based sequence definition can be used to implement different test designs (e.g. multiple booklets, multi-stage tests, etc.).
+- **Add items**: To finalise the definition of a *survey part*, the *CBA ItemBuilder* *project files* must be imported into the *Items* section. By default, it is assumed that the order of the *CBA ItemBuilder*-*Tasks* is linear. However, if *routing* is enabled for a study section, the *blockly*-based sequence definition can be used to implement different test designs (e.g. multiple booklets, multi-stage tests, etc.).
 
 
 ## Embedded programme help 
 
-
 For the use of the *IRTlib Editor*, a programme help is integrated directly into the application, which can be displayed via the small `?` symbol in the top right-hand corner. 
-
 
 ![Example of the *IRTlib Editor* with embedded help](img/screenshot-editor-embedded-help-de-DEU.png){width="100%"}
 

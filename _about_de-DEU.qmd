@@ -3,6 +3,9 @@
 
 An diesem Manual mitgeholfen haben:
 
+* Maximilian Sattler
+* 
+
 ::: {.callout-important title="In Entwicklung"}
 * Überarbeitung, sprachliche Korrektur und Übersetzung der Anleitung sind gerade in Arbeit...
 :::
