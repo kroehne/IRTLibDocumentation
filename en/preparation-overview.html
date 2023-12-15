@@ -220,15 +220,15 @@ Optional: Using a <em>Runtime</em> for <em>CBA ItemBuilder</em> before version 9
 </div>
 </div>
 <ul>
-<li><strong>Creating a new <em>study</em></strong>: The <em>IRTlib Editor</em> is used to configure so-called <em>studies</em>. The versions of studies can be tracked in the editor, studies can be published (i.e.&nbsp;<em>sealed</em> for data collection). To start creating content with the <em>IRTlib Editor</em>, a study must first be created (see section <a href="./preparation-studies.html">Studies</a> for details).</li>
+<li><strong>Creating a new <em>Study</em></strong>: The <em>IRTlib Editor</em> is used to configure so-called <em>studies</em>. The versions of studies can be tracked in the editor, studies can be published (i.e.&nbsp;<em>sealed</em> for data collection). To start creating content with the <em>IRTlib Editor</em>, a study must first be created (see section <a href="./preparation-studies.html">Studies</a> for details).</li>
 </ul>
-<div class="callout callout-style-default callout-note callout-titled" title="Note: Creating a *study* is always necessary.">
+<div class="callout callout-style-default callout-note callout-titled" title="Note: Creating a *Sstudy* is always necessary.">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note: Creating a <em>study</em> is always necessary.
+Note: Creating a <em>Sstudy</em> is always necessary.
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -240,7 +240,7 @@ Note: Creating a <em>study</em> is always necessary.
 </div>
 <ul>
 <li><p><strong>Define basic configurations for <em>Study</em> (Info)</strong>: Basic configurations related to the content of a prepared study include the study name and description, login mode, display configuration, test administrator menu, and how to proceed after completing all content defined in a study (see <a href="./preparation-studies.html">Studies</a>-section for more details).</p></li>
-<li><p><strong>Creating a new <em>survey part</em></strong>:Each <em>study</em> consists of one or more <em>Survey Parts</em>. <em>Survey Parts</em> are considered to be building blocks of assessments that are administered together, using, for instance, all items from a particular domain. <em>Survey Parts</em> of type <em>CBA ItemBuilder</em> can be used to administer <em>CBA ItemBuilder</em>-<em>tasks</em> in a linear sequence or with <em>blockly</em> based routing.</p></li>
+<li><p><strong>Creating a new <em>Survey-Part</em></strong>: Each <em>Study</em> consists of one or more <em>Survey-Parts</em>. <em>Survey-Parts</em> are considered to be building blocks of assessments that are administered together, using, for instance, all items from a particular domain. <em>Survey-Parts</em> of type <em>CBA ItemBuilder</em> can be used to administer <em>CBA ItemBuilder</em>-<em>tasks</em> in a linear sequence or with <em>Blockly</em>-based routing.</p></li>
 </ul>
 <div class="callout callout-style-default callout-note callout-titled" title="Note: Creating a *survey* part is always necessary.">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="true" aria-label="Toggle callout">
@@ -254,13 +254,13 @@ Note: Creating a <em>survey</em> part is always necessary.
 </div>
 <div id="callout-3" class="callout-3-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
-<p>Note that each study requires at least one <em>survey part</em> defined in the <em>IRTlib Editor</em> before a study configuration can be used for data collection with an <em>IRTlib Player</em>.</p>
+<p>Note that each study requires at least one <em>Survey-Part</em> defined in the <em>IRTlib Editor</em> before a study configuration can be used for data collection with an <em>IRTlib Player</em>.</p>
 </div>
 </div>
 </div>
 <ul>
-<li><p><strong>Configure basic settings for <em>survey part</em> (Info)</strong>:A <em>Survey Part</em> of type <em>CBA ItemBuilder</em> is based on a set of <em>CBA ItemBuilder</em>-<em>Tasks</em>. Each <em>CBA ItemBuilder</em>-<em>project file</em> requires at least one <em>task</em>, but projects with multiple <em>tasks</em> are also supported.If <em>CBA ItemBuilder</em> content with a common time limit is to be administered across <em>tasks</em>, <em>assessment sections</em> allow the assignment of tasks to a structure that distinguishes assessment content that is administered <em>before</em> a time-limited section (e.g.&nbsp;instructions, in the <em>task</em> section). e.g.&nbsp;instructions, in the section <em>preparation-parts</em>), content that is administered <em>after</em> a time-limited section (e.g.&nbsp;acknowledgements, in the section <em>post-parts</em>) and tasks with limited time in between (<em>items</em>, see section [preparation-parts.qmd]).</p></li>
-<li><p>Add items**: To finalise the definition of a <em>survey part</em>, the <em>CBA ItemBuilder</em> <em>project files</em> must be imported into the <em>Items</em> section. By default, it is assumed that the order of the <em>CBA ItemBuilder</em>-<em>Tasks</em> is linear. However, if <em>routing</em> is enabled for a study section, the <em>blockly</em>-based sequence definition can be used to implement different test designs (e.g.&nbsp;multiple booklets, multi-stage tests, etc.).</p></li>
+<li><p><strong>Configure basic settings for <em>Survey-Part</em> (Info)</strong>: A <em>Survey Part</em> of type <em>CBA ItemBuilder</em> is based on a set of <em>CBA ItemBuilder</em>-<em>Tasks</em>. Each <em>CBA ItemBuilder</em>-<em>project file</em> requires at least one <em>task</em>, but projects with multiple <em>tasks</em> are also supported.If <em>CBA ItemBuilder</em> content with a common time limit is to be administered across <em>tasks</em>, <em>assessment sections</em> allow the assignment of tasks to a structure that distinguishes assessment content that is administered <em>before</em> a time-limited section (e.g.&nbsp;instructions, in the <em>task</em> section). e.g.&nbsp;instructions, in the section <em>preparation-parts</em>), content that is administered <em>after</em> a time-limited section (e.g.&nbsp;acknowledgements, in the section <em>post-parts</em>) and tasks with limited time in between (<em>items</em>, see section [preparation-parts.qmd]).</p></li>
+<li><p><strong>Add items</strong>: To finalise the definition of a <em>survey part</em>, the <em>CBA ItemBuilder</em> <em>project files</em> must be imported into the <em>Items</em> section. By default, it is assumed that the order of the <em>CBA ItemBuilder</em>-<em>Tasks</em> is linear. However, if <em>routing</em> is enabled for a study section, the <em>blockly</em>-based sequence definition can be used to implement different test designs (e.g.&nbsp;multiple booklets, multi-stage tests, etc.).</p></li>
 </ul>
 <section id="embedded-programme-help" class="level2">
 <h2 class="anchored" data-anchor-id="embedded-programme-help">Embedded programme help</h2>
