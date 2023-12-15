@@ -20,7 +20,7 @@ Note that at least one study must be defined in the *IRTlib Editor* before a stu
 
 - **Creating a new *survey part***:Each *study* consists of one or more *Survey Parts*. *Survey Parts* are considered to be building blocks of assessments that are administered together, using, for instance, all items from a particular domain. *Survey Parts* of type *CBA ItemBuilder* can be used to administer *CBA ItemBuilder*-*tasks* in a linear sequence or with *blockly* based routing.
 
-:::{.callout-note collapse="false" title="Note: Creating a *survey* part is always necessary."}
+::: {.callout-note collapse="false" title="Note: Creating a *survey* part is always necessary."}
 Note that each study requires at least one *survey part* defined in the *IRTlib Editor* before a study configuration can be used for data collection with an *IRTlib Player*.
 :::
 
@@ -82,11 +82,6 @@ The *Preview* of the *CBA ItemBuilder* can also be used to check whether the ass
 
 ![Settings for *Scaling Options* from *CBA ItemBuilder*-*Preview*](img/screenshot-cba-itembuilder-preview-scaling-mode-01.png){width="200" fig-align="left" }
 
-
-
-
-
-
 Settings similar to *Preview* can be defined in the *IRTlib Editor* for the display settings of a *Study* (see section [Studies](preparation-studies.qmd)).
 
 
@@ -95,8 +90,7 @@ Settings similar to *Preview* can be defined in the *IRTlib Editor* for the disp
 
 The *IRTlib software* is designed to collect data with the help of *CBA ItemBuilder*-*Task*. What result variables are saved from the processing of a *task* can be defined by *item authors* in the *scoring* definition of a *task*. 
 
-
-::: {.callout-note title="The *scoring* must already be defined in the *CBA ItemBuilder*."}.
+::: {.callout-note title="The *scoring* must already be defined in the *CBA ItemBuilder*."}
 The result variables defined as *Classes* are saved from the processing of *Tasks*, the values of which can either be individual *Hits* or the transfer of information using the so-called *ResultText* operator in the *CBA ItemBuilder*. 
 :::
 
@@ -109,17 +103,11 @@ Without further configuration, log data is automatically recorded in the assessm
 :::
 
 
-
-
 ### Integrated multimedia content (resources)
-
 
 The assessment content created with the *CBA ItemBuilder* can contain multimedia content (images, videos, audio files). Images and videos are displayed in a size that is used in the corresponding component of the *CBA ItemBuilder* in the *Page Editor*. Images, videos and audio files are saved as *resources* in the *project files* as soon as they have been inserted via the *Resource Browser*. Unused *resources* remain in the *project files*.
 
-
-
-
-::: {.callout-note title="File size of *CBA ItemBuilder* *project files* should be as small as possible"}.
+::: {.callout-note title="File size of *CBA ItemBuilder* *project files* should be as small as possible"}
 The file size of *CBA ItemBuilder* *project files* is particularly relevant for use in online deliveries and should be kept as small as possible. 
 :::
 
