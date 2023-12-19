@@ -12,21 +12,21 @@ Die Reihenfolge von *Erhebungsteilen* kann mit Hilfe von *Blockly* definiert wer
 
 Für die allgemeinen Grundlagen zur Verwendung von *Blockly* im *IRTlib Editor* siehe die Hilfe zum *Routing innerhalb von Erhebungsteilen*.
 
-Funktionen die nur im *Routing zwischen Erhebungsteilen* zur Verfügung stehen sind:
+Funktionen, die nur im *Routing zwischen Erhebungsteilen* zur Verfügung stehen, sind:
 
 
 * Erhebungsteil Anzeigen
 
 > ![](img/screenshot-blockly-request-study-part-01-DEU.png){width="200"}
 
-> Dieser *Blockly*-Operator ersetzt das *Show Item* innerhalb von Erhebungsteilen.
+> Dieser *Blockly*-Operator ersetzt *Show Item* innerhalb von Erhebungsteilen.
 
 * Erfolgreiches Login
 
 > ![](img/screenshot-blockly-check-login-infinite-study-part-01-DEU.png){width="200"}
 
-> Dieser *Blockly*-Operator hat den Wert *wahr*, wenn vor der Anzahl der maximalen Versuche (hier: unendlich, d.h. unbegrenzt hoft) gültige Login-Informationen angegeben wurden.
+> Dieser *Blockly*-Operator hat den Wert *wahr*, wenn vor der Anzahl der maximalen Versuche (hier: unendlich, d.h. unbegrenzt oft) gültige Login-Informationen angegeben wurden.
 
-Hinweis: Änderungen an der Sicht *Routing* zwischen *Erhebungsteilen* müssen über das Disketten-Symbol gespeichert oder mit dem Rückgängig-Symbol verwerfen werden:
+Hinweis: Änderungen an der Sicht *Routing* zwischen *Erhebungsteilen* müssen über das Disketten-Symbol gespeichert oder mit dem Rückgängig-Symbol verworfen werden:
 
 ![](img/screenshot-icons-undo-and-save-01.png){width="120" fig-align="left"}
