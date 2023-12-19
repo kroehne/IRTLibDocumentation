@@ -701,7 +701,7 @@ Eingebettete Programmhilfe
 <p><a name="help-top"></a></p>
 <section id="zusammenfassung-zu-routing-innerhalb-von-erhebungsteilen" class="level3">
 <h3 class="anchored" data-anchor-id="zusammenfassung-zu-routing-innerhalb-von-erhebungsteilen">Zusammenfassung zu Routing innerhalb von Erhebungsteilen</h3>
-<p>Die Reihenfolge von <em>CBA ItemBuilder</em>-Aufgaben kann hier mit Hilfe von <em>Blockly</em> (also einer Form des visuellen Programmierens) definiert werden. <em>Blockly</em>-basierte Ablaufsteuerung ist verfügbar, wenn bei einem Erhebungsteil die Option <em>Routing aktivieren</em> ausgewählt ist. Die Option ist im Abschnit <em>Info</em> eines Erhebungsteils zu finden. Ist sie aktiviert, enthält der Erhebungsteil den Eintrag <em>Routing</em>.</p>
+<p>Die Reihenfolge von <em>CBA ItemBuilder</em>-Aufgaben kann hier mit Hilfe von <em>Blockly</em> (also einer Form des visuellen Programmierens) definiert werden. <em>Blockly</em>-basierte Ablaufsteuerung ist verfügbar, wenn bei einem Erhebungsteil die Option <em>Routing aktivieren</em> ausgewählt ist. Die Option ist im Abschnitt <em>Info</em> eines Erhebungsteils zu finden. Ist sie aktiviert, enthält der Erhebungsteil den Eintrag <em>Routing</em>.</p>
 <hr>
 <p>Übersicht:</p>
 <ul>
@@ -743,7 +743,7 @@ Eingebettete Programmhilfe
 <p>Dem <em>Blockly</em>-Element <em>Show Items</em> wird eine Liste der <em>CBA ItemBuilder Tasks</em> übergeben, die mit dem Operator <em>erzeuge Liste mit</em> erstellt wird. Die Liste wird in der dargestellten Reihenfolge abgearbeitet, wobei jeder <em>CBA ItemBuilder Tasks</em> solange dargestellt wird, bis das <code>NEXT_TASK</code>- <em>Command</em> ausgeführt wird.</p>
 </blockquote>
 <blockquote class="blockquote">
-<p>Eine äquivalente Formulierung einer linearen Sequenz kann auch mit mehreren <em>Show Items</em>-Blücken erfolgen, wenn keine <a href="#anchor-back-navigation">Zurücknavigation</a> notwendig ist:</p>
+<p>Eine äquivalente Formulierung einer linearen Sequenz kann auch mit mehreren <em>Show Items</em>-Blöcken erfolgen, wenn keine <a href="#anchor-back-navigation">Zurücknavigation</a> notwendig ist:</p>
 </blockquote>
 <blockquote class="blockquote">
 <p><img src="img/screenshot-show-items-lds2003-01-example-simple-DEU.png" class="img-fluid" width="280"></p>
@@ -758,7 +758,7 @@ Eingebettete Programmhilfe
 <p><img src="img/screenshot-show-items-lds2003-01-example-two-booklets-DEU.png" class="img-fluid" width="300"></p>
 </blockquote>
 <blockquote class="blockquote">
-<p>Die Items für Start und Ende werden immer administriert, die Tasks 1-3 nur, wenn die Variable <em>Booklet</em> der Wert <em>0</em> hat, die Tasks 4 und 5, wenn die Variable <em>Booklet</em> einen von <em>0</em> verschiedenen Wert hat.</p>
+<p>Die Items für Start und Ende werden immer administriert, die Tasks 1-3 nur, wenn die Variable <em>Booklet</em> den Wert <em>0</em> hat, die Tasks 4 und 5, wenn die Variable <em>Booklet</em> einen von <em>0</em> verschiedenen Wert hat.</p>
 </blockquote>
 <blockquote class="blockquote">
 <p>Der identische Ablauf lässt sich alternativ auch unter Verwendung des <em>Blockly</em>-Operators für das Anzeigen von Itemlisten erstellen:</p>
@@ -773,13 +773,13 @@ Eingebettete Programmhilfe
 <li><strong>Beispiel für Ablauf mit Zeitbegrenzung</strong></li>
 </ul>
 <blockquote class="blockquote">
-<p>Um mit Hilfe der <em>Blockly</em>-Configuration Zeitbegrenzte Abschnitte innerhalb eines Erhebugnsteils umzusetzen, kann die folgende <em>Blockly</em>-Komponente verwendet werden:</p>
+<p>Um mit Hilfe der <em>Blockly</em>-Configuration zeitbegrenzte Abschnitte innerhalb eines Erhebungsteils umzusetzen, kann die folgende <em>Blockly</em>-Komponente verwendet werden:</p>
 </blockquote>
 <blockquote class="blockquote">
 <p><img src="img/screenshot-show-items-lds2003-01-example-simple-timer-ENG.png" class="img-fluid" width="280"></p>
 </blockquote>
 <blockquote class="blockquote">
-<p>Jeder Ablauf beginnt mit eine nicht zeitbgrenzten Start-Tasks und endet mit einem ebenfalls nicht zeitbegrenzten End-Tasks. Dazwischen läuft eine Zeitbegrenzung für einen Abschnitt mit der Bezeichnung <em>MyFirstTimer</em>, der eine Zeitbegrenzung für <em>60</em> Sekunden hat.</p>
+<p>Jeder Ablauf beginnt mit einem nicht zeitbgrenzten Start-Tasks und endet mit einem ebenfalls nicht zeitbegrenzten End-Tasks. Dazwischen läuft eine Zeitbegrenzung für einen Abschnitt mit der Bezeichnung <em>MyFirstTimer</em>, der eine Zeitbegrenzung für <em>60</em> Sekunden hat.</p>
 </blockquote>
 <blockquote class="blockquote">
 <p>Die Tasks 1, 2 und 3 werden in dem Abschnitt <em>Runtime code</em> mit einer Zeitbegrenzung angezeigt. Tritt ein Timeout auf, d.h. werden die drei Tasks nicht innerhalb der <em>60</em> Sekunden bearbeitet, wird (ebenfalls ohne Zeitbegrenzung) der Task 4 angezeigt.</p>
@@ -828,7 +828,7 @@ Eingebettete Programmhilfe
 <p><img src="img/screenshot-blockly-save-icon-example01.png" class="img-fluid" width="120"></p>
 </blockquote>
 <blockquote class="blockquote">
-<p>Sollen die Änderung (insgesamt) verworfen werden, kann unten rechts die das Verwerfen-Symbol verwendet werden.</p>
+<p>Sollen die Änderung (insgesamt) verworfen werden, kann unten rechts das Verwerfen-Symbol verwendet werden.</p>
 </blockquote>
 <ul>
 <li><strong>Zoom</strong>: Die Ansicht im Arbeitsbereich kann mit den Icons <code>+</code> vergrößert und mit <code>-</code> verkleinert werden.</li>
@@ -851,7 +851,7 @@ Eingebettete Programmhilfe
 </blockquote>
 </blockquote>
 <blockquote class="blockquote">
-<p>Einige <em>Blockly</em>-Elemente stellen im Kontextmenü auch einen Eintrag <em>Hilfe</em> zur Vefügung, welcher auf die allgemein zugängliche <em>Blockly</em>-Dokumenten (https://github.com/google/blockly/wiki/) verweist.</p>
+<p>Einige <em>Blockly</em>-Elemente stellen im Kontextmenü auch einen Eintrag <em>Hilfe</em> zur Vefügung, welcher auf allgemein zugängliche <em>Blockly</em>-Dokumente (https://github.com/google/blockly/wiki/) verweist.</p>
 </blockquote>
 <hr noshade="">
 <div style="display: flex; justify-content: flex-end">
@@ -866,10 +866,10 @@ Eingebettete Programmhilfe
 <p><a name="anchor-show-item"></a></p>
 <section id="einzelne-items-anzeigen" class="level4">
 <h4 class="anchored" data-anchor-id="einzelne-items-anzeigen">Einzelne Items anzeigen</h4>
-<p>Auf <em>CBA ItemBuilder</em>-Tasks, die in der Ansicht <em>Items</em> für einen Erhebugnsteil importiert wurden, kann in der Ablaufsteuerung wie in den Beispielen obgen gezeigt mit Hilfe des folgende <em>Blockly</em>-Elements für <em>Tasks</em> zugegriffen werden:</p>
+<p>Auf <em>CBA ItemBuilder</em>-Tasks, die in der Ansicht <em>Items</em> für einen Erhebungsteil importiert wurden, kann in der Ablaufsteuerung, wie in den Beispielen oben gezeigt, mit Hilfe des folgende <em>Blockly</em>-Elements für <em>Tasks</em> zugegriffen werden:</p>
 <p><img src="img/screenshot-item-element-lds2003-01-selector.png" class="img-fluid" width="200"></p>
-<p>Das Element, welches im Abschnitt <em>Session</em> der Palette des <em>Blockly</em>-Editors zu finden ist, kann durch die Auswahlliste konfiguriert werden. Jedes <em>Blockly</em>-Elements für Tasks kann auf genau einen konkreten Task verweisen, d.h. in der Regel besteht eine Ablaufdefinition aus mehrerer solcher Elemente.</p>
-<p><em>Blockly</em>-Elemente für Tasks können nicht direkt in den Ablauf eingefügt werden, sonder werden zusammen mit einem <em>Show Item</em>-Element verwendet:</p>
+<p>Das Element, welches im Abschnitt <em>Session</em> der Palette des <em>Blockly</em>-Editors zu finden ist, kann durch die Auswahlliste konfiguriert werden. Jedes <em>Blockly</em>-Element für Tasks kann auf genau einen konkreten Task verweisen, d.h. in der Regel besteht eine Ablaufdefinition aus mehrerer solcher Elemente.</p>
+<p><em>Blockly</em>-Elemente für Tasks können nicht direkt in den Ablauf eingefügt werden, sondern werden zusammen mit einem <em>Show Item</em>-Element verwendet:</p>
 <p><img src="img/screenshot-show-item-block-lds2023-01-example-01-ENG.png" class="img-fluid" width="300"></p>
 <p>Das Beispiel <a href="#anchor-example-blockly-simple-sequence-01">für einfache Testhefte</a> illustriert, dass Abläufe in der <em>Blockly</em>-Definition häufig durch eine Abfolge von mehreren <em>Show Item</em>-Operatoren definiert werden. <em>Show Item</em>-Operatoren können dabei in <a href="#anchor-conditions">Bedingungen</a> und <a href="#anchor-loops">Schleifen</a>, sowohl innerhalb des Hauptablaufs als auch innerhalb von <a href="#anchor-functions">Funktionen</a> eingefügt werden.</p>
 </section>
@@ -877,11 +877,11 @@ Eingebettete Programmhilfe
 <h4 class="anchored" data-anchor-id="verwendung-von-geltungsbereichen-scopes">Verwendung von Geltungsbereichen (Scopes)</h4>
 <p>Mit Hilfe der <em>Blocky</em>-basierten Ablaufsteuerung ist es auch möglich, <em>CBA ItemBuilder</em>-Tasks mehrfach innerhalb eines Ablaufs zu administrieren:</p>
 <p><img src="img/screenshot-item-element-two-times-without-scope-lds2003-01-example-ENG.png" class="img-fluid" width="280"></p>
-<p>Dabe wird beim erneuten Aufruf eines Items der Zustand aus dem letzten Besuch wiederhergestellt, d.h. die Bearbeitung wird fortgesetzt. Sollen Items mehrfach neu, d.h. unbearbeitet vorgelegt werden, kann das automatische wiederherstellen nicht gewünscht sein. Dafür kann optional die Checkbox für die Angabe eines <em>Scopes</em> (Geltungsbereich) aktiviert werden:</p>
+<p>Dabei wird beim erneuten Aufruf eines Items der Zustand aus dem letzten Besuch wiederhergestellt, d.h. die Bearbeitung wird fortgesetzt. Sollen Items mehrfach neu, d.h. unbearbeitet vorgelegt werden, kann das automatische wiederherstellen nicht gewünscht sein. Dafür kann optional die Checkbox für die Angabe eines <em>Scopes</em> (Geltungsbereich) aktiviert werden:</p>
 <p><img src="img/screenshot-item-element-scope-lds2003-01-default.png" class="img-fluid" width="250"></p>
 <p>Wird nichts weiter angegeben, wird das Item im “Default”-Scope administriert. Alternativ kann ein Text definiert werde, wie in folgendem Beispiel zu sehen:</p>
 <p><img src="img/screenshot-item-element-with-scope-lds2003-01-example-01-ENG.png" class="img-fluid" width="300"></p>
-<p>Beim ersten Besuch wird der Task in dem <em>Scope</em> “Visit1” dargestellt. Danach folgt eine neue, unabhängige Darstellung des Tasks in einem anderen <em>Scope</em> (“Visit2”). Im dritten Aufruf wird der Task weder mit den Daten dargestellt, die beim ersten Besuch bereits gesammelt wurde (d.h. der <em>Scope</em> “Visit1” wird erneut verwendet).</p>
+<p>Beim ersten Besuch wird der Task in dem <em>Scope</em> “Visit1” dargestellt. Danach folgt eine neue, unabhängige Darstellung des Tasks in einem anderen <em>Scope</em> (“Visit2”). Im dritten Aufruf wird der Task wieder mit den Daten dargestellt, die beim ersten Besuch bereits gesammelt wurden (d.h. der <em>Scope</em> “Visit1” wird erneut verwendet).</p>
 <p><a name="anchor-show-item-lists"></a></p>
 </section>
 <section id="anzeigen-mehrerer-items-itemlisten" class="level4">
@@ -898,7 +898,7 @@ Eingebettete Programmhilfe
 </ul></li>
 </ul>
 <blockquote class="blockquote">
-<p>Die Adminsitration einer Itemliste wird dadurch abgebrochen, und die Abarbeitung des <em>Blockly</em>-Ablaufs nach dem <em>Show Items</em>-Block fortgesetzt.</p>
+<p>Die Administration einer Itemliste wird dadurch abgebrochen, und die Abarbeitung des <em>Blockly</em>-Ablaufs nach dem <em>Show Items</em>-Block fortgesetzt.</p>
 </blockquote>
 <p><a name="anchor-show-item-with-results"></a></p>
 </section>
@@ -906,7 +906,7 @@ Eingebettete Programmhilfe
 <h4 class="anchored" data-anchor-id="anzeige-von-items-mit-speicherung-der-ergebnisse">Anzeige von Items mit Speicherung der Ergebnisse</h4>
 <p>Die Operatoren <em>Show Item</em> (für einzelne Items) und <em>Show Items</em> (für Itemlisten) sind auch als Operatoren für Wertzuweisungen verfügbar:</p>
 <p><img src="img/screenshot-show-single-item-and-show-items-with-results-ENG.png" class="img-fluid" width="150"></p>
-<p>Mit deren Hilfe lassen sich Ergebnisse der Itembearbeitung zu Variablen (String oder Array) zuweisen, und dann für die <a href="#anchor-item-score">Ablaufsteuerng auswerten</a>.</p>
+<p>Mit deren Hilfe lassen sich Ergebnisse der Itembearbeitung zu Variablen (String oder Array) zuweisen, und dann für die <a href="#anchor-item-score">Ablaufsteuerung auswerten</a>.</p>
 <ul>
 <li>Einzelner Task:</li>
 </ul>
@@ -927,12 +927,12 @@ Eingebettete Programmhilfe
 <p>Das <em>Blockly</em>-Element <em>Start timer with name</em> erlaubt die Definition von Zeitbegrenzungen. Jede Zeitbegrenzung kann einen eigenen Namen haben. Zusätzlich muss die Zeit in Sekunden angegeben werden. Darüber kann definiert werden, welche Art von Zeit verwendet werden soll:</p>
 <p><img src="img/screenshot-timer-component-time-level-example-ENG.png" class="img-fluid" width="200"></p>
 <ul>
-<li>Realtime:</li>
-<li>Servertime:</li>
-<li>Sessiontime:</li>
-<li>Clienttime:</li>
+<li>Realtime: Der Timer läuft in Echtzeit. Wird nicht durch Downtimes des Servers oder einen Sessionneustart beeinflusst.</li>
+<li>Servertime: Der Timer läuft in Serverzeit. Wird nicht durch einen Sessionneustart beeinflusst, berücksichtigt aber keine Downtime des Servers.</li>
+<li>Sessiontime: Der Timer läuft innerhalb einer Session. Wird bei einer Unterbrechung durch Server-Downtime oder einen Session-Neustart unterbrochen.</li>
+<li>Clienttime: Der Timer läuft nur in Clientzeit und wird auch bei Pausen der Session unterbrochen.</li>
 </ul>
-<p>Schließlich können zwei Stellen mit weiteren <em>Blockly</em>-Operatoren (wie bspw. ein oder mehrere <a href="#anchor-show-item">Show Item</a>-Blöcke zum Anzeigen einzelner Items oder ein oder mehrere <a href="#anchor-show-items">Show Items</a>-Blöcke zum Anzeigen von Listen) gefüllt werden:</p>
+<p>Schließlich können zwei Stellen mit weiteren <em>Blockly</em>-Operatoren (wie bspw. ein oder mehrere <a href="#anchor-show-item"><em>Show Item</em></a>-Blöcke zum Anzeigen einzelner Items oder ein oder mehrere <a href="#anchor-show-items"><em>Show Items</em></a>-Blöcke zum Anzeigen von Listen) gefüllt werden:</p>
 <ul>
 <li>Runtime code: Diese Blöcke werden ausgefüllt, bis die definierte Zeit abgelaufen ist.</li>
 <li>Elapsed code: Diese Blöcke werden nur ausgefüllt, wenn der <em>Runtime code</em> nicht innerhalb der Zeit beendet wurde.</li>
@@ -968,14 +968,14 @@ Eingebettete Programmhilfe
 <p><img src="img/screenshot-blockly-element-for-testadminstrator-menu-example-02-DEU.png" class="img-fluid" width="150"></p>
 </blockquote>
 <blockquote class="blockquote">
-<p>Der Aufruf dieses <em>Blockly</em>-Operators im Testablauf definiert das Verhalten des Testleitermenüs im weiteren Testablauf. Im Unterschied zu <em>Entfernen</em> bleiben <em>deaktivierte</em> Funktionen im Testleitermenü sichtbar, können aber (bis sie wieder <em>aktiviert</em> werden) nich ausgeführt werden.</p>
+<p>Der Aufruf dieses <em>Blockly</em>-Operators im Testablauf definiert das Verhalten des Testleitermenüs im weiteren Testablauf. Im Unterschied zu <em>Entfernen</em> bleiben <em>deaktivierte</em> Funktionen im Testleitermenü sichtbar, können aber (bis sie wieder <em>aktiviert</em> werden) nicht ausgeführt werden.</p>
 </blockquote>
 <p><strong>Verwenden von <em>Blockly</em>-Funktionen im Testleitermenü</strong>: Der <em>Blockly</em>-Operator für das Bearbeiten des Testleitermenüs enthält im Abschnitt <em>Funktion</em> auch die Option zum Ausführen von <em>Blockly</em>-Code (<em>ExecuteBockly</em>):</p>
 <blockquote class="blockquote">
 <p><img src="img/screenshot-blockly-element-for-testadminstrator-menu-function-example-01-DEU.png" class="img-fluid" width="350"></p>
 </blockquote>
 <blockquote class="blockquote">
-<p>Wenn als <em>ExecuteBlockly</em> ausgewählt ist, dann kann in dem <em>Blockly</em>-Element <em>Testleitermenü bearbeiten</em> eine innerhalb des <em>Blockly</em>-Editors definierte <a href="#anchor-functions&quot;">Funktionen</a> ausgewählt werden. Die in dieser Funktion definierten <em>Blockly</em>-Operatoren werden dann ausgeführt, wenn ein Testleiter die entsprechende Schaltfläche zur Laufzeit im Testleitermenü auswählt.</p>
+<p>Wenn <em>ExecuteBlockly</em> ausgewählt ist, kann in dem <em>Blockly</em>-Element <em>Testleitermenü bearbeiten</em> eine innerhalb des <em>Blockly</em>-Editors definierte <a href="#anchor-functions&quot;">Funktion</a> ausgewählt werden. Die in dieser Funktion definierten <em>Blockly</em>-Operatoren werden dann ausgeführt, wenn ein Testleiter die entsprechende Schaltfläche zur Laufzeit im Testleitermenü auswählt.</p>
 </blockquote>
 <hr noshade="">
 <div style="display: flex; justify-content: flex-end">
@@ -1009,23 +1009,23 @@ Eingebettete Programmhilfe
 </section>
 <section id="verwendung-logischer-ausdrücke" class="level4">
 <h4 class="anchored" data-anchor-id="verwendung-logischer-ausdrücke">Verwendung logischer Ausdrücke</h4>
-<p>Logische Ausdtrücke in Bedingungen basieren entweder auf Wertevergleichen oder Rückgaben von Funktionen. Wertevergleiche können mit folgendem Blockly-Element realisiert werden:</p>
+<p>Logische Ausdtrücke in Bedingungen basieren entweder auf Wertevergleichen oder Rückgaben von Funktionen. Wertevergleiche können mit folgendem <em>Blockly</em>-Element realisiert werden:</p>
 <p><img src="img/screenshot-routing-block-value-comparison-empty.png" class="img-fluid" width="90"></p>
-<p>Die beiden Slots können mit Werten gefüllt werden. Für boolsche Werte (wahr/falsch) steht ein entsprechendes Blockly-Element im Abschnitt <em>Logic</em> bereit:</p>
+<p>Die beiden Slots können mit Werten gefüllt werden. Für boolsche Werte (wahr/falsch) steht ein entsprechendes <em>Blockly</em>-Element im Abschnitt <em>Logic</em> bereit:</p>
 <p><img src="img/screenshot-routing-block-bool-value-DEU.png" class="img-fluid" width="100"></p>
 <p>Bedingungen sind auch mit Variablen von anderem <a href="#anchor-variables-datatype">Datentyp</a> möglich:</p>
 <p><img src="img/screenshot-blockly-condition-separat-02-DEU.png" class="img-fluid" width="200"></p>
-<p>Für numerische Werte gibt es ein entsprechendes Blockly-Element im Abschnitt <em>Math</em>, welcher <a href="#anchor-math">Operatoren für Zahlen und einfache mathematische Operationen</a> enthält:</p>
+<p>Für numerische Werte gibt es ein entsprechendes <em>Blockly</em>-Element im Abschnitt <em>Math</em>, welcher <a href="#anchor-math">Operatoren für Zahlen und einfache mathematische Operationen</a> enthält:</p>
 <p><img src="img/screenshot-routing-block-numeric-value-example42.png" class="img-fluid" width="60"></p>
 <p>Mit dessen Hilfe und einer numerischen <a href="#anchor-variables">Variable</a> lässt sich folgende Bedingung formulieren:</p>
-<p>Aus technischen Gründen kann es auch notwendig sein zu prüfen, ob eine Variable noch gar keinen Wert hat. Das kann durch Verwendung der Blockly-Komponente <code>null</code> umgesetzt werden:</p>
+<p>Aus technischen Gründen kann es auch notwendig sein zu prüfen, ob eine Variable noch gar keinen Wert hat. Das kann durch Verwendung der <em>Blockly</em>-Komponente <code>null</code> umgesetzt werden:</p>
 <p><img src="img/screenshot-routing-block-condition-variable-not-null-example-ENG.png" class="img-fluid" width="250"></p>
 <p><strong>Kombination von logischen Ausdrücken</strong>: Einzelne Bedingungen oder logische Ausdrücke können mit folgendem <em>Blockly</em>-Element aus dem Abschnitt <em>Logik</em> verbunden werden:</p>
 <blockquote class="blockquote">
 <p><img src="img/screenshot-blockly-element-logic-combine-01-DEU.png" class="img-fluid" width="100"></p>
 </blockquote>
 <blockquote class="blockquote">
-<p>Dabei steht eine <em>und</em> sowie eine <em>oder</em>-Verknüpfung der Aussagen zur Auswahl. Die freien <em>Eingänge</em></p>
+<p>Dabei steht eine <em>und</em> sowie eine <em>oder</em>-Verknüpfung der Aussagen zur Auswahl. Die <em>und</em>-Verknüpfung ist wahr, wenn beide Ausdrücke wahr sind, die <em>oder</em>-Verknüpfung ist wahr, wenn mindestens einer von beiden Ausdrücken (oder beide Ausdrücke) wahr sind.</p>
 </blockquote>
 <blockquote class="blockquote">
 <p><img src="img/screenshot-blockly-element-logic-combine-02-DEU.png" class="img-fluid" width="400"></p>
@@ -1044,65 +1044,23 @@ Eingebettete Programmhilfe
 <p><img src="img/screenshot-routing-block-if-then-configuration-01-DEU.png" class="img-fluid" width="200"></p>
 </blockquote>
 <blockquote class="blockquote">
-<p>Durch das Hinzufügen eines Abschnitts <em>sonst falls</em> können kann eine weitere Bedingung hinzugefügt werden. Die in einem <em>sonst falls</em> Abschnitt definierte Bedingung wird geprüft, wenn die vorherigen Bedingunge (<em>falls</em>) nicht erfüllt sind. Ist eine Bedingung erfüllt, werden die definierten Blockly-Operatoren ausgeführt.</p>
+<p>Durch das Hinzufügen eines Abschnitts <em>sonst falls</em> können kann eine weitere Bedingung hinzugefügt werden. Die in einem <em>sonst falls</em> Abschnitt definierte Bedingung wird geprüft, wenn die vorherigen Bedingungen (<em>falls</em>) nicht erfüllt sind. Ist eine Bedingung erfüllt, werden die definierten <em>Blockly</em>-Operatoren ausgeführt.</p>
 </blockquote>
 <blockquote class="blockquote">
-<p>Durch das Hinzufügen eines Abschnitts <em>sonst</em> können Blöcke hinzugefügt werden, welche dann ausgeführt werden wenn keine der Bedingungen erfüllt ist.</p>
+<p>Durch das Hinzufügen eines Abschnitts <em>sonst</em> können Blöcke hinzugefügt werden, welche dann ausgeführt werden, wenn keine der Bedingungen erfüllt ist.</p>
 </blockquote>
-<p><strong>Spezialfall: <em>prüfe</em>-Operator für drei Bedingungen</strong>: Für drei Bedingungen stellt der <em>Blockly</em>-Editor eine speziellen Operator <em>prüfe-falls wahr-falls falsch</em> zur Verfügung:</p>
+<p><strong>Prüfe-Operator</strong>: Für Wertzuweisungen in Abhängigkeit von einer Bedingung stellt der <em>Blockly</em>-Editor eine speziellen Operator <em>prüfe-falls wahr-falls falsch</em> zur Verfügung:</p>
 <blockquote class="blockquote">
 <p><img src="img/screenshot-blockly-element-if-iftrue-iffalse-01-DEU.png" class="img-fluid" width="100"></p>
 </blockquote>
 <blockquote class="blockquote">
-<p>Der Operator kombiniert zwei logische Ausdrücke, z.B.:</p>
+<p>Der Operator kombiniert eine Wertzuweisung mit einem logische Ausdruck:</p>
 </blockquote>
 <blockquote class="blockquote">
 <p><img src="img/screenshot-blockly-element-if-iftrue-iffalse-example-01-DEU.png" class="img-fluid" width="400"></p>
 </blockquote>
 <blockquote class="blockquote">
-<p>Das Konstrukt ist eine Kurzform für folgende Prüfung, wie sie in folgender Tabelle dargestellt ist:</p>
-</blockquote>
-<table class="table">
-<thead>
-<tr class="header">
-<th>MyNumberVariable</th>
-<th>MyStringVariable</th>
-<th>MyBooleanVariable</th>
-<th>Ergebnis</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span class="math inline">\(= 42\)</span></td>
-<td><span class="math inline">\(=\)</span> Example</td>
-<td>(any)</td>
-<td>true</td>
-</tr>
-<tr class="even">
-<td><span class="math inline">\(= 42\)</span></td>
-<td><span class="math inline">\(\neq\)</span> Example</td>
-<td>(any)</td>
-<td>false</td>
-</tr>
-<tr class="odd">
-<td><span class="math inline">\(\neq 42\)</span></td>
-<td>(any)</td>
-<td>true</td>
-<td>true</td>
-</tr>
-<tr class="even">
-<td><span class="math inline">\(\neq 42\)</span></td>
-<td>(any)</td>
-<td>false</td>
-<td>false</td>
-</tr>
-</tbody>
-</table>
-<blockquote class="blockquote">
-<p>Ohne den Operator für drei Bedingungen könnte die gleiche Prüfung mit folgender Kombination umgesetzt werden:</p>
-</blockquote>
-<blockquote class="blockquote">
-<p><img src="img/screenshot-blockly-element-if-iftrue-iffalse-example-02-DEU.png" class="img-fluid" width="550"></p>
+<p>In diesem Beispiel wird der String-Variablen <code>MyStringVariable</code> der Wert <code>Yes</code> zugewiesen, falls die boolsche Variable <code>MyBooleanVariable</code> den Wert <code>wahr</code> hat. Wenn <code>MyBooleanVariable</code> den Wert <code>falsch</code> hat, wird <code>MyStringVariable</code> der Wert <code>No</code> zugewiesen.</p>
 </blockquote>
 <p><strong>Negation</strong>: Um einen logischen Ausdruck umzukehren (Negation) steht folgender <em>Blockly</em>-Operator zur Verfügung:</p>
 <blockquote class="blockquote">
@@ -1185,7 +1143,7 @@ Eingebettete Programmhilfe
 <p><img src="img/screenshot-blockly-math-function-division-with-remaining-01-DEU.png" class="img-fluid" width="160"></p>
 </blockquote>
 <ul>
-<li>Ob eien Zahl gerade ist, kann mit diesem <em>Blockly</em>-Element geprüft werden:</li>
+<li>Ob eine Zahl gerade ist, kann mit diesem <em>Blockly</em>-Element geprüft werden:</li>
 </ul>
 <blockquote class="blockquote">
 <p><img src="img/screenshot-blockly-math-function-is-even-01-DEU.png" class="img-fluid" width="120"></p>
@@ -1215,6 +1173,15 @@ Eingebettete Programmhilfe
 <blockquote class="blockquote">
 <p><img src="img/screenshot-blockly-math-function-misc-01-DEU.png" class="img-fluid" width="150"></p>
 </blockquote>
+<blockquote class="blockquote">
+<p>Hinweis: <code>-</code> erlaubt das Negieren numerischer Werte, wie in folgendem Beispiel zu sehen ist:</p>
+</blockquote>
+<blockquote class="blockquote">
+<p><img src="img/screenshot-blockly-math-function-misc-02-DEU.png" class="img-fluid" width="150"></p>
+</blockquote>
+<blockquote class="blockquote">
+<p>In dem Beispiel zu sehen ist der <em>Tooltip</em> für die in <em>Blockly</em> verfügbare Hilfe und ein Beispiel, wo die Zahl <code>5</code> mit dem <code>-</code>-Operator in die Zahl <code>-5</code> umgewandelt wird. Die äußere Bedingung (Negieren von <code>5</code> ergibt <code>-5</code>) ist also <code>wahr</code>.</p>
+</blockquote>
 <p><strong>Erzeugung von Zufallszahlen</strong>: Für die Erstellung von Zufallszahlen stehen zwei <em>Blocky</em>-Elemente zur Verfügung:</p>
 <ul>
 <li>Ganzzahlen (in Wertebereich):</li>
@@ -1233,7 +1200,7 @@ Eingebettete Programmhilfe
 <p>Hinweise:</p>
 <ul>
 <li><p>Weitere Funktionen lassen sich, wenn benötigt, mit <a href="#anchor-loop-over-list">Schleifen für Listen</a> umsetzen.</p></li>
-<li><p>Bei der Verwendung der Funktionen ist darauf zu achten, dass die ausgewählte Funktion für die Datentypen der List anwendbar ist.</p></li>
+<li><p>Bei der Verwendung der Funktionen ist darauf zu achten, dass die Listenfunktion nur für Listen mit numerischen Datentypen anwendbar sind!</p></li>
 </ul>
 <hr noshade="">
 <div style="display: flex; justify-content: flex-end">
@@ -1244,7 +1211,7 @@ Eingebettete Programmhilfe
 <section id="operatoren-für-text-und-einfache-string-operationen" class="level4">
 <h4 class="anchored" data-anchor-id="operatoren-für-text-und-einfache-string-operationen">Operatoren für Text und einfache String-Operationen</h4>
 <p>Der Abschnitt <em>Text</em> der <em>Palette</em> enthält <em>Blockly</em>-Elemente zur Verwendung Zeichenketten.</p>
-<p><strong>Ausdrücke</strong>: Zum erstellen von Text steht folgender Operator zur Verfügung:</p>
+<p><strong>Ausdrücke</strong>: Zum Erstellen von Text steht folgender Operator zur Verfügung:</p>
 <p><img src="img/screenshot-blockly-text-string-01-ENG.png" class="img-fluid" width="150"></p>
 <p><strong>Verketten</strong>: Verschiedene Operatoren können verwendet werden, um Text zusammenzufügen und zu Variablen zuzuweisen:</p>
 <ul>
@@ -1281,6 +1248,47 @@ Eingebettete Programmhilfe
 <blockquote class="blockquote">
 <p><img src="img/screenshot-blockly-text-substring-operator-example-01-DEU.png" class="img-fluid" width="450"></p>
 </blockquote>
+<table class="table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 67%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Buchstabenfunktion</th>
+<th style="text-align: center;">Parameter N</th>
+<th style="text-align: left;">Bedeutung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">nimm</td>
+<td style="text-align: center;">Ja</td>
+<td style="text-align: left;">Es werden die ersten N Buchstaben zurückgeliefert</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">nimm von hinten</td>
+<td style="text-align: center;">Ja</td>
+<td style="text-align: left;">Es werden die letzten N Buchstaben zurückgeliefert</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">nimm ersten</td>
+<td style="text-align: center;">Nein</td>
+<td style="text-align: left;">Es wird der erste Buchstabe zurückgeliefert (entspricht nimm mit N=1)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">nimm letzten</td>
+<td style="text-align: center;">Nein</td>
+<td style="text-align: left;">Es wird der letzte Buchstabe zurückgeliefert (entspricht nimm von hinten mit N=1)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">nimm zufälligen</td>
+<td style="text-align: center;">Nein</td>
+<td style="text-align: left;">Es wird ein zufälliger Buchstabe zurückgeliefert</td>
+</tr>
+</tbody>
+</table>
 <p>Buchstaben aus einer Zeichenkette kann man auch mit folgendem Operator entnehmen, und bspw. einer Variablen zuweisen:</p>
 <ul>
 <li>Beispiel (hier können bspw. die Zeichen 3 bis 5 aus einer Zeichenkette entnommen werden):</li>
@@ -1294,6 +1302,9 @@ Eingebettete Programmhilfe
 </ul>
 <blockquote class="blockquote">
 <p><img src="img/screenshot-blockly-text-upper-lower-operator-example-01-DEU.png" class="img-fluid" width="300"></p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Die Option <code>Substantive</code> konvertiert die übergebene Zeichenfolge in eine Folge von Worten mit großem Anfangsbuchstaben (außer Zeichenketten, die vollständig in Großbuchstaben geschrieben sind).</p>
 </blockquote>
 <ul>
 <li>Führende, abschließende oder führende und abschließende Leerzeichen können durch folgenden Operator entfernt werden:</li>
@@ -1309,13 +1320,13 @@ Eingebettete Programmhilfe
 </section>
 <section id="operatoren-für-zeiten-und-einfache-zeit-operationen" class="level4">
 <h4 class="anchored" data-anchor-id="operatoren-für-zeiten-und-einfache-zeit-operationen">Operatoren für Zeiten und einfache Zeit-Operationen</h4>
-<p>Der Abschnitt <em>Date &amp; Time</em> der <em>Palette</em> enthält <em>Blockly</em>-Elemente zur Verwendung Zeiten innerhalb von Ablaufdefinitionen.</p>
+<p>Der Abschnitt <em>Date &amp; Time</em> der <em>Palette</em> enthält <em>Blockly</em>-Elemente zur Verwendung von Zeiten innerhalb von Ablaufdefinitionen.</p>
 <p><strong>Festhalten von Zeitpunkten</strong>: Variablen vom <a href="#anchor-variables-datatype"><em>Datentyp</em></a> <em>DateTime</em> können Zeitstempel zugewiesen werden.</p>
 <p><strong>Ermitteln von Zeitdifferenzen</strong>: Vollständiges Beispiel: Folgender <em>Blockly</em>-Code misst die Zeit für die Bearbeitung von Task 1 bis 4. Dafür wird zunächst der Startzeitpunkt fegesthalten, und nach der Bearbeitung der Aufgaben wird die Zeitdifferenz ermittelt und in Sekunden umgewandelt:</p>
 <blockquote class="blockquote">
 <p><img src="img/screenshot-blockly-measure-time-difference-example-DEU.png" class="img-fluid" width="500"></p>
 </blockquote>
-<p><strong>Umrechen von Zeitmaßen</strong></p>
+<p><strong>Umrechnen von Zeitmaßen</strong></p>
 <p><img src="img/screenshot-blockly-time-total-seconds-example-01-ENG.png" class="img-fluid" width="150"></p>
 <hr noshade="">
 <div style="display: flex; justify-content: flex-end">
@@ -1326,26 +1337,29 @@ Eingebettete Programmhilfe
 <section id="operatoren-für-listen" class="level4">
 <h4 class="anchored" data-anchor-id="operatoren-für-listen">Operatoren für Listen</h4>
 <p>Der Abschnitt <em>Lists</em> der <em>Palette</em> enthält <em>Blockly</em>-Elemente zur Erstellung und Verwendung von Listen.</p>
-<p><strong>Liste erstellen</strong>: Es stehen verschiedene Optionen zur Verügung, wie Listen erstellt werden können.</p>
+<p><strong>Liste erstellen</strong>: Es stehen verschiedene Optionen zur Verfügung, wie Listen erstellt werden können.</p>
 <ul>
-<li>Listen können aus besehenden Elementen erstellt werden:</li>
+<li>Listen können aus bestehenden Elementen erstellt werden:</li>
 </ul>
 <blockquote class="blockquote">
 <p><img src="img/screenshot-create-list-block-lds2023-01-example-01-DEU.png" class="img-fluid" width="250"></p>
 </blockquote>
 <blockquote class="blockquote">
-<p>Die Anzahl der Elemente des Operators <em>erzeuge Liste mit</em> kann per Drag-and-Drop konfiguriert werden, nachdem Zahnrad-Symbol angeklickt wurde:</p>
+<p>Die Anzahl der Elemente des Operators <em>erzeuge Liste mit</em> kann per Drag-and-Drop konfiguriert werden, nachdem das <em>Zahnrad</em>-Symbol angeklickt wurde:</p>
 </blockquote>
 <blockquote class="blockquote">
 <p><img src="img/screenshot-configure-list-block-lds2023-01-example-01-DEU.png" class="img-fluid" width="300"></p>
 </blockquote>
+<blockquote class="blockquote">
+<p>Bei der Erstellung von Listen ist darauf zu achten, dass der <em>Blockly</em>-Editor keine Prüfung der Datentype vornimmt. Listen mit Werten unterschiedlicher Datentypen können (fälschlicher Weise) erstellt werden, führen aber zu keinem funktionierenden Testablauf.</p>
+</blockquote>
 <ul>
-<li>Liste können durch Wiederholung eines Elements erstellt werden:</li>
+<li>Listen können durch Wiederholung eines Elements erstellt werden:</li>
 </ul>
 <blockquote class="blockquote">
 <p><img src="img/screenshot-blockly-element-creleate-lists-repeate-01-DEU.png" class="img-fluid" width="250"></p>
 </blockquote>
-<p><strong>Verbinden von Listen</strong>: Bestehende Listen können zusammengeführt werden mit folgenden Operator:</p>
+<p><strong>Verbinden von Listen</strong>: Bestehende Listen können zusammengeführt werden mit folgendem Operator:</p>
 <blockquote class="blockquote">
 <p><img src="img/screenshot-blockly-element-lists-merge-01-DEU.png" class="img-fluid" width="130"></p>
 </blockquote>
@@ -1370,20 +1384,20 @@ Eingebettete Programmhilfe
 <p><img src="img/screenshot-blockly-element-check-list-get-length-01-DEU.png" class="img-fluid" width="100"></p>
 </blockquote>
 <ul>
-<li>Folgender Operator gibt die distinkte Elemente einer Liste zurück</li>
+<li>Folgender Operator gibt die distinkten Elemente einer Liste zurück</li>
 </ul>
 <blockquote class="blockquote">
 <p><img src="img/screenshot-blockly-element-list-get-distinct-elements-01-DEU.png" class="img-fluid" width="150"></p>
 </blockquote>
 <p><strong>Suchen und Ersetzen</strong>: Folgende Operatoren stehen zum Suchen und Ersetzen von Elementen in Listen zur Verfügung:</p>
 <ul>
-<li>Folgender Operator findent Elemente in Listen:</li>
+<li>Folgender Operator findet Elemente in Listen:</li>
 </ul>
 <blockquote class="blockquote">
 <p><img src="img/screenshot-blockly-element-find-in-list-01-DEU.png" class="img-fluid" width="300"></p>
 </blockquote>
 <ul>
-<li>Folgender Operator gibt / entfernt oder ersetzt in einer Liste und gibt das ELement zurück:</li>
+<li>Folgender Operator gibt / entfernt oder ersetzt in einer Liste und gibt das Element zurück:</li>
 </ul>
 <blockquote class="blockquote">
 <p><img src="img/screenshot-blockly-element-replace-in-list-01-DEU.png" class="img-fluid" width="300"></p>
@@ -1392,7 +1406,7 @@ Eingebettete Programmhilfe
 <p>Weitere Optionen des Operators für <em>das</em>: <em>von hinten das</em> / <em>Erste</em> / <em>Letzte</em> und <em>Zufällig</em>.</p>
 </blockquote>
 <ul>
-<li>Folgender Operator ersetzt under fügt in einer Liste ein:</li>
+<li>Folgender Operator ersetzt und fügt in einer Liste ein:</li>
 </ul>
 <blockquote class="blockquote">
 <p><img src="img/screenshot-blockly-element-modify-list-01-DEU.png" class="img-fluid" width="300"></p>
@@ -1479,18 +1493,18 @@ Eingebettete Programmhilfe
 <li><p><em>Dictionary</em>: (Dokumentation fehlt)</p></li>
 <li><p><em>KeyTypedValuePairs</em>: (Dokumentation fehlt)</p></li>
 </ul>
-<p><strong>Variablenwerte Verwenden</strong>: Für die Verwendung von Variablenwerten, können <em>Blockly</em>-Elemente mit <em>Eingängen</em> folgende Komponente aufnehmen:</p>
+<p><strong>Variablenwerte Verwenden</strong>: Für die Verwendung von Variablenwerten, können <em>Blockly</em>-Elemente mit <em>Eingängen</em> folgende Komponenten aufnehmen:</p>
 <blockquote class="blockquote">
 <p><img src="img/screenshot-blockly-variable-example-dropdownlist-01-DEU.png" class="img-fluid" width="300"></p>
 </blockquote>
 <ul>
-<li>Welche Variable verwendet wird, kann dabei ausgewählt werden. Für defnierte Variablen findet sich dafür jeweils auch ein <em>Blockly</em>-Element im Abschnitt <em>Variables</em> der <em>Palette</em>:</li>
+<li>Welche Variable verwendet wird, kann dabei ausgewählt werden. Für definierte Variablen findet sich dafür jeweils auch ein <em>Blockly</em>-Element im Abschnitt <em>Variables</em> der <em>Palette</em>:</li>
 </ul>
 <blockquote class="blockquote">
 <p><img src="img/screenshot-blockly-palette-list-of-variables-01-DEU.png" class="img-fluid" width="400"></p>
 </blockquote>
 <ul>
-<li>In der Palette findet sich auch ein <em>Blockly</em>-Element vom Typ <em>setze … auf</em>. In diesem kann ebenfalls ausgewählt werden, den Wert welcher Variable es setzt:</li>
+<li>In der Palette findet sich auch ein <em>Blockly</em>-Element vom Typ <em>setze … auf</em>. In diesem kann ebenfalls ausgewählt werden, welchen Wert der Variable es setzt:</li>
 </ul>
 <blockquote class="blockquote">
 <p><img src="img/screenshot-blockly-set-list-of-variables-01-DEU.png" class="img-fluid" width="300"></p>
@@ -1530,22 +1544,22 @@ Eingebettete Programmhilfe
 <p><img src="img/screenshot-blockly-function-call-with-return-value-01-DEU.png" class="img-fluid" width="250"></p>
 </blockquote>
 <p>Zu welchem Typ eine Zuweisung sinnvoll ist, hängt von dem Typ des Rückgabewerts ab.</p>
-<p><strong>Definieren von Rückgabewerten von Funktionen</strong>: Funktionen werden durch speziellen <em>Blockly</em>-Elemente definiert, die an einer beliebigen Stelle im Code-Editor eingefügt werden können.</p>
+<p><strong>Definieren von Rückgabewerten von Funktionen</strong>: Funktionen werden durch spezielle <em>Blockly</em>-Elemente definiert, die an einer beliebigen Stelle im Code-Editor eingefügt werden können.</p>
 <ul>
 <li><em>Rückgabewerte</em> können für Funktionen mit Rückgabewert definiert werden. Der Rückgabewert kann direkt an die Funktionsdefinition neben <em>gib zurück</em> angefügt werden:</li>
 </ul>
 <blockquote class="blockquote">
 <p><img src="img/screenshot-blockly-function-definition-with-return-value-string-example-01-DEU.png" class="img-fluid" width="450"></p>
 </blockquote>
-<p>Ergänzend stehen die folgenden zwei <em>Blockly</em>-Elemente zur Verfügung, die nur innerhalb einer Funktiondefintion (mit Rückgabewert) verwendet werden können:</p>
+<p>Ergänzend stehen die folgenden zwei <em>Blockly</em>-Elemente zur Verfügung, die nur innerhalb einer Funktionsdefintion (mit Rückgabewert) verwendet werden können:</p>
 <ul>
-<li>Der Operator <em>gib zurück</em> erlaubt die Rückgabe eines Wertes. Danach können innerhalb der Funktion keine weiteren Blockly-Element in den Ablauf platziert werden (d.h. der <em>gib zurück</em>-Operator hat keine Verbindung nach unten):</li>
+<li>Der Operator <em>gib zurück</em> erlaubt die Rückgabe eines Wertes. Danach können innerhalb der Funktion keine weiteren <em>Blockly</em>-Elemente in den Ablauf platziert werden (d.h. der <em>gib zurück</em>-Operator hat keine Verbindung nach unten):</li>
 </ul>
 <blockquote class="blockquote">
 <p><img src="img/screenshot-blockly-function-return-operator-example-01-DEU.png" class="img-fluid" width="100"></p>
 </blockquote>
 <ul>
-<li>Der Operator <em>falls gib zurück</em> Operator gibt eine Wert nur dann zurück, wenn eine <a href="#anchor-conditions">Bedingungen</a> erfüllt ist. Ist die Bedingung erfüllt, endet die Abarbeitung des Ablaufs in der Funktion, ist die Bedingung nicht erfüllt, wird die Bearbeitung fortgesetzt (d.h. der <em>falls gib zurück</em>-Operator hat eine Verbindung nach unten):</li>
+<li>Der Operator <em>falls gib zurück</em> Operator gibt einen Wert nur dann zurück, wenn eine <a href="#anchor-conditions">Bedingung</a> erfüllt ist. Ist die Bedingung erfüllt, endet die Abarbeitung des Ablaufs in der Funktion, ist die Bedingung nicht erfüllt, wird die Bearbeitung fortgesetzt (d.h. der <em>falls gib zurück</em>-Operator hat eine Verbindung nach unten):</li>
 </ul>
 <blockquote class="blockquote">
 <p><img src="img/screenshot-blockly-function-return-if-operator-example-01-DEU.png" class="img-fluid" width="150"></p>
@@ -1557,13 +1571,13 @@ Eingebettete Programmhilfe
 <p><img src="img/screenshot-blockly-function-return-if-operator-equivalent-example-01-DEU.png" class="img-fluid" width="150"></p>
 </blockquote>
 <ul>
-<li>Beide Operatoren (<em>falls gibt zurück</em> und <em>gib zurück</em>) können nicht außerhalb von Funktionen verwendet werden:</li>
+<li>Beide Operatoren (<em>falls gib zurück</em> und <em>gib zurück</em>) können nicht außerhalb von Funktionen verwendet werden:</li>
 </ul>
 <blockquote class="blockquote">
 <p><img src="img/screenshot-blockly-function-return-operator-outside-functions-example-01-DEU.png" class="img-fluid" width="150"></p>
 </blockquote>
 <ul>
-<li>Die beide Operatoren (<em>falls gibt zurück</em> und <em>gib zurück</em>) können innerhalb von Funktionen ohne Rückgabewert verwendet werden, um die Abarbeitung von Funktionen zu beenden (aber nicht zum Rückgeben von Werten):</li>
+<li>Die beide Operatoren (<em>falls gib zurück</em> und <em>gib zurück</em>) können innerhalb von Funktionen ohne Rückgabewert verwendet werden, um die Abarbeitung von Funktionen zu beenden (aber nicht zum Rückgeben von Werten):</li>
 </ul>
 <blockquote class="blockquote">
 <p><img src="img/screenshot-blockly-function-return-operator-in-functions-without-return-value-example-01-DEU.png" class="img-fluid" width="300"></p>
@@ -1588,11 +1602,11 @@ Eingebettete Programmhilfe
 <blockquote class="blockquote">
 <p><img src="img/screenshot-blockly-function-example-return-list-of-item-01-DEU.png" class="img-fluid" width="450"></p>
 </blockquote>
-<p><strong>Definieren von Aufrufparametern von Funktionen</strong>: Funktionen können auch Parameter verwenden, die beim Aufruf der Funktion zu übergeben sind (<em>Aufrufparametern</em>). Die Defintion von Aufrufparametern ist nach einem Klick auf das kleine Zahnrad-Symbol eines Funktions-Blocks möglich:</p>
+<p><strong>Definieren von Aufrufparametern von Funktionen</strong>: Funktionen können auch Parameter verwenden, die beim Aufruf der Funktion zu übergeben sind (<em>Aufrufparameter</em>). Die Defintion von Aufrufparametern ist nach einem Klick auf das kleine Zahnrad-Symbol eines Funktions-Blocks möglich:</p>
 <p><img src="img/screenshot-blockly-function-parameter-definition-example-DEU.png" class="img-fluid" width="350"></p>
 <p>Passend zur Definition der Parameter, erfolgt dann der Aufruf der Funktion durch Übergabe:</p>
 <ul>
-<li>Definition eines Parameters</li>
+<li>Definition eines Parameters:</li>
 </ul>
 <blockquote class="blockquote">
 <p><img src="img/screenshot-blockly-function-parameter-definition-detail-example-01-DEU.png" class="img-fluid" width="200"></p>
@@ -1605,7 +1619,7 @@ Eingebettete Programmhilfe
 </blockquote>
 <p>Beispiel:</p>
 <ul>
-<li>Das folgende Beispiel zeigt eine Funktion mit zwei Parameter, deren Verwendung innerhalb der Funktion am Beispiel von Bedingungen und den Aufruf der Funktion mit festen Werten:</li>
+<li>Das folgende Beispiel zeigt eine Funktion mit zwei Parametern, deren Verwendung innerhalb der Funktion am Beispiel von Bedingungen und den Aufruf der Funktion mit festen Werten darstellt:</li>
 </ul>
 <blockquote class="blockquote">
 <p><img src="img/screenshot-blockly-function-with-parameters-complete-example-01-DEU.png" class="img-fluid" width="500"></p>
@@ -1624,7 +1638,7 @@ Eingebettete Programmhilfe
 </section>
 <section id="nutzung-von-itemergebnissen-in-der-ablaufsteuerung" class="level4">
 <h4 class="anchored" data-anchor-id="nutzung-von-itemergebnissen-in-der-ablaufsteuerung">Nutzung von Itemergebnissen in der Ablaufsteuerung</h4>
-<p>(Dokumentation)</p>
+<p>(Dokumentation folgt)</p>
 <hr noshade="">
 <div style="display: flex; justify-content: flex-end">
 (<a href="#help-top">nach oben</a>)
@@ -1668,7 +1682,7 @@ Eingebettete Programmhilfe
 <h4 class="anchored" data-anchor-id="ausführliche-kommentare-an-blockly-elementen">Ausführliche Kommentare an <em>Blockly</em>-Elementen</h4>
 <p>Für ausführlichere Kommentare kann über das Kontextmenü jeder Block mit einem Kommentar hinzugefügt (und wenn vorhanden gelöscht) werden:</p>
 <p><img src="img/screenshot-routing-context-menu-comment-example-DEU.png" class="img-fluid" width="200"></p>
-<p>Diese Kommentare können mehrere Zeilen umfassen und werden dargestellt, wenn auf das kleine ?-icon eines Blocks geklickt wurde.</p>
+<p>Diese Kommentare können mehrere Zeilen umfassen und werden dargestellt, wenn auf das kleine ?-Icon eines Blocks geklickt wurde.</p>
 <p><img src="img/screenshot-routing-comment-example-ENG.png" class="img-fluid" width="200"></p>
 <hr noshade="">
 <div style="display: flex; justify-content: flex-end">
@@ -1682,7 +1696,7 @@ Eingebettete Programmhilfe
 <p><a name="anchor-folding"></a></p>
 <section id="entfalten-zusammenfalten" class="level4">
 <h4 class="anchored" data-anchor-id="entfalten-zusammenfalten">Entfalten / Zusammenfalten</h4>
-<p>Große und komplexe Abläufe können im <em>Blockly</em>-Editor unter Umständen unübersichtlich werden. Um für eine Betrachtung nicht benötigte <em>Blockly</em>-Elemente auszublenden, ohne die Funktion des Ablaufdefinition zu veränern, können Blöcke <em>zusammengefaltet</em> werden:</p>
+<p>Große und komplexe Abläufe können im <em>Blockly</em>-Editor unter Umständen unübersichtlich werden. Um für eine Betrachtung nicht benötigte <em>Blockly</em>-Elemente auszublenden, ohne die Funktion der Ablaufdefinition zu verändern, können Blöcke <em>zusammengefaltet</em> werden:</p>
 <p>Das wird in folgendem Beispiel illustriert:</p>
 <ul>
 <li>Entfaltete (d.h. vollständige) Darstellung des markierten Blocks:</li>
@@ -1713,13 +1727,14 @@ Eingebettete Programmhilfe
 </section>
 <section id="deaktivieren-aktivieren" class="level4">
 <h4 class="anchored" data-anchor-id="deaktivieren-aktivieren">Deaktivieren / Aktivieren</h4>
-<p>Der <em>Blockly</em>-Editer bietet die Option, <em>Blockly</em>-Element statt sie zu <a href="#anchor-delete">Löschen</a> nur zu deaktivieren. Deaktivierte <em>Blockly</em>-Elemente bleiben in der Ablaufdefinition enthalten, werden aber nicht ausgeführt.</p>
+<p>Hinweis: Diese Funktion ist gerade noch in Entwicklung.</p>
+<p>Der <em>Blockly</em>-Editor bietet die Option, <em>Blockly</em>-Elemente, statt sie zu <a href="#anchor-delete">löschen</a>, nur zu deaktivieren. Deaktivierte <em>Blockly</em>-Elemente bleiben in der Ablaufdefinition enthalten, werden aber nicht ausgeführt.</p>
 <p>In folgendem Beispiel ist der Block zum <a href="#anchor-show-item">Anzeigen</a> des Tasks 3 deaktiviert, d.h. es werden nur Task 1, 2 und 4 angezeigt:</p>
 <p><img src="img/screenshot-blockly-example-deactivated-blocks-01-ENG.png" class="img-fluid" width="250"></p>
 <p>Aktivieren bzw. Deaktivieren von <em>Blockly</em>-Elementen erfolgt über das <a href="#anchor-context-menu">Kontextmenü</a>:</p>
 <p><img src="img/screenshot-blockly-example-activate-deactivated-blocks-01-ENG.png" class="img-fluid" width="250"></p>
 <p><a name="anchor-internal-external"></a></p>
-<p><strong>Internal / External</strong>: Einige <em>Blockly</em>-Elemente mit <em>Eingängen</em> (d.h. Stellen, an denen man weitere Blöcke verbinde kann) erlauben zwischen zwei Darstellungsformen zu wechseln.</p>
+<p><strong>Internal / External</strong>: Einige <em>Blockly</em>-Elemente mit <em>Eingängen</em> (d.h. Stellen, an denen man weitere Blöcke verbinden kann) erlauben zwischen zwei Darstellungsformen zu wechseln.</p>
 <ul>
 <li>Internal: Die <em>Eingänge</em> sind innerhalb der Blöcke angeordnet.</li>
 </ul>
@@ -1769,7 +1784,7 @@ Eingebettete Programmhilfe
 <h3 class="anchored" data-anchor-id="zusammenfassung-zu-routing-zwischen-erhebungsteilen">Zusammenfassung zu Routing zwischen Erhebungsteilen</h3>
 <p>Die Reihenfolge von <em>Erhebungsteilen</em> kann mit Hilfe von <em>Blockly</em> definiert werden (analog zur Definition der Reihenfolge von <em>Items</em> innerhalb von <em>Erhebungsteilen</em>). Diese Option ist verfügbar, wenn in der Grundkonfiguration zu einer Studie (in der Ansicht <em>Übersicht</em>) die Option <em>Routing für Erhebungsteile aktivieren</em> gewählt ist.</p>
 <p>Für die allgemeinen Grundlagen zur Verwendung von <em>Blockly</em> im <em>IRTlib Editor</em> siehe die Hilfe zum <em>Routing innerhalb von Erhebungsteilen</em>.</p>
-<p>Funktionen die nur im <em>Routing zwischen Erhebungsteilen</em> zur Verfügung stehen sind:</p>
+<p>Funktionen, die nur im <em>Routing zwischen Erhebungsteilen</em> zur Verfügung stehen, sind:</p>
 <ul>
 <li>Erhebungsteil Anzeigen</li>
 </ul>
@@ -1777,7 +1792,7 @@ Eingebettete Programmhilfe
 <p><img src="img/screenshot-blockly-request-study-part-01-DEU.png" class="img-fluid" width="200"></p>
 </blockquote>
 <blockquote class="blockquote">
-<p>Dieser <em>Blockly</em>-Operator ersetzt das <em>Show Item</em> innerhalb von Erhebungsteilen.</p>
+<p>Dieser <em>Blockly</em>-Operator ersetzt <em>Show Item</em> innerhalb von Erhebungsteilen.</p>
 </blockquote>
 <ul>
 <li>Erfolgreiches Login</li>
@@ -1786,9 +1801,9 @@ Eingebettete Programmhilfe
 <p><img src="img/screenshot-blockly-check-login-infinite-study-part-01-DEU.png" class="img-fluid" width="200"></p>
 </blockquote>
 <blockquote class="blockquote">
-<p>Dieser <em>Blockly</em>-Operator hat den Wert <em>wahr</em>, wenn vor der Anzahl der maximalen Versuche (hier: unendlich, d.h. unbegrenzt hoft) gültige Login-Informationen angegeben wurden.</p>
+<p>Dieser <em>Blockly</em>-Operator hat den Wert <em>wahr</em>, wenn vor der Anzahl der maximalen Versuche (hier: unendlich, d.h. unbegrenzt oft) gültige Login-Informationen angegeben wurden.</p>
 </blockquote>
-<p>Hinweis: Änderungen an der Sicht <em>Routing</em> zwischen <em>Erhebungsteilen</em> müssen über das Disketten-Symbol gespeichert oder mit dem Rückgängig-Symbol verwerfen werden:</p>
+<p>Hinweis: Änderungen an der Sicht <em>Routing</em> zwischen <em>Erhebungsteilen</em> müssen über das Disketten-Symbol gespeichert oder mit dem Rückgängig-Symbol verworfen werden:</p>
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
 <p><img src="img/screenshot-icons-undo-and-save-01.png" class="img-fluid figure-img" width="120"></p>
