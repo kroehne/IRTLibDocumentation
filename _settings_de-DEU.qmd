@@ -8,7 +8,7 @@ Die *IRTlib Software* wird kontinuierlich weiterentwickelt. Informationen über 
 {{< include InlineHelp_View_Settings_Main_de-DEU.qmd >}}
 ::: 
 
-Wenn eine  *Preview*-Versionen verwendet wird (d.h. eine Version der *IRTlib Software* die Änderungen enthält die seit dem letzten *Release* gemacht wurden, dann können die Programmversionen über den Build-Hash identifiziert werden:
+Wenn eine  *Preview*-Version verwendet wird (d.h. eine Version der *IRTlib Software* die Änderungen enthält die seit dem letzten *Release* gemacht wurden, dann können die Programmversionen über den Build-Hash identifiziert werden:
  
 
 ![Beispiel aus Dialog *Über das Programm* mit dem Build-Hash `b1cd92b0`](img/sreenshot-irtlib-editor-build-hash-example-01.png){width="450" fig-align="left" }

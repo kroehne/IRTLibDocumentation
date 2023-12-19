@@ -224,10 +224,10 @@ Das *Blockly*-Element *Start timer with name* erlaubt die Definition von Zeitbeg
 
 ![](img/screenshot-timer-component-time-level-example-ENG.png){width="200"}
 
--   Realtime:  
--   Servertime: 
--   Sessiontime:
--   Clienttime:
+-   Realtime: Der Timer läuft in Echtzeit. Wird nicht durch Downtimes des Servers oder einen Sessionneustart beeinflusst. 
+-   Servertime: Der Timer läuft in Serverzeit. Wird nicht durch einen Sessionneustart beeinflusst, berücksichtigt aber keine Downtime des Servers.
+-   Sessiontime: Der Timer läuft innerhalb einer Session. Wird bei einer Unterbrechung durch Server-Downtime oder einen Session-Neustart unterbrochen.
+-   Clienttime: Der Timer läuft nur in Clientzeit und wird auch bei Pausen der Session unterbrochen.
 
 Schließlich können zwei Stellen mit weiteren *Blockly*-Operatoren (wie bspw. ein oder mehrere <a href="#anchor-show-item">*Show Item*</a>-Blöcke zum Anzeigen einzelner Items oder ein oder mehrere <a href="#anchor-show-items">*Show Items*</a>-Blöcke zum Anzeigen von Listen) gefüllt werden:
 
@@ -345,26 +345,16 @@ Aus technischen Gründen kann es auch notwendig sein zu prüfen, ob eine Variabl
 
 > Durch das Hinzufügen eines Abschnitts *sonst* können Blöcke hinzugefügt werden, welche dann ausgeführt werden, wenn keine der Bedingungen erfüllt ist.
 
-**Spezialfall: *prüfe*-Operator für drei Bedingungen**: Für drei Bedingungen stellt der *Blockly*-Editor eine speziellen Operator *prüfe-falls wahr-falls falsch* zur Verfügung:
+**Prüfe-Operator**: Für Wertzuweisungen in Abhängigkeit von einer Bedingung stellt der *Blockly*-Editor eine speziellen Operator *prüfe-falls wahr-falls falsch* zur Verfügung:
 
 > ![](img/screenshot-blockly-element-if-iftrue-iffalse-01-DEU.png){width="100"}
 
-> Der Operator kombiniert zwei logische Ausdrücke, z.B.:
+> Der Operator kombiniert eine Wertzuweisung mit einem logische Ausdruck:
 
 > ![](img/screenshot-blockly-element-if-iftrue-iffalse-example-01-DEU.png){width="400"}
 
-> Das Konstrukt ist eine Kurzform für folgende Prüfung, wie sie in folgender Tabelle dargestellt ist:
+> In diesem Beispiel wird der String-Variablen `MyStringVariable` der Wert `Yes` zugewiesen, falls die boolsche Variable `MyBooleanVariable` den Wert `wahr` hat. Wenn `MyBooleanVariable` den Wert `falsch` hat, wird  `MyStringVariable` der Wert `No` zugewiesen.
 
-| MyNumberVariable | MyStringVariable | MyBooleanVariable | Ergebnis |
-|------------------|------------------|-------------------|----------|
-| $= 42$           | $=$ Example      | (any)             | true     |
-| $= 42$           | $\neq$ Example   | (any)             | false    |
-| $\neq 42$        | (any)            | true              | true     |
-| $\neq 42$        | (any)            | false             | false    |
-
-> Ohne den Operator für drei Bedingungen könnte die gleiche Prüfung mit folgender Kombination umgesetzt werden:
-
-> ![](img/screenshot-blockly-element-if-iftrue-iffalse-example-02-DEU.png){width="550"}
 
 **Negation**: Um einen logischen Ausdruck umzukehren (Negation) steht folgender *Blockly*-Operator zur Verfügung:
 
@@ -461,6 +451,12 @@ Der Abschnitt *Math* der *Palette* enthält *Blockly*-Elemente zur Verwendung vo
 
 > ![](img/screenshot-blockly-math-function-misc-01-DEU.png){width="150"}
 
+> Hinweis: `-` erlaubt das Negieren numerischer Werte, wie in folgendem Beispiel zu sehen ist: 
+
+> ![](img/screenshot-blockly-math-function-misc-02-DEU.png){width="150"}
+
+> In dem Beispiel zu sehen ist der *Tooltip* für die in *Blockly* verfügbare Hilfe und ein Beispiel, wo die Zahl `5` mit dem `-`-Operator in die Zahl `-5` umgewandelt wird. Die äußere Bedingung (Negieren von `5` ergibt `-5`) ist also `wahr`. 
+
 **Erzeugung von Zufallszahlen**: Für die Erstellung von Zufallszahlen stehen zwei *Blocky*-Elemente zur Verfügung:
 
 * Ganzzahlen (in Wertebereich):
@@ -479,7 +475,7 @@ Hinweise:
 
 * Weitere Funktionen lassen sich, wenn benötigt, mit <a href="#anchor-loop-over-list">Schleifen für Listen</a> umsetzen.
 
-* Bei der Verwendung der Funktionen ist darauf zu achten, dass die ausgewählte Funktion für die Datentypen der Liste anwendbar ist.
+* Bei der Verwendung der Funktionen ist darauf zu achten, dass die Listenfunktion nur für Listen mit numerischen Datentypen anwendbar sind!
 
 ::: {.content-visible when-format="html"}
 <hr noshade/>
@@ -533,6 +529,14 @@ Zurückgegben wird dabei die Position des *Begriffs* innerhalb der Zeichenkette 
 * Beispiel (hier wird, wenn die Option *nimm ersten* ausgewählt ist der Variable `MyStringVariable` der Text `ABC`, d.h. die ersten drei Buchstaben der Zeichenkette `ABCDEFG`) zugewiesen:
 
 > ![](img/screenshot-blockly-text-substring-operator-example-01-DEU.png){width="450"}
+ 
+| Buchstabenfunktion | Parameter N | Bedeutung |
+|:---:|:---:|:--------------------|
+| nimm | Ja | Es werden die ersten N Buchstaben zurückgeliefert |
+| nimm von hinten | Ja | Es werden die letzten N Buchstaben zurückgeliefert |
+| nimm ersten | Nein | Es wird der erste Buchstabe zurückgeliefert (entspricht nimm mit N=1) |
+| nimm letzten | Nein | Es wird der letzte Buchstabe zurückgeliefert (entspricht nimm von hinten mit N=1) |
+| nimm zufälligen | Nein | Es wird ein zufälliger Buchstabe zurückgeliefert |
 
 Buchstaben aus einer Zeichenkette kann man auch mit folgendem Operator entnehmen, und bspw. einer Variablen zuweisen:
 
@@ -545,6 +549,8 @@ Buchstaben aus einer Zeichenkette kann man auch mit folgendem Operator entnehmen
 * Folgender Operator kann verwendet werden, um Text in Grossbuchstaben oder in Kleinbuchstaben umzuwandeln:
 
 > ![](img/screenshot-blockly-text-upper-lower-operator-example-01-DEU.png){width="300"}
+
+> Die Option `Substantive` konvertiert die übergebene Zeichenfolge in eine Folge von Worten mit großem Anfangsbuchstaben (außer Zeichenketten, die vollständig in Großbuchstaben geschrieben sind).
 
 * Führende, abschließende oder führende und abschließende Leerzeichen können durch folgenden Operator entfernt werden:
 
@@ -592,6 +598,8 @@ Der Abschnitt *Lists* der *Palette* enthält *Blockly*-Elemente zur Erstellung u
 > Die Anzahl der Elemente des Operators *erzeuge Liste mit* kann per Drag-and-Drop konfiguriert werden, nachdem das *Zahnrad*-Symbol angeklickt wurde:
 
 > ![](img/screenshot-configure-list-block-lds2023-01-example-01-DEU.png){width="300"}
+
+> Bei der Erstellung von Listen ist darauf zu achten, dass der *Blockly*-Editor keine Prüfung der Datentype vornimmt. Listen mit Werten unterschiedlicher Datentypen können (fälschlicher Weise) erstellt werden, führen aber zu keinem funktionierenden Testablauf.  
 
 * Listen können durch Wiederholung eines Elements erstellt werden:
 
@@ -831,7 +839,7 @@ Beispiel:
 
 #### Nutzung von Itemergebnissen in der Ablaufsteuerung
 
-(Dokumentation)
+(Dokumentation folgt)
 
 ::: {.content-visible when-format="html"}
 <hr noshade/>
@@ -932,6 +940,8 @@ Das *zusammenfalten* / *entfalten* von *Blockly*-Elementen ändert nichts an der
 <a name="anchor-deactivating"></a>
 
 #### Deaktivieren / Aktivieren
+
+Hinweis: Diese Funktion ist gerade noch in Entwicklung.
 
 Der *Blockly*-Editor bietet die Option, *Blockly*-Elemente, statt sie zu <a href="#anchor-delete">löschen</a>, nur zu deaktivieren. Deaktivierte *Blockly*-Elemente bleiben in der Ablaufdefinition enthalten, werden aber nicht ausgeführt.
 

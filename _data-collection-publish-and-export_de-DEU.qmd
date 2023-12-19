@@ -6,13 +6,13 @@ Das geschieht in der Ansicht *Veröffentlichen* einer Studie, in welcher die *St
 
 ![](img/sreenshot-irtlib-editor-showing-unpublished-version-DEU-01.png){width="100%"}
 
-In diesem Zustand könenn Sie Änderungen an den Einstellung der *Studie* und aller enthaltenen *Erhebungsteile* vornehmen. 
+In diesem Zustand können Sie Änderungen an der Einstellung der *Studie* und aller enthaltenen *Erhebungsteile* vornehmen. 
 
 Die Schaltflächen zum *Validieren*, *Herunterladen* und *Veröffentlichen* von Studien sind ausgegraut, weil keine Revision markiert ist. Durch Klick auf die Zeile mit der noch nicht veröffentlichten *Revision 1* sind die Schaltflächen aktivierbar:
 
 ![](img/sreenshot-irtlib-editor-showing-unpublished-version-DEU-02.png){width="100%"}
 
-Bevor Sie nun fortfahren, prüfen Sie bitte ob Sie an alles gedacht haben. Dafür dient die folgende *Checkliste*.
+Bevor Sie nun fortfahren, prüfen Sie bitte, ob Sie an alles gedacht haben. Dafür dient die folgende *Checkliste*.
 
 
 ## Checkliste vor dem Veröffentlichen
@@ -27,13 +27,13 @@ Bevor Sie nun fortfahren, prüfen Sie bitte ob Sie an alles gedacht haben. Dafü
 
 * Sind die *Items* eingefügt? 
 
-> Die Assessmentinhalte werden in einem oder mehreren [*Erhebunsteilen*](preparation-parts.qmd)  konfiguriert. Die meisten *CBA ItemBuilder*-*Tasks* werden sich im Abschnitt *Items* eines *Erhebungsteils* befinden.
+> Die Assessmentinhalte werden in einem oder mehreren [*Erhebungsteilen*](preparation-parts.qmd)  konfiguriert. Die meisten *CBA ItemBuilder*-*Tasks* werden sich im Abschnitt *Items* eines *Erhebungsteils* befinden.
 
 * Sind die Laufzeitumgebungen (*Runtimes*) vorhanden? 
 
 > Die Konfiguration von *Runtimes* erfolgt in den [Einstellungen](settings.qmd).
 
-Wenn Sie diese Checkliste geprüft haben können Sie mit fortsetzen wie im nächsten Abschnitt beschrieben. 
+Wenn Sie diese Checkliste geprüft haben, können Sie fortsetzen, wie im nächsten Abschnitt beschrieben. 
 
 ## Veröffentlichen & Exportieren
 

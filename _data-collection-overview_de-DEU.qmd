@@ -6,10 +6,10 @@ Nachdem eine *Studie* mit dem *IRTlib Editor* angelegt und konfiguriert wurde, m
 
 * **Versiegelte Version Erstellen**: Wenn keine weiteren Änderungen erforderlich sind, kann die Version *versiegelt* werden. Dies geschieht durch das Auswählen der noch nicht gespeicherten Änderungen und einen Klick auf das Schloss-Symbol im *IRTlib Editor* in der Ansicht *Veröffentlichen*, in welcher die *Studienrevisionen* angezeigt werden. . 
 
-* **Version Exportieren**: Versionen von Studien, die im *IRTlib-Editor* verfügbar sind, können exportiert werden. Der Export der Konfiguraiton ist notwendig, bevor diese mit dem *IRTlib-Player* verwendet werden können. Beim Exportieren wird die vollständige Studienkonfiguration inklusive der importierten *CBA ItemBuilder*-Inhalte als ZIP-Archiv heruntergeladen. 
+* **Version Exportieren**: Versionen von Studien, die im *IRTlib-Editor* verfügbar sind, können exportiert werden. Der Export der Konfiguration ist notwendig, bevor diese mit dem *IRTlib-Player* verwendet werden können. Beim Exportieren wird die vollständige Studienkonfiguration inklusive der importierten *CBA ItemBuilder*-Inhalte als ZIP-Archiv heruntergeladen. 
 
-* **Studie in *IRTlib Player* Importieren**: Exportierte Versionen von Studien aus dem *IRTlib-Editor* können zur Verwendung in einen *IRTlib-Player* importiert werden. Für einzelne *Studien* gibt es einen automatische Modus, wenn mehrere *Studien* in einem *IRTlib Player* simultan verwendet werden sollen, kann diese manuell erfolgen.  
+* **Studie in *IRTlib Player* Importieren**: Exportierte Versionen von Studien aus dem *IRTlib-Editor* können zur Verwendung in einen *IRTlib-Player* importiert werden. Für einzelne *Studien* gibt es einen automatischen Modus, wenn mehrere *Studien* in einem *IRTlib Player* simultan verwendet werden sollen, kann diese manuell erfolgen.  
 
-* **Testen der Studie**: Bevor mit der eigentlichen Datenerfassung begonnen wird kann, sollte jede Konfiguration zunächst mit synthetischen Testfällen (d.h. systematisch) gestetet werden. 
+* **Testen der Studie**: Bevor mit der eigentlichen Datenerfassung begonnen werden kann, sollte jede Konfiguration zunächst mit synthetischen Testfällen (d.h. systematisch) getestet werden. 
 
 Falls in einer exportierten Studie noch Probleme festgestellt werden, ist es möglich, zur Vorbereitung (siehe [Vorbereitung von Studien](preparation-studies.qmd) und [Vorbereitung von Erhebungsteilen](preparation-parts.qmd)) zurückzukehren, die Studiendefinition und die Konfiguration der Testteile zu ändern, eine weitere versiegelte Version zu erstellen und mit der geänderten Konfiguration fortzufahren.

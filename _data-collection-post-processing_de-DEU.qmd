@@ -2,7 +2,7 @@
 
 Daten werden vom *IRTlib Player* in *Rohdatenarchiven* pro *Session* (d.h. pro Testdurchführung mit einer *Studie*) gespeichert. Die *Rohdatenarchive* sind ZIP-Archive, deren Dateinamen dem *Benutzernamen* oder dem *Universally Unique Identifier* (UUID) entsprechen. Abweichungen von diesem Schema sind möglich, wenn zum Zeitpunkt der Speicherung bereits ein *Rohdatenarchiv* mit diesem Dateinamen vorhanden war. In diesem Fall werden die Daten vim *IRTlib Player* nicht überschrieben, sondern es wird ein Suffix `_1`, `_2`, ... angehängt, bis der Dateiname verwendbar ist. 
 
-* **Offline *IRTlib Player***: Wenn nicht anders konfiguriert werden die Ergebnisdaten im Verzeichnis `Temp/{Studien-Name}/Results` gespeichert. Die *Rohdatenarchive* werden erstellt, wenn eine *Session* beendet, d.h. die letzte definierte *CBA ItemBuilder*-*Task* mit `NEXT_TASK` verlassen wird. Erst wenn die *Rohdatenarchive* erstellt wurden, ist ein *Fortsetzen* der angefangenen *Session*, wie es beispielsweise bei einem Computerabsturz notwendig sein kann, nicht mehr möglich.
+* **Offline *IRTlib Player***: Wenn nicht anders konfiguriert wurde, werden die Ergebnisdaten im Verzeichnis `Temp/{Studien-Name}/Results` gespeichert. Die *Rohdatenarchive* werden erstellt, wenn eine *Session* beendet, d.h. die letzte definierte *CBA ItemBuilder*-*Task* mit `NEXT_TASK` verlassen wird. Erst wenn die *Rohdatenarchive* erstellt wurden, ist ein *Fortsetzen* der angefangenen *Session*, wie es beispielsweise bei einem Computerabsturz notwendig sein kann, nicht mehr möglich.
 
 > Analog verhält es sich auch, wenn die Offline-Version des *IRTlib Player* als lokaler Server eingesetzt wird. Die *Rohdatenarchive* werden nach der Testbearbeitung im Verzeichnis  `Temp/{Studien-Name}/Results` gespeichert.
 
@@ -12,7 +12,7 @@ Daten werden vom *IRTlib Player* in *Rohdatenarchiven* pro *Session* (d.h. pro T
 Da die Offline *IRTlib Player* untereinander nicht in Verbindung stehen, können - je nach *Loginmodus* - identische Anmeldedaten in verschiedenen *IRTlib Playern* parallel erstellt werden. Nach einer Datenerhebung müssen die *Rohdatenarchive* deshalb mit Sorgfalt zusammengefügt und ggf. durch Unterordner getrennt werden. 
 :::
 
-* **Online *IRTlib Player***: Der Online-Player sammelt die Daten, wenn nicht anders konfiguriert, in dem *Volume* welches für die Ergebnisdaten konfiguriert ist (vgl. `/app/results` in [`docker-compse.yml`-File](https://github.com/DIPFtba/IRTlibDeploymentSoftware/blob/main/docker/docker-compose.yml)). Jede *Session* wird dort in einem separaten Unterverzeichnis gespeichert und kann, von Administratoren die Zugriff auf das *Volume* haben (!), heruntergeladen werden. 
+* **Online *IRTlib Player***: Der Online-Player sammelt die Daten, wenn nicht anders konfiguriert, in dem *Volume*, welches für die Ergebnisdaten konfiguriert ist (vgl. `/app/results` in [`docker-compse.yml`-File](https://github.com/DIPFtba/IRTlibDeploymentSoftware/blob/main/docker/docker-compose.yml)). Jede *Session* wird dort in einem separaten Unterverzeichnis gespeichert und kann von Administratoren, die Zugriff auf das *Volume* haben (!), heruntergeladen werden. 
 
 Wenn ein *API*-key für den Datenzugriff definiert ist, kann der *Download* der Ergebnisdaten auch über das R-Paket [LogFSM](http://logfsm.com) erfolgen. 
 
@@ -62,11 +62,11 @@ results <- read.csv(unz(paste0(getwd(),"/out/data_csv.zip"), "Results.csv"),
 
 :::
 
-Mit dem Aufruf der Funktion `TransformToUniversalLogFormat` aus dem Paket `LogFSM` werden die Daten heruntergeladen und in das spezifzierte Verzeichnis `infolders` aggelegt, wenn ein API-Key (`key`) und eine API-Url (`web`) übergeben werden. 
+Mit dem Aufruf der Funktion `TransformToUniversalLogFormat` aus dem Paket `LogFSM` werden die Daten heruntergeladen und in das spezifizierte Verzeichnis `infolders` abgelegt, wenn ein API-Key (`key`) und eine API-Url (`web`) übergeben werden. 
 
 ::: {.callout-note title="Hinweis zur `SECRET_KEY` und `API_URL`" collapse="true"}
 
-Der Wert für `SECRET_KEY` mus dem Eintrag entsprechen, der bei der Konfiguration des *Docker*-Images in der `appsettings.json` als `ExternalExportKey` definiert wurde, siehe Abschnitt [Online-Version (Docker)](data-collection-player-integration.qmd#online-version-docker). 
+Der Wert für `SECRET_KEY` muss dem Eintrag entsprechen, der bei der Konfiguration des *Docker*-Images in der `appsettings.json` als `ExternalExportKey` definiert wurde, siehe Abschnitt [Online-Version (Docker)](data-collection-player-integration.qmd#online-version-docker). 
 
 Der Wert für die `API_URL` bildet sich nach folgendem Schema: `https://{U}/{S}/api/session/`
 
@@ -75,7 +75,7 @@ Der Wert für die `API_URL` bildet sich nach folgendem Schema: `https://{U}/{S}/
 
 :::
 
-Die Funktion `TransformToUniversalLogFormat` aus dem Paket `LogFSM` (oder analog das im folgenden beschriebene *Kommandozeilenwerkzeug*) können auch verwendet werden, um bereits lokal vorhandene Rohdatenarchive auszulesen. 
+Die Funktion `TransformToUniversalLogFormat` aus dem Paket `LogFSM` (oder analog dem im Folgenden beschriebenen *Kommandozeilenwerkzeug*) können auch verwendet werden, um bereits lokal vorhandene Rohdatenarchive auszulesen. 
 
 ### Datenabruf über die Kommandozeile
 
@@ -97,7 +97,7 @@ Eine zertifizierte Version von  `TransformToUniversalLogFormat` für Apple ist i
 
 Wenn die Daten über `LogFSM` von einem Online *IRTlib Player* abgerufen oder Offline eingesammelt wurden, liegen sie am Ende in einem Verzeichnis vor. Je *Session* (d.h. je Person oder Person x Zeitpunkt) als *Rohdaten*-Archiv. 
 
-Die Funktion `TransformToUniversalLogFormat` in `LogFSM` oder über die Kommando-Zeile kann auch verwendet werden, um die *Rohdatenarchive* aus einem Verzeichnis auszulesen und die Ergebnisdaten zu Extrahieren:
+Die Funktion `TransformToUniversalLogFormat` in `LogFSM` oder über die Kommando-Zeile kann auch verwendet werden, um die *Rohdatenarchive* aus einem Verzeichnis auszulesen und die Ergebnisdaten zu extrahieren:
 
 ::: {#logfsm-convert-only}
 
@@ -127,9 +127,9 @@ results <- read.csv(unz(paste0(getwd(),"/out/data_csv.zip"), "Results.csv"),
 
 Die Konvertierung der Daten mit `TransformToUniversalLogFormat` in `LogFSM` oder über die Kommando-Zeile wandelt die erhobenen Log-Daten, welche von den *CBA ItemBuilder*-*Tasks* bereitgestellt werden, in folgende Formate um:
 
-* *Flat and Sparse Log-Data Table*: Eine große Tabelle (als CSV, Stata, SPSS) mit einer Zeile je Event. Da die event-spezifische Attribute (d.h. die unterschiedlichen zusätzlichen Informationen die von einem Event vorhanden sind) sich auf viele Spalten verteilen, die aber jeweils nur je *Event-Typ* gefüllt sind, ist diese Tabelle zwar *flach*, aber ggf. auch sehr *löchrig*. 
+* *Flat and Sparse Log-Data Table*: Eine große Tabelle (als CSV, Stata, SPSS) mit einer Zeile je Event. Da die eventspezifischen Attribute (d.h. die unterschiedlichen zusätzlichen Informationen, die von einem Event vorhanden sind) sich auf viele Spalten verteilen, die aber jeweils nur je *Event-Typ* gefüllt sind, ist diese Tabelle zwar *flach*, aber ggf. auch sehr *löchrig*. 
 
-* *Universal Log-Format*: Alternativ enthalten die von `LogFSM` bzw. dem Komandozeilen-Werkzeug `TransformToUniversalLogFormat` erstellten ZIP-Archive auch einzelne Datensatz-Tabellen je *Evenet-Typ*. Die event-spezifischen Attribute in diesen Tabellen sind weniger *löchrig* (d.h. sie enthalten nur fehlende Werte für optionale Attribute) und können zu einer *Flat and Sparse Log-Data Table* kombiniert werden, wenn erforderlich.
+* *Universal Log-Format*: Alternativ enthalten die von `LogFSM` bzw. dem Kommandozeilen-Werkzeug `TransformToUniversalLogFormat` erstellten ZIP-Archive auch einzelne Datensatz-Tabellen je *Event-Typ*. Die eventspezifischen Attribute in diesen Tabellen sind weniger *löchrig* (d.h. sie enthalten nur fehlende Werte für optionale Attribute) und können zu einer *Flat and Sparse Log-Data Table* kombiniert werden, wenn erforderlich.
 
 * *XES (eXtensible Event Stream)*: Die Log-Daten können auch in dem standardisierten `XML`-Format ([https://xes-standard.org/](https://xes-standard.org/)) umgewandelt werden. 
 
@@ -145,9 +145,9 @@ Die *Rohdatenarchive* enthalten folgende Dateien:
 
 * `Trace.json`: Log-Daten (*Traces*) wie von der *CBA ItemBuilder*-*Runtime* geliefert, zusammen mit dem Kontext aus dem *IRTlib Player*. 
 
-> Die Datei enthält folgende Struktur, mit Komma getrennt. Die Datei ist kein gültiges JSON, bis nicht das letzte Komma entfernt und ein `[` vor und ein `]` nach dem inhalt eingefügt wird. 
+> Die Datei enthält folgende Struktur, mit Komma getrennt. Die Datei ist kein gültiges JSON, bis nicht das letzte Komma entfernt und ein `[` vor und ein `]` nach dem Inhalt eingefügt wird. 
 
-> Der Eintrag `Trace` enthält die Log-Daten (*Traces*) in Päkchen (wie von der *CBA ItemBuilder*-*Runtime* geliefert) quotiert (d.h. `"` wird als `\u0022` dargestellt). Die `TraceId` ist ein Zähler, welcher die Übermittelten Päkchen durchzählt. `Timestamp` ist der Zeitstempel der Übermittlung. `SessionId` der Benutzername oder die UUID (*PersonIdentifier*). Der `Context` gibt über Name des *CBA ItemBuilder*-Projekts, *Task* und *Scope* eine Referenz zum Assessmentinhalt (*Element*). Unter `Assemblies` sind die Informationen zum verwendeten *IRTlib Player* gespeichert und `StudyRevision` verweist auf die *Revision* einer (veröffentlichten) *Studie*.
+> Der Eintrag `Trace` enthält die Log-Daten (*Traces*) in Päckchen (wie von der *CBA ItemBuilder*-*Runtime* geliefert) quotiert (d.h. `"` wird als `\u0022` dargestellt). Die `TraceId` ist ein Zähler, welcher die übermittelten Päckchen durchzählt. `Timestamp` ist der Zeitstempel der Übermittlung. `SessionId` der Benutzername oder die UUID (*PersonIdentifier*). Der `Context` gibt über den Namen des *CBA ItemBuilder*-Projekts, *Task* und *Scope* eine Referenz zum Assessmentinhalt (*Element*). Unter `Assemblies` sind die Informationen zum verwendeten *IRTlib Player* gespeichert und `StudyRevision` verweist auf die *Revision* einer (veröffentlichten) *Studie*.
 
 ````
 {
@@ -174,7 +174,7 @@ Die *Rohdatenarchive* enthalten folgende Dateien:
 
 * `Snapshot.json`: Snapshot-Daten wie von der *CBA ItemBuilder*-*Runtime* geliefert, zusammen mit dem Kontext aus dem *IRTlib Player*. 
 
-> Die Datei enthält folgende Struktur, mit Komma getrennt. Die Datei ist kein gültiges JSON, bis nicht das letzte Komma entfernt und ein `[` vor und ein `]` nach dem inhalt eingefügt wird. 
+> Die Datei enthält folgende Struktur, mit Komma getrennt. Die Datei ist kein gültiges JSON, bis nicht das letzte Komma entfernt und ein `[` vor und ein `]` nach dem Inhalt eingefügt wird. 
 
 > Der Eintrag `Snapshot` enthält die Snapshot-Informationen (wie von der *CBA ItemBuilder*-*Runtime* geliefert) quotiert (d.h. `"` wird als `\u0022` dargestellt). Der `ContextFlag` gibt an, wie der *CBA ItemBuilder*-*Task* verlassen wurde (NextTask, PreviousTask oder Cancel). Der `ContextScope` ist (TODO). `Timestamp` ist der Zeitstempel der Übermittlung. `SessionId` der Benutzername oder die UUID (*PersonIdentifier*). Der `Context` gibt über Name des *CBA ItemBuilder*-Projekts, *Task* und *Scope* eine Referenz zum Assessmentinhalt (*Element*). Unter `Assemblies` sind die Informationen zum verwendeten *IRTlib Player* gespeichert und `StudyRevision` verweist auf die *Revision* einer (veröffentlichten) *Studie*.
 
@@ -200,7 +200,7 @@ Die *Rohdatenarchive* enthalten folgende Dateien:
 
 * `ItemScore.json`: Scoring-Information (wie von *CBA ItemBuilder*-*Runtime* geliefert).
 
-> Die Datei enthält folgende Struktur, mit Komma getrennt. Die Datei ist kein gültiges JSON, bis nicht das letzte Komma entfernt und ein `[` vor und ein `]` nach dem inhalt eingefügt wird. 
+> Die Datei enthält folgende Struktur, mit Komma getrennt. Die Datei ist kein gültiges JSON, bis nicht das letzte Komma entfernt und ein `[` vor und ein `]` nach dem Inhalt eingefügt wird. 
 
 > Der Eintrag `ItemScore` enthält den *ItemScore* (wie von der *CBA ItemBuilder*-*Runtime* geliefert) quotiert (d.h. `"` wird als `\u0022` dargestellt).Der `ContextFlag` gibt an, wie der *CBA ItemBuilder*-*Task* verlassen wurde (NextTask, PreviousTask oder Cancel). Der `ContextScope` ist (TODO). `Timestamp` ist der Zeitstempel der Übermittlung. `SessionId` der Benutzername oder die UUID (*PersonIdentifier*). Der `Context` gibt über Name des *CBA ItemBuilder*-Projekts, *Task* und *Scope* eine Referenz zum Assessmentinhalt (*Element*). Unter `Assemblies` sind die Informationen zum verwendeten *IRTlib Player* gespeichert und `StudyRevision` verweist auf die *Revision* einer (veröffentlichten) *Studie*.
 
@@ -228,9 +228,9 @@ Die *Rohdatenarchive* enthalten folgende Dateien:
 },
 ````
 
-* `Session.json`: Die Datei enthält Daten des *IRTlib Players* welche die Auführung der *Session* beschreiben.
+* `Session.json`: Die Datei enthält Daten des *IRTlib Players*, welche die Ausführung der *Session* beschreiben.
 * `Log.json`: Log-Events der *IRTlib Player* (enthält u.A. Log-Informationen zur Verarbeitung des *Blockly*-Routings).
-* `browser.log`: Ausgabe der Konsole, die während der Bearbeitung der Aufgaben im Browser gesammelt wurden (unstruktruierter Text, für Entwickler).
+* `browser.log`: Ausgabe der Konsole, die während der Bearbeitung der Aufgaben im Browser gesammelt wurden (unstrukturierter Text, für Entwickler).
 * `server.log`: Log-Ausgaben des Servers des *IRTlib Players* (unstruktruierter Text, für Entwickler)
 * `Keyboard.json`: Tastatureingaben und Zeitstempel.
 * `Monitoring.json`: Kopie der Monitoring-Datei, welche erstellt wurde. 
