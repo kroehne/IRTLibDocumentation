@@ -37,13 +37,13 @@ Vor der Verwendung der *IRTlib Software* zur Konfiguration und Erstellung von Au
 ::: {.grid}
 ::: {.g-col-9}
 
-Für die Verwendung der *IRTlib Software* ist eine kontext-sensitive [Programmhilfe](preparation-overview.qmd#eingebettete-programhilfe) direkt in die Anwendung hinterlegt. Die Dokumentation mit der eingebetteten Hilfe ist auf dieser Seite online verfügbar und steht auch als [PDF](IRTlib-Software.pdf) zur Verfügung. 
+Für die Verwendung der *IRTlib Software* ist eine kontext-sensitive [Programmhilfe](preparation-overview.qmd#eingebettete-programhilfe) direkt in die Anwendung hinterlegt. Die Dokumentation mit der eingebetteten Hilfe ist auf dieser Seite online verfügbar und steht auch als [PDF](IRTlib-Dokumentation.pdf) zur Verfügung. 
 
 :::
 
 ::: {.g-col-3}
 
-[![IRTlib Software Dokumentation (PDF)](img/irtlib-cover.png){wdith="70"}](IRTlib-Software.pdf)
+[![IRTlib Software Dokumentation (PDF)](img/irtlib-cover.png){wdith="70"}](IRTlib-Dokumentation.pdf)
 
 :::
 

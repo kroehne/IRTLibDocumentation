@@ -35,13 +35,13 @@ The interactive documentation of the *CBA ItemBuilder* is available here: [cba.i
 ::: {.grid}
 ::: {.g-col-9}
 
-To use the *IRTlib software*, a context-sensitive [program help](preparation-overview.qmd#sec-embedded-help) is stored directly in the application. The documentation with the embedded help is available online on this page and is also available as <a href="IRTlib-Software.pdf">PDF</a>. 
+To use the *IRTlib software*, a context-sensitive [program help](preparation-overview.qmd#sec-embedded-help) is stored directly in the application. The documentation with the embedded help is available online on this page and is also available as <a href="IRTlib-Documentation.pdf">PDF</a>. 
 
 :::
 
 ::: {.g-col-3}
 
-[![IRTlib Software Documentation (PDF)](img/irtlib-cover.png){wdith="70"}](IRTlib-Software.pdf)
+[![IRTlib Software Documentation (PDF)](img/irtlib-cover.png){wdith="70"}](IRTlib-Documentation.pdf)
 
 :::
 

@@ -3,6 +3,7 @@ _site/
 _book/
 .Rproj.user/**
 /.Rproj.user/
+/.Rproj.user/**
 **/.DS_Store
 .Rproj.user
 .Rhistory

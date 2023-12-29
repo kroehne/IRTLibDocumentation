@@ -22,7 +22,7 @@
 Dokumentation auf Deutsch 
 
 * [als HTML](de/index.html) 
-* [als PDF](de/IRTlib-Software.pdf)
+* [als PDF](de/IRTlib-Dokumentation.pdf)
 :::
 
 ::: {.g-col-5}
@@ -30,7 +30,7 @@ Dokumentation auf Deutsch
 Documentation in English 
 
 * [as HTML](en/index.html) 
-* [as PDF](en/IRTlib-Software.pdf)
+* [as PDF](en/IRTlib-Documentation.pdf)
 
 :::
 

@@ -3,11 +3,10 @@ project:
   output-dir: ./_book/de
   
 book:
-  title: "IRTlib Dokumentation"
-  subtitle: "Software zur Administration von computerbasierten Assessments"
+  title: "IRTlib Dokumentation: Software für die Verwaltung und Auslieferung computergestützter Assessments"
   author: "Ulf Kroehne"
   date: last-modified
-  date-format: "[Letzte Änderung: ] D. MMMM, YYYY"
+  date-format: "[Letzte Änderung: ] D. MMMM YYYY [\\newline  \\newline  \\newline  Vorgeschlagene Zitierung:]"
   chapters:
     - index.qmd 
     - download.qmd

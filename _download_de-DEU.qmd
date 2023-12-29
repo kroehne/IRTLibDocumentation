@@ -2,9 +2,7 @@ Die *IRTlib*-Software wird für die Offline-Nutzung (z.Zt. für Windows-Betriebs
 
 ## Offline (Windows)
 
-Die *IRTlib*-Software (*IRTlib Editor* und *IRTlib Player*) für die Offline-Nutzung kann aus dem Abschnitt [Releases] des Repository <https://github.com/DIPFtba/IRTlibDeploymentSoftware> bezogen und heruntergeladen werden.
-
-Im Abschnitt [Releases](https://github.com/DIPFtba/IRTlibDeploymentSoftware/releases) stehen zwei ZIP-Archive zum Download bereit.
+Die *IRTlib*-Software (*IRTlib Editor* und *IRTlib Player*) für die Offline-Nutzung kann aus dem Abschnitt [Releases] des Repository <https://github.com/DIPFtba/IRTlibDeploymentSoftware> bezogen und heruntergeladen werden. Im Abschnitt [Releases](https://github.com/DIPFtba/IRTlibDeploymentSoftware/releases) stehen zwei ZIP-Archive zum Download bereit.
 
 * **`TestApp.Editor.Desktop.exe`**: Ist in `TestApp.Editor.Desktop.zip`  und muss gestartet werden, umd den  *IRTlib Editor* zu verwenden. 
 

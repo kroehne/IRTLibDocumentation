@@ -8,7 +8,7 @@ format:
 
 ### Veröffentlichen
 
-Bevor eine *Version* einer *Studie* zu veröffentlicht wird, kann über die Schaltfläche *Validieren* geprüft werden, ob die *StudieÜ fehlerfrei konfiguriert wurde.
+Bevor eine *Version* einer *Studie* zu veröffentlicht wird, kann über die Schaltfläche *Validieren* geprüft werden, ob die *Studie* fehlerfrei konfiguriert wurde.
 
 > ![](img/screenshot-validate-version-item-icon-01.png){width="40"}
 
@@ -32,7 +32,7 @@ Versionen benötigen eine *Bezeichnung* und können optional mit einer *Beschrei
 
 ### Exportieren
 
-Veröffentliche Versionen können über die folgende Schaltfläche kann die *Version* heruntergeladen werden: 
+Veröffentlichte Versionen können über die folgende Schaltfläche *Version* heruntergeladen werden: 
 
 > ![](img/screenshot-download-version-item-icon-01.png){width="40"}
 
@@ -40,9 +40,9 @@ Nach dem Betätigen dieser Schaltfläche erscheint ein *Save As* / *Speichern un
 
 ### Studienversionen
 
-Die *IRTlib Software* ist so erstellt, dass im Datensatz immer die *Revision* der *Studie* gespeichert wird, sodass nachvollzogen werden kann mit welcher Konfiguration (d.h. welche *CBA ItemBuilder*-Inhalten und Einstellungen im *IRTlib Editor*) Daten erhoben werden. 
+Die *IRTlib Software* ist so erstellt, dass im Datensatz immer die *Revision* der *Studie* gespeichert wird, sodass nachvollzogen werden kann, mit welcher Konfiguration (d.h. welche *CBA ItemBuilder*-Inhalten und Einstellungen im *IRTlib Editor*) Daten erhoben werden. 
 
-**Unveröffentlichte Versionen**: Es ist auch möglich, nicht veröffentliche Versionen herunterzuladen und in einem *IRTlib Player* auszuprobieren. Zur Sicherheit wird dann aber eine farbliche Markierung während der Testung angezeigt, damit klar erstichtlich ist dass es sich hierbei nur eine Vorabversion handelt. Mit nicht veröffentlichten Studien sollten niemals Daten erhoben werden.
+**Unveröffentlichte Versionen**: Es ist auch möglich, nicht veröffentlichte Versionen herunterzuladen und in einem *IRTlib Player* auszuprobieren. Zur Sicherheit wird dann aber eine farbliche Markierung während der Testung angezeigt, damit klar ersichtlich ist, dass es sich hierbei nur um eine Vorabversion handelt. Mit nicht veröffentlichten Studien sollten niemals Daten erhoben werden.
 
 **Änderungen veröffentlichter Versionen**: Versionen *versiegeln* die Konfiguration, und machen Änderungen durch eine *Revisionsnummer*, eine *Bezeichnung* und eine optionale *Beschreibung* nachvollziehbar. Änderungen nach dem Versiegeln einer Version sind aber weiterhin möglich. Bevor veränderte Versionen für eine Datenerhebung verwendet werden können, müssen diese aber ebenfalls versiegelt werden, d.h. eine neue *Version* muss über *Veröffentlichen* erstellt werden. 
 
