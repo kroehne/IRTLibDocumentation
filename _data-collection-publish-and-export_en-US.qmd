@@ -1,6 +1,19 @@
-The configuration of *Studies* and the *Collection part(s)* contained therein is carried out in the *IRTlib Editor* and is saved within the editor when the diskette symbol at the bottom right is clicked.
+The configuration of *Studies* and the *Survey Part(s)* contained therein is carried out in the *IRTlib Editor*. Changes are always saved within the *IRTlib Editor* when the disc symbol at the bottom right is clicked. During the preparation of a study, the changes are saved if they are to be applied. But once the preparation is completed, changes should no longer be possible or at least be tracked so that the version in the *IRTlib Editor* corresponds to the version in the *IRTlib Player*. 
 
-To ensure that the configuration of a *study* used for data collection can be clearly identified at all times, the configuration must be sealed before being transferred to an *IRTlib Player*. This is done in the *Publish* view of a study, in which the *Study versions* are listed:
+To support this process of using *IRTlib Editor* and *IRTlib Player*, the following concept has been implemented. To ensure that the configuration of a *Study* used for data collection can be clearly identified at all times, the configuration must be sealed before it is transferred to an *IRTlib Player*. 
+
+This is done in the *Publish* view of a study, in which the *Study versions* are listed. For a new *study*, this view initially looks like this:
+
+![](img/sreenshot-irtlib-editor-showing-unpublished-version-DEU-01.png){width="100%"}
+
+In this state, you can make changes to the settings of the *Study* and all contained *Survey Parts*. 
+
+The buttons for *Validate*, *Download* and *Publish* studies are greyed out because no revision is selected. The buttons can be activated by clicking on the line with the unpublished *revision 1*:
+
+![](img/sreenshot-irtlib-editor-showing-unpublished-version-DEU-02.png){width="100%"}
+
+Before you continue, please check that you have thought of everything. Use the following *checklist* to do this.
+
 
 ## Checklist before publishing
 
@@ -8,23 +21,28 @@ To ensure that the configuration of a *study* used for data collection can be cl
 
 > To ensure that the correct *study* can be started after starting the *IRTlib Player*, a *login mode* suitable for the planned use must be configured. The *login mode* can be defined in the [Study configuration](preparation-studies.qmd) in the *Login* section. 
 
-* Is a *test administrator menu* configured? 
+* Is a *test leader menu* configured? 
 
 > If kiosk mode is activated in the offline *IRTlib Player*, it may be difficult or impossible to exit the application without a configured *test conductor menu*. Key combinations and passwords with roles are defined in the [Study configuration](preparation-studies.qmd) in the *Test leader menu* section.
 
 * Are the *items* inserted? 
 
-> The assessment contents are configured in one or more [*study-parts*](preparation-parts.qmd). Most *CBA ItemBuilder*-*tasks* will be located in the *Items* section of a *assessment part*.
+> The assessment content is configured in one or more [*survey-parts*](preparation-parts.qmd). Most *CBA ItemBuilder*-*tasks* will be located in the *Items* section of a *survey part*.
 
 * Are the runtime environments (*Runtimes*) available? 
 
-> The configuration of *Runtimes* is done in the [Settings](settings.qmd).
+> Runtimes* are configured in the [Settings](settings.qmd).
+
+Once you have checked this checklist, you can continue as described in the next section. 
 
 ## Publish & Export
 
-::: {.callout-tip collapse="true" title="Embedded program help"}
+The process to *validate*, *publish* and *download* study configurations is described in the embedded help:
+
+::: {.callout-tip collapse="true" title="Embedded programme help"}
 
 {{< include InlineHelp_View_Study_Publish_en-US.qmd >}}
  
 ::: 
  
+Data can be collected with an *IRTlib Player* if a published *study* has been downloaded from the *IRTlib Editor* as a ZIP archive.

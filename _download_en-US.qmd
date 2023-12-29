@@ -2,38 +2,35 @@ The *IRTlib* software is provided for offline use (currently for Windows operati
 
 ## Offline (Windows)
 
-The *IRTlib* software (*IRTlib Editor* and *IRTlib Player*) for offline use can be obtained and downloaded from the [Releases] section of the repository <https://github.com/DIPFtba/IRTlibDeploymentSoftware>.
-
-Two ZIP archives are available for download in the [Releases](https://github.com/DIPFtba/IRTlibDeploymentSoftware/releases) section.
+The *IRTlib* software (*IRTlib Editor* and *IRTlib Player*) for offline use can be obtained and downloaded from the [Releases] section of the repository <https://github.com/DIPFtba/IRTlibDeploymentSoftware>. Two ZIP archives are available for download in the [Releases](https://github.com/DIPFtba/IRTlibDeploymentSoftware/releases) section.
 
 **`TestApp.Editor.Desktop.exe`**: Is in `TestApp.Editor.Desktop.zip` and must be started to use the *IRTlib Editor*. 
 
 **`TestApp.Player.Desktop.exe`**: Is included in `TestApp.Player.Desktop.zip` and must be started to use the *IRTlib Player*. 
 
 ::: {.callout-note collapse="true" title="Note: Versions from the current development as *Preview*."}
-Note that the latest build can be found in the [Preview](https://github.com/DIPFtba/IRTlibDeploymentSoftware/releases/tag/preview-231025) section of the *Release* section of the [repository](https://github.com/DIPFtba/IRTlibDeploymentSoftware/releases). Preview versions are the latest version of the software, after the last published version of the *IRTlib software*. To obtain reproducible results, published versions should always be used. 
+Note that the latest build can be found in the [Preview](https://github.com/DIPFtba/IRTlibDeploymentSoftware/releases/tag/preview-231025) section of the *Release* section of the [repository](https://github.com/DIPFtba/IRTlibDeploymentSoftware/releases). Preview versions are the latest version of the software, after the last published version of the *IRTlib Software*. To obtain reproducible results, published versions should always be used. 
 :::
 
 ::: {.callout-warning collapse="false" title="Note: Warning message at programme start"}
-The automatically created preview versions of the *IRTlib Editor* and *IRTlib Player* are not signed. A warning message from the operating system must be accepted before the programs
-can be executed. Depending on the configuration of the operating system, the executable files of the *IRTlib software* can also be classified as unknown and  anti-virus software might show additional warnings. 
+The automatically created preview versions of the *IRTlib Editor* and *IRTlib Player* are not signed. A warning message from the operating system must be accepted before the programmes can be executed. Depending on the configuration of the operating system, the executable files of the *IRTlib software* can also be classified as unknown and additionally warned against their use. 
 :::
 
-### Study preparation with offline editor
+### Study Preparation with Offline Editor
 
 The *IRTlib Editor* for offline use is provided as a ZIP archive (e.g. `TestApp.Editor.Desktop.zip`), which must be unpacked. After unpacking the editor, the application `TestApp.Editor.Desktop.exe` can be started on a Windows device.
 
 The sections [Preparation > Overview](preparation-overview.qmd), [Preparation > Studies](preparation-studies.qmd) and [Preparation > Survey parts](preparation-parts.qmd) document how to prepare and configure data surveys with the help of *CBA ItemBuilder* items.
 
-### Study execution with offline player 
+### Study Execution with Offline Player 
 
-The *IRTlib Player* is also available as a Windows application for offline use and is provided as a ZIP archive (e.g. `TestApp.Player.Desktop.zip`). After unpacking the *IRTlib Player*, a published study configuration is required that is to be used for a data collection.  
+The *IRTlib Player* is also available as a Windows application for offline use and is provided as a ZIP archive (e.g. `TestApp.Player.Desktop.zip`). After unpacking the *IRTlib Player*, a published study configuration is required that is to be used for data collection.  
 
-After adding the contents of a published study provided as study configuration, the executable file `TestApp.Player.Desktop.exe` can be started (either with or without command-line parameters). 
+After adding the contents of a published study provided as study configuration, the executable file `TestApp.Player.Desktop.exe` can be started (either with or without start parameters). 
 
-**Kiosk Mode**: The *IRTlib Player* can be used directly for data collection via the executable file `TestApp.Player.Desktop.exe` on the computer on which it is running locally. The *Study* can be configured so that it is displayed in a *Kiosk Mode* on one screen. In the *Kiosk Mode* the software can only be terminated before the last item via the *Task Manager* or the *Test Manager Menu* (see *Full Screen Mode* in the section [Configuration for display](preparation-studies.html#configuration-for-display)).
+* **Kiosk Mode**: The *IRTlib Player* can be used directly for data collection via the executable file `TestApp.Player.Desktop.exe` on the computer on which it is running locally. The *Study* can be configured so that it is displayed in a *Kiosk Mode* on one screen and can only be terminated via the *Task Manager* or the *Test Manager Menu* (see *Full Screen Mode* in the section [Configuration for display](preparation-studies.html#configuration-for-display)).
 
-**Local server**: The *IRTlib Player* can also be run as a local server. After starting the executable `TestApp.Player.Server.exe`, a configured *Study* can also be delivered via standard *Web Browsers* or other browsers with *Kiosk Mode* (e.g., the [Safe Exam Browser](https://safeexambrowser.org/)). With this configuration, data can be collected, for example, in schools without an internet connection but with a notebook acting as a *bring-in* server.
+* **Local Server**: The *IRTlib Player* can also be run as a local server. After starting the programme `TestApp.Player.Server.exe`, a configured *Study* can also be delivered via *Webbrowser* or other browsers with *Kiosk Mode* (e.g. the [Safe Exam Browser](https://safeexambrowser.org/)). With this configuration, data can be collected, for example, in schools without an internet connection but with a notebook acting as a *bring-in* server.
 
 The sections [Data collection > Overview](data-collection-overview.qmd), [Data collection > Publish & export](data-collection-publish-and-export.qmd) and [Data collection > Integration & delivery](data-collection-player-integration.qmd) document how data collection can be carried out using the *IRTlib Player* in the various constellations. 
 

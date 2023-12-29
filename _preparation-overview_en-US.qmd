@@ -1,89 +1,67 @@
 The preparation of a computer-based assessment based on *CBA ItemBuilder* content begins with the use of the *IRTlib Editor* to create a study configuration. This usually involves the following steps:
 
 ::: {.callout-caution collapse="true" title="Optional: Using a *Runtime* for *CBA ItemBuilder* before version 9.9?"}
-- **Requirement**: Check the availability of the [Runtime](settings.qmd). The *IRTlib Editor* can be used to prepare assessments with content created using *CBA ItemBuilder*. To use *CBA ItemBuilder* *tasks* stored in *project files*, a *runtime* (i.e. the files `main.*.js` and `main.*.css`) is required in the version that corresponds exactly to the version of the *CBA ItemBuilder* used to create the items (e.g., `9.9.0`). Before using the *IRTLib-Editor*, make sure that the required *Runtime* is included or import the runtime files (see section [Settings](settings.qmd) for details).
+- **Requirement**: Check the availability of the [Runtime](settings.qmd). The *IRTlib Editor* can be used to prepare assessments with content created using the CBA ItemBuilder. To use CBA ItemBuilder *Tasks* stored in *project files*, a *runtime* (i.e. the files `main.*.js` and `main.*.css`) is required in the version that corresponds exactly to the version of the CBA ItemBuilder used to create the items (e.g. `9.9.0`). Before using the *IRTLib-Editor*, make sure that the required *Runtime* is included or import the runtime files (see section [Settings](settings.qmd) for details).
 
-Note: When using *CBA ItemBuilder* items from version 9.9 or newer, this step is generally not necessary.
+Note: When using CBA ItemBuilder items from version 9.9, this step is generally not necessary.
 :::
 
+* **Creating a new *Study***: The *IRTlib Editor* is used to configure so-called *Studies*. The versions of studies can be tracked in the editor, studies can be published there (i.e. *sealed* for data collections). To start creating content with the *IRTlib Editor*, a study must first be created (see section [Studies](preparation-studies.qmd) for‚ details).
 
-- **Creating a new *Study***: The *IRTlib Editor* is used to configure so-called *studies*. The versions of studies can be tracked in the editor, studies can be published (i.e. *sealed* for data collection). To start creating content with the *IRTlib Editor*, a study must first be created (see section [Studies](preparation-studies.qmd) for details).
-
-
-::: {.callout-note collapse="false" title="Note: Creating a *Sstudy* is always necessary."}
-Note that at least one study must be defined in the *IRTlib Editor* before a study configuration can be used for data collection with an *IRTlib Player*.
+::: {.callout-note collapse="false" title="Note: Creating a *Study* is always necessary."}
+Note that at least one *Study* must be defined in the *IRTlib Editor* before a study configuration can be used for data collection with an *IRTlib Player*.
 :::
 
+* **Define Basic Configurations for *Study* (Info)**: Basic configurations related to the content of a prepared study include the study name and description, login mode, display configuration, test administrator menu, and how to proceed after completing all content defined in a study (see [Studies](preparation-studies.qmd) section for more details).
 
-- **Define basic configurations for *Study* (Info)**: Basic configurations related to the content of a prepared study include the study name and description, login mode, display configuration, test administrator menu, and how to proceed after completing all content defined in a study (see [Studies](preparation-studies.qmd)-section for more details).
+* **Creating a new *Survey Part***: Each *Study* consists of one or more *Survey Parts*. *Survey Parts* are considered to be building blocks of assessments that are administered together, such as items from a particular domain. *Survey Parts* of type *CBA ItemBuilder* can be used to administer *CBA ItemBuilder* tasks in a linear sequence or with *Blockly*-based routing.
 
-
-- **Creating a new *Survey-Part***: Each *Study* consists of one or more *Survey-Parts*. *Survey-Parts* are considered to be building blocks of assessments that are administered together, using, for instance, all items from a particular domain. *Survey-Parts* of type *CBA ItemBuilder* can be used to administer *CBA ItemBuilder*-*tasks* in a linear sequence or with *Blockly*-based routing.
-
-::: {.callout-note collapse="false" title="Note: Creating a *survey* part is always necessary."}
-Note that each study requires at least one *Survey-Part* defined in the *IRTlib Editor* before a study configuration can be used for data collection with an *IRTlib Player*.
+::: {.callout-note collapse="false" title="Note: Creating a *Survey* Part is always necessary."}
+Note that each *Study* requires at least one *Survey Part* defined in the *IRTlib Editor* before a *Study* configuration can be used for data collection with an *IRTlib Player*.
 :::
 
-- **Configure basic settings for *Survey-Part* (Info)**: A *Survey Part* of type *CBA ItemBuilder* is based on a set of *CBA ItemBuilder*-*Tasks*. Each *CBA ItemBuilder*-*project file* requires at least one *task*, but projects with multiple *tasks* are also supported.If *CBA ItemBuilder* content with a common time limit is to be administered across *tasks*, *assessment sections* allow the assignment of tasks to a structure that distinguishes assessment content that is administered *before* a time-limited section (e.g. instructions, in the *task* section). e.g. instructions, in the section *preparation-parts*), content that is administered *after* a time-limited section (e.g. acknowledgements, in the section *post-parts*) and tasks with limited time in between (*items*, see section [preparation-parts.qmd]).
+- **Configure basic settings for *survey part* (Info)**: A *Survey Part* of type *CBA ItemBuilder* is based on a set of *CBA ItemBuilder*-*Tasks*. Each *CBA ItemBuilder*-*project file* requires at least one *task*, but projects with multiple *tasks* are also supported. If *CBA ItemBuilder* content with a common time limit is to be administered across *tasks*, *assessment sections* allow the assignment of tasks to a structure that distinguishes assessment content that is administered *before* a time-limited section (e.g. instructions, in the *task* section). e.g. instructions, in the section *preparation-parts*), content that is administered *after* a time-limited section (e.g. acknowledgements, in the section *post-parts*) and tasks with limited time in between (*items*, see section [preparation-parts.qmd]).
 
+* **Add Items**: To finalise the definition of a *Survey Part*, the *CBA ItemBuilder* *project files* must be imported into the *Items* section. By default, it is assumed that the order of the *CBA ItemBuilder*-*Tasks* is linear. However, if *Routing* is enabled for a study section, the *Blockly*-based sequence definition can be used to implement different test designs (e.g. multiple booklets, multi-stage tests, etc.).
 
-- **Add items**: To finalise the definition of a *survey part*, the *CBA ItemBuilder* *project files* must be imported into the *Items* section. By default, it is assumed that the order of the *CBA ItemBuilder*-*Tasks* is linear. However, if *routing* is enabled for a study section, the *blockly*-based sequence definition can be used to implement different test designs (e.g. multiple booklets, multi-stage tests, etc.).
-
-
-## Embedded programme help 
+## Embedded Programme Help 
 
 For the use of the *IRTlib Editor*, a programme help is integrated directly into the application, which can be displayed via the small `?` symbol in the top right-hand corner. 
 
 ![Example of the *IRTlib Editor* with embedded help](img/screenshot-editor-embedded-help-de-DEU.png){width="100%"}
 
+::: {.callout-tip title="Embedded Programm Help"}
 
-::: {.callout-tip title="Embedded programme help"}
-
-
-The contents of these help pages from the *IRTlib Editor* are integrated into this *IRTlib documentation* and are always displayed in this frame with the title *Embedded programme help*. 
-
+The contents of these help pages from the *IRTlib Editor* are integrated into this *IRTlib Documentation* and are always displayed in this frame with the title *Embedded Programme Help*. 
 
 :::
 
 
+## Preparation of *CBA ItemBuilder* Content
 
+The *IRTlib Software* is required to display the assessment content created with the *CBA ItemBuilder* and to use *CBA ItemBuilder* content for data collections. The *project files* (ZIP archives) that can be created with the *CBA ItemBuilder* must be available for this. 
 
-## Preparation of *CBA ItemBuilder* content
-
-
-The *IRTlib software* is required to display the assessment content created with the *CBA ItemBuilder* and to use it for data collection. The *project files* (ZIP archives) that can be created with the *CBA ItemBuilder* must be available for this. 
-
-
-### Entry point (*Task*)
-
+### Entry Point (*Task*)
 
 Each *CBA ItemBuilder* *project file* must define at least one *task*. Only *tasks* can be used in the *IRTlib software*. It is easy to check that a *task* is fully defined in the *Preview* of the *CBA ItemBuilder*:
 
-
 ![Example from *CBA ItemBuilder* to request a *Preview* for a *Task*](img/screenshot-cba-itembuilder-preview-check-task-example-01.png){width="450" fig-align="left" }
 
-
 ::: {.callout-note title="The *IRTlib software* requires defined *tasks*."}
-Assessment content can be assembled from individual *tasks* using the *IRTlib software*. The sequence of *tasks* can be defined statically as a *linear sequence* or as a programmed sequence in *blockly*. No individual pages within *CBA ItemBuilder*-*Tasks* can be controlled from the *IRTlib software*.
+Assessment content can be assembled from individual *Tasks* using the *IRTlib Software*. The sequence of *Tasks* can be defined statically as a *linear sequence* or as a programmed sequence in *Blockly*. No individual pages within *CBA ItemBuilder*-*Tasks* can be controlled from the *IRTlib Software*.
 :::
 
+*CBA ItemBuilder*-*Project files* which can only be displayed via the *Project* or *Page* option in the *Preview* cannot be used in the *IRTlib Software*.
 
-*CBA ItemBuilder*-*Project files* which can only be displayed via the *Project* or *Page* option in the *Preview* cannot be used in the *IRTlib software*.
-
-
-### Display behaviour (*Scaling Options*)
-
+### Display Bhaviour (*Scaling Options*)
 
 The *Preview* of the *CBA ItemBuilder* can also be used to check whether the assessment contents are displayed in the desired scaling, which can be set under *Scaling Options*, according to the requirements.
-
 
 ![Settings for *Scaling Options* from *CBA ItemBuilder*-*Preview*](img/screenshot-cba-itembuilder-preview-scaling-mode-01.png){width="200" fig-align="left" }
 
 Settings similar to *Preview* can be defined in the *IRTlib Editor* for the display settings of a *Study* (see section [Studies](preparation-studies.qmd)).
 
-
-### Definition of the *scoring* (results data)
-
+### Definition of the *Scoring* (Results Data)
 
 The *IRTlib software* is designed to collect data with the help of *CBA ItemBuilder*-*Task*. What result variables are saved from the processing of a *task* can be defined by *item authors* in the *scoring* definition of a *task*. 
 
@@ -91,40 +69,31 @@ The *IRTlib software* is designed to collect data with the help of *CBA ItemBuil
 The result variables defined as *Classes* are saved from the processing of *Tasks*, the values of which can either be individual *Hits* or the transfer of information using the so-called *ResultText* operator in the *CBA ItemBuilder*. 
 :::
 
-
 Using the built-in *Scoring Debug Window*, the *scoring* of individual *CBA ItemBuider* *tasks* should already be checked in the *CBA ItemBuilder* before the assessment contents are combined into *studies* with one or more *survey parts* using the *IRTlib software*. Further information on suggested checks is formulated in the section [Deliveries Testing and Release](data-collection-player-integration.qmd). 
-
 
 ::: {.callout-note title="Log data is collected automatically."}
 Without further configuration, log data is automatically recorded in the assessment content created with the *CBA ItemBuilder* and collected via the *IRTlib software*. 
 :::
 
-
-### Integrated multimedia content (resources)
+### Integrated Multimedia Content (Resources)
 
 The assessment content created with the *CBA ItemBuilder* can contain multimedia content (images, videos, audio files). Images and videos are displayed in a size that is used in the corresponding component of the *CBA ItemBuilder* in the *Page Editor*. Images, videos and audio files are saved as *resources* in the *project files* as soon as they have been inserted via the *Resource Browser*. Unused *resources* remain in the *project files*.
+
 
 ::: {.callout-note title="File size of *CBA ItemBuilder* *project files* should be as small as possible"}
 The file size of *CBA ItemBuilder* *project files* is particularly relevant for use in online deliveries and should be kept as small as possible. 
 :::
 
-
 Before using *CBA ItemBuilder*-*project files*, it is recommended to consider the following points:
-
 
 * Images and videos only in the required size: Images and videos can be reduced to the size (width and height) in which they are actually used in *CBA ItemBuilder*-*Projects* without any loss of quality. 
 
-
 * Compress images if possible: Without changing the image size, images can often be further reduced in file size. 
-
 
 * Compress videos if possible: Without changing the video, videos can often be further reduced in file size. 
 
-
 * Audio not in the highest quality: If not necessary, audio files should be reduced in quality so that they still sound acceptable but are optimised in terms of transmission times. 
 
-
 * Remove unused resources: The *CBA ItemBuilder* provides a button in the *Resource Browser* to automatically remove unused *resources*. This function should be used at the end so that the *project files* do not contain any unnecessary *resources*. 
-
 
 Careful handling of *resources* and optimisation of the file size of *CBA ItemBuilder* *project files* can be decisive for a smooth and trouble-free assessment, which can be delivered online with the *IRTlib software* and used, for example, via mobile devices with limited internet bandwidth. 

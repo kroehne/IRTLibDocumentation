@@ -2,6 +2,10 @@
 
 Die *IRTlib Software* ist freie *Forschungssoftware* im Sinne von *Open Science*. Sie kann für nicht-kommerzielle Anwendungen verwendet werden. 
 
+Vorgeschlagene Zitierung:
+
+> Kroehne, U. (2023). IRTlib Documentation: Software for the administration and delivery of computer-based assessments [IRTlib Dokumentation: Software für die Verwaltung und Auslieferung computergestützter Assessments]. DIPF, Frankfurt am Main, Germany. https://doi.org/10.5281/zenodo.10441352
+
 ::: callout-note
 Übersetzung: Wenn Sie uns bei der Übersetzung dieser Software helfen wollen, finden Sie [hier](translation.qmd) weitere Informationen.
 :::

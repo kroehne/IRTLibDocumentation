@@ -1,11 +1,16 @@
 
-## Acknowledgments
+## Acknowledgements
 
-Contributors to this manual:
+Contributors to this manual were:
 
-* ...
+* Maximilian Sattler
+* Carla Burkart 
+
+::: {.callout-important title="In development"}
+* Revision, language correction and translation of the manual are currently in progress...
+:::
 
 
 ## Development
 
-The development of the *IRTlib Software* is done at [Software-Driven](https://software-driven.de/).
+The development of the *IRTlib Software* takes place at [Software-Driven](https://software-driven.de/).

@@ -83,11 +83,14 @@ Die für den Datenabruf und die Datenkonvertierung über `LogFSM` verwendete Anw
 
 Darüber lassen sich Datenabruf und Datenumwandlung auch ohne R ausführen.
 
+<!-- 
 * **Windows**: 
 
 * **Linux**: 
 
 * **Mac**: 
+
+--> 
 
 ::: {.callout-important title="In Entwicklung"}
 Eine zertifizierte Version von  `TransformToUniversalLogFormat` für Apple ist im Moment in Entwicklung.
@@ -176,9 +179,9 @@ Die *Rohdatenarchive* enthalten folgende Dateien:
 
 > Die Datei enthält folgende Struktur, mit Komma getrennt. Die Datei ist kein gültiges JSON, bis nicht das letzte Komma entfernt und ein `[` vor und ein `]` nach dem Inhalt eingefügt wird. 
 
-> Der Eintrag `Snapshot` enthält die Snapshot-Informationen (wie von der *CBA ItemBuilder*-*Runtime* geliefert) quotiert (d.h. `"` wird als `\u0022` dargestellt). Der `ContextFlag` gibt an, wie der *CBA ItemBuilder*-*Task* verlassen wurde (NextTask, PreviousTask oder Cancel). Der `ContextScope` ist (TODO). `Timestamp` ist der Zeitstempel der Übermittlung. `SessionId` der Benutzername oder die UUID (*PersonIdentifier*). Der `Context` gibt über Name des *CBA ItemBuilder*-Projekts, *Task* und *Scope* eine Referenz zum Assessmentinhalt (*Element*). Unter `Assemblies` sind die Informationen zum verwendeten *IRTlib Player* gespeichert und `StudyRevision` verweist auf die *Revision* einer (veröffentlichten) *Studie*.
+> Der Eintrag `Snapshot` enthält die Snapshot-Informationen (wie von der *CBA ItemBuilder*-*Runtime* geliefert) quotiert (d.h. `"` wird als `\u0022` dargestellt). Der `ContextFlag` gibt an, wie der *CBA ItemBuilder*-*Task* verlassen wurde (NextTask, PreviousTask oder Cancel). <!-- Der `ContextScope` ist (TODO). --> `Timestamp` ist der Zeitstempel der Übermittlung. `SessionId` der Benutzername oder die UUID (*PersonIdentifier*). Der `Context` gibt über Name des *CBA ItemBuilder*-Projekts, *Task* und *Scope* eine Referenz zum Assessmentinhalt (*Element*). Unter `Assemblies` sind die Informationen zum verwendeten *IRTlib Player* gespeichert und `StudyRevision` verweist auf die *Revision* einer (veröffentlichten) *Studie*.
 
-(TODO: Warum ist `Assemblies` und `StudyRevision` null?)
+<!-- (TODO: Warum ist `Assemblies` und `StudyRevision` null?) --> 
 
 ````
 {
@@ -202,7 +205,7 @@ Die *Rohdatenarchive* enthalten folgende Dateien:
 
 > Die Datei enthält folgende Struktur, mit Komma getrennt. Die Datei ist kein gültiges JSON, bis nicht das letzte Komma entfernt und ein `[` vor und ein `]` nach dem Inhalt eingefügt wird. 
 
-> Der Eintrag `ItemScore` enthält den *ItemScore* (wie von der *CBA ItemBuilder*-*Runtime* geliefert) quotiert (d.h. `"` wird als `\u0022` dargestellt).Der `ContextFlag` gibt an, wie der *CBA ItemBuilder*-*Task* verlassen wurde (NextTask, PreviousTask oder Cancel). Der `ContextScope` ist (TODO). `Timestamp` ist der Zeitstempel der Übermittlung. `SessionId` der Benutzername oder die UUID (*PersonIdentifier*). Der `Context` gibt über Name des *CBA ItemBuilder*-Projekts, *Task* und *Scope* eine Referenz zum Assessmentinhalt (*Element*). Unter `Assemblies` sind die Informationen zum verwendeten *IRTlib Player* gespeichert und `StudyRevision` verweist auf die *Revision* einer (veröffentlichten) *Studie*.
+> Der Eintrag `ItemScore` enthält den *ItemScore* (wie von der *CBA ItemBuilder*-*Runtime* geliefert) quotiert (d.h. `"` wird als `\u0022` dargestellt).Der `ContextFlag` gibt an, wie der *CBA ItemBuilder*-*Task* verlassen wurde (NextTask, PreviousTask oder Cancel). <!-- Der `ContextScope` ist (TODO). --> `Timestamp` ist der Zeitstempel der Übermittlung. `SessionId` der Benutzername oder die UUID (*PersonIdentifier*). Der `Context` gibt über Name des *CBA ItemBuilder*-Projekts, *Task* und *Scope* eine Referenz zum Assessmentinhalt (*Element*). Unter `Assemblies` sind die Informationen zum verwendeten *IRTlib Player* gespeichert und `StudyRevision` verweist auf die *Revision* einer (veröffentlichten) *Studie*.
 
 ````
 {
@@ -235,6 +238,5 @@ Die *Rohdatenarchive* enthalten folgende Dateien:
 * `Keyboard.json`: Tastatureingaben und Zeitstempel.
 * `Monitoring.json`: Kopie der Monitoring-Datei, welche erstellt wurde. 
 
-
-(TODO: Wie lässt sich Mouse-Tracking aktivieren?)
+<!-- (TODO: Wie lässt sich Mouse-Tracking aktivieren?) --> 
 

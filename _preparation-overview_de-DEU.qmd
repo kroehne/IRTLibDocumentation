@@ -9,7 +9,7 @@ Hinweis: Für die Verwendung von CBA ItemBuilder-Items ab Version 9.9 ist dieser
 - **Erstellen einer neuen *Studie***: Der *IRTlib-Editor* wird verwendet, um sogenannte *Studien* zu konfigurieren. Die Versionen von Studien können im Editor nachverfolgt werden, Studien können dort veröffentlicht (d.h. für die Datenerfassung *versiegelt*) werden. Um mit dem *IRTlib-Editor* mit der Erstellung von Inhalten zu beginnen, muss zuerst eine Studie erstellt werden (siehe Abschnitt [Studien](preparation-studies.qmd) für Details).
 
 ::: {.callout-note collapse="false" title="Hinweis: Das Anlegen einer *Studie* ist immer notwendig."}
-Beachten Sie, dass mindestens eine Studie im *IRTlib Editor* definiert sein muss, bevor eine Studienkonfiguration zur Datenerfassung mit einem *IRTlib Player* verwendet werden kann.
+Beachten Sie, dass mindestens eine *Studie* im *IRTlib Editor* definiert sein muss, bevor eine Studienkonfiguration zur Datenerfassung mit einem *IRTlib Player* verwendet werden kann.
 :::
 
 - **Basiskonfigurationen für *Studie* festlegen (Info)**: Zu den Basiskonfigurationen, die sich auf den Inhalt einer vorbereiteten Studie beziehen, gehören die Studienbezeichnung und -beschreibung, der Anmeldemodus, die Anzeigekonfiguration, das Menü für die Testadministratoren und die Angabe, wie nach Abschluss aller in einer Studie definierten Inhalte fortgefahren werden soll (siehe Abschnitt [Studien](preparation-studies.qmd) für weitere Einzelheiten).
@@ -17,7 +17,7 @@ Beachten Sie, dass mindestens eine Studie im *IRTlib Editor* definiert sein muss
 - **Erstellen eines neuen *Erhebungsteils***: Jede *Studie* besteht aus einem oder mehreren *Erhebungsteilen*. *Erhebungsteile* werden als Bausteine von Assessments betrachtet, die zusammen verwaltet werden, wie z.B. Items aus einer bestimmte Domäne. *Erhebungsteile* vom Typ *CBA ItemBuilder* können verwendet werden, um *CBA ItemBuilder*-Aufgaben in einer linearen Sequenz oder mit *Blockly*-basiertem Routing zu administrieren.
 
 ::: {.callout-note collapse="false" title="Hinweis: Das Anlegen eines *Erhebungsteils* ist immer notwendig."}
-Beachten Sie, dass jede Studie mindestens einen im *IRTlib Editor* definierten *Erhebungsteil* benötigt, bevor eine Studienkonfiguration zur Datenerhebung mit einem *IRTlib Player* verwendet werden kann.
+Beachten Sie, dass jede *Studie* mindestens einen im *IRTlib Editor* definierten *Erhebungsteil* benötigt, bevor eine Studienkonfiguration zur Datenerhebung mit einem *IRTlib Player* verwendet werden kann.
 :::
 
 - **Grundeinstellungen für *Erhebungsteil* konfigurieren (Info)**: Ein *Erhebungsteil* vom Typ *CBA ItemBuilder* basiert auf einer Menge von *CBA ItemBuilder*-*Tasks*. Jede *CBA ItemBuilder*-*Projektdatei* benötigt mindestens einen *Task*, es werden aber auch Projekte mit mehreren *Tasks* unterstützt. Wenn *CBA ItemBuilder*-Inhalte mit einem gemeinsamen Zeitlimit über *Tasks* hinweg administriert werden sollen, erlauben *Erhebungsteile* die Zuordnung von Aufgaben zu einer Struktur, die Assessmentinhalte unterscheidet, welche *vor* einem zeitlich begrenzten Abschnitt administriert werden (z.B. Instruktionen, im Abschnitt *Vorspann-Items*), Inhalte die *nach* einem zeitlich begrenzten Abschnitt administriert werden (z.B. Danksagung, im Abschnitt *Nachspann-Items*) und dazwischen liegende Aufgaben mit begrenzter Zeit (*Items*, siehe Abschnitt [Erhebungsteile](preparation-parts.qmd)).

@@ -6,54 +6,57 @@ format:
     toc: false
 ---
 
+
 ### Runtimes
 
-To use the IRTLib Editor for configuring studies that use CBA ItemBuilder content, the appropriate runtime environment (*Runtime*) is required for that version. Current tested versions of the CBA ItemBuilder runtime are already stored in the Editor, but runtimes for other versions of the CBA ItemBuilder or updated or corrected runtimes can also be imported into the Editor in this section.
+To configure *Studies* that use *CBA ItemBuilder* content with the *IRTLib Editor*, the appropriate runtime environment (*Runtime*) is required for each version. Current tested versions of the *CBA ItemBuilder* *runtime* are already stored in the *IRTLib Editor*, but *runtimes* for other versions of the *CBA ItemBuilder* or updated or corrected *runtimes* can also be imported into the *IRTLib Editor* in this section.
+
 
 #### Check CBA ItemBuilder Version
 
-You need to know which version of the CBA ItemBuilder was used to prepare the items (i.e., the CBA ItemBuilder project files). If you are in doubt, this information can be found, for instance, in the *About Dialog* of the CBA ItemBuilder:
+It is important to know which version of the CBA ItemBuilder was used to create the items (i.e. the CBA ItemBuilder project files). If in doubt, this information can be found in the *About dialogue* of the CBA ItemBuilder, for example:
 
-* Step 1: Open the “About”-dialog using the “Help”-menu
+* Step 1: Open the "Apout" dialogue via the "Help" menu
 
-> ![](img/screenshot-ib-version-01.png){width="300"}
+> ![](img/screenshot-ib-version-01.png){width="300" fig-align="left"}
 
-* Step 2: Find the version number in the dialog (here `9.9.0`)
+* Step 2: Search for the version number in the dialogue (here `9.9.0`)
 
-> ![](img/screenshot-ib-version-02.png){width="300"} 
+> ![](img/screenshot-ib-version-02.png){width="300" fig-align="left"}
 
-> The version number must be listed as one of the cards shown in the section *Runtimes* of the *IRTlib Editor*'s *Settings*:
+The version number must be listed as one of the cards in the *Settings* of the *IRTlib Editor* in the *Runtimes* section:
 
-> ![](img/screenshot-ib-version-03.png){width="300"} 
+> ![](img/screenshot-ib-version-03.png){width="300" fig-align="left"}
 
-#### Import Runtime Files
+#### Import runtime files
 
-If the appropriate runtime is not already included in the editor, a new/additional *Runtime* can be imported. Study configurations created/edited with the *IRTlib Editor* can contain multiple *Runtimes* for different versions.
+If the corresponding runtime is not already included in the Editor, a new/additional *runtime* can be imported. Study configurations that are created/edited with the *IRTlib Editor* can contain several *Runtimes* for different versions.
 
 * Step 1: To integrate a runtime, a JavaScript and a CSS file are required. These files can be downloaded here:
 
-> <a href="https://cba.itembuilder.de/appendix-tables.html#previous-versions" target="_new">https://cba.itembuilder.de/appendix-tables.html#previous-versions</a>
+<a href="https://cba.itembuilder.de/appendix-tables.html#previous-versions" target="_new">https://cba.itembuilder.de/appendix-tables.html#previous-versions</a>
 
-* Step 2: Unzip the downloaded *Runtime* that should be used. 
+* Step 2: Unzip the downloaded *Runtime* to be used. 
 
-* Step 3: Navigate to the section *Runtimes*:
+* Step 3: Navigate to the *Runtimes* section:
 
-> ![](img/screenshot-import-runtime-01-DEU.png){width="300"} 
+> ![](img/screenshot-import-runtime-01-DEU.png){width="300" fig-align="left"}
 
-* Step 4: Push the button “+” (bottom right)
+* Step 4: Press the "+" button (bottom right)
 
-* Step 5: Enter the version number with three places (e.g., 9.9.0):
+* Step 5: Enter the version number with three digits (e.g. 9.9.0):
 
-> ![](img/screenshot-import-runtime-02-DEU.png){width="300"} 
+> ![](img/screenshot-import-runtime-02-DEU.png){width="300" fig-align="left"}
 
-* Step 6: Select the file `main.*.js` from the ZIP archive that contains the runtime. Note that the * equals the hash of the file (i.e., the complete file name looks like `main.19479ac3.js`)
+* Step 6: Select the file `main.*.js` from the ZIP archive containing the runtime environment. Note that the * corresponds to the hash of the file (i.e. the full file name looks like `main.19479ac3.js`)
 
-* Step 7: Select the file `main.*.css` from the ZIP archive that contains the runtime. Note that the * equals the hash of the file (i.e., the complete file name looks like `main.b765ceca.css`)
 
-> Note: The field *Description* and the additional two *Map-Files* (for JavaScript Source and for CSS Source) are optional.
+* Step 7: Select the file `main.*.css` from the ZIP archive containing the runtime. Note that the * corresponds to the hash of the file (i.e. the full file name looks like `main.b765ceca.css`)
 
-* Step 8: Press the button *Save* to complete the import of the *Runtime*:
+> Note: The *Description* field and the two additional *Map files* (for JavaScript Source and for CSS Source) are optional.
 
-> ![](img/screenshot-import-runtime-03-DEU.png){width="300"} 
+* Step 8: Press the *Save* button to finalise the import of the *Runtime*:
 
-After importing the supported CBA ItemBuilder versions are listed in the section *Runtime*. To delete a *Runtime* for a particular version, click the *Trash* icon on the bottom right of the “card” and confirm with *Delete*.
+> ![](img/screenshot-import-runtime-03-DEU.png){width="300" fig-align="left"}
+
+After the import, the supported CBA ItemBuilder versions are listed in the *Runtime* section. To delete a *Runtime* for a specific version, click on the *Trash* icon at the bottom right of the "Map" and confirm with *Delete*.

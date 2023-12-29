@@ -8,12 +8,12 @@ format:
 
 ### Laufzeitumgebungen
 
-Um mit dem IRTLib Editor Studien zu konfigurieren, welche CBA ItemBuilder Inhalte verwenden, ist je Version die passende Laufzeitumgebung (*Runtime*) notwendig. Aktuelle getestete Version der CBA ItemBuilder Runtime sind bereits im Editor hinterlegt, in diesem Bereich können jedoch auch Runtimes für andere Versionen des CBA ItemBuilders oder aktualisierte bzw. korrigierte Runtimes in den Editor importiert werden.
+Um mit dem *IRTLib Editor* *Studien* zu konfigurieren, welche *CBA ItemBuilder* Inhalte verwenden, ist je Version die passende Laufzeitumgebung (*Runtime*) notwendig. Aktuelle getestete Version der CBA ItemBuilder Runtime sind bereits im *IRTLib Editor* hinterlegt, in diesem Bereich können jedoch auch *Runtimes* für andere Versionen des *CBA ItemBuilders* oder aktualisierte bzw. korrigierte *Runtimes* in den *IRTLib Editor* importiert werden.
 
 
-#### CBA ItemBuilder Version prüfen
+#### CBA ItemBuilder Version Prüfen
 
-Es ist wichtig zu  wissen, welche Version des CBA ItemBuilders für die Erstellung der Items (d.h. der CBA ItemBuilder-Projektdateien) verwendet wurde. Im Zweifelsfall kann man diese Information z.B. im *About Dialog* des CBA ItemBuilders finden:
+Es ist wichtig zu  wissen, welche Version des *CBA ItemBuilders* für die Erstellung der Items (d.h. der *CBA ItemBuilder*-Projektdateien) verwendet wurde. Im Zweifelsfall kann man diese Information z.B. im *About Dialog* des CBA ItemBuilders finden:
 
 * Schritt 1: Öffnen Sie den "Apout"-Dialog über das "Help"-Menü
 

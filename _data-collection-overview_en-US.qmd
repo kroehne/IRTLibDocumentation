@@ -1,3 +1,15 @@
-## Overview: Steps for using an *IRTlib Player* for *data collection*
+## Overview: Steps for using an *IRTlib Player* for *Data Collections*
 
-(No translation defined yet.) 
+Once a *Study* has been created and configured using the *IRTlib Editor*, a finalised *Version* of this configuration must be created. Versions *seal* and finalise all configurations and have a unique version number (referred to as a *Revision*). The use of *Revisions* makes the administration of data collections with the *IRTlib Editor* and *IRTlib Player* reproducible, as the revision number of a configuration is also saved in the data sets.
+
+* **Check Configurations**:Before finalising and *sealing* a version, it is suggested to check all settings again. The *IRTlib Editor* provides an additional *Validation* feature for this purpose.  
+
+* **Create Sealed Version**: If no further changes are required, the version can be *sealed*. This is done by selecting the changes that have not yet been saved and clicking on the lock symbol in the *IRTlib Editor* in the *Publish* view, in which the *Study revisions* are displayed.  
+
+* **Export version**: Versions of studies that are available in the *IRTlib Editor* can be exported. It is necessary to export the configuration before it can be used with the *IRTlib Player*. When exporting, the complete study configuration including the imported *CBA ItemBuilder* content is downloaded as a ZIP archive. 
+
+* **Import Study into *IRTlib Player***: Exported versions of studies from the *IRTlib Editor* can be imported into an *IRTlib Player* for use. There is an automatic mode for individual *Studies*. If several *Studies* are to be used simultaneously in one *IRTlib Player*, this can be configured manually.  
+
+* **Testing the Study**: Before the actual data collection can begin, each configuration should first be tested with synthetic test cases (i.e. systematically). 
+
+If problems are still detected in an exported study, it is possible to return to the preparation (see [Preparation of studies](preparation-studies.qmd) and [Preparation of survey parts](preparation-parts.qmd)), modify the study definition and the configuration of the test parts, create another sealed version and continue with the modified configuration.

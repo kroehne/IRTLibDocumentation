@@ -4,7 +4,7 @@ Nachdem eine *Studie* mit dem *IRTlib Editor* angelegt und konfiguriert wurde, m
 
 * **Konfigurationen Prüfen**: Vor der Fertigstellung und dem *Versiegeln* einer Version ist es ratsam, alle Einstellungen noch einmal zu überprüfen. Der *IRTlib-Editor* stellt dafür eine zusätzliche Funktion der *Validierung* zur Verfügung.  
 
-* **Versiegelte Version Erstellen**: Wenn keine weiteren Änderungen erforderlich sind, kann die Version *versiegelt* werden. Dies geschieht durch das Auswählen der noch nicht gespeicherten Änderungen und einen Klick auf das Schloss-Symbol im *IRTlib Editor* in der Ansicht *Veröffentlichen*, in welcher die *Studienrevisionen* angezeigt werden. . 
+* **Versiegelte Version Erstellen**: Wenn keine weiteren Änderungen erforderlich sind, kann die Version *versiegelt* werden. Dies geschieht durch das Auswählen der noch nicht gespeicherten Änderungen und einen Klick auf das Schloss-Symbol im *IRTlib Editor* in der Ansicht *Veröffentlichen*, in welcher die *Studienrevisionen* angezeigt werden. 
 
 * **Version Exportieren**: Versionen von Studien, die im *IRTlib-Editor* verfügbar sind, können exportiert werden. Der Export der Konfiguration ist notwendig, bevor diese mit dem *IRTlib-Player* verwendet werden können. Beim Exportieren wird die vollständige Studienkonfiguration inklusive der importierten *CBA ItemBuilder*-Inhalte als ZIP-Archiv heruntergeladen. 
 

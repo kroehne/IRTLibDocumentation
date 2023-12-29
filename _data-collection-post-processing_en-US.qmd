@@ -1,5 +1,241 @@
-## Data Post-Processing
+## Data Preparation
+
+Data is saved by the *IRTlib Player* in *raw data archives* per *session* (i.e. per test run with a *Study*). The *raw data archives* are ZIP archives whose file names correspond to the *user name* or the *Universally Unique Identifier* (UUID). Deviations from this scheme are possible if a *raw data archive* with this file name already existed at the time of saving. In this case, the data is not overwritten by the *IRTlib Player*, but a suffix `_1`, `_2`, ... is appended until the file name can be used. 
+
+* **Offline *IRTlib Player***: If not configured otherwise, the results data are saved in the directory `Temp/{Study-Name}/Results`. The *raw data archives* are created when a *session* is ended, i.e. the last defined *CBA ItemBuilder*-*Task* is exited with `NEXT_TASK`. It is no longer possible to *continue* the *session* that has been started, as may be necessary for instance in the event of a computer crash, after the *raw data archives* have been created.
+
+> The same applies if the offline version of the *IRTlib Player* is used as a local server. The *raw data archives* are saved in the `Temp/{Study name}/Results` directory after test processing.
+
+> The collection of data from the offline *IRTlib Players* corresponds to the collection of the *raw data archives* that are collected on the various devices. 
+
+::: {.callout-tip title="Note"}
+As the offline *IRTlib Players* are not connected to each other, identical login data can be created in parallel in different *IRTlib Players*, depending on the *login mode*. After data collection, the *raw data archives* must therefore be merged with care and, if necessary, separated by subfolders. 
+:::
+
+* **Online *IRTlib Player***: Unless configured otherwise, the online player collects the data in the *volume* that is configured for the results data (see `/app/results` in [`docker-compse.yml` file](https://github.com/DIPFtba/IRTlibDeploymentSoftware/blob/main/docker/docker-compose.yml)). Each *session* is stored there in a separate subdirectory and can be downloaded by administrators who have access to the *volume* (!). 
+
+If an *API*-key is defined for data access, the *download* of the result data can also be carried out via the R package [LogFSM](http://logfsm.com). 
+
+### Data retrieval with `LogFSM`
+
+To do this, the R package can first be installed (once) with the following call:
+
+```{r}
+#| eval: false
+
+source("http://logfsm.com/latest")
+```
+
+The *raw data archives* can then be downloaded using the following R script: 
+
+::: {#logfsm-download-and-convert}
+
+```{r}
+#| eval: false
+
+library(LogFSM)
+
+if (!dir.exists(paste0(getwd(),"/in/")))
+  dir.create(paste0(getwd(),"/in/"))
+
+if (!dir.exists(paste0(getwd(),"/out/")))
+  dir.create(paste0(getwd(),"/out/"))
+
+SECRET_KEY <- "(your secret key)"
+API_URL <- "(your API-URL)"
+
+LogFSM::TransformToUniversalLogFormat(inputfolders = paste0(getwd(),"/in/"),
+                              inputformat = "irtlibv01a", 
+                              zcsvoutput = paste0(getwd(),"/out/data_csv.zip"),  
+                              stataoutput = paste0(getwd(),"/out/data_dta.zip"),
+                              spssoutput = paste0(getwd(),"/out/data_sav.zip"),
+                              key = SECRET_KEY,
+                              web = API_URL, 
+                              outputtimestampformatstring="dd.MM.yyyy HH:mm:ss.fff")
+
+results <- read.csv(unz(paste0(getwd(),"/out/data_csv.zip"), "Results.csv"),
+                    sep=";", encoding = "UTF-8")
+```
+
+
+*Data retrieval and conversion of the data with LogFSM*
+
+:::
+
+By calling the function `TransformToUniversalLogFormat` from the package `LogFSM`, the data is downloaded and stored in the specified directory `infolders` if an API key (`key`) and an API url (`web`) are passed. 
+
+::: {.callout-note title="Note on `SECRET_KEY` and `API_URL`" collapse="true"}
+
+The value for `SECRET_KEY` must correspond to the entry that was defined as `ExternalExportKey` in the `appsettings.json` when configuring the *Docker* image, see section [Online-Version (Docker)](data-collection-player-integration.qmd#online-version-docker). 
+
+The value for the `API_URL` is formed according to the following scheme: `https://{U}/{S}/api/session/`
+
+* `{U}` is the URL of the *IRTlib Player* 
+* `{S}` is the identifier of the *study* 
+
+:::
+
+The function `TransformToUniversalLogFormat` from the package `LogFSM` (or analogue to the *command line tool* described below) can also be used to read out already existing local raw data archives. 
+
+### Data Retrieval via the Command Line
+
+The application `TransformToUniversalLogFormat` used for data retrieval and data conversion via `LogFSM` is available as a console application from the *Releases* section of [https://github.com/kroehne/LogFSM/](https://github.com/kroehne/LogFSM/releases).
+
+Data retrieval and data transformation can also be performed without R.
+
+<!-- 
+* **Windows**: 
+
+* **Linux**: 
+
+* **Mac**: 
+
+--> 
+
+::: {.callout-important title="In development"}
+A certified version of `TransformToUniversalLogFormat` for Apple is currently under development.
+:::
 
 ### Result Data
 
+If the data was retrieved via `LogFSM` from an online *IRTlib Player* or collected offline, it is stored in a directory at the end. Per *session* (i.e. per person or person x time) as a *raw data* archive. 
+
+The function `TransformToUniversalLogFormat` in `LogFSM` or via the command line can also be used to read the *raw data archives* from a directory and extract the result data:
+
+::: {#logfsm-convert-only}
+
+```{r}
+#| eval: false
+
+library(LogFSM)
+
+if (!dir.exists(paste0(getwd(),"/out/")))
+  dir.create(paste0(getwd(),"/out/"))
+
+LogFSM::TransformToUniversalLogFormat(inputfolders = paste0(getwd(),"/in/"),
+                              inputformat = "irtlibv01a", 
+                              zcsvoutput = paste0(getwd(),"/out/data_csv.zip"),  
+                              stataoutput = paste0(getwd(),"/out/data_dta.zip"),
+                              spssoutput = paste0(getwd(),"/out/data_sav.zip"),
+                              outputtimestampformatstring="dd.MM.yyyy HH:mm:ss.fff")
+
+results <- read.csv(unz(paste0(getwd(),"/out/data_csv.zip"), "Results.csv"),
+                    sep=";", encoding = "UTF-8")
+```
+ 
+
+:::
+
 ### Log Data
+
+Converting the data with `TransformToUniversalLogFormat` in `LogFSM` or via the command line converts the collected log data, which is provided by the *CBA ItemBuilder*-*Tasks*, into the following formats:
+
+* *Flat and Sparse Log-Data Table*: A large table (as CSV, Stata, SPSS) with one row per event. As the event-specific attributes (i.e. the various additional information available from an event) are distributed across many columns, which are only filled for each *event type*, this table is *flat*, but can also be very *holey*. 
+
+* *Universal log format*: Alternatively, the ZIP archives created by `LogFSM` or the command line tool `TransformToUniversalLogFormat` also contain individual data record tables for each *event type*. The event-specific attributes in these tables are less *holey* (i.e. they only contain missing values for optional attributes) and can be combined into a *Flat and Sparse Log-Data Table* if required.
+
+* *XES (eXtensible Event Stream)*: The log data can also be converted to the standardised `XML` format ([https://xes-standard.org/](https://xes-standard.org/)). 
+
+
+::: {.callout-note title="Note on timestamps"}
+The timestamps collected with the *IRTlib software* are in *UTC* format (*Coordinated Universal Time*).
+:::
+
+
+### Files in the *raw data archives*
+
+The *raw data archives* contain the following files:
+
+* `Trace.json`: Log data (*Traces*) as supplied by the *CBA ItemBuilder*-*Runtime*, together with the context from the *IRTlib Player*. 
+
+> The file contains the following structure, separated by commas. The file is not a valid JSON until the last comma is removed and a `[` before and a `]` after the content is inserted. 
+
+> The entry `Trace` contains the log data (*Traces*) in packets (as supplied by the *CBA ItemBuilder*-*Runtime*) quoted (i.e. `"` is displayed as `\u0022`). The `TraceId` is a counter which counts the transmitted packets. Timestamp is the timestamp of the transmission. SessionId is the user name or the UUID (*PersonIdentifier*). The `Context` provides a reference to the assessment content (*Element*) via the name of the *CBA ItemBuilder* project, *Task* and *Scope*. The information on the *IRTlib Player* used is stored under `Assemblies` and `StudyRevision` refers to the *Revision* of a (published) *Study*.
+
+````
+{
+    "Trace": "(TRACE-JSON)",
+    "TraceId": 1,
+    "Timestamp": "2023-12-04T20:53:06.297Z",
+    "SessionId": "(SESSION-ID OR USERNAME)",
+    "Context": {
+        "Item": "(PROJECT NAME)",
+        "Task": "(TASK NAME)",
+        "Scope": "(SCOPE)",
+        "Preview": ""
+    },
+    "Assemblies": [
+        {
+            "Name": "TestApp.Player.Desktop",
+            "Version": "(APPLICATION VERSION)",
+            "GitHash": "(APPLICATION BUILD HASH)"
+        }
+    ],
+    "StudyRevision": "(STUDY REVISION)"
+},
+````
+
+* `Snapshot.json`: Snapshot data as supplied by the *CBA ItemBuilder*-*Runtime*, together with the context from the *IRTlib Player*. 
+
+> The file contains the following structure, separated by commas. The file is not a valid JSON until the last comma is removed and a `[` before and a `]` after the content is inserted. 
+
+> The `Snapshot` entry contains the snapshot information (as supplied by the *CBA ItemBuilder*-*Runtime*) quoted (i.e. `"` is displayed as `\u0022`). The `ContextFlag` indicates how the *CBA ItemBuilder*-*Task* was exited (NextTask, PreviousTask or Cancel). <!-- The `ContextScope` is (TODO). --> `Timestamp` is the timestamp of the transmission. `SessionId` is the user name or the UUID (*PersonIdentifier*). The `Context` provides a reference to the assessment content (*Element*) via the name of the *CBA ItemBuilder* project, *Task* and *Scope*. The information on the *IRTlib Player* used is stored under `Assemblies` and `StudyRevision` refers to the *Revision* of a (published) *Study*.
+
+<!-- (TODO: Why is `Assemblies` and `StudyRevision` null?) --> 
+
+````
+{
+    "Snapshot": "(SNAPSHOT-JSON)",
+    "ContextFlag": "NextTask",
+    "ContextScope": 0,
+    "Timestamp": "2023-12-04T20:53:06.497Z",
+    "SessionId": "(SESSION-ID OR USERNAME)",
+    "Context": {
+        "Item": "(PROJECT NAME)",
+        "Task": "(TASK NAME)",
+        "Scope": "(SCOPE)",
+        "Preview": ""
+    },
+    "Assemblies": null,
+    "StudyRevision": null
+},
+````
+
+* `ItemScore.json`: Scoring information (as supplied by *CBA ItemBuilder*-*Runtime*).
+
+> The file contains the following structure, separated by a comma. The file is not a valid JSON until the last comma is removed and a `[` before and a `]` after the content is inserted. 
+
+> The `ItemScore` entry contains the *ItemScore* (as supplied by the *CBA ItemBuilder*-*Runtime*) quoted (i.e. `"` is displayed as `\u0022`).The `ContextFlag` specifies how the *CBA ItemBuilder*-*Task* was exited (NextTask, PreviousTask or Cancel). <!-- The `ContextScope` is (TODO). --> `Timestamp` is the timestamp of the transmission. `SessionId` is the user name or the UUID (*PersonIdentifier*). The `Context` provides a reference to the assessment content (*Element*) via the name of the *CBA ItemBuilder* project, *Task* and *Scope*. The information on the *IRTlib Player* used is stored under `Assemblies` and `StudyRevision` refers to the *Revision* of a (published) *Study*.
+
+````
+{
+    "ItemScore": "(SCORING-JSON)",
+    "ContextFlag": "NextTask",
+    "ContextScope": 0,
+    "Timestamp": "2023-12-04T20:53:06.474Z",
+    "SessionId": "(SESSION-ID OR USERNAME)",
+    "Context": {
+        "Item": "(PROJECT NAME)",
+        "Task": "(TASK NAME)",
+        "Scope": "(SCOPE)",
+        "Preview": ""
+     },
+    "Assemblies": [
+        {
+            "Name": "TestApp.Player.Desktop",
+            "Version": "(APPLICATION VERSION)",
+            "GitHash": "(APPLICATION BUILD HASH)"
+        }
+    ],
+    "StudyRevision": "(STUDY REVISION)"
+},
+````
+
+* `Session.json`: The file contains data of the *IRTlib Player*, which describe the execution of the *Session*.
+* `Log.json`: Log events of the *IRTlib Player* (contains log information for processing the *Blockly* routing).
+* `browser.log`: Console output collected during the processing of tasks in the browser (unstructured text, for developers).
+* `server.log`: Log output from the server of the *IRTlib Player* (unstructured text, for developers)
+* `Keyboard.json`: Keyboard input and timestamps.
+* `Monitoring.json`: Copy of the monitoring file that was created. 
+
+<!-- (TODO: How can mouse tracking be activated?) --> 

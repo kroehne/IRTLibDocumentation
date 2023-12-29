@@ -8,7 +8,7 @@ format:
 
 ### Einstellungen
 
-In diesem Bereich können Einstellungen vorgenommen werden, welche die Arbeit mit dem Editor und alle Studien betreffen.
+In diesem Bereich können Einstellungen vorgenommen werden, welche die Arbeit mit dem *IRTlib Editor* und alle Studien betreffen.
 
 #### Runtimesverwaltung
 
