@@ -329,11 +329,14 @@ Hinweis zur <code>SECRET_KEY</code> und <code>API_URL</code>
 <h3 class="anchored" data-anchor-id="datenabruf-über-die-kommandozeile">Datenabruf über die Kommandozeile</h3>
 <p>Die für den Datenabruf und die Datenkonvertierung über <code>LogFSM</code> verwendete Anwendung <code>TransformToUniversalLogFormat</code> ist als Konsolen-Anwendung aus dem <em>Releases</em>-Abschnitt von <a href="https://github.com/kroehne/LogFSM/releases">https://github.com/kroehne/LogFSM/</a> verfügbar.</p>
 <p>Darüber lassen sich Datenabruf und Datenumwandlung auch ohne R ausführen.</p>
-<ul>
-<li><p><strong>Windows</strong>:</p></li>
-<li><p><strong>Linux</strong>:</p></li>
-<li><p><strong>Mac</strong>:</p></li>
-</ul>
+<!-- 
+* **Windows**: 
+
+* **Linux**: 
+
+* **Mac**: 
+
+-->
 <div class="callout callout-style-default callout-important callout-titled" title="In Entwicklung">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -432,9 +435,9 @@ Hinweis zu Zeitstempeln
 <p>Die Datei enthält folgende Struktur, mit Komma getrennt. Die Datei ist kein gültiges JSON, bis nicht das letzte Komma entfernt und ein <code>[</code> vor und ein <code>]</code> nach dem Inhalt eingefügt wird.</p>
 </blockquote>
 <blockquote class="blockquote">
-<p>Der Eintrag <code>Snapshot</code> enthält die Snapshot-Informationen (wie von der <em>CBA ItemBuilder</em>-<em>Runtime</em> geliefert) quotiert (d.h. <code>"</code> wird als <code>\u0022</code> dargestellt). Der <code>ContextFlag</code> gibt an, wie der <em>CBA ItemBuilder</em>-<em>Task</em> verlassen wurde (NextTask, PreviousTask oder Cancel). Der <code>ContextScope</code> ist (TODO). <code>Timestamp</code> ist der Zeitstempel der Übermittlung. <code>SessionId</code> der Benutzername oder die UUID (<em>PersonIdentifier</em>). Der <code>Context</code> gibt über Name des <em>CBA ItemBuilder</em>-Projekts, <em>Task</em> und <em>Scope</em> eine Referenz zum Assessmentinhalt (<em>Element</em>). Unter <code>Assemblies</code> sind die Informationen zum verwendeten <em>IRTlib Player</em> gespeichert und <code>StudyRevision</code> verweist auf die <em>Revision</em> einer (veröffentlichten) <em>Studie</em>.</p>
+<p>Der Eintrag <code>Snapshot</code> enthält die Snapshot-Informationen (wie von der <em>CBA ItemBuilder</em>-<em>Runtime</em> geliefert) quotiert (d.h. <code>"</code> wird als <code>\u0022</code> dargestellt). Der <code>ContextFlag</code> gibt an, wie der <em>CBA ItemBuilder</em>-<em>Task</em> verlassen wurde (NextTask, PreviousTask oder Cancel). <!-- Der `ContextScope` ist (TODO). --> <code>Timestamp</code> ist der Zeitstempel der Übermittlung. <code>SessionId</code> der Benutzername oder die UUID (<em>PersonIdentifier</em>). Der <code>Context</code> gibt über Name des <em>CBA ItemBuilder</em>-Projekts, <em>Task</em> und <em>Scope</em> eine Referenz zum Assessmentinhalt (<em>Element</em>). Unter <code>Assemblies</code> sind die Informationen zum verwendeten <em>IRTlib Player</em> gespeichert und <code>StudyRevision</code> verweist auf die <em>Revision</em> einer (veröffentlichten) <em>Studie</em>.</p>
 </blockquote>
-<p>(TODO: Warum ist <code>Assemblies</code> und <code>StudyRevision</code> null?)</p>
+<!-- (TODO: Warum ist `Assemblies` und `StudyRevision` null?) -->
 <pre><code>{
     "Snapshot": "(SNAPSHOT-JSON)",
     "ContextFlag": "NextTask",
@@ -457,7 +460,7 @@ Hinweis zu Zeitstempeln
 <p>Die Datei enthält folgende Struktur, mit Komma getrennt. Die Datei ist kein gültiges JSON, bis nicht das letzte Komma entfernt und ein <code>[</code> vor und ein <code>]</code> nach dem Inhalt eingefügt wird.</p>
 </blockquote>
 <blockquote class="blockquote">
-<p>Der Eintrag <code>ItemScore</code> enthält den <em>ItemScore</em> (wie von der <em>CBA ItemBuilder</em>-<em>Runtime</em> geliefert) quotiert (d.h. <code>"</code> wird als <code>\u0022</code> dargestellt).Der <code>ContextFlag</code> gibt an, wie der <em>CBA ItemBuilder</em>-<em>Task</em> verlassen wurde (NextTask, PreviousTask oder Cancel). Der <code>ContextScope</code> ist (TODO). <code>Timestamp</code> ist der Zeitstempel der Übermittlung. <code>SessionId</code> der Benutzername oder die UUID (<em>PersonIdentifier</em>). Der <code>Context</code> gibt über Name des <em>CBA ItemBuilder</em>-Projekts, <em>Task</em> und <em>Scope</em> eine Referenz zum Assessmentinhalt (<em>Element</em>). Unter <code>Assemblies</code> sind die Informationen zum verwendeten <em>IRTlib Player</em> gespeichert und <code>StudyRevision</code> verweist auf die <em>Revision</em> einer (veröffentlichten) <em>Studie</em>.</p>
+<p>Der Eintrag <code>ItemScore</code> enthält den <em>ItemScore</em> (wie von der <em>CBA ItemBuilder</em>-<em>Runtime</em> geliefert) quotiert (d.h. <code>"</code> wird als <code>\u0022</code> dargestellt).Der <code>ContextFlag</code> gibt an, wie der <em>CBA ItemBuilder</em>-<em>Task</em> verlassen wurde (NextTask, PreviousTask oder Cancel). <!-- Der `ContextScope` ist (TODO). --> <code>Timestamp</code> ist der Zeitstempel der Übermittlung. <code>SessionId</code> der Benutzername oder die UUID (<em>PersonIdentifier</em>). Der <code>Context</code> gibt über Name des <em>CBA ItemBuilder</em>-Projekts, <em>Task</em> und <em>Scope</em> eine Referenz zum Assessmentinhalt (<em>Element</em>). Unter <code>Assemblies</code> sind die Informationen zum verwendeten <em>IRTlib Player</em> gespeichert und <code>StudyRevision</code> verweist auf die <em>Revision</em> einer (veröffentlichten) <em>Studie</em>.</p>
 </blockquote>
 <pre><code>{
     "ItemScore": "(SCORING-JSON)",
@@ -488,7 +491,7 @@ Hinweis zu Zeitstempeln
 <li><code>Keyboard.json</code>: Tastatureingaben und Zeitstempel.</li>
 <li><code>Monitoring.json</code>: Kopie der Monitoring-Datei, welche erstellt wurde.</li>
 </ul>
-<p>(TODO: Wie lässt sich Mouse-Tracking aktivieren?)</p>
+<!-- (TODO: Wie lässt sich Mouse-Tracking aktivieren?) -->
 
 
 </section>

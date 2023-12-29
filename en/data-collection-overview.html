@@ -180,7 +180,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#datenerhebung-übersicht-data-collection-overview" id="toc-datenerhebung-übersicht-data-collection-overview" class="nav-link active" data-scroll-target="#datenerhebung-übersicht-data-collection-overview">Datenerhebung: Übersicht / Data Collection: Overview</a>
   <ul class="collapse">
-  <li><a href="#overview-steps-for-using-an-irtlib-player-for-data-collection" id="toc-overview-steps-for-using-an-irtlib-player-for-data-collection" class="nav-link" data-scroll-target="#overview-steps-for-using-an-irtlib-player-for-data-collection">Overview: Steps for using an <em>IRTlib Player</em> for <em>data collection</em></a></li>
+  <li><a href="#overview-steps-for-using-an-irtlib-player-for-data-collections" id="toc-overview-steps-for-using-an-irtlib-player-for-data-collections" class="nav-link" data-scroll-target="#overview-steps-for-using-an-irtlib-player-for-data-collections">Overview: Steps for using an <em>IRTlib Player</em> for <em>Data Collections</em></a></li>
   </ul></li>
   </ul>
 </nav>
@@ -192,9 +192,17 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="datenerhebung-übersicht-data-collection-overview" class="level1">
 <h1>Datenerhebung: Übersicht / Data Collection: Overview</h1>
-<section id="overview-steps-for-using-an-irtlib-player-for-data-collection" class="level2">
-<h2 class="anchored" data-anchor-id="overview-steps-for-using-an-irtlib-player-for-data-collection">Overview: Steps for using an <em>IRTlib Player</em> for <em>data collection</em></h2>
-<p>(No translation defined yet.)</p>
+<section id="overview-steps-for-using-an-irtlib-player-for-data-collections" class="level2">
+<h2 class="anchored" data-anchor-id="overview-steps-for-using-an-irtlib-player-for-data-collections">Overview: Steps for using an <em>IRTlib Player</em> for <em>Data Collections</em></h2>
+<p>Once a <em>Study</em> has been created and configured using the <em>IRTlib Editor</em>, a finalised <em>Version</em> of this configuration must be created. Versions <em>seal</em> and finalise all configurations and have a unique version number (referred to as a <em>Revision</em>). The use of <em>Revisions</em> makes the administration of data collections with the <em>IRTlib Editor</em> and <em>IRTlib Player</em> reproducible, as the revision number of a configuration is also saved in the data sets.</p>
+<ul>
+<li><p><strong>Check Configurations</strong>:Before finalising and <em>sealing</em> a version, it is suggested to check all settings again. The <em>IRTlib Editor</em> provides an additional <em>Validation</em> feature for this purpose.</p></li>
+<li><p><strong>Create Sealed Version</strong>: If no further changes are required, the version can be <em>sealed</em>. This is done by selecting the changes that have not yet been saved and clicking on the lock symbol in the <em>IRTlib Editor</em> in the <em>Publish</em> view, in which the <em>Study revisions</em> are displayed.</p></li>
+<li><p><strong>Export version</strong>: Versions of studies that are available in the <em>IRTlib Editor</em> can be exported. It is necessary to export the configuration before it can be used with the <em>IRTlib Player</em>. When exporting, the complete study configuration including the imported <em>CBA ItemBuilder</em> content is downloaded as a ZIP archive.</p></li>
+<li><p><strong>Import Study into <em>IRTlib Player</em></strong>: Exported versions of studies from the <em>IRTlib Editor</em> can be imported into an <em>IRTlib Player</em> for use. There is an automatic mode for individual <em>Studies</em>. If several <em>Studies</em> are to be used simultaneously in one <em>IRTlib Player</em>, this can be configured manually.</p></li>
+<li><p><strong>Testing the Study</strong>: Before the actual data collection can begin, each configuration should first be tested with synthetic test cases (i.e.&nbsp;systematically).</p></li>
+</ul>
+<p>If problems are still detected in an exported study, it is possible to return to the preparation (see <a href="./preparation-studies.html">Preparation of studies</a> and <a href="./preparation-parts.html">Preparation of survey parts</a>), modify the study definition and the configuration of the test parts, create another sealed version and continue with the modified configuration.</p>
 
 
 </section>

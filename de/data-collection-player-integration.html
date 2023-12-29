@@ -355,7 +355,7 @@ Wichtiger Hinweis
 <section id="lokaler-server-windows" class="level3">
 <h3 class="anchored" data-anchor-id="lokaler-server-windows">Lokaler Server (Windows)</h3>
 <p>Die über das <a href="https://github.com/DIPFtba/IRTlibDeploymentSoftware/releases">Github</a>-Repository im Abschnitt <em>Releases</em> verfügbaren ZIP-Archive des Offline <em>IRTlib Players</em> enthalten parallel zu der Anwendung mit integriertem Browser (<code>TestApp.Player.Desktop.exe</code>) auch eine <em>lokale Server-Version</em>, welche über die ausführbare Datei <code>TestApp.Player.Server.exe</code> gestartet werden kann.</p>
-<p>(TO-DO: Zugriff über Routen beschreiben)</p>
+<!-- (TO-DO: Zugriff über Routen beschreiben) -->
 <div class="callout callout-style-default callout-important callout-titled" title="Wichtiger Hinweis">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -372,101 +372,41 @@ Wichtiger Hinweis
 </section>
 <section id="online-version-docker" class="level3">
 <h3 class="anchored" data-anchor-id="online-version-docker">Online-Version (Docker)</h3>
-<div class="callout callout-style-default callout-important callout-titled" title="Wichtiger Hinweis">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Wichtiger Hinweis
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Die bereitgestellten <em>Docker</em>-Container für <em>IRTlib Player</em> und <em>IRTlib Editor</em> müssen von einem Administrator in eine sichere Umgebung integriert werden, bevor sie für Datenerhebungen verwendet werden können.</p>
-<p>Das folgende Beispiel dient nur der Illustration. <a href="">Docker</a> und <a href="">Git</a> müssen für dieses Beispiel installiert sein.</p>
-<table class="table">
-<thead>
-<tr class="header">
-<th>Schritt</th>
-<th>Beschreibung</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1</td>
-<td>Konsole starten:</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>* Windows:</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>* Mac:</td>
-</tr>
-<tr class="even">
-<td>2</td>
-<td>Prüfen, ob <em>Docker</em> installiert ist und läuft:</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><code>docker info</code></td>
-</tr>
-<tr class="even">
-<td>3</td>
-<td>Prüfen, ob <em>Git</em> installiert ist:</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><code>git version</code></td>
-</tr>
-<tr class="even">
-<td>4</td>
-<td>Konfiguration von <a href="https://github.com/DIPFtba/IRTlibDeploymentSoftware/">Github</a> beziehen:</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>* Download (wenn kein <em>Git</em> installiert ist):</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>* Git:</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><code>git clone --branch develop https://github.com/DIPFtba/IRTlibDeploymentSoftware.git</code></td>
-</tr>
-<tr class="even">
-<td>5</td>
-<td>Datei <code>appsettings.json</code> im Verzeichnis <code>IRTlibDeploymentSoftware/</code> <code>docker/</code> <code>TestApp.Player/</code> bearbeiten und <code>ExternalExportKey</code> eintragen:</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><code>"ExternalExportKey": "mykey123",</code></td>
-</tr>
-<tr class="even">
-<td>6</td>
-<td>Datei <code>docker-compose.yml</code> im Verzeichnis <code>IRTlibDeploymentSoftware/</code> <code>docker/</code> bearbeiten und Ports eintragen:</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>7</td>
-<td>Im Verzeichnis <code>IRTlibDeploymentSoftware/</code> <code>docker/</code> das Skript <code>start.sh</code> ausführen:</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><code>./start.sh</code></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
+<!-- 
+
+::: {.callout-important title="Wichtiger Hinweis" collapse="true"}
+Die bereitgestellten *Docker*-Container für *IRTlib Player* und *IRTlib Editor* müssen von einem Administrator in eine sichere Umgebung integriert werden, bevor sie für Datenerhebungen verwendet werden können. 
+
+
+Das folgende Beispiel dient nur der Illustration. [Docker]() und [Git]() müssen für dieses Beispiel installiert sein.
+
+
+|Schritt|Beschreibung|
+|---|-------------| 
+|1  | Konsole starten: |
+|   | * Windows:  |
+|   | * Mac:  |
+|2  | Prüfen, ob *Docker* installiert ist und läuft: |
+|   | `docker info` |
+|3  | Prüfen, ob *Git* installiert ist: |
+|   | `git version` |
+|4  | Konfiguration von [Github](https://github.com/DIPFtba/IRTlibDeploymentSoftware/) beziehen: |
+|   | * Download (wenn kein *Git* installiert ist):  |
+|   | * Git:  |
+|   | `git clone --branch develop https://github.com/DIPFtba/IRTlibDeploymentSoftware.git`  |
+|5  | Datei `appsettings.json` im Verzeichnis `IRTlibDeploymentSoftware/` `docker/` `TestApp.Player/` bearbeiten und `ExternalExportKey` eintragen: |
+|   | `"ExternalExportKey": "mykey123",`|
+|6  | Datei `docker-compose.yml` im Verzeichnis `IRTlibDeploymentSoftware/` `docker/` bearbeiten und Ports eintragen: |
+|   | |
+|7  | Im Verzeichnis `IRTlibDeploymentSoftware/` `docker/` das Skript `start.sh` ausführen: |
+|   | `./start.sh`|
+
+
+
+
+:::
+
+-->
 <p><strong>Integration</strong>: Für die Durchführung einer Datenerhebung sollte das <em>Docker</em>-Image des <em>IRTlib Players</em> nur über https-gesicherte Verbindungen erreichbar sein. Das kann bspw. mithilfe eines als <em>Reverse Proxy</em> konfigurierten zusätzlichen <em>nginx</em> realisiert werden.</p>
 <p><strong>Zugriff auf Editor</strong>: Für unbefugte Personen, die nicht mit der Studienvorbereitung betraut sind, darf kein Zugriff auf den <em>IRTlib Editor</em> möglich sein. Über das <a href="https://github.com/DIPFtba/IRTlibDeploymentSoftware/">Github</a>-Repository werden <em>IRTlib Editor</em> und <em>IRTlib Player</em> bereitgestellt. Für eine operative Datenerhebung ist es nicht notwendig, den <em>IRTlib Editor</em> online zu betreiben, da die Studienvorbereitung auch mit der Offline-Version des <em>IRTlib Editors</em> erstellt werden kann. Wird der <em>IRTlib Editor</em> online gehostet, muss er vor dem Zugriff Unbefugter geschützt werden.</p>
 <p><strong>Zugriff auf Verzeichnisse</strong>: In den im <a href="https://github.com/DIPFtba/IRTlibDeploymentSoftware/blob/main/docker/docker-compose.yml"><code>docker-compse.yml</code>-File</a> definierten <em>Volumes</em> <code>/app/Content</code> (<em>IRTlib Player</em>) und <code>/app/data</code> (<em>IRTlib Editor</em>) sind die Iteminhalte hinterlegt, die für ein Assessment konfiguriert werden. Um den Schutz von Instrumenten sicherzustellen, darf kein Zugriff für Unbefugte auf diese <em>Volumes</em> möglich sein.</p>
@@ -495,7 +435,7 @@ Hinweis
 <li><code>ExternalExportKey</code>: Über diesen <em>Schlüssel</em> erhält man Zugang zu den mit dem <em>IRTlib Player</em> erhobenen Daten. Der Zugriff auf die Daten kann bspw. über das R-Paket <a href="http://www.logfsm.com">LogFSM</a> erfolgen, wie im Abschnitt <a href="ata-collection-post-processing.qmd#datenabruf-mit-logfsm"><em>Datenabruf</em></a> beschrieben.</li>
 </ul>
 <div class="callout callout-style-default callout-note callout-titled" title="Routen zum Direkten Zugriff">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -504,7 +444,7 @@ Routen zum Direkten Zugriff
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Die Liste der bearbeiteten Session, d.h. die <em>Session-Identifier</em> lassen sich mit einem <em>API-Key</em> für <code>ExternalExportKey</code> über folgenden Aufruf als <code>JSON</code> abrufen:</p>
 <p><code>https://{U}/{S}/api/session/?apiKey={K}</code></p>

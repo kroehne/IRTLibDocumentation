@@ -180,23 +180,21 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#datenerhebung-in-irtlib-player-importieren-data-collection-import-into-irtlib-player" id="toc-datenerhebung-in-irtlib-player-importieren-data-collection-import-into-irtlib-player" class="nav-link active" data-scroll-target="#datenerhebung-in-irtlib-player-importieren-data-collection-import-into-irtlib-player">Datenerhebung: In <em>IRTlib Player</em> Importieren / Data Collection: Import into <em>IRTlib Player</em></a>
   <ul class="collapse">
-  <li><a href="#konfiguration-importieren-2" id="toc-konfiguration-importieren-2" class="nav-link" data-scroll-target="#konfiguration-importieren-2">Konfiguration Importieren</a>
+  <li><a href="#import-configuration" id="toc-import-configuration" class="nav-link" data-scroll-target="#import-configuration">Import Configuration</a>
   <ul class="collapse">
-  <li><a href="#automatischer-import-2" id="toc-automatischer-import-2" class="nav-link" data-scroll-target="#automatischer-import-2">Automatischer Import</a></li>
-  <li><a href="#manueller-importieren" id="toc-manueller-importieren" class="nav-link" data-scroll-target="#manueller-importieren">Manueller Importieren</a></li>
+  <li><a href="#automatic-import" id="toc-automatic-import" class="nav-link" data-scroll-target="#automatic-import">Automatic Import</a></li>
+  <li><a href="#manual-import" id="toc-manual-import" class="nav-link" data-scroll-target="#manual-import">Manual Import</a></li>
   </ul></li>
-  <li><a href="#auslieferungen-testen" id="toc-auslieferungen-testen" class="nav-link" data-scroll-target="#auslieferungen-testen">Auslieferungen Testen</a>
+  <li><a href="#configure-deliveries" id="toc-configure-deliveries" class="nav-link" data-scroll-target="#configure-deliveries">Configure deliveries</a>
   <ul class="collapse">
-  <li><a href="#vorgeschlagene-testpläne-2" id="toc-vorgeschlagene-testpläne-2" class="nav-link" data-scroll-target="#vorgeschlagene-testpläne-2">Vorgeschlagene Testpläne</a></li>
+  <li><a href="#desktop-version-windows-2" id="toc-desktop-version-windows-2" class="nav-link" data-scroll-target="#desktop-version-windows-2">Desktop version (Windows)</a></li>
+  <li><a href="#local-server-windows" id="toc-local-server-windows" class="nav-link" data-scroll-target="#local-server-windows">Local server (Windows)</a></li>
+  <li><a href="#online-version-docker-2" id="toc-online-version-docker-2" class="nav-link" data-scroll-target="#online-version-docker-2">Online version (Docker)</a></li>
   </ul></li>
-  <li><a href="#datenerhbung-durchführen" id="toc-datenerhbung-durchführen" class="nav-link" data-scroll-target="#datenerhbung-durchführen">Datenerhbung Durchführen</a></li>
-  <li><a href="#daten-exportieren" id="toc-daten-exportieren" class="nav-link" data-scroll-target="#daten-exportieren">Daten Exportieren</a></li>
-  <li><a href="#steuerung-lokaler-server" id="toc-steuerung-lokaler-server" class="nav-link" data-scroll-target="#steuerung-lokaler-server">Steuerung (Lokaler Server)</a></li>
-  <li><a href="#hosting-docker" id="toc-hosting-docker" class="nav-link" data-scroll-target="#hosting-docker">Hosting (Docker)</a>
+  <li><a href="#testing-and-releasing-deliveries" id="toc-testing-and-releasing-deliveries" class="nav-link" data-scroll-target="#testing-and-releasing-deliveries">Testing and Releasing Deliveries</a>
   <ul class="collapse">
-  <li><a href="#integration" id="toc-integration" class="nav-link" data-scroll-target="#integration">Integration</a></li>
-  <li><a href="#zugriff-auf-editor" id="toc-zugriff-auf-editor" class="nav-link" data-scroll-target="#zugriff-auf-editor">Zugriff auf Editor</a></li>
-  <li><a href="#monitoring" id="toc-monitoring" class="nav-link" data-scroll-target="#monitoring">Monitoring</a></li>
+  <li><a href="#suggested-test-plans" id="toc-suggested-test-plans" class="nav-link" data-scroll-target="#suggested-test-plans">Suggested Test Plans</a></li>
+  <li><a href="#carry-out-data-collections" id="toc-carry-out-data-collections" class="nav-link" data-scroll-target="#carry-out-data-collections">Carry out Data Collections</a></li>
   </ul></li>
   </ul></li>
   </ul>
@@ -209,50 +207,371 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="datenerhebung-in-irtlib-player-importieren-data-collection-import-into-irtlib-player" class="level1">
 <h1>Datenerhebung: In <em>IRTlib Player</em> Importieren / Data Collection: Import into <em>IRTlib Player</em></h1>
-<section id="konfiguration-importieren-2" class="level2">
-<h2 class="anchored" data-anchor-id="konfiguration-importieren-2">Konfiguration Importieren</h2>
-<p>Wenn eine <em>versiegelte</em> Studienkonfiguration aus dem <em>IRTlib Editor</em> exportiert wurde, kann diese in einen <em>IRTlib Player</em> integriert werden.</p>
-<p>Zur Zeit werden zwei Optionen unterstützt:</p>
+<section id="import-configuration" class="level2">
+<h2 class="anchored" data-anchor-id="import-configuration">Import Configuration</h2>
+<p>The following describes how to use a study configuration created with an <em>IRTlib Editor</em> that is available as a ZIP archive.</p>
+<div class="callout callout-style-default callout-warning callout-titled" title="Published version required">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Published version required
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A published version of a <em>Study</em> is required for data collection with an <em>IRTlib Player</em>.</p>
+</div>
+</div>
+<p>If a <em>sealed</em> study configuration has been exported from the <em>IRTlib Editor</em>, it can be integrated into an <em>IRTlib Player</em>.</p>
+<p>Two options are currently supported:</p>
 <ul>
-<li>Automatischer Import</li>
-<li>Manueller Import</li>
+<li>Automatic import from ZIP archive</li>
+<li>Manual import from ZIP archive</li>
 </ul>
-<section id="automatischer-import-2" class="level3">
-<h3 class="anchored" data-anchor-id="automatischer-import-2">Automatischer Import</h3>
-<p>screenshot-irtlib-player-message-no-study01-de-DEU.png</p>
+<p>The <em>automatic import</em> is only possible for the first <em>Study</em> in an <em>IRTlib Player</em>. If several <em>Studies</em> are to be used in parallel in an <em>IRTlib Player</em>, a <em>manual import</em> must be configured.</p>
+<section id="automatic-import" class="level3">
+<h3 class="anchored" data-anchor-id="automatic-import">Automatic Import</h3>
+<p>For an <em>automatic import</em> of a <em>Study</em> available as a ZIP archive in an offline <em>IRTlib Player</em>, the player can first be started via the executable file <code>TestApp.Player.Desktop.exe</code>.</p>
+<p>If this <em>IRTlib Player</em> has not yet been configured with a <em>Study</em> (i.e.&nbsp;the player has been downloaded directly from the <a href="https://github.com/DIPFtba/IRTlibDeploymentSoftware/releases">Github</a> repository as described under <a href="./download.html">Download</a>, for example), the following dialogue appears:</p>
+<p><img src="img/screenshot-irtlib-player-message-no-study01-de-DEU.png" class="img-fluid" width="450"></p>
+<p>The ZIP archive can be opened directly by clicking the <em>Deploy Study</em> button. It is then automatically inserted into the <em>IRTlib Player</em> and can be used in the way configured in the <em>Login</em> section of the <a href="./preparation-studies.html">Study</a>.</p>
 </section>
-<section id="manueller-importieren" class="level3">
-<h3 class="anchored" data-anchor-id="manueller-importieren">Manueller Importieren</h3>
+<section id="manual-import" class="level3">
+<h3 class="anchored" data-anchor-id="manual-import">Manual Import</h3>
+<p>If no automatic import is possible or desired, the contents of the ZIP archive of a <em>Study</em> can also be integrated manually into the directory of the <em>IRTlib Player</em> provided for this purpose.</p>
+<p>Each ZIP archive with a <em>study configuration</em> exported from the <em>IRTlib Editor</em> contains three directories. The ZIP archives <code>{StudyName.zip}</code> can be opened with the <em>Windows Explorer</em>, for example:</p>
+<p><img src="img/screenshot-example-study-zip-in-windows-explorer-01-DEU.png" class="img-fluid" width="450"></p>
+<p>To integrate the <em>Study</em> into an <em>IRTlib Player</em>, the contents of these three directories can now be integrated into the programme directory of an offline <em>IRTlib Player</em>, for example.</p>
+<table class="table">
+<colgroup>
+<col style="width: 6%">
+<col style="width: 93%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Step</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1.</td>
+<td>Unzip the player (<code>TestApp.Player.zip</code>). This can be done using <em>Windows Explorer</em>, for example:</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><img src="img/screenshot-unzip-player-zip-in-windows-explorer-01-DEU.png" class="img-fluid" width="200"></td>
+</tr>
+<tr class="odd">
+<td>2.</td>
+<td>Navigate to the unzipped directory:</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><img src="img/screenshot-player-raw-windows-explorer-01-DEU.png" class="img-fluid" width="350"></td>
+</tr>
+<tr class="odd">
+<td>3.</td>
+<td>Create a new folder <code>Content</code> within the player folder (i.e.&nbsp;<code>TestApp.Player/Content/</code>). If a <em>Study</em> is already configured, then the <code>Content</code> folder already exists.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><img src="img/screenshot-player-create-new-folder-windows-explorer-01-DEU.png" class="img-fluid" width="350"></td>
+</tr>
+<tr class="odd">
+<td>4.</td>
+<td>Copy the three folders <code>ItemPool</code>, <code>Runtime</code> and <code>Studies</code> from the downloaded study <code>{StudyName.zip}</code> into the <code>Content</code> folder of the player.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><img src="img/screenshot-player-copy-files-in-windows-explorer-01-DEU.png" class="img-fluid" width="450"></td>
+</tr>
+<tr class="odd">
+<td>5.</td>
+<td>Start the file <code>TestApp.Player.Desktop.exe</code></td>
+</tr>
+<tr class="even">
+<td>6.</td>
+<td>If necessary, accept the following warning:</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><img src="img/screenshot-player-warning-appstart-01-DEU.png" class="img-fluid" width="250"></td>
+</tr>
+</tbody>
+</table>
+<p>The import of <em>studies</em> into an online <em>IRTlib Player</em> is analogous to the procedure described here. For this, access to the <em>volume</em> <code>/app/Content</code> defined in the <a href="https://github.com/DIPFtba/IRTlibDeploymentSoftware/blob/main/docker/docker-compose.yml"><code>docker-compse.yml</code> file</a> is required for preparation.</p>
 </section>
 </section>
-<section id="auslieferungen-testen" class="level2">
-<h2 class="anchored" data-anchor-id="auslieferungen-testen">Auslieferungen Testen</h2>
-<section id="vorgeschlagene-testpläne-2" class="level3">
-<h3 class="anchored" data-anchor-id="vorgeschlagene-testpläne-2">Vorgeschlagene Testpläne</h3>
-</section>
-</section>
-<section id="datenerhbung-durchführen" class="level2">
-<h2 class="anchored" data-anchor-id="datenerhbung-durchführen">Datenerhbung Durchführen</h2>
-</section>
-<section id="daten-exportieren" class="level2">
-<h2 class="anchored" data-anchor-id="daten-exportieren">Daten Exportieren</h2>
-</section>
-<section id="steuerung-lokaler-server" class="level2">
-<h2 class="anchored" data-anchor-id="steuerung-lokaler-server">Steuerung (Lokaler Server)</h2>
-</section>
-<section id="hosting-docker" class="level2">
-<h2 class="anchored" data-anchor-id="hosting-docker">Hosting (Docker)</h2>
-<section id="integration" class="level3">
-<h3 class="anchored" data-anchor-id="integration">Integration</h3>
+<section id="configure-deliveries" class="level2">
+<h2 class="anchored" data-anchor-id="configure-deliveries">Configure deliveries</h2>
+<p>The study configurations created with an <em>IRTlib Editor</em> can be used with different variants of the <em>IRTlib Player</em>.</p>
+<p>Three versions are currently available:</p>
 <ul>
-<li>Reverse Proxy für SSL</li>
+<li>Desktop version (Windows)</li>
+<li>Local server version (Windows)</li>
+<li>Online version (Docker)</li>
 </ul>
+<section id="desktop-version-windows-2" class="level3">
+<h3 class="anchored" data-anchor-id="desktop-version-windows-2">Desktop version (Windows)</h3>
+<p>Basic configurations of the <em>IRTlib Player</em> (display in windowed mode vs.&nbsp;full screen mode) are part of the study configuration. Only studies with the same display settings can be used simultaneously in an offline <em>IRTlib Player</em>. Multiple copies of an offline <em>IRTlib Player</em> on one computer are possible.</p>
+<p>To start the (offline) <em>IRTlib Player</em> on a computer, the executable file <code>TestApp.Player.Desktop.exe</code> must be started.</p>
+<p><strong>Data Storage</strong>: The data collected during a data collection with the offline <em>IRTlib Player</em> is stored locally in a directory. The directory and the file name for the raw data storage are configured in the <em>Study</em> and can be customised using startup parameters. The user name or the UUID created is used as the file name of the <em>raw data archive</em>. If the user name is used more than once in an (offline) <em>IRTlib Player</em>, i.e.&nbsp;if a <em>raw data archive</em> with this file name already exists when the <em>IRTlib Player</em> is closed, it is not overwritten but a suffix is added (e.g.&nbsp;<code>PersonIdentifier_1.zip</code>).</p>
+<p><strong>Startup Parameter</strong>: The integration of the offline <em>IRTlib Player</em> into programmed processes is possible. Login data (user name, user name + password, token) that are configured in a <em>Study</em> can be transferred as so-called <em>startup parameters</em>. These parameters are then appended to the call of <code>TestApp.Player.Desktop.exe</code>.</p>
+<p>Example:</p>
+<blockquote class="blockquote">
+<p><code>TestApp.Player.Desktop.exe /RawDataFolder="..\\myDataFolder"</code></p>
+</blockquote>
+<p>Valid startup parameters are:</p>
+<ul>
+<li><code>/AutoLoginCreateWithTest="{StudyName}"</code>: Requests the administration of the study named <code>{StudyName}</code>.</li>
+<li><code>/AutoLoginUserName="{PersonIdentifier}"</code>: Passes the login information <code>{PersonIdentifier}</code> as the user name.</li>
+<li><code>/MyBlocklyVariable="123"</code>: Passes the value <code>123</code> for the <em>Blockly</em> variable <code>MyBlocklyVariable</code>.</li>
+<li><code>/MonitoringFile="..\\last-run.json"</code>: Path and file name of the so-called monitoring file.</li>
+<li><code>/RawDataFolder="..\\myDataFolder"</code>: Path to the directory in which the <em>raw data archives</em> are saved.</li>
+</ul>
+<p>Several startup parameters in succession are possible (separated by spaces).</p>
+<p><strong>Checking Prerequisites</strong>: The <em>IRTlib Player</em> should be able to run on Windows computers (currently supported from <em>Windows 10</em>) without further installation or runtime requirements. However, special configurations, virus scanners etc. may prevent it from running. A tool for checking prerequisites can be created, for example, based on this example (<a href="https://github.com/kroehne/IRTlibReadiness">IRTlibReadiness</a>).</p>
+<div class="callout callout-style-default callout-important callout-titled" title="Important note">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The provided Windows version of the <em>IRTlib Player</em> enables a simple <em>kiosk</em> mode, which is only intended for computers with only one screen (e.g.&nbsp;notebooks). For an exam-safe kiosk solution, the offline version of the <em>IRTlib Player</em> can be combined as a <em>local server</em> with additional software (such as the <a href="https://safeexambrowser.org/">Safe Exam Browser</a>).</p>
+</div>
+</div>
 </section>
-<section id="zugriff-auf-editor" class="level3">
-<h3 class="anchored" data-anchor-id="zugriff-auf-editor">Zugriff auf Editor</h3>
+<section id="local-server-windows" class="level3">
+<h3 class="anchored" data-anchor-id="local-server-windows">Local server (Windows)</h3>
+<p>The ZIP archives of the offline <em>IRTlib Player</em> available via the <a href="https://github.com/DIPFtba/IRTlibDeploymentSoftware/releases">Github</a> repository in the <em>Releases</em> section also contain a <em>local server version</em> parallel to the application with integrated browser (<code>TestApp.Player.Desktop.exe</code>), which can be started via the executable file <code>TestApp.Player.Server.exe</code>.</p>
+<!--(TO-DO: Describe access via routes) -->
+<div class="callout callout-style-default callout-important callout-titled" title="Important note">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The version <code>TestApp.Player.Server.exe</code> is intended for offline operation in bring-in networks, e.g., when WLAN routers and server notebooks are brought into schools. This version is not intended for online use (for which the Docker version is provided).</p>
+</div>
+</div>
 </section>
-<section id="monitoring" class="level3">
-<h3 class="anchored" data-anchor-id="monitoring">Monitoring</h3>
+<section id="online-version-docker-2" class="level3">
+<h3 class="anchored" data-anchor-id="online-version-docker-2">Online version (Docker)</h3>
+<!--
+
+::: {.callout-important title="Important note" collapse="true"}
+The provided *Docker* containers for *IRTlib Player* and *IRTlib Editor* must be integrated into a secure environment by an administrator before they can be used for data collection. 
+
+
+The following example is for illustrative purposes only. [Docker]() and [Git]() must be installed for this example.
+
+
+|Step|Description|
+|---|-------------| 
+|1 | Start console: |
+| | * Windows: |
+| | * Mac: |
+|2 | Check if *Docker* is installed and running: |
+| | `docker info` |
+|3 | Check if *Git* is installed: |
+| | `git version` |
+|4 | Obtain configuration from [Github](https://github.com/DIPFtba/IRTlibDeploymentSoftware/): |
+| | * Download (if no *Git* is installed):  |
+| | * Git: |
+| | `git clone --branch develop https://github.com/DIPFtba/IRTlibDeploymentSoftware.git` |
+|5 | Edit the file `appsettings.json` in the directory `IRTlibDeploymentSoftware/` `docker/` `TestApp.Player/` and enter `ExternalExportKey`: |
+| | `"ExternalExportKey": "mykey123",`|
+|6 | Edit the file `docker-compose.yml` in the directory `IRTlibDeploymentSoftware/` `docker/` and enter the ports: |
+| | |
+|7 | In the directory `IRTlibDeploymentSoftware/` `docker/` execute the script `start.sh`: |
+| | `./start.sh`|
+
+
+
+
+:::
+
+-->
+<p><strong>Integration</strong>: To carry out data collection, the <em>Docker</em> image of the <em>IRTlib Player</em> should only be accessible via https-secured connections. This can be realised, for example, using an additional <em>nginx</em> configured as a <em>reverse proxy</em>.</p>
+<p><strong>Access to Editor</strong>: Unauthorised persons who are not involved in study preparation must not be able to access the <em>IRTlib Editor</em>. The <a href="https://github.com/DIPFtba/IRTlibDeploymentSoftware/">Github</a> repository provides <em>IRTlib Editor</em> and <em>IRTlib Player</em>. For operational data collection, it is not necessary to run the <em>IRTlib Editor</em> online, as the study preparation can also be created with the offline version of the <em>IRTlib Editor</em>. If the <em>IRTlib Editor</em> is hosted online, it must be protected against unauthorised access.</p>
+<p><strong>Access to directories</strong>: The item contents that are configured for an assessment are stored in the <em>volumes</em> <code>/app/Content</code> (<em>IRTlib Player</em>) and <code>/app/data</code> (<em>IRTlib Editor</em>) defined in the <a href="https://github.com/DIPFtba/IRTlibDeploymentSoftware/blob/main/docker/docker-compose.yml"><code>docker-compse.yml</code> file</a>. To ensure the protection of instruments, unauthorised persons must not be able to access these <em>volumes</em>.</p>
+<p><strong>Data storage</strong>: The data collected during a data collection with the online <em>IRTlib Player</em> is stored in the <em>volume</em> <code>app/result</code>. They can be retrieved from there as directories (one directory per <em>session</em>) or as <em>raw data archives</em> via an <em>API</em> (if an <em>API</em> key is defined).</p>
+<div class="callout callout-style-default callout-warning callout-titled" title="Note">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>When using <em>Docker</em> containers, assessment content and data can be accessed online. Assessment content is only protected via the <em>login mode</em> defined in the study configuration. Personal data and assessment content may also be accessible if an <em>API</em> key is defined.</p>
+</div>
+</div>
+<p><strong>Configuration of the player</strong>: The file <a href="https://github.com/DIPFtba/IRTlibDeploymentSoftware/blob/main/docker/TestApp.Player/appsettings.json"><code>appsettings.json</code></a>, which is contained in the <code>TestApp.Player</code> directory, is central to the technical configuration of the player. Three different <em>API keys</em> (i.e.&nbsp;access keys) can be stored in this file by storing them in the following <code>JSON</code> structure before the <em>Docker</em> container is started:</p>
+<pre><code>"API": {
+   "ExternalExportKey": "",
+   "DevelopmentKey": "",
+   "LoginManagementKeys": []
+ }</code></pre>
+<p>The <em>API keys</em> have the following functions:</p>
+<ul>
+<li><code>ExternalExportKey</code>: This <em>key</em> is used to gain access to the data collected with the <em>IRTlib Player</em>. The data can be accessed via the R package <a href="http://www.logfsm.com">LogFSM</a>, for example, as described in the section <a href="ata-collection-post-processing.qmd#datenabruf-mit-logfsm"><em>Data retrieval</em></a>.</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled" title="Routes for direct access">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Routes for direct access
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The list of the processed session, i.e.&nbsp;the <em>session identifiers</em>, can be retrieved as <code>JSON</code> with an <em>API key</em> for <code>ExternalExportKey</code> via the following call:</p>
+<p><code>https://{U}/{S}/api/session/?apiKey={K}</code></p>
+<ul>
+<li><code>{U}</code> is the URL of the <em>IRTlib Player</em></li>
+<li><code>{S}</code> is the identifier of the <em>study</em></li>
+<li><code>{K}</code> is the <code>ExternalExportKey</code> as defined in the <code>appsettings.json</code></li>
+</ul>
+<p>With a known <em>Session-Identifier</em> the raw data can then be retrieved via the following call with an <em>API-Key</em> for <code>ExternalExportKey</code>:</p>
+<p><code>https://{U}/{S}/api/session/{ID}/result?apiKey={K}</code></p>
+<ul>
+<li><code>{ID}</code> is the <em>Session-Identifier</em> (e.g.&nbsp;the user name, depending on the configuration of the login)</li>
+</ul>
+</div>
+</div>
+</div>
+<ul>
+<li><code>DevelopmentKey</code>: This <em>API-Key</em> is intended for customising study configurations in a running player.</li>
+</ul>
+<div class="callout callout-style-default callout-important callout-titled" title="Under Development">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Under Development
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This function is currently under development.</p>
+</div>
+</div>
+<ul>
+<li><code>LoginManagementKeys</code>: This list of <em>API-Keys</em> is intended for customising login data (accounts) in a running player.</li>
+</ul>
+<div class="callout callout-style-default callout-important callout-titled" title="Under Development">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Under Development
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This function is currently under development.</p>
+</div>
+</div>
+<p><strong>Monitoring</strong>: (A method for monitoring <em>Docker</em> containers is under development).</p>
+</section>
+</section>
+<section id="testing-and-releasing-deliveries" class="level2">
+<h2 class="anchored" data-anchor-id="testing-and-releasing-deliveries">Testing and Releasing Deliveries</h2>
+<p>With the integration of a <em>study configuration</em> into an <em>IRTlib Player</em>, the preparation is not yet complete. Before data collection can be started with the <em>IRTlib software</em>, the following tests should be conducted:</p>
+<p><strong>(Tests within the <em>CBA ItemBuilder</em>-<em>Preview</em>)</strong>: Before configuring a <em>study</em> and a <em>survey</em> section with <em>CBA ItemBuilder</em>-<em>tasks</em>, it should already have been tested in terms of presentation, functionality and scoring in the <em>Preview</em> of the <em>CBA ItemBuilder</em>.</p>
+<p><strong>Functional tests</strong>: Especially if <em>CBA ItemBuilder</em>-<em>tasks</em> interact with the delivery platform (such as <em>login</em> items), functional tests (i.e.&nbsp;tests of specific functions) should be carried out in the delivery software. This also applies to navigation between items and, of course, the flow control configured in the delivery environment.</p>
+<p><strong>Cross-browser testing</strong>: If studies are not conducted with the offline <em>IRTlib Player</em> (which comes with its own browser) and especially if newly or specifically programmed <em>JavaScript/HTML5</em> content is used within the <em>CBA ItemBuilder</em>-<em>Tasks</em> via so-called *ExternalPageFrames (i.e.&nbsp;<code>iframes</code>), testing should be carried out in different browsers.</p>
+<p><strong>Performance tests</strong>: If large media files (videos, audio files) are included in the <em>CBA ItemBuilder</em>-<em>Tasks</em>, it may be advisable to test the feasibility of the assessment even under unfavourable network conditions (e.g.&nbsp;low bandwidth, long latencies, connection drops, etc.).</p>
+<p><strong>Load tests</strong>: If a large number of test participants are to be tested in parallel (online), it may be advisable to coordinate the load behaviour of the delivery (and, for example, the resources available for the <em>Docker</em> container) in advance.</p>
+<p><strong>Data storage check</strong>: In any case, the fit of the scoring definition within the <em>CBA ItemBuilder</em>-<em>Tasks</em> and the configuration in the <em>IRTlib Editor</em> should be checked and a data storage check made. This means that synthetic click patterns (i.e.&nbsp;responses) are entered <em>before</em> the start of the survey and compared with the responses stored in the data set. In order to be able to easily recognise input errors during the subsequent check, it has proven useful to record screen videos in parallel for the data storage check.</p>
+<p><strong>Smoke test</strong>: The final form of testing is a run-through test in the fully configured setting from <em>Study</em> in an <em>IRTlib Player</em>. The survey should be displayed correctly and a readable <em>raw data archive</em> should be created.</p>
+<section id="suggested-test-plans" class="level3">
+<h3 class="anchored" data-anchor-id="suggested-test-plans">Suggested Test Plans</h3>
+<div class="callout callout-style-default callout-tip callout-titled" title="Note">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The provision of the free research software <em>IRTlib Editor</em> and <em>IRTlib Player</em> is without guarantee and no liability can be accepted for missing data, data loss or compromised data etc.</p>
+</div>
+</div>
+<p>Generally valid recommendations for (absolutely) necessary tests are difficult to formulate, the following table is therefore to be understood as a non-binding recommendation, which must be weighed up in each specific case.</p>
+<table class="table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 14%">
+<col style="width: 64%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Test</th>
+<th>Recommendation</th>
+<th>Condition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><em>CBA ItemBuilder</em>-<em>Preview</em></td>
+<td>Always</td>
+<td>(Errors in presentation, behaviour and scoring that can already be found during item creation should be systematically tested and excluded before creating a study configuration).</td>
+</tr>
+<tr class="even">
+<td>Functional tests</td>
+<td>If required</td>
+<td>Only if <em>IRTlib Player</em> and <em>CBA ItemBuilder</em>-<em>Tasks</em> have to interact and in relation to functionality defined in the <em>IRTlib Editor</em> (e.g.&nbsp;response-dependent branching).</td>
+</tr>
+<tr class="odd">
+<td>Cross-browser testing</td>
+<td>If required</td>
+<td>Only if <em>IRTlib Player</em> is used online and the browsers do not correspond to the browsers already used for the <em>CBA ItemBuilder</em>-<em>Preview</em>.</td>
+</tr>
+<tr class="even">
+<td>Performance tests</td>
+<td>If required</td>
+<td>If large multimedia parts are included or if a poor network connection is to be expected.</td>
+</tr>
+<tr class="odd">
+<td>Load tests</td>
+<td>If required</td>
+<td>Only if online <em>IRTlib Player</em> is to be administered with many parallel tests.</td>
+</tr>
+<tr class="even">
+<td>Data storage check</td>
+<td>Always</td>
+<td>Check all data (incl.&nbsp;log data if this is required for evaluation).</td>
+</tr>
+<tr class="odd">
+<td>Smoke test</td>
+<td>Always</td>
+<td>Smoke test for every version, especially to rule out accidental configuration errors at the <em>last minute</em>.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="carry-out-data-collections" class="level3">
+<h3 class="anchored" data-anchor-id="carry-out-data-collections">Carry out Data Collections</h3>
+<p>Once the <em>Study</em> has been configured and tested in an <em>IRTlib Player</em>, data can be collected. The longer the field time, the more important it is to regularly back up the collected data or to regularly remove the collected raw data archives from the survey hardware.</p>
 
 
 </section>
