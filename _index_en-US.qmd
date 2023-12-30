@@ -19,6 +19,11 @@ Before using the *IRTlib Software* to configure and create deliveries, the asses
 
 * An interactive documentation of the *CBA ItemBuilder* is available here: [cba.itembuilder.de](https://cba.itembuilder.de)
 
+Suggested Citation:
+
+> Kroehne, U. (2023). Open Computer-based Assessment with the CBA ItemBuilder.
+> DIPF, Frankfurt am Main, Germany. https://doi.org/10.5281/zenodo.10359757
+
 :::
 
 ::: {.g-col-3}
@@ -38,6 +43,13 @@ Before using the *IRTlib Software* to configure and create deliveries, the asses
 ::: {.g-col-9}
 
 For the use of the *IRTlib software*, a context-sensitive [program help](preparation-overview.qmd#embedded-program-help) is stored directly in the application. The documentation with the embedded help is available online on this page and is also available as [PDF](IRTlib-Documentation.pdf).
+
+Suggested Citation:
+
+> Kroehne, U. (2023). IRTlib Documentation: Software for the administration and delivery of computer-based assessments 
+> [IRTlib Dokumentation: Software für die Verwaltung und Auslieferung computergestützter Assessments]. 
+> DIPF, Frankfurt am Main, Germany. https://doi.org/10.5281/zenodo.10441352
+
 
 :::
 

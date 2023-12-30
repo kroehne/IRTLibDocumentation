@@ -41,3 +41,8 @@ Online documentation
 * HTML (interactive): [https://cba.itembuilder.de](https://cba.itembuilder.de)  
 * PDF (static): [Open-Assessments-with-CBA-ItemBuilder.pdf](https://cba.itembuilder.de/Open-Assessments-with-CBA-ItemBuilder.pdf)
 * Sources [GitHub](https://github.com/kroehne/CBAItemBuilderBook) (In preparation / still private)
+
+Suggested Citation:
+
+> Kroehne, U. (2023). Open Computer-based Assessment with the CBA ItemBuilder.
+> DIPF, Frankfurt am Main, Germany. https://doi.org/10.5281/zenodo.10359757
