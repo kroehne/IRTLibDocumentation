@@ -6,12 +6,11 @@ format:
     toc: false
 ---
 
-
 <a name="help-top"></a>
 
-### Summary of routing within survey parts  
+### Summary of Routing within Survey Parts  
 
-The sequence of *CBA ItemBuilder* tasks can be defined here using *Blockly* (i.e. a form of visual programming). *Blockly*-based sequencing is available if the option *Enable routing* is selected for a survey part. The option can be found in the *Info* section of a survey part. If it is activated, the survey part contains the entry *Routing*.
+The sequence of *CBA ItemBuilder* tasks can be defined here using *Blockly* (i.e. a form of visual programming). *Blockly*-based sequencing is available if the option *Enable Routing* is selected for a *Survey Part*. The option can be found in the *Info* section of a *Survey Part*. If it is activated, the *Survey Part* contains the entry *Routing*.
 
 ::: {.content-visible when-format="html"}
 <hr/>
@@ -31,7 +30,7 @@ Overview:
     - Use of <a href="#anchor-item-score">item results</a> in the flow definition
     - *Blockly* operators for <a href="#anchor-missing-coding">encoding missing values</a> and for <a href="#anchor-write-data">writing data</a>
 - <a href="#anchor-comments">commenting</a> on *Blockly* code
-- Customization of the <a href="#anchor-presentation">presentation</a> of *Blockly* code
+- Customisation of the <a href="#anchor-presentation">presentation</a> of *Blockly* code
 
 <hr/>
 :::
@@ -51,13 +50,13 @@ The basic idea of using *Blockly* for the definition of processes in *computer-b
 
 > A list of *CBA ItemBuilder Tasks* is passed to the *Blockly* element *Show Items*, which is created with the operator *create list with*. The list is processed in the order shown, whereby each *CBA ItemBuilder Tasks* is displayed until the `NEXT_TASK`- *Command* is executed.
 
-> An equivalent formulation of a linear sequence can also be made with several *Show Items* gaps if no <a href="#anchor-back-navigation">back navigation</a> is necessary:
+> An equivalent formulation of a linear sequence can also be made with several *Show Items* blocks if no <a href="#anchor-back-navigation">back navigation</a> is necessary:
 
 > ![](img/screenshot-show-items-lds2003-01-example-simple-DEU.png){width="280"}
 
 * **Example for simple test booklets**
 
-> With the help of an <a href="#anchor-variables">variable</a> (here: *booklet*) and a simple *if/make*-<a href="#anchor-conditions">condition</a>, you can now define a process that administers different items depending on the value of the variable:
+> With the help of an <a href="#anchor-variables">variable</a> (here: *booklet*) and a simple *if/make*-<a href="#anchor-conditions">condition</a>, it is now possible to define a sequence that administers different items depending on the value of the variable:
 
 > ![](img/screenshot-show-items-lds2003-01-example-two-booklets-DEU.png){width="300"}
 
@@ -69,9 +68,9 @@ The basic idea of using *Blockly* for the definition of processes in *computer-b
 
 > Both variants are completely equivalent in terms of functionality, but the second approach with lists allows the use of the <a href="#anchor-back-navigation">back navigation</a> option within the booklet-specific tasks.
  
-* **Example for process with time limit**
+**Example for process with time limit**
 
-> The following *Blockly* component can be used to implement time-limited sections within a survey section using the *Blockly* configuration:
+> To implement time-limited sections within a survey section using the *Blockly* configuration, the following *Blockly* component can be used:
 
 > ![](img/screenshot-show-items-lds2003-01-example-simple-timer-ENG.png){width="280"}
 
@@ -79,7 +78,7 @@ The basic idea of using *Blockly* for the definition of processes in *computer-b
 
 > Tasks 1, 2 and 3 are displayed in the *Runtime code* section with a time limit. If a timeout occurs, i.e. the three tasks are not processed within the *60* seconds, task 4 is displayed (also without a time limit).
 
-**Example for simple booklet design with time limit**
+**Example of simple booklet design with time limit**
 
 > For many items, the definition of *booklet designs*, i.e. task sequences with balanced positions, can be simplified using functions or lists.
 
@@ -104,34 +103,34 @@ Processes are defined in the visual *Blockly* editor. Execution begins with the 
 
 <a name="anchor-delete"></a>
  
-**Delete**: Operators can be dragged to the recycle bin to delete them. Selected *Blockly* elements can also be deleted using the *Delete(delete)* button. Alternatively, selected *Blockly* elements can also be deleted via the context menu.
+* **Delete**: Operators can be dragged to the recycle bin to delete them. Selected *Blockly* elements can also be deleted using the *Delete(delete)* button. Alternatively, selected *Blockly* elements can also be deleted via the context menu.
 
-**Redo/Undo**: Individual actions can be undone within the *Blockly* editor. The key combination 'Ctrl + Z' can be used for this. Pressing 'Ctrl + Y' repeats an action. By clicking in an empty section of the *Blockly* editor, you can access a context menu which also contains the options for *Undo* and *Redo*:
+* **Redo/Undo**: Individual actions can be undone within the *Blockly* editor. The key combination 'Ctrl + Z' can be used for this. Pressing 'Ctrl + Y' repeats an action. By clicking in an empty section of the *Blockly* editor, you can access a context menu, which also contains the options for *Undo* and *Redo*:
 
 > ![](img/screenshot-context-menu-blockly-editor-example01-DEU.png){width="200"}
 
-* **Save**: Adjustments in the *Blockly* editor must be saved. The floppy disk symbol is available for this purpose at the bottom right:
+* **Save**: Customisations in the *Blockly* editor must be saved. The floppy disc symbol is available for this purpose at the bottom right:
 
 > ![](img/screenshot-blockly-save-icon-example01.png){width="120"}
 
 > If you want to discard the change (as a whole), you can use the discard icon at the bottom right.
 
-**Zoom**: The view in the workspace can be enlarged with the icons `+` and reduced with `-`.
+* **Zoom**: The view in the workspace can be enlarged with the icons `+` and reduced with `-`.
 
 <a name="anchor-context-menu"></a>
 
-**Context menu**: Further options are available via the right mouse button (context menu) in the *Blocky* editor. To call up these functions, a secondary click (right mouse button) must be performed on a *Blockly* element:
+* **Context menu**: Further options are available via the right mouse button (context menu) in the *Blocky* editor. To call up these functions, a secondary click (right mouse button) must be performed on a *Blockly* element:
 
   - Copy duplicates the selected *Blockly* element, including all connected elements.
   - <a href="#anchor-comments">Commenting</a> on blocks is possible.
   - Blocks can be <a href="#anchor-deactivating">deactivated/activated</a>.
   - Some block types allow you to change the display form <a href="#anchor-internal-external">external/internal</a>.
   - Blocks that contain further blocks can be <a href="#anchor-folding">folded/unfolded</a>.
-  - The <a href="#anchor-delete">deletion</a> of blocks is also possible via the context menu.
+  - Blocks can also be <a href="#anchor-delete">deleted</a> via the context menu.
 
 > > ![](img/screenshot-context-menu-blockly-editor-example02-DEU.png){width="200"}
 
-> Some *Blockly* elements also provide a *Help* entry in the context menu, which refers to the generally accessible *Blockly* documents (https://github.com/google/blockly/wiki/).
+> Some *Blockly* elements also provide a *Help* entry in the context menu, which refers to generally accessible *Blockly* documents (https://github.com/google/blockly/wiki/).
 
 ::: {.content-visible when-format="html"}
 <hr noshade/>
@@ -148,7 +147,7 @@ The basic functions for using the *Blockly* environment to control assessments c
 
 #### Show individual items
 
-*CBA ItemBuilder* tasks that have been imported in the *Items* view for a survey section can be accessed in the flow control as shown in the examples above using the following *Blockly* element for *Tasks*:
+*CBA ItemBuilder* tasks that have been imported in the *Items* view for a survey section can be accessed in the flow control, as shown in the examples above, using the following *Blockly* element for *Tasks*:
 
 ![](img/screenshot-item-element-lds2003-01-selector.png){width="200"}
 
@@ -158,7 +157,7 @@ The element, which can be found in the *Session* section of the *Blockly* editor
 
 ![](img/screenshot-show-item-block-lds2023-01-example-01-ENG.png){width="300"}
 
-The example <a href="#anchor-example-blockly-simple-sequence-01">for simple test booklets</a> illustrates that sequences in the *Blockly* definition are often defined by a sequence of several *Show Item* operators. *Show Item* operators can be inserted into <a href="#anchor-conditions">conditions</a> and <a href="#anchor-loops">loops</a>, both within the main flow and within <a href="#anchor-functions">functions</a>.
+The example <a href="#anchor-example-blockly-simple-sequence-01">for simple test booklets</a> illustrates that sequences in the *blockly* definition are often defined by a sequence of several *show item* operators. *Show Item* operators can be inserted into <a href="#anchor-conditions">conditions</a> and <a href="#anchor-loops">loops</a>, both within the main flow and within <a href="#anchor-functions">functions</a>.
 
 
 #### Use of scopes (scopes)
@@ -167,7 +166,7 @@ With the help of *Blocky*-based flow control, it is also possible to administer 
 
 ![](img/screenshot-item-element-two-times-without-scope-lds2003-01-example-ENG.png){width="280"}
 
-When an item is called up again, the status from the last visit is restored, i.e. processing is continued. If items are to be resubmitted several times, i.e. unedited, automatic restoration may not be desired. The checkbox for specifying a *Scope* (scope) can be optionally activated for this purpose:
+When an item is called up again, the status from the last visit is restored, i.e. processing is continued. If items are to be resubmitted several times, i.e. unedited, automatic restoration may not be desired. The checkbox for specifying a *scope* (scope) can be optionally activated for this purpose:
 
 ![](img/screenshot-item-element-scope-lds2003-01-default.png){width="250"}
 
@@ -175,27 +174,27 @@ If nothing else is specified, the item is administered in the "default" scope. A
 
 ![](img/screenshot-item-element-with-scope-lds2003-01-example-01-ENG.png){width="300"}
 
-On the first visit, the task is displayed in the *Scope* "Visit1". This is followed by a new, independent display of the task in a different *scope* ("Visit2"). In the third call, the task is not displayed with the data that was already collected during the first visit (i.e. the *Scope* "Visit1" is used again).
+On the first visit, the task is displayed in the *Scope* "Visit1". This is followed by a new, independent display of the task in a different *scope* ("Visit2"). In the third call, the task is displayed again with the data that was already collected during the first visit (i.e. the *Scope* "Visit1" is used again).
 
 <a name="anchor-show-item-lists"></a>
 
 #### Display multiple items (item lists)
 
-As can be seen in the example <a href="#anchor-example-blockly-linear-sequence-01">for linear sequence</a>, linear tests can also be displayed using <a href="#anchor-lists">lists</a> of tasks.
+As shown in the example <a href="#anchor-example-blockly-linear-sequence-01">for linear sequence</a>, linear tests can also be displayed using <a href="#anchor-lists">lists</a> of tasks.
 
 Lists can be used with the *Blockly* operator *Show Items*:
 
 ![](img/screenshot-show-items-list-lds2023-01-example-01-DEU.png){width="450"}
 <a name="anchor-back-navigation"></a>
 
-* **Back navigation**: The *Show Items* element for <a href="anchor-lists">lists</a> can be configured via the *Can navigate back* property. If this property is selected, *CBA ItemBuilder*-*Tasks* can request navigation to the previous *CBA ItemBuilder Tasks* with the *Command* `BACK_TASK`.
+* **Back navigation**: The *Show Items* element for <a href="anchor-lists">lists</a> can be configured via the *Can navigate back* property. If this property is selected, *CBA ItemBuilder*-*Tasks* can use the *Command* `BACK_TASK` to request navigation to the previous *CBA ItemBuilder Tasks*.
 
-**Canceling lists**: The use of lists also allows lists to be canceled. Lists can be canceled in two ways:
+* **Cancelling lists**: The use of lists also allows lists to be cancelled. Lists can be cancelled in two ways:
 
     - The *Command* `CANCEL_TASK`, which can be used within CBA ItemBuilder Tasks, is called.
-    - The function *Cancel item list* is called up in the test administrator menu, which has been configured for the study and, if necessary, adapted using the *Blockly* operator <a href="#anchor-test-administrator-menu">Edit test administrator menu</a>.
+    - In the test administrator menu, which has been configured for the study and, if necessary, customised using the *Blockly* operator <a href="#anchor-test-administrator-menu">Edit test administrator menu</a>, the function *Cancel item list* is called.
 
-> This cancels the administration of an item list and the processing of the *Blockly* process is continued after the *Show Items* block.
+> This cancels the administration of an item list and the *Blockly* process is continued after the *Show Items* block.
 
 <a name="anchor-show-item-with-results"></a>
 
@@ -221,19 +220,19 @@ These can be used to assign item processing results to variables (string or arra
 
 As already illustrated in the example <a href="#anchor-example-blockly-time-restricted-01">process with time restriction</a>, the *Blockly* block *Start time with name* can be used to implement the time-restricted administration of items.
 
-The *Blockly* element *Start timer with name* allows the definition of time limits. Each time limit can have its own name. In addition, the time must be specified in seconds. This can be used to define the type of time to be used:
+The *Blockly* element *Start timer with name* allows the definition of time limits. Each time limit can have its own name. The time must also be specified in seconds. This can be used to define the type of time to be used:
 
 ![](img/screenshot-timer-component-time-level-example-ENG.png){width="200"}
 
-- Realtime:
-- Servertime:
-- Sessiontime:
-- Clienttime:
+- Realtime: The timer runs in real time. It is not affected by server downtimes or a session restart. 
+- Servertime: The timer runs in server time. Is not affected by a session restart, but does not take server downtime into account.
+- Sessiontime: The timer runs within a session. Is interrupted in the event of an interruption due to server downtime or a session restart.
+- Clienttime: The timer only runs in client time and is also interrupted when the session is paused.
 
-Finally, two places can be filled with further *blockly* operators (such as one or more <a href="#anchor-show-item">Show Item</a> blocks for displaying individual items or one or more <a href="#anchor-show-items">Show Items</a> blocks for displaying lists):
+Finally, two positions can be filled with further *blockly* operators (such as one or more <a href="#anchor-show-item">*Show Item*</a> blocks for displaying individual items or one or more <a href="#anchor-show-items">*Show Items*</a> blocks for displaying lists):
 
-- Runtime code: These blocks are filled in until the defined time has elapsed.
-- Elapsed code: These blocks are only filled in if the *Runtime code* has not been completed within the time.
+- Runtime code: These blocks are filled until the defined time has elapsed.
+- Elapsed code: These blocks are only filled in if the *Runtime code* was not completed within the time.
 
 <a name="anchor-test-administrator-menu"></a>
 
@@ -241,33 +240,33 @@ Finally, two places can be filled with further *blockly* operators (such as one 
 
 In the study definition, test administrator menu functions can be created for one or more roles. Roles combine different functions that can be differentiated using the password to be entered by the test administrator.
 
-  **Customize standard functions**: The following standard functions can be defined for a study in the *Info* / *Test leader menu* section:
+  **Customise standard functions**: The following standard functions can be defined for a study in the *Info* / *Test leader menu* section:
 
 - *Navigation*: Task forward / Task back
 - Lists*: Cancel item list
 - Exit*: End survey part and end session
 - Volume control*: Adjust the audio volume during the assessment
 
-> During the processing of a survey part, the following *Blockly* operator can be used in the flow control to customize the test administrator menu for specific contexts:
+> During the processing of a survey section, the following *blockly* operator can be used to customise the test administrator menu in the flow control for specific contexts:
 
 > ![](img/screenshot-blockly-element-for-testadminstrator-menu-example-01-DEU.png){width="150"}
 
 > The test administrator menu can be changed for each of the standard functions (in the *Function* section) for a role (in the *Group* section) as well as the button label (in the *Label* section):
 
-- *Add*: Function is added in the test leader menu
+- *Add*: Function is added to the test leader menu
 - *Remove*: Function is removed from the test conductor menu
 - Deactivate*: Function is deactivated in the test conductor menu
 - Activate*: Function is activated in the test conductor menu
 
 > ![](img/screenshot-blockly-element-for-testadminstrator-menu-example-02-DEU.png){width="150"}
 
-> Calling this *Blockly* operator in the test sequence defines the behavior of the test administrator menu in the rest of the test sequence. In contrast to *Remove*, *deactivated* functions remain visible in the Test Manager menu, but cannot be executed (until they are *activated* again).
+> Calling this *Blockly* operator in the test sequence defines the behaviour of the test administrator menu in the rest of the test sequence. In contrast to *Remove*, *deactivated* functions remain visible in the Test Manager menu, but cannot be executed (until they are *activated* again).
 
 **Using *Blockly* functions in the Test Manager menu**: The *Blockly* operator for editing the test leader menu also contains the option to execute *Blockly* code (*ExecuteBockly*) in the *Function* section:
 
 > ![](img/screenshot-blockly-element-for-testadminstrator-menu-function-example-01-DEU.png){width="350"}
 
-> If *ExecuteBlockly* is selected, then a <a href=#anchor-functions">function</a> defined within the *Blockly* editor can be selected in the *Blockly* element *Edit test administrator menu*. The *Blockly* operators defined in this function are then executed when a test leader selects the corresponding button in the test leader menu at runtime.
+> If *ExecuteBlockly* is selected, a <a href=#anchor-functions">function</a> defined within the *Blockly* editor can be selected in the *Blockly* element *Edit test administrator menu*. The *Blockly* operators defined in this function are then executed when a test leader selects the corresponding button in the test leader menu at runtime.
 
 ::: {.content-visible when-format="html"}
 <hr noshade/>
@@ -288,7 +287,7 @@ The *Logic* section contains the *Blockly* operator *if/make*, which can be used
 
 The blocky operators defined within the condition block (i.e. next to *make*) are only executed if the condition (*if*) is fulfilled. The example checks whether a Boolean <a href="#anchor-variables">variable</a> has the value `true`.
 
-The condition is defined as a separate block, which is connected to the *blockly* operator *if/make*. Here are the two components separately:
+The condition is defined as a separate block that is connected to the *blockly* operator *if/make*. Here are the two components separately:
 
 * Condition:
 
@@ -302,11 +301,11 @@ The condition is defined as a separate block, which is connected to the *blockly
 
 #### Use of logical expressions
 
-Logical expressions in conditions are based either on value comparisons or returns from functions. Value comparisons can be realized with the following Blockly element:
+Logical expressions in conditions are based either on value comparisons or returns from functions. Value comparisons can be realised with the following *blockly* element:
 
 ![](img/screenshot-routing-block-value-comparison-empty.png){width="90"}
 
-The two slots can be filled with values. For Boolean values (true/false), a corresponding Blockly element is available in the *Logic* section:
+The two slots can be filled with values. A corresponding *Blockly* element is provided in the *Logic* section for Boolean values (true/false):
 
 ![](img/screenshot-routing-block-bool-value-DEU.png){width="100"}
 
@@ -314,13 +313,13 @@ Conditions are also possible with variables of a different <a href="#anchor-vari
 
 ![](img/screenshot-blockly-condition-separat-02-DEU.png){width="200"}
 
-For numerical values, there is a corresponding Blockly element in the *Math* section, which contains <a href="#anchor-math">operators for numbers and simple mathematical operations</a>:
+For numerical values, there is a corresponding *Blockly* element in the *Math* section, which contains <a href="#anchor-math">operators for numbers and simple mathematical operations</a>:
 
 ![](img/screenshot-routing-block-numeric-value-example42.png){width="60"}
 
 With its help and a numeric <a href="#anchor-variables">variable</a>, the following condition can be formulated:
 
-For technical reasons, it may also be necessary to check whether a variable has no value at all. This can be implemented by using the blockly component `null`:
+For technical reasons, it may also be necessary to check whether a variable has no value at all. This can be implemented by using the *blockly* component `null`:
 
 ![](img/screenshot-routing-block-condition-variable-not-null-example-ENG.png){width="250"}
 
@@ -328,11 +327,11 @@ For technical reasons, it may also be necessary to check whether a variable has 
 
 > ![](img/screenshot-blockly-element-logic-combine-01-DEU.png){width="100"}
 
-> An *and* and an *or* linking of the statements is available for selection. The free *inputs*
+> An *and* and an *or* linking of the statements is available for selection. The *and* link is true if both expressions are true, the *or* link is true if at least one of the two expressions (or both expressions) is true. 
 
 > ![](img/screenshot-blockly-element-logic-combine-02-DEU.png){width="400"}
 
-> Several *logic expressions* can be nested inside each other:
+> Several *logical expressions* can be nested inside each other:
 
 > ![](img/screenshot-blockly-element-logic-combine-03-DEU.png){width="450"}
 
@@ -342,32 +341,22 @@ For technical reasons, it may also be necessary to check whether a variable has 
 
 > ![](img/screenshot-routing-block-if-then-configuration-01-DEU.png){width="200"}
 
-> By adding an *unless* section, a further condition can be added. The condition defined in an *if* section is checked if the previous conditions (*if*) are not fulfilled. If a condition is fulfilled, the defined blockly operators are executed.
+> By adding an *unless* section, a further condition can be added. The condition defined in an *if* section is checked if the previous conditions (*if*) are not fulfilled. If a condition is fulfilled, the defined *blockly* operators are executed.
 
-> By adding an *if* section, blocks can be added which are executed if none of the conditions are met.
+> By adding an *if* section, blocks can be added that are executed if none of the conditions are met.
 
-**Special case: *check* operator for three conditions**: For three conditions, the *blockly* editor provides a special *check-if-true-if-false* operator:
+**Check operator**: For value assignments depending on a condition, the *blockly* editor provides a special operator *check-if-true-if-false*:
 
 > ![](img/screenshot-blockly-element-if-iftrue-iffalse-01-DEU.png){width="100"}
 
-> The operator combines two logical expressions, e.g:
+> The operator combines a value assignment with a logical expression:
 
 > ![](img/screenshot-blockly-element-if-iftrue-iffalse-example-01-DEU.png){width="400"}
 
-> The construct is a short form for the following check, as shown in the following table:
+> In this example, the string variable `MyStringVariable` is assigned the value `Yes` if the boolean variable `MyBooleanVariable` has the value `true`. If `MyBooleanVariable` has the value `false`, `MyStringVariable` is assigned the value `No`.
 
-| MyNumberVariable | MyStringVariable | MyBooleanVariable | Result |
-|------------------|------------------|-------------------|----------|
-| $= 42$ | $=$ Example | (any) | true |
-| $= 42$ | $\neq$ Example | (any) | false |
-| $\neq 42$ | (any) | true | true |
-| $\neq 42$ | (any) | false | false |
 
-> Without the operator for three conditions, the same check could be implemented with the following combination:
-
-> ![](img/screenshot-blockly-element-if-iftrue-iffalse-example-02-DEU.png){width="550"}
-
-**Negation**: The following *blockly* operator is available to reverse a logical expression (negation):
+**Negation**: The following *Blockly* operator is available to reverse a logical expression (negation):
 
 > ![](img/screenshot-blockly-element-negation-01-DEU.png){width="60"}
 
@@ -404,7 +393,7 @@ The multiple execution of *blockly* operators (and the actions that can be displ
 
 > ![](img/screenshot-blockly-loop-list-01-DEU.png){width="250"}
 
-**Abort loops prematurely**: The following *Blockly* element can be used to cancel a loop (prematurely) or to start the next loop pass prematurely:
+**Cancel loops prematurely**: The following *blockly* element can be used to cancel a loop (prematurely) or to start the next loop pass prematurely:
 
 > ![](img/screenshot-blockly-loop-break-01-DEU.png){width="400"}
 
@@ -462,6 +451,12 @@ The *Math* section of the *Palette* contains *Blockly* elements for using number
 
 > ![](img/screenshot-blockly-math-function-misc-01-DEU.png){width="150"}
 
+> Note: `-` allows the negation of numerical values, as can be seen in the following example: 
+
+> ![](img/screenshot-blockly-math-function-misc-02-DEU.png){width="150"}
+
+> The example shows the *tooltip* for the help available in *Blockly* and an example where the number `5` is converted into the number `-5` using the `-` operator. The outer condition (negating `5` results in `-5`) is therefore `true`. 
+
 **Generation of random numbers**: Two *blocky* elements are available for generating random numbers:
 
 * Integers (in value range):
@@ -480,7 +475,7 @@ Notes:
 
 * If required, further functions can be implemented with <a href="#anchor-loop-over-list">loops for lists</a>.
 
-* When using the functions, make sure that the selected function can be used for the data types of the list.
+* When using the functions, please note that the list function can only be used for lists with numerical data types!
 
 ::: {.content-visible when-format="html"}
 <hr noshade/>
@@ -511,11 +506,11 @@ The *Text* section of the *Palette* contains *Blockly* elements for using string
 
 > ![](img/screenshot-blockly-text-create-text-using-variables-02-DEU.png){width="400"}
 
-**Text length**: The length of a character string can be determined using the following *blockly* operator:
+**Text length**: The length of a character string can be determined with the following *blockly* operator:
 
 ![](img/screenshot-blockly-text-length-operator-empty-01-DEU.png){width="150"}
 
-**Check for empty string**: Empty string variables can be recognized by the fact that the number of characters is $0$.
+**Check for empty string**: Empty string variables can be recognised by the fact that the number of characters is $0$.
 
 ![](img/screenshot-blockly-text-is-empty-operator-empty-02-DEU.png){width="200"}
 
@@ -529,11 +524,19 @@ Alternatively, the following *blockly* operator can be used:
 
 The position of the *term* within the character string (i.e. *in the text*) is returned.
 
-**Form sub-strings**: The following operator takes the first letters from the passed string *in text*. The number of letters is also passed.
+**Form sub-strings**: The following operator takes the first letters from the transferred string *in text*. The number of letters is also passed.
 
 * Example (here, if the option *take first* is selected, the variable `MyStringVariable` is assigned the text `ABC`, i.e. the first three letters of the character string `ABCDEFG`):
 
 > ![](img/screenshot-blockly-text-substring-operator-example-01-DEU.png){width="450"}
+ 
+| letter function | parameter N | meaning |
+|:---:|:---:|:--------------------|
+| take | Yes | The first N letters are returned |
+| take from last | Yes | The last N letters are returned |
+| take first | No | The first letter is returned (corresponds to take with N=1) |
+| take last | No | The last letter is returned (corresponds to take from behind with N=1) |
+| Take random | No | A random letter is returned |
 
 Letters from a character string can also be extracted using the following operator and assigned to a variable, for example:
 
@@ -546,6 +549,8 @@ Letters from a character string can also be extracted using the following operat
 * The following operator can be used to convert text to uppercase or lowercase:
 
 > ![](img/screenshot-blockly-text-upper-lower-operator-example-01-DEU.png){width="300"}
+
+> The `nouns` option converts the passed string into a sequence of words with a capital initial letter (except for strings that are written entirely in capital letters).
 
 * Leading, trailing or leading and trailing spaces can be removed using the following operator:
 
@@ -582,19 +587,21 @@ The *Date & Time* section of the *Palette* contains *Blockly* elements for using
 
 #### Operators for lists
 
-The *lists* section of the *palette* contains *blockly* elements for creating and using lists.
+The *Lists* section of the *Palette* contains *Blockly* elements for creating and using lists.
 
 **Create list**: Various options are available for creating lists.
 
-* Lists can be created from the following elements:
+* Lists can be created from existing elements:
 
 > ![](img/screenshot-create-list-block-lds2023-01-example-01-DEU.png){width="250"}
 
-> The number of elements of the *create list with* operator can be configured using drag-and-drop after clicking on the cogwheel icon:
+> The number of elements of the *create list with* operator can be configured using drag-and-drop after clicking on the *cogwheel* symbol:
 
 > ![](img/screenshot-configure-list-block-lds2023-01-example-01-DEU.png){width="300"}
 
-* List can be created by repeating an element:
+> When creating lists, please note that the *Blockly* editor does not check the data type. Lists with values of different data types can be created (incorrectly), but do not lead to a functioning test sequence.  
+
+* Lists can be created by repeating an element:
 
 > ![](img/screenshot-blockly-element-creleate-lists-repeate-01-DEU.png){width="250"}
 
@@ -630,13 +637,13 @@ The *lists* section of the *palette* contains *blockly* elements for creating an
 
 > ![](img/screenshot-blockly-element-find-in-list-01-DEU.png){width="300"}
 
-* The following operator returns / removes or replaces in a list and returns the ELement:
+* The following operator returns / removes or replaces in a list and returns the element:
 
 > ![](img/screenshot-blockly-element-replace-in-list-01-DEU.png){width="300"}
 
 > Further options of the operator for *that*: *from behind that* / *first* / *last* and *random*.
 
-* The following operator replaces under inserts in a list:
+* The following operator replaces and inserts in a list:
 
 > ![](img/screenshot-blockly-element-modify-list-01-DEU.png){width="300"}
 
@@ -695,7 +702,7 @@ The *Variables* section of the *Palette* contains *Blockly* elements for creatin
 
 > ![](img/screenshot-blockly-assignment-datetime-01-DEU.png){width="300"}
 
-* *TimeSpan*: time span
+* *TimeSpan*: Time span
 
 > ![](img/screenshot-blockly-assignment-timespan-01-DEU.png){width="200"}
 
@@ -710,15 +717,15 @@ The *Variables* section of the *Palette* contains *Blockly* elements for creatin
 * *KeyTypedValuePairs*:  (documentation missing)
 
 
-**Use variable values**: To use variable values, *Blockly* elements with *inputs* can take the following component:
+**Use variable values**: To use variable values, *blockly* elements with *inputs* can hold the following components:
 
 > ![](img/screenshot-blockly-variable-example-dropdownlist-01-DEU.png){width="300"}
 
-* You can select which variable is used. For defned variables, there is also a *Blockly* element in the *Variables* section of the *Palette*:
+* The variable to be used can be selected. For defined variables, there is also a *Blockly* element in the *Variables* section of the *Palette*:
 
 > ![](img/screenshot-blockly-palette-list-of-variables-01-DEU.png){width="400"}
 
-* The palette also contains a *blockly* element of the type *set ... on*. This can also be used to select the value of which variable it sets:
+* The palette also contains a *blockly* element of the type *set ... on*. This can also be used to select which value of the variable it sets:
 
 > ![](img/screenshot-blockly-set-list-of-variables-01-DEU.png){width="300"}
 
@@ -762,11 +769,11 @@ The type to which an assignment makes sense depends on the type of the return va
 
 In addition, the following two *blockly* elements are available, which can only be used within a function definition (with return value):
 
-* The operator *return* allows a value to be returned. After this, no further blockly elements can be placed in the flow within the function (i.e. the *gib zurück* operator has no downward connection):
+* The operator *return* allows a value to be returned. After this, no further *blockly* elements can be placed in the flow within the function (i.e. the *return* operator has no downward connection):
 
 > ![](img/screenshot-blockly-function-return-operator-example-01-DEU.png){width="100"}
 
-* The *if return* operator only returns a value if a <a href="#anchor-conditions">condition</a> is met. If the condition is fulfilled, the processing of the sequence in the function ends; if the condition is not fulfilled, processing continues (i.e. the *if return* operator has a downward connection):
+* The *if return* operator only returns a value if a <a href="#anchor-conditions">condition</a> is fulfilled. If the condition is fulfilled, the processing of the sequence in the function ends; if the condition is not fulfilled, the processing is continued (i.e. the *if return* operator has a downward connection):
 
 > ![](img/screenshot-blockly-function-return-if-operator-example-01-DEU.png){width="150"}
 
@@ -774,11 +781,11 @@ In addition, the following two *blockly* elements are available, which can only 
 
 > ![](img/screenshot-blockly-function-return-if-operator-equivalent-example-01-DEU.png){width="150"}
 
-* Both operators (*if returns* and *return*) cannot be used outside of functions:
+* Both operators (*if return* and *return*) cannot be used outside of functions:
 
 > ![](img/screenshot-blockly-function-return-operator-outside-functions-example-01-DEU.png){width="150"}
 
-* The two operators (*if returns* and *return*) can be used within functions without a return value to terminate the execution of functions (but not to return values):
+* The two operators (*if return* and *return*) can be used within functions without a return value to terminate the execution of functions (but not to return values):
 
 > ![](img/screenshot-blockly-function-return-operator-in-functions-without-return-value-example-01-DEU.png){width="300"}
 
@@ -804,7 +811,7 @@ Return values are typed. The flow control also supports functions that ...
 
 The function is then called by passing it in accordance with the parameter definition:
 
-* Definition of a parameter
+* Definition of a parameter:
 
 > ![](img/screenshot-blockly-function-parameter-definition-detail-example-01-DEU.png){width="200"}
 
@@ -832,7 +839,7 @@ Example:
 
 #### Use of item results in the flow control
 
-(documentation)
+(documentation follows)
 
 ::: {.content-visible when-format="html"}
 <hr noshade/>
@@ -841,7 +848,7 @@ Example:
 
 <a name="anchor-missing-coding"></a>
 
-#### *Blockly* operators for encoding missing values
+#### *Blockly* operators to encode missing values
 
 (documentation follows)
 
@@ -877,7 +884,7 @@ The *IRTLib Editor* supports two different options for commenting *blockl*y code
 
 #### Comments as *Blockly* elements
 
-Comments that are to be permanently visible in the flow can be added via the plaette in the *Development* section:
+Comments that are to be permanently visible in the process can be added via the plaette in the *Development* section:
 
 ![](img/screenshot-routing-palette-comment-example-ENG.png){width="200"}
 
@@ -912,7 +919,7 @@ Large and complex processes can sometimes become confusing in the *Blockly* edit
 
 This is illustrated in the following example:
 
-* Unfolded (i.e. complete) display of the selected block:
+* Unfolded (i.e. complete) representation of the selected block:
 
 > ![](img/screenshot-blockly-folding-unfolding-example-01-DEU.png){width="250"}
 
@@ -932,9 +939,11 @@ The *folding* / *unfolding* of *blockly* elements does not change the function o
 
 <a name="anchor-deactivating"></a>
 
-#### Deactivating / activating
+#### Deactivate / activate
 
-The *Blockly* editor offers the option of only deactivating *Blockly* elements instead of <a href="#anchor-delete">deleting</a> them. Deactivated *Blockly* elements remain in the flow definition but are not executed.
+Note: This function is still under development.
+
+The *Blockly* editor offers the option to only deactivate *Blockly* elements instead of <a href="#anchor-delete">deleting them</a>. Deactivated *Blockly* elements remain in the flow definition but are not executed.
 
 In the following example, the block for <a href="#anchor-show-item">displaying</a> task 3 is deactivated, i.e. only task 1, 2 and 4 are displayed:
 

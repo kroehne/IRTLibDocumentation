@@ -12,7 +12,7 @@ format:
 
 -   **Beschreibung**: Um eine ausführliche Beschreibung der *Studie* hinterlegen zu können, ist dieses optionle Feld vorgesehen. Hier können auch Sonderzeichen und Umlaute usw. eingegeben werden.
 
--   **Routing für Erhebungsteile aktivieren**: *Studien* bestehen aus einem oder mehreren *Erhebungsteilen*. Die *Erhebungsteile* werden per Default als lineare Abfolge administriert. Wenn die Option *Routing für Erhebungsteile aktivieren* ausgewählt ist, kann die Reihenfolge der *Erhebungsteile* mit einem Blockly-basierten Routing definiert werden. Dadurch sind dynamische Abfolgen von *Erhebungsteilen* möglich, wobei auch Aufrufparameter der Studie bspw. für die Zuordnung von unterschiedlichen Reihenfolgen genutzt werden können. 
+-   **Routing für Erhebungsteile aktivieren**: *Studien* bestehen aus einem oder mehreren *Erhebungsteilen*. Die *Erhebungsteile* werden per Default als lineare Abfolge administriert. Wenn die Option *Routing für Erhebungsteile aktivieren* ausgewählt ist, kann die Reihenfolge der *Erhebungsteile* mit einem *Blockly*-basierten Routing definiert werden. Dadurch sind dynamische Abfolgen von *Erhebungsteilen* möglich, wobei auch Aufrufparameter der Studie bspw. für die Zuordnung von unterschiedlichen Reihenfolgen genutzt werden können. 
 
 -   **Bildschirmgröße überprüfen**: In Erhebungen, bei denen die Bildschirmgröße nicht bekannt ist, kann mit dieser Option ein Größenvergleich von Objekten (EC-Karte, Banknote, Personalausweis) mit Darstellungen auf dem Bildschirm vorgenommen werden. 
 

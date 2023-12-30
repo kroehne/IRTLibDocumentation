@@ -6,30 +6,30 @@ format:
     toc: false
 ---
 
-### Create survey part
 
-The *IRTLib Editor* is used to create configurations for *studies*, which can then be used in an *IRTLib Player* to carry out computer-based assessments. *Studies* consist of one or more *assessment parts*. 
+### Create Survey Part
+
+The *IRTLib Editor* is used to create configurations for *Studies*, which can then be used in an *IRTLib Player* to carry out computer-based assessments. *Studies* consist of one or more *Survey Parts*. 
 
 #### How does it work?
 
-Once a *study* has been created, a *survey section* can now be added via the plus icon at the bottom right:
+Once a *Study* has been created, a *Survey Part* can now be added via the plus icon at the bottom right:
 
 ![](img/icon-plus.png){width="50" fig-align="left"}
 
-Then enter a *name* and optionally a *description* in the **Create new survey part** dialog.
+Then enter a *Name* and optionally a *Description* in the **Create new Survey Part** dialogue.
 
-Make sure that only letters (upper and lower case), numbers and a `_` are allowed for the *Name*.
-
+Make sure that only letters (upper and lower case), numbers and a `_` are allowed for the *name*.
 
 Then click on *Save*.
 
 ![](img/screenshot-new-study-part-empty-DEU.png){width="400" fig-align="left"}
 
-If required, you can also assign an image to a *survey part* using the following icon. This image is used in the *IRTLib Editor* for this survey part:
+If required, you can also assign an image to a *survey part* using the following icon. This image is used in the *IRTLib Editor* for this *Survey Part*:
 
 ![](img/icon-study-image.png){fig-align="left"}
 
-#### Edit survey part
+#### Edit Survey Part
 
 Created *survey parts* are displayed as tiles in the survey part overview:
 
@@ -39,18 +39,18 @@ Created *survey parts* are displayed as tiles in the survey part overview:
 
 ![](img/icon-edit.png){fig-align="left"}
 
-**Delete survey section**: You can also use the recycle bin icon to delete *survey parts*. The deletion of *survey parts* cannot be undone:
+* **Delete survey section**: You can also use the recycle bin icon to delete *survey parts*. The deletion of *survey parts* cannot be undone:
 
 ![](img/icon-delete.png){fig-align="left"}
  
 #### Sort survey parts
 
-If the option *Enable routing for survey parts* is not selected in the *Info* view (section *Overview*) in the configuration of a *Study*, then *Survey parts* are administered in the order in which they are displayed in the survey part administration.
+If the option *Enable Routing for Survey Parts* is not selected in the *Info* view (section *Overview*) in the configuration of a *Study*, then *Survey Parts* are administered in the order in which they are displayed in the survey part administration.
 
-* Move survey parts**: To change the order of *survey parts* using drag-and-drop, the *Change order* mode must first be activated using the following toggle icon:
+* **Move Survey Parts**: To change the order of *Survey Parts* using drag-and-drop, the *Change Order* mode must first be activated using the following toggle icon:
 
 ![](img/icon-toggle.png){width="50" fig-align="left"}
 
-> The tiles can then be put in the desired order. The *Change order* mode is ended when the floppy disk icon is clicked or the changes are discarded: 
+> The tiles can then be put in the desired order. The *Change Order* mode is ended when the disc icon is clicked or the changes are discarded: 
 
 ![](img/screenshot-icons-undo-and-save-01.png){width="120" fig-align="left"}

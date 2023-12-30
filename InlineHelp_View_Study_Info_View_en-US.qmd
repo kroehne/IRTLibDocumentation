@@ -6,94 +6,71 @@ format:
     toc: false
 ---
 
-### Display settings 
+### Display Settings 
 
+Selected options are available for configuring the display, which relate to the presentation of the assessment content and the use of *CBA ItemBuilder* content, which is created with a defined aspect ratio (width and height).
 
-Selected options are available for configuring the display, which relate to the presentation of the assessment content and the use of *CBA ItemBuilder* content, which is created with a defined aspect ratio (width and height).#### Window mode 
+#### Window Mode 
 
+In the **Window Mode** selection, it can be configured whether an additional window is displayed in the *IRTlib Player*. The configuration is implemented differently depending on the environment: 
 
-In the **Window mode** selection, you can configure whether an additional window is displayed in the *IRTlib Player*. The configuration is implemented differently depending on the environment: 
-
-
-* *Window*:In this *window mode*, a regular program window is used in the offline *IRTlib Player*, in the online *IRTlib Player* the assessment content is displayed in the normal browser area, and the address bar and navigation buttons of the browser are visible in this mode. 
-
+* *Window*: In the configuration *Window*, a regular programm window is used in the offline *IRTlib Player*, in the online *IRTlib Player* the assessment content is displayed in the normal browser area, and the address bar and navigation buttons of the browser are visible in this mode. 
 
 > ![](img/screenshot-window-mode-example-offline-player-01.png){width="80%"}
 
+* *Full screen*: The offline *IRTlib Player* starts directly in full screen mode if this option is configured. This is also associated with a *Kiosk Mode*, i.e. access to other programms and (accidental) termination of the programm is only possible via the *Task Manager*. If a test manager, for example, is to be able to end the test, a *Test Administrator Menu* must be configured. 
 
-* *Full screen*:The offline *IRTlib Player* starts directly in full screen mode if this option is configured.This is also associated with a *Kiosk mode*, i.e. access to other programs and the (accidental) termination of the program is only possible via the *Task Manager*.If a test administrator, for example, is to be able to end the test, a *Test administrator menu* must be configured. 
-
-
-> The online *IRlLib Player* can also display assessment content in full-screen mode if this option is selected.If full screen mode is exited in the browser, the assessment content is then hidden.As it is not possible to automatically switch to full-screen mode in a browser, the target person first sees the following message from the platform:
-
+> The online *IRTlib Player* can also display assessment content in full-screen mode if this option is selected. If full screen mode is exited in the browser, the assessment content is then hidden. As it is not possible to automatically switch to full-screen mode in a browser, the target person first sees the following message from the platform:
 
 > ![](img/screenshot-irtlib-player-message-fullscreen-not-started-DEU.png){width="80%"}
 
-
-> By clicking on the button *Activate full screen* the full screen mode is started and the assessment content is then displayed without window frames and navigation areas of the browser.For a short time, the browser then typically displays a message that the full screen mode can be ended again with `Esc`. 
-
+> By clicking on the button *Activate Full Screen* the full screen mode is started and the assessment content is then displayed without window frames and navigation areas of the browser. For a short time, the browser then typically displays a message that full screen mode can be cancelled again with `Esc`. 
 
 > ![](img/screenshot-irtlib-player-message-fullscreen-notification-DEU.png){width="80%"}
 
-
-
-
 > Note that this function is only available in browsers that support full screen mode (especially on older mobile devices, full screen mode is not fully supported; see for details e.g. on [caniuse.com](https://caniuse.com/?search=fullscreen)).
 
-
-* *Full screen, if supported*:In this mode, the assessment in the online *IRTlib Player* is only displayed in full-screen mode if the browser supports full-screen mode.  However, the content of the computer-based assessment is displayed in windowed mode when a study is delivered online and a browser that does not support full screen mode is used.For the *IRlLib Player* offline, this configuration is identical to *full screen*. 
-
+* *Full Screen, if Supported*: In this mode, the assessment in the online *IRTlib Player* is only displayed in full screen mode if the browser supports full screen mode.  However, the content of the computer-based assessment is displayed in windowed mode when a study is delivered online and a browser that does not support full-screen mode is used. For the *IRlLib Player* offline, this configuration is identical to *full screen*. 
 
 > ![](img/screenshot-irtlib-player-message-fullscreen-not-supported-DEU.png){width="80%"}
 
+* *Debug*: This mode allows access to the browser's developer tools during test execution, which are intended for debugging by software developers.
 
-* *Debug*:This mode allows access to the browser's developer tools during test execution, which are intended for debugging by software developers.
+> If the offline *IRTlib Player* is started with a study that has the *Debug* entry configured as *Fixed mode*, the so-called developer tools (*DevTools*) can be called up via the right mouse button during the task presentation.
 
-
-> If the offline *IRTlib Player* is started with a study that has the *Debug* entry configured as *Fixed mode*, the so-called developer tools (*DevTools*) can be called up via the right mouse button during the task presentation.> ![](img/screenshot-debug-view-dev-tools-example-01.png){width="80%"}
+> ![](img/screenshot-debug-view-dev-tools-example-01.png){width="80%"}
  
-### Scaling and alignment
+### Scaling and Alignment
 
-
-Assessment content created with the *CBA ItemBuilder* is created for a specific size in pixels (width times height).The content can then be scaled for display on devices with different screen sizes and screen resolutions.In the *CBA ItemBuilder*, the options under *Scaling Options* are therefore available in the *Preview*: 
-
+Assessment content created with the *CBA ItemBuilder* is created for a specific size in pixels (width times height). The content can then be scaled for display on devices with different screen sizes and screen resolutions. In the *CBA ItemBuilder*, the option under *Scaling Options* is therefore available in the *Preview*: 
 
 > ![](img/screenshot-cba-itembuilder-preview-scaling-mode-01.png){width="200"}
  
-Analog settings can be made in the *IRTlib Editor*.
+Analogue settings can be made in the *IRTlib Editor*.
  
-**Scaling**: Setting how content should be adjusted if the available space and size of the items differ (*Scaling Mode*). 
+* **Scaling**: Setting how content should be adjusted if the available space and size of the items differ (*Scaling Mode*). 
 
+  - *None*: The content is displayed without adaptation to the available window or screen size (corresponds to `None`).
+  - *Upscale*: Content is enlarged so that the available space is utilised (corresponds to `Up`).
+  - *Downscale*: Content is scaled down so that it fits on the screen/in the window (corresponds to `Down`).
+  - *Window size*: Contents are enlarged and reduced (corresponds to `Both`).
 
-  - None*:The content is displayed without adaptation to the available window or screen size (corresponds to `None`).
-  - Scale up*:Content is enlarged so that the available space is utilized (corresponds to `Up`).
-  - downscale*: Content is reduced in size so that it fits on the screen/in the window (corresponds to `Down`).
-  - *Window size*:Content is enlarged and reduced (corresponds to `Both`).
+* **Horizontal Alignment**: The options *centred* / *left* / *right* are used to align item content horizontally if the width of the window or screen is greater than the width of the content.
 
+* **Vertical Alignment**: The options *centred* / *top* / *bottom* are used to align item content vertically if the height of the window or screen is greater than the height of the content.
 
-* **Horizontal alignment**:The options *centered* / *left* / *right* are used to align item content horizontally if the width of the window or screen is greater than the width of the content.
+#### Further Settings
 
-
-**Vertical alignment**: The options *centered* / *top* / *bottom* are used to align item content vertically if the height of the window or screen is greater than the height of the content.
-
-
-#### Further settings
-
-
-* Force suitable screen size**:If *Scale down* or *Window size* is not selected for *Scaling*, this option can be used to force that you can only start task editing if the available size of the window or screen is larger than the required width/height of the items. Otherwise, the following message is displayed: 
-
+* **Force suitable screen size**: If *Scale down* or *Window size* is not selected for *Scaling*, this option can be used to force that you can only start task editing if the available size of the window or screen is larger than the required width/height of the items. Otherwise, the following message is displayed: 
 
 > ![](img/screenshot-irtlib-player-message-resolution-too-low-DEU.png){width="80%"}
- 
-
-
-<hr/>Note: The display settings refer to all *survey parts* within a *study*. If several studies are configured in an *IRTlib player*, the settings must match each other, i.e. it is not possible to simultaneously administrate a study in *window mode: window* or in *window mode: full screen* with one instance of an *IRTlib player*.
-
 
 <hr/>
 
+Note: The display settings refer to all *survey parts* within a *study*. If several studies are configured in an *IRTlib player*, the settings must match each other, i.e. it is not possible to administer a study in *window mode: window* or in *window mode: full screen* at the same time with one instance of an *IRTlib player*.
 
-If changed settings are to be retained, the changes must be saved using the floppy disk symbol. Otherwise, the discard icon can be used:
+<hr/>
 
+If changed settings are to be retained, the changes must be saved using the disc symbol. Otherwise, the discard icon can be used:
 
 ![](img/screenshot-icons-undo-and-save-01.png){width="120" fig-align="left"}

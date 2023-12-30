@@ -6,12 +6,29 @@ format:
     toc: false
 ---
 
-## Study Configurations
 
-* **Name**: What should the *study* be called? Make sure that only letters (upper and lower case), numbers and a `_` are allowed for the name.
+### Settings for the Study
 
-* **Description**: This optional field is provided so that you can enter a detailed description of the *study*. Special characters and umlauts etc. can also be entered here. 
+- **Name**: How should the *study* be named? Make sure that only letters (upper and lower case), numbers and a `_` are allowed for the name.
 
-* **Activate routing for survey parts**:  *Studies* consist of one or more *survey-parts*.The *survey-parts* are administered as a linear sequence by default.If the option *Enable routing for survey-parts* is selected, the order of the *survey-parts* can be defined with *Blockly*-based routing. This enables dynamic sequences of *survey-parts*, whereby *Call Parameters* of the study can also be used, for example, to assign different sequences.
+- **Description**: This optional field is provided so that you can enter a detailed description of the *study*. Special characters and umlauts etc. can also be entered here.
 
-* **Check screen size**: (description follows)
+- **Activate Routing for Survey Parts**: *Studies* consist of one or more *survey parts*. The *survey parts* are administered as a linear sequence by default. If the option *Enable Routing for Survey Parts* is selected, the order of the *Survey Parts* can be defined with *Blockly*-based routing. This enables dynamic sequences of *Survey Parts*, whereby call parameters of the study can also be used, for example, to assign different sequences. 
+
+- **Check screen size**: In surveys where the screen size is not known, this option can be used to compare the size of objects (EC card, banknote, ID card) with representations on the screen. 
+
+> The device check is carried out with the following dialogue:
+
+> ![](img/screenshot-check-display-size-01-DEU.png){width="400"}
+
+> If the option *Force Suitable Screen Size* (in the *Display* section) is not activated, test processing can still be started. If the resolution is too small, the following dialogue is displayed: 
+
+> ![](img/screenshot-check-display-size-02-DEU.png){width="400"}
+
+> Note: This option is currently not configurable. 
+
+<hr/>
+
+If changed settings are to be retained, the changes must be saved using the disc symbol. Otherwise, the discard icon can be used:
+
+![](img/screenshot-icons-undo-and-save-01.png){width="120" fig-align="left"}

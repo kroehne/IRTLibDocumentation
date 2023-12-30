@@ -6,70 +6,62 @@ format:
     toc: false
 ---
 
-### Concept of a test administrator menu (menu for test administrators)
+### Concept of a Test Administrator Menu (Menu for Test Administrators)
 
+The *Test Administrator Menu* is configured in two steps. Firstly, a key combination must be defined with which the test administrator menu can be requested. If this key combination is pressed during test taking, a window for entering the password appears. Test administrators enter the password known (only) to them and thus gain access to selected functions. For this purpose, one or more roles can be defined in the *IRTlib Editor* in a second step.
 
-The test administrator menu is configured in two steps. First, a key combination must be defined with which the test manager menu can be called up. If this key combination is pressed during test processing, a window for entering the password appears.Test administrators enter the password known (only) to them and thus gain access to selected functions. For this purpose, one or more roles must be defined in the *IRTlib Editor* in a second step.
+#### Access For Test Administrators
 
+Firstly, a key combination must be defined.
 
-#### Access for test management
+* **Key**: The configuration of the key combination for the test manager menu first requires the definition of a key. To define a key, click in the field and press the key that is to be used for the test manager menu.
 
-
-First, a key combination must be defined.* **Key**:The configuration of the key combination for the test manager menu first requires the definition of a key.To define a key, click in the field and press the key that is to be used for the test manager menu.
-
-
-* Modifiers** (Alt, Ctrl and Shift): For a key, you can also specify whether one or more modifiers must be pressed to open the test conductor menu. 
-
+* **Modifiers** (Alt, Ctrl and Shift): For a key, you can also specify whether one or more modifiers must be pressed to open the test conductor menu. 
 
 Example: 
 
-
-* The following configuration defines the key combination `Ctrl` + `Shift` + `X`:
+* The following configuration defines the key combination `Ctrl` + `Shift`+ `X`:
 
 > ![](img/screenshot-test-adminstrator-strg-shift-x-example-01.png){width="200"}
 
-The defined key combination only opens the option to enter a password for test administrators during test processing in the *IRTlib Player*.To use the function, a password is required, which is defined together with a role in the second step.
-
+The defined key combination only opens the option to enter a password for test administrators during test processing in the *IRTlib Player*. To use the function, a password is required, which is defined together with a role in the second step.
 
 #### Roles
 
+After calling up the defined key combination, the prompt to enter a password is displayed during test processing:
 
-After calling up the defined key combination, the prompt to enter a password is displayed during test processing:![](img/screenshot-test-adminstrator-menue-password-example-01-DEU.png){width="80%"}
+![](img/screenshot-test-adminstrator-menue-password-example-01-DEU.png){width="80%"}
 
-
-Which functions are actually accessible is controlled by which password is entered. Test line functions can only be accessed if a valid password is known. 
-
+Which functions are actually accessible is controlled by which password is entered. Only if a valid password is known, functions of the test line can be called. 
 
 Example:
-
 
 * In the following configuration, test administrators can use this password to jump to the next task (*Next*) or end the application (*End session*):
 
 > ![](img/screenshot-test-adminstrator-menue-two-functions-example-01-DEU.png){width="250"}
 
-
 > To define a role, first click on the `+` symbol at the bottom right. The name of a role and a password can then be defined:
 
 > ![](img/screenshot-test-adminstrator-menue-example-configuration-01-DEU.png){width="450"}
 
-
 > The name of the role is for documentation purposes only. The assignment of a unique password and the selection of one or more of the following functions are decisive for the functionality: 
 
+* **Task back**: Enables navigation to the previous task.
 
-* **Task back**:Enables navigation to the previous task.
-**Task forward**: Enables navigation to the next task.
-**Cancel item list**:Enables the processing of the current item list to be canceled. This option is particularly useful if the *Routing* option is activated in a *Survey section* and the definition of *CBA ItemBuilder* tasks is implemented using item lists.  
-* **Cancel survey part**: Allows you to cancel the current survey part.
-**Cancel session**: Enables the current session to be ended. 
-* **Volume control**: Allows you to change the volume. 
+* **Task forward**: Enables navigation to the next task.
 
+* **Cancel Item List**: Allows you to cancel the processing of the current item list. This option is particularly useful if the *Routing* option is activated in a *Survey section* and the definition of *CBA ItemBuilder* tasks is implemented using item lists.
 
-The audio file, which is played to control the audio output after the volume has been changed, can be inserted in the *Audio for sound test* section and stored in the study configuration. 
+* **Cancel Survey Part**: Enables the cancellation of the current survey part.
 
+* **Cancel session**: Enables the current session to be ended. 
 
+* **Volume control**: Enables the volume to be changed. 
+
+The audio file that is played to control the audio output after the volume has been changed can be inserted in the *Audio for sound test* section and stored in the study configuration. 
 
 <hr/>
 
-If changed settings are to be retained, the changes must be saved using the floppy disk symbol. Otherwise, the discard icon can be used:
+If changed settings are to be retained, the changes must be saved using the disc symbol. Otherwise, the discard icon can be used:
 
 ![](img/screenshot-icons-undo-and-save-01.png){width="120" fig-align="left"}

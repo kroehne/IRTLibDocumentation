@@ -15,7 +15,7 @@ Um mit dem *IRTLib Editor* *Studien* zu konfigurieren, welche *CBA ItemBuilder* 
 
 Es ist wichtig zu  wissen, welche Version des *CBA ItemBuilders* für die Erstellung der Items (d.h. der *CBA ItemBuilder*-Projektdateien) verwendet wurde. Im Zweifelsfall kann man diese Information z.B. im *About Dialog* des CBA ItemBuilders finden:
 
-* Schritt 1: Öffnen Sie den "Apout"-Dialog über das "Help"-Menü
+* Schritt 1: Öffnen Sie den "About"-Dialog über das "Help"-Menü
 
 > ![](img/screenshot-ib-version-01.png){width="300" fig-align="left"}
 

@@ -6,4 +6,22 @@ format:
     toc: false
 ---
 
-### Publish 
+### Publish
+
+Before a *Version* of a *Study* is published, the *Validate* button can be used to check whether the *Study* has been configured correctly.
+
+> ![](img/screenshot-validate-version-item-icon-01.png){width="40"}
+
+For example, a *Study* must always contain at least one *Survey Part* definition If this is not the case, the following message appears when *validating*: 
+
+![](img/sreenshot-irtlib-editor-showing-example-validation-failed-DEU-01.png){width="100%"}
+
+Note: If no errors are found during *Validation*, no further message is displayed and the study can be published. 
+
+If there are no more errors and the *Study* is to be prepared for export, a *Version* can be created. The following button is used for this purpose: 
+
+> ![](img/screenshot-create-version-item-icon-01.png){width="40"}
+
+The following dialogue then appears:
+
+![](img/sreenshot-irtlib-editor-create-new-version-DEU-01.png){width="450"}

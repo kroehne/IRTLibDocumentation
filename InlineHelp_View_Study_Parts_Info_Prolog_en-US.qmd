@@ -6,18 +6,19 @@ format:
     toc: false
 ---
 
-### Items before a time limit
+### Items Before a Time Limit
 
-The *Survey parts* allow the definition of items in different sections. Items in this section *Prefix item(s)* are displayed before the items defined in the *Items* section of a *Survey part*. The separation into *Foreword item(s)* and *Items* is particularly useful if a time limit is activated under *Editing time*. 
+The *Survey Parts* allow the definition of items in different sections. Items in this section *Prologue Item(s)* are displayed before the items defined in the *Items* section of a *Survey Part*. The separation into *Prologue Item(s)* and *Items* is particularly useful if a time limit is activated under *Time Restriction*. 
 
-The following options are available for configuring items in the *Foreword item(s)* section: 
+The following options are available for configuring items in the *Prologue Item(s)* section: 
 
 * Add: ![](img/screenshot-add-project-plus-icon.png){width="40"}
 * Refresh: ![](img/screenshot-update-item-icon-01.png){width="40"}
-* Preview:![](img/screenshot-preview-icon-01.png){width="40"}
+* Preview: ![](img/screenshot-preview-icon-01.png){width="40"}
 * Download/Export: ![](img/screenshot-download-item-icon-01.png){width="40"}
 * Delete: ![](img/screenshot-delete-item-icon-01.png){width="40"}
 * Sort: ![](img/screenshot-sort-items-icon-01.png){width="80"}
  
-Note: Changes to the *Screenshot-item(s)* view must be saved using the diskette icon or discarded using the undo icon:
+Note: Changes to the *Prologue Item(s)* view must be saved using the disc symbol or discarded using the undo symbol:
 
+![](img/screenshot-icons-undo-and-save-01.png){width="120" fig-align="left"}

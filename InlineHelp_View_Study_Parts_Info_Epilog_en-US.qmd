@@ -6,20 +6,18 @@ format:
     toc: false
 ---
 
-### Items according to a time limit
+### Items After a Time Limit
 
-The *Survey section* allows the definition of items in different sections.Items in this section *epilog-item(s)* are displayed after the items defined in the *items* section of a *survey part*. The separation into *epilog-item(s)* and *items* is particularly useful if a time limit is activated under *Editing time*. 
+*Survey Parts* allow the definition of items in different sections. Items in this section *Epilogue Item(s)* are displayed after the items defined in the *Items* section of a *Survey Part*. The separation into *Epilogue Item(s)* and *Items* is particularly useful if a time limit is activated under *Time Restriction*. 
 
-The following options are available for configuring items in the *Follow-up item(s)* section: 
+The following options are available for configuring items in the *Epilogue Item(s)* section: 
 
-* Add:![](img/screenshot-add-project-plus-icon.png){width="40"}
+* Add: ![](img/screenshot-add-project-plus-icon.png){width="40"}
 * Refresh: ![](img/screenshot-update-item-icon-01.png){width="40"}
 * Preview: ![](img/screenshot-preview-icon-01.png){width="40"}
 * Download/Export: ![](img/screenshot-download-item-icon-01.png){width="40"}
 * Delete: ![](img/screenshot-delete-item-icon-01.png){width="40"}
-* Sort:![](img/screenshot-sort-items-icon-01.png){width="80"}
+* Sort: ![](img/screenshot-sort-items-icon-01.png){width="80"}
  
-Note: Changes to the *epilog-item(s)* view must be saved using the floppy disk symbol or discarded using the undo symbol:
-
-
+Note: Changes to the *Epilogue Item(s)* view must be saved using the disc symbol or discarded using the undo symbol:
 

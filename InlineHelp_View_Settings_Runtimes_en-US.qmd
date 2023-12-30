@@ -16,7 +16,7 @@ To configure *Studies* that use *CBA ItemBuilder* content with the *IRTLib Edito
 
 It is important to know which version of the CBA ItemBuilder was used to create the items (i.e. the CBA ItemBuilder project files). If in doubt, this information can be found in the *About dialogue* of the CBA ItemBuilder, for example:
 
-* Step 1: Open the "Apout" dialogue via the "Help" menu
+* Step 1: Open the "About" dialogue via the "Help" menu
 
 > ![](img/screenshot-ib-version-01.png){width="300" fig-align="left"}
 

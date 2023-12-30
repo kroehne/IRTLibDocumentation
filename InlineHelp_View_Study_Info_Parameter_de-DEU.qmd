@@ -6,4 +6,6 @@ format:
     toc: false
 ---
 
-## Definition von Parametern
+## Definition of Parameters
+
+(not available)

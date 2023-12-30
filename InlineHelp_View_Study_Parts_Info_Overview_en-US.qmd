@@ -6,4 +6,19 @@ format:
     toc: false
 ---
 
-## Study-Part Configuration
+### Basic Configuration for Survey Parts 
+
+#### Name and Description
+
+* **Designation**: The internal name of the survey part, which is displayed in the *IRTlib Editor* for editing and defining the process. Designations must not contain any special characters, spaces or umlauts and must not begin with a number.
+
+* **Description**:Optional, additional description of a survey part.
+
+#### Routing Within Survey Parts 
+
+* **Enable Routing**: The configured assessment contents in the *Items* section can be administered as a linear sequence, i.e. in the configured order.If a different sequence is to be used, the *Enable Routing* option can be selected here. The sequence can then be specified as a visual program in the *Routing* section.  
+
+#### Further Settings
+
+* **Use snapshot**: So that CBA ItemBuilder *tasks* can be visited multiple times, their content is saved in so-called *snapshots* when the item is exited. *Snapshots* can also be used to display the contents of a *CBA ItemBuilder* *task* again at a later time. This option should only be deactivated if there is an important reason and the consequences (i.e. the unsaved *snapshot* data) have been carefully considered. 
+

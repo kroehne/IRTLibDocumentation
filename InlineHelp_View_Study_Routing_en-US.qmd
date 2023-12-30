@@ -6,27 +6,26 @@ format:
     toc: false
 ---
 
-### Summary of routing between survey parts 
+### Summary of Routing between Survey Parts 
 
-The order of *survey parts* can be defined using *Blockly* (analogous to defining the order of *Items* within *Survey parts*). This option is available if the option *Enable routing for survey parts* is selected in the basic configuration for a study (in the *Overview* view). 
+The order of *Survey Parts* can be defined using *Blockly* (analogue to the definition of the order of *Items* within *Survey Parts*). This option is available if the option *Enable Routing for Survey Parts* is selected in the basic configuration for a study (in the *Overview* view). 
 
-For the general principles of using *Blockly* in the *IRTlib Editor*, see the help on *Routing within survey parts*.
+For the general principles of using *Blockly* in the *IRTlib Editor*, see the help on *Routing within Survey Parts*.
 
-Functions that are only available in *Routing between survey parts* are:
-
+Functions that are only available in *Routing between Survey Parts* are:
 
 * Display survey part
 
 > ![](img/screenshot-blockly-request-study-part-01-DEU.png){width="200"}
 
-> This *Blockly* operator replaces the *Show Item* within survey parts.
+> This *Blockly*-operator replaces *Show Item* within *Survey Parts*.
 
 * Successful login
 
 > ![](img/screenshot-blockly-check-login-infinite-study-part-01-DEU.png){width="200"}
 
-> This *Blockly* operator has the value *true* if valid login information was specified before the number of maximum attempts (here: infinite, i.e. unlimited hoft).
+> This *Blockly*-operator has the value *true* if valid login information was specified before the maximum number of attempts (here: infinite, i.e. an unlimited number of times).
 
-Note: Changes to the *Routing* view between *Collection parts* must be saved using the diskette symbol or discarded using the undo symbol:
+Note: Changes to the *Routing* view between *Survey Parts* must be saved using the disc symbol or discarded using the undo symbol:
 
 ![](img/screenshot-icons-undo-and-save-01.png){width="120" fig-align="left"}
