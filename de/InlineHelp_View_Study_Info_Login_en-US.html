@@ -41,45 +41,45 @@ border-left: 0.9rem solid #ffffff !important;
 
 
 <h3 id="configuration-of-the-login">Configuration of the login</h3>
-<p>In the <em>Login</em> section, you can configure how test participants who start an assessment (either by calling up a link in a browser that refers to the online <em>IRTlib player</em> or by starting the offline <em>IRTlib player</em>) are to be identified or authenticated.</p>
+<p>In the <em>Login</em> section, you can configure how test participants who start an assessment (either by calling up a link in a browser that refers to the online <em>IRTlib Player</em> or by starting the offline <em>IRTlib Player</em>) are to be identified or authenticated.</p>
 <ul>
-<li><p><strong>Login mode</strong>: The <em>IRTlib software</em> supports different <em>Login modes</em>.</p>
+<li><p><strong>Login Mode</strong>: The <em>IRTlib Software</em> supports various <em>Login Modes</em>.</p>
 <ul>
-<li><p><em>Random identifier</em>: When a session is started for the first time, an identifier is generated in this <em>login mode</em>. This random but unique character string (a so-called <em>UUID</em>, i.e. a <em>Universally Unique Identifier</em>) is used as a personal identifier in all data (i.e. result data) and all other stored data (e.g. log data/trace data, snapshot data, etc.).</p></li>
-<li><p><em>Username</em>: If test participants are expected to identify themselves by a unique string (e.g. a number or text used as an access identifier), a <em>study</em> can be configured with the <em>login mode</em> <em>username</em>. Access to the assessment is then only possible if the character string entered as <em>username</em> is valid.The underlying idea is that the study configuration is loaded with a list of valid usernames and that a test participant must enter a valid username before he or she can start the assessment. Only authenticated test takers can access the assessment content defined as <em>Study</em> and answer the tasks or questions.</p></li>
-<li><p><em>User name and password</em>: If not only valid usernames but also a password are to be used in a <em>study</em> to authenticate test takers, the <em>login mode</em> <em>username and password</em> allows a username and password to be entered. Analogous to <em>username</em>, both pieces of information must then be stored in the study configuration.</p></li>
-<li><p>Access token<em>: If the valid user names are not to be saved in the study configuration, the option </em>Access token* can be used. Each token that corresponds to a defined schema is then accepted and used as an identifier for the test participants.</p></li>
+<li><p><em>Random identifier</em>: When a session is started for the first time, an identifier is generated in this <em>Login Mode</em>. This random but unique character string (a so-called <em>UUID</em>, i.e. a <em>Universally Unique Identifier</em>) is used as a personal identifier in all data (i.e. result data) and all other stored data (e.g., log data/trace data, snapshot data, etc.).</p></li>
+<li><p><em>Username</em>: If test participants are expected to identify themselves by a unique string (e.g. a number or text used as an access identifier), a <em>Study</em> can be configured with the <em>Login Mode</em> <em>username</em>. Access to the assessment is then only possible if the character string entered as <em>username</em> is valid. The underlying idea is that the study configuration is loaded with a list of valid usernames and that a test participant must enter a valid username before he or she can start the assessment. Only authenticated test takers can access the assessment content defined as <em>Study</em> and answer the tasks or questions.</p></li>
+<li><p><em>User Name and Password</em>: If not only valid usernames but also a password is to be used in a <em>Study</em> to authenticate test takers, the <em>Login Mode</em> <em>Username and Password</em> allows a username and password to be entered. Analogue to <em>username</em>, both pieces of information must then be stored in the study configuration.</p></li>
+<li><p><em>Access Token</em>: If the valid user names are not to be saved in the study configuration, the option <em>Access Token</em> can be used. Each token that corresponds to a defined schema is then accepted and used as an identifier for the test participants.</p></li>
 </ul></li>
-<li><p>Storage for session data**:In the case of online deliveries, an assessment can be continued after an interruption. This functionality is also required, for example, if the page is reloaded in the browser (e.g. by forcing a <em>Reload</em>/F5, or by closing and reopening the URL). To ensure that sessions originating from the same person (i.e. from the same browser) can also be continued, the software can be configured so that the identifier is saved in the client.</p></li>
-<li><p><strong>Valid values</strong>: The <em>IRTlib software</em> provides the following credential validation mechanisms for the <em>login modu</em> <em>username</em>, <em>username + password</em> and <em>access token</em>:</p>
+<li><p><strong>Storage for Session Data</strong>: In the case of online deliveries, an assessment can be continued after an interruption. This functionality is also required, for example, if the page is reloaded in the browser (e.g. by forcing a <em>Reload</em>/F5, or by closing and reopening the URL). To ensure that sessions originating from the same person (i.e. from the same browser) can also be continued, the software can be configured so that the identifier is saved in the client.</p></li>
+<li><p><strong>Valid Values</strong>: The <em>IRTlib Software</em> provides the following credential validation mechanisms for the <em>Login Modes</em> <em>Username</em>, <em>Username and Password</em> and <em>Access Token</em>:</p>
 <ul>
-<li><p><em>List</em>: A list of valid credentials (username or username and password, depending on the <em>login mode</em> configuration) can be defined as part of the study configuration.The information can either be edited in the <em>IRTlib editor</em> or imported from a CSV file.Defined values can also be exported as a CSV file.</p></li>
-<li><p><em>Code for checking</em>:A <em>Blockly</em> function can be specified, which returns <em>True</em> if the transferred login data is valid (otherwise <em>False</em>).</p></li>
+<li><p><em>List</em>: A list of valid authorisations (username or username and password, depending on the configuration of the <em>login mode</em>) can be defined as part of the study configuration. The information can either be edited in the <em>IRTlib Editor</em> or imported from a CSV file. Defined values can also be exported as a CSV file.</p></li>
+<li><p><em>Code for checking</em>: A <em>Blockly</em>-function can be specified, which returns <em>True</em> if the transferred login data is valid (otherwise <em>False</em>).</p></li>
 </ul></li>
-<li><p><strong>Group login</strong>: Depending on the <em>Login mode</em>, user name or access token serve as person identifier.If the <em>Group login</em> option is activated, these transferred login data are used for authentication to identify the test participant as a member of a group (i.e. only test participants who know the user name can authenticate themselves as part of the group). An additional random identifier is then generated within the group to distinguish different people from a group.</p></li>
-<li><p><strong>Login source</strong>: The <em>IRTlib software</em> supports various possible options for how login credentials can be provided.</p>
+<li><p><strong>Group login</strong>: Depending on the <em>Login mode</em>, the user name or access token is used as the person identifier. If the <em>Group login</em> option is activated, these transferred login data are used for authentication to identify the test participant as a member of a group (i.e. only test participants who know the user name can authenticate themselves as part of the group). An additional random identifier is then generated within the group to distinguish different people from a group.</p></li>
+<li><p><strong>Login source</strong>: The <em>IRTlib Software</em> supports several possible options for how login credentials can be provided.</p>
 <ul>
-<li><p><em>Platform</em>: A login dialog is displayed by the <em>IRTlib player</em> (i.e. the platform). The heading for entering the access data, the labeling of the input for user name and password, the labeling of the Next button, your welcome text and an instruction text as well as an error text for failed login attempts can be configured.</p></li>
-<li><p><em>Parameters</em>: Valid login data for test participants can also be provided via the <em>command line</em> (i.e. parameters when calling the offline version of the <em>IRTlib Player</em>) or via URL parameters (i.e. parameters when calling the <em>study</em> via a link to an online version of the <em>IRTlib Player</em>). In this case, no login dialog or login item is displayed.</p></li>
-<li><p><em>Item</em>: As an alternative to an <em>IRlLib Player</em> dialog, a <em>CBA ItemBuilder</em> task can also be configured, which serves as a login input mask. Within the item, a so-called <em>ExternalPageFrame</em> is used to send a specific JavaScript command to the <em>IRlLib-Player</em> to validate an input (an example can be found <a href="https://kroehne.github.io/CBAItemBuilderBook/items/10_00/IRTLibLoginExample.zip">here</a>).</p></li>
+<li><p><em>Platform</em>: A login dialogue is displayed by the <em>IRTlib Player</em> (i.e. the platform). The heading for entering the access data, the labelling of the input for user name and password, the labelling of the Next button, a welcome text and an instruction text as well as an error text for failed login attempts can be configured.</p></li>
+<li><p><em>Parameters</em>: Valid login data for test participants can also be provided via the <em>command line</em> (i.e. parameters when calling up the offline version of the <em>IRTlib Player</em>) or via URL parameters (i.e. parameters when calling up the <em>study</em> via a link to an online version of the <em>IRTlib Player</em>). In this case, no login dialogue or login item is displayed.</p></li>
+<li><p><em>Item</em>: As an alternative to an <em>IRTlib Player</em> dialogue, a <em>CBA ItemBuilder</em> task can also be configured, which serves as a login input mask. Within the item, a so-called <em>ExternalPageFrame</em> is used to send a specific JavaScript command to the <em>IRTlib-Player</em> to validate an input (an example can be found <a href="https://kroehne.github.io/CBAItemBuilderBook/items/10_00/IRTLibLoginExample.zip">here</a>).</p></li>
 </ul></li>
 </ul>
 <blockquote>
 <blockquote>
-<p>The login item must be available as a <em>CBA ItemBuilder</em> project file for the configured runtime environment (runtime) and added to the study configuration. To add a login item to the study configuration, the integrated import dialog can be used.More information on importing <em>CBA ItemBuilder</em> projects can be found in the help for the <em>Items</em> section of a <em>Survey part</em>.</p>
+<p>The login item must be available as a <em>CBA ItemBuilder</em> project file for the configured runtime environment (Runtime) and added to the study configuration. The integrated import dialogue can be used to add a login item to the study configuration. More information on importing <em>CBA ItemBuilder</em> projects can be found in the help for the <em>Items</em> section of a <em>Survey part</em>.</p>
 </blockquote>
 </blockquote>
 <ul>
 <li><p><strong>Additional parameters</strong>: In addition to the <em>authentication</em> of test participants, the login information can also be stored in the <em>IRTlib software</em> as an additional parameter, which can then be used in the flow control, for example.</p>
 <ul>
-<li><p><em>Parameters for file names</em>: The <code>RawDataPath</code> (i.e. the relative path under which the offline <em>IRTlib player</em> saves the results data) and the <code>MonitoringFile</code> (i.e. the name of the file in which the offline <em>IRTlib player</em> writes information for study monitoring) can be configured as part of the login data.</p></li>
+<li><p>Parameters for file names: The <code>RawDataPath</code> (i.e. the relative path under which the offline <em>IRTlib player</em> saves the results data) and the <code>MonitoringFile</code> (i.e. the name of the file in which the offline <em>IRTlib player</em> writes information for study monitoring) can be configured as part of the login data.</p></li>
 <li><p><em>Blockly</em> variables: Additional parameters can also be stored as so-called <em>preload</em> variables with the login information.</p></li>
 </ul></li>
 </ul>
 <hr>
 <div id="tbl-letters">
 <table style="width:100%;">
-<caption>Tabelle 1: Summary of options that can be combined as <em>configuration of the login</em></caption>
+<caption>Tabelle 1: Summary of Options that can be Combined as <em>Configuration of the Login</em></caption>
 <colgroup>
 <col style="width: 16%">
 <col style="width: 16%">
@@ -90,12 +90,12 @@ border-left: 0.9rem solid #ffffff !important;
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: center;">Login mode</th>
-<th style="text-align: center;">Storage for session data</th>
-<th style="text-align: center;">Group login</th>
-<th style="text-align: center;">Valid values</th>
-<th style="text-align: center;">Login source</th>
-<th style="text-align: center;">Additional parameters</th>
+<th style="text-align: center;">Login Mode</th>
+<th style="text-align: center;">Storage for Session Data</th>
+<th style="text-align: center;">Group Login</th>
+<th style="text-align: center;">Valid Values</th>
+<th style="text-align: center;">Login Source</th>
+<th style="text-align: center;">Additional Parameters</th>
 </tr>
 </thead>
 <tbody>
