@@ -1,33 +1,5 @@
 [
   {
-    "objectID": "github.html",
-    "href": "github.html",
-    "title": "Github Repositorien / Github Repositories",
-    "section": "",
-    "text": "Github Repositorien / Github Repositories"
-  },
-  {
-    "objectID": "preparation-studies.html",
-    "href": "preparation-studies.html",
-    "title": "Vorbereitung Studien / Preparation Studies",
-    "section": "",
-    "text": "Vorbereitung Studien / Preparation Studies"
-  },
-  {
-    "objectID": "preparation-overview.html",
-    "href": "preparation-overview.html",
-    "title": "Vorbereitung: Übersicht / Preparation: Overview",
-    "section": "",
-    "text": "Vorbereitung: Übersicht / Preparation: Overview"
-  },
-  {
-    "objectID": "data-collection-publish-and-export.html",
-    "href": "data-collection-publish-and-export.html",
-    "title": "Datenerhebung: Veröffentlichen & Exportieren / Data Collection: Publish & Export",
-    "section": "",
-    "text": "Datenerhebung: Veröffentlichen & Exportieren / Data Collection: Publish & Export"
-  },
-  {
     "objectID": "download.html",
     "href": "download.html",
     "title": "Download & Installation",
@@ -35,18 +7,32 @@
     "text": "Download & Installation"
   },
   {
-    "objectID": "data-collection-overview.html",
-    "href": "data-collection-overview.html",
-    "title": "Datenerhebung: Übersicht / Data Collection: Overview",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Über / About",
     "section": "",
-    "text": "Datenerhebung: Übersicht / Data Collection: Overview"
+    "text": "Über / About"
   },
   {
-    "objectID": "preparation-parts.html",
-    "href": "preparation-parts.html",
-    "title": "Vorbereitung: Erhebungsteile / Preparation: Study Parts",
+    "objectID": "development.html",
+    "href": "development.html",
+    "title": "Development",
     "section": "",
-    "text": "Vorbereitung: Erhebungsteile / Preparation: Study Parts"
+    "text": "Editor for defining Codebooks\nEditor for managing IRT Parameters for ItemPools\nIRT-Integration in Blockly for MST/CAT/MCAT/…\nWebservice Integration required for NLP/Scoring/AI"
+  },
+  {
+    "objectID": "development.html#missing-features-in-version-1.1",
+    "href": "development.html#missing-features-in-version-1.1",
+    "title": "Development",
+    "section": "",
+    "text": "Editor for defining Codebooks\nEditor for managing IRT Parameters for ItemPools\nIRT-Integration in Blockly for MST/CAT/MCAT/…\nWebservice Integration required for NLP/Scoring/AI"
+  },
+  {
+    "objectID": "github.html",
+    "href": "github.html",
+    "title": "Github Repositorien / Github Repositories",
+    "section": "",
+    "text": "Github Repositorien / Github Repositories"
   },
   {
     "objectID": "data-collection-player-integration.html",
@@ -54,6 +40,13 @@
     "title": "Datenerhebung: In IRTlib Player Importieren / Data Collection: Import into IRTlib Player",
     "section": "",
     "text": "Datenerhebung: In IRTlib Player Importieren / Data Collection: Import into IRTlib Player"
+  },
+  {
+    "objectID": "data-collection-post-processing.html",
+    "href": "data-collection-post-processing.html",
+    "title": "Datenerhebung: Datenaufbereitung / Data Collection: Data Post-Processing",
+    "section": "",
+    "text": "Datenerhebung: Datenaufbereitung / Data Collection: Data Post-Processing"
   },
   {
     "objectID": "translation.html",
@@ -84,45 +77,24 @@
     "text": "Markdown (DEU)\nen-US\nde-DEU\n…\n\n\n\n\n*IRTlib Player*\nIRTlib Player\nIRTlib Player\n\n\n\n*IRTlib Editor*\nIRTlib Editor\nIRTlib Editor\n\n\n\n*IRTlib Software*\nIRTlib Software\nIRTlib Software\n\n\n\nOffline-*IRTlib Player*\nOffline-IRTlib Player\nOffline-IRTlib Player\n\n\n\nOnline-*IRTlib Player*\nOnline-IRTlib Player\nOnline-IRTlib Player\n\n\n\n*Studie*\nStudy\nStudie\n\n\n\n*Erhebungsteil*\nStudy Part \nErhebungsteil\n\n\n\n*Einstellungen*\nSettings\nEinstellungen\n\n\n\n*Testleitermenü*\nSession Menu\nTestleitermenü\n\n\n\n*Bearbeitungszeit*\nCompletion time\nBearbeitungszeit\n\n\n\n*Bearbeitungszeit begrenzen*\nRestrict time allowed\nBearbeitungszeit begrenzen\n\n\n\n*Studienversion*\nStudy version\nStudienversion\n\n\n\n*Revision*\nRevision\nRevision\n\n\n\n*Vorspann-Item(s)*\nProlog Item(s)\nVorspann-Item(s)\n\n\n\n*Nachspann-Items(s)*\nEpilog Item(s)\nNachspann-Items(s)\n\n\n\n*Testleiter*\nTest Administrator\nTestleiter\n\n\n\n*CBA ItemBuilder*-Items\nCBA ItemBuilder-Items\nCBA ItemBuilder-Items\n\n\n\n*Docker*-Container\nDocker-Container\nDocker-Container"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Über / About",
+    "objectID": "preparation-overview.html",
+    "href": "preparation-overview.html",
+    "title": "Vorbereitung: Übersicht / Preparation: Overview",
     "section": "",
-    "text": "Über / About"
+    "text": "Vorbereitung: Übersicht / Preparation: Overview"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "IRTlib Software",
     "section": "",
-    "text": "IRTlib Software\n\n\nIRTlib ist eine Software zur Auslieferung computerbasierter Assessments basierend auf Aufgaben, die mit dem CBA ItemBuilder erstellt wurden. Die Software erlaubt die Definition von flexiblen Abläufen unter Nutzung von visueller Programmierung und Funktionen der Item-Response Theoie (IRT).\n\n\nIRTlib is a software for the delivery of computer-based assessments using tasks develope with the CBA ItemBuilder. The software allows the definition of flexible processes using visual programming and functions of the item-response theory (IRT).\n\n\n\n\n\n\n\n\n\nDokumentation auf Deutsch\n\nals HTML\nals PDF\n\n\n\nDocumentation in English\n\nas HTML\nas PDF"
+    "text": "IRTlib Software\n\n\nIRTlib ist eine Software zur Auslieferung computerbasierter Assessments basierend auf Aufgaben, die mit dem CBA ItemBuilder erstellt wurden. Die Software erlaubt die Definition von flexiblen Abläufen unter Nutzung von visueller Programmierung und Funktionen der Item-Response Theoie (IRT).\n\n\nIRTlib is a software for the delivery of computer-based assessments using tasks develope with the CBA ItemBuilder. The software allows the definition of flexible processes using visual programming and functions of the item-response theory (IRT).\n\n\n\n\n\nDokumentation auf Deutsch\n\nals HTML\nals PDF\n\n\n\nDocumentation in English\n\nas HTML\nas PDF"
   },
   {
-    "objectID": "development.html",
-    "href": "development.html",
-    "title": "Development",
+    "objectID": "data-collection-overview.html",
+    "href": "data-collection-overview.html",
+    "title": "Datenerhebung: Übersicht / Data Collection: Overview",
     "section": "",
-    "text": "Editor for defining Codebooks\nEditor for managing IRT Parameters for ItemPools\nIRT-Integration in Blockly for MST/CAT/MCAT/…\nWebservice Integration required for NLP/Scoring/AI"
-  },
-  {
-    "objectID": "development.html#missing-features-in-version-1.1",
-    "href": "development.html#missing-features-in-version-1.1",
-    "title": "Development",
-    "section": "",
-    "text": "Editor for defining Codebooks\nEditor for managing IRT Parameters for ItemPools\nIRT-Integration in Blockly for MST/CAT/MCAT/…\nWebservice Integration required for NLP/Scoring/AI"
-  },
-  {
-    "objectID": "data-collection-post-processing.html",
-    "href": "data-collection-post-processing.html",
-    "title": "Datenerhebung: Datenaufbereitung / Data Collection: Data Post-Processing",
-    "section": "",
-    "text": "Datenerhebung: Datenaufbereitung / Data Collection: Data Post-Processing"
-  },
-  {
-    "objectID": "settings.html",
-    "href": "settings.html",
-    "title": "Einstellungen / Settings",
-    "section": "",
-    "text": "Einstellungen / Settings"
+    "text": "Datenerhebung: Übersicht / Data Collection: Overview"
   }
 ]
