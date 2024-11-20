@@ -82,8 +82,31 @@ Valid startup parameters are:
 * `/MyBlocklyVariable="123"`: Passes the value `123` for the *Blockly* variable `MyBlocklyVariable`.
 * `/MonitoringFile="..\\last-run.json"`: Path and file name of the so-called monitoring file. 
 * `/RawDataFolder="..\\myDataFolder"`: Path to the directory in which the *raw data archives* are saved. 
+* `/volume="0.5"`: Value to be used to set the system volume (between 0 and 1). 
+* `/minvolume="0.2"`: Value to be used as the lower volume threshold (between 0 and 1). 
+* `/maxvolume="0.8"`: Value to be used as the upper volume threshold (between 0 and 1). 
 
 Several startup parameters in succession are possible (separated by spaces).
+
+
+Technical configurations that are not to be transferred via startup parameters can also be defined via the file [`appsettings.json`](https://github.com/DIPFtba/IRTlibDeploymentSoftware/blob/main/docker/TestApp.Player/appsettings.json), which is contained in the directory `TestApp.Player`.
+
+For example, the volume configurations can be made in the *Chromely* section: 
+
+````
+{
+  ...
+  "Chromely": {
+    ...
+    "Audio": {
+      "MinVolume": 0,
+      "MaxVolume": 1,
+      "StartVolume": 0.5
+    }
+  }
+}
+````
+
 
 **Checking Prerequisites**: The *IRTlib Player* should be able to run on Windows computers (currently supported from *Windows 10*) without further installation or runtime requirements. However, special configurations, virus scanners etc. may prevent it from running. A tool for checking prerequisites can be created, for example, based on this example ([IRTlibReadiness](https://github.com/kroehne/IRTlibReadiness)).
 
